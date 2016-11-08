@@ -4,6 +4,11 @@ require 'pry'
 require 'yaml'
 
 ATTRIBUTES = [:Body, :Quickness, :Strength, :Charisma, :Intelligence, :Willpower].freeze
+DERIVED = { :Reaction => [:Base,:CBM,:Rigg,:Deck,:Astral],
+            :Initiative => [:Base,:CBM,:Rigg,:Deck,:Astral],
+            :Pools => [:'Combat Pool',:'Astral Pool', :'Magic Pool', :'Decking Pool',
+                       :'Control Pool']}.freeze
+SPECIAL = [:Essence,:'Body Index',:Magic]
 ATTRINFO = [:BA, :RM, :CM, :BM, :MM, :ACT, :Points].freeze
 CONSTANTS = { :gender => { 0 => "Male", 1 => "Female" }}
 CONSTANT=YAML.load_file(File.open("constants.yaml","r"));
@@ -84,7 +89,6 @@ class Application
 	@table.n_rows = 12
 	@windows.show_all
 	# binding.pry
-#	Gtk.init
 	Gtk.main
   end
 end
@@ -117,7 +121,7 @@ class Character
 	@weight = 50
 	@nuyen = 5000
     @attributes = {}
-    ATTRIBUTES.each do |x|
+    CONSTANT[:attributes].each do |x|
       @attributes[x] = {}
       ATTRINFO.each do |y|
         @attributes[x][y] = case y
@@ -241,6 +245,8 @@ class Attributeblock < Gtk::Frame
     super()
     @table = Gtk::Table.new(10, 7, homogenous = true)
     @attributes = {}
+    @derived = {}
+    @special = {}
     @header = {}
     @table.attach @header[:Attributes] = Gtk::Label.new('Attributes'), 0, 3, 0, 1,*ATCH
     @table.attach @header[:Points] = Gtk::Label.new('Points'), 3, 5, 0, 1,*ATCH
@@ -250,20 +256,47 @@ class Attributeblock < Gtk::Frame
     @table.attach @header[:MM] = Gtk::Label.new('MM'), 8, 9, 0, 1,*ATCH
     @table.attach @header[:ACT] = Gtk::Label.new('AC'), 9, 10, 0, 1,*ATCH
 
-    ATTRIBUTES.each_with_index do |x, y|
+    CONSTANT[:attributes].each_with_index do |x, y|
       @attributes[x] = {}
-      @table.attach @attributes[x][:Attributes] = Gtk::Label.new(x.to_s), 0, 3, y + 1, y + 2,*ATCH
-      @table.attach @attributes[x][:Points] = Gtk::HScale.new(1, 6, 1), 3, 5, y + 1, y + 2,*ATCH
-      @table.attach @attributes[x][:RM] = Gtk::Label.new('0'), 5, 6, y + 1, y + 2,*ATCH
-      @table.attach @attributes[x][:BA] = Gtk::Label.new('1'), 6, 7, y + 1, y + 2,*ATCH
-      @table.attach @attributes[x][:CBM] = Gtk::Label.new('0'), 7, 8, y + 1, y + 2,*ATCH
-      @table.attach @attributes[x][:MM] = Gtk::Label.new('0'), 8, 9, y + 1, y + 2,*ATCH
-      @table.attach @attributes[x][:ACT] = Gtk::Label.new('1'), 9, 10, y + 1, y + 2,*ATCH
+      @table.attach @attributes[x][:Attributes] = Gtk::Label.new(x.to_s), 0, 3, y*2 + 1, y*2 + 3,*ATCH
+      @table.attach @attributes[x][:Points] = Gtk::HScale.new(1, 6, 1), 3, 5, y*2 + 1, y*2 + 3,*ATCH
+      @table.attach @attributes[x][:RM] = Gtk::Label.new('0'), 5, 6, y*2 + 1, y*2 + 3,*ATCH
+      @table.attach @attributes[x][:BA] = Gtk::Label.new('1'), 6, 7, y*2 + 1, y*2 + 3,*ATCH
+      @table.attach @attributes[x][:CBM] = Gtk::Label.new('0'), 7, 8, y*2 + 1, y*2 + 3,*ATCH
+      @table.attach @attributes[x][:MM] = Gtk::Label.new('0'), 8, 9, y*2 + 1, y*2 + 3,*ATCH
+      @table.attach @attributes[x][:ACT] = Gtk::Label.new('1'), 9, 10, y*2 + 1, y*2 + 3,*ATCH
       @attributes[x][:Points].signal_connect('value_changed') do |z|
-		@app.setattribute(x, z)
+		    @app.setattribute(x, z)
       end
     end
-    @table.n_rows = 7
+    
+    @table.attach Gtk::Label.new("Reaction/Initiative"),0,10,14,15,*ATCH
+    @derived[:Reaction]={}
+    @derived[:Initiative]={}
+    DERIVED[:Reaction].each_with_index do |x,y|
+      @table.attach Gtk::Label.new(x.to_s),y*2,y*2+2,15,16,*ATCH
+      @table.attach @derived[:Reaction][x] = Gtk::Label.new("0"),y*2,y*2+1,16,17,*ATCH
+      @table.attach @derived[:Initiative][x] = Gtk::Label.new("0D6"),y*2+1,y*2+2,16,17,*ATCH
+    end
+    
+    @derived[:Pools]={}
+    DERIVED[:Pools].each_with_index do |x,y|
+      @table.attach Gtk::Label.new(x.to_s),0,4,18+y,19+y,*ATCH
+      @table.attach @derived[:Pools][x] = Gtk::Label.new("0"),4,5,18+y,19+y,*ATCH
+    end
+    
+    @table.attach Gtk::Label.new('Essence'),6,9,18,19,*ATCH
+    @table.attach @special[:Essence]=Gtk::Label.new('6'),9,10,18,19,*ATCH
+    @table.attach Gtk::Label.new('Body Index'),6,9,19,20,*ATCH
+    @table.attach @special[:'Body Index']=Gtk::Label.new('0'),9,10,19,20,*ATCH
+    @table.attach Gtk::Label.new('Magic'),6,9,20,21,*ATCH
+    @table.attach @special[:Magic]=Gtk::Label.new('0'),9,10,20,21,*ATCH
+
+    @table.attach Gtk::VSeparator.new,5,6,18,23,*ATCH
+    @table.attach Gtk::HSeparator.new,0,10,13,14,*ATCH
+    @table.attach Gtk::HSeparator.new,0,10,17,18,*ATCH
+    @table.attach Gtk::HSeparator.new,0,10,23,24,*ATCH
+    
     add(@table)
   end
 end
@@ -285,7 +318,7 @@ class Skillblock < Gtk::ScrolledWindow
       @header[:Skill][1].active = 0
       i=0
       while @header[:Skill][1].active_text != NIL do
-        @header[:Skill][1].remove(i)
+        @header[:Skill][1].remove_text(i)
         @header[:Skill][1].active+=1
       end
       @header[:Skill][1].active=-1
@@ -346,6 +379,13 @@ class Cyberblock < Gtk::ScrolledWindow
   def initialize(app)
 	@app=app
     super()
+    @table = Gtk::Table.new(10,4,homgenous = true)
+    @cyber = {}
+    @header1 = {}
+    @header1[:Category] = [Gtk::Label.new('Category'), Gtk::ComboBoxText.new]
+    
+    @table.attach @header1[:Category][0],0,1,0,1,*ATCH
+    add_with_viewport(@table)
   end
 end
 

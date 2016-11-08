@@ -122,7 +122,7 @@ class Character
 	@weight = 50
 	@nuyen = 5000
     @attributes = {}
-    ATTRIBUTES.each do |x|
+    CONSTANT[:attributes].each do |x|
       @attributes[x] = {}
       ATTRINFO.each do |y|
         @attributes[x][y] = case y
@@ -257,7 +257,7 @@ class Attributeblock < Gtk::Frame
     @table.attach @header[:MM] = Gtk::Label.new('MM'), 8, 9, 0, 1,*ATCH
     @table.attach @header[:ACT] = Gtk::Label.new('AC'), 9, 10, 0, 1,*ATCH
 
-    ATTRIBUTES.each_with_index do |x, y|
+    CONSTANT[:attributes].each_with_index do |x, y|
       @attributes[x] = {}
       @table.attach @attributes[x][:Attributes] = Gtk::Label.new(x.to_s), 0, 3, y*2 + 1, y*2 + 3,*ATCH
       @table.attach @attributes[x][:Points] = Gtk::HScale.new(1, 6, 1), 3, 5, y*2 + 1, y*2 + 3,*ATCH
