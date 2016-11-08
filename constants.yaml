@@ -6,6 +6,14 @@
 - :Charisma
 - :Intelligence
 - :Willpower
+:attrinfo:
+- :BA
+- :RM
+- :CM
+- :BM
+- :MM
+- :ACT
+- :Points
 :gender:
 - :Male
 - :Female
@@ -343,15 +351,27 @@
       - 1
     :Space: 1
 :derived:
-- :Reaction
-- :Initiative
-- :Combat Pool
-- :Astral Pool
-- :Magic Pool
-- :Hacking Pool
-- :Control Pool
+  :Reaction:
+  - :Base
+  - :CBM
+  - :Rigg
+  - :Deck
+  - :Astral
+  :Initiative:
+  - :Base
+  - :CBM
+  - :Rigg
+  - :Deck
+  - :Astral
+  :Pools:
+  - :Combat Pool
+  - :Astral Pool
+  - :Magic Pool
+  - :Hacking Pool
+  - :Control Pool
 :special:
 - :Essence
+- :Body Index
 - :Magic
 :activeskills:
   :Body:

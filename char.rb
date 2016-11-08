@@ -3,14 +3,6 @@ require 'pp'
 require 'pry'
 require 'yaml'
 
-ATTRIBUTES = [:Body, :Quickness, :Strength, :Charisma, :Intelligence, :Willpower].freeze
-DERIVED = { :Reaction => [:Base,:CBM,:Rigg,:Deck,:Astral],
-            :Initiative => [:Base,:CBM,:Rigg,:Deck,:Astral],
-            :Pools => [:'Combat Pool',:'Astral Pool', :'Magic Pool', :'Decking Pool',
-                       :'Control Pool']}.freeze
-SPECIAL = [:Essence,:'Body Index',:Magic]
-ATTRINFO = [:BA, :RM, :CM, :BM, :MM, :ACT, :Points].freeze
-CONSTANTS = { :gender => { 0 => "Male", 1 => "Female" }}
 CONSTANT=YAML.load_file(File.open("constants.yaml","r"));
 ATCH = Gtk::EXPAND|Gtk::FILL,Gtk::SHRINK,0,0
 
@@ -124,7 +116,7 @@ class Character
     @attributes = {}
     CONSTANT[:attributes].each do |x|
       @attributes[x] = {}
-      ATTRINFO.each do |y|
+      CONSTANT[:attrinfo].each do |y|
         @attributes[x][y] = case y
                             when :BA
                               1
@@ -274,14 +266,14 @@ class Attributeblock < Gtk::Frame
     @table.attach Gtk::Label.new("Reaction/Initiative"),0,10,14,15,*ATCH
     @derived[:Reaction]={}
     @derived[:Initiative]={}
-    DERIVED[:Reaction].each_with_index do |x,y|
+    CONSTANT[:derived][:Reaction].each_with_index do |x,y|
       @table.attach Gtk::Label.new(x.to_s),y*2,y*2+2,15,16,*ATCH
       @table.attach @derived[:Reaction][x] = Gtk::Label.new("0"),y*2,y*2+1,16,17,*ATCH
       @table.attach @derived[:Initiative][x] = Gtk::Label.new("0D6"),y*2+1,y*2+2,16,17,*ATCH
     end
     
     @derived[:Pools]={}
-    DERIVED[:Pools].each_with_index do |x,y|
+    CONSTANT[:derived][:Pools].each_with_index do |x,y|
       @table.attach Gtk::Label.new(x.to_s),0,4,18+y,19+y,*ATCH
       @table.attach @derived[:Pools][x] = Gtk::Label.new("0"),4,5,18+y,19+y,*ATCH
     end

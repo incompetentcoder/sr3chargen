@@ -1,6 +1,7 @@
 require 'yaml'
 CONSTANTS={
   :attributes => %i(Body Quickness Strength Charisma Intelligence Willpower),
+  :attrinfo => [:BA, :RM, :CM, :BM, :MM, :ACT, :Points],
   :gender => [:Male,:Female],
   :metatypes => YAML.load_file("metas.yaml"),
   :magetypes => { 
@@ -32,11 +33,13 @@ CONSTANTS={
 	:Delta => { Price: 8, Essence: 0.5, Avail: [["+",9],["*",3]], Space: 0.75 },
 	:Used => { Price: 0.5, Essence: 1, Avail: [["*",1],["*",1]], Space: 1 }
   },
-  :derived => [
-	:Reaction, :Initiative, :'Combat Pool', :'Astral Pool', :'Magic Pool',
-	:'Hacking Pool', :'Control Pool'
-  ],
-  :special => [:Essence, :Magic],
+  :derived => {
+	:Reaction => [:Base,:CBM,:Rigg,:Deck,:Astral],
+  :Initiative => [:Base,:CBM,:Rigg,:Deck,:Astral],
+  :Pools => [:'Combat Pool', :'Astral Pool', :'Magic Pool',
+	:'Hacking Pool', :'Control Pool']
+  },
+  :special => [:Essence, :'Body Index',:Magic],
   :activeskills => {
 	:Body => [:Athletics, :Diving, :Parachuting],
 	:Charisma => [:Etiquette, :Instruction, :Interrogation, :Intimidation,
