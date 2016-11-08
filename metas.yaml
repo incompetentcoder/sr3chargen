@@ -1,0 +1,229 @@
+---
+:Human:
+  :Age: 70
+  :Points: 0
+  :Base: :Human
+  :Racialmods:
+    :Body: 0
+    :Quickness: 0
+    :Strength: 0
+    :Charisma: 0
+    :Intelligence: 0
+    :Willpower: 0
+  :Special: 
+:Cyclops:
+  :Age: 50
+  :Points: 15
+  :Base: :Troll
+  :Racialmods:
+    :Body: 5
+    :Quickness: -1
+    :Strength: 6
+    :Charisma: -2
+    :Intelligence: -2
+    :Willpower: 0
+  :Special: []
+:Troll:
+  :Age: 50
+  :Points: 10
+  :Base: :Troll
+  :Racialmods:
+    :Body: 5
+    :Quickness: -1
+    :Strength: 4
+    :Charisma: -2
+    :Intelligence: -1
+    :Willpower: 0
+  :Special: []
+:Dwarf:
+  :Age: 100
+  :Points: 5
+  :Base: :Dwarf
+  :Racialmods:
+    :Body: 1
+    :Quickness: 0
+    :Strength: 2
+    :Charisma: 0
+    :Intelligence: 0
+    :Willpower: 1
+  :Special: []
+:Elf:
+  :Age: 100
+  :Points: 10
+  :Base: :Elf
+  :Racialmods:
+    :Body: 0
+    :Quickness: 1
+    :Strength: 0
+    :Charisma: 2
+    :Intelligence: 0
+    :Willpower: 0
+  :Special: []
+:Ork:
+  :Age: 40
+  :Points: 5
+  :Base: :Ork
+  :Racialmods:
+    :Body: 3
+    :Quickness: 0
+    :Strength: 2
+    :Charisma: -1
+    :Intelligence: -1
+    :Willpower: 0
+  :Special: []
+:Koborokuru:
+  :Age: 100
+  :Points: 10
+  :Base: :Dwarf
+  :Racialmods:
+    :Body: 1
+    :Quickness: 0
+    :Strength: 2
+    :Charisma: 0
+    :Intelligence: 0
+    :Willpower: 1
+  :Special: []
+:Fomori:
+  :Age: 50
+  :Points: 15
+  :Base: :Troll
+  :Racialmods:
+    :Body: 4
+    :Quickness: -1
+    :Strength: 3
+    :Charisma: 0
+    :Intelligence: -2
+    :Willpower: 0
+  :Special: []
+:Menehune:
+  :Age: 100
+  :Points: 10
+  :Base: :Dwarf
+  :Racialmods:
+    :Body: 2
+    :Quickness: 0
+    :Strength: 1
+    :Charisma: 0
+    :Intelligence: 0
+    :Willpower: 1
+  :Special: []
+:Hobgoblin:
+  :Age: 40
+  :Points: 10
+  :Base: :Ork
+  :Racialmods:
+    :Body: 2
+    :Quickness: 0
+    :Strength: 2
+    :Charisma: -1
+    :Intelligence: 0
+    :Willpower: 0
+  :Special: []
+:Giant:
+  :Age: 50
+  :Points: 15
+  :Base: :Troll
+  :Racialmods:
+    :Body: 5
+    :Quickness: -1
+    :Strength: 5
+    :Charisma: -2
+    :Intelligence: -2
+    :Willpower: 0
+  :Special: []
+:Gnome:
+  :Age: 100
+  :Points: 10
+  :Base: :Dwarf
+  :Racialmods:
+    :Body: 1
+    :Quickness: 0
+    :Strength: 1
+    :Charisma: 0
+    :Intelligence: 0
+    :Willpower: 2
+  :Special: []
+:Oni:
+  :Age: 40
+  :Points: 10
+  :Base: :Ork
+  :Racialmods:
+    :Body: 2
+    :Quickness: 0
+    :Strength: 2
+    :Charisma: -1
+    :Intelligence: -1
+    :Willpower: 1
+  :Special: []
+:Wakyambi:
+  :Age: 100
+  :Points: 15
+  :Base: :Elf
+  :Racialmods:
+    :Body: 0
+    :Quickness: 0
+    :Strength: 0
+    :Charisma: 2
+    :Intelligence: 0
+    :Willpower: 1
+  :Special: []
+:Ogre:
+  :Age: 40
+  :Points: 10
+  :Base: :Ork
+  :Racialmods:
+    :Body: 3
+    :Quickness: 0
+    :Strength: 2
+    :Charisma: 0
+    :Intelligence: -1
+    :Willpower: 0
+  :Special: []
+:Minotaur:
+  :Age: 50
+  :Points: 15
+  :Base: :Troll
+  :Racialmods:
+    :Body: 4
+    :Quickness: -1
+    :Strength: 3
+    :Charisma: -1
+    :Intelligence: -1
+    :Willpower: 0
+  :Special: []
+:Satyr:
+  :Age: 40
+  :Points: 10
+  :Base: :Ork
+  :Racialmods:
+    :Body: 3
+    :Quickness: -1
+    :Strength: 2
+    :Charisma: -1
+    :Intelligence: -1
+    :Willpower: 1
+  :Special: []
+:Nightelf:
+  :Age: 100
+  :Points: 15
+  :Base: :Elf
+  :Racialmods:
+    :Body: 0
+    :Quickness: 2
+    :Strength: 0
+    :Charisma: 2
+    :Intelligence: 0
+    :Willpower: 0
+  :Special: []
+:Dryad:
+  :Age: 100
+  :Points: 15
+  :Base: :Elf
+  :Racialmods:
+    :Body: -1
+    :Quickness: 1
+    :Strength: -1
+    :Charisma: 3
+    :Intelligence: 0
+    :Willpower: 0
+  :Special: []
