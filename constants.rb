@@ -18,9 +18,12 @@ CONSTANTS = {
     :'Adept Magician' => { Points: 30, Spellpoints: 0 }
   },
   spelltypes: {
-    Combat: [:Combat], Detection: [:Detection], Health: [:Health],
-    Illusion: [:Direct, :Indirect],
-    Manipulation: [:Elemental, :Control, :Transformation, :Telekinetic]
+    :Combat => [], :Detection => [], :Health => [],
+    :Illusion => {:Direct => [], :Indirect => []},
+    :Manipulation => {:Telekinetic => [], :Control => [], :Transformation => [],
+                      :Elemental  => { :Fire => [], :Ice => [], :Light => [],
+                                       :Metal => [], :Sand => [], :Smoke => [],
+                                       :Acid => [] }}
   },
   nuyen: {
     -5 => 500, 0 => 5000, 5 => 20_000, 10 => 90_000, 15 => 200_000,

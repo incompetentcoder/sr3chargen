@@ -281,20 +281,24 @@
     :Points: 30
     :Spellpoints: 0
 :spelltypes:
-  :Combat:
-  - :Combat
-  :Detection:
-  - :Detection
-  :Health:
-  - :Health
+  :Combat: []
+  :Detection: []
+  :Health: []
   :Illusion:
-  - :Direct
-  - :Indirect
+    :Direct: []
+    :Indirect: []
   :Manipulation:
-  - :Elemental
-  - :Control
-  - :Transformation
-  - :Telekinetic
+    :Telekinetic: []
+    :Control: []
+    :Transformation: []
+    :Elemental:
+      :Fire: []
+      :Ice: []
+      :Light: []
+      :Metal: []
+      :Sand: []
+      :Smoke: []
+      :Acid: []
 :nuyen:
   -5: 500
   0: 5000
