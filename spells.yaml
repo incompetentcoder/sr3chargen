@@ -2,2068 +2,2068 @@
 Combat:
   Death Touch:
     Class: Combat
-    Name: Death Touch
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Instant
-    Range: Touch
-    Area: 'False'
-    DTN: '0'
-    DLVL: "-1"
-    Damage: VA
-    DamType: Physical
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: -1
+    :Damage: 0
+    :DamType: 0
   Manaball:
     Class: Combat
-    Name: Manaball
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Instant
-    Range: LOS
-    Area: 'True'
-    DTN: '0'
-    DLVL: "+1"
-    Damage: VA
-    DamType: Physical
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 1
+    :Damage: 0
+    :DamType: 0
   Manabolt:
     Class: Combat
-    Name: Manabolt
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Instant
-    Range: LOS
-    Area: 'False'
-    DTN: '0'
-    DLVL: '0'
-    Damage: VA
-    DamType: Physical
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
+    :Damage: 0
+    :DamType: 0
   Powerball:
     Class: Combat
-    Name: Powerball
-    Type: Physical
-    Target: Body
-    Res: 'True'
-    Duration: Instant
-    Range: LOS
-    Area: 'True'
-    DTN: "+1"
-    DLVL: "+1"
-    Damage: VA
-    DamType: Physical
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 1
+    :Damage: 0
+    :DamType: 0
   Powerbolt:
     Class: Combat
-    Name: Powerbolt
-    Type: Physical
-    Target: Body
-    Res: 'True'
-    Duration: Instant
-    Range: LOS
-    Area: 'False'
-    DTN: "+1"
-    DLVL: '0'
-    Damage: VA
-    DamType: Physical
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
+    :Damage: 0
+    :DamType: 0
   Ram(Object):
     Class: Combat
-    Name: Ram(Object)
-    Type: Physical
-    Target: ObjectRes
-    Res: 'False'
-    Duration: Instant
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: "-2"
-    Damage: VA
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: -2
+    :Damage: 0
   Shattershield:
     Class: Combat
-    Name: Shattershield
-    Type: Mana
-    Target: Force
-    Res: 'True'
-    Duration: Instant
-    Range: Touch
-    Area: 'False'
-    DTN: '0'
-    DLVL: M
-    Damage: D
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
+    :Damage: 0
   Slaughter(Race):
     Class: Combat
-    Name: Slaughter(Race)
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Instant
-    Range: LOS
-    Area: 'True'
-    DTN: "+1"
-    DLVL: D
-    Damage: D
-    DamType: Physical
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
+    :Damage: 0
+    :DamType: 0
   Slay(Race):
     Class: Combat
-    Name: Slay(Race)
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Instant
-    Range: LOS
-    Area: 'False'
-    DTN: "-1"
-    DLVL: D
-    Damage: D
-    DamType: Physical
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -1
+    :DLVL: 0
+    :Damage: 0
+    :DamType: 0
   Spiritblast:
     Class: Combat
-    Name: Spiritblast
-    Type: Mana
-    Target: Force
-    Res: 'True'
-    Duration: Instant
-    Range: LOS
-    Area: 'True'
-    DTN: "-1"
-    DLVL: "+1"
-    Damage: VA
-    DamType: Physical
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -1
+    :DLVL: 1
+    :Damage: 0
+    :DamType: 0
   Spiritbolt:
     Class: Combat
-    Name: Spiritbolt
-    Type: Mana
-    Target: Force
-    Res: 'True'
-    Duration: Instant
-    Range: LOS
-    Area: 'False'
-    DTN: "-1"
-    DLVL: '0'
-    Damage: VA
-    DamType: Physical
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -1
+    :DLVL: 0
+    :Damage: 0
+    :DamType: 0
   Stunball:
     Class: Combat
-    Name: Stunball
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Instant
-    Range: LOS
-    Area: 'True'
-    DTN: "-1"
-    DLVL: "+1"
-    Damage: VA
-    DamType: Stun
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -1
+    :DLVL: 1
+    :Damage: 0
+    :DamType: 0
   Stunbolt:
     Class: Combat
-    Name: Stunbolt
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Instant
-    Range: LOS
-    Area: 'False'
-    DTN: "-1"
-    DLVL: '0'
-    Damage: VA
-    DamType: Stun
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -1
+    :DLVL: 0
+    :Damage: 0
+    :DamType: 0
   Stun Touch:
     Class: Combat
-    Name: Stun Touch
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Instant
-    Range: Touch
-    Area: 'False'
-    DTN: "-1"
-    DLVL: "-1"
-    Damage: VA
-    DamType: Stun
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -1
+    :DLVL: -1
+    :Damage: 0
+    :DamType: 0
   Wreck(Object):
     Class: Combat
-    Name: Wreck(Object)
-    Type: Physical
-    Target: ObjectRes
-    Res: 'False'
-    Duration: Instant
-    Range: LOS
-    Area: 'False'
-    DTN: "+1"
-    DLVL: "-1"
-    Damage: VA
-    DamType: Physical
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: -1
+    :Damage: 0
+    :DamType: 0
 Detection:
   Analyze Device:
     Class: Detection
-    Name: Analyze Device
-    Type: Physical
-    Target: ObjectRes
-    Res: 'False'
-    Duration: Sustained
-    Area: 'False'
-    DTN: "+1"
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Analyze Magic:
     Class: Detection
-    Name: Analyze Magic
-    Type: Mana
-    Target: Force
-    Res: 'True'
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Analyze Truth:
     Class: Detection
-    Name: Analyze Truth
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Animal(Sense):
     Class: Detection
-    Name: Animal(Sense)
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Astral Window:
     Class: Detection
-    Name: Astral Window
-    Type: Mana
-    Target: Force
-    Res: 'True'
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Catalog:
     Class: Detection
-    Name: Catalog
-    Type: Physical
-    Target: '6'
-    Res: 'False'
-    Duration: Sustained
-    Area: 'True'
-    DTN: "+1"
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 6
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Clairaudience:
     Class: Detection
-    Name: Clairaudience
-    Type: Mana
-    Target: '6'
-    Res: 'False'
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 6
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Clairvoyance:
     Class: Detection
-    Name: Clairvoyance
-    Type: Mana
-    Target: '6'
-    Res: 'False'
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 6
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Combat Sense:
     Class: Detection
-    Name: Combat Sense
-    Type: Mana
-    Target: '4'
-    Res: 'False'
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: S
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Detect Enemies:
     Class: Detection
-    Name: Detect Enemies
-    Type: Mana
-    Target: 4/6/10/+F
-    Res: 'True'
-    Duration: Sustained
-    Area: 'True'
-    DTN: '0'
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Detect Individual:
     Class: Detection
-    Name: Detect Individual
-    Type: Mana
-    Target: 4/6/10/+F
-    Res: 'True'
-    Duration: Sustained
-    Area: 'True'
-    DTN: '0'
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Detect Life:
     Class: Detection
-    Name: Detect Life
-    Type: Mana
-    Target: 4/6/10/+F
-    Res: 'True'
-    Duration: Sustained
-    Area: 'True'
-    DTN: '0'
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Detect(Life-Form):
     Class: Detection
-    Name: Detect(Life-Form)
-    Type: Mana
-    Target: 4/6/10/+F
-    Res: 'True'
-    Duration: Sustained
-    Area: 'True'
-    DTN: "-1"
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: -1
+    :DLVL: 0
   Detect Magic:
     Class: Detection
-    Name: Detect Magic
-    Type: Mana
-    Target: 4/6/10/+F
-    Res: 'True'
-    Duration: Sustained
-    Area: 'True'
-    DTN: '0'
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Detect(Object):
     Class: Detection
-    Name: Detect(Object)
-    Type: Physical
-    Target: 4/6/10/+F
-    Res: 'False'
-    Duration: Sustained
-    Area: 'True'
-    DTN: "+1"
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Diagnose:
     Class: Detection
-    Name: Diagnose
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Sustained
-    Area: 'False'
-    DTN: "-1"
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: -1
+    :DLVL: 0
   Enhance Aim:
     Class: Detection
-    Name: Enhance Aim
-    Type: Mana
-    Target: '6'
-    Res: 'True'
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 6
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Eyes of the Pack:
     Class: Detection
-    Name: Eyes of the Pack
-    Type: Mana
-    Target: '6'
-    Res: Vol
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 6
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Mindlink:
     Class: Detection
-    Name: Mindlink
-    Type: Mana
-    Target: '4'
-    Res: Vol
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: S
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Mind Probe:
     Class: Detection
-    Name: Mind Probe
-    Type: Mana
-    Target: Willpower
-    Res: 'True'
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: S
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Night Vision:
     Class: Detection
-    Name: Night Vision
-    Type: Physical
-    Target: '6'
-    Res: Vol
-    Duration: Sustained
-    Area: 'False'
-    DTN: "+1"
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 6
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Translate:
     Class: Detection
-    Name: Translate
-    Type: Mana
-    Target: '4'
-    Res: Vol
-    Duration: Sustained
-    Area: 'False'
-    DTN: '0'
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
 Health:
   Alleviate-Allergy:
     Class: Health
-    Name: Alleviate-Allergy
-    Type: Physical
-    Target: 10-Essence
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: '0'
-    DLVL: AllergyLVL
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Antidote:
     Class: Health
-    Name: Antidote
-    Type: Mana
-    Target: ToxinPower
-    Res: Vol
-    Duration: Permanent
-    Range: Touch
-    Area: 'False'
-    DTN: "-2"
-    DLVL: ToxinLVL
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -2
+    :DLVL: 0
   Awaken:
     Class: Health
-    Name: Awaken
-    Type: Mana
-    Target: '4'
-    Res: Vol
-    Duration: Instant
-    Range: Touch
-    Area: 'False'
-    DTN: "-2"
-    DLVL: DamageLVL
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -2
+    :DLVL: 0
   Cause-Allergy:
     Class: Health
-    Name: Cause-Allergy
-    Type: Physical
-    Target: 10 - Essence
-    Res: 'True'
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+2"
-    DLVL: AllergyLVL
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 2
+    :DLVL: 0
   Cripple-Limb:
     Class: Health
-    Name: Cripple-Limb
-    Type: Physical
-    Target: Body
-    Res: Thres
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: S
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Cure-Disease:
     Class: Health
-    Name: Cure-Disease
-    Type: Mana
-    Target: DiseasePower
-    Res: Vol
-    Duration: Permanent
-    Range: Touch
-    Area: 'False'
-    DTN: '0'
-    DLVL: DiseaseLVL
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Decrease(Attribute):
     Class: Health
-    Name: Decrease(Attribute)
-    Type: Mana
-    Target: 10 - Essence
-    Res: 'True'
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: S
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Decrease(Cybered Attribute):
     Class: Health
-    Name: Decrease(Cybered Attribute)
-    Type: Physical
-    Target: 10 - Essence
-    Res: 'True'
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+2"
-    DLVL: S
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 2
+    :DLVL: 0
   Decrease Reaction:
     Class: Health
-    Name: Decrease Reaction
-    Type: Mana
-    Target: 10 - Essence
-    Res: 'True'
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: D
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Decrease Cybered Reaction:
     Class: Health
-    Name: Decrease Cybered Reaction
-    Type: Physical
-    Target: 10 - Essence
-    Res: 'True'
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+2"
-    DLVL: D
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 2
+    :DLVL: 0
   Decrease Reflexes -1:
     Class: Health
-    Name: Decrease Reflexes -1
-    Type: Physical
-    Target: 10 - Essence
-    Res: 'True'
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+2"
-    DLVL: D
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 2
+    :DLVL: 0
   Decrease Reflexes -2:
     Class: Health
-    Name: Decrease Reflexes -2
-    Type: Physical
-    Target: 10 - Essence
-    Res: 'True'
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+4"
-    DLVL: D
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 4
+    :DLVL: 0
   Decrease Reflexes -3:
     Class: Health
-    Name: Decrease Reflexes -3
-    Type: Physical
-    Target: 10 - Essence
-    Res: 'True'
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+6"
-    DLVL: D
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 6
+    :DLVL: 0
   Detox:
     Class: Health
-    Name: Detox
-    Type: Mana
-    Target: Toxin Power
-    Res: Vol
-    Duration: Permanent
-    Range: Touch
-    Area: 'False'
-    DTN: "-2"
-    DLVL: ToxinLVL
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -2
+    :DLVL: 0
   Fast:
     Class: Health
-    Name: Fast
-    Type: Mana
-    Target: '4'
-    Res: Vol
-    Duration: Permanent
-    Range: Touch
-    Area: 'False'
-    DTN: "-2"
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -2
+    :DLVL: 0
   Heal:
     Class: Health
-    Name: Heal
-    Type: Mana
-    Target: 10 - Essence
-    Res: Vol
-    Duration: Permanent
-    Range: Touch
-    Area: 'False'
-    DTN: '0'
-    DLVL: DamageLVL
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Healthy Glow:
     Class: Health
-    Name: Healthy Glow
-    Type: Mana
-    Target: '4'
-    Res: Vol
-    Duration: Permanent
-    Range: Touch
-    Area: 'False'
-    DTN: '0'
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
   Hibernate:
     Class: Health
-    Name: Hibernate
-    Type: Mana
-    Target: '4'
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Increase(Attribute):
     Class: Health
-    Name: Increase(Attribute)
-    Type: Mana
-    Target: Attribute
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Increase(Cybered Attribute):
     Class: Health
-    Name: Increase(Cybered Attribute)
-    Type: Physical
-    Target: Attribute
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+2"
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 2
+    :DLVL: 0
   Increase Reaction:
     Class: Health
-    Name: Increase Reaction
-    Type: Mana
-    Target: Reaction
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: S
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Increase Cybered Reaction:
     Class: Health
-    Name: Increase Cybered Reaction
-    Type: Physical
-    Target: Reaction
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+2"
-    DLVL: S
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 2
+    :DLVL: 0
   Increase Reflexes +1:
     Class: Health
-    Name: Increase Reflexes +1
-    Type: Mana
-    Target: Reaction
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: S
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Increase Reflexes +2:
     Class: Health
-    Name: Increase Reflexes +2
-    Type: Mana
-    Target: Reaction
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: D
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Increase Reflexes +3:
     Class: Health
-    Name: Increase Reflexes +3
-    Type: Mana
-    Target: Reaction
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+3"
-    DLVL: D
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 3
+    :DLVL: 0
   Intoxication:
     Class: Health
-    Name: Intoxication
-    Type: Physical
-    Target: Body
-    Res: 'True'
-    Duration: Permament
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: D
+    :Name: 0
+    :Type: 0
+    :Target: 0
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Nutrition:
     Class: Health
-    Name: Nutrition
-    Type: Physical
-    Target: '4'
-    Res: Vol
-    Duration: Permanent
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Oxygenate:
     Class: Health
-    Name: Oxygenate
-    Type: Physical
-    Target: '4'
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+2"
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 2
+    :DLVL: 0
   Preserve:
     Class: Health
-    Name: Preserve
-    Type: Physical
-    Target: '4'
-    Res: 'False'
-    Duration: Permanent
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: M
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Prophylaxis:
     Class: Health
-    Name: Prophylaxis
-    Type: Mana
-    Target: '4'
-    Res: Vol
-    Duration: Sustained
-    Range: Touch
-    Area: 'False'
-    DTN: "+1"
-    DLVL: L
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 1
+    :DLVL: 0
   Resist Pain:
     Class: Health
-    Name: Resist Pain
-    Type: Mana
-    Target: '4'
-    Res: Vol
-    Duration: Permanent
-    Range: Touch
-    Area: 'False'
-    DTN: "-2"
-    DLVL: D
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -2
+    :DLVL: 0
   Stabilize:
     Class: Health
-    Name: Stabilize
-    Type: Mana
-    Target: '4'
-    Res: "+"
-    Duration: Minutes
-    Range: Vol
-    Area: Permanent
-    DTN: Touch
-    DLVL: 'False'
-    ! '': M
+    :Name: 0
+    :Type: 0
+    :Target: 4
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: 0
+    :DLVL: 0
+    ! '': 0
   Threat:
     Class: Health
-    Name: Threat
-    Type: Mana
-    Target: 10-Essence
-    Res: Vol
-    Duration: Permanent
-    Range: Touch
-    Area: 'False'
-    DTN: "-1"
-    DLVL: D
+    :Name: 0
+    :Type: 0
+    :Target: 10
+    :Res: 0
+    :Duration: 0
+    :Range: 0
+    :Area: 0
+    :DTN: -1
+    :DLVL: 0
 Illusion:
   Direct:
     Agony:
       Class: Illusion
       Subclass: Direct
-      Name: Agony
-      Type: Mana
-      Target: Willpower
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Blindness:
       Class: Illusion
       Subclass: Direct
-      Name: Blindness
-      Type: Physical
-      Target: Intelligence
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Chaff:
       Class: Illusion
       Subclass: Direct
-      Name: Chaff
-      Type: Physical
-      Target: ObjectRes
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Chaos:
       Class: Illusion
       Subclass: Direct
-      Name: Chaos
-      Type: Physical
-      Target: Intelligence
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Chaotic World:
       Class: Illusion
       Subclass: Direct
-      Name: Chaotic World
-      Type: Physical
-      Target: Intelligence
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: D
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Confusion:
       Class: Illusion
       Subclass: Direct
-      Name: Confusion
-      Type: Mana
-      Target: Willpower
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Dream:
       Class: Illusion
       Subclass: Direct
-      Name: Dream
-      Type: Mana
-      Target: Willpower
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Entertainment:
       Class: Illusion
       Subclass: Direct
-      Name: Entertainment
-      Type: Mana
-      Target: Willpower
-      Res: Vol
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: L
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Flak:
       Class: Illusion
       Subclass: Direct
-      Name: Flak
-      Type: Physical
-      Target: ObjectRes
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: D
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Flash:
       Class: Illusion
       Subclass: Direct
-      Name: Flash
-      Type: Physical
-      Target: Intelligence
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Mass Agony:
       Class: Illusion
       Subclass: Direct
-      Name: Mass Agony
-      Type: Mana
-      Target: Willpower
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Mass Blindness:
       Class: Illusion
       Subclass: Direct
-      Name: Mass Blindness
-      Type: Physical
-      Target: Intelligence
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Mass Confusion:
       Class: Illusion
       Subclass: Direct
-      Name: Mass Confusion
-      Type: Mana
-      Target: Willpower
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: D
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Stench:
       Class: Illusion
       Subclass: Direct
-      Name: Stench
-      Type: Mana
-      Target: Willpower
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Stink:
       Class: Illusion
       Subclass: Direct
-      Name: Stink
-      Type: Mana
-      Target: Willpower
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Trid Entertainment:
       Class: Illusion
       Subclass: Direct
-      Name: Trid Entertainment
-      Type: Physical
-      Target: Intelligence
-      Res: Vol
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: L
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
   Indirect:
     Camouflage:
       Class: Illusion
       Subclass: Indirect
-      Name: Camouflage
-      Type: Mana
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: L
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Double Image:
       Class: Illusion
       Subclass: Indirect
-      Name: Double Image
-      Type: Mana
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: Touch
-      Area: 'False'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Foreboding:
       Class: Illusion
       Subclass: Indirect
-      Name: Foreboding
-      Type: Mana
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: D
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Hot Potato:
       Class: Illusion
       Subclass: Indirect
-      Name: Hot Potato
-      Type: Mana
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Improved Invisibility:
       Class: Illusion
       Subclass: Indirect
-      Name: Improved Invisibility
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Invisibility:
       Class: Illusion
       Subclass: Indirect
-      Name: Invisibility
-      Type: Mana
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Mask:
       Class: Illusion
       Subclass: Indirect
-      Name: Mask
-      Type: Mana
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Phantasm:
       Class: Illusion
       Subclass: Indirect
-      Name: Phantasm
-      Type: Mana
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: D
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Physical Camouflage:
       Class: Illusion
       Subclass: Indirect
-      Name: Physical Camouflage
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: L
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Physical Double Image:
       Class: Illusion
       Subclass: Indirect
-      Name: Physical Double Image
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: Touch
-      Area: 'False'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Physical Mask:
       Class: Illusion
       Subclass: Indirect
-      Name: Physical Mask
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Silence:
       Class: Illusion
       Subclass: Indirect
-      Name: Silence
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Stealth:
       Class: Illusion
       Subclass: Indirect
-      Name: Stealth
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Trid Phantasm:
       Class: Illusion
       Subclass: Indirect
-      Name: Trid Phantasm
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: D
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Vehicle Mask:
       Class: Illusion
       Subclass: Indirect
-      Name: Vehicle Mask
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
 Manipulation:
   Control:
     Alter Memory:
       Class: Manipulation
       Subclass: Control
-      Name: Alter Memory
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Permanent
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: D
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Calm Animal:
       Class: Manipulation
       Subclass: Control
-      Name: Calm Animal
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Calm Pack:
       Class: Manipulation
       Subclass: Control
-      Name: Calm Pack
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Compel Truth:
       Class: Manipulation
       Subclass: Control
-      Name: Compel Truth
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Control Actions:
       Class: Manipulation
       Subclass: Control
-      Name: Control Actions
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Control Animal:
       Class: Manipulation
       Subclass: Control
-      Name: Control Animal
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Control Emotion:
       Class: Manipulation
       Subclass: Control
-      Name: Control Emotion
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Control Pack:
       Class: Manipulation
       Subclass: Control
-      Name: Control Pack
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: D
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Control Thoughts:
       Class: Manipulation
       Subclass: Control
-      Name: Control Thoughts
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Influence:
       Class: Manipulation
       Subclass: Control
-      Name: Influence
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Permanent
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Mob Mind:
       Class: Manipulation
       Subclass: Control
-      Name: Mob Mind
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: D
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Mob Mood:
       Class: Manipulation
       Subclass: Control
-      Name: Mob Mood
-      Type: Mana
-      Target: Willpower
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
   Elemental:
     Acid Stream:
       Class: Manipulation
       Subclass: Elemental
-      Name: Acid Stream
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: "+1"
-      Damage: VA
-      Element: Acid
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 1
+      :Damage: 0
+      :Element: 0
     Ball Lightning:
       Class: Manipulation
       Subclass: Elemental
-      Name: Ball Lightning
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: "+2"
-      Damage: VA
-      Element: Lightning
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 2
+      :Damage: 0
+      :Element: 0
     Fireball:
       Class: Manipulation
       Subclass: Elemental
-      Name: Fireball
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: "+2"
-      Damage: VA
-      Element: Fire
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 2
+      :Damage: 0
+      :Element: 0
     Flamethrower:
       Class: Manipulation
       Subclass: Elemental
-      Name: Flamethrower
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: "+1"
-      Damage: VA
-      Element: Fire
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 1
+      :Damage: 0
+      :Element: 0
     Laser:
       Class: Manipulation
       Subclass: Elemental
-      Name: Laser
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: "+1"
-      Damage: VA
-      Element: Light
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 1
+      :Damage: 0
+      :Element: 0
     Lightning Bolt:
       Class: Manipulation
       Subclass: Elemental
-      Name: Lightning Bolt
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: "+1"
-      Damage: VA
-      Element: Lightning
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 1
+      :Damage: 0
+      :Element: 0
     Nova:
       Class: Manipulation
       Subclass: Elemental
-      Name: Nova
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: "+2"
-      Damage: VA
-      Element: Light
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 2
+      :Damage: 0
+      :Element: 0
     Smoke Cloud:
       Class: Manipulation
       Subclass: Elemental
-      Name: Smoke Cloud
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: "+2"
-      Damage: VA
-      Element: Smoke
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 2
+      :Damage: 0
+      :Element: 0
     Steam:
       Class: Manipulation
       Subclass: Elemental
-      Name: Steam
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: "+1"
-      Damage: VA
-      Element: Smoke
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 1
+      :Damage: 0
+      :Element: 0
     Thunderbolt:
       Class: Manipulation
       Subclass: Elemental
-      Name: Thunderbolt
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: "+1"
-      Damage: VA
-      Element: Blast
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 1
+      :Damage: 0
+      :Element: 0
     Thunderclap:
       Class: Manipulation
       Subclass: Elemental
-      Name: Thunderclap
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: "+2"
-      Damage: VA
-      Element: Blast
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 2
+      :Damage: 0
+      :Element: 0
     Toxic Wave:
       Class: Manipulation
       Subclass: Elemental
-      Name: Toxic Wave
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: "+2"
-      Damage: VA
-      Element: Acid
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 2
+      :Damage: 0
+      :Element: 0
   Telekinetic:
     Animate:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Animate
-      Type: Physical
-      Target: ObjectRes
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL, Damage: 0
     Bind:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Bind
-      Type: Physical
-      Target: Quickness
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL, Damage: 0
     Catfall:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Catfall
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL, Damage: 0
     Clout:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Clout
-      Type: Physical
-      Target: '4'
-      Res: RangedCombat
-      Duration: Instant
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL, Damage: '0'
-      ! '': VA
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL, Damage: 0
+      ! '': 0
     Deflect:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Deflect
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL, Damage: 0
     Fling:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Fling
-      Type: Physical
-      Target: '4'
-      Res: RangedCombat
-      Duration: Instant
-      Range: Touch
-      Area: 'False'
-      DTN: "+1"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL, Damage: 0
     Gecko Crawl:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Gecko Crawl
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL, Damage: 0
     Levitate:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Levitate
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL, Damage: 0
     Lock:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Lock
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL, Damage: 0
     Magic Fingers:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Magic Fingers
-      Type: Physical
-      Target: '6'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL, Damage: 0
     Net:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Net
-      Type: Physical
-      Target: Quickness
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL, Damage: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL, Damage: 0
     Poltergeist:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Poltergeist
-      Type: Physical
-      Target: '4'
-      Res: 'True'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL, Damage: 0
     Redirect:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Redirect
-      Type: Physical
-      Target: '4'
-      Res: RangedCombat
-      Duration: Instant
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL, Damage: '0'
-      ! '': VA
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL, Damage: 0
+      ! '': 0
     Shape Earth:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Shape Earth
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL, Damage: 0
     Shape Water:
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Shape Water
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL, Damage: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL, Damage: 0
     Use(Skill):
       Class: Manipulation
       Subclass: Telekinetic
-      Name: Use(Skill)
-      Type: Physical
-      Target: '6'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL, Damage: L
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL, Damage: 0
   Transformation:
     Alter Temperature:
       Class: Manipulation
       Subclass: Transformation
-      Name: Alter Temperature
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
     Armor:
       Class: Manipulation
       Subclass: Transformation
-      Name: Armor
-      Type: Physical
-      Target: '6'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
     Astral Armor:
       Class: Manipulation
       Subclass: Transformation
-      Name: Astral Armor
-      Type: Mana
-      Target: '6'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Astral Barrier:
       Class: Manipulation
       Subclass: Transformation
-      Name: Astral Barrier
-      Type: Mana
-      Target: '6'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Clean(Element):
       Class: Manipulation
       Subclass: Transformation
-      Name: Clean(Element)
-      Type: Physical
-      Target: '6'
-      Res: 'False'
-      Duration: Permanent
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: S
-      Element: "(Element)"
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
+      :Element: 0
     Control Fire:
       Class: Manipulation
       Subclass: Transformation
-      Name: Control Fire
-      Type: Physical
-      Target: FirePower
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL: M
-      Element: Fire
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
+      :Element: 0
     Create Food:
       Class: Manipulation
       Subclass: Transformation
-      Name: Create Food
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Permanent
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Fashion:
       Class: Manipulation
       Subclass: Transformation
-      Name: Fashion
-      Type: Physical
-      Target: '6'
-      Res: 'False'
-      Duration: Permanent
-      Range: Touch
-      Area: 'False'
-      DTN: "+1"
-      DLVL: L
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Firewall:
       Class: Manipulation
       Subclass: Transformation
-      Name: Firewall
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL: S
-      Element: Fire
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
+      :Element: 0
     Fix:
       Class: Manipulation
       Subclass: Transformation
-      Name: Fix
-      Type: Physical
-      Target: ObjectRes
-      Res: 'False'
-      Duration: Permanent
-      Range: Touch
-      Area: 'False'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Flame Aura:
       Class: Manipulation
       Subclass: Transformation
-      Name: Flame Aura
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL: M
-      Element: Fire
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
+      :Element: 0
     Freeze Water:
       Class: Manipulation
       Subclass: Transformation
-      Name: Freeze Water
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: M
-      Element: Ice
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
+      :Element: 0
     Glue:
       Class: Manipulation
       Subclass: Transformation
-      Name: Glue
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
     Glue Strip:
       Class: Manipulation
       Subclass: Transformation
-      Name: Glue Strip
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
     Ice Sheet:
       Class: Manipulation
       Subclass: Transformation
-      Name: Ice Sheet
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: S
-      Element: Ice
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
+      :Element: 0
     Ignite:
       Class: Manipulation
       Subclass: Transformation
-      Name: Ignite
-      Type: Physical
-      Target: '4'
-      Res: Thres
-      Duration: Permanent
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: D
-      Element: Fire
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
+      :Element: 0
     Light:
       Class: Manipulation
       Subclass: Transformation
-      Name: Light
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL: M
-      Element: Light
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
+      :Element: 0
     Limited Armor:
       Class: Manipulation
       Subclass: Transformation
-      Name: Limited Armor
-      Type: Physical
-      Target: '6'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+2"
-      DLVL: L
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
     Limited Physical Barrier:
       Class: Manipulation
       Subclass: Transformation
-      Name: Limited Physical Barrier
-      Type: Physical
-      Target: '6'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
     Makeover:
       Class: Manipulation
       Subclass: Transformation
-      Name: Makeover
-      Type: Physical
-      Target: '6'
-      Res: Vol
-      Duration: Permanent
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Mana Static:
       Class: Manipulation
       Subclass: Transformation
-      Name: Mana Static
-      Type: Mana
-      Target: '4'
-      Res: 'False'
-      Duration: Permanent
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: D
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Mist:
       Class: Manipulation
       Subclass: Transformation
-      Name: Mist
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Petrify:
       Class: Manipulation
       Subclass: Transformation
-      Name: Petrify
-      Type: Physical
-      Target: Body
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Physical Barrier:
       Class: Manipulation
       Subclass: Transformation
-      Name: Physical Barrier
-      Type: Physical
-      Target: 'False'
-      Res: Sustained
-      Duration: LOS
-      Range: 'True'
-      Area: "+2"
-      DTN: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 2
+      :DTN: 0
     Reinforce:
       Class: Manipulation
       Subclass: Transformation
-      Name: Reinforce
-      Type: Physical
-      Target: ObjectRes
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Shadow:
       Class: Manipulation
       Subclass: Transformation
-      Name: Shadow
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0
     Shapechange:
       Class: Manipulation
       Subclass: Transformation
-      Name: Shapechange
-      Type: Physical
-      Target: Body
-      Res: Thres/Vol
-      Duration: Sustained
-      Range: LOS
-      Area: "+1"
-      DTN: M
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 1
+      :DTN: 0
     Spell Shield:
       Class: Manipulation
       Subclass: Transformation
-      Name: Spell Shield
-      Type: Mana
-      Target: '6'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: '0'
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Spell Wall:
       Class: Manipulation
       Subclass: Transformation
-      Name: Spell Wall
-      Type: Mana
-      Target: '6'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Spirit Barrier:
       Class: Manipulation
       Subclass: Transformation
-      Name: Spirit Barrier
-      Type: Mana
-      Target: '6'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: '0'
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 6
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 0
+      :DLVL: 0
     Sterilize:
       Class: Manipulation
       Subclass: Transformation
-      Name: Sterilize
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Instant
-      Range: LOS
-      Area: 'True'
-      DTN: "+1"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Transform:
       Class: Manipulation
       Subclass: Transformation
-      Name: Transform
-      Type: Physical
-      Target: Body
-      Res: Thres
-      Duration: Sustained
-      Range: LOS
-      Area: 'False'
-      DTN: "+1"
-      DLVL: S
+      :Name: 0
+      :Type: 0
+      :Target: 0
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 1
+      :DLVL: 0
     Wind:
       Class: Manipulation
       Subclass: Transformation
-      Name: Wind
-      Type: Physical
-      Target: '4'
-      Res: 'False'
-      Duration: Sustained
-      Range: LOS
-      Area: 'True'
-      DTN: "+2"
-      DLVL: M
+      :Name: 0
+      :Type: 0
+      :Target: 4
+      :Res: 0
+      :Duration: 0
+      :Range: 0
+      :Area: 0
+      :DTN: 2
+      :DLVL: 0

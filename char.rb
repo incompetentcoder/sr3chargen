@@ -52,6 +52,7 @@ class Application
   def setnuyen(nuyen)
     @basic.setnuyen(@a.setnuyen(nuyen))
     setnuyenrem
+    setpointsrem
   end
 
   def setheight(height)
@@ -64,6 +65,11 @@ class Application
 
   def setnuyenrem
     @basic.setnuyenrem(@a.getnuyenrem)
+    setpointsrem
+  end
+
+  def setpointsrem
+    @basic.setpointsrem(@a.getpointsrem)
   end
 
   def initialize
@@ -125,19 +131,39 @@ class Character
   end
 
   def setnuyen(nuyen)
-    diff=@nuyen - @nuyenrem
-    @nuyen = nuyen.active_text.split(":")[0].to_i
-    @nuyenrem = @nuyen - diff
-    nuyen.active
+    money,points = nuyen.active_text.split(":").map {|x| x.to_i}
+    if checkpoints(points)
+      modpoints(points - CONSTANT[:nuyen].rassoc(@nuyen)[0])
+      diff = @nuyen - @nuyenrem
+      @nuyen = money
+      @nuyenrem = @nuyen - diff
+      nuyen.active
+    else
+      CONSTANT[:nuyen].find_index(@nuyen)
+    end
   end
 
   def getnuyenrem
     @nuyenrem
   end
 
+  def checkpoints(points)
+    @pointsrem >= points
+  end
+
+  def modpoints(points)
+    @pointsrem -= points
+  end
+
+  def getpointsrem
+    @pointsrem
+  end
+
+
   def initialize(app)
     @app = app
-    @points = 108
+    @points = 120
+    @pointsrem = 108
     @age = 15
     @height = 120
     @weight = 50
@@ -201,6 +227,10 @@ class Mainblock < Gtk::Frame
 
   def setnuyenrem(nuyen)
     @elements[:Nuyenrem][1].text = nuyen.to_s
+  end
+
+  def setpointsrem(points)
+    @elements[:Pointsrem][1].text = points.to_s
   end
 
   def initialize(app)

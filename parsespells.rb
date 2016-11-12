@@ -14,7 +14,7 @@ f.each do |x|
     a[name][subname]={}
   end
 
-  headers=lines[start].split(" ˛ ")
+  headers=lines[start].split(" ˛ ").map {|x| x.to_sym}
   lines[start+1..-1].each do |c|
     spellname = c.split(" ˛ ")[0]
     if subname
@@ -26,6 +26,11 @@ f.each do |x|
       a[name][spellname]["Class"] = name
     end
     c.split(" ˛ ").each_with_index do |d,e|
+      if d.to_i
+        d=d.to_i
+      else
+        d=d.to_sym
+      end
       if subname
         a[name][subname][spellname][headers[e]] = d
       else
