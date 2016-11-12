@@ -27,42 +27,43 @@ class Application
 
   def setname(name)
     @basic.setname(@a.setname(name.text))
-    pp name
   end
 
   def setstreetname(sname)
     @basic.setstreetname(@a.setstreetname(sname.text))
-    pp sname
   end
 
   def setage(age)
     @basic.setage(@a.setage(age.value))
-    pp age
   end
 
   def setgender(gender)
     @basic.setgender(@a.setgender(gender))
-    pp gender
   end
 
   def setmetatype(metatype)
-    pp metatype
+    @basic.setmetatype(@a.setmetatype(metatype))
   end
 
   def setmagetype(magetype)
-    pp magetype
+    @basic.setmagetype(@a.setmagetype(magetype))
   end
 
   def setnuyen(nuyen)
-    pp nuyen
+    @basic.setnuyen(@a.setnuyen(nuyen))
+    setnuyenrem
   end
 
   def setheight(height)
-    pp height
+    @basic.setheight(@a.setheight(height.value))
   end
 
   def setweight(weight)
-    pp weight
+    @basic.setweight(@a.setweight(weight.value))
+  end
+
+  def setnuyenrem
+    @basic.setnuyenrem(@a.getnuyenrem)
   end
 
   def initialize
@@ -90,22 +91,48 @@ class Character
               :points, :metatype, :magetype, :gender
   def setname(name)
     @name = name
-    @name
   end
 
   def setstreetname(sname)
     @streetname = sname
-    @sname
   end
 
   def setage(age)
     @age = age
-    @age
   end
 
   def setgender(gender)
     @gender = gender.active_text
     gender.active
+  end
+
+  def setheight(height)
+    @height = height
+  end
+
+  def setweight(weight)
+    @weight = weight
+  end
+
+  def setmetatype(metatype)
+    @metatype = metatype.active_text.split(":")[0]
+    metatype.active
+  end
+
+  def setmagetype(magetype)
+    @magetype = magetype.active_text.split(":")[0]
+    magetype.active
+  end
+
+  def setnuyen(nuyen)
+    diff=@nuyen - @nuyenrem
+    @nuyen = nuyen.active_text.split(":")[0].to_i
+    @nuyenrem = @nuyen - diff
+    nuyen.active
+  end
+
+  def getnuyenrem
+    @nuyenrem
   end
 
   def initialize(app)
@@ -115,6 +142,7 @@ class Character
     @height = 120
     @weight = 50
     @nuyen = 5000
+    @nuyenrem = 5000
     @attributes = {}
     CONSTANT[:attributes].each do |x|
       @attributes[x] = {}
@@ -169,6 +197,10 @@ class Mainblock < Gtk::Frame
 
   def setweight(weight)
     @elements[:Weight][1].value = weight
+  end
+
+  def setnuyenrem(nuyen)
+    @elements[:Nuyenrem][1].text = nuyen.to_s
   end
 
   def initialize(app)
