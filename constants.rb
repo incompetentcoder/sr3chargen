@@ -1,4 +1,5 @@
 require 'yaml'
+spells = YAML.load_file('spells.yaml')
 CONSTANTS = {
   attributes: %i(Body Quickness Strength Charisma Intelligence Willpower),
   attrinfo: [:BA, :RM, :CM, :BM, :MM, :ACT, :Points],
@@ -17,13 +18,16 @@ CONSTANTS = {
     :Adept => { Points: 25, Spellpoints: 0 },
     :'Adept Magician' => { Points: 30, Spellpoints: 0 }
   },
+
   spelltypes: {
-    :Combat => [], :Detection => [], :Health => [],
-    :Illusion => {:Direct => [], :Indirect => []},
-    :Manipulation => {:Telekinetic => [], :Control => [], :Transformation => [],
-                      :Elemental  => { :Fire => [], :Ice => [], :Light => [],
-                                       :Metal => [], :Sand => [], :Smoke => [],
-                                       :Acid => [] }}
+    :Combat => spells["Combat"], :Detection => spells["Detection"],
+    :Health => spells["Health"],
+    :Illusion => {:Direct => spells["Illusion"]["Direct"], 
+                  :Indirect => spells["Illusion"]["Indirect"]},
+    :Manipulation => {:Telekinetic => spells["Manipulation"]["Telekinetic"],
+                      :Control => spells["Manipulation"]["Control"], 
+                      :Transformation => spells["Manipulation"]["Transformation"],
+                      :Elemental  => spells["Manipulation"]["Elemental"] }
   },
   nuyen: {
     -5 => 500, 0 => 5000, 5 => 20_000, 10 => 90_000, 15 => 200_000,
