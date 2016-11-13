@@ -200,24 +200,22 @@ class Character
   end
 
   def updateattr(attr)
-    @attributes[attr][:ACT] = 0
-    CONSTANT[:attrinfo][0..4].each do |x|
-      @attributes[attr][:ACT] += @attributes[attr][x]
-    end
+    @attributes[attr][:ACT] = @attributes[attr][:BA] + @attributes[attr][:CM] +
+      @attributes[attr][:BM] + @attributes[attr][:MM]
     @attributes[attr]
   end
 
   def setmetamods
     CONSTANT[:metatypes][@metatype][:Racialmods].each_pair do |x,y|
-      @attributes[x][:BA] = @attributes[x][:Points]/2 - y
-      if (y >= 0 && y < @attributes[x][:RM])
+      @attributes[x][:BA] = @attributes[x][:Points]/2 + y
+      if (y >= 0) && (y < @attributes[x][:RM])
         diff = @attributes[x][:RM] - y
         @attributes[x][:Points] -= diff*2
         @attributes[x][:BA] -= diff
         modpoints(diff*-2)
       end
       if @attributes[x][:BA] <= 0
-        diff = 1 - @attributes[x][:BA]
+        diff = 1 + @attributes[x][:BA].abs
         @attributes[x][:BA] += diff
         @attributes[x][:Points] += diff*2
         modpoints(diff*2)
