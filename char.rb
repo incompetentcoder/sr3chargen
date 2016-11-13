@@ -43,6 +43,7 @@ class Application
 
   def setmetatype(metatype)
     @basic.setmetatype(@a.setmetatype(metatype))
+    setmetamods
     setpointsrem
   end
 
@@ -77,6 +78,14 @@ class Application
 
   def setspellpoints
     @guiattributes.setspellpoints(@a.setspellpoints)
+  end
+
+  def setmetamods
+    @a.setmetamods
+  end
+
+  def updateattr(attr)
+    @guiattributes.updateattr(attr,@a.updateattr(attr))
   end
 
 
@@ -189,6 +198,31 @@ class Character
   def getspellpoints
     @spellpoints
   end
+
+  def updateattr(attr)
+    @attributes[attr][:ACT] = 0
+    CONSTANT[:attrinfo][0..4].each do |x|
+      @attributes[attr][:ACT] += @attributes[attr][x]
+    end
+    @attributes[attr]
+  end
+
+  def setmetamods
+    CONSTANT[:metatypes][@metatype][:Racialmods].each_pair do |x,y|
+      @attributes[x][:RM]=y
+      @attributes[x][:BA] = @attributes[x][:Points]/2 - y
+      if @attributes[x][:BA] <= 0
+        diff = 1 - @attributes[x][:BA]
+        @attributes[x][:BA] += diff
+        @attributes[x][:Points] += diff*2
+        modpoints(diff*2)
+      end
+      @app.updateattr(x)
+    end
+  end
+
+      
+
 
   def initialize(app)
     @magetype = :None
@@ -338,6 +372,15 @@ end
 
 class Attributeblock < Gtk::Frame
 
+  def updateattr(attr,datablock)
+    @attributes[attr][:RM].text = datablock[:RM].to_s
+    @attributes[attr][:BA].text = datablock[:BA].to_s
+    @attributes[attr][:CBM].text = (datablock[:CM] + datablock[:BM]).to_s
+    @attributes[attr][:MM].text = datablock[:MM].to_s
+    @attributes[attr][:ACT].text = datablock[:ACT].to_s
+    @attributes[attr][:Points].value = datablock[:Points]
+  end
+
   def setspellpoints(points)
     @special[:Spellpoints].text = points.to_s
   end
@@ -361,7 +404,7 @@ class Attributeblock < Gtk::Frame
     CONSTANT[:attributes].each_with_index do |x, y|
       @attributes[x] = {}
       @table.attach @attributes[x][:Attributes] = Gtk::Label.new(x.to_s), 0, 3, y * 2 + 1, y * 2 + 3, *ATCH
-      @table.attach @attributes[x][:Points] = Gtk::HScale.new(1, 6, 1), 3, 5, y * 2 + 1, y * 2 + 3, *ATCH
+      @table.attach @attributes[x][:Points] = Gtk::HScale.new(2, 12, 2), 3, 5, y * 2 + 1, y * 2 + 3, *ATCH
       @table.attach @attributes[x][:RM] = Gtk::Label.new('0'), 5, 6, y * 2 + 1, y * 2 + 3, *ATCH
       @table.attach @attributes[x][:BA] = Gtk::Label.new('1'), 6, 7, y * 2 + 1, y * 2 + 3, *ATCH
       @table.attach @attributes[x][:CBM] = Gtk::Label.new('0'), 7, 8, y * 2 + 1, y * 2 + 3, *ATCH
