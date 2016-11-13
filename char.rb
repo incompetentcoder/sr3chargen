@@ -21,8 +21,10 @@ class Application
   def save
   end
 
-  def setattribute(attrib, value)
-    pp attrib, value
+  def setattribute(attr, value)
+    @guiattributes.setattribute(attr, @a.setattribute(attr, value.value))
+    updateattr(attr)
+    setpointsrem
   end
 
   def setname(name)
@@ -50,6 +52,7 @@ class Application
   def setmagetype(magetype)
     @basic.setmagetype(@a.setmagetype(magetype))
     setpointsrem
+    setmagic
     setspellpoints
   end
 
@@ -85,9 +88,12 @@ class Application
   end
 
   def updateattr(attr)
-    @guiattributes.updateattr(attr,@a.updateattr(attr))
+    @guiattributes.updateattr(attr, @a.updateattr(attr))
   end
 
+  def setmagic
+    @guiattributes.setmagic(@a.setmagic)
+  end
 
   def initialize
     @windows = Gtk::Window.new
@@ -138,31 +144,39 @@ class Character
   end
 
   def setmetatype(metatype)
-    meta,points = metatype.active_text.split(":")
+    meta, points = metatype.active_text.split(':')
     pointsdiff = points.to_i - CONSTANT[:metatypes][@metatype][:Points]
     if checkpoints(pointsdiff)
       modpoints(pointsdiff)
       @metatype = meta.to_sym
       metatype.active
     else
-      CONSTANT[:metatypes].find_index(@metatype)
+      CONSTANT[:metatypes].find_index { |x| x[0] == @metatype }
     end
   end
 
   def setmagetype(magetype)
-    mage,points = magetype.active_text.split(":")
+    mage, points = magetype.active_text.split(':')
     pointsdiff = points.to_i - CONSTANT[:magetypes][@magetype][:Points]
     if checkpoints(pointsdiff)
       modpoints(pointsdiff)
       @magetype = mage.to_sym
       magetype.active
     else
-      CONSTANT[:magetypes].find_index(@magetype)
+      CONSTANT[:magetypes].find_index { |x| x[0] == @magetype }
     end
   end
 
+  def setmagic
+    @special[:Magic] = if @magetype == :None
+                         0
+                       else
+                         @special[:Essence]
+                       end
+  end
+
   def setnuyen(nuyen)
-    money,points = nuyen.active_text.split(":").map {|x| x.to_i}
+    money, points = nuyen.active_text.split(':').map(&:to_i)
     pointsdiff = points - CONSTANT[:nuyen].rassoc(@nuyen)[0]
     if checkpoints(pointsdiff)
       modpoints(pointsdiff)
@@ -180,7 +194,7 @@ class Character
   end
 
   def checkpoints(points)
-    @pointsrem >= points 
+    @pointsrem >= points
   end
 
   def modpoints(points)
@@ -190,7 +204,7 @@ class Character
   def getpointsrem
     @pointsrem
   end
-  
+
   def setspellpoints
     @spellpoints = CONSTANT[:magetypes][@magetype][:Spellpoints]
   end
@@ -200,33 +214,42 @@ class Character
   end
 
   def updateattr(attr)
-    @attributes[attr][:ACT] = @attributes[attr][:BA] + @attributes[attr][:CM] +
-      @attributes[attr][:BM] + @attributes[attr][:MM]
+    @attributes[attr][:BA] = @attributes[attr][:Points] / 2 +
+                             @attributes[attr][:RM]
+    @attributes[attr][:ACT] = @attributes[attr][:BA] + @attributes[attr][:BM] +
+                              @attributes[attr][:BM] + @attributes[attr][:MM]
     @attributes[attr]
   end
 
+  def setattribute(attr, value)
+    if (value / 2 + @attributes[attr][:RM] > 0) && value.to_i.even?
+      if checkpoints(value - @attributes[attr][:Points])
+        modpoints(value - @attributes[attr][:Points])
+        @attributes[attr][:Points] = value
+      end
+    end
+    @attributes[attr][:Points]
+  end
+
   def setmetamods
-    CONSTANT[:metatypes][@metatype][:Racialmods].each_pair do |x,y|
-      @attributes[x][:BA] = @attributes[x][:Points]/2 + y
+    CONSTANT[:metatypes][@metatype][:Racialmods].each_pair do |x, y|
+      @attributes[x][:BA] = @attributes[x][:Points] / 2 + y
       if (y > @attributes[x][:RM]) && (@attributes[x][:RM] < 0)
         diff = y - @attributes[x][:RM]
-        @attributes[x][:Points] -= diff*2
+        @attributes[x][:Points] -= diff * 2
         @attributes[x][:BA] -= diff
-        modpoints(diff*-2)
+        modpoints(diff * -2)
       end
       if @attributes[x][:BA] <= 0
         diff = 1 + @attributes[x][:BA].abs
         @attributes[x][:BA] += diff
-        @attributes[x][:Points] += diff*2
-        modpoints(diff*2)
+        @attributes[x][:Points] += diff * 2
+        modpoints(diff * 2)
       end
-      @attributes[x][:RM]=y
+      @attributes[x][:RM] = y
       @app.updateattr(x)
     end
   end
-
-      
-
 
   def initialize(app)
     @magetype = :None
@@ -239,6 +262,7 @@ class Character
     @weight = 50
     @nuyen = 5000
     @nuyenrem = 5000
+    @special = { :Essence => 6, :'Body Index' => 0, :Magic => 0 }
     @attributes = {}
     CONSTANT[:attributes].each do |x|
       @attributes[x] = {}
@@ -375,8 +399,7 @@ class Mainblock < Gtk::Frame
 end
 
 class Attributeblock < Gtk::Frame
-
-  def updateattr(attr,datablock)
+  def updateattr(attr, datablock)
     @attributes[attr][:RM].text = datablock[:RM].to_s
     @attributes[attr][:BA].text = datablock[:BA].to_s
     @attributes[attr][:CBM].text = (datablock[:CM] + datablock[:BM]).to_s
@@ -387,6 +410,14 @@ class Attributeblock < Gtk::Frame
 
   def setspellpoints(points)
     @special[:Spellpoints].text = points.to_s
+  end
+
+  def setmagic(magic)
+    @special[:Magic].text = magic.to_s
+  end
+
+  def setattribute(attr, value)
+    @attributes[attr][:Points].value = value
   end
 
   def initialize(app)
@@ -414,6 +445,7 @@ class Attributeblock < Gtk::Frame
       @table.attach @attributes[x][:CBM] = Gtk::Label.new('0'), 7, 8, y * 2 + 1, y * 2 + 3, *ATCH
       @table.attach @attributes[x][:MM] = Gtk::Label.new('0'), 8, 9, y * 2 + 1, y * 2 + 3, *ATCH
       @table.attach @attributes[x][:ACT] = Gtk::Label.new('1'), 9, 10, y * 2 + 1, y * 2 + 3, *ATCH
+      @attributes[x][:Points].set_update_policy(Gtk::UPDATE_CONTINUOUS)
       @attributes[x][:Points].signal_connect('value_changed') do |z|
         @app.setattribute(x, z)
       end
@@ -441,7 +473,7 @@ class Attributeblock < Gtk::Frame
     @table.attach Gtk::Label.new('Magic'), 6, 9, 20, 21, *ATCH
     @table.attach @special[:Magic] = Gtk::Label.new('0'), 9, 10, 20, 21, *ATCH
     @table.attach Gtk::Label.new('Spellpoints'), 6, 9, 21, 22, *ATCH
-    @table.attach @special[:Spellpoints] = Gtk::Label.new('0'), 9, 10 , 21, 22, *ATCH
+    @table.attach @special[:Spellpoints] = Gtk::Label.new('0'), 9, 10, 21, 22, *ATCH
 
     @table.attach Gtk::VSeparator.new, 5, 6, 18, 23, *ATCH
     @table.attach Gtk::HSeparator.new, 0, 10, 13, 14, *ATCH
