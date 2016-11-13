@@ -209,14 +209,20 @@ class Character
 
   def setmetamods
     CONSTANT[:metatypes][@metatype][:Racialmods].each_pair do |x,y|
-      @attributes[x][:RM]=y
       @attributes[x][:BA] = @attributes[x][:Points]/2 - y
+      if (y >= 0 && y < @attributes[x][:RM])
+        diff = @attributes[x][:RM] - y
+        @attributes[x][:Points] -= diff*2
+        @attributes[x][:BA] -= diff
+        modpoints(diff*-2)
+      end
       if @attributes[x][:BA] <= 0
         diff = 1 - @attributes[x][:BA]
         @attributes[x][:BA] += diff
         @attributes[x][:Points] += diff*2
         modpoints(diff*2)
       end
+      @attributes[x][:RM]=y
       @app.updateattr(x)
     end
   end
