@@ -43,10 +43,13 @@ class Application
 
   def setmetatype(metatype)
     @basic.setmetatype(@a.setmetatype(metatype))
+    setpointsrem
   end
 
   def setmagetype(magetype)
     @basic.setmagetype(@a.setmagetype(magetype))
+    setpointsrem
+    setspellpoints
   end
 
   def setnuyen(nuyen)
@@ -71,6 +74,11 @@ class Application
   def setpointsrem
     @basic.setpointsrem(@a.getpointsrem)
   end
+
+  def setspellpoints
+    @guiattributes.setspellpoints(@a.setspellpoints)
+  end
+
 
   def initialize
     @windows = Gtk::Window.new
@@ -121,19 +129,34 @@ class Character
   end
 
   def setmetatype(metatype)
-    @metatype = metatype.active_text.split(":")[0]
-    metatype.active
+    meta,points = metatype.active_text.split(":")
+    pointsdiff = points.to_i - CONSTANT[:metatypes][@metatype][:Points]
+    if checkpoints(pointsdiff)
+      modpoints(pointsdiff)
+      @metatype = meta.to_sym
+      metatype.active
+    else
+      CONSTANT[:metatypes].find_index(@metatype)
+    end
   end
 
   def setmagetype(magetype)
-    @magetype = magetype.active_text.split(":")[0]
-    magetype.active
+    mage,points = magetype.active_text.split(":")
+    pointsdiff = points.to_i - CONSTANT[:magetypes][@magetype][:Points]
+    if checkpoints(pointsdiff)
+      modpoints(pointsdiff)
+      @magetype = mage.to_sym
+      magetype.active
+    else
+      CONSTANT[:magetypes].find_index(@magetype)
+    end
   end
 
   def setnuyen(nuyen)
     money,points = nuyen.active_text.split(":").map {|x| x.to_i}
-    if checkpoints(points)
-      modpoints(points - CONSTANT[:nuyen].rassoc(@nuyen)[0])
+    pointsdiff = points - CONSTANT[:nuyen].rassoc(@nuyen)[0]
+    if checkpoints(pointsdiff)
+      modpoints(pointsdiff)
       diff = @nuyen - @nuyenrem
       @nuyen = money
       @nuyenrem = @nuyen - diff
@@ -148,7 +171,7 @@ class Character
   end
 
   def checkpoints(points)
-    @pointsrem >= points
+    @pointsrem >= points 
   end
 
   def modpoints(points)
@@ -158,9 +181,18 @@ class Character
   def getpointsrem
     @pointsrem
   end
+  
+  def setspellpoints
+    @spellpoints = CONSTANT[:magetypes][@magetype][:Spellpoints]
+  end
 
+  def getspellpoints
+    @spellpoints
+  end
 
   def initialize(app)
+    @magetype = :None
+    @metatype = :Human
     @app = app
     @points = 120
     @pointsrem = 108
@@ -305,6 +337,11 @@ class Mainblock < Gtk::Frame
 end
 
 class Attributeblock < Gtk::Frame
+
+  def setspellpoints(points)
+    @special[:Spellpoints].text = points.to_s
+  end
+
   def initialize(app)
     @app = app
     super()
@@ -356,6 +393,8 @@ class Attributeblock < Gtk::Frame
     @table.attach @special[:'Body Index'] = Gtk::Label.new('0'), 9, 10, 19, 20, *ATCH
     @table.attach Gtk::Label.new('Magic'), 6, 9, 20, 21, *ATCH
     @table.attach @special[:Magic] = Gtk::Label.new('0'), 9, 10, 20, 21, *ATCH
+    @table.attach Gtk::Label.new('Spellpoints'), 6, 9, 21, 22, *ATCH
+    @table.attach @special[:Spellpoints] = Gtk::Label.new('0'), 9, 10 , 21, 22, *ATCH
 
     @table.attach Gtk::VSeparator.new, 5, 6, 18, 23, *ATCH
     @table.attach Gtk::HSeparator.new, 0, 10, 13, 14, *ATCH
