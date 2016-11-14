@@ -21,6 +21,12 @@ class Application
   def save
   end
 
+  def updatepools(all=nil)
+    CONSTANT[:derived][:Pools].each do |x|
+      @guiattributes.updatepool(x,@a.updatepool(x))
+    end 
+  end
+
   def setattribute(attr, value)
     @guiattributes.setattribute(attr, @a.setattribute(attr, value.value))
     updateattr(attr)
@@ -89,10 +95,12 @@ class Application
 
   def updateattr(attr)
     @guiattributes.updateattr(attr, @a.updateattr(attr))
+    updatepools(1) if [:Quickness,:Intelligence,:Willpower].include? attr
   end
 
   def setmagic
     @guiattributes.setmagic(@a.setmagic)
+    updatepools()
   end
 
   def initialize
@@ -143,6 +151,47 @@ class Character
     @weight = weight
   end
 
+  def updatepool(pool)
+    case pool
+    when :'Magic Pool' then updatemagicpool
+    when :'Astral Pool' then updateastralpool
+    when :'Combat Pool' then updatecombatpool
+    when :'Hacking Pool' then updatehackingpool
+    when :'Control Pool' then updatecontrolpool
+    end
+  end
+
+  def updatemagicpool
+    if getmagic && @magetype =~ /Full|Elem|Shamanist|Sorc/
+      @derived[:Pools][:'Magic Pool'] = ((@attributes[:Intelligence][:ACT] + 
+        @attributes[:Willpower][:ACT] + @special[:Magic]) / 2).floor
+    else
+      @derived[:Pools][:'Magic Pool'] = 0
+    end
+  end
+  
+  def updateastralpool
+    if @magetype =~ /Full/
+      @derived[:Pools][:'Astral Pool'] = ((@attributes[:Intelligence][:ACT] +
+        @attributes[:Charisma][:ACT] + @attributes[:Willpower][:ACT]) / 2).floor
+    else
+      @derived[:Pools][:'Astral Pool'] = 0
+    end
+  end
+
+  def updatecombatpool
+    @derived[:Pools][:'Combat Pool'] = ((@attributes[:Intelligence][:ACT] +
+      @attributes[:Quickness][:ACT] + @attributes[:Willpower][:ACT]) / 2).floor
+  end
+
+  def updatehackingpool
+    @derived[:Pools][:'Hacking Pool'] = 0
+  end
+
+  def updatecontrolpool
+    @derived[:Pools][:'Control Pool'] = 0
+  end
+
   def setmetatype(metatype)
     meta, points = metatype.active_text.split(':')
     pointsdiff = points.to_i - CONSTANT[:metatypes][@metatype][:Points]
@@ -173,6 +222,14 @@ class Character
                        else
                          @special[:Essence]
                        end
+  end
+  
+  def getmagetype
+    @magetype
+  end
+
+  def getmagic
+    @special[:Magic] > 0
   end
 
   def setnuyen(nuyen)
@@ -217,7 +274,7 @@ class Character
     @attributes[attr][:BA] = @attributes[attr][:Points] / 2 +
                              @attributes[attr][:RM]
     @attributes[attr][:ACT] = @attributes[attr][:BA] + @attributes[attr][:BM] +
-                              @attributes[attr][:BM] + @attributes[attr][:MM]
+                              @attributes[attr][:CM] + @attributes[attr][:MM]
     @attributes[attr]
   end
 
@@ -262,22 +319,22 @@ class Character
     @weight = 50
     @nuyen = 5000
     @nuyenrem = 5000
+    @derived = {:Pools => {}, :Reaction => {}, :Initiative => {}}
     @special = { :Essence => 6, :'Body Index' => 0, :Magic => 0 }
     @attributes = {}
     CONSTANT[:attributes].each do |x|
       @attributes[x] = {}
       CONSTANT[:attrinfo].each do |y|
         @attributes[x][y] = case y
-                            when :BA
-                              1
-                            when :Points
-                              2
-                            when :ACT
-                              1
-                            else
-                              0
+                            when :BA then 1
+                            when :Points then 2
+                            when :ACT then 1
+                            else 0
                             end
       end
+    end
+    CONSTANT[:derived][:Pools].each do |x|
+      @derived[:Pools][x] = (x =~ /Astral|Magic/) ? 0 : 1
     end
   end
 end
@@ -418,6 +475,10 @@ class Attributeblock < Gtk::Frame
 
   def setattribute(attr, value)
     @attributes[attr][:Points].value = value
+  end
+
+  def updatepool(pool,value)
+    @derived[:Pools][pool].text = value.to_s
   end
 
   def initialize(app)
