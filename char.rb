@@ -27,6 +27,10 @@ class Application
     end 
   end
 
+  def updatereaction
+    @guiattributes.updatereaction(@a.updatereaction)
+  end
+
   def setattribute(attr, value)
     @guiattributes.setattribute(attr, @a.setattribute(attr, value.value))
     updateattr(attr)
@@ -96,6 +100,7 @@ class Application
   def updateattr(attr)
     @guiattributes.updateattr(attr, @a.updateattr(attr))
     updatepools(1) if [:Quickness,:Intelligence,:Willpower].include? attr
+    updatereaction if [:Quickness,:Intelligence].include? attr
   end
 
   def setmagic
@@ -149,6 +154,22 @@ class Character
 
   def setweight(weight)
     @weight = weight
+  end
+
+  def updatereaction
+    @derived[:Reaction][:Base] = ((@attributes[:Quickness][:BA] + 
+                     @attributes[:Intelligence][:BA]) / 2).floor
+    @derived[:Reaction][:CBM] = ((@attributes[:Quickness][:ACT] +
+                     @attributes[:Intelligence][:ACT]) / 2).floor
+    @derived[:Reaction][:Rigg] = 0
+    @derived[:Reaction][:Deck] = 0
+    @derived[:Reaction][:Astral] = 0
+    @derived[:Initiative][:Base] = 1
+    @derived[:Initiative][:CBM] = 1
+    @derived[:Initiative][:Rigg] = 0
+    @derived[:Initiative][:Deck] = 0
+    @derived[:Initiative][:Astral] = 0
+    return [@derived[:Reaction],@derived[:Initiative]]
   end
 
   def updatepool(pool)
@@ -457,11 +478,11 @@ end
 
 class Attributeblock < Gtk::Frame
   def updateattr(attr, datablock)
-    @attributes[attr][:RM].text = datablock[:RM].to_s
-    @attributes[attr][:BA].text = datablock[:BA].to_s
-    @attributes[attr][:CBM].text = (datablock[:CM] + datablock[:BM]).to_s
-    @attributes[attr][:MM].text = datablock[:MM].to_s
-    @attributes[attr][:ACT].text = datablock[:ACT].to_s
+    @attributes[attr][:RM].text = datablock[:RM].to_i.to_s
+    @attributes[attr][:BA].text = datablock[:BA].to_i.to_s
+    @attributes[attr][:CBM].text = (datablock[:CM] + datablock[:BM]).to_i.to_s
+    @attributes[attr][:MM].text = datablock[:MM].to_i.to_s
+    @attributes[attr][:ACT].text = datablock[:ACT].to_i.to_s
     @attributes[attr][:Points].value = datablock[:Points]
   end
 
@@ -475,6 +496,15 @@ class Attributeblock < Gtk::Frame
 
   def setattribute(attr, value)
     @attributes[attr][:Points].value = value
+  end
+
+  def updatereaction(reaction)
+    reaction[0].each_pair do |x,y|
+      @derived[:Reaction][x].text = y.to_s
+    end
+    reaction[1].each_pair do |x,y|
+      @derived[:Initiative][x].text = y.to_s + "D6"
+    end
   end
 
   def updatepool(pool,value)

@@ -21,48 +21,91 @@ class Application
   def save
   end
 
-  def setattribute(attrib, value)
-    pp attrib, value
+  def updatepools(all=nil)
+    CONSTANT[:derived][:Pools].each do |x|
+      @guiattributes.updatepool(x,@a.updatepool(x))
+    end 
+  end
+
+  def updatereaction
+    @guiattributes.updatereaction(@a.updatereaction)
+  end
+
+  def setattribute(attr, value)
+    @guiattributes.setattribute(attr, @a.setattribute(attr, value.value))
+    updateattr(attr)
+    setpointsrem
   end
 
   def setname(name)
     @basic.setname(@a.setname(name.text))
-    pp name
   end
 
   def setstreetname(sname)
     @basic.setstreetname(@a.setstreetname(sname.text))
-    pp sname
   end
 
   def setage(age)
     @basic.setage(@a.setage(age.value))
-    pp age
   end
 
   def setgender(gender)
     @basic.setgender(@a.setgender(gender))
-    pp gender
   end
 
   def setmetatype(metatype)
-    pp metatype
+    @basic.setmetatype(@a.setmetatype(metatype))
+    setmetamods
+    setpointsrem
   end
 
   def setmagetype(magetype)
-    pp magetype
+    @basic.setmagetype(@a.setmagetype(magetype))
+    setpointsrem
+    setmagic
+    setspellpoints
   end
 
   def setnuyen(nuyen)
-    pp nuyen
+    @basic.setnuyen(@a.setnuyen(nuyen))
+    setnuyenrem
+    setpointsrem
   end
 
   def setheight(height)
-    pp height
+    @basic.setheight(@a.setheight(height.value))
   end
 
   def setweight(weight)
-    pp weight
+    @basic.setweight(@a.setweight(weight.value))
+  end
+
+  def setnuyenrem
+    @basic.setnuyenrem(@a.getnuyenrem)
+    setpointsrem
+  end
+
+  def setpointsrem
+    @basic.setpointsrem(@a.getpointsrem)
+  end
+
+  def setspellpoints
+    @guiattributes.setspellpoints(@a.setspellpoints)
+  end
+
+  def setmetamods
+    @a.setmetamods
+  end
+
+  def updateattr(attr)
+    @guiattributes.updateattr(attr, @a.updateattr(attr))
+    updatepools(1) if [:Quickness,:Intelligence,:Willpower].include? attr
+    updatereaction if [:Quickness,:Intelligence].include? attr
+  end
+
+  def setmagic
+    @guiattributes.setmagic(@a.setmagic)
+    updatepools()
   end
 
   def initialize
@@ -89,17 +132,14 @@ class Character
               :points, :metatype, :magetype, :gender
   def setname(name)
     @name = name
-    @name
   end
 
   def setstreetname(sname)
     @streetname = sname
-    @sname
   end
 
   def setage(age)
     @age = age
-    @age
   end
 
   def setgender(gender)
@@ -107,28 +147,214 @@ class Character
     gender.active
   end
 
+  def setheight(height)
+    @height = height
+  end
+
+  def setweight(weight)
+    @weight = weight
+  end
+
+  def updatereaction
+    @derived[:Reaction][:Base] = ((@attributes[:Quickness][:BA] + 
+                     @attributes[:Intelligence][:BA]) / 2).floor
+    @derived[:Reaction][:CBM] = ((@attributes[:Quickness][:ACT] +
+                     @attributes[:Intelligence][:ACT]) / 2).floor
+    @derived[:Reaction][:Rigg] = 0
+    @derived[:Reaction][:Deck] = 0
+    @derived[:Reaction][:Astral] = 0
+    @derived[:Initiative][:Base] = 1
+    @derived[:Initiative][:CBM] = 1
+    @derived[:Initiative][:Rigg] = 0
+    @derived[:Initiative][:Deck] = 0
+    @derived[:Initiative][:Astral] = 0
+    return [@derived[:Reaction],@derived[:Initiative]]
+  end
+
+  def updatepool(pool)
+    case pool
+    when :'Magic Pool' then updatemagicpool
+    when :'Astral Pool' then updateastralpool
+    when :'Combat Pool' then updatecombatpool
+    when :'Hacking Pool' then updatehackingpool
+    when :'Control Pool' then updatecontrolpool
+    end
+  end
+
+  def updatemagicpool
+    if getmagic && @magetype =~ /Full|Elem|Shamanist|Sorc/
+      @derived[:Pools][:'Magic Pool'] = ((@attributes[:Intelligence][:ACT] + 
+        @attributes[:Willpower][:ACT] + @special[:Magic]) / 2).floor
+    else
+      @derived[:Pools][:'Magic Pool'] = 0
+    end
+  end
+  
+  def updateastralpool
+    if @magetype =~ /Full/
+      @derived[:Pools][:'Astral Pool'] = ((@attributes[:Intelligence][:ACT] +
+        @attributes[:Charisma][:ACT] + @attributes[:Willpower][:ACT]) / 2).floor
+    else
+      @derived[:Pools][:'Astral Pool'] = 0
+    end
+  end
+
+  def updatecombatpool
+    @derived[:Pools][:'Combat Pool'] = ((@attributes[:Intelligence][:ACT] +
+      @attributes[:Quickness][:ACT] + @attributes[:Willpower][:ACT]) / 2).floor
+  end
+
+  def updatehackingpool
+    @derived[:Pools][:'Hacking Pool'] = 0
+  end
+
+  def updatecontrolpool
+    @derived[:Pools][:'Control Pool'] = 0
+  end
+
+  def setmetatype(metatype)
+    meta, points = metatype.active_text.split(':')
+    pointsdiff = points.to_i - CONSTANT[:metatypes][@metatype][:Points]
+    if checkpoints(pointsdiff)
+      modpoints(pointsdiff)
+      @metatype = meta.to_sym
+      metatype.active
+    else
+      CONSTANT[:metatypes].find_index { |x| x[0] == @metatype }
+    end
+  end
+
+  def setmagetype(magetype)
+    mage, points = magetype.active_text.split(':')
+    pointsdiff = points.to_i - CONSTANT[:magetypes][@magetype][:Points]
+    if checkpoints(pointsdiff)
+      modpoints(pointsdiff)
+      @magetype = mage.to_sym
+      magetype.active
+    else
+      CONSTANT[:magetypes].find_index { |x| x[0] == @magetype }
+    end
+  end
+
+  def setmagic
+    @special[:Magic] = if @magetype == :None
+                         0
+                       else
+                         @special[:Essence]
+                       end
+  end
+  
+  def getmagetype
+    @magetype
+  end
+
+  def getmagic
+    @special[:Magic] > 0
+  end
+
+  def setnuyen(nuyen)
+    money, points = nuyen.active_text.split(':').map(&:to_i)
+    pointsdiff = points - CONSTANT[:nuyen].rassoc(@nuyen)[0]
+    if checkpoints(pointsdiff)
+      modpoints(pointsdiff)
+      diff = @nuyen - @nuyenrem
+      @nuyen = money
+      @nuyenrem = @nuyen - diff
+      nuyen.active
+    else
+      CONSTANT[:nuyen].find_index(@nuyen)
+    end
+  end
+
+  def getnuyenrem
+    @nuyenrem
+  end
+
+  def checkpoints(points)
+    @pointsrem >= points
+  end
+
+  def modpoints(points)
+    @pointsrem -= points
+  end
+
+  def getpointsrem
+    @pointsrem
+  end
+
+  def setspellpoints
+    @spellpoints = CONSTANT[:magetypes][@magetype][:Spellpoints]
+  end
+
+  def getspellpoints
+    @spellpoints
+  end
+
+  def updateattr(attr)
+    @attributes[attr][:BA] = @attributes[attr][:Points] / 2 +
+                             @attributes[attr][:RM]
+    @attributes[attr][:ACT] = @attributes[attr][:BA] + @attributes[attr][:BM] +
+                              @attributes[attr][:CM] + @attributes[attr][:MM]
+    @attributes[attr]
+  end
+
+  def setattribute(attr, value)
+    if (value / 2 + @attributes[attr][:RM] > 0) && value.to_i.even?
+      if checkpoints(value - @attributes[attr][:Points])
+        modpoints(value - @attributes[attr][:Points])
+        @attributes[attr][:Points] = value
+      end
+    end
+    @attributes[attr][:Points]
+  end
+
+  def setmetamods
+    CONSTANT[:metatypes][@metatype][:Racialmods].each_pair do |x, y|
+      @attributes[x][:BA] = @attributes[x][:Points] / 2 + y
+      if (y > @attributes[x][:RM]) && (@attributes[x][:RM] < 0)
+        diff = y - @attributes[x][:RM]
+        @attributes[x][:Points] -= diff * 2
+        @attributes[x][:BA] -= diff
+        modpoints(diff * -2)
+      end
+      if @attributes[x][:BA] <= 0
+        diff = 1 + @attributes[x][:BA].abs
+        @attributes[x][:BA] += diff
+        @attributes[x][:Points] += diff * 2
+        modpoints(diff * 2)
+      end
+      @attributes[x][:RM] = y
+      @app.updateattr(x)
+    end
+  end
+
   def initialize(app)
+    @magetype = :None
+    @metatype = :Human
     @app = app
-    @points = 108
+    @points = 120
+    @pointsrem = 108
     @age = 15
     @height = 120
     @weight = 50
     @nuyen = 5000
+    @nuyenrem = 5000
+    @derived = {:Pools => {}, :Reaction => {}, :Initiative => {}}
+    @special = { :Essence => 6, :'Body Index' => 0, :Magic => 0 }
     @attributes = {}
     CONSTANT[:attributes].each do |x|
       @attributes[x] = {}
       CONSTANT[:attrinfo].each do |y|
         @attributes[x][y] = case y
-                            when :BA
-                              1
-                            when :Points
-                              2
-                            when :ACT
-                              1
-                            else
-                              0
+                            when :BA then 1
+                            when :Points then 2
+                            when :ACT then 1
+                            else 0
                             end
       end
+    end
+    CONSTANT[:derived][:Pools].each do |x|
+      @derived[:Pools][x] = (x =~ /Astral|Magic/) ? 0 : 1
     end
   end
 end
@@ -168,6 +394,14 @@ class Mainblock < Gtk::Frame
 
   def setweight(weight)
     @elements[:Weight][1].value = weight
+  end
+
+  def setnuyenrem(nuyen)
+    @elements[:Nuyenrem][1].text = nuyen.to_s
+  end
+
+  def setpointsrem(points)
+    @elements[:Pointsrem][1].text = points.to_s
   end
 
   def initialize(app)
@@ -242,6 +476,40 @@ class Mainblock < Gtk::Frame
 end
 
 class Attributeblock < Gtk::Frame
+  def updateattr(attr, datablock)
+    @attributes[attr][:RM].text = datablock[:RM].to_i.to_s
+    @attributes[attr][:BA].text = datablock[:BA].to_i.to_s
+    @attributes[attr][:CBM].text = (datablock[:CM] + datablock[:BM]).to_i.to_s
+    @attributes[attr][:MM].text = datablock[:MM].to_i.to_s
+    @attributes[attr][:ACT].text = datablock[:ACT].to_i.to_s
+    @attributes[attr][:Points].value = datablock[:Points]
+  end
+
+  def setspellpoints(points)
+    @special[:Spellpoints].text = points.to_s
+  end
+
+  def setmagic(magic)
+    @special[:Magic].text = magic.to_s
+  end
+
+  def setattribute(attr, value)
+    @attributes[attr][:Points].value = value
+  end
+
+  def updatereaction(reaction)
+    reaction[0].each_pair do |x,y|
+      @derived[:Reaction][x].text = y.to_s
+    end
+    reaction[1].each_pair do |x,y|
+      @derived[:Initiative][x].text = y.to_s + "D6"
+    end
+  end
+
+  def updatepool(pool,value)
+    @derived[:Pools][pool].text = value.to_s
+  end
+
   def initialize(app)
     @app = app
     super()
@@ -261,12 +529,13 @@ class Attributeblock < Gtk::Frame
     CONSTANT[:attributes].each_with_index do |x, y|
       @attributes[x] = {}
       @table.attach @attributes[x][:Attributes] = Gtk::Label.new(x.to_s), 0, 3, y * 2 + 1, y * 2 + 3, *ATCH
-      @table.attach @attributes[x][:Points] = Gtk::HScale.new(1, 6, 1), 3, 5, y * 2 + 1, y * 2 + 3, *ATCH
+      @table.attach @attributes[x][:Points] = Gtk::HScale.new(2, 12, 2), 3, 5, y * 2 + 1, y * 2 + 3, *ATCH
       @table.attach @attributes[x][:RM] = Gtk::Label.new('0'), 5, 6, y * 2 + 1, y * 2 + 3, *ATCH
       @table.attach @attributes[x][:BA] = Gtk::Label.new('1'), 6, 7, y * 2 + 1, y * 2 + 3, *ATCH
       @table.attach @attributes[x][:CBM] = Gtk::Label.new('0'), 7, 8, y * 2 + 1, y * 2 + 3, *ATCH
       @table.attach @attributes[x][:MM] = Gtk::Label.new('0'), 8, 9, y * 2 + 1, y * 2 + 3, *ATCH
       @table.attach @attributes[x][:ACT] = Gtk::Label.new('1'), 9, 10, y * 2 + 1, y * 2 + 3, *ATCH
+      @attributes[x][:Points].set_update_policy(Gtk::UPDATE_CONTINUOUS)
       @attributes[x][:Points].signal_connect('value_changed') do |z|
         @app.setattribute(x, z)
       end
@@ -293,6 +562,8 @@ class Attributeblock < Gtk::Frame
     @table.attach @special[:'Body Index'] = Gtk::Label.new('0'), 9, 10, 19, 20, *ATCH
     @table.attach Gtk::Label.new('Magic'), 6, 9, 20, 21, *ATCH
     @table.attach @special[:Magic] = Gtk::Label.new('0'), 9, 10, 20, 21, *ATCH
+    @table.attach Gtk::Label.new('Spellpoints'), 6, 9, 21, 22, *ATCH
+    @table.attach @special[:Spellpoints] = Gtk::Label.new('0'), 9, 10, 21, 22, *ATCH
 
     @table.attach Gtk::VSeparator.new, 5, 6, 18, 23, *ATCH
     @table.attach Gtk::HSeparator.new, 0, 10, 13, 14, *ATCH
