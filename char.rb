@@ -20,8 +20,13 @@ class Application
 
   def save
   end
+  
+  def addskill(attr,skill,special)
+    @notebook.skill.addskill(@a.addskill(attr,skill,special))
+    setpointsrem
+  end
 
-  def updatepools(all=nil)
+  def updatepools
     CONSTANT[:derived][:Pools].each do |x|
       @guiattributes.updatepool(x,@a.updatepool(x))
     end 
@@ -29,6 +34,7 @@ class Application
 
   def updatereaction
     @guiattributes.updatereaction(@a.updatereaction)
+    @guiattributes.updateinitiative(@a.updateinitiative)
   end
 
   def setattribute(attr, value)
@@ -99,13 +105,14 @@ class Application
 
   def updateattr(attr)
     @guiattributes.updateattr(attr, @a.updateattr(attr))
-    updatepools(1) if [:Quickness,:Intelligence,:Willpower].include? attr
+    updatepools if [:Quickness,:Intelligence,:Willpower].include? attr
     updatereaction if [:Quickness,:Intelligence].include? attr
   end
 
   def setmagic
     @guiattributes.setmagic(@a.setmagic)
-    updatepools()
+    updatepools
+    updatereaction
   end
 
   def initialize
@@ -156,20 +163,66 @@ class Character
     @weight = weight
   end
 
+  def addskill(attr,skill,special)
+    if checkpoints(1)
+      modpoints(1)
+      if special
+        @activeskills[attr][skill] = {special => [2,0]}
+      else
+        @activeskills[attr][skill] = [1]
+      end
+      return [attr,skill,special]
+    else 0
+    end
+  end
+    
+
+  def vcr
+    @cyberware[:Bodyware].find {|x| x[0] == :VCR}
+  end
+
+  def deck
+  end
+
+  def cinit
+    all = @cyberware[:Bodyware].find_all {|x| x[1][:Stats][:Initiative]}
+    sum = all.inject(0) {|sum,x| sum + x[1][:Stats][:Initiative]}
+  end
+
+  def binit
+    all = @bioware.find_all {|x| x[1][:Stats][:Initiative]}
+    sum = all.inject(0) {|sum,x| sum + x[1][:Stats][:Initiative]}
+  end
+
+  def reaccbm
+    reac = 0
+    [:Intelligence,:Quickness].each do |x|
+      [:BA,:CM,:BM,:MM]. each do |y|
+        reac += @attributes[x][y]
+      end
+    end
+    (reac / 2).floor
+  end
+
   def updatereaction
     @derived[:Reaction][:Base] = ((@attributes[:Quickness][:BA] + 
                      @attributes[:Intelligence][:BA]) / 2).floor
-    @derived[:Reaction][:CBM] = ((@attributes[:Quickness][:ACT] +
-                     @attributes[:Intelligence][:ACT]) / 2).floor
-    @derived[:Reaction][:Rigg] = 0
-    @derived[:Reaction][:Deck] = 0
-    @derived[:Reaction][:Astral] = 0
+    @derived[:Reaction][:CBM] = reaccbm
+    @derived[:Reaction][:Rigg] = vcr ? vcr[1][:Stats][:Reaction] +
+      @derived[:Reaction][:Base] : @derived[:Reaction][:Base]
+    @derived[:Reaction][:Deck] = @derived[:Reaction][:Base]
+    @derived[:Reaction][:Astral] = getmagic ? @attributes[:Intelligence][:ACT] +
+      20 : @attributes[:Intelligence][:ACT]
+    @derived[:Reaction]
+  end
+  
+  def updateinitiative 
     @derived[:Initiative][:Base] = 1
-    @derived[:Initiative][:CBM] = 1
-    @derived[:Initiative][:Rigg] = 0
-    @derived[:Initiative][:Deck] = 0
-    @derived[:Initiative][:Astral] = 0
-    return [@derived[:Reaction],@derived[:Initiative]]
+    @derived[:Initiative][:CBM] = 1 + cinit + binit
+    @derived[:Initiative][:Rigg] = vcr ? vcr[1][:Stats][:Initiative] +1 : 1
+    @derived[:Initiative][:Deck] = deck ? deck : 1
+    @derived[:Initiative][:Astral] = getmagic ? 2 : 1
+    @derived[:Initiative]
   end
 
   def updatepool(pool)
@@ -340,10 +393,16 @@ class Character
     @weight = 50
     @nuyen = 5000
     @nuyenrem = 5000
+    @activeskills = {}
+    
+    @cyberware = {:Bodyware => {}, :Senseware => {}, :Cyberlimbs => {},
+                  :Headware => {}}
+    @bioware = {}
     @derived = {:Pools => {}, :Reaction => {}, :Initiative => {}}
     @special = { :Essence => 6, :'Body Index' => 0, :Magic => 0 }
     @attributes = {}
     CONSTANT[:attributes].each do |x|
+      @activeskills[x]={}
       @attributes[x] = {}
       CONSTANT[:attrinfo].each do |y|
         @attributes[x][y] = case y
@@ -499,11 +558,14 @@ class Attributeblock < Gtk::Frame
   end
 
   def updatereaction(reaction)
-    reaction[0].each_pair do |x,y|
-      @derived[:Reaction][x].text = y.to_s
+    reaction.each_pair do |x,y|
+      @derived[:Reaction][x].text = y.to_i.to_s
     end
-    reaction[1].each_pair do |x,y|
-      @derived[:Initiative][x].text = y.to_s + "D6"
+  end
+  
+  def updateinitiative(initiative)
+    initiative.each_pair do |x,y|
+      @derived[:Initiative][x].text = y.to_i.to_s + "D6"
     end
   end
 
@@ -576,28 +638,81 @@ class Attributeblock < Gtk::Frame
 end
 
 class Skillblock < Gtk::ScrolledWindow
+  
+  def updatecombo(change,count)
+    count.times do |x|
+      @header[change][1].remove_text(0)
+    end
+    @header[change][1].active=-1
+  end
+
+  def getattr
+    @header[:Attribute][1].active_text.to_sym
+  end
+
+  def getskill
+    @header[:Skill][1].active_text.to_sym
+  end
+
+  def getspecial
+    if @header[:Specialization][1].active_text
+      @header[:Specialization][1].active_text.to_sym
+    end
+  end
+
+  def addskill(x)
+    if x != 0
+      row=@skillentries.count+3
+      @skillentries[x[1]] = 
+        [Gtk::Label.new(x[1].to_s),Gtk::Label.new(x[2].to_s),
+         Gtk::HScale.new(1,6,1),Gtk::Label.new(x[2] ? "0,2" : "1"),
+         Gtk::Button.new(Gtk::Stock::NO)]
+      @table.attach @skillentries[x[1]][0],0,4,row,row+1,*ATCH
+      @table.attach @skillentries[x[1]][1],4,8,row,row+1,*ATCH
+      @table.attach @skillentries[x[1]][2],8,10,row,row+1,*ATCH
+      @table.attach @skillentries[x[1]][3],10,11,row,row+1,*ATCH
+      @table.attach @skillentries[x[1]][4],11,12,row,row+1,*ATCH
+      @table.show_all
+    end
+  end
+
   def initialize(app)
     @app = app
     super()
     @table = Gtk::Table.new(12, 5, homogenous = true)
+    @skillentries = {}
     @skills = {}
+    @skillcount=0
+    @speccount=0
     @header = {}
     @header2 = {}
     @header[:Attribute] = [Gtk::Label.new('Attribute'), Gtk::ComboBox.new]
     @header[:Skill] = [Gtk::Label.new('Skill'), Gtk::ComboBox.new]
     @header[:Specialization] = [Gtk::Label.new('Specialization'), Gtk::ComboBox.new]
     @header[:ADD] = Gtk::Button.new('Add')
+    @header[:ADD].sensitive = false
+
+    @header[:ADD].signal_connect('clicked') do |x|
+      @app.addskill(getattr,getskill,getspecial)
+    end
 
     @header[:Attribute][1].signal_connect('changed') do |x|
-      @header[:Skill][1].active = 0
-      i = 0
-      while @header[:Skill][1].active_text != NIL
-        @header[:Skill][1].remove_text(i)
-        @header[:Skill][1].active += 1
-      end
-      @header[:Skill][1].active = -1
-      CONSTANT[:activeskills][x.active_text.to_sym].each do |y|
+      updatecombo(:Skill,@skillcount)
+      @skillcount = CONSTANT[:activeskills][x.active_text.to_sym].count
+      @header[:ADD].sensitive = false
+      CONSTANT[:activeskills][x.active_text.to_sym].each_key do |y|
         @header[:Skill][1].append_text(y.to_s)
+      end
+    end
+
+    @header[:Skill][1].signal_connect('changed') do |x|
+      updatecombo(:Specialization,@speccount)
+      if x.active_text
+        @speccount = CONSTANT[:activeskills][getattr][x.active_text.to_sym].count
+        @header[:ADD].sensitive = true
+        CONSTANT[:activeskills][getattr][x.active_text.to_sym].each do |y|
+          @header[:Specialization][1].append_text(y.to_s)
+        end
       end
     end
 
@@ -615,7 +730,7 @@ class Skillblock < Gtk::ScrolledWindow
     @table.attach @header2[:Skill] = Gtk::Label.new('Skill'), 0, 4, 2, 3, *ATCH
     @table.attach @header2[:Specialization] = Gtk::Label.new('Specialization'), 4, 8, 2, 3, *ATCH
     @table.attach @header2[:Points] = Gtk::Label.new('Points'), 8, 10, 2, 3, *ATCH
-    @table.attach @header2[:Value] = Gtk::Label.new('Value'), 10, 12, 2, 3, *ATCH
+    @table.attach @header2[:Value] = Gtk::Label.new('Value'), 10, 11, 2, 3, *ATCH
     @table.n_rows = 4
     @table.n_columns = 12
     add_with_viewport(@table)
@@ -671,7 +786,7 @@ class Bioblock < Gtk::ScrolledWindow
 end
 
 class Notebook < Gtk::Notebook
-  #  attr_accessor self
+  attr_accessor :skill
   def initialize(app)
     @app = app
     super()
