@@ -21,8 +21,8 @@ class Application
   def save
   end
 
-  def checkskills(attr,value,oldvalue)
-    @a.checkskills(attr,value,oldvalue)
+  def checkskills(attr,value,oldvalue,check=0)
+    @a.checkskills(attr,value,oldvalue,check)
     setpointsrem
   end
 
@@ -184,7 +184,7 @@ class Character
     CONSTANT[:activeskills].find {|x| x[1].include? skill}[0]
   end
 
-  def checkskills(attr,value,oldvalue)
+  def checkskills(attr,value,oldvalue,check)
     totalpoints = 0, points = {}
     @activeskills[attr].each do |x|
       if value > oldvalue
@@ -210,7 +210,7 @@ class Character
       end
     end
     totalpoints = points.values.inject(0) {|totalpoints,y| totalpoints+y}
-    if checkpoints(totalpoints)
+    if checkpoints(totalpoints) || check == 1
       @activeskills[attr].each {|x| x[1][:Points]+=points[x[0]]}
       modpoints(totalpoints)
       true
@@ -436,6 +436,9 @@ class Character
   end
 
   def updateattr(attr)
+    @app.checkskills(attr, @attributes[attr][:BA] + @attributes[attr][:BM] +
+                     @attributes[attr][:CM] + @attributes[attr][:MM],
+                     @attributes[attr][:ACT],1)
     @attributes[attr][:BA] = @attributes[attr][:Points] / 2 +
                              @attributes[attr][:RM]
     @attributes[attr][:ACT] = @attributes[attr][:BA] + @attributes[attr][:BM] +
