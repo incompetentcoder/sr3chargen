@@ -263,7 +263,7 @@ class Character
     if checkpoints(1)
       modpoints(1)
       @activeskills[attr][skill]=
-        {Points: 1, Specialization: special ? special : 0, Value: 1}
+        {Points: 1, Specialization: special ? special : nil, Value: 1}
       @activeskills[attr][skill][:Value] = 1
       @activeskills[attr][skill][:Points] = 1
       [attr,skill,special]
@@ -738,7 +738,8 @@ class Skillblock < Gtk::ScrolledWindow
   def skilllvl(skill,data)
     @skillentries[skill][2].value = data[:Value]
     @skillentries[skill][3].text = 
-      data[:Special] ? "#{data[:Value]-1}|#{data[:Value]-1}" : "#{data[:Value]}"
+      data[:Specialization] ? 
+      "#{(data[:Value]-1).to_i}|#{(data[:Value]+1).to_i}" : "#{(data[:Value]).to_i}"
   end
   
   def updatecombo(change,count)
