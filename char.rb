@@ -815,7 +815,7 @@ class Skillblock < Gtk::ScrolledWindow
     @header[:ADD].sensitive = false
 
     @header[:ADD].signal_connect('clicked') do |x|
-      @app.addskill(getattr,getskill,getspecial)
+      @app.addskill(getattr,getskill,getspecial) unless @skillentries.include? getskill
     end
 
     @header[:Attribute][1].signal_connect('changed') do |x|
