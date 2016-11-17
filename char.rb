@@ -20,6 +20,23 @@ class Application
 
   def save
   end
+
+  def checkskills(attr,value,oldvalue)
+    @a.checkskills(attr,value,oldvalue)
+    setpointsrem
+  end
+
+  def skilllvl(skill,value)
+    @notebook.skill.skilllvl(skill,@a.skilllvl(skill,value.value))
+    setpointsrem
+  end
+
+  def delskill(skill)
+    @a.delskill(skill[1])
+    @notebook.skill.delskill(skill[1])
+    setpointsrem
+  end
+
   
   def addskill(attr,skill,special)
     @notebook.skill.addskill(@a.addskill(attr,skill,special))
@@ -163,15 +180,93 @@ class Character
     @weight = weight
   end
 
+  def findattr(skill)
+    CONSTANT[:activeskills].find {|x| x[1].include? skill}[0]
+  end
+
+  def checkskills(attr,value,oldvalue)
+    totalpoints = 0, points = {}
+    @activeskills[attr].each do |x|
+      if value > oldvalue
+        if x[1][:Value] >= value
+          points[x[0]] = (value - oldvalue) * -1
+        else
+          if x[1][:Value] > oldvalue
+            points[x[0]] = (value - x[1][:Value]) * -1
+          else
+            points[x[0]] = 0
+          end
+        end
+      else
+        if x[1][:Value] > value
+          if x[1][:Value] > oldvalue
+            points[x[0]] = (oldvalue - value)
+          else
+            points[x[0]] = (x[1][:Value] - value)
+          end
+        else
+          points[x[0]] = 0
+        end
+      end
+    end
+    totalpoints = points.values.inject(0) {|totalpoints,y| totalpoints+y}
+    if checkpoints(totalpoints)
+      @activeskills[attr].each {|x| x[1][:Points]+=points[x[0]]}
+      modpoints(totalpoints)
+      true
+    else
+      false
+    end
+  end
+
+  def skilllvl(skill,value)
+    attrib = findattr(skill)
+    current = @activeskills[attrib][skill][:Value]
+    if value < current
+      if current > @attributes[attrib][:ACT]
+        if value > @attributes[attrib][:ACT]
+          points = ((current - value) * -2)
+        else
+          points = (((current - @attributes[attrib][:ACT]) *-2) +
+                    ((@attributes[attrib][:ACT] - value) *-1))
+        end
+      else
+        points = ((current - value)*-1)
+      end
+    else
+      if current > @attributes[attrib][:ACT]
+        points = ((value - current)*2)
+      else
+        if value > @attributes[attrib][:ACT]
+        points = (((value - @attributes[attrib][:ACT]) *2) +
+                  ((@attributes[attrib][:ACT] - current) *1))
+        else
+          points = (value - current)
+        end
+      end
+    end
+    if checkpoints(points)
+      modpoints(points)
+      @activeskills[attrib][skill][:Value] = value
+      @activeskills[attrib][skill][:Points] += points
+    end
+    @activeskills[attrib][skill]
+  end
+
+  def delskill(skill)
+    attrib = findattr(skill)
+    modpoints(@activeskills[attrib][skill][:Points] * -1)
+    @activeskills[attrib].delete(skill)
+  end
+
   def addskill(attr,skill,special)
     if checkpoints(1)
       modpoints(1)
-      if special
-        @activeskills[attr][skill] = {special => [2,0]}
-      else
-        @activeskills[attr][skill] = [1]
-      end
-      return [attr,skill,special]
+      @activeskills[attr][skill]=
+        {Points: 1, Specialization: special ? special : 0, Value: 1}
+      @activeskills[attr][skill][:Value] = 1
+      @activeskills[attr][skill][:Points] = 1
+      [attr,skill,special]
     else 0
     end
   end
@@ -291,11 +386,7 @@ class Character
   end
 
   def setmagic
-    @special[:Magic] = if @magetype == :None
-                         0
-                       else
-                         @special[:Essence]
-                       end
+    @special[:Magic] = @magetype == :None ? 0 : @special[:Essence]
   end
   
   def getmagetype
@@ -355,8 +446,10 @@ class Character
   def setattribute(attr, value)
     if (value / 2 + @attributes[attr][:RM] > 0) && value.to_i.even?
       if checkpoints(value - @attributes[attr][:Points])
-        modpoints(value - @attributes[attr][:Points])
-        @attributes[attr][:Points] = value
+        if @app.checkskills(attr,value/2,@attributes[attr][:ACT])
+          modpoints(value - @attributes[attr][:Points])
+          @attributes[attr][:Points] = value
+        end
       end
     end
     @attributes[attr][:Points]
@@ -638,6 +731,12 @@ class Attributeblock < Gtk::Frame
 end
 
 class Skillblock < Gtk::ScrolledWindow
+
+  def skilllvl(skill,data)
+    @skillentries[skill][2].value = data[:Value]
+    @skillentries[skill][3].text = 
+      data[:Special] ? "#{data[:Value]-1}|#{data[:Value]-1}" : "#{data[:Value]}"
+  end
   
   def updatecombo(change,count)
     count.times do |x|
@@ -662,24 +761,44 @@ class Skillblock < Gtk::ScrolledWindow
 
   def addskill(x)
     if x != 0
-      row=@skillentries.count+3
+      row=@skillentries.count
       @skillentries[x[1]] = 
         [Gtk::Label.new(x[1].to_s),Gtk::Label.new(x[2].to_s),
-         Gtk::HScale.new(1,6,1),Gtk::Label.new(x[2] ? "0,2" : "1"),
+         Gtk::HScale.new(1,6,1),Gtk::Label.new(x[2] ? "0|2" : "1"),
          Gtk::Button.new(Gtk::Stock::NO)]
-      @table.attach @skillentries[x[1]][0],0,4,row,row+1,*ATCH
-      @table.attach @skillentries[x[1]][1],4,8,row,row+1,*ATCH
-      @table.attach @skillentries[x[1]][2],8,10,row,row+1,*ATCH
-      @table.attach @skillentries[x[1]][3],10,11,row,row+1,*ATCH
-      @table.attach @skillentries[x[1]][4],11,12,row,row+1,*ATCH
-      @table.show_all
+      @skillentries[x[1]][4].signal_connect('clicked') { |y| @app.delskill(x) }
+      @skillentries[x[1]][2].signal_connect('value_changed') { |y| 
+        @app.skilllvl(x[1],y)}
+      @table2.attach @skillentries[x[1]][0],0,4,row,row+1,*ATCH
+      @table2.attach @skillentries[x[1]][1],4,8,row,row+1,*ATCH
+      @table2.attach @skillentries[x[1]][2],8,10,row,row+1,*ATCH
+      @table2.attach @skillentries[x[1]][3],10,11,row,row+1,*ATCH
+      @table2.attach @skillentries[x[1]][4],11,12,row,row+1,*ATCH
+      @table2.show_all
+    end
+  end
+
+  def delskill(skill)
+    row = @table2.child_get_property(
+      @table2.children.find {|x| x.text == skill.to_s if x.class == Gtk::Label},
+      'top-attach')
+    @skillentries[skill].each {|x| @table2.remove(x)}
+    @skillentries.delete(skill)
+    @table2.children.each do |x|
+      top = @table2.child_get_property(x,'top-attach')
+      if top > row
+        @table2.child_set_property(x,'top-attach',top-1)
+        @table2.child_set_property(x,'bottom-attach',top)
+      end
     end
   end
 
   def initialize(app)
     @app = app
     super()
+    @maintable = Gtk::Table.new(1,2)
     @table = Gtk::Table.new(12, 5, homogenous = true)
+    @table2 = Gtk::Table.new(12,5, homogenous = true)
     @skillentries = {}
     @skills = {}
     @skillcount=0
@@ -731,9 +850,11 @@ class Skillblock < Gtk::ScrolledWindow
     @table.attach @header2[:Specialization] = Gtk::Label.new('Specialization'), 4, 8, 2, 3, *ATCH
     @table.attach @header2[:Points] = Gtk::Label.new('Points'), 8, 10, 2, 3, *ATCH
     @table.attach @header2[:Value] = Gtk::Label.new('Value'), 10, 11, 2, 3, *ATCH
-    @table.n_rows = 4
+    @table.n_rows = 3
     @table.n_columns = 12
-    add_with_viewport(@table)
+    @maintable.attach @table,0,1,0,1,*ATCH
+    @maintable.attach @table2,0,1,1,2,*ATCH
+    add_with_viewport(@maintable)
   end
 end
 
