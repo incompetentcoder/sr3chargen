@@ -37,7 +37,7 @@ Intelligence
 Intelligence is a sign of many factors, not the least of which is your ability to analyze information, remember things, how fast you can learn and adapt. A low Intelligence doesn't mean you are stupid or unable to learn, but you may have trouble vocalizing what you know, may be easily distracted, have perception problems or rely on their gut instead of thinking things through. Those with high Intelligence may simply have had more chances to learn information, or may be gifted with the ability to notice small details, think laterally, or a gift of multi-tasking. School learning is not always an indicator of Intelligence.
 
 Willpower
-Willpower is a measure of your raw determination and self-control. A person with a low Willpower might be easily led or who crumple in the face of danger. Those with high Willpower have a never say die attitude or are capable of pushing themselves far beyond the average man. John McClane is an example of this sort of thing. Willpower is also a deciding factor on both sides of Magic, both for casters and resisting mental magical manipulations.
+Willpower is a measure of your raw determination and self-control. A person with a low Willpower might be easily led or who crumple in the face of da with high Willpower have a never say die attitude or are capable of pushing themselves far beyond the average man. John McClane is an example of this sort of thing. Willpower is also a deciding factor on both sides of magic, both for casters and resisting mental magical manipulations.
 
 Special Attributes
 These attributes do not follow the above chart, and can be modified by various outside influences and/or are determined by other attributes.
@@ -48,8 +48,8 @@ Reaction is a measure of how quickly a character can react in the face of danger
 Essence
 Essence is a measure of the nebulous things that make up the character, their life force and cohesive strength. Things that corrupt or invade the body such as drugs or cyberware decrease a character's Essence. A starting PC will have an Essence of 6, and this number is reduced due to cyberware, some toxins, long-term drug or chip use, and some paracritters.
 
-Bio Index
-Bio Index is an attribute that measures the amount of invasive bioware the character may have installed. This score may not exceed the character's Essence Rating +3, nor may it exceed 9 total points regardless of Essence.
+Body Index
+Body Index is an attribute that measures the amount of invasive bioware the character may have installed. This score may not exceed the character's Essence Rating +3, nor may it exceed 9 total points regardless of Essence.
 
 Magic
 Magic is a measure of the character's ability to perform magical tasks such as summoning elementals or casting spells. The higher the Magic Rating, the more magic the character is able to handle without causing harm to themselves. A character with a 0 in Magic is unable to use magic at all. Some drugs, cyberware and bioware all have an impact on the character's Magic Rating.

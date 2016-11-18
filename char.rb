@@ -642,11 +642,11 @@ class Attributeblock < Gtk::Frame
   end
 
   def setspellpoints(points)
-    @special[:Spellpoints].text = points.to_s
+    @special[:Spellpoints][1].text = points.to_s
   end
 
   def setmagic(magic)
-    @special[:Magic].text = magic.to_s
+    @special[:Magic][1].text = magic.to_s
   end
 
   def setattribute(attr, value)
@@ -681,7 +681,7 @@ class Attributeblock < Gtk::Frame
     @table = Gtk::Table.new(10, 7, homogenous = true)
     @attributes = {}
     @derived = {}
-    @special = {}
+    @special = {:Essence => [],:Magic => [], :'Body Index' => [], :Spellpoints => []}
     @header = {}
     @table.attach @header[:Attributes] = Gtk::Label.new('Attributes'), 0, 3, 0, 1, *ATCH
     @table.attach @header[:Points] = Gtk::Label.new('Points'), 3, 5, 0, 1, *ATCH
@@ -730,14 +730,19 @@ class Attributeblock < Gtk::Frame
       @table.attach @derived[:Pools][x] = Gtk::Label.new('0'), 4, 5, 18 + y, 19 + y, *ATCH
     end
 
-    @table.attach Gtk::Label.new('Essence'), 6, 9, 18, 19, *ATCH
-    @table.attach @special[:Essence] = Gtk::Label.new('6'), 9, 10, 18, 19, *ATCH
-    @table.attach Gtk::Label.new('Body Index'), 6, 9, 19, 20, *ATCH
-    @table.attach @special[:'Body Index'] = Gtk::Label.new('0'), 9, 10, 19, 20, *ATCH
-    @table.attach Gtk::Label.new('Magic'), 6, 9, 20, 21, *ATCH
-    @table.attach @special[:Magic] = Gtk::Label.new('0'), 9, 10, 20, 21, *ATCH
-    @table.attach Gtk::Label.new('Spellpoints'), 6, 9, 21, 22, *ATCH
-    @table.attach @special[:Spellpoints] = Gtk::Label.new('0'), 9, 10, 21, 22, *ATCH
+    @table.attach @special[:Essence][0] = Gtk::Label.new('Essence'), 6, 9, 18, 19, *ATCH
+    @table.attach @special[:Essence][1] = Gtk::Label.new('6'), 9, 10, 18, 19, *ATCH
+    @table.attach @special[:'Body Index'][0] = Gtk::Label.new('Body Index'), 6, 9, 19, 20, *ATCH
+    @table.attach @special[:'Body Index'][1] = Gtk::Label.new('0'), 9, 10, 19, 20, *ATCH
+    @table.attach @special[:Magic][0] = Gtk::Label.new('Magic'), 6, 9, 20, 21, *ATCH
+    @table.attach @special[:Magic][1] = Gtk::Label.new('0'), 9, 10, 20, 21, *ATCH
+    @table.attach @special[:Spellpoints][0] = Gtk::Label.new('Spellpoints'), 6, 9, 21, 22, *ATCH
+    @table.attach @special[:Spellpoints][1] = Gtk::Label.new('0'), 9, 10, 21, 22, *ATCH
+    
+    @special.each do |x|
+      pp x[0], x[1]
+      @tooltips.set_tip(x[1][0],fetchtp(x[0].to_s),nil)
+    end
 
     @table.attach Gtk::VSeparator.new, 5, 6, 18, 23, *ATCH
     @table.attach Gtk::HSeparator.new, 0, 10, 13, 14, *ATCH
