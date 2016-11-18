@@ -669,7 +669,13 @@ class Attributeblock < Gtk::Frame
     @derived[:Pools][pool].text = value.to_s
   end
 
+  def fetchtp(attr,ratings = nil)
+    ratings ? File.open("attributes.txt").read[/Human.+Unmodified Human/m] : 
+      File.open("attributes.txt").find_all {|x| x.include? attr}[1]
+  end
+
   def initialize(app)
+    @tooltips=Gtk::Tooltips.new
     @app = app
     super()
     @table = Gtk::Table.new(10, 7, homogenous = true)
@@ -685,6 +691,14 @@ class Attributeblock < Gtk::Frame
     @table.attach @header[:MM] = Gtk::Label.new('MM'), 8, 9, 0, 1, *ATCH
     @table.attach @header[:ACT] = Gtk::Label.new('AC'), 9, 10, 0, 1, *ATCH
 
+    @tooltips.set_tip(@header[:Attributes],fetchtp(nil,1),nil)
+    @tooltips.set_tip(@header[:Points],"Build Points, 2 to raise Attribute by 1",nil)
+    @tooltips.set_tip(@header[:RM],"Racial Modifier to base Attribute",nil)
+    @tooltips.set_tip(@header[:BA],"Base Attribute after applying racial Modifiers",nil)
+    @tooltips.set_tip(@header[:CBM],"Cyberware/Bioware Modifiers to base Attribute",nil)
+    @tooltips.set_tip(@header[:MM],"Magic/Power Modifiers to base Attribute",nil)
+    @tooltips.set_tip(@header[:ACT],"Actual effective Attribute after all Modifiers",nil)
+
     CONSTANT[:attributes].each_with_index do |x, y|
       @attributes[x] = {}
       @table.attach @attributes[x][:Attributes] = Gtk::Label.new(x.to_s), 0, 3, y * 2 + 1, y * 2 + 3, *ATCH
@@ -698,6 +712,7 @@ class Attributeblock < Gtk::Frame
       @attributes[x][:Points].signal_connect('value_changed') do |z|
         @app.setattribute(x, z)
       end
+      @tooltips.set_tip(@attributes[x][:Attributes],fetchtp(x.to_s),nil)
     end
 
     @table.attach Gtk::Label.new('Reaction/Initiative'), 0, 10, 14, 15, *ATCH
