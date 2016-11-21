@@ -1,6 +1,8 @@
 ---
 :Human:
   :Age: 70
+  :Weight: 70
+  :Height: 170
   :Points: 0
   :Base: :Human
   :Racialmods:
@@ -13,6 +15,8 @@
   :Special: 
 :Cyclops:
   :Age: 50
+  :Weight: 225
+  :Height: 290
   :Points: 15
   :Base: :Troll
   :Racialmods:
@@ -25,6 +29,8 @@
   :Special: []
 :Troll:
   :Age: 50
+  :Weight: 225
+  :Height: 280
   :Points: 10
   :Base: :Troll
   :Racialmods:
@@ -37,6 +43,8 @@
   :Special: []
 :Dwarf:
   :Age: 100
+  :Weight: 54
+  :Height: 120
   :Points: 5
   :Base: :Dwarf
   :Racialmods:
@@ -49,6 +57,8 @@
   :Special: []
 :Elf:
   :Age: 100
+  :Weight: 72
+  :Height: 190
   :Points: 10
   :Base: :Elf
   :Racialmods:
@@ -61,6 +71,8 @@
   :Special: []
 :Ork:
   :Age: 40
+  :Weight: 95
+  :Height: 190
   :Points: 5
   :Base: :Ork
   :Racialmods:
@@ -73,6 +85,8 @@
   :Special: []
 :Koborokuru:
   :Age: 100
+  :Weight: 50
+  :Height: 110
   :Points: 10
   :Base: :Dwarf
   :Racialmods:
@@ -85,6 +99,8 @@
   :Special: []
 :Fomori:
   :Age: 50
+  :Weight: 225
+  :Height: 280
   :Points: 15
   :Base: :Troll
   :Racialmods:
@@ -97,6 +113,8 @@
   :Special: []
 :Menehune:
   :Age: 100
+  :Weight: 54
+  :Height: 110
   :Points: 10
   :Base: :Dwarf
   :Racialmods:
@@ -109,6 +127,8 @@
   :Special: []
 :Hobgoblin:
   :Age: 40
+  :Weight: 80
+  :Height: 180
   :Points: 10
   :Base: :Ork
   :Racialmods:
@@ -121,6 +141,8 @@
   :Special: []
 :Giant:
   :Age: 50
+  :Weight: 210
+  :Height: 300
   :Points: 15
   :Base: :Troll
   :Racialmods:
@@ -133,6 +155,8 @@
   :Special: []
 :Gnome:
   :Age: 100
+  :Weight: 45
+  :Height: 105
   :Points: 10
   :Base: :Dwarf
   :Racialmods:
@@ -145,6 +169,8 @@
   :Special: []
 :Oni:
   :Age: 40
+  :Weight: 95
+  :Height: 190
   :Points: 10
   :Base: :Ork
   :Racialmods:
@@ -157,6 +183,8 @@
   :Special: []
 :Wakyambi:
   :Age: 100
+  :Weight: 70
+  :Height: 210
   :Points: 15
   :Base: :Elf
   :Racialmods:
@@ -169,6 +197,8 @@
   :Special: []
 :Ogre:
   :Age: 40
+  :Weight: 100
+  :Height: 180
   :Points: 10
   :Base: :Ork
   :Racialmods:
@@ -181,6 +211,8 @@
   :Special: []
 :Minotaur:
   :Age: 50
+  :Weight: 225
+  :Height: 280
   :Points: 15
   :Base: :Troll
   :Racialmods:
@@ -193,6 +225,8 @@
   :Special: []
 :Satyr:
   :Age: 40
+  :Weight: 80
+  :Height: 180
   :Points: 10
   :Base: :Ork
   :Racialmods:
@@ -205,6 +239,8 @@
   :Special: []
 :Nightelf:
   :Age: 100
+  :Weight: 72
+  :Height: 190
   :Points: 15
   :Base: :Elf
   :Racialmods:
@@ -217,6 +253,8 @@
   :Special: []
 :Dryad:
   :Age: 100
+  :Weight: 45
+  :Height: 110
   :Points: 15
   :Base: :Elf
   :Racialmods:

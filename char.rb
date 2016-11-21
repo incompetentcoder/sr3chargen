@@ -49,6 +49,13 @@ class Application
     end 
   end
 
+  def metachecks(metatype)
+    meta = CONSTANT[:metatypes][getmetatype]
+    @basic.checkage(@a.checkage,meta)
+    @basic.checkweight(@a.checkweight,meta)
+    @basic.checkheight(@a.checkheight,meta)
+  end
+
   def updatereaction
     @guiattributes.updatereaction(@a.updatereaction)
     @guiattributes.updateinitiative(@a.updateinitiative)
@@ -130,6 +137,10 @@ class Application
     @guiattributes.setmagic(@a.setmagic)
     updatepools
     updatereaction
+  end
+
+  def getmetatype
+    @a.getmetatype
   end
 
   def initialize
@@ -361,12 +372,26 @@ class Character
     @derived[:Pools][:'Control Pool'] = 0
   end
 
+  def checkage
+    @age = @age > CONSTANT[:metatypes][@metatype][:Age] ? 
+      CONSTANT[:metatypes][@metatype][:Age] : @age
+  end
+
+  def checkheight
+    @height = @height > CONSTANT[:metatypes][@metatype][:Height]
+  end
+
+  def checkweight
+    @weight = @weight > CONSTANT[:metatypes][@metatype][:Weight]
+  end
+
   def setmetatype(metatype)
     meta, points = metatype.active_text.split(':')
     pointsdiff = points.to_i - CONSTANT[:metatypes][@metatype][:Points]
     if checkpoints(pointsdiff)
       modpoints(pointsdiff)
       @metatype = meta.to_sym
+      @app.metachecks(@metatype)
       metatype.active
     else
       CONSTANT[:metatypes].find_index { |x| x[0] == @metatype }
@@ -478,6 +503,10 @@ class Character
     end
   end
 
+  def getmetatype
+    metatype
+  end
+
   def initialize(app)
     @magetype = :None
     @metatype = :Human
@@ -516,6 +545,21 @@ class Character
 end
 
 class Mainblock < Gtk::Frame
+  def checkage(age,meta)
+    @elements[:Age][1].set_range(15,meta[:Age])
+    setage(age)
+  end
+
+  def checkheight(height,meta)
+    @elements[:Height][1].set_range(meta[:Height]*0.75,meta[:Height]*1.25)
+    setheight(height)
+  end
+
+  def checkweight(weight,meta)
+    @elements[:Weight][1].set_range(meta[:Weight]*0.75,meta[:Weight]*2)
+    setweight(weight)
+  end
+
   def setname(name)
     @elements[:Name][1].text = name
   end
@@ -740,7 +784,6 @@ class Attributeblock < Gtk::Frame
     @table.attach @special[:Spellpoints][1] = Gtk::Label.new('0'), 9, 10, 21, 22, *ATCH
     
     @special.each do |x|
-      pp x[0], x[1]
       @tooltips.set_tip(x[1][0],fetchtp(x[0].to_s),nil)
     end
 
@@ -815,14 +858,16 @@ class Skillblock < Gtk::ScrolledWindow
         @table2.child_set_property(x,'bottom-attach',top)
       end
     end
+    @table2.n_rows = @table2.n_rows - 1
   end
 
   def initialize(app)
     @app = app
     super()
-    @maintable = Gtk::Table.new(1,2)
-    @table = Gtk::Table.new(12, 5, homogenous = true)
-    @table2 = Gtk::Table.new(12,5, homogenous = true)
+    self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
+    @maintable = Gtk::Table.new(1,3)
+    @table = Gtk::Table.new(12, 3, homogenous = true)
+    @table2 = Gtk::Table.new(12 , 1, homogenous = true)
     @skillentries = {}
     @skills = {}
     @skillcount=0
@@ -876,6 +921,7 @@ class Skillblock < Gtk::ScrolledWindow
     @table.attach @header2[:Value] = Gtk::Label.new('Value'), 10, 11, 2, 3, *ATCH
     @table.n_rows = 3
     @table.n_columns = 12
+    @table2.n_rows = 1
     @maintable.attach @table,0,1,0,1,*ATCH
     @maintable.attach @table2,0,1,1,2,*ATCH
     add_with_viewport(@maintable)
@@ -886,6 +932,7 @@ class Spellblock < Gtk::ScrolledWindow
   def initialize(app)
     @app = app
     super()
+    self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
     @table = Gtk::Table.new(10, 4, homogenous = true)
     @spells = {}
     @header1 = {}
@@ -913,6 +960,7 @@ class Cyberblock < Gtk::ScrolledWindow
   def initialize(app)
     @app = app
     super()
+    self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
     @table = Gtk::Table.new(10, 4, homgenous = true)
     @cyber = {}
     @header1 = {}
@@ -927,6 +975,7 @@ class Bioblock < Gtk::ScrolledWindow
   def initialize(app)
     @app = app
     super()
+    self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
   end
 end
 
