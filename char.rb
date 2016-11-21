@@ -378,11 +378,11 @@ class Character
   end
 
   def checkheight
-    @height = @height > CONSTANT[:metatypes][@metatype][:Height]
+    @height = CONSTANT[:metatypes][@metatype][:Height]
   end
 
   def checkweight
-    @weight = @weight > CONSTANT[:metatypes][@metatype][:Weight]
+    @weight = CONSTANT[:metatypes][@metatype][:Weight]
   end
 
   def setmetatype(metatype)
