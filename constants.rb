@@ -1,4 +1,7 @@
 require 'yaml'
+require 'pp'
+require 'pry'
+
 spells = YAML.load_file('spells.yaml')
 CONSTANTS = {
   attributes: %i(Body Quickness Strength Charisma Intelligence Willpower),
@@ -643,6 +646,15 @@ CONSTANTS = {
     Elemental: [:Fire, :Water, :Air, :Earth]
   }
 
-}.freeze
+}
 
+#binding.pry
+
+CONSTANTS[:totems].keys.each do |x|
+  CONSTANTS[:totems][x].keys.each do |y|
+    CONSTANTS[:totems][x][y][:desc] = CONSTANTS[:totems][x][y][:desc].delete("\n\t").squeeze(" ") if CONSTANTS[:totems][x][y][:desc]
+    CONSTANTS[:totems][x][y][:properties] = CONSTANTS[:totems][x][y][:properties].delete("\n\t").squeeze(" ") if CONSTANTS[:totems][x][y][:properties]
+
+  end
+end
 File.open('./constants.yaml', 'w+') << YAML.dump(CONSTANTS)
