@@ -89,11 +89,30 @@ class Application
     setpointsrem
   end
 
+  def enablespells
+    @notebook.get_nth_page(3).sensitive=true
+  end
+
+  def disablespells
+    @notebook.spell = Spellblock.new(self)
+    @notebook.get_nth_page(3).sensitive=false
+  end
+
   def setmagetype(magetype)
     @basic.setmagetype(@a.setmagetype(magetype))
     setpointsrem
     setmagic
     setspellpoints
+    @a.getmagic && @a.getspellpoints > 0 ? enablespells : disablespells
+    @a.getmagetype =~ /Shaman/ ? enabletotem : disabletotem
+  end
+
+  def enabletotem
+    @guiattributes.enabletotem
+  end
+
+  def disabletotem
+    @guiattributes.disabletotem
   end
 
   def setnuyen(nuyen)
@@ -397,6 +416,10 @@ class Character
       CONSTANT[:metatypes].find_index { |x| x[0] == @metatype }
     end
   end
+  
+  def clearspells
+    @spells = {}
+  end
 
   def setmagetype(magetype)
     mage, points = magetype.active_text.split(':')
@@ -404,10 +427,9 @@ class Character
     if checkpoints(pointsdiff)
       modpoints(pointsdiff)
       @magetype = mage.to_sym
-      magetype.active
-    else
-      CONSTANT[:magetypes].find_index { |x| x[0] == @magetype }
     end
+    clearspells
+    CONSTANT[:magetypes].find_index { |x| x[0] == @magetype }
   end
 
   def setmagic
@@ -416,6 +438,10 @@ class Character
   
   def getmagetype
     @magetype
+  end
+
+  def getmetatype
+    @metatype
   end
 
   def getmagic
@@ -434,6 +460,22 @@ class Character
     else
       CONSTANT[:nuyen].find_index(@nuyen)
     end
+  end
+
+  def getnuyen
+    CONSTANT[:nuyen].find_index(@nuyen)
+  end
+
+  def getage
+    @age
+  end
+
+  def getheight
+    @height
+  end
+
+  def getweight
+    @weight
   end
 
   def getnuyenrem
@@ -503,10 +545,6 @@ class Character
     end
   end
 
-  def getmetatype
-    metatype
-  end
-
   def initialize(app)
     @magetype = :None
     @metatype = :Human
@@ -514,12 +552,13 @@ class Character
     @points = 120
     @pointsrem = 108
     @age = 15
-    @height = 120
-    @weight = 50
+    @height = 170
+    @weight = 70
     @nuyen = 5000
     @nuyenrem = 5000
     @activeskills = {}
-    
+    @spells = {}
+    @totem = nil 
     @cyberware = {:Bodyware => {}, :Senseware => {}, :Cyberlimbs => {},
                   :Headware => {}}
     @bioware = {}
@@ -611,14 +650,14 @@ class Mainblock < Gtk::Frame
     @elements = {
       Name: [Gtk::Label.new('Name'), Gtk::Entry.new],
       Streetname: [Gtk::Label.new('Streetname'), Gtk::Entry.new],
-      Age: [Gtk::Label.new('Age'), Gtk::SpinButton.new(15.0, 80.8, 1.0)],
+      Age: [Gtk::Label.new('Age'), Gtk::SpinButton.new(15.0, 70.0, 1.0)],
       Gender: [Gtk::Label.new('Gender'), Gtk::ComboBox.new],
       Metatype: [Gtk::Label.new('Metatype'), Gtk::ComboBox.new],
       Magetype: [Gtk::Label.new('Magetype'), Gtk::ComboBox.new],
       Nuyen: [Gtk::Label.new('Nuyen'), Gtk::ComboBox.new],
       Nuyenrem: [Gtk::Label.new('¥ left'), Gtk::Label.new('¥')],
-      Height: [Gtk::Label.new('Height'), Gtk::SpinButton.new(120.0, 200.0, 1.0)],
-      Weight: [Gtk::Label.new('Weight'), Gtk::SpinButton.new(50.0, 200.0, 1.0)],
+      Height: [Gtk::Label.new('Height'), Gtk::SpinButton.new(128.0, 213.0, 1.0)],
+      Weight: [Gtk::Label.new('Weight'), Gtk::SpinButton.new(53.0, 140.0, 1.0)],
       Points: [Gtk::Label.new('Points'), Gtk::Label.new('120')],
       Pointsrem: [Gtk::Label.new('P left'), Gtk::Label.new('108')]
     }
@@ -627,8 +666,6 @@ class Mainblock < Gtk::Frame
     @elements[:Age][1].width_chars = 2
     @elements[:Name][1].width_chars = 20
     @elements[:Streetname][1].width_chars = 20
-    @elements[:Height][1].value = 170
-    @elements[:Weight][1].value = 70
     CONSTANT[:gender].each do |x|
       @elements[:Gender][1].append_text(x.to_s.capitalize)
     end
@@ -641,6 +678,14 @@ class Mainblock < Gtk::Frame
     CONSTANT[:nuyen].each_pair do |x, y|
       @elements[:Nuyen][1].append_text(y.to_s + ':' + x.to_s)
     end
+
+    @elements[:Metatype][1].active = 0
+    @elements[:Magetype][1].active = 0
+    @elements[:Age][1].value = 20
+    @elements[:Height][1].value = 170
+    @elements[:Weight][1].value = 70
+    @elements[:Nuyen][1].active = 1
+    @elements[:Nuyenrem][1].text = "5000"
 
     @elements[:Name][1].signal_connect('activate') { |x| @app.setname(x) }
     @elements[:Streetname][1].signal_connect('activate') { |x| @app.setstreetname(x) }
@@ -667,7 +712,7 @@ class Mainblock < Gtk::Frame
     @table.attach Gtk::Image.new('srlogo.png'), 0, 2, 0, 3, *ATCH
     @table.attach @elements[:Load], 0, 1, 3, 4, *ATCH
     @table.attach @elements[:Save], 1, 2, 3, 4, *ATCH
-
+    
     @table.n_rows = 4
     @table.n_columns = 8
     add(@table)
@@ -716,6 +761,17 @@ class Attributeblock < Gtk::Frame
   def fetchtp(attr,ratings = nil)
     ratings ? File.open("attributes.txt").read[/Human.+Unmodified Human/m] : 
       File.open("attributes.txt").find_all {|x| x.include? attr}[1]
+  end
+
+  def enabletotem
+    @totem.each {|x| x.sensitive = true}
+  end
+
+  def disabletotem
+    @totem.each do |x|
+      x.active = -1 if x.class == Gtk::ComboBox
+      x.sensitive = false
+    end
   end
 
   def initialize(app)
@@ -791,7 +847,35 @@ class Attributeblock < Gtk::Frame
     @table.attach Gtk::HSeparator.new, 0, 10, 13, 14, *ATCH
     @table.attach Gtk::HSeparator.new, 0, 10, 17, 18, *ATCH
     @table.attach Gtk::HSeparator.new, 0, 10, 23, 24, *ATCH
+    
+    @totem = []
+    @totemcount = 0
+    @table.attach @totem[0] = Gtk::Label.new('Type'),0,3,24,26,*ATCH
+    @table.attach @totem[1] = Gtk::ComboBox.new,3,10,24,26,*ATCH
+    @table.attach @totem[2] = Gtk::Label.new('Totem'),0,3,26,28,*ATCH
+    @table.attach @totem[3] = Gtk::ComboBox.new,3,10,26,28,*ATCH
+    @totem.each {|x| x.sensitive=false}
+    CONSTANT[:totems].each_key do |x|
+      @totem[1].append_text(x.to_s)
+    end 
 
+    @totem[1].signal_connect('changed') do |x|
+      @totemcount.times do |y|
+        @totem[3].remove_text(0)
+      end
+      @totemcount = 0
+      if x.active_text
+        @totemcount = CONSTANT[:totems][x.active_text.to_sym].count
+        CONSTANT[:totems][x.active_text.to_sym].each_key do |y|
+          @totem[3].append_text(y.to_s)
+        end
+      end
+    end
+
+
+    @totem[3].signal_connect('changed') do |x|
+    end
+    
     add(@table)
   end
 end
@@ -933,6 +1017,7 @@ class Spellblock < Gtk::ScrolledWindow
     @app = app
     super()
     self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
+    @maintable = Gtk::Table.new(1,3)
     @table = Gtk::Table.new(10, 4, homogenous = true)
     @spells = {}
     @header1 = {}
@@ -952,7 +1037,8 @@ class Spellblock < Gtk::ScrolledWindow
     @table.attach @header2[:Force] = Gtk::Label.new('Force'), 8, 9, 2, 3, *ATCH
     @table.n_columns = 10
     @table.n_rows = 4
-    add_with_viewport(@table)
+    @maintable.attach @table,0,1,0,1,*ATCH
+    add_with_viewport(@maintable)
   end
 end
 
@@ -980,7 +1066,7 @@ class Bioblock < Gtk::ScrolledWindow
 end
 
 class Notebook < Gtk::Notebook
-  attr_accessor :skill
+  attr_accessor :skill, :spell
   def initialize(app)
     @app = app
     super()
