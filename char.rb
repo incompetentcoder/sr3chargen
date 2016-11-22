@@ -21,6 +21,16 @@ class Application
   def save
   end
 
+  def availabletotems(group)
+    if @a.getmagetype =~ /Conj|ist|Sorc/
+      @guiattributes.availabletotems(
+        CONSTANT[:totems][group].collect {|x| x[0] if x[1][:spells]}.compact)
+    else
+      @guiattributes.availabletotems(
+        CONSTANT[:totems][group].each_key)
+    end
+  end
+
   def checkskills(attr,value,oldvalue,check=0)
     @a.checkskills(attr,value,oldvalue,check)
     setpointsrem
@@ -765,6 +775,7 @@ class Attributeblock < Gtk::Frame
 
   def enabletotem
     @totem.each {|x| x.sensitive = true}
+    @totem[1].active = -1
   end
 
   def disabletotem
@@ -772,7 +783,24 @@ class Attributeblock < Gtk::Frame
       x.active = -1 if x.class == Gtk::ComboBox
       x.sensitive = false
     end
+    @tooltips.set_tip(@totem[3],'',nil)
+    5.times {|x| @totem[1].remove_text(0)}
   end
+
+  def cleartotems
+    @totemcount.times do |y|
+      @totem[3].remove_text(0)
+    end
+    @totemcount = 0
+  end
+
+  def availabletotems(totems)
+    @totemcount = totems.count
+    totems.each do |x|
+      @totem[3].append_text(x.to_s)
+    end
+  end
+
 
   def initialize(app)
     @tooltips=Gtk::Tooltips.new
@@ -854,26 +882,25 @@ class Attributeblock < Gtk::Frame
     @table.attach @totem[1] = Gtk::ComboBox.new,3,10,24,26,*ATCH
     @table.attach @totem[2] = Gtk::Label.new('Totem'),0,3,26,28,*ATCH
     @table.attach @totem[3] = Gtk::ComboBox.new,3,10,26,28,*ATCH
+    CONSTANT[:totems].each_key {|x| @totem[1].append_text(x.to_s)}
     @totem.each {|x| x.sensitive=false}
-    CONSTANT[:totems].each_key do |x|
-      @totem[1].append_text(x.to_s)
-    end 
 
     @totem[1].signal_connect('changed') do |x|
-      @totemcount.times do |y|
-        @totem[3].remove_text(0)
-      end
-      @totemcount = 0
+      cleartotems
       if x.active_text
-        @totemcount = CONSTANT[:totems][x.active_text.to_sym].count
-        CONSTANT[:totems][x.active_text.to_sym].each_key do |y|
-          @totem[3].append_text(y.to_s)
-        end
+        @app.availabletotems(x.active_text.to_sym)
       end
     end
 
 
     @totem[3].signal_connect('changed') do |x|
+      if x.active_text
+        temp = CONSTANT[:totems][@totem[1].active_text.to_sym][x.active_text.to_sym]
+        @tooltips.set_tip(@totem[3],(temp[:desc] ? temp[:desc]+"\n" : '')+
+          (temp[:properties] ? temp[:properties] : ''),nil)
+      else
+        @tooltips.set_tip(@totem[3],'',nil)
+      end
     end
     
     add(@table)
