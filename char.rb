@@ -21,8 +21,23 @@ class Application
   def save
   end
 
+  def checkspells(totem)
+    if @a.getmagetype =~ /ist/
+      if totem
+        enablespells
+      else
+        disablespells
+      end
+    end
+  end
+
+  def settotem(totem)
+    checkspells(totem)
+    @a.settotem(totem)
+  end
+
   def availabletotems(group)
-    if @a.getmagetype =~ /Conj|ist|Sorc/
+    if @a.getmagetype =~ /ist/
       @guiattributes.availabletotems(
         CONSTANT[:totems][group].collect {|x| x[0] if x[1][:spells]}.compact)
     else
@@ -113,7 +128,8 @@ class Application
     setpointsrem
     setmagic
     setspellpoints
-    @a.getmagic && @a.getspellpoints > 0 ? enablespells : disablespells
+    @a.getmagic && @a.getspellpoints > 0 && 
+      !(@a.getmagetype =~ /^[^F].*ist|Conj/) ? enablespells : disablespells
     @a.getmagetype =~ /Shaman/ ? enabletotem : disabletotem
   end
 
@@ -214,6 +230,10 @@ class Character
 
   def setheight(height)
     @height = height
+  end
+
+  def settotem(totem)
+    @totem = totem
   end
 
   def setweight(weight)
@@ -775,6 +795,10 @@ class Attributeblock < Gtk::Frame
 
   def enabletotem
     @totem.each {|x| x.sensitive = true}
+    if not @totemsenabled 
+      CONSTANT[:totems].each_key {|x| @totem[1].append_text(x.to_s)}
+      @totemsenabled = 1
+    end
     @totem[1].active = -1
   end
 
@@ -785,6 +809,7 @@ class Attributeblock < Gtk::Frame
     end
     @tooltips.set_tip(@totem[3],'',nil)
     5.times {|x| @totem[1].remove_text(0)}
+    @totemsenabled = nil
   end
 
   def cleartotems
@@ -805,6 +830,7 @@ class Attributeblock < Gtk::Frame
   def initialize(app)
     @tooltips=Gtk::Tooltips.new
     @app = app
+    @totemsenabled = nil
     super()
     @table = Gtk::Table.new(10, 7, homogenous = true)
     @attributes = {}
@@ -882,7 +908,6 @@ class Attributeblock < Gtk::Frame
     @table.attach @totem[1] = Gtk::ComboBox.new,3,10,24,26,*ATCH
     @table.attach @totem[2] = Gtk::Label.new('Totem'),0,3,26,28,*ATCH
     @table.attach @totem[3] = Gtk::ComboBox.new,3,10,26,28,*ATCH
-    CONSTANT[:totems].each_key {|x| @totem[1].append_text(x.to_s)}
     @totem.each {|x| x.sensitive=false}
 
     @totem[1].signal_connect('changed') do |x|
@@ -898,8 +923,10 @@ class Attributeblock < Gtk::Frame
         temp = CONSTANT[:totems][@totem[1].active_text.to_sym][x.active_text.to_sym]
         @tooltips.set_tip(@totem[3],(temp[:desc] ? temp[:desc]+"\n" : '')+
           (temp[:properties] ? temp[:properties] : ''),nil)
+        @app.settotem(x.active_text)
       else
         @tooltips.set_tip(@totem[3],'',nil)
+        @app.settotem(nil)
       end
     end
     
