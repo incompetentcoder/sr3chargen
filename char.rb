@@ -24,16 +24,16 @@ class Application
   def checkspells(totem)
     if @a.getmagetype =~ /ist/
       if totem
-        enablespells
+        enablespells(totem)
       else
         disablespells
       end
     end
   end
 
-  def settotem(totem)
+  def settotem(totem,group)
+    @a.settotem(totem,group)
     checkspells(totem)
-    @a.settotem(totem)
   end
 
   def availabletotems(group)
@@ -114,12 +114,20 @@ class Application
     setpointsrem
   end
 
-  def enablespells
+  def enablespells(totem=nil)
     @notebook.get_nth_page(3).sensitive=true
+    if totem
+      tot,grp = @a.gettotem
+      spells = CONSTANT[:totems][grp][tot][:spells].collect {
+        |x| x[0] if x[1] > 0}.compact
+    else
+      spells=CONSTANT[:spelltypes].keys
+    end
+    @notebook.spell.enablespells(spells)
   end
 
   def disablespells
-    @notebook.spell = Spellblock.new(self)
+    @notebook.newspell
     @notebook.get_nth_page(3).sensitive=false
   end
 
@@ -231,9 +239,13 @@ class Character
   def setheight(height)
     @height = height
   end
+  
+  def gettotem
+    @totem
+  end
 
-  def settotem(totem)
-    @totem = totem
+  def settotem(totem,group)
+    @totem = [totem,group]
   end
 
   def setweight(weight)
@@ -441,10 +453,8 @@ class Character
       modpoints(pointsdiff)
       @metatype = meta.to_sym
       @app.metachecks(@metatype)
-      metatype.active
-    else
-      CONSTANT[:metatypes].find_index { |x| x[0] == @metatype }
     end
+    CONSTANT[:metatypes].find_index { |x| x[0] == @metatype }
   end
   
   def clearspells
@@ -917,16 +927,15 @@ class Attributeblock < Gtk::Frame
       end
     end
 
-
     @totem[3].signal_connect('changed') do |x|
       if x.active_text
         temp = CONSTANT[:totems][@totem[1].active_text.to_sym][x.active_text.to_sym]
         @tooltips.set_tip(@totem[3],(temp[:desc] ? temp[:desc]+"\n" : '')+
           (temp[:properties] ? temp[:properties] : ''),nil)
-        @app.settotem(x.active_text)
+        @app.settotem(x.active_text.to_sym,@totem[1].active_text.to_sym)
       else
         @tooltips.set_tip(@totem[3],'',nil)
-        @app.settotem(nil)
+        @app.settotem(nil,nil)
       end
     end
     
@@ -1067,7 +1076,18 @@ class Skillblock < Gtk::ScrolledWindow
 end
 
 class Spellblock < Gtk::ScrolledWindow
+  def enablespells(spells)
+    clear
+    spells.each {|x| @header1[:Category][1].append_text(x.to_s)}
+    @categorycount = spells.count
+  end
+  
+  def clear
+    @categorycount.times {@header1[:Category][1].remove_text(0)}
+  end
+
   def initialize(app)
+    @categorycount = 0
     @app = app
     super()
     self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
@@ -1121,6 +1141,13 @@ end
 
 class Notebook < Gtk::Notebook
   attr_accessor :skill, :spell
+  def newspell
+    @spell = Spellblock.new(@app)
+    remove_page(3)
+    append_page(@spell,Gtk::Label.new('Spells'))
+    self.show_all
+  end
+
   def initialize(app)
     @app = app
     super()
