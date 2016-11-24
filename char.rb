@@ -1142,10 +1142,14 @@ end
 class Notebook < Gtk::Notebook
   attr_accessor :skill, :spell
   def newspell
-    @spell = Spellblock.new(@app)
+    reset = self.page == 3 
     remove_page(3)
+    @spell.destroy
+    @spell = nil
+    @spell = Spellblock.new(@app)
     append_page(@spell,Gtk::Label.new('Spells'))
     self.show_all
+    self.page = 3 if reset
   end
 
   def initialize(app)
