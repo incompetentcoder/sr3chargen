@@ -31,8 +31,50 @@ class Application
     end
   end
 
+  def dialogchoose(stuff,type)
+    a = nil
+    dialog=Gtk::Dialog.new("Choose Boni",@windows,Gtk::Dialog::MODAL,
+                           [stuff[0].join(" : "),0],
+                           [stuff[1].join(" : "),1])
+    dialog.run do |response|
+      response == 0 ? a=stuff[0] : a=stuff[1]
+      dialog.destroy
+    end
+    a
+  end
+
+
+
+
+  def choosespells(spells)
+    chos = spells.collect {|x| x if x[0] == :Choose}.compact
+    fixed = spells - chos
+    [dialogchoose(chos.flatten(1)[1],"spells")] + fixed
+  end
+
+  def choosespirits(spirits)
+    chos = spirits.collect {|x| x if x[0] == :Choose}.compact
+    fixed = spirits - chos
+    [dialogchoose(chos.flatten(1)[1],"spirits")] + fixed
+  end
+
   def settotem(totem,group)
-    @a.settotem(totem,group)
+    boni = nil
+    if totem
+      boni = {:spells => nil, :spirits => nil}
+      short = CONSTANT[:totems][group][totem]
+      if short[:spells] && (short[:spells].flatten(1).include? :Choose)
+        boni[:spells] = choosespells(short[:spells])
+      else
+        boni[:spells] = short[:spells]
+      end
+      if short[:spirits] && (short[:spirits].flatten(1).include? :Choose)
+        boni[:spirits] = choosespirits(short[:spirits])
+      else
+        boni[:spirits] = short[:spirits]
+      end
+    end
+    @a.settotem(totem,group,boni)
     checkspells(totem)
   end
 
@@ -117,9 +159,9 @@ class Application
   def enablespells(totem=nil)
     @notebook.get_nth_page(3).sensitive=true
     if totem
-      tot,grp = @a.gettotem
-      spells = CONSTANT[:totems][grp][tot][:spells].collect {
-        |x| x[0] if x[1] > 0}.compact
+      tot,grp,boni = @a.gettotem
+   #   binding.pry
+      spells = boni[:spells].collect  {|x| x[0]}
     else
       spells=CONSTANT[:spelltypes].keys
     end
@@ -244,8 +286,8 @@ class Character
     @totem
   end
 
-  def settotem(totem,group)
-    @totem = [totem,group]
+  def settotem(totem,group,boni)
+    @totem = [totem,group,boni]
   end
 
   def setweight(weight)
@@ -1077,17 +1119,43 @@ end
 
 class Spellblock < Gtk::ScrolledWindow
   def enablespells(spells)
-    clear
+    clear("category")
     spells.each {|x| @header1[:Category][1].append_text(x.to_s)}
     @categorycount = spells.count
   end
   
-  def clear
-    @categorycount.times {@header1[:Category][1].remove_text(0)}
+  def clear(which)
+    case which
+    when "category"
+      @categorycount.times {@header1[:Category][1].remove_text(0)}
+    when "spells"
+      @spellcount.times {@header1[:Spell][1].remove_text(0)}
+    end
   end
 
+  def findspells(category)
+    clear("spells")
+    @spells = {}
+    case category
+    when :Combat,:Detection,:Health
+      @spells = CONSTANT[:spelltypes][category]
+    when :Illusion,:Manipulation
+      CONSTANT[:subspelltypes][category].each do |x|
+        @spells.merge!(CONSTANT[:spelltypes][category][x])
+      end
+    when :Fire,:Lightning,:Light,:Water,:Acid,:Smoke
+      @spells = CONSTANT[:spelltypes][:Manipulation][:Elemental].find_all {|x| x[1][:Element] == category}.to_h
+    else
+      top = CONSTANT[:subspelltypes].find {|x| x[1].include? category}[0]
+      @spells = CONSTANT[:spelltypes][top][category]
+    end
+    @spellcount = @spells.keys.count
+    @spells.keys.each {|x| @header1[:Spell][1].append_text(x.to_s)}
+  end
+    
   def initialize(app)
     @categorycount = 0
+    @spellcount = 0
     @app = app
     super()
     self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
@@ -1104,6 +1172,7 @@ class Spellblock < Gtk::ScrolledWindow
     @table.attach @header1[:Spell][1], 4, 9, 1, 2, *ATCH
     @table.attach @header1[:Buttons][0], 9, 10, 0, 1, *ATCH
     @table.attach @header1[:Buttons][1], 9, 10, 1, 2, *ATCH
+    @header1[:Category][1].signal_connect('changed') {|x| findspells(x.active_text.to_sym) if x.active_text }
     @header2 = {}
     @table.attach @header2[:Category] = Gtk::Label.new('Category'), 0, 3, 2, 3, *ATCH
     @table.attach @header2[:Spell] = Gtk::Label.new('Spell'), 3, 6, 2, 3, *ATCH

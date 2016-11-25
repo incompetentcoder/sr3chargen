@@ -318,2075 +318,2084 @@
   :Adept Magician:
     :Points: 30
     :Spellpoints: 0
+:subspelltypes:
+  :Manipulation:
+  - :Telekinetic
+  - :Control
+  - :Transformation
+  - :Elemental
+  :Illusion:
+  - :Direct
+  - :Indirect
 :spelltypes:
   :Combat:
     Death Touch:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Death Touch
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Instant
+      :Range: :Touch
+      :Area: :False
       :DTN: 0
       :DLVL: -1
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Physical
     Manaball:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Manaball
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :True
       :DTN: 0
       :DLVL: 1
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Physical
     Manabolt:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Manabolt
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :False
       :DTN: 0
       :DLVL: 0
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Physical
     Powerball:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Powerball
+      :Type: :Physical
+      :Target: :Body
+      :Res: :True
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :True
       :DTN: 1
       :DLVL: 1
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Physical
     Powerbolt:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Powerbolt
+      :Type: :Physical
+      :Target: :Body
+      :Res: :True
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :False
       :DTN: 1
       :DLVL: 0
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Physical
     Ram(Object):
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Ram(Object)
+      :Type: :Physical
+      :Target: :ObjectRes
+      :Res: :False
+      :Duration: :Instant
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
       :DLVL: -2
-      :Damage: 0
+      :Damage: :VA
     Shattershield:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Shattershield
+      :Type: :Mana
+      :Target: :Force
+      :Res: :True
+      :Duration: :Instant
+      :Range: :Touch
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
-      :Damage: 0
+      :DLVL: :M
+      :Damage: :D
     Slaughter(Race):
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Slaughter(Race)
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :True
       :DTN: 1
-      :DLVL: 0
-      :Damage: 0
-      :DamType: 0
+      :DLVL: :D
+      :Damage: :D
+      :DamType: :Physical
     Slay(Race):
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Slay(Race)
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :False
       :DTN: -1
-      :DLVL: 0
-      :Damage: 0
-      :DamType: 0
+      :DLVL: :D
+      :Damage: :D
+      :DamType: :Physical
     Spiritblast:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Spiritblast
+      :Type: :Mana
+      :Target: :Force
+      :Res: :True
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :True
       :DTN: -1
       :DLVL: 1
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Physical
     Spiritbolt:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Spiritbolt
+      :Type: :Mana
+      :Target: :Force
+      :Res: :True
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :False
       :DTN: -1
       :DLVL: 0
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Physical
     Stunball:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Stunball
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :True
       :DTN: -1
       :DLVL: 1
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Stun
     Stunbolt:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Stunbolt
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :False
       :DTN: -1
       :DLVL: 0
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Stun
     Stun Touch:
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Stun Touch
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Instant
+      :Range: :Touch
+      :Area: :False
       :DTN: -1
       :DLVL: -1
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Stun
     Wreck(Object):
       Class: Combat
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Wreck(Object)
+      :Type: :Physical
+      :Target: :ObjectRes
+      :Res: :False
+      :Duration: :Instant
+      :Range: :LOS
+      :Area: :False
       :DTN: 1
       :DLVL: -1
-      :Damage: 0
-      :DamType: 0
+      :Damage: :VA
+      :DamType: :Physical
   :Detection:
     Analyze Device:
       Class: Detection
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Name: :Analyze Device
+      :Type: :Physical
+      :Target: :ObjectRes
+      :Res: :False
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :M
     Analyze Magic:
       Class: Detection
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Name: :Analyze Magic
+      :Type: :Mana
+      :Target: :Force
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :L
     Analyze Truth:
       Class: Detection
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Name: :Analyze Truth
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :L
     Animal(Sense):
       Class: Detection
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Name: :Animal(Sense)
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :M
     Astral Window:
       Class: Detection
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Name: :Astral Window
+      :Type: :Mana
+      :Target: :Force
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :L
     Catalog:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Catalog
+      :Type: :Physical
       :Target: 6
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :False
+      :Duration: :Sustained
+      :Area: :True
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :M
     Clairaudience:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Clairaudience
+      :Type: :Mana
       :Target: 6
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :False
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :M
     Clairvoyance:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Clairvoyance
+      :Type: :Mana
       :Target: 6
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :False
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :M
     Combat Sense:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Combat Sense
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :False
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :S
     Detect Enemies:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Detect Enemies
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :True
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :M
     Detect Individual:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Detect Individual
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :True
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :L
     Detect Life:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Detect Life
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :True
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :L
     Detect(Life-Form):
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Detect(Life-Form)
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :True
       :DTN: -1
-      :DLVL: 0
+      :DLVL: :L
     Detect Magic:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Detect Magic
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :True
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :L
     Detect(Object):
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Detect(Object)
+      :Type: :Physical
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :False
+      :Duration: :Sustained
+      :Area: :True
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :M
     Diagnose:
       Class: Detection
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Name: :Diagnose
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :False
       :DTN: -1
-      :DLVL: 0
+      :DLVL: :L
     Enhance Aim:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Enhance Aim
+      :Type: :Mana
       :Target: 6
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :M
     Eyes of the Pack:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Eyes of the Pack
+      :Type: :Mana
       :Target: 6
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :M
     Mindlink:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Mindlink
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :S
     Mind Probe:
       Class: Detection
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Name: :Mind Probe
+      :Type: :Mana
+      :Target: :Willpower
+      :Res: :True
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :S
     Night Vision:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Night Vision
+      :Type: :Physical
       :Target: 6
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :L
     Translate:
       Class: Detection
-      :Name: 0
-      :Type: 0
+      :Name: :Translate
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Sustained
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :M
   :Health:
     Alleviate-Allergy:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Alleviate-Allergy
+      :Type: :Physical
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :AllergyLVL
     Antidote:
       Class: Health
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Antidote
+      :Type: :Mana
+      :Target: :ToxinPower
+      :Res: :Vol
+      :Duration: :Permanent
+      :Range: :Touch
+      :Area: :False
       :DTN: -2
-      :DLVL: 0
+      :DLVL: :ToxinLVL
     Awaken:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Awaken
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Instant
+      :Range: :Touch
+      :Area: :False
       :DTN: -2
-      :DLVL: 0
+      :DLVL: :DamageLVL
     Cause-Allergy:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Cause-Allergy
+      :Type: :Physical
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 2
-      :DLVL: 0
+      :DLVL: :AllergyLVL
     Cripple-Limb:
       Class: Health
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Cripple-Limb
+      :Type: :Physical
+      :Target: :Body
+      :Res: :Thres
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :S
     Cure-Disease:
       Class: Health
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Cure-Disease
+      :Type: :Mana
+      :Target: :DiseasePower
+      :Res: :Vol
+      :Duration: :Permanent
+      :Range: :Touch
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :DiseaseLVL
     Decrease(Attribute):
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Decrease(Attribute)
+      :Type: :Mana
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :S
     Decrease(Cybered Attribute):
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Decrease(Cybered Attribute)
+      :Type: :Physical
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 2
-      :DLVL: 0
+      :DLVL: :S
     Decrease Reaction:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Decrease Reaction
+      :Type: :Mana
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :D
     Decrease Cybered Reaction:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Decrease Cybered Reaction
+      :Type: :Physical
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 2
-      :DLVL: 0
+      :DLVL: :D
     Decrease Reflexes -1:
       Class: Health
       :Name: 0
-      :Type: 0
+      :Type: :Physical
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 2
-      :DLVL: 0
+      :DLVL: :D
     Decrease Reflexes -2:
       Class: Health
       :Name: 0
-      :Type: 0
+      :Type: :Physical
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 4
-      :DLVL: 0
+      :DLVL: :D
     Decrease Reflexes -3:
       Class: Health
       :Name: 0
-      :Type: 0
+      :Type: :Physical
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :True
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 6
-      :DLVL: 0
+      :DLVL: :D
     Detox:
       Class: Health
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Detox
+      :Type: :Mana
+      :Target: :Toxin Power
+      :Res: :Vol
+      :Duration: :Permanent
+      :Range: :Touch
+      :Area: :False
       :DTN: -2
-      :DLVL: 0
+      :DLVL: :ToxinLVL
     Fast:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Fast
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Permanent
+      :Range: :Touch
+      :Area: :False
       :DTN: -2
-      :DLVL: 0
+      :DLVL: :M
     Heal:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Heal
+      :Type: :Mana
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Permanent
+      :Range: :Touch
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :DamageLVL
     Healthy Glow:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Healthy Glow
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Permanent
+      :Range: :Touch
+      :Area: :False
       :DTN: 0
-      :DLVL: 0
+      :DLVL: :L
     Hibernate:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Hibernate
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :M
     Increase(Attribute):
       Class: Health
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Increase(Attribute)
+      :Type: :Mana
+      :Target: :Attribute
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :M
     Increase(Cybered Attribute):
       Class: Health
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Increase(Cybered Attribute)
+      :Type: :Physical
+      :Target: :Attribute
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 2
-      :DLVL: 0
+      :DLVL: :M
     Increase Reaction:
       Class: Health
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Increase Reaction
+      :Type: :Mana
+      :Target: :Reaction
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :S
     Increase Cybered Reaction:
       Class: Health
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Increase Cybered Reaction
+      :Type: :Physical
+      :Target: :Reaction
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 2
-      :DLVL: 0
+      :DLVL: :S
     Increase Reflexes +1:
       Class: Health
       :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Type: :Mana
+      :Target: :Reaction
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :S
     Increase Reflexes +2:
       Class: Health
       :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Type: :Mana
+      :Target: :Reaction
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :D
     Increase Reflexes +3:
       Class: Health
       :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Type: :Mana
+      :Target: :Reaction
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 3
-      :DLVL: 0
+      :DLVL: :D
     Intoxication:
       Class: Health
-      :Name: 0
-      :Type: 0
-      :Target: 0
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Name: :Intoxication
+      :Type: :Physical
+      :Target: :Body
+      :Res: :True
+      :Duration: :Permament
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :D
     Nutrition:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Nutrition
+      :Type: :Physical
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Permanent
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :M
     Oxygenate:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Oxygenate
+      :Type: :Physical
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 2
-      :DLVL: 0
+      :DLVL: :L
     Preserve:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Preserve
+      :Type: :Physical
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :False
+      :Duration: :Permanent
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :M
     Prophylaxis:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Prophylaxis
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Sustained
+      :Range: :Touch
+      :Area: :False
       :DTN: 1
-      :DLVL: 0
+      :DLVL: :L
     Resist Pain:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Resist Pain
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Permanent
+      :Range: :Touch
+      :Area: :False
       :DTN: -2
-      :DLVL: 0
+      :DLVL: :D
     Stabilize:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Stabilize
+      :Type: :Mana
       :Target: 4
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
-      :DTN: 0
-      :DLVL: 0
-      ! '': 0
+      :Res: :+
+      :Duration: :Minutes
+      :Range: :Vol
+      :Area: :Permanent
+      :DTN: :Touch
+      :DLVL: :False
+      ! '': :M
     Threat:
       Class: Health
-      :Name: 0
-      :Type: 0
+      :Name: :Threat
+      :Type: :Mana
       :Target: 10
-      :Res: 0
-      :Duration: 0
-      :Range: 0
-      :Area: 0
+      :Res: :Vol
+      :Duration: :Permanent
+      :Range: :Touch
+      :Area: :False
       :DTN: -1
-      :DLVL: 0
+      :DLVL: :D
   :Illusion:
     :Direct:
       Agony:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Agony
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :M
       Blindness:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Blindness
+        :Type: :Physical
+        :Target: :Intelligence
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Chaff:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Chaff
+        :Type: :Physical
+        :Target: :ObjectRes
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Chaos:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Chaos
+        :Type: :Physical
+        :Target: :Intelligence
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
       Chaotic World:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Chaotic World
+        :Type: :Physical
+        :Target: :Intelligence
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :D
       Confusion:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Confusion
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Dream:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Dream
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :M
       Entertainment:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Entertainment
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Vol
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :L
       Flak:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Flak
+        :Type: :Physical
+        :Target: :ObjectRes
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :D
       Flash:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Flash
+        :Type: :Physical
+        :Target: :Intelligence
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Mass Agony:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Mass Agony
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Mass Blindness:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Mass Blindness
+        :Type: :Physical
+        :Target: :Intelligence
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
       Mass Confusion:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Mass Confusion
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :D
       Stench:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Stench
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Stink:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Stink
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :M
       Trid Entertainment:
         Class: Illusion
         Subclass: Direct
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Trid Entertainment
+        :Type: :Physical
+        :Target: :Intelligence
+        :Res: :Vol
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :L
     :Indirect:
       Camouflage:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Camouflage
+        :Type: :Mana
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :L
       Double Image:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Double Image
+        :Type: :Mana
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :Touch
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Foreboding:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Foreboding
+        :Type: :Mana
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :D
       Hot Potato:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Hot Potato
+        :Type: :Mana
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :M
       Improved Invisibility:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Improved Invisibility
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Invisibility:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Invisibility
+        :Type: :Mana
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :M
       Mask:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Mask
+        :Type: :Mana
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :M
       Phantasm:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Phantasm
+        :Type: :Mana
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :D
       Physical Camouflage:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Physical Camouflage
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :L
       Physical Double Image:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Physical Double Image
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :Touch
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
       Physical Mask:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Physical Mask
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Silence:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Silence
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
       Stealth:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Stealth
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Trid Phantasm:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Trid Phantasm
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :D
       Vehicle Mask:
         Class: Illusion
         Subclass: Indirect
-        :Name: 0
-        :Type: 0
+        :Name: :Vehicle Mask
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
   :Manipulation:
     :Telekinetic:
       Animate:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Animate
+        :Type: :Physical
+        :Target: :ObjectRes
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Bind:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Bind
+        :Type: :Physical
+        :Target: :Quickness
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Catfall:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Catfall
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Clout:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Clout
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :RangedCombat
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
         :DLVL, Damage: 0
-        ! '': 0
+        ! '': :VA
       Deflect:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Deflect
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Fling:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Fling
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :RangedCombat
+        :Duration: :Instant
+        :Range: :Touch
+        :Area: :False
         :DTN: 1
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Gecko Crawl:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Gecko Crawl
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Levitate:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Levitate
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Lock:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Lock
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Magic Fingers:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Magic Fingers
+        :Type: :Physical
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Net:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Net
+        :Type: :Physical
+        :Target: :Quickness
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL, Damage: 0
+        :DLVL, Damage: :S
       Poltergeist:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Poltergeist
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Redirect:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Redirect
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :RangedCombat
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
         :DLVL, Damage: 0
-        ! '': 0
+        ! '': :VA
       Shape Earth:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Shape Earth
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Shape Water:
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Shape Water
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL, Damage: 0
+        :DLVL, Damage: :M
       Use(Skill):
         Class: Manipulation
         Subclass: Telekinetic
-        :Name: 0
-        :Type: 0
+        :Name: :Use(Skill)
+        :Type: :Physical
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL, Damage: 0
+        :DLVL, Damage: :L
     :Control:
       Alter Memory:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Alter Memory
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Permanent
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :D
       Calm Animal:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Calm Animal
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :M
       Calm Pack:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Calm Pack
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Compel Truth:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Compel Truth
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Control Actions:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Control Actions
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Control Animal:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Control Animal
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Control Emotion:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Control Emotion
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Control Pack:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Control Pack
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :D
       Control Thoughts:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Control Thoughts
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
       Influence:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Influence
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Permanent
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Mob Mind:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Mob Mind
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :D
       Mob Mood:
         Class: Manipulation
         Subclass: Control
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Mob Mood
+        :Type: :Mana
+        :Target: :Willpower
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
     :Transformation:
       Alter Temperature:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Alter Temperature
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL: 0
+        :DLVL: :M
       Armor:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Armor
+        :Type: :Physical
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL: 0
+        :DLVL: :M
       Astral Armor:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Astral Armor
+        :Type: :Mana
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Astral Barrier:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Astral Barrier
+        :Type: :Mana
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
       Clean(Element):
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Clean(Element)
+        :Type: :Physical
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Permanent
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
-        :Element: 0
+        :DLVL: :S
+        :Element: :(Element)
       Control Fire:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Control Fire
+        :Type: :Physical
+        :Target: :FirePower
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL: 0
-        :Element: 0
+        :DLVL: :M
+        :Element: :Fire
       Create Food:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Create Food
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Permanent
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
       Fashion:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Fashion
+        :Type: :Physical
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Permanent
+        :Range: :Touch
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :L
       Firewall:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Firewall
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL: 0
-        :Element: 0
+        :DLVL: :S
+        :Element: :Fire
       Fix:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Fix
+        :Type: :Physical
+        :Target: :ObjectRes
+        :Res: :False
+        :Duration: :Permanent
+        :Range: :Touch
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Flame Aura:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Flame Aura
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL: 0
-        :Element: 0
+        :DLVL: :M
+        :Element: :Fire
       Freeze Water:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Freeze Water
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
-        :Element: 0
+        :DLVL: :M
+        :Element: :Ice
       Glue:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Glue
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL: 0
+        :DLVL: :M
       Glue Strip:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Glue Strip
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL: 0
+        :DLVL: :S
       Ice Sheet:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Ice Sheet
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
-        :Element: 0
+        :DLVL: :S
+        :Element: :Ice
       Ignite:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Ignite
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :Thres
+        :Duration: :Permanent
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
-        :Element: 0
+        :DLVL: :D
+        :Element: :Fire
       Light:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Light
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL: 0
-        :Element: 0
+        :DLVL: :M
+        :Element: :Light
       Limited Armor:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Limited Armor
+        :Type: :Physical
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 2
-        :DLVL: 0
+        :DLVL: :L
       Limited Physical Barrier:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Limited Physical Barrier
+        :Type: :Physical
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL: 0
+        :DLVL: :M
       Makeover:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Makeover
+        :Type: :Physical
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :Vol
+        :Duration: :Permanent
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Mana Static:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Mana Static
+        :Type: :Mana
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Permanent
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :D
       Mist:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Mist
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Petrify:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Petrify
+        :Type: :Physical
+        :Target: :Body
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
       Physical Barrier:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
+        :Name: :Physical Barrier
+        :Type: :Physical
+        :Target: :False
+        :Res: :Sustained
+        :Duration: :LOS
+        :Range: :True
         :Area: 2
-        :DTN: 0
+        :DTN: :S
       Reinforce:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Reinforce
+        :Type: :Physical
+        :Target: :ObjectRes
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Shadow:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Shadow
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL: 0
+        :DLVL: :M
       Shapechange:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
+        :Name: :Shapechange
+        :Type: :Physical
+        :Target: :Body
+        :Res: :Thres/Vol
+        :Duration: :Sustained
+        :Range: :LOS
         :Area: 1
-        :DTN: 0
+        :DTN: :M
       Spell Shield:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Spell Shield
+        :Type: :Mana
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :M
       Spell Wall:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Spell Wall
+        :Type: :Mana
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Spirit Barrier:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Spirit Barrier
+        :Type: :Mana
         :Target: 6
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 0
-        :DLVL: 0
+        :DLVL: :S
       Sterilize:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Sterilize
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :M
       Transform:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
-        :Target: 0
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Name: :Transform
+        :Type: :Physical
+        :Target: :Body
+        :Res: :Thres
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
-        :DLVL: 0
+        :DLVL: :S
       Wind:
         Class: Manipulation
         Subclass: Transformation
-        :Name: 0
-        :Type: 0
+        :Name: :Wind
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :False
+        :Duration: :Sustained
+        :Range: :LOS
+        :Area: :True
         :DTN: 2
-        :DLVL: 0
+        :DLVL: :M
     :Elemental:
       Acid Stream:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Acid Stream
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
         :DLVL: 1
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Acid
       Ball Lightning:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Ball Lightning
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
         :DLVL: 2
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Lightning
       Fireball:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Fireball
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
         :DLVL: 2
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Fire
       Flamethrower:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Flamethrower
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
         :DLVL: 1
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Fire
       Laser:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Laser
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
         :DLVL: 1
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Light
       Lightning Bolt:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Lightning Bolt
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
         :DLVL: 1
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Lightning
       Nova:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Nova
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
         :DLVL: 2
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Light
       Smoke Cloud:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Smoke Cloud
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
         :DLVL: 2
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Smoke
       Steam:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Steam
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
         :DLVL: 1
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Smoke
       Thunderbolt:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Thunderbolt
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :False
         :DTN: 1
         :DLVL: 1
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Blast
       Thunderclap:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Thunderclap
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
         :DLVL: 2
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Blast
       Toxic Wave:
         Class: Manipulation
         Subclass: Elemental
-        :Name: 0
-        :Type: 0
+        :Name: :Toxic Wave
+        :Type: :Physical
         :Target: 4
-        :Res: 0
-        :Duration: 0
-        :Range: 0
-        :Area: 0
+        :Res: :True
+        :Duration: :Instant
+        :Range: :LOS
+        :Area: :True
         :DTN: 1
         :DLVL: 2
-        :Damage: 0
-        :Element: 0
+        :Damage: :VA
+        :Element: :Acid
 :nuyen:
   -5: 500
   0: 5000

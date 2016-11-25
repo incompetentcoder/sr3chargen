@@ -21,6 +21,9 @@ CONSTANTS = {
     :Adept => { Points: 25, Spellpoints: 0 },
     :'Adept Magician' => { Points: 30, Spellpoints: 0 }
   },
+  subspelltypes: {:Manipulation => [:Telekinetic,:Control,
+                                    :Transformation,:Elemental],
+                  :Illusion => [:Direct, :Indirect]},
 
   spelltypes: {
     :Combat => spells["Combat"], :Detection => spells["Detection"],

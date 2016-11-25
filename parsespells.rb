@@ -26,7 +26,7 @@ f.each do |x|
       a[name][spellname]["Class"] = name
     end
     c.split(" ˛ ").each_with_index do |d,e|
-      if d.to_i
+      if d[/\d+/]
         d=d.to_i
       else
         d=d.to_sym
