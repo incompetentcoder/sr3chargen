@@ -21,6 +21,10 @@ class Application
   def save
   end
 
+  def gettotem
+    @a.gettotem
+  end
+
   def checkspells(totem)
     if @a.getmagetype =~ /ist/
       if totem
@@ -42,9 +46,6 @@ class Application
     end
     a
   end
-
-
-
 
   def choosespells(spells)
     chos = spells.collect {|x| x if x[0] == :Choose}.compact
@@ -75,7 +76,7 @@ class Application
       end
     end
     @a.settotem(totem,group,boni)
-    checkspells(totem)
+    checkspells(gettotem ? totem : nil)
   end
 
   def availabletotems(group)
@@ -285,9 +286,29 @@ class Character
   def gettotem
     @totem
   end
+  
+  def checktotem(totem,group)
+    if totem 
+      if CONSTANT[:totems][group][totem][:req]
+        CONSTANT[:totems][group][totem][:req].each do |x|
+          if CONSTANT[:attributes].include? x
+            @attributes[x[0]][:ACT] < x[1] ? (return false) : true
+          else
+            @derived[x[0]][:CBM] < x[1] ? (return false) : true
+          end
+        end
+      else
+        true
+      end
+    end
+  end
 
   def settotem(totem,group,boni)
-    @totem = [totem,group,boni]
+    if checktotem(totem,group)
+      @totem = [totem,group,boni]
+    else
+      @totem = nil
+    end
   end
 
   def setweight(weight)
@@ -979,8 +1000,8 @@ class Attributeblock < Gtk::Frame
         @tooltips.set_tip(@totem[3],'',nil)
         @app.settotem(nil,nil)
       end
+      x.active = -1 unless @app.gettotem
     end
-    
     add(@table)
   end
 end
