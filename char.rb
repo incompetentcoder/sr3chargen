@@ -76,7 +76,9 @@ class Application
       end
     end
     @a.settotem(totem,group,boni)
-    checkspells(gettotem ? totem : nil)
+    totem = gettotem ? gettotem[0] : nil
+    checkspells(totem)
+    @guiattributes.nototem unless totem
   end
 
   def availabletotems(group)
@@ -291,7 +293,7 @@ class Character
     if totem 
       if CONSTANT[:totems][group][totem][:req]
         CONSTANT[:totems][group][totem][:req].each do |x|
-          if CONSTANT[:attributes].include? x
+          if CONSTANT[:attributes].include? x[0]
             @attributes[x[0]][:ACT] < x[1] ? (return false) : true
           else
             @derived[x[0]][:CBM] < x[1] ? (return false) : true
@@ -443,6 +445,9 @@ class Character
     @derived[:Reaction][:Deck] = @derived[:Reaction][:Base]
     @derived[:Reaction][:Astral] = getmagic ? @attributes[:Intelligence][:ACT] +
       20 : @attributes[:Intelligence][:ACT]
+    if @totem && CONSTANTS[:totems][@totem[1]][@totem[0]][:req]
+      @app.settotem(@totem[0],@totem[1])
+    end
     @derived[:Reaction]
   end
   
@@ -613,6 +618,9 @@ class Character
                              @attributes[attr][:RM]
     @attributes[attr][:ACT] = @attributes[attr][:BA] + @attributes[attr][:BM] +
                               @attributes[attr][:CM] + @attributes[attr][:MM]
+    if @totem && CONSTANT[:totems][@totem[1]][@totem[0]][:req]
+      @app.settotem(@totem[0],@totem[1])
+    end
     @attributes[attr]
   end
 
@@ -897,6 +905,10 @@ class Attributeblock < Gtk::Frame
     totems.each do |x|
       @totem[3].append_text(x.to_s)
     end
+  end
+
+  def nototem
+    @totem[3].active = -1
   end
 
 
