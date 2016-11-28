@@ -19,15 +19,18 @@ f.each do |x|
     spellname = c.split(" ˛ ")[0]
     if subname
       a[name][subname][spellname]={}
-      a[name][subname][spellname]["Class"] = name
-      a[name][subname][spellname]["Subclass"] = subname
+      a[name][subname][spellname][:Class] = name
+      a[name][subname][spellname][:Subclass] = subname
     else
       a[name][spellname]={}
-      a[name][spellname]["Class"] = name
+      a[name][spellname][:Class] = name
     end
     c.split(" ˛ ").each_with_index do |d,e|
-      if d[/\d+/]
+      case d
+      when /\d+$/
         d=d.to_i
+      when /\+|\-/
+        d=d.to_s
       else
         d=d.to_sym
       end

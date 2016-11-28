@@ -1,206 +1,206 @@
 @Combat
-Name ˛ Type ˛ Target ˛ Res ˛ Duration ˛ Range ˛ Area ˛ DTN ˛ DLVL ˛ Damage ˛ DamType
-Death Touch ˛ Mana ˛ Willpower ˛ True ˛ Instant ˛ Touch ˛ False ˛ 0 ˛ -1 ˛ VA ˛ Physical ˛ 
-Manaball ˛ Mana ˛ Willpower ˛ True ˛ Instant ˛ LOS ˛ True ˛ 0 ˛ +1 ˛ VA ˛ Physical ˛ 
-Manabolt ˛ Mana ˛ Willpower ˛ True ˛ Instant ˛ LOS ˛ False ˛ 0 ˛ 0 ˛ VA ˛ Physical ˛ 
-Powerball ˛ Physical ˛ Body ˛ True ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ +1 ˛ VA ˛ Physical ˛ 
-Powerbolt ˛ Physical ˛ Body ˛ True ˛ Instant ˛ LOS ˛ False ˛ +1 ˛ 0 ˛ VA ˛ Physical
-Ram(Object) ˛ Physical ˛ ObjectRes ˛ False ˛ Instant ˛ Touch ˛ False ˛ +1 ˛ -2 ˛ VA ˛ 
-Shattershield ˛ Mana ˛ Force ˛ True ˛ Instant ˛ Touch ˛ False ˛ 0 ˛ M ˛ D ˛ 
-Slaughter(Race) ˛ Mana ˛ Willpower ˛ True ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ D ˛ D ˛ Physical
-Slay(Race) ˛ Mana ˛ Willpower ˛ True ˛ Instant ˛ LOS ˛ False ˛ -1 ˛ D ˛ D ˛ Physical
-Spiritblast ˛ Mana ˛ Force ˛ True ˛ Instant ˛ LOS ˛ True ˛ -1 ˛ +1 ˛ VA ˛ Physical
-Spiritbolt ˛ Mana ˛ Force ˛ True ˛ Instant ˛ LOS ˛ False ˛ -1 ˛ 0 ˛ VA ˛ Physical
-Stunball ˛ Mana ˛ Willpower ˛ True ˛ Instant ˛ LOS ˛ True ˛ -1 ˛ +1 ˛ VA ˛ Stun
-Stunbolt ˛ Mana ˛ Willpower ˛ True ˛ Instant ˛ LOS ˛ False ˛ -1 ˛ 0 ˛ VA ˛ Stun
-Stun Touch ˛ Mana ˛ Willpower ˛ True ˛ Instant ˛ Touch ˛ False ˛ -1 ˛ -1 ˛ VA ˛ Stun
-Wreck(Object) ˛ Physical ˛ ObjectRes ˛ False ˛ Instant ˛ LOS ˛ False ˛ +1 ˛ -1 ˛ VA ˛ Physical
+Name ˛ Type ˛ Target ˛ Res ˛ Dur ˛ Range ˛ Area ˛ DTN ˛ DLVL ˛ Damage ˛ DamType
+Death Touch ˛ M ˛ Willpower ˛ True ˛ I ˛ Touch ˛  ˛ 0 ˛ -1 ˛ VA ˛ P ˛ 
+Manaball ˛ M ˛ Willpower ˛ True ˛ I ˛ LOS ˛ Y ˛ 0 ˛ +1 ˛ VA ˛ P ˛ 
+Manabolt ˛ M ˛ Willpower ˛ True ˛ I ˛ LOS ˛  ˛ 0 ˛ 0 ˛ VA ˛ P ˛ 
+Powerball ˛ P ˛ Body ˛ True ˛ I ˛ LOS ˛ Y ˛ +1 ˛ +1 ˛ VA ˛ P ˛ 
+Powerbolt ˛ P ˛ Body ˛ True ˛ I ˛ LOS ˛  ˛ +1 ˛ 0 ˛ VA ˛ P
+Ram(Object) ˛ P ˛ ObjectRes ˛ False ˛ I ˛ Touch ˛  ˛ +1 ˛ -2 ˛ VA ˛ 
+Shattershield ˛ M ˛ Force ˛ True ˛ I ˛ Touch ˛  ˛ 0 ˛ M ˛ D ˛ 
+Slaughter(Race) ˛ M ˛ Willpower ˛ True ˛ I ˛ LOS ˛ Y ˛ +1 ˛ D ˛ D ˛ P
+Slay(Race) ˛ M ˛ Willpower ˛ True ˛ I ˛ LOS ˛  ˛ -1 ˛ D ˛ D ˛ P
+Spiritblast ˛ M ˛ Force ˛ True ˛ I ˛ LOS ˛ Y ˛ -1 ˛ +1 ˛ VA ˛ P
+Spiritbolt ˛ M ˛ Force ˛ True ˛ I ˛ LOS ˛  ˛ -1 ˛ 0 ˛ VA ˛ P
+Stunball ˛ M ˛ Willpower ˛ True ˛ I ˛ LOS ˛ Y ˛ -1 ˛ +1 ˛ VA ˛ S
+Stunbolt ˛ M ˛ Willpower ˛ True ˛ I ˛ LOS ˛  ˛ -1 ˛ 0 ˛ VA ˛ S
+Stun Touch ˛ M ˛ Willpower ˛ True ˛ I ˛ Touch ˛  ˛ -1 ˛ -1 ˛ VA ˛ S
+Wreck(Object) ˛ P ˛ ObjectRes ˛ False ˛ I ˛ LOS ˛  ˛ +1 ˛ -1 ˛ VA ˛ P
 
 @Detection
-Name ˛ Type ˛ Target ˛ Res ˛ Duration ˛ Area ˛ DTN ˛ DLVL
-Analyze Device ˛ Physical ˛ ObjectRes ˛ False ˛ Sustained ˛ False ˛ +1 ˛ M
-Analyze Magic ˛ Mana ˛ Force ˛ True ˛ Sustained ˛ False ˛ 0 ˛ L
-Analyze Truth ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ False ˛ 0 ˛ L
-Animal(Sense) ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ False ˛ 0 ˛ M
-Astral Window ˛ Mana ˛ Force ˛ True ˛ Sustained ˛ False ˛ 0 ˛ L
-Catalog ˛ Physical ˛ 6 ˛ False ˛ Sustained ˛ True ˛ +1 ˛ M
-Clairaudience ˛ Mana ˛ 6 ˛ False ˛ Sustained ˛ False ˛ 0 ˛ M
-Clairvoyance ˛ Mana ˛ 6 ˛ False ˛ Sustained ˛ False ˛ 0 ˛ M
-Combat Sense ˛ Mana ˛ 4 ˛ False ˛ Sustained ˛ False ˛ 0 ˛ S
-Detect Enemies ˛ Mana ˛ 4/6/10/+F ˛ True ˛ Sustained ˛ True ˛ 0 ˛ M
-Detect Individual ˛ Mana ˛ 4/6/10/+F ˛ True ˛ Sustained ˛ True ˛ 0 ˛ L
-Detect Life ˛ Mana ˛ 4/6/10/+F ˛ True ˛ Sustained ˛ True ˛ 0 ˛ L
-Detect(Life-Form) ˛ Mana ˛ 4/6/10/+F ˛ True ˛ Sustained ˛ True ˛ -1 ˛ L
-Detect Magic ˛ Mana ˛ 4/6/10/+F ˛ True ˛ Sustained ˛ True ˛ 0 ˛ L
-Detect(Object) ˛ Physical ˛ 4/6/10/+F ˛ False ˛ Sustained ˛ True ˛ +1 ˛ M
-Diagnose ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ False ˛ -1 ˛ L
-Enhance Aim ˛ Mana ˛ 6 ˛ True ˛ Sustained ˛ False ˛ 0 ˛ M
-Eyes of the Pack ˛ Mana ˛ 6 ˛ Vol ˛ Sustained ˛ False ˛ 0 ˛ M
-Mindlink ˛ Mana ˛ 4 ˛ Vol ˛ Sustained ˛ False ˛ 0 ˛ S
-Mind Probe ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ False ˛ 0 ˛ S
-Night Vision ˛ Physical ˛ 6 ˛ Vol ˛ Sustained ˛ False ˛ +1 ˛ L
-Translate ˛ Mana ˛ 4 ˛ Vol ˛ Sustained ˛ False ˛ 0 ˛ M
+Name ˛ Type ˛ Target ˛ Res ˛ Dur ˛ Area ˛ DTN ˛ DLVL
+Analyze Device ˛ P ˛ ObjectRes ˛ False ˛ S ˛  ˛ +1 ˛ M
+Analyze Magic ˛ M ˛ Force ˛ True ˛ S ˛  ˛ 0 ˛ L
+Analyze Truth ˛ M ˛ Willpower ˛ True ˛ S ˛  ˛ 0 ˛ L
+Animal(Sense) ˛ M ˛ Willpower ˛ True ˛ S ˛  ˛ 0 ˛ M
+Astral Window ˛ M ˛ Force ˛ True ˛ S ˛  ˛ 0 ˛ L
+Catalog ˛ P ˛ 6 ˛ False ˛ S ˛ Y ˛ +1 ˛ M
+Clairaudience ˛ M ˛ 6 ˛ False ˛ S ˛  ˛ 0 ˛ M
+Clairvoyance ˛ M ˛ 6 ˛ False ˛ S ˛  ˛ 0 ˛ M
+Combat Sense ˛ M ˛ 4 ˛ False ˛ S ˛  ˛ 0 ˛ S
+Detect Enemies ˛ M ˛ 4/6/10/+F ˛ True ˛ S ˛ Y ˛ 0 ˛ M
+Detect Individual ˛ M ˛ 4/6/10/+F ˛ True ˛ S ˛ Y ˛ 0 ˛ L
+Detect Life ˛ M ˛ 4/6/10/+F ˛ True ˛ S ˛ Y ˛ 0 ˛ L
+Detect(Life-Form) ˛ M ˛ 4/6/10/+F ˛ True ˛ S ˛ Y ˛ -1 ˛ L
+Detect Magic ˛ M ˛ 4/6/10/+F ˛ True ˛ S ˛ Y ˛ 0 ˛ L
+Detect(Object) ˛ P ˛ 4/6/10/+F ˛ False ˛ S ˛ Y ˛ +1 ˛ M
+Diagnose ˛ M ˛ Willpower ˛ True ˛ S ˛  ˛ -1 ˛ L
+Enhance Aim ˛ M ˛ 6 ˛ True ˛ S ˛  ˛ 0 ˛ M
+Eyes of the Pack ˛ M ˛ 6 ˛ Vol ˛ S ˛  ˛ 0 ˛ M
+Mindlink ˛ M ˛ 4 ˛ Vol ˛ S ˛  ˛ 0 ˛ S
+Mind Probe ˛ M ˛ Willpower ˛ True ˛ S ˛  ˛ 0 ˛ S
+Night Vision ˛ P ˛ 6 ˛ Vol ˛ S ˛  ˛ +1 ˛ L
+Translate ˛ M ˛ 4 ˛ Vol ˛ S ˛  ˛ 0 ˛ M
 
 @Health
-Name ˛ Type ˛ Target ˛ Res ˛ Duration ˛ Range ˛ Area ˛ DTN ˛ DLVL
-Alleviate-Allergy ˛ Physical ˛ 10-Essence ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ 0 ˛ AllergyLVL
-Antidote ˛ Mana ˛ ToxinPower ˛ Vol ˛ Permanent ˛ Touch ˛ False ˛ -2 ˛ ToxinLVL
-Awaken ˛ Mana ˛ 4 ˛ Vol ˛ Instant ˛ Touch ˛ False ˛ -2 ˛ DamageLVL
-Cause-Allergy ˛ Physical ˛ 10 - Essence ˛ True ˛ Sustained ˛ Touch ˛ False ˛ +2 ˛ AllergyLVL
-Cripple-Limb ˛ Physical ˛ Body ˛ Thres ˛ Sustained ˛ Touch ˛ False ˛ +1 ˛ S
-Cure-Disease ˛ Mana ˛ DiseasePower ˛ Vol ˛ Permanent ˛ Touch ˛ False ˛ 0 ˛ DiseaseLVL
-Decrease(Attribute) ˛ Mana ˛ 10 - Essence ˛ True ˛ Sustained ˛ Touch ˛ False ˛ +1 ˛ S
-Decrease(Cybered Attribute) ˛ Physical ˛ 10 - Essence ˛ True ˛ Sustained ˛ Touch ˛ False ˛ +2 ˛ S
-Decrease Reaction ˛ Mana ˛ 10 - Essence ˛ True ˛ Sustained ˛ Touch ˛ False ˛ +1 ˛ D
-Decrease Cybered Reaction ˛ Physical ˛ 10 - Essence ˛ True ˛ Sustained ˛ Touch ˛ False ˛ +2 ˛ D
-Decrease Reflexes -1 ˛ Physical ˛ 10 - Essence ˛ True ˛ Sustained ˛ Touch ˛ False ˛ +2 ˛ D
-Decrease Reflexes -2 ˛ Physical ˛ 10 - Essence ˛ True ˛ Sustained ˛ Touch ˛ False ˛ +4 ˛ D
-Decrease Reflexes -3 ˛ Physical ˛ 10 - Essence ˛ True ˛ Sustained ˛ Touch ˛ False ˛ +6 ˛ D
-Detox ˛ Mana ˛ Toxin Power ˛ Vol ˛ Permanent ˛ Touch ˛ False ˛ -2 ˛ ToxinLVL
-Fast ˛ Mana ˛ 4 ˛ Vol ˛ Permanent ˛ Touch ˛ False ˛ -2 ˛ M
-Heal ˛ Mana ˛ 10 - Essence ˛ Vol ˛ Permanent ˛ Touch ˛ False ˛ 0 ˛ DamageLVL
-Healthy Glow ˛ Mana ˛ 4 ˛ Vol ˛ Permanent ˛ Touch ˛ False ˛ 0 ˛ L
-Hibernate ˛ Mana ˛ 4 ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ +1 ˛ M
-Increase(Attribute) ˛ Mana ˛ Attribute ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ +1 ˛ M
-Increase(Cybered Attribute) ˛ Physical ˛ Attribute ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ +2 ˛ M
-Increase Reaction ˛ Mana ˛ Reaction ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ +1 ˛ S
-Increase Cybered Reaction ˛ Physical ˛ Reaction ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ +2 ˛ S
-Increase Reflexes +1 ˛ Mana ˛ Reaction ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ +1 ˛ S
-Increase Reflexes +2 ˛ Mana ˛ Reaction ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ +1 ˛ D
-Increase Reflexes +3 ˛ Mana ˛ Reaction ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ +3 ˛ D
-Intoxication ˛ Physical ˛ Body ˛ True ˛ Permament ˛ Touch ˛ False ˛ +1 ˛ D
-Nutrition ˛ Physical ˛ 4 ˛ Vol ˛ Permanent ˛ Touch ˛ False ˛ +1 ˛ M
-Oxygenate ˛ Physical ˛ 4 ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ +2 ˛ L
-Preserve ˛ Physical ˛ 4 ˛ False ˛ Permanent ˛ Touch ˛ False ˛ +1 ˛ M
-Prophylaxis ˛ Mana ˛ 4 ˛ Vol ˛ Sustained ˛ Touch ˛ False ˛ +1 ˛ L
-Resist Pain ˛ Mana ˛ 4 ˛ Vol ˛ Permanent ˛ Touch ˛ False ˛ -2 ˛ D
-Stabilize ˛ Mana ˛ 4 ˛ + ˛ Minutes ˛ Vol ˛ Permanent ˛ Touch ˛ False ˛ +1 ˛ M
-Threat ˛ Mana ˛ 10-Essence ˛ Vol ˛ Permanent ˛ Touch ˛ False ˛ -1 ˛ D
+Name ˛ Type ˛ Target ˛ Res ˛ Dur ˛ Range ˛ Area ˛ DTN ˛ DLVL
+Alleviate-Allergy ˛ P ˛ 10-Essence ˛ Vol ˛ S ˛ Touch ˛  ˛ 0 ˛ AllergyLVL
+Antidote ˛ M ˛ ToxinPower ˛ Vol ˛ P ˛ Touch ˛  ˛ -2 ˛ ToxinLVL
+Awaken ˛ M ˛ 4 ˛ Vol ˛ I ˛ Touch ˛  ˛ -2 ˛ DamageLVL
+Cause-Allergy ˛ P ˛ 10-Essence ˛ True ˛ S ˛ Touch ˛  ˛ +2 ˛ AllergyLVL
+Cripple-Limb ˛ P ˛ Body ˛ Thres ˛ S ˛ Touch ˛  ˛ +1 ˛ S
+Cure-Disease ˛ M ˛ DiseasePower ˛ Vol ˛ P ˛ Touch ˛  ˛ 0 ˛ DiseaseLVL
+Decrease(Attribute) ˛ M ˛ 10-Essence ˛ True ˛ S ˛ Touch ˛  ˛ +1 ˛ S
+Decrease(Cybered Attribute) ˛ P ˛ 10-Essence ˛ True ˛ S ˛ Touch ˛  ˛ +2 ˛ S
+Decrease Reaction ˛ M ˛ 10-Essence ˛ True ˛ S ˛ Touch ˛  ˛ +1 ˛ D
+Decrease Cybered Reaction ˛ P ˛ 10-Essence ˛ True ˛ S ˛ Touch ˛  ˛ +2 ˛ D
+Decrease Reflexes -1 ˛ P ˛ 10-Essence ˛ True ˛ S ˛ Touch ˛  ˛ +2 ˛ D
+Decrease Reflexes -2 ˛ P ˛ 10-Essence ˛ True ˛ S ˛ Touch ˛  ˛ +4 ˛ D
+Decrease Reflexes -3 ˛ P ˛ 10-Essence ˛ True ˛ S ˛ Touch ˛  ˛ +6 ˛ D
+Detox ˛ M ˛ Toxin Power ˛ Vol ˛ P ˛ Touch ˛  ˛ -2 ˛ ToxinLVL
+Fast ˛ M ˛ 4 ˛ Vol ˛ P ˛ Touch ˛  ˛ -2 ˛ M
+Heal ˛ M ˛ 10-Essence ˛ Vol ˛ P ˛ Touch ˛  ˛ 0 ˛ DamageLVL
+Healthy Glow ˛ M ˛ 4 ˛ Vol ˛ P ˛ Touch ˛  ˛ 0 ˛ L
+Hibernate ˛ M ˛ 4 ˛ Vol ˛ S ˛ Touch ˛  ˛ +1 ˛ M
+Increase(Attribute) ˛ M ˛ Attribute ˛ Vol ˛ S ˛ Touch ˛  ˛ +1 ˛ M
+Increase(Cybered Attribute) ˛ P ˛ Attribute ˛ Vol ˛ S ˛ Touch ˛  ˛ +2 ˛ M
+Increase Reaction ˛ M ˛ Reaction ˛ Vol ˛ S ˛ Touch ˛  ˛ +1 ˛ S
+Increase Cybered Reaction ˛ P ˛ Reaction ˛ Vol ˛ S ˛ Touch ˛  ˛ +2 ˛ S
+Increase Reflexes +1 ˛ M ˛ Reaction ˛ Vol ˛ S ˛ Touch ˛  ˛ +1 ˛ S
+Increase Reflexes +2 ˛ M ˛ Reaction ˛ Vol ˛ S ˛ Touch ˛  ˛ +1 ˛ D
+Increase Reflexes +3 ˛ M ˛ Reaction ˛ Vol ˛ S ˛ Touch ˛  ˛ +3 ˛ D
+Intoxication ˛ P ˛ Body ˛ True ˛ P ˛ Touch ˛  ˛ +1 ˛ D
+Nutrition ˛ P ˛ 4 ˛ Vol ˛ P ˛ Touch ˛  ˛ +1 ˛ M
+Oxygenate ˛ P ˛ 4 ˛ Vol ˛ S ˛ Touch ˛  ˛ +2 ˛ L
+Preserve ˛ P ˛ 4 ˛ False ˛ P ˛ Touch ˛  ˛ +1 ˛ M
+Prophylaxis ˛ M ˛ 4 ˛ Vol ˛ S ˛ Touch ˛  ˛ +1 ˛ L
+Resist Pain ˛ M ˛ 4 ˛ Vol ˛ P ˛ Touch ˛  ˛ -2 ˛ D
+Stabilize ˛ M ˛ 4+Minutes ˛ Vol ˛ P ˛ Touch ˛  ˛ +1 ˛ M
+Threat ˛ M ˛ 10-Essence ˛ Vol ˛ P ˛ Touch ˛  ˛ -1 ˛ D
 
 @Illusion
 @@Direct
-Name ˛ Type ˛ Target ˛ Res ˛ Duration ˛ Range ˛ Area ˛ DTN ˛ DLVL
-Agony ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ M
-Blindness ˛ Physical ˛ Intelligence ˛ True ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Chaff ˛ Physical ˛ ObjectRes ˛ False ˛ Sustained ˛ LOS ˛ False ˛ 0 ˛ S
-Chaos ˛ Physical ˛ Intelligence ˛ True ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ S
-Chaotic World ˛ Physical ˛ Intelligence ˛ True ˛ Sustained ˛ LOS ˛ True ˛ +1 ˛ D
-Confusion ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ LOS ˛ False ˛ 0 ˛ S
-Dream ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ LOS ˛ False ˛ 0 ˛ M
-Entertainment ˛ Mana ˛ Willpower ˛ Vol ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ L
-Flak ˛ Physical ˛ ObjectRes ˛ False ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ D
-Flash ˛ Physical ˛ Intelligence ˛ True ˛ Instant ˛ LOS ˛ True ˛ 0 ˛ S
-Mass Agony ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ S
-Mass Blindness ˛ Physical ˛ Intelligence ˛ True ˛ Sustained ˛ LOS ˛ True ˛ +1 ˛ S
-Mass Confusion ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ D
-Stench ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ S
-Stink ˛ Mana ˛ Willpower ˛ True ˛ Sustained ˛ LOS ˛ False ˛ 0 ˛ M
-Trid Entertainment ˛ Physical ˛ Intelligence ˛ Vol ˛ Sustained ˛ LOS ˛ True ˛ +1 ˛ L
+Name ˛ Type ˛ Target ˛ Res ˛ Dur ˛ Range ˛ Area ˛ DTN ˛ DLVL
+Agony ˛ M ˛ Willpower ˛ True ˛ S ˛ LOS ˛ Y ˛ 0 ˛ M
+Blindness ˛ P ˛ Intelligence ˛ True ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Chaff ˛ P ˛ ObjectRes ˛ False ˛ S ˛ LOS ˛  ˛ 0 ˛ S
+Chaos ˛ P ˛ Intelligence ˛ True ˛ S ˛ LOS ˛  ˛ +1 ˛ S
+Chaotic World ˛ P ˛ Intelligence ˛ True ˛ S ˛ LOS ˛ Y ˛ +1 ˛ D
+Confusion ˛ M ˛ Willpower ˛ True ˛ S ˛ LOS ˛  ˛ 0 ˛ S
+Dream ˛ M ˛ Willpower ˛ True ˛ S ˛ LOS ˛  ˛ 0 ˛ M
+Entertainment ˛ M ˛ Willpower ˛ Vol ˛ S ˛ LOS ˛ Y ˛ 0 ˛ L
+Flak ˛ P ˛ ObjectRes ˛ False ˛ S ˛ LOS ˛ Y ˛ 0 ˛ D
+Flash ˛ P ˛ Intelligence ˛ True ˛ I ˛ LOS ˛ Y ˛ 0 ˛ S
+Mass Agony ˛ M ˛ Willpower ˛ True ˛ S ˛ LOS ˛ Y ˛ 0 ˛ S
+Mass Blindness ˛ P ˛ Intelligence ˛ True ˛ S ˛ LOS ˛ Y ˛ +1 ˛ S
+Mass Confusion ˛ M ˛ Willpower ˛ True ˛ S ˛ LOS ˛ Y ˛ 0 ˛ D
+Stench ˛ M ˛ Willpower ˛ True ˛ S ˛ LOS ˛ Y ˛ 0 ˛ S
+Stink ˛ M ˛ Willpower ˛ True ˛ S ˛ LOS ˛  ˛ 0 ˛ M
+Trid Entertainment ˛ P ˛ Intelligence ˛ Vol ˛ S ˛ LOS ˛ Y ˛ +1 ˛ L
 
 @Illusion
 @@Indirect
-Name ˛ Type ˛ Target ˛ Res ˛ Duration ˛ Range ˛ Area ˛ DTN ˛ DLVL
-Camouflage ˛ Mana ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ False ˛ 0 ˛ L
-Double Image ˛ Mana ˛ 4 ˛ True ˛ Sustained ˛ Touch ˛ False ˛ 0 ˛ S
-Foreboding ˛ Mana ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ D
-Hot Potato ˛ Mana ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ M
-Improved Invisibility ˛ Physical ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Invisibility ˛ Mana ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ False ˛ 0 ˛ M
-Mask ˛ Mana ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ False ˛ 0 ˛ M
-Phantasm ˛ Mana ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ D
-Physical Camouflage ˛ Physical ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ L
-Physical Double Image ˛ Physical ˛ 4 ˛ True ˛ Sustained ˛ Touch ˛ False ˛ +1 ˛ S
-Physical Mask ˛ Physical ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Silence ˛ Physical ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ True ˛ +1 ˛ S
-Stealth ˛ Physical ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Trid Phantasm ˛ Physical ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ True ˛ +1 ˛ D
-Vehicle Mask ˛ Physical ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ S
+Name ˛ Type ˛ Target ˛ Res ˛ Dur ˛ Range ˛ Area ˛ DTN ˛ DLVL
+Camouflage ˛ M ˛ 4 ˛ True ˛ S ˛ LOS ˛  ˛ 0 ˛ L
+Double Image ˛ M ˛ 4 ˛ True ˛ S ˛ Touch ˛  ˛ 0 ˛ S
+Foreboding ˛ M ˛ 4 ˛ True ˛ S ˛ LOS ˛ Y ˛ 0 ˛ D
+Hot Potato ˛ M ˛ 4 ˛ True ˛ S ˛ LOS ˛ Y ˛ 0 ˛ M
+Improved Invisibility ˛ P ˛ 4 ˛ True ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Invisibility ˛ M ˛ 4 ˛ True ˛ S ˛ LOS ˛  ˛ 0 ˛ M
+Mask ˛ M ˛ 4 ˛ True ˛ S ˛ LOS ˛  ˛ 0 ˛ M
+Phantasm ˛ M ˛ 4 ˛ True ˛ S ˛ LOS ˛ Y ˛ 0 ˛ D
+Physical Camouflage ˛ P ˛ 4 ˛ True ˛ S ˛ LOS ˛  ˛ +1 ˛ L
+Physical Double Image ˛ P ˛ 4 ˛ True ˛ S ˛ Touch ˛  ˛ +1 ˛ S
+Physical Mask ˛ P ˛ 4 ˛ True ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Silence ˛ P ˛ 4 ˛ True ˛ S ˛ LOS ˛ Y ˛ +1 ˛ S
+Stealth ˛ P ˛ 4 ˛ True ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Trid Phantasm ˛ P ˛ 4 ˛ True ˛ S ˛ LOS ˛ Y ˛ +1 ˛ D
+Vehicle Mask ˛ P ˛ 4 ˛ True ˛ S ˛ LOS ˛  ˛ +1 ˛ S
 
 @Manipulation
 @@Control
-Name ˛ Type ˛ Target ˛ Res ˛ Duration ˛ Range ˛ Area ˛ DTN ˛ DLVL
-Alter Memory ˛ Mana ˛ Willpower ˛ Thres ˛ Permanent ˛ LOS ˛ False ˛ 0 ˛ D
-Calm Animal ˛ Mana ˛ Willpower ˛ Thres ˛ Sustained ˛ LOS ˛ False ˛ 0 ˛ M
-Calm Pack ˛ Mana ˛ Willpower ˛ Thres ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ S
-Compel Truth ˛ Mana ˛ Willpower ˛ Thres ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Control Actions ˛ Mana ˛ Willpower ˛ Thres ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Control Animal ˛ Mana ˛ Willpower ˛ Thres ˛ Sustained ˛ LOS ˛ False ˛ 0 ˛ S
-Control Emotion ˛ Mana ˛ Willpower ˛ Thres ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Control Pack ˛ Mana ˛ Willpower ˛ Thres ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ D
-Control Thoughts ˛ Mana ˛ Willpower ˛ Thres ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ S
-Influence ˛ Mana ˛ Willpower ˛ Thres ˛ Permanent ˛ LOS ˛ False ˛ 0 ˛ S
-Mob Mind ˛ Mana ˛ Willpower ˛ Thres ˛ Sustained ˛ LOS ˛ True ˛ +1 ˛ D
-Mob Mood ˛ Mana ˛ Willpower ˛ Thres ˛ Sustained ˛ LOS ˛ True ˛ +1 ˛ S
+Name ˛ Type ˛ Target ˛ Res ˛ Dur ˛ Range ˛ Area ˛ DTN ˛ DLVL
+Alter Memory ˛ M ˛ Willpower ˛ Thres ˛ P ˛ LOS ˛  ˛ 0 ˛ D
+Calm Animal ˛ M ˛ Willpower ˛ Thres ˛ S ˛ LOS ˛  ˛ 0 ˛ M
+Calm Pack ˛ M ˛ Willpower ˛ Thres ˛ S ˛ LOS ˛ Y ˛ 0 ˛ S
+Compel Truth ˛ M ˛ Willpower ˛ Thres ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Control Actions ˛ M ˛ Willpower ˛ Thres ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Control Animal ˛ M ˛ Willpower ˛ Thres ˛ S ˛ LOS ˛  ˛ 0 ˛ S
+Control Emotion ˛ M ˛ Willpower ˛ Thres ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Control Pack ˛ M ˛ Willpower ˛ Thres ˛ S ˛ LOS ˛ Y ˛ 0 ˛ D
+Control Thoughts ˛ M ˛ Willpower ˛ Thres ˛ S ˛ LOS ˛  ˛ +1 ˛ S
+Influence ˛ M ˛ Willpower ˛ Thres ˛ P ˛ LOS ˛  ˛ 0 ˛ S
+Mob Mind ˛ M ˛ Willpower ˛ Thres ˛ S ˛ LOS ˛ Y ˛ +1 ˛ D
+Mob Mood ˛ M ˛ Willpower ˛ Thres ˛ S ˛ LOS ˛ Y ˛ +1 ˛ S
 
 @Manipulation
 @@Elemental
-Name ˛ Type ˛ Target ˛ Res ˛ Duration ˛ Range ˛ Area ˛ DTN ˛ DLVL ˛ Damage ˛ Element
-Acid Stream ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ False ˛ +1 ˛ +1 ˛ VA ˛ Acid
-Ball Lightning ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ +2 ˛ VA ˛ Lightning
-Fireball ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ +2 ˛ VA ˛ Fire
-Flamethrower ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ False ˛ +1 ˛ +1 ˛ VA ˛ Fire
-Laser ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ False ˛ +1 ˛ +1 ˛ VA ˛ Light
-Lightning Bolt ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ False ˛ +1 ˛ +1 ˛ VA ˛ Lightning
-Nova ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ +2 ˛ VA ˛ Light
-Smoke Cloud ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ +2 ˛ VA ˛ Smoke
-Steam ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ False ˛ +1 ˛ +1 ˛ VA ˛ Smoke
-Thunderbolt ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ False ˛ +1 ˛ +1 ˛ VA ˛ Blast
-Thunderclap ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ +2 ˛ VA ˛ Blast
-Toxic Wave ˛ Physical ˛ 4 ˛ True ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ +2 ˛ VA ˛ Acid
+Name ˛ Type ˛ Target ˛ Res ˛ Dur ˛ Range ˛ Area ˛ DTN ˛ DLVL ˛ Damage ˛ Element
+Acid Stream ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛  ˛ +1 ˛ +1 ˛ VA ˛ Acid
+Ball Lightning ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛ Y ˛ +1 ˛ +2 ˛ VA ˛ Lightning
+Fireball ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛ Y ˛ +1 ˛ +2 ˛ VA ˛ Fire
+Flamethrower ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛  ˛ +1 ˛ +1 ˛ VA ˛ Fire
+Laser ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛  ˛ +1 ˛ +1 ˛ VA ˛ Light
+Lightning Bolt ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛  ˛ +1 ˛ +1 ˛ VA ˛ Lightning
+Nova ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛ Y ˛ +1 ˛ +2 ˛ VA ˛ Light
+Smoke Cloud ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛ Y ˛ +1 ˛ +2 ˛ VA ˛ Smoke
+Steam ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛  ˛ +1 ˛ +1 ˛ VA ˛ Smoke
+Thunderbolt ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛  ˛ +1 ˛ +1 ˛ VA ˛ Blast
+Thunderclap ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛ Y ˛ +1 ˛ +2 ˛ VA ˛ Blast
+Toxic Wave ˛ P ˛ 4 ˛ True ˛ I ˛ LOS ˛ Y ˛ +1 ˛ +2 ˛ VA ˛ Acid
 
 @Manipulation
 @@Telekinetic
-Name ˛ Type ˛ Target ˛ Res ˛ Duration ˛ Range ˛ Area ˛ DTN ˛ DLVL, Damage
-Animate ˛ Physical ˛ ObjectRes ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Bind ˛ Physical ˛ Quickness ˛ True ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ M
-Catfall ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Clout ˛ Physical ˛ 4 ˛ RangedCombat ˛ Instant ˛ LOS ˛ False ˛ 0 ˛ 0 ˛ VA
-Deflect ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ M
-Fling ˛ Physical ˛ 4 ˛ RangedCombat ˛ Instant ˛ Touch ˛ False ˛ +1 ˛ M
-Gecko Crawl ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ M
-Levitate ˛ Physical ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ M
-Lock ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ M
-Magic Fingers ˛ Physical ˛ 6 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ M
-Net ˛ Physical ˛ Quickness ˛ True ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ S
-Poltergeist ˛ Physical ˛ 4 ˛ True ˛ Sustained ˛ LOS ˛ True ˛ +1 ˛ M
-Redirect ˛ Physical ˛ 4 ˛ RangedCombat ˛ Instant ˛ LOS ˛ False ˛ +1 ˛ 0 ˛ VA
-Shape Earth ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ M
-Shape Water ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ M
-Use(Skill) ˛ Physical ˛ 6 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ L
+Name ˛ Type ˛ Target ˛ Res ˛ Dur ˛ Range ˛ Area ˛ DTN ˛ DLVL, Damage
+Animate ˛ P ˛ ObjectRes ˛ False ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Bind ˛ P ˛ Quickness ˛ True ˛ S ˛ LOS ˛  ˛ +2 ˛ M
+Catfall ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Clout ˛ P ˛ 4 ˛ RangedCombat ˛ I ˛ LOS ˛  ˛ 0 ˛ 0 ˛ VA
+Deflect ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛  ˛ +2 ˛ M
+Fling ˛ P ˛ 4 ˛ RangedCombat ˛ I ˛ Touch ˛  ˛ +1 ˛ M
+Gecko Crawl ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛  ˛ +2 ˛ M
+Levitate ˛ P ˛ 4 ˛ True ˛ S ˛ LOS ˛  ˛ +2 ˛ M
+Lock ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛  ˛ +2 ˛ M
+Magic Fingers ˛ P ˛ 6 ˛ False ˛ S ˛ LOS ˛  ˛ +2 ˛ M
+Net ˛ P ˛ Quickness ˛ True ˛ S ˛ LOS ˛ Y ˛ +2 ˛ S
+Poltergeist ˛ P ˛ 4 ˛ True ˛ S ˛ LOS ˛ Y ˛ +1 ˛ M
+Redirect ˛ P ˛ 4 ˛ RangedCombat ˛ I ˛ LOS ˛  ˛ +1 ˛ 0 ˛ VA
+Shape Earth ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ M
+Shape Water ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ M
+Use(Skill) ˛ P ˛ 6 ˛ False ˛ S ˛ LOS ˛  ˛ +2 ˛ L
 
 @Manipulation
 @@Transformation
-Name ˛ Type ˛ Target ˛ Res ˛ Duration ˛ Range ˛ Area ˛ DTN ˛ DLVL ˛ Element
-Alter Temperature ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ M
-Armor ˛ Physical ˛ 6 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ M
-Astral Armor ˛ Mana ˛ 6 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Astral Barrier ˛ Mana ˛ 6 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +1 ˛ S
-Clean(Element) ˛ Physical ˛ 6 ˛ False ˛ Permanent ˛ LOS ˛ True ˛ +1 ˛ S ˛ (Element)
-Control Fire ˛ Physical ˛ FirePower ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ M ˛ Fire
-Create Food ˛ Physical ˛ 4 ˛ False ˛ Permanent ˛ LOS ˛ False ˛ +1 ˛ S
-Fashion ˛ Physical ˛ 6 ˛ False ˛ Permanent ˛ Touch ˛ False ˛ +1 ˛ L
-Firewall ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ S ˛ Fire
-Fix ˛ Physical ˛ ObjectRes ˛ False ˛ Permanent ˛ Touch ˛ False ˛ 0 ˛ S
-Flame Aura ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ M ˛ Fire
-Freeze Water ˛ Physical ˛ 4 ˛ False ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ M ˛ Ice
-Glue ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ M
-Glue Strip ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ S
-Ice Sheet ˛ Physical ˛ 4 ˛ False ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ S ˛ Ice
-Ignite ˛ Physical ˛ 4 ˛ Thres ˛ Permanent ˛ LOS ˛ False ˛ +1 ˛ D ˛ Fire
-Light ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ M ˛ Light
-Limited Armor ˛ Physical ˛ 6 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +2 ˛ L
-Limited Physical Barrier ˛ Physical ˛ 6 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ M
-Makeover ˛ Physical ˛ 6 ˛ Vol ˛ Permanent ˛ LOS ˛ False ˛ +1 ˛ M
-Mana Static ˛ Mana ˛ 4 ˛ False ˛ Permanent ˛ LOS ˛ True ˛ 0 ˛ D
-Mist ˛ Physical ˛ 4 ˛ False ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ M
-Petrify ˛ Physical ˛ Body ˛ Thres ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ S
-Physical Barrier ˛ Physical ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ S
-Reinforce ˛ Physical ˛ ObjectRes ˛ False ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ M
-Shadow ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ M
-Shapechange ˛ Physical ˛ Body ˛ Thres/Vol ˛ Sustained ˛ LOS ˛ +1 ˛ M
-Spell Shield ˛ Mana ˛ 6 ˛ False ˛ Sustained ˛ LOS ˛ False ˛ 0 ˛ M
-Spell Wall ˛ Mana ˛ 6 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ S
-Spirit Barrier ˛ Mana ˛ 6 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ 0 ˛ S
-Sterilize ˛ Physical ˛ 4 ˛ False ˛ Instant ˛ LOS ˛ True ˛ +1 ˛ M
-Transform ˛ Physical ˛ Body ˛ Thres ˛ Sustained ˛ LOS ˛ False ˛ +1 ˛ S
-Wind ˛ Physical ˛ 4 ˛ False ˛ Sustained ˛ LOS ˛ True ˛ +2 ˛ M
+Name ˛ Type ˛ Target ˛ Res ˛ Dur ˛ Range ˛ Area ˛ DTN ˛ DLVL ˛ Element
+Alter Temperature ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ M
+Armor ˛ P ˛ 6 ˛ False ˛ S ˛ LOS ˛  ˛ +2 ˛ M
+Astral Armor ˛ M ˛ 6 ˛ False ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Astral Barrier ˛ M ˛ 6 ˛ False ˛ S ˛ LOS ˛ Y ˛ +1 ˛ S
+Clean(Element) ˛ P ˛ 6 ˛ False ˛ P ˛ LOS ˛ Y ˛ +1 ˛ S ˛ (Element)
+Control Fire ˛ P ˛ FirePower ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ M ˛ Fire
+Create Food ˛ P ˛ 4 ˛ False ˛ P ˛ LOS ˛  ˛ +1 ˛ S
+Fashion ˛ P ˛ 6 ˛ False ˛ P ˛ Touch ˛  ˛ +1 ˛ L
+Firewall ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ S ˛ Fire
+Fix ˛ P ˛ ObjectRes ˛ False ˛ P ˛ Touch ˛  ˛ 0 ˛ S
+Flame Aura ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛  ˛ +2 ˛ M ˛ Fire
+Freeze Water ˛ P ˛ 4 ˛ False ˛ I ˛ LOS ˛ Y ˛ +1 ˛ M ˛ Ice
+Glue ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛  ˛ +2 ˛ M
+Glue Strip ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ S
+Ice Sheet ˛ P ˛ 4 ˛ False ˛ I ˛ LOS ˛ Y ˛ +1 ˛ S ˛ Ice
+Ignite ˛ P ˛ 4 ˛ Thres ˛ P ˛ LOS ˛  ˛ +1 ˛ D ˛ Fire
+Light ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ M ˛ Light
+Limited Armor ˛ P ˛ 6 ˛ False ˛ S ˛ LOS ˛  ˛ +2 ˛ L
+Limited P Barrier ˛ P ˛ 6 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ M
+Makeover ˛ P ˛ 6 ˛ Vol ˛ P ˛ LOS ˛  ˛ +1 ˛ M
+Mana Static ˛ M ˛ 4 ˛ False ˛ P ˛ LOS ˛ Y ˛ 0 ˛ D
+Mist ˛ P ˛ 4 ˛ False ˛ I ˛ LOS ˛ Y ˛ +1 ˛ M
+Petrify ˛ P ˛ Body ˛ Thres ˛ S ˛ LOS ˛  ˛ +1 ˛ S
+Physical Barrier ˛ P ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ S
+Reinforce ˛ P ˛ ObjectRes ˛ False ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Shadow ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ M
+Shapechange ˛ P ˛ Body ˛ Thres/Vol ˛ S ˛ LOS ˛  ˛ +1 ˛ M
+Spell Shield ˛ M ˛ 6 ˛ False ˛ S ˛ LOS ˛  ˛ 0 ˛ M
+Spell Wall ˛ M ˛ 6 ˛ False ˛ S ˛ LOS ˛ Y ˛ 0 ˛ S
+Spirit Barrier ˛ M ˛ 6 ˛ False ˛ S ˛ LOS ˛ Y ˛ 0 ˛ S
+Sterilize ˛ P ˛ 4 ˛ False ˛ I ˛ LOS ˛ Y ˛ +1 ˛ M
+Transform ˛ P ˛ Body ˛ Thres ˛ S ˛ LOS ˛  ˛ +1 ˛ S
+Wind ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ M
