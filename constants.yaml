@@ -339,7 +339,7 @@
       :Range: :Touch
       :Area: !ruby/symbol 
       :DTN: 0
-      :DLVL: -1
+      :DLVL: "-1"
       :Damage: :VA
       :DamType: :P
     Manaball:
@@ -352,7 +352,7 @@
       :Range: :LOS
       :Area: :Y
       :DTN: 0
-      :DLVL: 1
+      :DLVL: "+1"
       :Damage: :VA
       :DamType: :P
     Manabolt:
@@ -377,8 +377,8 @@
       :Dur: :I
       :Range: :LOS
       :Area: :Y
-      :DTN: 1
-      :DLVL: 1
+      :DTN: "+1"
+      :DLVL: "+1"
       :Damage: :VA
       :DamType: :P
     Powerbolt:
@@ -390,7 +390,7 @@
       :Dur: :I
       :Range: :LOS
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: 0
       :Damage: :VA
       :DamType: :P
@@ -403,8 +403,8 @@
       :Dur: :I
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
-      :DLVL: -2
+      :DTN: "+1"
+      :DLVL: "-2"
       :Damage: :VA
     Shattershield:
       :Class: Combat
@@ -427,7 +427,7 @@
       :Dur: :I
       :Range: :LOS
       :Area: :Y
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :D
       :Damage: :D
       :DamType: :P
@@ -440,7 +440,7 @@
       :Dur: :I
       :Range: :LOS
       :Area: !ruby/symbol 
-      :DTN: -1
+      :DTN: "-1"
       :DLVL: :D
       :Damage: :D
       :DamType: :P
@@ -453,8 +453,8 @@
       :Dur: :I
       :Range: :LOS
       :Area: :Y
-      :DTN: -1
-      :DLVL: 1
+      :DTN: "-1"
+      :DLVL: "+1"
       :Damage: :VA
       :DamType: :P
     Spiritbolt:
@@ -466,7 +466,7 @@
       :Dur: :I
       :Range: :LOS
       :Area: !ruby/symbol 
-      :DTN: -1
+      :DTN: "-1"
       :DLVL: 0
       :Damage: :VA
       :DamType: :P
@@ -479,8 +479,8 @@
       :Dur: :I
       :Range: :LOS
       :Area: :Y
-      :DTN: -1
-      :DLVL: 1
+      :DTN: "-1"
+      :DLVL: "+1"
       :Damage: :VA
       :DamType: :S
     Stunbolt:
@@ -492,7 +492,7 @@
       :Dur: :I
       :Range: :LOS
       :Area: !ruby/symbol 
-      :DTN: -1
+      :DTN: "-1"
       :DLVL: 0
       :Damage: :VA
       :DamType: :S
@@ -505,8 +505,8 @@
       :Dur: :I
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: -1
-      :DLVL: -1
+      :DTN: "-1"
+      :DLVL: "-1"
       :Damage: :VA
       :DamType: :S
     Wreck(Object):
@@ -518,8 +518,8 @@
       :Dur: :I
       :Range: :LOS
       :Area: !ruby/symbol 
-      :DTN: 1
-      :DLVL: -1
+      :DTN: "+1"
+      :DLVL: "-1"
       :Damage: :VA
       :DamType: :P
   :Detection:
@@ -531,7 +531,7 @@
       :Res: :False
       :Dur: :S
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :M
     Analyze Magic:
       :Class: Detection
@@ -581,7 +581,7 @@
       :Res: :False
       :Dur: :S
       :Area: :Y
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :M
     Clairaudience:
       :Class: Detection
@@ -651,7 +651,7 @@
       :Res: :True
       :Dur: :S
       :Area: :Y
-      :DTN: -1
+      :DTN: "-1"
       :DLVL: :L
     Detect Magic:
       :Class: Detection
@@ -671,7 +671,7 @@
       :Res: :False
       :Dur: :S
       :Area: :Y
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :M
     Diagnose:
       :Class: Detection
@@ -681,7 +681,7 @@
       :Res: :True
       :Dur: :S
       :Area: !ruby/symbol 
-      :DTN: -1
+      :DTN: "-1"
       :DLVL: :L
     Enhance Aim:
       :Class: Detection
@@ -731,7 +731,7 @@
       :Res: :Vol
       :Dur: :S
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :L
     Translate:
       :Class: Detection
@@ -764,7 +764,7 @@
       :Dur: :P
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: -2
+      :DTN: "-2"
       :DLVL: :ToxinLVL
     Awaken:
       :Class: Health
@@ -775,7 +775,7 @@
       :Dur: :I
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: -2
+      :DTN: "-2"
       :DLVL: :DamageLVL
     Cause-Allergy:
       :Class: Health
@@ -786,7 +786,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 2
+      :DTN: "+2"
       :DLVL: :AllergyLVL
     Cripple-Limb:
       :Class: Health
@@ -797,7 +797,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :S
     Cure-Disease:
       :Class: Health
@@ -819,7 +819,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :S
     Decrease(Cybered Attribute):
       :Class: Health
@@ -830,7 +830,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 2
+      :DTN: "+2"
       :DLVL: :S
     Decrease Reaction:
       :Class: Health
@@ -841,7 +841,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :D
     Decrease Cybered Reaction:
       :Class: Health
@@ -852,40 +852,40 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 2
+      :DTN: "+2"
       :DLVL: :D
     Decrease Reflexes -1:
       :Class: Health
-      :Name: 0
+      :Name: Decrease Reflexes -1
       :Type: :P
       :Target: 10-Essence
       :Res: :True
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 2
+      :DTN: "+2"
       :DLVL: :D
     Decrease Reflexes -2:
       :Class: Health
-      :Name: 0
+      :Name: Decrease Reflexes -2
       :Type: :P
       :Target: 10-Essence
       :Res: :True
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 4
+      :DTN: "+4"
       :DLVL: :D
     Decrease Reflexes -3:
       :Class: Health
-      :Name: 0
+      :Name: Decrease Reflexes -3
       :Type: :P
       :Target: 10-Essence
       :Res: :True
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 6
+      :DTN: "+6"
       :DLVL: :D
     Detox:
       :Class: Health
@@ -896,7 +896,7 @@
       :Dur: :P
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: -2
+      :DTN: "-2"
       :DLVL: :ToxinLVL
     Fast:
       :Class: Health
@@ -907,7 +907,7 @@
       :Dur: :P
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: -2
+      :DTN: "-2"
       :DLVL: :M
     Heal:
       :Class: Health
@@ -940,7 +940,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :M
     Increase(Attribute):
       :Class: Health
@@ -951,7 +951,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :M
     Increase(Cybered Attribute):
       :Class: Health
@@ -962,7 +962,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 2
+      :DTN: "+2"
       :DLVL: :M
     Increase Reaction:
       :Class: Health
@@ -973,7 +973,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :S
     Increase Cybered Reaction:
       :Class: Health
@@ -984,40 +984,40 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 2
+      :DTN: "+2"
       :DLVL: :S
     Increase Reflexes +1:
       :Class: Health
-      :Name: 0
+      :Name: Increase Reflexes +1
       :Type: :M
       :Target: :Reaction
       :Res: :Vol
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :S
     Increase Reflexes +2:
       :Class: Health
-      :Name: 0
+      :Name: Increase Reflexes +2
       :Type: :M
       :Target: :Reaction
       :Res: :Vol
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :D
     Increase Reflexes +3:
       :Class: Health
-      :Name: 0
+      :Name: Increase Reflexes +3
       :Type: :M
       :Target: :Reaction
       :Res: :Vol
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 3
+      :DTN: "+3"
       :DLVL: :D
     Intoxication:
       :Class: Health
@@ -1028,7 +1028,7 @@
       :Dur: :P
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :D
     Nutrition:
       :Class: Health
@@ -1039,7 +1039,7 @@
       :Dur: :P
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :M
     Oxygenate:
       :Class: Health
@@ -1050,7 +1050,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 2
+      :DTN: "+2"
       :DLVL: :L
     Preserve:
       :Class: Health
@@ -1061,7 +1061,7 @@
       :Dur: :P
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :M
     Prophylaxis:
       :Class: Health
@@ -1072,7 +1072,7 @@
       :Dur: :S
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :L
     Resist Pain:
       :Class: Health
@@ -1083,7 +1083,7 @@
       :Dur: :P
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: -2
+      :DTN: "-2"
       :DLVL: :D
     Stabilize:
       :Class: Health
@@ -1094,7 +1094,7 @@
       :Dur: :P
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: 1
+      :DTN: "+1"
       :DLVL: :M
     Threat:
       :Class: Health
@@ -1105,7 +1105,7 @@
       :Dur: :P
       :Range: :Touch
       :Area: !ruby/symbol 
-      :DTN: -1
+      :DTN: "-1"
       :DLVL: :D
   :Illusion:
     :Direct:
@@ -1131,7 +1131,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Chaff:
         :Class: Illusion
@@ -1155,7 +1155,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
       Chaotic World:
         :Class: Illusion
@@ -1167,7 +1167,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :D
       Confusion:
         :Class: Illusion
@@ -1251,7 +1251,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
       Mass Confusion:
         :Class: Illusion
@@ -1299,7 +1299,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :L
     :Indirect:
       Camouflage:
@@ -1360,7 +1360,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Invisibility:
         :Class: Illusion
@@ -1408,7 +1408,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :L
       Physical Double Image:
         :Class: Illusion
@@ -1420,7 +1420,7 @@
         :Dur: :S
         :Range: :Touch
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
       Physical Mask:
         :Class: Illusion
@@ -1432,7 +1432,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Silence:
         :Class: Illusion
@@ -1444,7 +1444,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
       Stealth:
         :Class: Illusion
@@ -1456,7 +1456,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Trid Phantasm:
         :Class: Illusion
@@ -1468,7 +1468,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :D
       Vehicle Mask:
         :Class: Illusion
@@ -1480,7 +1480,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
   :Manipulation:
     :Telekinetic:
@@ -1494,7 +1494,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL, Damage: :M
       Bind:
         :Class: Manipulation
@@ -1506,7 +1506,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL, Damage: :M
       Catfall:
         :Class: Manipulation
@@ -1518,7 +1518,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL, Damage: :M
       Clout:
         :Class: Manipulation
@@ -1543,7 +1543,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL, Damage: :M
       Fling:
         :Class: Manipulation
@@ -1555,7 +1555,7 @@
         :Dur: :I
         :Range: :Touch
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL, Damage: :M
       Gecko Crawl:
         :Class: Manipulation
@@ -1567,7 +1567,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL, Damage: :M
       Levitate:
         :Class: Manipulation
@@ -1579,7 +1579,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL, Damage: :M
       Lock:
         :Class: Manipulation
@@ -1591,7 +1591,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL, Damage: :M
       Magic Fingers:
         :Class: Manipulation
@@ -1603,7 +1603,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL, Damage: :M
       Net:
         :Class: Manipulation
@@ -1615,7 +1615,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL, Damage: :S
       Poltergeist:
         :Class: Manipulation
@@ -1627,7 +1627,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL, Damage: :M
       Redirect:
         :Class: Manipulation
@@ -1639,7 +1639,7 @@
         :Dur: :I
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL, Damage: 0
         ! '': :VA
       Shape Earth:
@@ -1652,7 +1652,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL, Damage: :M
       Shape Water:
         :Class: Manipulation
@@ -1664,7 +1664,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL, Damage: :M
       Use(Skill):
         :Class: Manipulation
@@ -1676,7 +1676,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL, Damage: :L
     :Control:
       Alter Memory:
@@ -1725,7 +1725,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Control Actions:
         :Class: Manipulation
@@ -1737,7 +1737,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Control Animal:
         :Class: Manipulation
@@ -1761,7 +1761,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Control Pack:
         :Class: Manipulation
@@ -1785,7 +1785,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
       Influence:
         :Class: Manipulation
@@ -1809,7 +1809,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :D
       Mob Mood:
         :Class: Manipulation
@@ -1821,7 +1821,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
     :Transformation:
       Alter Temperature:
@@ -1834,7 +1834,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :M
       Armor:
         :Class: Manipulation
@@ -1846,7 +1846,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :M
       Astral Armor:
         :Class: Manipulation
@@ -1858,7 +1858,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Astral Barrier:
         :Class: Manipulation
@@ -1870,7 +1870,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
       Clean(Element):
         :Class: Manipulation
@@ -1882,7 +1882,7 @@
         :Dur: :P
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
         :Element: :(Element)
       Control Fire:
@@ -1895,7 +1895,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :M
         :Element: :Fire
       Create Food:
@@ -1908,7 +1908,7 @@
         :Dur: :P
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
       Fashion:
         :Class: Manipulation
@@ -1920,7 +1920,7 @@
         :Dur: :P
         :Range: :Touch
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :L
       Firewall:
         :Class: Manipulation
@@ -1932,7 +1932,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :S
         :Element: :Fire
       Fix:
@@ -1957,7 +1957,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :M
         :Element: :Fire
       Freeze Water:
@@ -1970,7 +1970,7 @@
         :Dur: :I
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
         :Element: :Ice
       Glue:
@@ -1983,7 +1983,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :M
       Glue Strip:
         :Class: Manipulation
@@ -1995,7 +1995,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :S
       Ice Sheet:
         :Class: Manipulation
@@ -2007,7 +2007,7 @@
         :Dur: :I
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
         :Element: :Ice
       Ignite:
@@ -2020,7 +2020,7 @@
         :Dur: :P
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :D
         :Element: :Fire
       Light:
@@ -2033,7 +2033,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :M
         :Element: :Light
       Limited Armor:
@@ -2046,7 +2046,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :L
       Limited P Barrier:
         :Class: Manipulation
@@ -2058,7 +2058,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :M
       Makeover:
         :Class: Manipulation
@@ -2070,7 +2070,7 @@
         :Dur: :P
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Mana Static:
         :Class: Manipulation
@@ -2094,7 +2094,7 @@
         :Dur: :I
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Petrify:
         :Class: Manipulation
@@ -2106,7 +2106,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
       Physical Barrier:
         :Class: Manipulation
@@ -2117,7 +2117,7 @@
         :Res: :S
         :Dur: :LOS
         :Range: :Y
-        :Area: 2
+        :Area: "+2"
         :DTN: :S
       Reinforce:
         :Class: Manipulation
@@ -2129,7 +2129,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Shadow:
         :Class: Manipulation
@@ -2141,7 +2141,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :M
       Shapechange:
         :Class: Manipulation
@@ -2153,7 +2153,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Spell Shield:
         :Class: Manipulation
@@ -2201,7 +2201,7 @@
         :Dur: :I
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :M
       Transform:
         :Class: Manipulation
@@ -2213,7 +2213,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
+        :DTN: "+1"
         :DLVL: :S
       Wind:
         :Class: Manipulation
@@ -2225,7 +2225,7 @@
         :Dur: :S
         :Range: :LOS
         :Area: :Y
-        :DTN: 2
+        :DTN: "+2"
         :DLVL: :M
     :Elemental:
       Acid Stream:
@@ -2238,8 +2238,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
-        :DLVL: 1
+        :DTN: "+1"
+        :DLVL: "+1"
         :Damage: :VA
         :Element: :Acid
       Ball Lightning:
@@ -2252,8 +2252,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
-        :DLVL: 2
+        :DTN: "+1"
+        :DLVL: "+2"
         :Damage: :VA
         :Element: :Lightning
       Fireball:
@@ -2266,8 +2266,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
-        :DLVL: 2
+        :DTN: "+1"
+        :DLVL: "+2"
         :Damage: :VA
         :Element: :Fire
       Flamethrower:
@@ -2280,8 +2280,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
-        :DLVL: 1
+        :DTN: "+1"
+        :DLVL: "+1"
         :Damage: :VA
         :Element: :Fire
       Laser:
@@ -2294,8 +2294,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
-        :DLVL: 1
+        :DTN: "+1"
+        :DLVL: "+1"
         :Damage: :VA
         :Element: :Light
       Lightning Bolt:
@@ -2308,8 +2308,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
-        :DLVL: 1
+        :DTN: "+1"
+        :DLVL: "+1"
         :Damage: :VA
         :Element: :Lightning
       Nova:
@@ -2322,8 +2322,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
-        :DLVL: 2
+        :DTN: "+1"
+        :DLVL: "+2"
         :Damage: :VA
         :Element: :Light
       Smoke Cloud:
@@ -2336,8 +2336,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
-        :DLVL: 2
+        :DTN: "+1"
+        :DLVL: "+2"
         :Damage: :VA
         :Element: :Smoke
       Steam:
@@ -2350,8 +2350,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
-        :DLVL: 1
+        :DTN: "+1"
+        :DLVL: "+1"
         :Damage: :VA
         :Element: :Smoke
       Thunderbolt:
@@ -2364,8 +2364,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: !ruby/symbol 
-        :DTN: 1
-        :DLVL: 1
+        :DTN: "+1"
+        :DLVL: "+1"
         :Damage: :VA
         :Element: :Blast
       Thunderclap:
@@ -2378,8 +2378,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
-        :DLVL: 2
+        :DTN: "+1"
+        :DLVL: "+2"
         :Damage: :VA
         :Element: :Blast
       Toxic Wave:
@@ -2392,8 +2392,8 @@
         :Dur: :I
         :Range: :LOS
         :Area: :Y
-        :DTN: 1
-        :DLVL: 2
+        :DTN: "+1"
+        :DLVL: "+2"
         :Damage: :VA
         :Element: :Acid
 :nuyen:

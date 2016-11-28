@@ -27,7 +27,7 @@ f.each do |x|
     end
     c.split(" ˛ ").each_with_index do |d,e|
       case d
-      when /\d+$/
+      when /^\d+$/
         d=d.to_i
       when /\+|\-/
         d=d.to_s
