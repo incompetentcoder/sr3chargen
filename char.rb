@@ -566,12 +566,12 @@ class Character
       @nuyenrem = @nuyen - diff
       nuyen.active
     else
-      CONSTANT[:nuyen].find_index(@nuyen)
+      CONSTANT[:nuyen].find_index {|x,y| y == @nuyen}
     end
   end
 
   def getnuyen
-    CONSTANT[:nuyen].find_index(@nuyen)
+    CONSTANT[:nuyen].find_index {|x,y| y == @nuyen}
   end
 
   def getage
