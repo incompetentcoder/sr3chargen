@@ -1087,6 +1087,7 @@ class Skillblock < Gtk::ScrolledWindow
     @app = app
     super()
     self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
+    @tooltips = Gtk::Tooltips.new
     @maintable = Gtk::Table.new(1,3)
     @table = Gtk::Table.new(12, 3, homogenous = true)
     @table2 = Gtk::Table.new(12 , 1, homogenous = true)
@@ -1123,6 +1124,9 @@ class Skillblock < Gtk::ScrolledWindow
         CONSTANT[:activeskills][getattr][x.active_text.to_sym][:Specialization].each do |y|
           @header[:Specialization][1].append_text(y.to_s)
         end
+        @tooltips.set_tip(@header[:Skill][1],CONSTANT[:activeskills][getattr][x.active_text.to_sym][:Desc],nil)
+      else
+        @tooltips.set_tip(@header[:Skill][1],nil,nil)
       end
     end
 
