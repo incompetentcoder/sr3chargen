@@ -1118,9 +1118,9 @@ class Skillblock < Gtk::ScrolledWindow
     @header[:Skill][1].signal_connect('changed') do |x|
       updatecombo(:Specialization,@speccount)
       if x.active_text
-        @speccount = CONSTANT[:activeskills][getattr][x.active_text.to_sym].count
+        @speccount = CONSTANT[:activeskills][getattr][x.active_text.to_sym][:Specialization].count
         @header[:ADD].sensitive = true
-        CONSTANT[:activeskills][getattr][x.active_text.to_sym].each do |y|
+        CONSTANT[:activeskills][getattr][x.active_text.to_sym][:Specialization].each do |y|
           @header[:Specialization][1].append_text(y.to_s)
         end
       end

@@ -1,0 +1,391 @@
+@Body
+
+@Athletics
+The Athletics Skill is a representation of the characters training in the more physical aspects of life, often on a more extreme scale. The basic skill encompasses most facets of physical performance, such as how well you climb a ladder, jump a fence or run. The specializations can refine this to a more particular area that the character might be especially good in.
+ Climbing, Escape Artist, Jumping, Lifting, Running
+
+@Diving
+The skill for when swimming in a pool isn't enough, the Diving Skill covers everything from deep water dives and advanced underwater swimming techniques, to using scuba and various other underwater gear.
+ Deep-water Diving, Mixed-gas Diving
+
+@Parachuting
+When falling from low altitudes or high and you wish to slow your descent, the parachute comes into play. The use of this skill reflects how well your character performs the difficult task of parachuting, and not only includes activating the actual device but controlling your descent to land where you want to.
+ Standard Jump, HALO Jump, Low-Altitude Jump
+
+
+@Charisma
+
+@Etiquette
+Etiquette is your basic understanding of culture as a whole. It allows you to interact with other people and grasp the little intricacies of society and allows you not only to fit in, but as a means of advancement and acquiring something you'd need. It's used whenever buying gear — you roll it against the availability of the gear to determine whether you can buy something, and if so, how quickly you can get it.
+ Tribal, Magical Groups, Corporate, Street, Academic, Gang, Organized Crime, Military, Security, Matrix
+
+@Instruction
+The instruction skill encompasses showing another character how to perform a certain task or learn a new skill. Any skill the instructing character possesses at a level of three (3) or above may be taught, up to the level that the teacher knows. Roleplaying such instruction sections is good justification for raising skills once your character is made IC.
+
+@Interrogation
+The interrogation skill allows a character to gain information from an unwilling person, whether character or NPC. Its use involves an Open Test being made with your skill die that the subject must resist with her Willpower.
+ Verbal, Lie Detectors, Torture, Voice-Stress Analysis, Drug-Aided
+
+@Intimidation
+The use of the intimidation skill allows the character to make another do something based on the fear that he creates. It works in the same manner as interrogation in game mechanics, though intimidation is often the threat of violence or harm falling upon the subject, not the actual act.
+ Mental, Physical
+
+@Leadership
+A character possessing leadership is able to convince others to go along with him and do as he asks through example and strength of character. A person with this skill often does not have a problem taking hold of a situation and making it work to his designs. An Open Test is made against another character's (or NPCs) Intelligence to see if they'll follow his lead.
+ Political, Military, Morale, Tactics, Strategy, Commercial
+
+@Negotiation
+One of the integral skills of fixers (the other being Etiquette), negotiation is used when a character is trying to be on the winning end of a deal. A variety of different tactics can be used through this end, from bribery, bartering or quick speaking used to keep the subject off-balance. This skill is used to reduce the price of gear you might wish to obtain, or coax more money from a Johnson before a run, accomplished by making a Skill Test vs. the opponent's Intelligence. see Getting Gear for more details.
+ Bargain, Bribe, Con, Fast Talk
+
+
+@Intelligence
+
+@Armor B/R
+Everything you need to know about the building, repair, and modification of armor is covered by this skill. Get to it, Fett Wannabes.
+
+@Assault Rifles B/R
+This skill covers AK's, M-23's, and other rifles you hold in two hands and shoot many, many times. When you need to kill every motherfucker in the room… you'll need to build the weapon of choice up with this skill.
+
+@Aura Reading
+Available to the Awakened that can see into the Astral plane, this skill is a complementary skill to Astral Perception tests.
+ Auras, Sorcery, Signatures, Conjuring
+
+@Bike B/r
+Two-wheeled vehicles are fixed, built, or modified using this skill.
+
+@Biotech
+When you need to patch somebody up, implant cyberware into some shmoe's skull, or change someone's face with the wonders of plastic surgery, you need this skill.
+ Cybertechnology Implantation, Extended Care, First Aid, Organ Culture & Growth, Surgery, Transimplant Surgery, Plastic Surgery, Genetic Alteration
+
+@Biotech B/R
+For those tools, kits, and other associated items of medical use, you need to build, repair, or screw with them using Biotech B/R.
+
+@Blowgun B/R
+Used for the care, feeding, and growth of blowguns.
+
+@Car B/R
+Four-wheeled vehicles are fixed, built, or modified using this skill.
+
+@Clubs B/R
+Repairs, formation, and alterations to things that go whack on your head covered here.
+
+@Computer B/R
+Used to repair or upgrade decks, mainframes, and some few pieces of cyberware.
+
+@Computers
+Used to find, steal, or otherwise frag with information on the Matrix. Also used for programming, messing with virii, and digital grafitti.
+ Programming, Decking, Hardware, Cybernetics.
+
+@Cyber-Implant Combat B/R
+For the repair, modification, and other care and feeding stuff of cyber weaponry.
+
+@Demolitions
+When you have to blow stuff up, or cause buildings to collapse in interesting ways. Covers all the varied uses of high explosives.
+ Commercial Explosives, Plastic Explosives, Improvised Explosives
+
+@Demolitions B/R
+For the creation of specific explosives and their varied timing devices.
+
+@Disguise
+For the Saint in all of us, used to make others think we are someone else.
+
+@Diving B/R
+For the repair, modification, and other care and feeding stuff of diving gear.
+
+@Edged Weapons B/R
+For those of you who just need to make the new Excalibur, the new Masamune. The new KABAR, whatever. This skill covers the forging, repair, and other such drek for slashy things that can be wielded in one hand.
+
+@Electronics
+Used to actually control any number of differing electronic devices not covered by any other skill.
+ Control Systems, Electronic Warfare, Maglocks, Linking between Devices, Diagnostics, Cybertechnology
+
+@Electronics B/R
+This skill covers the repair, manipulation, creation, and upgrading of any electronic device not covered by any other skill.
+
+@Gunnery
+This skill covers the firing of all those really cool vehicle-mounted weapons, regardless of mount type.
+
+@Gunnery B/R
+This skill covers the creation, alteration, and repair of any vehicle-mounted weaponry.
+
+@Gyrojet Pistol B/R
+This skill will allow you to build, upgrade, and repair one particular esoteric weapon, the Gyrojet Pistol.
+
+@Heavy Weapons B/R
+This skill covers the repair, manipulation, creation, and upgrading of any obscenely freakin' 'UGE guns. Miniguns, true machine guns, and assault cannons all apply.
+
+@Hovercraft B/R
+This skill covers the repairs of all hovercrafts, regardless of propulsion type.
+
+@Interrogation B/R
+This skill covers the creation, alteration, and repair of any of the tools of the professional interrogator's trade.
+
+@Laser Weapons B/R
+This skill will allow you to build, upgrade, and repair those weapons that focus energy at one specific point, mostly lasers.
+
+@Launch Weapons
+This skill covers the use of missiles, rockets, grenade launchers, mortars, and all that other stuff that requires lobbing an explosive projectile at a target, if it isn't vehicle mounted.
+
+@Launch Weapons B/R
+This skill covers the repairs of all launch weapons, regardless of type.
+
+@Lighter-than-Air B/R
+This skill covers the creation, alteration, and repair of any of the varied blimps, zepplins, and other LTA vehicles.
+
+@Motorboat B/R
+This skill will allow you to build, upgrade, and repair those boats that are propelled mainly by mechanical force.
+
+@Parachuting B/R
+This skill covers the care and feeding of parachutes, including how they are made.
+
+@Pistols B/R
+This skill covers the repairs, upgrades, and formation of all pistols, be they holdouts, light, machine, or heavy.
+
+@Pole Arms/Staves B/R
+This skill covers the creation, alteration, and repair of any of the varied staves, polearms, and other heavy melee weapons. Neil the Ork Barbarian would be proud.
+
+@Projectile Weapon B/R
+This skill will allow you to build, upgrade, and repair projectile weapons: Bows, crossbows, and other muscle-powered weapons that fire off projectiles.
+
+@Rifles B/R
+This skill covers the care and feeding of rifles, be they sporting or sniper. Likewise, new designs can be created using this skill.
+
+@Rotor Aircraft B/R
+If ever you have need to design, modify, or repair a helicoptor or tilt-rotor aircraft, this is the skill you need.
+
+@Sailboat B/R
+This skill covers the creation, alteration, and repair of any of the varied sail-powered naval craft. Yo ho ho and a bottle of rum.
+
+@Semiballistic B/R
+This skill will allow you to build, upgrade, and repair fast-transit flight aircraft that reach a nearly ballistic trajectory.
+
+@Ship B/R
+If ever one has the need to design, modify, or repair a large sea-going vessel, well, here you go.
+
+@Shotguns B/R
+If ever you have need to design, modify, or repair a shotgun, this is the skill you need.
+
+@Small Unit Tactics
+This skill covers the use of tactics in small-unit form, allowing easy command of a squad.
+ BattleTAC Systems, Vehicle Tactics, Matrix Tactics
+
+@Spray Weapons B/R
+This skill will allow you to build, upgrade, and repair flamethrowers, spray tanks, and other devices that spray liquid in a cone-ish shape.
+
+@Stealth B/R
+If ever one has the need to design, modify, or repair any stealth-related gear, well, here you go.
+
+@Suborbital B/R
+If ever you have need to design, modify, or repair a sub-orbital transport, this is the skill you need.
+
+@Submachine Guns B/R
+This skill covers the creation, alteraion, and repair of submachine guns. Shoot em up, cowboy.
+
+@Submarine B/R
+This skill will allow you to build, upgrade, and repair all naval vessels that are SUPPOSED TO go under the sea.
+
+@Throwing Weapons B/R
+If ever one has the need to design, modify, or repair any knives, shuriken, et al, well, here you go.
+
+@Tracked Vehicles B/R
+If ever you have need to design, modify, or repair a tank or bulldozer, this is the skill you need.
+
+@Unarmed Combat B/R
+This skill covers the creation, alteraion, and repair of unarmed combat items, like forearm snap blades, brass knuckles, et al.
+
+@Vector Thrust Aircraft B/R
+This skill will allow you to build, upgrade, and repair all aircraft that rely on Vectored Thrust, mainly T-Birds.
+
+@Walkers B/R
+If ever you have need to design, modify, or repair anything vehicular that walks on any number of legs, this is the skill you need.
+
+@Whips B/R
+This skill covers the creation, alteraion, and repair of whips and other things that go SNAP! in the night.
+
+@Winged Aircraft B/R
+This skill will allow you to build, upgrade, and repair all aircraft that are fixed- or swept-wing in origin.
+
+
+@Quickness
+
+@Ambidexterity
+Each character is either right or left handed, but the Ambidexterity Skill reflects how well the character is able to use his opposite, or 'off hand'. It can help reduce TN modifiers for using two ranged weapons.
+
+@Assault Rifles
+The Assault Rifles Skill covers how well a character is able to use these larger, ranged weapons that often possess the capability for multiple rates of fire.
+
+@Blowgun
+The Blowgun Skill tells of how well a character is able to fire darts through the long, narrow tube that makes up the weapon. People not possessing the skill have sometimes been known to inhale and swallow the small projectiles.
+
+@Gyrojet Pistols
+The Gyrojet Pistols Skill encompasses the use of the weapon that is popular with the British Boat Squadron. The weapon can be used underwater or above water, firing miniature rockets.
+
+@Laser Weapons
+The Laser Weapons Skill covers the use of those weapons that use concentrated beams of light to burn and damage their target. These weapons often will require a somewhat bulky energy source, and have reduced effectiveness over range and in smoke or fog filled areas.
+
+@Oral Guns
+The Oral Guns Skill covers the use of these cyber weapons that are often housed in the roof of the mouth and are mostly effective for surprising opponents.
+
+@Pistols
+The Pistols Skill involves the usage of all small, hand-held firearms that are often semi-automatic. This includes heavy, light, hold out and taser weapons.
+
+@Rifles
+Possessing the Rifles Skill reflects how adept a character is in using larger weapons of the sporting or sniper variety. These weapons are usually effective at longer ranges, and harder to use in close quarters.
+
+@Shotguns
+The Shotguns Skill covers the use of all shotgun weapons, whether they use hard projectiles (slugs) or the shot rounds that spread when fired.
+
+@Stealth
+The Stealth Skill is a wide skill that covers everything from quiet, sneaky movement to hiding in crowds or using camouflage and theft. Hiding and sneaking involves Open Tests, where as the highest number rolled is the TN for a Perception Test to see if you're noticed. The Alertness specialization also helps you to notice others' stealthy acts, as a Complementary Skill.
+ Alertness, Hiding, Sneaking, Theft
+
+@Submachine Guns
+The Submachine Guns Skill covers the usage of the lightweight hand-held weapons that are commonly a bit bigger than pistols, and capable of firing in Burst Fire Mode as well as semi-automatic fire.
+
+@Whips
+The Whips Skill encompasses the use of the large, often rope-like weapons that make up the weapon type, as well as any objects that can be used as such. These weapons are long and thus can make the weapon both easier for you to use and harder for your opponent to evade.
+
+
+@Reaction
+
+@Bike
+Rice rockets, hogs, dirtbikes… All vehicles with two wheels are under this skill, whether you want to be Evil Knievel, or just some road ganger.
+
+@Car
+This skill covers cars, trucks, SUVs, and pretty much everything else that goes along on four or more wheels.
+
+@Hovercraft
+This skill is used to control all hovering vehicles, be they hot air, turbofan controlled, or just an average hovercraft.
+
+@Lighter-Than-Air Aircraft
+Zepplins, blimps, and all other vehicles kept airborne through the use of contained gasses, be they helium or hot air, are covered by this skill.
+
+@Mechanical Arm Operation
+This skill covers the use of mechanical arms, loading arms, and most other industrial-use, attached mechanisms that resemble arms in some degree.
+
+@Motorboat
+Those boats that are propelled by mechanical devices are controlled by use of this skill.
+
+@Rotor Aircraft
+Helicoptors and some VSTOL aircraft, those with variable-tilt rotors, are flown with this skill.
+
+@Sailboat
+Those boats pushed by wind through the use of sails are conned with this skill.
+
+@Semiballistic Operation
+This skill covers the use of semiballistic transports, those aircraft that are used for quick airborne transport.
+
+@Ship
+This skill is used for the operation of large waterborne craft, such as massive cargo ships, light warships, and battleships.
+
+@Submarine
+Under the sea… Under the sea… If it's a vehicle that's under there, a Submarine it be… Oh yeah, and it's conned with this skill.
+
+@Suborbital
+Suborbital vehicles are those which fly just under the barrier to space. They are controlled by this skill.
+
+@Tracked vehicles
+This skill covers everything from bulldozers to main battle tanks, anything with a caterpillar tread on it.
+
+@Vector Thrust Aircraft
+Thunderbirds and other vehicles that need vectored, multiple-direction thrust to maintain their lift, propulsion, and direction use this skill.
+
+@Walkers
+This skill is for all of you who want to make like General Veers. All vehicles that are propelled by legs are controlled by this skill.
+
+@Winged Aircraft
+This skill governs the use of all aircraft with fixed or semi-fixed wings, regardless of the power used, or lack thereof
+
+
+@Strength
+
+@Aikido
+This style, commonly considered a soft style, is nearly a defensive art, concentrating on the balance of the mind and body, and relying on the opposition's attacks to provide the force used against him. It was created in the Twentieth Century from techniques from an older martial art.
+
+@Arnis De Mano
+A martial art emphasizing a combination of kicking and throws, and use of Rattan clubs and knives, Arnis De Mano is a Filipino martial art. Its use is commonly persecuted by the Japanese Empire and the corporations therin.
+
+@Boxing
+Considered one of the earliest blood sports, Boxing emphasizes brute upper-body strength and quick footwork, mainly using attacks from his fists to batter his opponent into submission.
+
+@Brawling
+Known by many names all over the world, simple street brawling has a tradition all its own: Beat the other bastich down before he does you down. Usually concentrating on sucker punches, throwing sand in the face of other fighters, and swift kicks to the groin, brawling is what it is, a straightforward art.
+
+@Capoeira
+A martial art based on the dancing of slaves in the fifteenth century, Capoeira resembles nothing so much as a festive dance, flips, twists and turns all running through. Nothing is too unusual for this martial art to use.
+
+@Carromeleg
+Not unlike Capoeira, Carromaleg is what comes of slavery, though the source could be no different. Some form of genetic memory caused this art to come forth, some say; others say Carrommaleg has always been hidden just underneath the surface. Another theory is that it is based on Pankration, a Greek martial art that looked more like dance than fighting. Whatever the truth is, Carromaleg acts like Capoeira, dances like Capoeira, and fights like Capoeira.
+
+@Clubs
+This skill covers the use of all weapons that are blunt and normally wielded one-handed. Police batons, shock batons, maces, baseball bats, and yes, your basic club all are manipulated using this skill.
+ As weapon type (Baton, club, baseball bat, mace.)
+
+@Cyber-Implant Combat
+This skill is for those who like to make like a certain Canadian comic book character. Covers the use of all cybernetic melee weaponry, from spurs to fingerblades.
+
+@Edged Weapons
+If it slices, dices, or otherwise cuts, then this skill governs its use, unless it would take Neil the Ork Barbarian in order to wield it one-handed.
+
+@Escrima
+A more commercial version of Arnis De Mano, Escrima tends to edge more towards the bare-handed skills of the Filipino martial arts, though the armed techniques are also taught.
+
+@Heavy Weapons
+If it isn't a weapon that scatters, and merely looking at it makes you ask, "What Would Arnie Do?" then it is covered by this skill. True machine guns, miniguns, assault cannons, and other things that massively go bang in the night are governed by this skill.
+
+@Karate
+Used as a catchall for any number of different styles, it means Open Hand, and was formed on Okinawa to circumvent a no weapons law.
+
+@Kung Fu
+Describing any number of Chinese martial art styles, Kung Fu was formed first in the Shaolin Temple by Buddhist monks. Taught all over the world.
+
+@Muay Thai
+A martial art native to Thailand, Muay Thai is used in, and forms the basis of, Kickboxing. The two are synonymous.
+
+@Ninjitsu
+The shadowy art of the Ninja, this art is hidden in mystery and rumor, though less so in the more modern age. Its purpose: The beating down of one's enemy through stealth and skill.
+
+@Pentjak-Silat
+A martial art common to Indonesia, this art teaches the use of force to multiple vital points on the body, with hands, feet, and weapons, most notably the kris.
+
+@Pole Arms/Staves
+This skill governs staves, massive swords, pikes, spears, and polearms. When it's something Neil the Ork Barbarian would fancy, it's probably used by this skill.
+
+@Projectile Weapons
+Crossbows, longbows, and spearguns… If a weapon propels a projectile through mechanical as opposed to chemical force, Projectile Weapons is the skill you need to use.
+
+@Spray Weapons
+Flame throwers, spray nozzles, and freeze foam, oh my. If you require the use of spread chemical weapons, say hello to this skill.
+
+@Tae Kwon Do
+A martial art from Korea, it shares much in common with Karate and Kung Fu, though its signature is the numerous kicks of varying beauty and deadliness.
+
+@Tai Chi Ch'uan
+Normally used as exercise by many people the world over, this martial art from China is a circular art, taking its power from the flow of those around it, and from the will of those who practice it.
+
+@Throwing Weapons
+As you take up the shuriken and throw it, you use this skill. All weapons that are thrown at an enemy are based upon this weapon.
+
+@Underwater Combat
+Under the sea… Under the sea… If you try to fight without this, don't look at me… Fighting underwater requires new ways of thinking, as the water takes a lot of the power out of thrusts, slashes, and whip blows.
+
+@Wildcat
+This martial art is based on a number of different martial arts. Its primary form is to rip off your opponent's head before he can do so unto you.
+
+
+@Willpower
+
+@Conjuring
+The use of the conjuring skill allows a capable mage or shaman to both summon and banish a spirit. It also allows for a magician to possibly take a spirit from another magician's control. Hermetic mages summon elementals, shamans summon nature spirits.
+ Banishing, Controlling, Summoning
+
+@Enchanting
+The use of this skill allows an Awakened character to create magical items such as fetishes and foci. It is often used by talismongers, who have the knowledge skill of Talismongering.
+ Alchemy ,Artificing
+
+@Sorcery
+This skill reflects the ability of magicians to harness and control the magical energy of the world, called mana, to create effects known as spells. Without this skill, an Awakened magician is unable to cast spells.
+ Astral Combat, Dispelling, Spell Category, Spell Defense, Spellcasting
+
+

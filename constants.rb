@@ -1,7 +1,7 @@
 require 'yaml'
 require 'pp'
 require 'pry'
-
+skills = YAML.load_file('skills.yaml')
 spells = YAML.load_file('spells.yaml')
 CONSTANTS = {
   attributes: %i(Body Quickness Strength Charisma Intelligence Willpower),
@@ -53,57 +53,7 @@ CONSTANTS = {
             :'Hacking Pool', :'Control Pool']
   },
   special: [:Essence, :'Body Index', :Magic],
-  activeskills: {
-    Body: {
-      :Athletics => [:Climbing, :'Escape Artist', :Jumping, :Lifting, :Running],
-      :Diving => [],
-      :Parachuting => []},
-    Charisma: {:Etiquette => [], :Instruction => [], :Interrogation => [],
-               :Intimidation => [], :Leadership => [], :Negotiation => []},
-    Intelligence: {
-      :'Armor Br' => [], :'Assault Rifle Br' => [], :'Aura Reading' => [],
-      :'Bike Br' => [], :Biotech => [], :'Biotech Br' => [],:'Blowgun Br' => [],
-      :'Car Br' => [], :'Clubs Br' => [], :'Computer Br' => [], :Computers => [],
-      :'Cyberimplant Br' => [], :Demolitions => [], :'Demolitions Br' => [],
-      :Disguise => [],:'Diving Br' => [], :'Edged Br' => [], :Electronics => [],
-      :'Electronics Br' => [], :Gunnery => [], :'Gunnery Br' => [],
-      :'Gyrojet Br' => [], :'Heavy Br' => [], :'Hovercraft Br' => [],
-      :'Interrogation Br' => [], :'Laser Br' => [], :Launchers => [],
-      :'Launchers Br' => [], :'LTA Br' => [], :'Motorboat Br' => [],
-      :'Parachute Br' => [], :'Pistols Br' => [], :'Polearms Br' => [],
-      :'Projectile Br' => [], :'Rifle Br' => [], :'Rotor Br' => [],
-      :'Sailboat Br' => [], :'Semiballistic Br' => [], :'Ship Br' => [],
-      :'Shotgun Br' => [], :'Small Unit Tactics' => [], :'Sprayer Br' => [],
-      :'Stealth Br' => [], :'Suborbital Br' => [], :'SMG Br' => [],
-      :'Throwing Br' => [], :'Unarmed Br' => [], :'Vector Thrust Br' => [],
-      :'Walker Br' => [], :'Whip Br' => [], :'Winged Br' => []
-               },
-    Quickness: {
-      :Ambidexterity => [], :'Assault Rifle' => [], :Blowgun => [],
-      :Gyrojet => [], :Laser => [], :'Oral Gun' => [], :Pistol => [],
-      :Rifle => [], :Shotgun => [], :Stealth => [], :SMG => [], :Whip => []
-               },
-    Reaction: {
-      :Bike => [], :Car => [], :Hovercraft => [], :LTA => [],
-      :'Mechanical Arm' => [], :Motorboat => [], :Rotor => [],
-      :Sailboat => [], :Semiballistic => [], :Ship => [], :Submarine => [],
-      :Suborbital => [], :Tracked => [], :'Vector Thrust' => [], :Walker => [],
-      :Winged => []
-               },
-    Strength: {
-      :Aikido => [], :'Arnis de Mano' => [], :Boxing => [], :Brawling => [],
-      :Carromeleg => [], :Clubs => [], :Cyberimplant => [], :Edged => [],
-      :Escrima => [], :Heavy => [], :Karate => [], :'Kung Fu' => [],
-      :'Muay Thai' => [], :Ninjitsu => [], :'Pentjak Silat' => [],
-      :Polearms => [], :Projectile => [], :Sprayer => [], :'Tae Kwon Do' => [],
-      :'Tai Chi Chuan' => [], :Throwing => [], :Underwater => [],
-      :Wildcat => []
-               },
-    Willpower: {
-      :Centering => [], :Conjuring => [], :Divining => [], :Enchanting => [],
-      :Sorcery => []
-               }
-  },
+  activeskills: skills,
   totems: {
     animal: {
       badger: {
