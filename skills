@@ -2,41 +2,41 @@
 
 @Athletics
 The Athletics Skill is a representation of the characters training in the more physical aspects of life, often on a more extreme scale. The basic skill encompasses most facets of physical performance, such as how well you climb a ladder, jump a fence or run. The specializations can refine this to a more particular area that the character might be especially good in.
- Climbing, Escape Artist, Jumping, Lifting, Running
+Climbing,Escape Artist,Jumping,Lifting,Running
 
 @Diving
 The skill for when swimming in a pool isn't enough, the Diving Skill covers everything from deep water dives and advanced underwater swimming techniques, to using scuba and various other underwater gear.
- Deep-water Diving, Mixed-gas Diving
+Deep-water Diving,Mixed-gas Diving
 
 @Parachuting
 When falling from low altitudes or high and you wish to slow your descent, the parachute comes into play. The use of this skill reflects how well your character performs the difficult task of parachuting, and not only includes activating the actual device but controlling your descent to land where you want to.
- Standard Jump, HALO Jump, Low-Altitude Jump
+Standard Jump,HALO Jump,Low-Altitude Jump
 
 
 @Charisma
 
 @Etiquette
 Etiquette is your basic understanding of culture as a whole. It allows you to interact with other people and grasp the little intricacies of society and allows you not only to fit in, but as a means of advancement and acquiring something you'd need. It's used whenever buying gear — you roll it against the availability of the gear to determine whether you can buy something, and if so, how quickly you can get it.
- Tribal, Magical Groups, Corporate, Street, Academic, Gang, Organized Crime, Military, Security, Matrix
+Tribal,Magical Groups,Corporate,Street,Academic,Gang,Organized Crime,Military,Security,Matrix
 
 @Instruction
 The instruction skill encompasses showing another character how to perform a certain task or learn a new skill. Any skill the instructing character possesses at a level of three (3) or above may be taught, up to the level that the teacher knows. Roleplaying such instruction sections is good justification for raising skills once your character is made IC.
 
 @Interrogation
 The interrogation skill allows a character to gain information from an unwilling person, whether character or NPC. Its use involves an Open Test being made with your skill die that the subject must resist with her Willpower.
- Verbal, Lie Detectors, Torture, Voice-Stress Analysis, Drug-Aided
+Verbal,Lie Detectors,Torture,Voice-Stress Analysis,Drug-Aided
 
 @Intimidation
 The use of the intimidation skill allows the character to make another do something based on the fear that he creates. It works in the same manner as interrogation in game mechanics, though intimidation is often the threat of violence or harm falling upon the subject, not the actual act.
- Mental, Physical
+Mental, Physical
 
 @Leadership
 A character possessing leadership is able to convince others to go along with him and do as he asks through example and strength of character. A person with this skill often does not have a problem taking hold of a situation and making it work to his designs. An Open Test is made against another character's (or NPCs) Intelligence to see if they'll follow his lead.
- Political, Military, Morale, Tactics, Strategy, Commercial
+Political,Military,Morale,Tactics,Strategy,Commercial
 
 @Negotiation
 One of the integral skills of fixers (the other being Etiquette), negotiation is used when a character is trying to be on the winning end of a deal. A variety of different tactics can be used through this end, from bribery, bartering or quick speaking used to keep the subject off-balance. This skill is used to reduce the price of gear you might wish to obtain, or coax more money from a Johnson before a run, accomplished by making a Skill Test vs. the opponent's Intelligence. see Getting Gear for more details.
- Bargain, Bribe, Con, Fast Talk
+Bargain,Bribe,Con,Fast Talk
 
 
 @Intelligence
@@ -49,14 +49,14 @@ This skill covers AK's, M-23's, and other rifles you hold in two hands and shoot
 
 @Aura Reading
 Available to the Awakened that can see into the Astral plane, this skill is a complementary skill to Astral Perception tests.
- Auras, Sorcery, Signatures, Conjuring
+Auras,Sorcery,Signatures,Conjuring
 
 @Bike B/r
 Two-wheeled vehicles are fixed, built, or modified using this skill.
 
 @Biotech
 When you need to patch somebody up, implant cyberware into some shmoe's skull, or change someone's face with the wonders of plastic surgery, you need this skill.
- Cybertechnology Implantation, Extended Care, First Aid, Organ Culture & Growth, Surgery, Transimplant Surgery, Plastic Surgery, Genetic Alteration
+Cybertech Implantation,Extended Care,First Aid,Organ Culture & Growth,Surgery,Transimplant Surgery,Plastic Surgery,Genetic Alteration
 
 @Biotech B/R
 For those tools, kits, and other associated items of medical use, you need to build, repair, or screw with them using Biotech B/R.
@@ -75,14 +75,14 @@ Used to repair or upgrade decks, mainframes, and some few pieces of cyberware.
 
 @Computers
 Used to find, steal, or otherwise frag with information on the Matrix. Also used for programming, messing with virii, and digital grafitti.
- Programming, Decking, Hardware, Cybernetics.
+Programming,Decking,Hardware,Cybernetics.
 
 @Cyber-Implant Combat B/R
 For the repair, modification, and other care and feeding stuff of cyber weaponry.
 
 @Demolitions
 When you have to blow stuff up, or cause buildings to collapse in interesting ways. Covers all the varied uses of high explosives.
- Commercial Explosives, Plastic Explosives, Improvised Explosives
+Commercial Explosives,Plastic Explosives,Improvised Explosives
 
 @Demolitions B/R
 For the creation of specific explosives and their varied timing devices.
@@ -98,7 +98,7 @@ For those of you who just need to make the new Excalibur, the new Masamune. The 
 
 @Electronics
 Used to actually control any number of differing electronic devices not covered by any other skill.
- Control Systems, Electronic Warfare, Maglocks, Linking between Devices, Diagnostics, Cybertechnology
+Control Systems,Electronic Warfare,Maglocks,Linking Devices,Diagnostics,Cybertechnology
 
 @Electronics B/R
 This skill covers the repair, manipulation, creation, and upgrading of any electronic device not covered by any other skill.
@@ -238,7 +238,7 @@ The Shotguns Skill covers the use of all shotgun weapons, whether they use hard 
 
 @Stealth
 The Stealth Skill is a wide skill that covers everything from quiet, sneaky movement to hiding in crowds or using camouflage and theft. Hiding and sneaking involves Open Tests, where as the highest number rolled is the TN for a Perception Test to see if you're noticed. The Alertness specialization also helps you to notice others' stealthy acts, as a Complementary Skill.
- Alertness, Hiding, Sneaking, Theft
+Alertness,Hiding,Sneaking,Theft
 
 @Submachine Guns
 The Submachine Guns Skill covers the usage of the lightweight hand-held weapons that are commonly a bit bigger than pistols, and capable of firing in Burst Fire Mode as well as semi-automatic fire.
@@ -320,7 +320,6 @@ Not unlike Capoeira, Carromaleg is what comes of slavery, though the source coul
 
 @Clubs
 This skill covers the use of all weapons that are blunt and normally wielded one-handed. Police batons, shock batons, maces, baseball bats, and yes, your basic club all are manipulated using this skill.
- As weapon type (Baton, club, baseball bat, mace.)
 
 @Cyber-Implant Combat
 This skill is for those who like to make like a certain Canadian comic book character. Covers the use of all cybernetic melee weaponry, from spurs to fingerblades.
@@ -378,14 +377,14 @@ This martial art is based on a number of different martial arts. Its primary for
 
 @Conjuring
 The use of the conjuring skill allows a capable mage or shaman to both summon and banish a spirit. It also allows for a magician to possibly take a spirit from another magician's control. Hermetic mages summon elementals, shamans summon nature spirits.
- Banishing, Controlling, Summoning
+Banishing,Controlling,Summoning
 
 @Enchanting
 The use of this skill allows an Awakened character to create magical items such as fetishes and foci. It is often used by talismongers, who have the knowledge skill of Talismongering.
- Alchemy ,Artificing
+Alchemy,Artificing
 
 @Sorcery
 This skill reflects the ability of magicians to harness and control the magical energy of the world, called mana, to create effects known as spells. Without this skill, an Awakened magician is unable to cast spells.
- Astral Combat, Dispelling, Spell Category, Spell Defense, Spellcasting
+Astral Combat,Dispelling,Spell Category,Spell Defense,Spellcasting
 
 

@@ -7,18 +7,18 @@
       a ladder, jump a fence or run. The specializations can refine this to a more
       particular area that the character might be especially good in.
     :Specialization:
-    - " Climbing"
-    - " Escape Artist"
-    - " Jumping"
-    - " Lifting"
-    - " Running"
+    - Climbing
+    - Escape Artist
+    - Jumping
+    - Lifting
+    - Running
   :Diving:
     :Desc: The skill for when swimming in a pool isn't enough, the Diving Skill covers
       everything from deep water dives and advanced underwater swimming techniques,
       to using scuba and various other underwater gear.
     :Specialization:
-    - " Deep-water Diving"
-    - " Mixed-gas Diving"
+    - Deep-water Diving
+    - Mixed-gas Diving
   :Parachuting:
     :Desc: When falling from low altitudes or high and you wish to slow your descent,
       the parachute comes into play. The use of this skill reflects how well your
@@ -26,9 +26,9 @@
       activating the actual device but controlling your descent to land where you
       want to.
     :Specialization:
-    - " Standard Jump"
-    - " HALO Jump"
-    - " Low-Altitude Jump"
+    - Standard Jump
+    - HALO Jump
+    - Low-Altitude Jump
 :Quickness:
   :Ambidexterity:
     :Desc: Each character is either right or left handed, but the Ambidexterity Skill
@@ -206,16 +206,16 @@
       availability of the gear to determine whether you can buy something, and if
       so, how quickly you can get it.
     :Specialization:
-    - " Tribal"
-    - " Magical Groups"
-    - " Corporate"
-    - " Street"
-    - " Academic"
-    - " Gang"
-    - " Organized Crime"
-    - " Military"
-    - " Security"
-    - " Matrix"
+    - Tribal
+    - Magical Groups
+    - Corporate
+    - Street
+    - Academic
+    - Gang
+    - Organized Crime
+    - Military
+    - Security
+    - Matrix
   :Instruction:
     :Desc: The instruction skill encompasses showing another character how to perform
       a certain task or learn a new skill. Any skill the instructing character possesses
@@ -228,18 +228,18 @@
       unwilling person, whether character or NPC. Its use involves an Open Test being
       made with your skill die that the subject must resist with her Willpower.
     :Specialization:
-    - " Verbal"
-    - " Lie Detectors"
-    - " Torture"
-    - " Voice-Stress Analysis"
-    - " Drug-Aided"
+    - Verbal
+    - Lie Detectors
+    - Torture
+    - Voice-Stress Analysis
+    - Drug-Aided
   :Intimidation:
     :Desc: The use of the intimidation skill allows the character to make another
       do something based on the fear that he creates. It works in the same manner
       as interrogation in game mechanics, though intimidation is often the threat
       of violence or harm falling upon the subject, not the actual act.
     :Specialization:
-    - " Mental"
+    - Mental
     - " Physical"
   :Leadership:
     :Desc: A character possessing leadership is able to convince others to go along
@@ -248,12 +248,12 @@
       making it work to his designs. An Open Test is made against another character's
       (or NPCs) Intelligence to see if they'll follow his lead.
     :Specialization:
-    - " Political"
-    - " Military"
-    - " Morale"
-    - " Tactics"
-    - " Strategy"
-    - " Commercial"
+    - Political
+    - Military
+    - Morale
+    - Tactics
+    - Strategy
+    - Commercial
   :Negotiation:
     :Desc: One of the integral skills of fixers (the other being Etiquette), negotiation
       is used when a character is trying to be on the winning end of a deal. A variety
@@ -263,10 +263,10 @@
       before a run, accomplished by making a Skill Test vs. the opponent's Intelligence.
       see Getting Gear for more details.
     :Specialization:
-    - " Bargain"
-    - " Bribe"
-    - " Con"
-    - " Fast Talk"
+    - Bargain
+    - Bribe
+    - Con
+    - Fast Talk
 :Intelligence:
   :Armor B/R:
     :Desc: Everything you need to know about the building, repair, and modification
@@ -281,10 +281,10 @@
     :Desc: Available to the Awakened that can see into the Astral plane, this skill
       is a complementary skill to Astral Perception tests.
     :Specialization:
-    - " Auras"
-    - " Sorcery"
-    - " Signatures"
-    - " Conjuring"
+    - Auras
+    - Sorcery
+    - Signatures
+    - Conjuring
   :Bike B/r:
     :Desc: Two-wheeled vehicles are fixed, built, or modified using this skill.
     :Specialization: []
@@ -293,14 +293,14 @@
       skull, or change someone's face with the wonders of plastic surgery, you need
       this skill.
     :Specialization:
-    - " Cybertechnology Implantation"
-    - " Extended Care"
-    - " First Aid"
-    - " Organ Culture & Growth"
-    - " Surgery"
-    - " Transimplant Surgery"
-    - " Plastic Surgery"
-    - " Genetic Alteration"
+    - Cybertech Implantation
+    - Extended Care
+    - First Aid
+    - Organ Culture & Growth
+    - Surgery
+    - Transimplant Surgery
+    - Plastic Surgery
+    - Genetic Alteration
   :Biotech B/R:
     :Desc: For those tools, kits, and other associated items of medical use, you need
       to build, repair, or screw with them using Biotech B/R.
@@ -322,10 +322,10 @@
     :Desc: Used to find, steal, or otherwise frag with information on the Matrix.
       Also used for programming, messing with virii, and digital grafitti.
     :Specialization:
-    - " Programming"
-    - " Decking"
-    - " Hardware"
-    - " Cybernetics."
+    - Programming
+    - Decking
+    - Hardware
+    - Cybernetics.
   :Cyber-Implant Combat B/R:
     :Desc: For the repair, modification, and other care and feeding stuff of cyber
       weaponry.
@@ -334,9 +334,9 @@
     :Desc: When you have to blow stuff up, or cause buildings to collapse in interesting
       ways. Covers all the varied uses of high explosives.
     :Specialization:
-    - " Commercial Explosives"
-    - " Plastic Explosives"
-    - " Improvised Explosives"
+    - Commercial Explosives
+    - Plastic Explosives
+    - Improvised Explosives
   :Demolitions B/R:
     :Desc: For the creation of specific explosives and their varied timing devices.
     :Specialization: []
@@ -356,12 +356,12 @@
     :Desc: Used to actually control any number of differing electronic devices not
       covered by any other skill.
     :Specialization:
-    - " Control Systems"
-    - " Electronic Warfare"
-    - " Maglocks"
-    - " Linking between Devices"
-    - " Diagnostics"
-    - " Cybertechnology"
+    - Control Systems
+    - Electronic Warfare
+    - Maglocks
+    - Linking Devices
+    - Diagnostics
+    - Cybertechnology
   :Electronics B/R:
     :Desc: This skill covers the repair, manipulation, creation, and upgrading of
       any electronic device not covered by any other skill.
@@ -514,26 +514,26 @@
       spirit from another magician's control. Hermetic mages summon elementals, shamans
       summon nature spirits.
     :Specialization:
-    - " Banishing"
-    - " Controlling"
-    - " Summoning"
+    - Banishing
+    - Controlling
+    - Summoning
   :Enchanting:
     :Desc: The use of this skill allows an Awakened character to create magical items
       such as fetishes and foci. It is often used by talismongers, who have the knowledge
       skill of Talismongering.
     :Specialization:
-    - " Alchemy "
+    - Alchemy
     - Artificing
   :Sorcery:
     :Desc: This skill reflects the ability of magicians to harness and control the
       magical energy of the world, called mana, to create effects known as spells.
       Without this skill, an Awakened magician is unable to cast spells.
     :Specialization:
-    - " Astral Combat"
-    - " Dispelling"
-    - " Spell Category"
-    - " Spell Defense"
-    - " Spellcasting"
+    - Astral Combat
+    - Dispelling
+    - Spell Category
+    - Spell Defense
+    - Spellcasting
 :Reaction:
   :Bike:
     :Desc: Two-wheeled vehicles are fixed, built, or modified using this skill.

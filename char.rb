@@ -1089,7 +1089,7 @@ class Skillblock < Gtk::ScrolledWindow
     self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
     @tooltips = Gtk::Tooltips.new
     @maintable = Gtk::Table.new(1,3)
-    @table = Gtk::Table.new(12, 3, homogenous = true)
+    @table = Gtk::Table.new(13, 3, homogenous = true)
     @table2 = Gtk::Table.new(12 , 1, homogenous = true)
     @skillentries = {}
     @skills = {}
@@ -1136,15 +1136,15 @@ class Skillblock < Gtk::ScrolledWindow
 
     @table.attach @header[:Attribute][0], 0, 3, 0, 1, *ATCH
     @table.attach @header[:Attribute][1], 0, 3, 1, 2, *ATCH
-    @table.attach @header[:Skill][0], 3, 7, 0, 1, *ATCH
-    @table.attach @header[:Skill][1], 3, 7, 1, 2, *ATCH
-    @table.attach @header[:Specialization][0], 7, 11, 0, 1, *ATCH
-    @table.attach @header[:Specialization][1], 7, 12, 1, 2, *ATCH
-    @table.attach @header[:ADD], 11, 12, 0, 1, *ATCH
+    @table.attach @header[:Skill][0], 3, 8, 0, 1, *ATCH
+    @table.attach @header[:Skill][1], 3, 8, 1, 2, *ATCH
+    @table.attach @header[:Specialization][0], 8, 12, 0, 1, *ATCH
+    @table.attach @header[:Specialization][1], 8, 13, 1, 2, *ATCH
+    @table.attach @header[:ADD], 12, 13, 0, 1, *ATCH
     @table.attach @header2[:Skill] = Gtk::Label.new('Skill'), 0, 4, 2, 3, *ATCH
-    @table.attach @header2[:Specialization] = Gtk::Label.new('Specialization'), 4, 8, 2, 3, *ATCH
-    @table.attach @header2[:Points] = Gtk::Label.new('Points'), 8, 10, 2, 3, *ATCH
-    @table.attach @header2[:Value] = Gtk::Label.new('Value'), 10, 11, 2, 3, *ATCH
+    @table.attach @header2[:Specialization] = Gtk::Label.new('Specialization'), 4, 9, 2, 3, *ATCH
+    @table.attach @header2[:Points] = Gtk::Label.new('Points'), 9, 11, 2, 3, *ATCH
+    @table.attach @header2[:Value] = Gtk::Label.new('Value'), 11, 12, 2, 3, *ATCH
     @table.n_rows = 3
     @table.n_columns = 12
     @table2.n_rows = 1
