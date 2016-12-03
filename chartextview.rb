@@ -25,6 +25,23 @@ class Application
   def gettotem
     @a.gettotem
   end
+  
+  def spelllvl(name,value)
+    @notebook.spell.spelllvl(name,@a.spelllvl(name.to_sym,value))
+    updatespellpoints
+  end
+
+  def removespell(name)
+    @a.removespell(name.to_sym)
+    @notebook.spell.removespell(name)
+    updatespellpoints
+  end
+
+  def appendspell(name,category,subcategory)
+    if @a.appendspell(name.to_sym,category.to_sym,subcategory ? subcategory.to_sym : nil)
+      @notebook.spell.appendspell(name,category,subcategory)
+    end
+  end
 
   def checkspells(totem)
     if @a.getmagetype =~ /ist/
@@ -222,6 +239,10 @@ class Application
     @guiattributes.setspellpoints(@a.setspellpoints)
   end
 
+  def updatespellpoints
+    @guiattributes.setspellpoints(@a.getspellpoints)
+  end
+
   def setmetamods
     @a.setmetamods
   end
@@ -288,6 +309,37 @@ class Character
   
   def gettotem
     @totem
+  end
+
+  def spelllvl(name,value)
+    if value > @spells[name][1]
+      if value - @spells[name][1] < @spellpoints
+        @spellpoints -= value - @spells[name][1]
+        @spells[name][1] = value
+      end
+    else
+      @spellpoints += @spells[name][1] - value
+      @spells[name][1] = value
+    end
+    @spells[name][1]
+  end
+
+
+  def appendspell(name,category,subcategory)
+    if @spellpoints > 0
+      @spells[name] = [
+        (subcategory ? CONSTANT[:spelltypes][category][subcategory][name] :
+                     CONSTANT[:spelltypes][category][name]),1]
+      @spellpoints -= 1
+      @app.updatespellpoints
+    else
+      nil
+    end
+  end
+
+  def removespell(name)
+    @spellpoints += @spells[name][1]
+    @spells.delete(name)
   end
   
   def checktotem(totem,group)
@@ -1180,6 +1232,10 @@ class Spellblock < Gtk::Frame
   @view.collapse_all
   @allowed = spells
   end
+
+  def spelllvl(name,value)
+    @spells[name][2].value = value
+  end
   
   def clear(which=nil)
     newspell
@@ -1196,6 +1252,14 @@ class Spellblock < Gtk::Frame
       end
     end
   end
+
+  def removespell(name)
+    @spells[name].each do |x|
+      @table.remove(x)
+      x.destroy
+    end
+    @spells.delete(name)
+  end
   
   def newspell
     @spells.each_pair do |x,y|
@@ -1211,12 +1275,15 @@ class Spellblock < Gtk::Frame
   def appendspell(name,category,subcategory)
     count = @spells.count
     @spells[name] = [ 
-      Gtk::Label.new(subcategory ? category+"/"+subcategory : category),Gtk::Label.new(name),
-      Gtk::HScale.new(1,6,1)]
+      Gtk::Label.new(name),Gtk::Label.new(subcategory ? category+"/"+subcategory : category),
+      Gtk::HScale.new(1,6,1),Gtk::Button.new(Gtk::Stock::NO)]
     @spells[name][2].value_pos = Gtk::POS_RIGHT
-    @table.attach @spells[name][0],0,5,1+count,2+count,*ATCH
-    @table.attach @spells[name][1],5,8,1+count,2+count,*ATCH
+    @spells[name][2].signal_connect('value_changed') {|x| @app.spelllvl(name,x.value)}
+    @spells[name][3].signal_connect('clicked') {|x| @app.removespell(name)}
+    @table.attach @spells[name][0],0,4,1+count,2+count,*ATCH
+    @table.attach @spells[name][1],4,8,1+count,2+count,*ATCH
     @table.attach @spells[name][2],8,10,1+count,2+count,*ATCH
+    @table.attach @spells[name][3],10,11,1+count,2+count,*ATCH
     @table.show_all
   end
 
@@ -1285,7 +1352,7 @@ class Spellblock < Gtk::Frame
       b.up!
       category = @model.get_iter(b)[0]
       pp a.selection.selected[0]
-      appendspell(name,category,subcategory)
+      @app.appendspell(name,category,subcategory) unless @spells[name]
     end 
 
     (0..8).each do |x|
@@ -1305,9 +1372,10 @@ class Spellblock < Gtk::Frame
       end
     end
 
-    @table.attach @header2[:Category] = Gtk::Label.new('Category'), 0, 5, 0, 1, *ATCH
-    @table.attach @header2[:Spell] = Gtk::Label.new('Spell'), 5, 8, 0, 1, *ATCH
+    @table.attach @header2[:Category] = Gtk::Label.new('Spell'), 0, 4, 0, 1, *ATCH
+    @table.attach @header2[:Spell] = Gtk::Label.new('Category'), 4, 8, 0, 1, *ATCH
     @table.attach @header2[:Points] = Gtk::Label.new('Points'), 8, 10, 0, 1, *ATCH
+    @table.attach Gtk::Label.new("Del"), 10, 11, 0, 1, *ATCH
 
     @win.add(@view)
     @win2.add_with_viewport(@table)
