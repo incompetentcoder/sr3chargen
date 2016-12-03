@@ -16,14 +16,14 @@ f.each do |x|
 
   headers=lines[start].split(" ˛ ").map {|x| x.to_sym}
   lines[start+1..-1].each do |c|
-    spellname = c.split(" ˛ ")[0]
+    spellname = c.split(" ˛ ")[0].to_sym
     if subname
       a[name][subname][spellname]={}
-      a[name][subname][spellname][:Class] = name
-      a[name][subname][spellname][:Subclass] = subname
+      a[name][subname][spellname][:Class] = name.to_sym
+      a[name][subname][spellname][:Subclass] = subname.to_sym
     else
       a[name][spellname]={}
-      a[name][spellname][:Class] = name
+      a[name][spellname][:Class] = name.to_sym
     end
     c.split(" ˛ ").each_with_index do |d,e|
       case d
