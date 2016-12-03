@@ -20,6 +20,7 @@ class Application
   end
 
   def save
+    pp @a
   end
 
   def gettotem

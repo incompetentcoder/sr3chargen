@@ -1,7 +1,7 @@
 ---
 Combat:
-  Death Touch:
-    :Class: Combat
+  :Death Touch:
+    :Class: :Combat
     :Name: :Death Touch
     :Type: :M
     :Target: :Willpower
@@ -13,8 +13,8 @@ Combat:
     :DLVL: "-1"
     :Damage: :VA
     :DamType: :P
-  Manaball:
-    :Class: Combat
+  :Manaball:
+    :Class: :Combat
     :Name: :Manaball
     :Type: :M
     :Target: :Willpower
@@ -26,8 +26,8 @@ Combat:
     :DLVL: "+1"
     :Damage: :VA
     :DamType: :P
-  Manabolt:
-    :Class: Combat
+  :Manabolt:
+    :Class: :Combat
     :Name: :Manabolt
     :Type: :M
     :Target: :Willpower
@@ -39,8 +39,8 @@ Combat:
     :DLVL: 0
     :Damage: :VA
     :DamType: :P
-  Powerball:
-    :Class: Combat
+  :Powerball:
+    :Class: :Combat
     :Name: :Powerball
     :Type: :P
     :Target: :Body
@@ -52,8 +52,8 @@ Combat:
     :DLVL: "+1"
     :Damage: :VA
     :DamType: :P
-  Powerbolt:
-    :Class: Combat
+  :Powerbolt:
+    :Class: :Combat
     :Name: :Powerbolt
     :Type: :P
     :Target: :Body
@@ -65,8 +65,8 @@ Combat:
     :DLVL: 0
     :Damage: :VA
     :DamType: :P
-  Ram(Object):
-    :Class: Combat
+  :Ram(Object):
+    :Class: :Combat
     :Name: :Ram(Object)
     :Type: :P
     :Target: :ObjectRes
@@ -77,8 +77,8 @@ Combat:
     :DTN: "+1"
     :DLVL: "-2"
     :Damage: :VA
-  Shattershield:
-    :Class: Combat
+  :Shattershield:
+    :Class: :Combat
     :Name: :Shattershield
     :Type: :M
     :Target: :Force
@@ -89,8 +89,8 @@ Combat:
     :DTN: 0
     :DLVL: :M
     :Damage: :D
-  Slaughter(Race):
-    :Class: Combat
+  :Slaughter(Race):
+    :Class: :Combat
     :Name: :Slaughter(Race)
     :Type: :M
     :Target: :Willpower
@@ -102,8 +102,8 @@ Combat:
     :DLVL: :D
     :Damage: :D
     :DamType: :P
-  Slay(Race):
-    :Class: Combat
+  :Slay(Race):
+    :Class: :Combat
     :Name: :Slay(Race)
     :Type: :M
     :Target: :Willpower
@@ -115,8 +115,8 @@ Combat:
     :DLVL: :D
     :Damage: :D
     :DamType: :P
-  Spiritblast:
-    :Class: Combat
+  :Spiritblast:
+    :Class: :Combat
     :Name: :Spiritblast
     :Type: :M
     :Target: :Force
@@ -128,8 +128,8 @@ Combat:
     :DLVL: "+1"
     :Damage: :VA
     :DamType: :P
-  Spiritbolt:
-    :Class: Combat
+  :Spiritbolt:
+    :Class: :Combat
     :Name: :Spiritbolt
     :Type: :M
     :Target: :Force
@@ -141,8 +141,8 @@ Combat:
     :DLVL: 0
     :Damage: :VA
     :DamType: :P
-  Stunball:
-    :Class: Combat
+  :Stunball:
+    :Class: :Combat
     :Name: :Stunball
     :Type: :M
     :Target: :Willpower
@@ -154,8 +154,8 @@ Combat:
     :DLVL: "+1"
     :Damage: :VA
     :DamType: :S
-  Stunbolt:
-    :Class: Combat
+  :Stunbolt:
+    :Class: :Combat
     :Name: :Stunbolt
     :Type: :M
     :Target: :Willpower
@@ -167,8 +167,8 @@ Combat:
     :DLVL: 0
     :Damage: :VA
     :DamType: :S
-  Stun Touch:
-    :Class: Combat
+  :Stun Touch:
+    :Class: :Combat
     :Name: :Stun Touch
     :Type: :M
     :Target: :Willpower
@@ -180,8 +180,8 @@ Combat:
     :DLVL: "-1"
     :Damage: :VA
     :DamType: :S
-  Wreck(Object):
-    :Class: Combat
+  :Wreck(Object):
+    :Class: :Combat
     :Name: :Wreck(Object)
     :Type: :P
     :Target: :ObjectRes
@@ -194,8 +194,8 @@ Combat:
     :Damage: :VA
     :DamType: :P
 Detection:
-  Analyze Device:
-    :Class: Detection
+  :Analyze Device:
+    :Class: :Detection
     :Name: :Analyze Device
     :Type: :P
     :Target: :ObjectRes
@@ -204,8 +204,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :M
-  Analyze Magic:
-    :Class: Detection
+  :Analyze Magic:
+    :Class: :Detection
     :Name: :Analyze Magic
     :Type: :M
     :Target: :Force
@@ -214,8 +214,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :L
-  Analyze Truth:
-    :Class: Detection
+  :Analyze Truth:
+    :Class: :Detection
     :Name: :Analyze Truth
     :Type: :M
     :Target: :Willpower
@@ -224,8 +224,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :L
-  Animal(Sense):
-    :Class: Detection
+  :Animal(Sense):
+    :Class: :Detection
     :Name: :Animal(Sense)
     :Type: :M
     :Target: :Willpower
@@ -234,8 +234,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :M
-  Astral Window:
-    :Class: Detection
+  :Astral Window:
+    :Class: :Detection
     :Name: :Astral Window
     :Type: :M
     :Target: :Force
@@ -244,8 +244,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :L
-  Catalog:
-    :Class: Detection
+  :Catalog:
+    :Class: :Detection
     :Name: :Catalog
     :Type: :P
     :Target: 6
@@ -254,8 +254,8 @@ Detection:
     :Area: :Y
     :DTN: "+1"
     :DLVL: :M
-  Clairaudience:
-    :Class: Detection
+  :Clairaudience:
+    :Class: :Detection
     :Name: :Clairaudience
     :Type: :M
     :Target: 6
@@ -264,8 +264,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :M
-  Clairvoyance:
-    :Class: Detection
+  :Clairvoyance:
+    :Class: :Detection
     :Name: :Clairvoyance
     :Type: :M
     :Target: 6
@@ -274,8 +274,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :M
-  Combat Sense:
-    :Class: Detection
+  :Combat Sense:
+    :Class: :Detection
     :Name: :Combat Sense
     :Type: :M
     :Target: 4
@@ -284,8 +284,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :S
-  Detect Enemies:
-    :Class: Detection
+  :Detect Enemies:
+    :Class: :Detection
     :Name: :Detect Enemies
     :Type: :M
     :Target: 4/6/10/+F
@@ -294,8 +294,8 @@ Detection:
     :Area: :Y
     :DTN: 0
     :DLVL: :M
-  Detect Individual:
-    :Class: Detection
+  :Detect Individual:
+    :Class: :Detection
     :Name: :Detect Individual
     :Type: :M
     :Target: 4/6/10/+F
@@ -304,8 +304,8 @@ Detection:
     :Area: :Y
     :DTN: 0
     :DLVL: :L
-  Detect Life:
-    :Class: Detection
+  :Detect Life:
+    :Class: :Detection
     :Name: :Detect Life
     :Type: :M
     :Target: 4/6/10/+F
@@ -314,8 +314,8 @@ Detection:
     :Area: :Y
     :DTN: 0
     :DLVL: :L
-  Detect(Life-Form):
-    :Class: Detection
+  :Detect(Life-Form):
+    :Class: :Detection
     :Name: Detect(Life-Form)
     :Type: :M
     :Target: 4/6/10/+F
@@ -324,8 +324,8 @@ Detection:
     :Area: :Y
     :DTN: "-1"
     :DLVL: :L
-  Detect Magic:
-    :Class: Detection
+  :Detect Magic:
+    :Class: :Detection
     :Name: :Detect Magic
     :Type: :M
     :Target: 4/6/10/+F
@@ -334,8 +334,8 @@ Detection:
     :Area: :Y
     :DTN: 0
     :DLVL: :L
-  Detect(Object):
-    :Class: Detection
+  :Detect(Object):
+    :Class: :Detection
     :Name: :Detect(Object)
     :Type: :P
     :Target: 4/6/10/+F
@@ -344,8 +344,8 @@ Detection:
     :Area: :Y
     :DTN: "+1"
     :DLVL: :M
-  Diagnose:
-    :Class: Detection
+  :Diagnose:
+    :Class: :Detection
     :Name: :Diagnose
     :Type: :M
     :Target: :Willpower
@@ -354,8 +354,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: "-1"
     :DLVL: :L
-  Enhance Aim:
-    :Class: Detection
+  :Enhance Aim:
+    :Class: :Detection
     :Name: :Enhance Aim
     :Type: :M
     :Target: 6
@@ -364,8 +364,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :M
-  Eyes of the Pack:
-    :Class: Detection
+  :Eyes of the Pack:
+    :Class: :Detection
     :Name: :Eyes of the Pack
     :Type: :M
     :Target: 6
@@ -374,8 +374,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :M
-  Mindlink:
-    :Class: Detection
+  :Mindlink:
+    :Class: :Detection
     :Name: :Mindlink
     :Type: :M
     :Target: 4
@@ -384,8 +384,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :S
-  Mind Probe:
-    :Class: Detection
+  :Mind Probe:
+    :Class: :Detection
     :Name: :Mind Probe
     :Type: :M
     :Target: :Willpower
@@ -394,8 +394,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :S
-  Night Vision:
-    :Class: Detection
+  :Night Vision:
+    :Class: :Detection
     :Name: :Night Vision
     :Type: :P
     :Target: 6
@@ -404,8 +404,8 @@ Detection:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :L
-  Translate:
-    :Class: Detection
+  :Translate:
+    :Class: :Detection
     :Name: :Translate
     :Type: :M
     :Target: 4
@@ -415,8 +415,8 @@ Detection:
     :DTN: 0
     :DLVL: :M
 Health:
-  Alleviate-Allergy:
-    :Class: Health
+  :Alleviate-Allergy:
+    :Class: :Health
     :Name: Alleviate-Allergy
     :Type: :P
     :Target: 10-Essence
@@ -426,8 +426,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :AllergyLVL
-  Antidote:
-    :Class: Health
+  :Antidote:
+    :Class: :Health
     :Name: :Antidote
     :Type: :M
     :Target: :ToxinPower
@@ -437,8 +437,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "-2"
     :DLVL: :ToxinLVL
-  Awaken:
-    :Class: Health
+  :Awaken:
+    :Class: :Health
     :Name: :Awaken
     :Type: :M
     :Target: 4
@@ -448,8 +448,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "-2"
     :DLVL: :DamageLVL
-  Cause-Allergy:
-    :Class: Health
+  :Cause-Allergy:
+    :Class: :Health
     :Name: Cause-Allergy
     :Type: :P
     :Target: 10-Essence
@@ -459,8 +459,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+2"
     :DLVL: :AllergyLVL
-  Cripple-Limb:
-    :Class: Health
+  :Cripple-Limb:
+    :Class: :Health
     :Name: Cripple-Limb
     :Type: :P
     :Target: :Body
@@ -470,8 +470,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :S
-  Cure-Disease:
-    :Class: Health
+  :Cure-Disease:
+    :Class: :Health
     :Name: Cure-Disease
     :Type: :M
     :Target: :DiseasePower
@@ -481,8 +481,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :DiseaseLVL
-  Decrease(Attribute):
-    :Class: Health
+  :Decrease(Attribute):
+    :Class: :Health
     :Name: :Decrease(Attribute)
     :Type: :M
     :Target: 10-Essence
@@ -492,8 +492,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :S
-  Decrease(Cybered Attribute):
-    :Class: Health
+  :Decrease(Cybered Attribute):
+    :Class: :Health
     :Name: :Decrease(Cybered Attribute)
     :Type: :P
     :Target: 10-Essence
@@ -503,8 +503,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+2"
     :DLVL: :S
-  Decrease Reaction:
-    :Class: Health
+  :Decrease Reaction:
+    :Class: :Health
     :Name: :Decrease Reaction
     :Type: :M
     :Target: 10-Essence
@@ -514,8 +514,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :D
-  Decrease Cybered Reaction:
-    :Class: Health
+  :Decrease Cybered Reaction:
+    :Class: :Health
     :Name: :Decrease Cybered Reaction
     :Type: :P
     :Target: 10-Essence
@@ -525,8 +525,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+2"
     :DLVL: :D
-  Decrease Reflexes -1:
-    :Class: Health
+  :Decrease Reflexes -1:
+    :Class: :Health
     :Name: Decrease Reflexes -1
     :Type: :P
     :Target: 10-Essence
@@ -536,8 +536,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+2"
     :DLVL: :D
-  Decrease Reflexes -2:
-    :Class: Health
+  :Decrease Reflexes -2:
+    :Class: :Health
     :Name: Decrease Reflexes -2
     :Type: :P
     :Target: 10-Essence
@@ -547,8 +547,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+4"
     :DLVL: :D
-  Decrease Reflexes -3:
-    :Class: Health
+  :Decrease Reflexes -3:
+    :Class: :Health
     :Name: Decrease Reflexes -3
     :Type: :P
     :Target: 10-Essence
@@ -558,8 +558,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+6"
     :DLVL: :D
-  Detox:
-    :Class: Health
+  :Detox:
+    :Class: :Health
     :Name: :Detox
     :Type: :M
     :Target: :Toxin Power
@@ -569,8 +569,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "-2"
     :DLVL: :ToxinLVL
-  Fast:
-    :Class: Health
+  :Fast:
+    :Class: :Health
     :Name: :Fast
     :Type: :M
     :Target: 4
@@ -580,8 +580,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "-2"
     :DLVL: :M
-  Heal:
-    :Class: Health
+  :Heal:
+    :Class: :Health
     :Name: :Heal
     :Type: :M
     :Target: 10-Essence
@@ -591,8 +591,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :DamageLVL
-  Healthy Glow:
-    :Class: Health
+  :Healthy Glow:
+    :Class: :Health
     :Name: :Healthy Glow
     :Type: :M
     :Target: 4
@@ -602,8 +602,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: 0
     :DLVL: :L
-  Hibernate:
-    :Class: Health
+  :Hibernate:
+    :Class: :Health
     :Name: :Hibernate
     :Type: :M
     :Target: 4
@@ -613,8 +613,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :M
-  Increase(Attribute):
-    :Class: Health
+  :Increase(Attribute):
+    :Class: :Health
     :Name: :Increase(Attribute)
     :Type: :M
     :Target: :Attribute
@@ -624,8 +624,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :M
-  Increase(Cybered Attribute):
-    :Class: Health
+  :Increase(Cybered Attribute):
+    :Class: :Health
     :Name: :Increase(Cybered Attribute)
     :Type: :P
     :Target: :Attribute
@@ -635,8 +635,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+2"
     :DLVL: :M
-  Increase Reaction:
-    :Class: Health
+  :Increase Reaction:
+    :Class: :Health
     :Name: :Increase Reaction
     :Type: :M
     :Target: :Reaction
@@ -646,8 +646,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :S
-  Increase Cybered Reaction:
-    :Class: Health
+  :Increase Cybered Reaction:
+    :Class: :Health
     :Name: :Increase Cybered Reaction
     :Type: :P
     :Target: :Reaction
@@ -657,8 +657,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+2"
     :DLVL: :S
-  Increase Reflexes +1:
-    :Class: Health
+  :Increase Reflexes +1:
+    :Class: :Health
     :Name: Increase Reflexes +1
     :Type: :M
     :Target: :Reaction
@@ -668,8 +668,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :S
-  Increase Reflexes +2:
-    :Class: Health
+  :Increase Reflexes +2:
+    :Class: :Health
     :Name: Increase Reflexes +2
     :Type: :M
     :Target: :Reaction
@@ -679,8 +679,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :D
-  Increase Reflexes +3:
-    :Class: Health
+  :Increase Reflexes +3:
+    :Class: :Health
     :Name: Increase Reflexes +3
     :Type: :M
     :Target: :Reaction
@@ -690,8 +690,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+3"
     :DLVL: :D
-  Intoxication:
-    :Class: Health
+  :Intoxication:
+    :Class: :Health
     :Name: :Intoxication
     :Type: :P
     :Target: :Body
@@ -701,8 +701,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :D
-  Nutrition:
-    :Class: Health
+  :Nutrition:
+    :Class: :Health
     :Name: :Nutrition
     :Type: :P
     :Target: 4
@@ -712,8 +712,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :M
-  Oxygenate:
-    :Class: Health
+  :Oxygenate:
+    :Class: :Health
     :Name: :Oxygenate
     :Type: :P
     :Target: 4
@@ -723,8 +723,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+2"
     :DLVL: :L
-  Preserve:
-    :Class: Health
+  :Preserve:
+    :Class: :Health
     :Name: :Preserve
     :Type: :P
     :Target: 4
@@ -734,8 +734,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :M
-  Prophylaxis:
-    :Class: Health
+  :Prophylaxis:
+    :Class: :Health
     :Name: :Prophylaxis
     :Type: :M
     :Target: 4
@@ -745,8 +745,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :L
-  Resist Pain:
-    :Class: Health
+  :Resist Pain:
+    :Class: :Health
     :Name: :Resist Pain
     :Type: :M
     :Target: 4
@@ -756,8 +756,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "-2"
     :DLVL: :D
-  Stabilize:
-    :Class: Health
+  :Stabilize:
+    :Class: :Health
     :Name: :Stabilize
     :Type: :M
     :Target: 4+Minutes
@@ -767,8 +767,8 @@ Health:
     :Area: !ruby/symbol 
     :DTN: "+1"
     :DLVL: :M
-  Threat:
-    :Class: Health
+  :Threat:
+    :Class: :Health
     :Name: :Threat
     :Type: :M
     :Target: 10-Essence
@@ -780,9 +780,9 @@ Health:
     :DLVL: :D
 Illusion:
   Direct:
-    Agony:
-      :Class: Illusion
-      :Subclass: Direct
+    :Agony:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Agony
       :Type: :M
       :Target: :Willpower
@@ -792,9 +792,9 @@ Illusion:
       :Area: :Y
       :DTN: 0
       :DLVL: :M
-    Blindness:
-      :Class: Illusion
-      :Subclass: Direct
+    :Blindness:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Blindness
       :Type: :P
       :Target: :Intelligence
@@ -804,9 +804,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Chaff:
-      :Class: Illusion
-      :Subclass: Direct
+    :Chaff:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Chaff
       :Type: :P
       :Target: :ObjectRes
@@ -816,9 +816,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :S
-    Chaos:
-      :Class: Illusion
-      :Subclass: Direct
+    :Chaos:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Chaos
       :Type: :P
       :Target: :Intelligence
@@ -828,9 +828,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :S
-    Chaotic World:
-      :Class: Illusion
-      :Subclass: Direct
+    :Chaotic World:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Chaotic World
       :Type: :P
       :Target: :Intelligence
@@ -840,9 +840,9 @@ Illusion:
       :Area: :Y
       :DTN: "+1"
       :DLVL: :D
-    Confusion:
-      :Class: Illusion
-      :Subclass: Direct
+    :Confusion:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Confusion
       :Type: :M
       :Target: :Willpower
@@ -852,9 +852,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :S
-    Dream:
-      :Class: Illusion
-      :Subclass: Direct
+    :Dream:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Dream
       :Type: :M
       :Target: :Willpower
@@ -864,9 +864,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :M
-    Entertainment:
-      :Class: Illusion
-      :Subclass: Direct
+    :Entertainment:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Entertainment
       :Type: :M
       :Target: :Willpower
@@ -876,9 +876,9 @@ Illusion:
       :Area: :Y
       :DTN: 0
       :DLVL: :L
-    Flak:
-      :Class: Illusion
-      :Subclass: Direct
+    :Flak:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Flak
       :Type: :P
       :Target: :ObjectRes
@@ -888,9 +888,9 @@ Illusion:
       :Area: :Y
       :DTN: 0
       :DLVL: :D
-    Flash:
-      :Class: Illusion
-      :Subclass: Direct
+    :Flash:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Flash
       :Type: :P
       :Target: :Intelligence
@@ -900,9 +900,9 @@ Illusion:
       :Area: :Y
       :DTN: 0
       :DLVL: :S
-    Mass Agony:
-      :Class: Illusion
-      :Subclass: Direct
+    :Mass Agony:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Mass Agony
       :Type: :M
       :Target: :Willpower
@@ -912,9 +912,9 @@ Illusion:
       :Area: :Y
       :DTN: 0
       :DLVL: :S
-    Mass Blindness:
-      :Class: Illusion
-      :Subclass: Direct
+    :Mass Blindness:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Mass Blindness
       :Type: :P
       :Target: :Intelligence
@@ -924,9 +924,9 @@ Illusion:
       :Area: :Y
       :DTN: "+1"
       :DLVL: :S
-    Mass Confusion:
-      :Class: Illusion
-      :Subclass: Direct
+    :Mass Confusion:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Mass Confusion
       :Type: :M
       :Target: :Willpower
@@ -936,9 +936,9 @@ Illusion:
       :Area: :Y
       :DTN: 0
       :DLVL: :D
-    Stench:
-      :Class: Illusion
-      :Subclass: Direct
+    :Stench:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Stench
       :Type: :M
       :Target: :Willpower
@@ -948,9 +948,9 @@ Illusion:
       :Area: :Y
       :DTN: 0
       :DLVL: :S
-    Stink:
-      :Class: Illusion
-      :Subclass: Direct
+    :Stink:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Stink
       :Type: :M
       :Target: :Willpower
@@ -960,9 +960,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :M
-    Trid Entertainment:
-      :Class: Illusion
-      :Subclass: Direct
+    :Trid Entertainment:
+      :Class: :Illusion
+      :Subclass: :Direct
       :Name: :Trid Entertainment
       :Type: :P
       :Target: :Intelligence
@@ -973,9 +973,9 @@ Illusion:
       :DTN: "+1"
       :DLVL: :L
   Indirect:
-    Camouflage:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Camouflage:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Camouflage
       :Type: :M
       :Target: 4
@@ -985,9 +985,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :L
-    Double Image:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Double Image:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Double Image
       :Type: :M
       :Target: 4
@@ -997,9 +997,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :S
-    Foreboding:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Foreboding:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Foreboding
       :Type: :M
       :Target: 4
@@ -1009,9 +1009,9 @@ Illusion:
       :Area: :Y
       :DTN: 0
       :DLVL: :D
-    Hot Potato:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Hot Potato:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Hot Potato
       :Type: :M
       :Target: 4
@@ -1021,9 +1021,9 @@ Illusion:
       :Area: :Y
       :DTN: 0
       :DLVL: :M
-    Improved Invisibility:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Improved Invisibility:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Improved Invisibility
       :Type: :P
       :Target: 4
@@ -1033,9 +1033,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Invisibility:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Invisibility:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Invisibility
       :Type: :M
       :Target: 4
@@ -1045,9 +1045,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :M
-    Mask:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Mask:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Mask
       :Type: :M
       :Target: 4
@@ -1057,9 +1057,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :M
-    Phantasm:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Phantasm:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Phantasm
       :Type: :M
       :Target: 4
@@ -1069,9 +1069,9 @@ Illusion:
       :Area: :Y
       :DTN: 0
       :DLVL: :D
-    Physical Camouflage:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Physical Camouflage:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Physical Camouflage
       :Type: :P
       :Target: 4
@@ -1081,9 +1081,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :L
-    Physical Double Image:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Physical Double Image:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Physical Double Image
       :Type: :P
       :Target: 4
@@ -1093,9 +1093,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :S
-    Physical Mask:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Physical Mask:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Physical Mask
       :Type: :P
       :Target: 4
@@ -1105,9 +1105,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Silence:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Silence:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Silence
       :Type: :P
       :Target: 4
@@ -1117,9 +1117,9 @@ Illusion:
       :Area: :Y
       :DTN: "+1"
       :DLVL: :S
-    Stealth:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Stealth:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Stealth
       :Type: :P
       :Target: 4
@@ -1129,9 +1129,9 @@ Illusion:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Trid Phantasm:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Trid Phantasm:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Trid Phantasm
       :Type: :P
       :Target: 4
@@ -1141,9 +1141,9 @@ Illusion:
       :Area: :Y
       :DTN: "+1"
       :DLVL: :D
-    Vehicle Mask:
-      :Class: Illusion
-      :Subclass: Indirect
+    :Vehicle Mask:
+      :Class: :Illusion
+      :Subclass: :Indirect
       :Name: :Vehicle Mask
       :Type: :P
       :Target: 4
@@ -1155,9 +1155,9 @@ Illusion:
       :DLVL: :S
 Manipulation:
   Control:
-    Alter Memory:
-      :Class: Manipulation
-      :Subclass: Control
+    :Alter Memory:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Alter Memory
       :Type: :M
       :Target: :Willpower
@@ -1167,9 +1167,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :D
-    Calm Animal:
-      :Class: Manipulation
-      :Subclass: Control
+    :Calm Animal:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Calm Animal
       :Type: :M
       :Target: :Willpower
@@ -1179,9 +1179,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :M
-    Calm Pack:
-      :Class: Manipulation
-      :Subclass: Control
+    :Calm Pack:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Calm Pack
       :Type: :M
       :Target: :Willpower
@@ -1191,9 +1191,9 @@ Manipulation:
       :Area: :Y
       :DTN: 0
       :DLVL: :S
-    Compel Truth:
-      :Class: Manipulation
-      :Subclass: Control
+    :Compel Truth:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Compel Truth
       :Type: :M
       :Target: :Willpower
@@ -1203,9 +1203,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Control Actions:
-      :Class: Manipulation
-      :Subclass: Control
+    :Control Actions:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Control Actions
       :Type: :M
       :Target: :Willpower
@@ -1215,9 +1215,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Control Animal:
-      :Class: Manipulation
-      :Subclass: Control
+    :Control Animal:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Control Animal
       :Type: :M
       :Target: :Willpower
@@ -1227,9 +1227,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :S
-    Control Emotion:
-      :Class: Manipulation
-      :Subclass: Control
+    :Control Emotion:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Control Emotion
       :Type: :M
       :Target: :Willpower
@@ -1239,9 +1239,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Control Pack:
-      :Class: Manipulation
-      :Subclass: Control
+    :Control Pack:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Control Pack
       :Type: :M
       :Target: :Willpower
@@ -1251,9 +1251,9 @@ Manipulation:
       :Area: :Y
       :DTN: 0
       :DLVL: :D
-    Control Thoughts:
-      :Class: Manipulation
-      :Subclass: Control
+    :Control Thoughts:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Control Thoughts
       :Type: :M
       :Target: :Willpower
@@ -1263,9 +1263,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :S
-    Influence:
-      :Class: Manipulation
-      :Subclass: Control
+    :Influence:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Influence
       :Type: :M
       :Target: :Willpower
@@ -1275,9 +1275,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :S
-    Mob Mind:
-      :Class: Manipulation
-      :Subclass: Control
+    :Mob Mind:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Mob Mind
       :Type: :M
       :Target: :Willpower
@@ -1287,9 +1287,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+1"
       :DLVL: :D
-    Mob Mood:
-      :Class: Manipulation
-      :Subclass: Control
+    :Mob Mood:
+      :Class: :Manipulation
+      :Subclass: :Control
       :Name: :Mob Mood
       :Type: :M
       :Target: :Willpower
@@ -1300,9 +1300,9 @@ Manipulation:
       :DTN: "+1"
       :DLVL: :S
   Elemental:
-    Acid Stream:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Acid Stream:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Acid Stream
       :Type: :P
       :Target: 4
@@ -1314,9 +1314,9 @@ Manipulation:
       :DLVL: "+1"
       :Damage: :VA
       :Element: :Acid
-    Ball Lightning:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Ball Lightning:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Ball Lightning
       :Type: :P
       :Target: 4
@@ -1328,9 +1328,9 @@ Manipulation:
       :DLVL: "+2"
       :Damage: :VA
       :Element: :Lightning
-    Fireball:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Fireball:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Fireball
       :Type: :P
       :Target: 4
@@ -1342,9 +1342,9 @@ Manipulation:
       :DLVL: "+2"
       :Damage: :VA
       :Element: :Fire
-    Flamethrower:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Flamethrower:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Flamethrower
       :Type: :P
       :Target: 4
@@ -1356,9 +1356,9 @@ Manipulation:
       :DLVL: "+1"
       :Damage: :VA
       :Element: :Fire
-    Laser:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Laser:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Laser
       :Type: :P
       :Target: 4
@@ -1370,9 +1370,9 @@ Manipulation:
       :DLVL: "+1"
       :Damage: :VA
       :Element: :Light
-    Lightning Bolt:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Lightning Bolt:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Lightning Bolt
       :Type: :P
       :Target: 4
@@ -1384,9 +1384,9 @@ Manipulation:
       :DLVL: "+1"
       :Damage: :VA
       :Element: :Lightning
-    Nova:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Nova:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Nova
       :Type: :P
       :Target: 4
@@ -1398,9 +1398,9 @@ Manipulation:
       :DLVL: "+2"
       :Damage: :VA
       :Element: :Light
-    Smoke Cloud:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Smoke Cloud:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Smoke Cloud
       :Type: :P
       :Target: 4
@@ -1412,9 +1412,9 @@ Manipulation:
       :DLVL: "+2"
       :Damage: :VA
       :Element: :Smoke
-    Steam:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Steam:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Steam
       :Type: :P
       :Target: 4
@@ -1426,9 +1426,9 @@ Manipulation:
       :DLVL: "+1"
       :Damage: :VA
       :Element: :Smoke
-    Thunderbolt:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Thunderbolt:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Thunderbolt
       :Type: :P
       :Target: 4
@@ -1440,9 +1440,9 @@ Manipulation:
       :DLVL: "+1"
       :Damage: :VA
       :Element: :Blast
-    Thunderclap:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Thunderclap:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Thunderclap
       :Type: :P
       :Target: 4
@@ -1454,9 +1454,9 @@ Manipulation:
       :DLVL: "+2"
       :Damage: :VA
       :Element: :Blast
-    Toxic Wave:
-      :Class: Manipulation
-      :Subclass: Elemental
+    :Toxic Wave:
+      :Class: :Manipulation
+      :Subclass: :Elemental
       :Name: :Toxic Wave
       :Type: :P
       :Target: 4
@@ -1469,9 +1469,9 @@ Manipulation:
       :Damage: :VA
       :Element: :Acid
   Telekinetic:
-    Animate:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Animate:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Animate
       :Type: :P
       :Target: :ObjectRes
@@ -1481,9 +1481,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL, Damage: :M
-    Bind:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Bind:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Bind
       :Type: :P
       :Target: :Quickness
@@ -1493,9 +1493,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+2"
       :DLVL, Damage: :M
-    Catfall:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Catfall:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Catfall
       :Type: :P
       :Target: 4
@@ -1505,9 +1505,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL, Damage: :M
-    Clout:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Clout:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Clout
       :Type: :P
       :Target: 4
@@ -1518,9 +1518,9 @@ Manipulation:
       :DTN: 0
       :DLVL, Damage: 0
       ! '': :VA
-    Deflect:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Deflect:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Deflect
       :Type: :P
       :Target: 4
@@ -1530,9 +1530,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+2"
       :DLVL, Damage: :M
-    Fling:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Fling:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Fling
       :Type: :P
       :Target: 4
@@ -1542,9 +1542,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL, Damage: :M
-    Gecko Crawl:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Gecko Crawl:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Gecko Crawl
       :Type: :P
       :Target: 4
@@ -1554,9 +1554,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+2"
       :DLVL, Damage: :M
-    Levitate:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Levitate:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Levitate
       :Type: :P
       :Target: 4
@@ -1566,9 +1566,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+2"
       :DLVL, Damage: :M
-    Lock:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Lock:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Lock
       :Type: :P
       :Target: 4
@@ -1578,9 +1578,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+2"
       :DLVL, Damage: :M
-    Magic Fingers:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Magic Fingers:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Magic Fingers
       :Type: :P
       :Target: 6
@@ -1590,9 +1590,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+2"
       :DLVL, Damage: :M
-    Net:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Net:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Net
       :Type: :P
       :Target: :Quickness
@@ -1602,9 +1602,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+2"
       :DLVL, Damage: :S
-    Poltergeist:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Poltergeist:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Poltergeist
       :Type: :P
       :Target: 4
@@ -1614,9 +1614,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+1"
       :DLVL, Damage: :M
-    Redirect:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Redirect:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Redirect
       :Type: :P
       :Target: 4
@@ -1627,9 +1627,9 @@ Manipulation:
       :DTN: "+1"
       :DLVL, Damage: 0
       ! '': :VA
-    Shape Earth:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Shape Earth:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Shape Earth
       :Type: :P
       :Target: 4
@@ -1639,9 +1639,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+2"
       :DLVL, Damage: :M
-    Shape Water:
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Shape Water:
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Shape Water
       :Type: :P
       :Target: 4
@@ -1651,9 +1651,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+2"
       :DLVL, Damage: :M
-    Use(Skill):
-      :Class: Manipulation
-      :Subclass: Telekinetic
+    :Use(Skill):
+      :Class: :Manipulation
+      :Subclass: :Telekinetic
       :Name: :Use(Skill)
       :Type: :P
       :Target: 6
@@ -1664,9 +1664,9 @@ Manipulation:
       :DTN: "+2"
       :DLVL, Damage: :L
   Transformation:
-    Alter Temperature:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Alter Temperature:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Alter Temperature
       :Type: :P
       :Target: 4
@@ -1676,9 +1676,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+2"
       :DLVL: :M
-    Armor:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Armor:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Armor
       :Type: :P
       :Target: 6
@@ -1688,9 +1688,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+2"
       :DLVL: :M
-    Astral Armor:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Astral Armor:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Astral Armor
       :Type: :M
       :Target: 6
@@ -1700,9 +1700,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Astral Barrier:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Astral Barrier:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Astral Barrier
       :Type: :M
       :Target: 6
@@ -1712,9 +1712,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+1"
       :DLVL: :S
-    Clean(Element):
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Clean(Element):
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Clean(Element)
       :Type: :P
       :Target: 6
@@ -1725,9 +1725,9 @@ Manipulation:
       :DTN: "+1"
       :DLVL: :S
       :Element: :(Element)
-    Control Fire:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Control Fire:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Control Fire
       :Type: :P
       :Target: :FirePower
@@ -1738,9 +1738,9 @@ Manipulation:
       :DTN: "+2"
       :DLVL: :M
       :Element: :Fire
-    Create Food:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Create Food:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Create Food
       :Type: :P
       :Target: 4
@@ -1750,9 +1750,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :S
-    Fashion:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Fashion:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Fashion
       :Type: :P
       :Target: 6
@@ -1762,9 +1762,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :L
-    Firewall:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Firewall:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Firewall
       :Type: :P
       :Target: 4
@@ -1775,9 +1775,9 @@ Manipulation:
       :DTN: "+2"
       :DLVL: :S
       :Element: :Fire
-    Fix:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Fix:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Fix
       :Type: :P
       :Target: :ObjectRes
@@ -1787,9 +1787,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :S
-    Flame Aura:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Flame Aura:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Flame Aura
       :Type: :P
       :Target: 4
@@ -1800,9 +1800,9 @@ Manipulation:
       :DTN: "+2"
       :DLVL: :M
       :Element: :Fire
-    Freeze Water:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Freeze Water:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Freeze Water
       :Type: :P
       :Target: 4
@@ -1813,9 +1813,9 @@ Manipulation:
       :DTN: "+1"
       :DLVL: :M
       :Element: :Ice
-    Glue:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Glue:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Glue
       :Type: :P
       :Target: 4
@@ -1825,9 +1825,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+2"
       :DLVL: :M
-    Glue Strip:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Glue Strip:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Glue Strip
       :Type: :P
       :Target: 4
@@ -1837,9 +1837,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+2"
       :DLVL: :S
-    Ice Sheet:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Ice Sheet:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Ice Sheet
       :Type: :P
       :Target: 4
@@ -1850,9 +1850,9 @@ Manipulation:
       :DTN: "+1"
       :DLVL: :S
       :Element: :Ice
-    Ignite:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Ignite:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Ignite
       :Type: :P
       :Target: 4
@@ -1863,9 +1863,9 @@ Manipulation:
       :DTN: "+1"
       :DLVL: :D
       :Element: :Fire
-    Light:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Light:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Light
       :Type: :P
       :Target: 4
@@ -1876,9 +1876,9 @@ Manipulation:
       :DTN: "+2"
       :DLVL: :M
       :Element: :Light
-    Limited Armor:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Limited Armor:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Limited Armor
       :Type: :P
       :Target: 6
@@ -1888,9 +1888,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+2"
       :DLVL: :L
-    Limited P Barrier:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Limited P Barrier:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Limited P Barrier
       :Type: :P
       :Target: 6
@@ -1900,9 +1900,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+2"
       :DLVL: :M
-    Makeover:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Makeover:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Makeover
       :Type: :P
       :Target: 6
@@ -1912,9 +1912,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Mana Static:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Mana Static:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Mana Static
       :Type: :M
       :Target: 4
@@ -1924,9 +1924,9 @@ Manipulation:
       :Area: :Y
       :DTN: 0
       :DLVL: :D
-    Mist:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Mist:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Mist
       :Type: :P
       :Target: 4
@@ -1936,9 +1936,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+1"
       :DLVL: :M
-    Petrify:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Petrify:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Petrify
       :Type: :P
       :Target: :Body
@@ -1948,9 +1948,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :S
-    Physical Barrier:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Physical Barrier:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Physical Barrier
       :Type: :P
       :Target: :False
@@ -1959,9 +1959,9 @@ Manipulation:
       :Range: :Y
       :Area: "+2"
       :DTN: :S
-    Reinforce:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Reinforce:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Reinforce
       :Type: :P
       :Target: :ObjectRes
@@ -1971,9 +1971,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Shadow:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Shadow:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Shadow
       :Type: :P
       :Target: 4
@@ -1983,9 +1983,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+2"
       :DLVL: :M
-    Shapechange:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Shapechange:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Shapechange
       :Type: :P
       :Target: :Body
@@ -1995,9 +1995,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :M
-    Spell Shield:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Spell Shield:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Spell Shield
       :Type: :M
       :Target: 6
@@ -2007,9 +2007,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: 0
       :DLVL: :M
-    Spell Wall:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Spell Wall:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Spell Wall
       :Type: :M
       :Target: 6
@@ -2019,9 +2019,9 @@ Manipulation:
       :Area: :Y
       :DTN: 0
       :DLVL: :S
-    Spirit Barrier:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Spirit Barrier:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Spirit Barrier
       :Type: :M
       :Target: 6
@@ -2031,9 +2031,9 @@ Manipulation:
       :Area: :Y
       :DTN: 0
       :DLVL: :S
-    Sterilize:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Sterilize:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Sterilize
       :Type: :P
       :Target: 4
@@ -2043,9 +2043,9 @@ Manipulation:
       :Area: :Y
       :DTN: "+1"
       :DLVL: :M
-    Transform:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Transform:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Transform
       :Type: :P
       :Target: :Body
@@ -2055,9 +2055,9 @@ Manipulation:
       :Area: !ruby/symbol 
       :DTN: "+1"
       :DLVL: :S
-    Wind:
-      :Class: Manipulation
-      :Subclass: Transformation
+    :Wind:
+      :Class: :Manipulation
+      :Subclass: :Transformation
       :Name: :Wind
       :Type: :P
       :Target: 4
