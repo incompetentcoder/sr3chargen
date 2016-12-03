@@ -1343,17 +1343,19 @@ class Spellblock < Gtk::Frame
     end
 
     @view.signal_connect('row-activated') do |a,b,c|
-#      binding.pry
       subcategory = nil
       name = @model.get_iter(b)[0]
-      if b.depth == 3
+      unless (CONSTANT[:spelltypes].keys + CONSTANT[:subspelltypes][:Manipulation] +
+          CONSTANT[:subspelltypes][:Illusion]).include? name.to_sym
+        if b.depth == 3
+          b.up!
+          subcategory = @model.get_iter(b)[0]
+        end
         b.up!
-        subcategory = @model.get_iter(b)[0]
+        category = @model.get_iter(b)[0]
+        pp a.selection.selected[0]
+        @app.appendspell(name,category,subcategory) unless @spells[name]
       end
-      b.up!
-      category = @model.get_iter(b)[0]
-      pp a.selection.selected[0]
-      @app.appendspell(name,category,subcategory) unless @spells[name]
     end 
 
     (0..8).each do |x|
