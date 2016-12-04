@@ -1355,6 +1355,8 @@ class Spellblock < Gtk::Frame
         category = @model.get_iter(b)[0]
         pp a.selection.selected[0]
         @app.appendspell(name,category,subcategory) unless @spells[name]
+      else
+        a.row_expanded?(b) ? a.collapse_row(b) : a.expand_row(b,false)
       end
     end 
 
