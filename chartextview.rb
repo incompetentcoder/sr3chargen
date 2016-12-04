@@ -1255,11 +1255,18 @@ class Spellblock < Gtk::Frame
   end
 
   def removespell(name)
-    @spells[name].each do |x|
-      @table.remove(x)
-      x.destroy
-    end
+    row = @table.child_get_property(
+      @table.children.find {|x| x.text == name if x.class == Gtk::Label},
+      'top-attach')
+    @spells[name].each {|x| @table.remove(x)}
     @spells.delete(name)
+    @table.children.each do |x|
+      top = @table.child_get_property(x,'top-attach')
+      if top > row
+        @table.child_set_property(x,'top-attach',top-1)
+        @table.child_set_property(x,'bottom-attach',top)
+      end
+    end
   end
   
   def newspell
@@ -1415,7 +1422,7 @@ class Bioblock < Gtk::ScrolledWindow
 end
 
 class Notebook < Gtk::Notebook
-  attr_accessor :skill, :spell
+  attr_accessor :skill, :spell, :totem
   
   def initialize(app)
     @app = app
