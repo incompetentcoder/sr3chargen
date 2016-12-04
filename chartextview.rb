@@ -182,8 +182,7 @@ class Application
     @notebook.get_nth_page(3).sensitive=true
     if totem
       tot,grp,boni = @a.gettotem
-   #   binding.pry
-      spells = boni[:spells].collect  {|x| x[0]}
+      spells = boni[:spells].collect  {|x| x[0] if x[1] > 0}.compact
     else
       spells=CONSTANT[:spelltypes].keys
     end
