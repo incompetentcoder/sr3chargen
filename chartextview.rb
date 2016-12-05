@@ -277,6 +277,8 @@ class Application
     @notebook = Notebook.new(self)
     @table = Gtk::Table.new(13, 12, homogenous = false)
     @windows.add(@table)
+    updatepools
+    updatereaction
     @table.attach @guiattributes, 0, 3, 4, 12
     @table.attach @basic, 0, 13, 0, 4, *ATCH
     @table.attach @notebook, 3, 13, 4, 12
