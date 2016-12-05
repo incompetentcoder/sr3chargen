@@ -5,7 +5,6 @@ require 'yaml'
 
 CONSTANT = YAML.load_file(File.open('constants.yaml', 'r'))
 ATCH = [Gtk::EXPAND | Gtk::FILL, Gtk::SHRINK, 0, 0].freeze
-
 Gtk::RC.parse_string(<<-EOF)
 style "combocrap" {
   GtkComboBox::appears-as-list = 1
@@ -94,10 +93,11 @@ class Application
         boni[:spirits] = short[:spirits]
       end
     end
+    @tooltips.set_tip(@windows,"",nil)
     @a.settotem(totem,group,boni)
     totem = gettotem ? gettotem[0] : nil
     checkspells(totem)
-    @guiattributes.nototem unless totem
+#    @guiattributes.nototem unless totem
   end
 
   def availabletotems(group)
@@ -202,6 +202,11 @@ class Application
     @a.getmagic && @a.getspellpoints > 0 && 
       !(@a.getmagetype =~ /^[^F].*ist|Conj/) ? enablespells : disablespells
     @a.getmagetype =~ /Shaman/ ? enabletotem : disabletotem
+    if @a.getmagetype == :Shamanist
+      @tooltips.set_tip(@windows,"Select a totem to be able to select spells",nil)
+    else
+      @tooltips.set_tip(@windows,"",nil)
+    end
   end
 
   def enabletotem
@@ -265,6 +270,7 @@ class Application
 
   def initialize
     @windows = Gtk::Window.new
+    @tooltips = Gtk::Tooltips.new
     @a = Character.new(self)
     @guiattributes = Attributeblock.new(self)
     @basic = Mainblock.new(self)
@@ -964,6 +970,16 @@ class Attributeblock < Gtk::Frame
     @totem[3].active = -1
   end
 
+  def settotemboni(boni)
+    if boni
+#      binding.pry
+      @totem[5].text = boni[2][:spells].collect {|x| x[0].to_s + ":" + x[1].to_s}.join(", ") if boni[2][:spells]
+      @totem[7].text = boni[2][:spirits].collect {|x| x[0].to_s + ":" + x[1].to_s}.join(", ") if boni[2][:spirits]
+    else
+      @totem[5].text = ''
+      @totem[7].text = ''
+    end
+  end
 
   def initialize(app)
     @tooltips=Gtk::Tooltips.new
@@ -1046,6 +1062,17 @@ class Attributeblock < Gtk::Frame
     @table.attach @totem[1] = Gtk::ComboBox.new,3,10,24,26,*ATCH
     @table.attach @totem[2] = Gtk::Label.new('Totem'),0,3,26,28,*ATCH
     @table.attach @totem[3] = Gtk::ComboBox.new,3,10,26,28,*ATCH
+    @table.attach @totem[4] = Gtk::Label.new('Spells'),0,10,28,29,*ATCH
+    @table.attach @totem[5] = Gtk::Label.new(''),0,10,29,31,*ATCH
+    @table.attach @totem[6] = Gtk::Label.new('Spirits'),0,10,31,32,*ATCH
+    @table.attach @totem[7] = Gtk::Label.new(''),0,10,32,34,*ATCH
+    @totem[5].wrap = true
+    @totem[5].justify = Gtk::JUSTIFY_FILL 
+    @totem[5].width_chars = 40
+    @totem[7].wrap = true
+    @totem[7].justify = Gtk::JUSTIFY_FILL
+    @totem[7].width_chars = 40
+
     @totem.each {|x| x.sensitive=false}
 
     @totem[1].signal_connect('changed') do |x|
@@ -1065,7 +1092,8 @@ class Attributeblock < Gtk::Frame
         @tooltips.set_tip(@totem[3],'',nil)
         @app.settotem(nil,nil)
       end
-      x.active = -1 unless @app.gettotem
+#      x.active = -1 unless @app.gettotem
+      settotemboni(@app.gettotem)
     end
     add(@table)
   end
