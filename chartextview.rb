@@ -972,9 +972,10 @@ class Attributeblock < Gtk::Frame
 
   def settotemboni(boni)
     if boni
-#      binding.pry
-      @totem[5].text = boni[2][:spells].collect {|x| x[0].to_s + ":" + x[1].to_s}.join(", ") if boni[2][:spells]
-      @totem[7].text = boni[2][:spirits].collect {|x| x[0].to_s + ":" + x[1].to_s}.join(", ") if boni[2][:spirits]
+      @totem[5].text = boni[2][:spells] ? 
+        boni[2][:spells].collect {|x| x[0].to_s + ":" + x[1].to_s}.join(", ") : ""
+      @totem[7].text = boni[2][:spirits] ? 
+        boni[2][:spirits].collect {|x| x[0].to_s + ":" + x[1].to_s}.join(", ") : ""
     else
       @totem[5].text = ''
       @totem[7].text = ''
