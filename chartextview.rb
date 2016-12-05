@@ -273,8 +273,11 @@ class Application
     @tooltips = Gtk::Tooltips.new
     @a = Character.new(self)
     @guiattributes = Attributeblock.new(self)
+    @tooltips.set_tip(@guiattributes,"Set attribute values, select totem if shaman",nil)
     @basic = Mainblock.new(self)
+    @tooltips.set_tip(@basic,"Input name and such, choose race/magetype from dropdown menus",nil)
     @notebook = Notebook.new(self)
+    @tooltips.set_tip(@notebook,"Choose skills, spells if magetype with spellpoints, cyberware and gear in tabs",nil)
     @table = Gtk::Table.new(13, 12, homogenous = false)
     @windows.add(@table)
     updatepools
