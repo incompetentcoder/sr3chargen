@@ -283,6 +283,7 @@ class Application
     @table.n_columns = 13
     @table.n_rows = 12
     @windows.show_all
+    @windows.signal_connect('destroy') {Gtk.main_quit}
     # binding.pry
     Gtk.init
     Gtk.main
