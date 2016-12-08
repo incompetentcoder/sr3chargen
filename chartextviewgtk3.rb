@@ -1152,15 +1152,15 @@ class Skillblock < Gtk::ScrolledWindow
       @skillentries[x[1]] = 
         [Gtk::Label.new(x[1].to_s),Gtk::Label.new(x[2].to_s),
          Gtk::HScale.new(1,6,1),Gtk::Label.new(x[2] ? "0|2" : "1"),
-         Gtk::Button.new(Gtk::Stock::NO)]
+         Gtk::Button.new("Del")]
       @skillentries[x[1]][4].signal_connect('clicked') { |y| @app.delskill(x) }
       @skillentries[x[1]][2].signal_connect('value_changed') { |y| 
         @app.skilllvl(x[1],y)}
       @table2.attach @skillentries[x[1]][0],0,4,row,row+1,*ATCH
-      @table2.attach @skillentries[x[1]][1],4,8,row,row+1,*ATCH
-      @table2.attach @skillentries[x[1]][2],8,10,row,row+1,*ATCH
-      @table2.attach @skillentries[x[1]][3],10,11,row,row+1,*ATCH
-      @table2.attach @skillentries[x[1]][4],11,12,row,row+1,*ATCH
+      @table2.attach @skillentries[x[1]][1],4,9,row,row+1,*ATCH
+      @table2.attach @skillentries[x[1]][2],9,11,row,row+1,*ATCH
+      @table2.attach @skillentries[x[1]][3],11,12,row,row+1,*ATCH
+      @table2.attach @skillentries[x[1]][4],12,13,row,row+1,*ATCH
       @table2.show_all
     end
   end
