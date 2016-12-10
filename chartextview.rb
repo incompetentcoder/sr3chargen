@@ -26,6 +26,10 @@ class Application
     @a.gettotem
   end
   
+  def getelement
+    @a.getelement
+  end
+
   def spelllvl(name,value)
     @notebook.spell.spelllvl(name,@a.spelllvl(name.to_sym,value))
     updatespellpoints
@@ -43,10 +47,10 @@ class Application
     end
   end
 
-  def checkspells(totem)
+  def checkspells(which,type)
     if @a.getmagetype =~ /ist/
-      if totem
-        enablespells(totem)
+      if which
+        enablespells(which,type)
       else
         disablespells
       end
@@ -63,7 +67,6 @@ class Application
 #      dialog.destroy
 #    end
     dialog = Gtk::Dialog.new("Choose #{type} Boni",@windows,Gtk::Dialog::MODAL)
-    pp stuff
     resp = []
     stuff.each_with_index do |x,y|
       if x[0].to_s =~ /1/
@@ -111,10 +114,9 @@ class Application
         boni[:spirits] = short[:spirits]
       end
     end
-    @tooltips.set_tip(@windows,"",nil)
     @a.settotem(totem,group,boni)
     totem = gettotem ? gettotem[0] : nil
-    checkspells(totem)
+    checkspells(totem,:totem)
 #    @guiattributes.nototem unless totem
   end
 
@@ -126,6 +128,11 @@ class Application
       @guiattributes.availabletotems(
         CONSTANT[:totems][group].each_key)
     end
+  end
+
+  def setelement(element)
+    @a.setelement(element)
+    checkspells(element,:element)
   end
 
   def checkskills(attr,value,oldvalue,check=0)
@@ -196,10 +203,10 @@ class Application
     setpointsrem
   end
 
-  def enablespells(totem=nil)
+  def enablespells(which=nil,type=nil)
     @notebook.get_nth_page(3).sensitive=true
-    if totem
-      tot,grp,boni = @a.gettotem
+    if which
+      tot,grp,boni = type == :totem ? @a.gettotem : @a.getelement
       spells = boni[:spells].collect  {|x| x[0] if x[1] > 0}.compact
     else
       spells=CONSTANT[:spelltypes].keys
@@ -220,10 +227,13 @@ class Application
     @a.getmagic && @a.getspellpoints > 0 && 
       !(@a.getmagetype =~ /^[^F].*ist|Conj/) ? enablespells : disablespells
     @a.getmagetype =~ /Shaman/ ? enabletotem : disabletotem
+    @a.getmagetype == :Elementalist ? enableelement : disableelement
     if @a.getmagetype == :Shamanist
       @tooltips.set_tip(@windows,"Select a totem to be able to select spells",nil)
+    elsif @a.getmagetype == :Elementalist
+      @tooltips.set_tip(@windows,"Select element to be able to select spells",nil)
     else
-      @tooltips.set_tip(@windows,"",nil)
+      @tooltips.set_tip(@windows,nil,nil)
     end
   end
 
@@ -233,6 +243,14 @@ class Application
 
   def disabletotem
     @guiattributes.disabletotem
+  end
+
+  def enableelement
+    @guiattributes.enableelement
+  end
+  
+  def disableelement
+    @guiattributes.disableelement
   end
 
   def setnuyen(nuyen)
@@ -341,6 +359,10 @@ class Character
     @totem
   end
 
+  def getelement
+    @element
+  end
+
   def spelllvl(name,value)
     if value > @spells[name][1]
       if value - @spells[name][1] < @spellpoints
@@ -393,6 +415,14 @@ class Character
       @totem = [totem,group,boni]
     else
       @totem = nil
+    end
+  end
+  
+  def setelement(element)
+    if element == nil
+      @element = nil
+    else
+      @element = [element,nil,CONSTANT[:elements][element]]
     end
   end
 
@@ -752,7 +782,8 @@ class Character
     @nuyenrem = 5000
     @activeskills = {}
     @spells = {}
-    @totem = nil 
+    @totem = nil
+    @element = nil 
     @cyberware = {:Bodyware => {}, :Senseware => {}, :Cyberlimbs => {},
                   :Headware => {}}
     @bioware = {}
@@ -957,6 +988,25 @@ class Attributeblock < Gtk::Frame
       File.open("attributes.txt").find_all {|x| x.include? attr}[1]
   end
 
+  def enableelement
+    @element.each {|x| x.sensitive = true}
+    if not @elementenabled
+      CONSTANT[:elements].each_key {|x| @element[1].append_text(x.to_s)}
+      @elementenabled = 1
+    end
+    @element[1].active = -1
+  end
+
+  def disableelement
+    @element.each do |x|
+      x.active = -1 if x.class == Gtk::ComboBox
+      x.sensitive = false
+    end
+    @tooltips.set_tip(@element[1],nil,nil)
+    4.times {|x| @element[1].remove_text(0)}
+    @elementenabled = nil
+  end
+
   def enabletotem
     @totem.each {|x| x.sensitive = true}
     if not @totemsenabled 
@@ -996,7 +1046,6 @@ class Attributeblock < Gtk::Frame
 
   def settotemboni(boni)
     if boni
-      pp boni
       @totem[5].text = boni[2][:spells] ? 
         boni[2][:spells].collect {|x| x[0].to_s + ":" + x[1].to_s}.join(", ") : ""
       @totem[7].text = boni[2][:spirits] ? 
@@ -1083,15 +1132,18 @@ class Attributeblock < Gtk::Frame
     @table.attach Gtk::HSeparator.new, 0, 10, 23, 24, *ATCH
     
     @totem = []
+    @element = []
     @totemcount = 0
-    @table.attach @totem[0] = Gtk::Label.new('Type'),0,3,24,26,*ATCH
-    @table.attach @totem[1] = Gtk::ComboBox.new,3,10,24,26,*ATCH
-    @table.attach @totem[2] = Gtk::Label.new('Totem'),0,3,26,28,*ATCH
-    @table.attach @totem[3] = Gtk::ComboBox.new,3,10,26,28,*ATCH
-    @table.attach @totem[4] = Gtk::Label.new('Spells'),0,10,28,29,*ATCH
-    @table.attach @totem[5] = Gtk::Label.new(''),0,10,29,31,*ATCH
-    @table.attach @totem[6] = Gtk::Label.new('Spirits'),0,10,31,32,*ATCH
-    @table.attach @totem[7] = Gtk::Label.new(''),0,10,32,34,*ATCH
+    @table.attach @element[0] = Gtk::Label.new('Element'),0,3,24,26,*ATCH
+    @table.attach @element[1] = Gtk::ComboBox.new,3,10,24,26,*ATCH
+    @table.attach @totem[0] = Gtk::Label.new('Type'),0,3,26,28,*ATCH
+    @table.attach @totem[1] = Gtk::ComboBox.new,3,10,26,28,*ATCH
+    @table.attach @totem[2] = Gtk::Label.new('Totem'),0,3,28,30,*ATCH
+    @table.attach @totem[3] = Gtk::ComboBox.new,3,10,28,30,*ATCH
+    @table.attach @totem[4] = Gtk::Label.new('Spells'),0,10,30,31,*ATCH
+    @table.attach @totem[5] = Gtk::Label.new(''),0,10,31,33,*ATCH
+    @table.attach @totem[6] = Gtk::Label.new('Spirits'),0,10,33,34,*ATCH
+    @table.attach @totem[7] = Gtk::Label.new(''),0,10,34,36,*ATCH
     @totem[5].wrap = true
     @totem[5].justify = Gtk::JUSTIFY_FILL 
     @totem[5].width_chars = 40
@@ -1100,7 +1152,20 @@ class Attributeblock < Gtk::Frame
     @totem[7].width_chars = 40
 
     @totem.each {|x| x.sensitive=false}
+    @element.each {|x| x.sensitive=false}
 
+    @element[1].signal_connect('changed') do |x|
+      if x.active_text
+        temp = CONSTANT[:elements][x.active_text.to_sym]
+        @tooltips.set_tip(@element[1],temp[:desc],nil)
+        @app.setelement(x.active_text.to_sym)
+      else
+        @tooltips.set_tip(@element[1],nil,nil)
+        @app.setelement(nil)
+      end
+      settotemboni(@app.getelement)
+    end
+    
     @totem[1].signal_connect('changed') do |x|
       cleartotems
       if x.active_text
@@ -1413,7 +1478,6 @@ class Spellblock < Gtk::Frame
         end
         b.up!
         category = @model.get_iter(b)[0]
-        pp a.selection.selected[0]
         @app.appendspell(name,category,subcategory) unless @spells[name]
       else
         a.row_expanded?(b) ? a.collapse_row(b) : a.expand_row(b,false)

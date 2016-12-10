@@ -597,6 +597,12 @@ CONSTANTS = {
       Man: [:City, :Street, :Hearth, :Field]
     },
     Elemental: [:Fire, :Water, :Air, :Earth]
+  },
+  elements: {
+    Fire: { spells: [[:Combat,2]], spirits: [[:Fire,2]], desc: 'Fire fiery'},
+    Earth: { spells: [[:Manipulation,2]], spirits: [[:Earth,2]], desc: 'Earth stony'},
+    Air: { spells: [[:Detection,2]], spirits: [[:Air,2]], desc: 'Air lofty'},
+    Water: { spells: [[:Illusion,2]], spirits: [[:Water,2]], desc: 'Water gentle'}
   }
 
 }
