@@ -55,13 +55,31 @@ class Application
 
   def dialogchoose(stuff,type)
     a = nil
-    dialog=Gtk::Dialog.new("Choose Boni",@windows,Gtk::Dialog::MODAL,
-                           [stuff[0].join(" : "),0],
-                           [stuff[1].join(" : "),1])
-    dialog.run do |response|
-      response == 0 ? a=stuff[0] : a=stuff[1]
-      dialog.destroy
+#    dialog=Gtk::Dialog.new("Choose Boni",@windows,Gtk::Dialog::MODAL,
+#                           [stuff[0].join(" : "),0],
+#                           [stuff[1].join(" : "),1])
+#    dialog.run do |response|
+#      response == 0 ? a=stuff[0] : a=stuff[1]
+#      dialog.destroy
+#    end
+    dialog = Gtk::Dialog.new("Choose #{type} Boni",@windows,Gtk::Dialog::MODAL)
+    pp stuff
+    resp = []
+    stuff.each_with_index do |x,y|
+      if x[0].to_s =~ /1/
+        CONSTANT[:spirits][:Nature][x[0][0...-1].to_sym].each_with_index do |a,b|
+          resp.push [a,x[1]]
+          dialog.add_button(a.to_s+":"+x[1].to_s,resp.length-1)
+        end
+      else
+        resp.push x
+        dialog.add_button(x.join(":"),resp.length-1)
+      end
     end
+    dialog.run do |response|
+      a=resp[response]
+    end
+    dialog.destroy
     a
   end
 
@@ -978,6 +996,7 @@ class Attributeblock < Gtk::Frame
 
   def settotemboni(boni)
     if boni
+      pp boni
       @totem[5].text = boni[2][:spells] ? 
         boni[2][:spells].collect {|x| x[0].to_s + ":" + x[1].to_s}.join(", ") : ""
       @totem[7].text = boni[2][:spirits] ? 
