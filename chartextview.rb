@@ -46,17 +46,16 @@ class Application
     a = nil
     b = nil
     type = name.sub(/.*(Attribute|Element|Sense|Skill|Life-Form|Object|Race).*/,'\1')
-    resp = []
       
     if entry
       entered = Gtk::Entry.new
       entered.width_chars=30
     else
       index = case type
-      when /Attr/
-        CONSTANT[:attributes]
-      when /Elem|Sens/
-        CONSTANT[(type.to_s.downcase+'s').to_sym].keys
+      when /Attr|Sens/
+        CONSTANT[(type.to_s.downcase+'s').to_sym]
+      when /Elem/
+        CONSTANT[:elements].keys
       else
         @notebook.skill.skillentries.keys
       end
@@ -64,21 +63,22 @@ class Application
     end
 
     dialog = Gtk::Dialog.new("Choose #{type}",@windows,Gtk::Dialog::MODAL)
+    dialog.action_area.layout_style=Gtk::ButtonBox::SPREAD
     if entry
-      dialog.add_action_widget(entered,1)
-      entered.show
+      dialog.vbox.add(entered)
     else
-      index.each_with_index do |x,y|
-      resp[y]=x
-      dialog.add_button(x.to_s,y)
-      end
+      cb = Gtk::ComboBox.new
+      index.each {|x| cb.append_text(x.to_s)}
+      dialog.vbox.add(cb)
     end
-    
+    dialog.add_button("Ok",1)
+    dialog.add_button("Cancel",-1)
+    dialog.show_all
     dialog.run do |response|
       if entry
         a = name.sub(/#{type}/,"#{entered.text}")
       else
-        a = name.sub(/#{type}/,"#{resp[response]}")
+        a = name.sub(/#{type}/,"#{cb.active_text}")
       end
       b = response
     end
