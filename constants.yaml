@@ -297,17 +297,6 @@
     :Required: Datajack
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Ablative Armor:
     :Name: Ablative Armor
     :Essence: ''
@@ -328,9 +317,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: Armor
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Air tank:
     :Name: Air tank
     :Essence: '0.25'
@@ -340,20 +326,6 @@
     :Avail: 4/5 days
     :Index: '1.5'
     :Page: mm.29
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Appendage Strength Enhancement 1:
     :Name: Appendage Strength Enhancement 1
     :Essence: ''
@@ -374,9 +346,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: Appendage Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Appendage Strength Enhancement 2:
     :Name: Appendage Strength Enhancement 2
     :Essence: ''
@@ -397,9 +366,6 @@
     :Cmod: "-2"
     :Space: ''
     :Base: Appendage Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Appendage Strength Enhancement 3:
     :Name: Appendage Strength Enhancement 3
     :Essence: ''
@@ -420,9 +386,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Appendage Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Auto-inector One-shot:
     :Name: Auto-inector One-shot
     :Essence: '0.05'
@@ -432,20 +395,6 @@
     :Avail: 4/72 hrs
     :Index: '1.5'
     :Page: mm.25
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Auto-injector Reusable:
     :Name: Auto-injector Reusable
     :Essence: '0.1'
@@ -455,20 +404,6 @@
     :Avail: 4/72 hrs
     :Index: '1.5'
     :Page: mm.25
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Balance Augmenter:
     :Name: Balance Augmenter
     :Essence: '0.4'
@@ -483,15 +418,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cyberear
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Balance Augmentor:
     :Name: Balance Augmentor
     :Essence: '0.4'
@@ -506,15 +432,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cyberears
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Balance Tail:
     :Name: Balance Tail
     :Essence: '0.5'
@@ -524,20 +441,6 @@
     :Avail: 8/1 wk
     :Index: '2.0'
     :Page: mm.25
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Ballistic Armor:
     :Name: Ballistic Armor
     :Essence: ''
@@ -558,9 +461,6 @@
     :Cmod: "-0.5"
     :Space: ''
     :Base: Armor
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Basic Eyelaser High Power:
     :Name: Basic Eyelaser High Power
     :Essence: '0.5'
@@ -581,9 +481,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Basic Eyelaser
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Basic Eyelaser Low Power:
     :Name: Basic Eyelaser Low Power
     :Essence: '0.2'
@@ -604,9 +501,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Basic Eyelaser
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Basic Eyelaser Medium Power:
     :Name: Basic Eyelaser Medium Power
     :Essence: '0.3'
@@ -627,9 +521,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Basic Eyelaser
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :BattleTac Cyberlink:
     :Name: BattleTac Cyberlink
     :Essence: '0.2'
@@ -639,20 +530,6 @@
     :Avail: 12/30 days
     :Index: '4.0'
     :Page: mm.23
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :BattleTac FDDM Master Unit:
     :Name: BattleTac FDDM Master Unit
     :Essence: '0.15'
@@ -669,13 +546,6 @@
     :Cyberlimb: ''
     :Includes: ''
     :ECU: '0.25'
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :BattleTac IVIS Master Unit:
     :Name: BattleTac IVIS Master Unit
     :Essence: '0.15'
@@ -694,11 +564,6 @@
     :ECU: '0.5'
     :Conceal: ''
     :Cmod: "-0.5"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :BattleTac modification:
     :Name: BattleTac modification
     :Essence: '0'
@@ -711,17 +576,6 @@
     :Required: Tactical Computer
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Biomonitor System:
     :Name: Biomonitor System
     :Essence: '0.3'
@@ -731,20 +585,6 @@
     :Avail: 6/72 hrs
     :Index: '2.0'
     :Page: mm.26
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Body Compartment:
     :Name: Body Compartment
     :Essence: '0.2'
@@ -754,20 +594,6 @@
     :Avail: 4/48 hrs
     :Index: '1.0'
     :Page: mm.26
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Bone Lacing Aluminum:
     :Name: Bone Lacing Aluminum
     :Essence: '1.15'
@@ -791,6 +617,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +1,Impact +1
   :Bone Lacing Ceramic:
     :Name: Bone Lacing Ceramic
     :Essence: '1.5'
@@ -814,6 +641,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +1,Impact +2
   :Bone Lacing Kevlar:
     :Name: Bone Lacing Kevlar
     :Essence: '1.0'
@@ -837,6 +665,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +1,Ballistic +1
   :Bone Lacing Plastic:
     :Name: Bone Lacing Plastic
     :Essence: '0.5'
@@ -860,6 +689,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +1
   :Bone Lacing Titanium:
     :Name: Bone Lacing Titanium
     :Essence: '2.25'
@@ -883,6 +713,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +2,Impact +1,Ballistic +1
   :Boosted Reflexes 1:
     :Name: Boosted Reflexes 1
     :Essence: '0.5'
@@ -906,6 +737,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Initiative +1
   :Boosted Reflexes 2:
     :Name: Boosted Reflexes 2
     :Essence: '1.25'
@@ -929,6 +761,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +1,Initative +1
   :Boosted Reflexes 3:
     :Name: Boosted Reflexes 3
     :Essence: '2.8'
@@ -952,6 +785,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +2,Initative +2
   :Brightlight Feature:
     :Name: Brightlight Feature
     :Essence: '0.2'
@@ -966,15 +800,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Built-in Program:
     :Name: Built-in Program
     :Essence: ''
@@ -987,17 +812,6 @@
     :Required: Gas Spectrometer
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Built-ln Smartgun Link:
     :Name: Built-ln Smartgun Link
     :Essence: '0.25'
@@ -1012,15 +826,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cyberhand
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Camera:
     :Name: Camera
     :Essence: '0.4'
@@ -1035,15 +840,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chemical Analyzer:
     :Name: Chemical Analyzer
     :Essence: '0.2'
@@ -1062,11 +858,6 @@
     :ECU: '0.5'
     :Conceal: ''
     :Cmod: "-0.5"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack 1 slot:
     :Name: Chipjack 1 slot
     :Essence: '0.2'
@@ -1087,9 +878,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack 2 slot:
     :Name: Chipjack 2 slot
     :Essence: '0.25'
@@ -1110,9 +898,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack 3 slot:
     :Name: Chipjack 3 slot
     :Essence: '0.3'
@@ -1133,9 +918,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack 4 slot:
     :Name: Chipjack 4 slot
     :Essence: '0.35'
@@ -1156,9 +938,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Dedicated:
     :Name: Chipjack Dedicated
     :Essence: '0.1'
@@ -1179,9 +958,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Expert Driver 1:
     :Name: Chipjack Expert Driver 1
     :Essence: '0.1'
@@ -1202,9 +978,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack Expert
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Expert Driver 2:
     :Name: Chipjack Expert Driver 2
     :Essence: '0.2'
@@ -1225,9 +998,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack Expert
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Expert Driver 3:
     :Name: Chipjack Expert Driver 3
     :Essence: '0.3'
@@ -1248,9 +1018,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack Expert
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Expert Driver 4:
     :Name: Chipjack Expert Driver 4
     :Essence: '0.4'
@@ -1271,9 +1038,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack Expert
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Expert Driver 5:
     :Name: Chipjack Expert Driver 5
     :Essence: '0.5'
@@ -1294,9 +1058,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack Expert
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Expert Driver 6:
     :Name: Chipjack Expert Driver 6
     :Essence: '0.6'
@@ -1317,9 +1078,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack Expert
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Expert Driver 7:
     :Name: Chipjack Expert Driver 7
     :Essence: '0.7'
@@ -1340,9 +1098,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack Expert
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Expert Driver 8:
     :Name: Chipjack Expert Driver 8
     :Essence: '0.8'
@@ -1363,9 +1118,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack Expert
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Expert Driver 9:
     :Name: Chipjack Expert Driver 9
     :Essence: '0.9'
@@ -1386,9 +1138,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack Expert
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Chipjack Expert Driver 10:
     :Name: Chipjack Expert Driver 10
     :Essence: '1.0'
@@ -1409,9 +1158,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Chipjack Expert
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Commlink:
     :Name: Commlink
     :Essence: '0.3'
@@ -1421,20 +1167,6 @@
     :Avail: 3/48 hrs
     :Index: '1.0'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cortex Bomb:
     :Name: Cortex Bomb
     :Essence: ''
@@ -1444,20 +1176,6 @@
     :Avail: 20/14 days
     :Index: '1.0'
     :Page: sr2.247
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cortex Kink Bomb:
     :Name: Cortex Kink Bomb
     :Essence: ''
@@ -1467,20 +1185,6 @@
     :Avail: 12/14 days
     :Index: '1.5'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cortex Microbomb:
     :Name: Cortex Microbomb
     :Essence: ''
@@ -1490,20 +1194,6 @@
     :Avail: 18/48 hrs
     :Index: '1.25'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Crainial Area Bomb:
     :Name: Crainial Area Bomb
     :Essence: ''
@@ -1513,20 +1203,6 @@
     :Avail: 20/14 days
     :Index: '1.0'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cranial Cyberdeck Allegiance Sigma:
     :Name: Cranial Cyberdeck Allegiance Sigma
     :Essence: '1.9'
@@ -1547,9 +1223,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Cranial Cyberdeck
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cranial Cyberdeck CMT Avatar:
     :Name: Cranial Cyberdeck CMT Avatar
     :Essence: '2.8'
@@ -1570,9 +1243,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Cranial Cyberdeck
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cranial Cyberdeck Fairlight Excalibur:
     :Name: Cranial Cyberdeck Fairlight Excalibur
     :Essence: '3.5'
@@ -1593,9 +1263,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Cranial Cyberdeck
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cranial Cyberdeck Novatech Hyperdeck-6:
     :Name: Cranial Cyberdeck Novatech Hyperdeck-6
     :Essence: '2.7'
@@ -1616,9 +1283,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Cranial Cyberdeck
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cranial Cyberdeck Novatech Slimcase-10:
     :Name: Cranial Cyberdeck Novatech Slimcase-10
     :Essence: '3.2'
@@ -1639,9 +1303,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Cranial Cyberdeck
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cranial Cyberdeck Renraku Kraftwerk-8:
     :Name: Cranial Cyberdeck Renraku Kraftwerk-8
     :Essence: '2.9'
@@ -1662,9 +1323,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Cranial Cyberdeck
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cranial Cyberdeck Sony CT-360-D:
     :Name: Cranial Cyberdeck Sony CT-360-D
     :Essence: '2.5'
@@ -1685,9 +1343,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Cranial Cyberdeck
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cranial Cyberdeck Transys Highlander:
     :Name: Cranial Cyberdeck Transys Highlander
     :Essence: '3.0'
@@ -1708,9 +1363,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Cranial Cyberdeck
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cranial Remote Deck:
     :Name: Cranial Remote Deck
     :Essence: '0.3'
@@ -1729,11 +1381,6 @@
     :ECU: '5'
     :Conceal: ''
     :Cmod: "-4"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberears:
     :Name: Cyberears
     :Essence: '0.3'
@@ -1743,20 +1390,6 @@
     :Avail: 2/24 hrs
     :Index: '0.75'
     :Page: sr3.299
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cybereyes:
     :Name: Cybereyes
     :Essence: '0.2'
@@ -1776,10 +1409,6 @@
     :Conceal: ''
     :Cmod: ''
     :Space: '1.2'
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberfins:
     :Name: Cyberfins
     :Essence: '0.3'
@@ -1789,20 +1418,6 @@
     :Avail: 5/48 hrs
     :Index: '1.25'
     :Page: mm.28
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cybergun Dart:
     :Name: Cybergun Dart
     :Essence: '0.3'
@@ -2030,9 +1645,6 @@
     :Cmod: ''
     :Space: '10'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberarm Synthetic:
     :Name: Cyberlimb Cyberarm Synthetic
     :Essence: '1.0'
@@ -2053,9 +1665,6 @@
     :Cmod: ''
     :Space: '5'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberfoot Obvious:
     :Name: Cyberlimb Cyberfoot Obvious
     :Essence: '0.35'
@@ -2076,9 +1685,6 @@
     :Cmod: ''
     :Space: '2'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberfoot Synthetic:
     :Name: Cyberlimb Cyberfoot Synthetic
     :Essence: '0.35'
@@ -2099,9 +1705,6 @@
     :Cmod: ''
     :Space: '1'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberforearm Obvious:
     :Name: Cyberlimb Cyberforearm Obvious
     :Essence: '0.65'
@@ -2122,9 +1725,6 @@
     :Cmod: ''
     :Space: '4'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberforearm Synthetic:
     :Name: Cyberlimb Cyberforearm Synthetic
     :Essence: '0.65'
@@ -2145,9 +1745,6 @@
     :Cmod: ''
     :Space: '2'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberhand Obvious:
     :Name: Cyberlimb Cyberhand Obvious
     :Essence: '0.35'
@@ -2168,9 +1765,6 @@
     :Cmod: ''
     :Space: '2'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberhand Synthetic:
     :Name: Cyberlimb Cyberhand Synthetic
     :Essence: '0.35'
@@ -2191,9 +1785,6 @@
     :Cmod: ''
     :Space: '1'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberleg Kid Stealth:
     :Name: Cyberlimb Cyberleg Kid Stealth
     :Essence: '1.0'
@@ -2214,9 +1805,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberleg Obvious:
     :Name: Cyberlimb Cyberleg Obvious
     :Essence: '1.0'
@@ -2237,9 +1825,6 @@
     :Cmod: ''
     :Space: '20'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberleg Synthetic:
     :Name: Cyberlimb Cyberleg Synthetic
     :Essence: '1.0'
@@ -2260,9 +1845,6 @@
     :Cmod: ''
     :Space: '10'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberlowerleg Obvious:
     :Name: Cyberlimb Cyberlowerleg Obvious
     :Essence: '0.65'
@@ -2283,9 +1865,6 @@
     :Cmod: ''
     :Space: '8'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberlowerleg Synthetic:
     :Name: Cyberlimb Cyberlowerleg Synthetic
     :Essence: '0.65'
@@ -2306,9 +1885,6 @@
     :Cmod: ''
     :Space: '4'
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberskull Obvious:
     :Name: Cyberlimb Cyberskull Obvious
     :Essence: '0.75'
@@ -2329,9 +1905,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cyberskull Synthetic:
     :Name: Cyberlimb Cyberskull Synthetic
     :Essence: '0.75'
@@ -2352,9 +1925,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cybertorso Obvious:
     :Name: Cyberlimb Cybertorso Obvious
     :Essence: '1.5'
@@ -2375,9 +1945,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Cyberlimb Cybertorso Synthetic:
     :Name: Cyberlimb Cybertorso Synthetic
     :Essence: '1.5'
@@ -2398,9 +1965,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Cyberlimb
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Dampener:
     :Name: Dampener
     :Essence: '0.1'
@@ -2415,15 +1979,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cyberears
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Data Compactor 1:
     :Name: Data Compactor 1
     :Essence: '0.1'
@@ -2444,9 +1999,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Data Compactor
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Data Compactor 2:
     :Name: Data Compactor 2
     :Essence: '0.15'
@@ -2467,9 +2019,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Data Compactor
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Data Compactor 3:
     :Name: Data Compactor 3
     :Essence: '0.2'
@@ -2490,9 +2039,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Data Compactor
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Data Compactor 4:
     :Name: Data Compactor 4
     :Essence: '0.25'
@@ -2513,9 +2059,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Data Compactor
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Data Filter:
     :Name: Data Filter
     :Essence: '0.3'
@@ -2525,20 +2068,6 @@
     :Avail: 6/36 hrs
     :Index: '1.5'
     :Page: mm.20
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Data Lock:
     :Name: Data Lock
     :Essence: '0.2'
@@ -2548,20 +2077,6 @@
     :Avail: 6/36 hrs
     :Index: '1.5'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Datajack Induction:
     :Name: Datajack Induction
     :Essence: '0.3'
@@ -2571,20 +2086,6 @@
     :Avail: 5/4 days
     :Index: '2.0'
     :Page: mm.21
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Datajack:
     :Name: Datajack
     :Essence: '0.2'
@@ -2594,20 +2095,6 @@
     :Avail: 1/1 hrs
     :Index: '0.9'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :DatajackEye:
     :Name: DatajackEye
     :Essence: '0.25'
@@ -2622,15 +2109,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Decryption module:
     :Name: Decryption module
     :Essence: '0.2'
@@ -2647,13 +2125,6 @@
     :Cyberlimb: ''
     :Includes: ''
     :ECU: '0.25'
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Dermal Plating 1:
     :Name: Dermal Plating 1
     :Essence: '0.5'
@@ -2677,6 +2148,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +1
   :Dermal Plating 2:
     :Name: Dermal Plating 2
     :Essence: '1.0'
@@ -2700,6 +2172,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +2
   :Dermal Plating 3:
     :Name: Dermal Plating 3
     :Essence: '1.5'
@@ -2723,6 +2196,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +3
   :Dermal Sheathing 1:
     :Name: Dermal Sheathing 1
     :Essence: '0.7'
@@ -2746,6 +2220,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +2,Impact +1
   :Dermal Sheathing 2:
     :Name: Dermal Sheathing 2
     :Essence: '1.4'
@@ -2769,6 +2244,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +3,Impact +1
   :Dermal Sheathing 3:
     :Name: Dermal Sheathing 3
     :Essence: '2.1'
@@ -2792,6 +2268,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Body +4,Impact +2
   :Diagnosis Processor:
     :Name: Diagnosis Processor
     :Essence: '0.2'
@@ -2801,20 +2278,6 @@
     :Avail: 6/72 hrs
     :Index: '2.0'
     :Page: mm.26
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Direct Neural Interface:
     :Name: Direct Neural Interface
     :Essence: '0.1'
@@ -2824,20 +2287,6 @@
     :Avail: 4/6 days
     :Index: '1.0'
     :Page: mm.38
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Display Link:
     :Name: Display Link
     :Essence: '0.1'
@@ -2852,15 +2301,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :ECCM 1:
     :Name: ECCM 1
     :Essence: '0.2'
@@ -2881,9 +2321,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: ECCM
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :ECCM 10:
     :Name: ECCM 10
     :Essence: '0.45'
@@ -2904,9 +2341,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: ECCM
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :ECCM 2:
     :Name: ECCM 2
     :Essence: '0.2'
@@ -2927,9 +2361,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: ECCM
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :ECCM 3:
     :Name: ECCM 3
     :Essence: '0.2'
@@ -2950,9 +2381,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: ECCM
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :ECCM 4:
     :Name: ECCM 4
     :Essence: '0.3'
@@ -2973,9 +2401,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: ECCM
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :ECCM 5:
     :Name: ECCM 5
     :Essence: '0.3'
@@ -2996,9 +2421,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: ECCM
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :ECCM 6:
     :Name: ECCM 6
     :Essence: '0.3'
@@ -3019,9 +2441,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: ECCM
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :ECCM 7:
     :Name: ECCM 7
     :Essence: '0.4'
@@ -3042,9 +2461,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: ECCM
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :ECCM 8:
     :Name: ECCM 8
     :Essence: '0.4'
@@ -3065,9 +2481,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: ECCM
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :ECCM 9:
     :Name: ECCM 9
     :Essence: '0.4'
@@ -3088,9 +2501,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: ECCM
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Port headware:
     :Name: Port headware
     :Essence: '0.01'
@@ -3101,19 +2511,6 @@
     :Index: '1.0'
     :Page: mm.22
     :Required: Router
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Port non-headware:
     :Name: Port non-headware
     :Essence: '0.01'
@@ -3124,19 +2521,6 @@
     :Index: '1.0'
     :Page: mm.22
     :Required: Router
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Dedicated port:
     :Name: Dedicated port
     :Essence: '0.1'
@@ -3149,17 +2533,6 @@
     :Required: Tactical Computer
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Generic port:
     :Name: Generic port
     :Essence: '0.1'
@@ -3172,17 +2545,6 @@
     :Required: Tactical Computer
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Electronic Magnification 1:
     :Name: Electronic Magnification 1
     :Essence: '0.1'
@@ -3203,9 +2565,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Electronic Magnification
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Electronic Magnification 2:
     :Name: Electronic Magnification 2
     :Essence: '0.1'
@@ -3226,9 +2585,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Electronic Magnification
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Electronic Magnification 3:
     :Name: Electronic Magnification 3
     :Essence: '0.1'
@@ -3249,9 +2605,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Electronic Magnification
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Encephalon 1:
     :Name: Encephalon 1
     :Essence: '0.75'
@@ -3272,9 +2625,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Encephalon
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Encephalon 2:
     :Name: Encephalon 2
     :Essence: '1.75'
@@ -3295,9 +2645,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Encephalon
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Encryption module:
     :Name: Encryption module
     :Essence: '0.2'
@@ -3314,13 +2661,6 @@
     :Cyberlimb: ''
     :Includes: ''
     :ECU: '0.25'
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :External Clip Port:
     :Name: External Clip Port
     :Essence: '0.1'
@@ -3339,11 +2679,6 @@
     :ECU: '0.25'
     :Conceal: "-1"
     :Cmod: "-1"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :External Program:
     :Name: External Program
     :Essence: ''
@@ -3356,17 +2691,6 @@
     :Required: Gas Spectrometer
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Eye Display:
     :Name: Eye Display
     :Essence: '0.1'
@@ -3376,20 +2700,6 @@
     :Avail: 4/48 hrs
     :Index: '1.5'
     :Page: mm.32
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Eyeeapon Dart:
     :Name: Eyeeapon Dart
     :Essence: '0.25'
@@ -3404,15 +2714,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Eyeweapon Gun:
     :Name: Eyeweapon Gun
     :Essence: '0.4'
@@ -3427,15 +2728,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Fangs Extendable:
     :Name: Fangs Extendable
     :Essence: '0.15'
@@ -3502,9 +2794,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Blood
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration Blood 2:
     :Name: Filtration Blood 2
     :Essence: '0.4'
@@ -3525,9 +2814,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Blood
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration Blood 3:
     :Name: Filtration Blood 3
     :Essence: '0.6'
@@ -3548,9 +2834,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Blood
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration Blood 4:
     :Name: Filtration Blood 4
     :Essence: '0.8'
@@ -3571,9 +2854,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Blood
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration Blood 5:
     :Name: Filtration Blood 5
     :Essence: '1'
@@ -3594,9 +2874,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Blood
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration Blood 6:
     :Name: Filtration Blood 6
     :Essence: '1.2'
@@ -3617,9 +2894,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Blood
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration Blood 7:
     :Name: Filtration Blood 7
     :Essence: '1.4'
@@ -3640,9 +2914,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Blood
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration Blood 8:
     :Name: Filtration Blood 8
     :Essence: '1.6'
@@ -3663,9 +2934,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Blood
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration Blood 9:
     :Name: Filtration Blood 9
     :Essence: '1.8'
@@ -3686,9 +2954,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Blood
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration Blood 10:
     :Name: Filtration Blood 10
     :Essence: '2.0'
@@ -3709,9 +2974,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Blood
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration IngestedToxin 1:
     :Name: Filtration IngestedToxin 1
     :Essence: '0.2'
@@ -3732,9 +2994,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration IngestedToxin
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration IngestedToxin 2:
     :Name: Filtration IngestedToxin 2
     :Essence: '0.4'
@@ -3755,9 +3014,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration IngestedToxin
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration IngestedToxin 3:
     :Name: Filtration IngestedToxin 3
     :Essence: '0.6'
@@ -3778,9 +3034,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration IngestedToxin
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration IngestedToxin 4:
     :Name: Filtration IngestedToxin 4
     :Essence: '0.8'
@@ -3801,9 +3054,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration IngestedToxin
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration IngestedToxin 5:
     :Name: Filtration IngestedToxin 5
     :Essence: '1.0'
@@ -3824,9 +3074,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration IngestedToxin
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration IngestedToxin 6:
     :Name: Filtration IngestedToxin 6
     :Essence: '1.2'
@@ -3847,9 +3094,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration IngestedToxin
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration IngestedToxin 7:
     :Name: Filtration IngestedToxin 7
     :Essence: '1.4'
@@ -3870,9 +3114,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration IngestedToxin
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration IngestedToxin 8:
     :Name: Filtration IngestedToxin 8
     :Essence: '1.6'
@@ -3893,9 +3134,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration IngestedToxin
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration IngestedToxin 9:
     :Name: Filtration IngestedToxin 9
     :Essence: '1.8'
@@ -3916,9 +3154,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration IngestedToxin
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtration IngestedToxin 10:
     :Name: Filtration IngestedToxin 10
     :Essence: '2.0'
@@ -3939,9 +3174,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration IngestedToxin
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtratlon Air 1:
     :Name: Filtratlon Air 1
     :Essence: '0.1'
@@ -3962,9 +3194,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Air
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtratlon Air 2:
     :Name: Filtratlon Air 2
     :Essence: '0.2'
@@ -3985,9 +3214,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Air
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtratlon Air 3:
     :Name: Filtratlon Air 3
     :Essence: '0.3'
@@ -4008,9 +3234,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Air
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtratlon Air 4:
     :Name: Filtratlon Air 4
     :Essence: '0.4'
@@ -4031,9 +3254,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Air
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtratlon Air 5:
     :Name: Filtratlon Air 5
     :Essence: '0.5'
@@ -4054,9 +3274,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Air
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtratlon Air 6:
     :Name: Filtratlon Air 6
     :Essence: '0.6'
@@ -4077,9 +3294,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Air
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtratlon Air 7:
     :Name: Filtratlon Air 7
     :Essence: '0.7'
@@ -4100,9 +3314,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Air
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtratlon Air 8:
     :Name: Filtratlon Air 8
     :Essence: '0.8'
@@ -4123,9 +3334,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Air
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtratlon Air 9:
     :Name: Filtratlon Air 9
     :Essence: '0.9'
@@ -4146,9 +3354,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Air
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Filtratlon Air 10:
     :Name: Filtratlon Air 10
     :Essence: '1.0'
@@ -4169,9 +3374,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Filtration Air
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Fingertip Compartment:
     :Name: Fingertip Compartment
     :Essence: '0.1'
@@ -4181,20 +3383,6 @@
     :Avail: 3/24 hrs
     :Index: '1.0'
     :Page: sr3.302
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Flare Compensation:
     :Name: Flare Compensation
     :Essence: '0.1'
@@ -4209,15 +3397,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Flex Hands:
     :Name: Flex Hands
     :Essence: '0.4'
@@ -4227,20 +3406,6 @@
     :Avail: 6/72 hrs
     :Index: '2.0'
     :Page: mm.28
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Foot Anchor:
     :Name: Foot Anchor
     :Essence: '0.4'
@@ -4259,11 +3424,6 @@
     :ECU: '4'
     :Conceal: ''
     :Cmod: "-1"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Full Limb Strength Enhancement 1:
     :Name: Full Limb Strength Enhancement 1
     :Essence: ''
@@ -4284,9 +3444,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: Full Limb Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Full Limb Strength Enhancement 2:
     :Name: Full Limb Strength Enhancement 2
     :Essence: ''
@@ -4307,9 +3464,6 @@
     :Cmod: "-2"
     :Space: ''
     :Base: Full Limb Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Full Limb Strength Enhancement 3:
     :Name: Full Limb Strength Enhancement 3
     :Essence: ''
@@ -4330,9 +3484,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Full Limb Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Full Limb Strength Enhancementplus 4:
     :Name: Full Limb Strength Enhancementplus 4
     :Essence: '0.4'
@@ -4353,9 +3504,6 @@
     :Cmod: "-2"
     :Space: ''
     :Base: Full Limb Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Full Limb Strength Enhancementplus 5:
     :Name: Full Limb Strength Enhancementplus 5
     :Essence: '0.8'
@@ -4376,9 +3524,6 @@
     :Cmod: "-4"
     :Space: ''
     :Base: Full Limb Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Full Limb Strength Enhancementplus 6:
     :Name: Full Limb Strength Enhancementplus 6
     :Essence: '1.2'
@@ -4399,9 +3544,6 @@
     :Cmod: "-6"
     :Space: ''
     :Base: Full Limb Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Gas Spectrometer:
     :Name: Gas Spectrometer
     :Essence: '0.2'
@@ -4420,11 +3562,6 @@
     :ECU: '0.5'
     :Conceal: ''
     :Cmod: "-0.5 "
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Gyromount:
     :Name: Gyromount
     :Essence: ''
@@ -4443,11 +3580,6 @@
     :ECU: '4'
     :Conceal: ''
     :Cmod: "-1"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Hand Blade Retractable:
     :Name: Hand Blade Retractable
     :Essence: '0.25'
@@ -4554,15 +3686,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cyberears
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :High Frequency:
     :Name: High Frequency
     :Essence: '0.2'
@@ -4577,15 +3700,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cyberears
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :High-frequency Modulator:
     :Name: High-frequency Modulator
     :Essence: ''
@@ -4598,17 +3712,6 @@
     :Required: Internal Voice Mask
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Holster:
     :Name: Holster
     :Essence: '0.1'
@@ -4626,12 +3729,6 @@
     :Includes: ''
     :ECU: '4'
     :Conceal: '10'
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Hook hand:
     :Name: Hook hand
     :Essence: '0.1'
@@ -4641,20 +3738,6 @@
     :Avail: 1/6 days
     :Index: '1.0'
     :Page: mm.38
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Horns Retractable:
     :Name: Horns Retractable
     :Essence: '0.25'
@@ -4721,9 +3804,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Hydraulic Jack
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Hydraulic Jack 2:
     :Name: Hydraulic Jack 2
     :Essence: '1.25'
@@ -4744,9 +3824,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Hydraulic Jack
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Hydraulic Jack 3:
     :Name: Hydraulic Jack 3
     :Essence: '1.5'
@@ -4767,9 +3844,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Hydraulic Jack
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Hydraulic Jack 4:
     :Name: Hydraulic Jack 4
     :Essence: '1.75'
@@ -4790,9 +3864,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Hydraulic Jack
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Hydraulic Jack 5:
     :Name: Hydraulic Jack 5
     :Essence: '2'
@@ -4813,9 +3884,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Hydraulic Jack
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Image Link:
     :Name: Image Link
     :Essence: '0.2'
@@ -4830,15 +3898,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Image Scanner:
     :Name: Image Scanner
     :Essence: '0.05'
@@ -4851,17 +3910,6 @@
     :Required: Ruthenium
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Impact Armor:
     :Name: Impact Armor
     :Essence: ''
@@ -4882,9 +3930,6 @@
     :Cmod: "-0.5"
     :Space: ''
     :Base: Armor
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Increased Volume:
     :Name: Increased Volume
     :Essence: ''
@@ -4897,17 +3942,6 @@
     :Required: Voice Modulator
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Independent Cybereyes Pair:
     :Name: Independent Cybereyes Pair
     :Essence: '0.5'
@@ -4917,20 +3951,6 @@
     :Avail: 6/72 hrs
     :Index: '2.0'
     :Page: mm.16
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Independent Cybereyes Single:
     :Name: Independent Cybereyes Single
     :Essence: '0.3'
@@ -4940,20 +3960,6 @@
     :Avail: 6/72 hrs
     :Index: '2.0'
     :Page: mm.16
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Induction Pad:
     :Name: Induction Pad
     :Essence: '0.1'
@@ -4963,20 +3969,6 @@
     :Avail: 4/48 hrs
     :Index: '1.5'
     :Page: mm.32
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Injector:
     :Name: Injector
     :Essence: ''
@@ -4989,17 +3981,6 @@
     :Required: Body Compartment
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Integrity Enhancement 1:
     :Name: Integrity Enhancement 1
     :Essence: ''
@@ -5020,9 +4001,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: Integrity Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Integrity Enhancement 2:
     :Name: Integrity Enhancement 2
     :Essence: ''
@@ -5043,9 +4021,6 @@
     :Cmod: "-2"
     :Space: ''
     :Base: Integrity Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Integrity Enhancement 3:
     :Name: Integrity Enhancement 3
     :Essence: ''
@@ -5066,9 +4041,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Integrity Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal GPS:
     :Name: Internal GPS
     :Essence: '0.1'
@@ -5078,20 +4050,6 @@
     :Avail: 5/6 days
     :Index: '1.5'
     :Page: mm.17
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Simlink 1:
     :Name: Internal Simlink 1
     :Essence: '0.6'
@@ -5112,9 +4070,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Internal Simlink
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Simlink 2:
     :Name: Internal Simlink 2
     :Essence: '1.2'
@@ -5135,9 +4090,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Internal Simlink
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Simlink 3:
     :Name: Internal Simlink 3
     :Essence: '1.8'
@@ -5158,9 +4110,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Internal Simlink
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Simlink 4:
     :Name: Internal Simlink 4
     :Essence: '2.4'
@@ -5181,9 +4130,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Internal Simlink
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Simlink 5:
     :Name: Internal Simlink 5
     :Essence: '3'
@@ -5204,9 +4150,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Internal Simlink
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Simlink 6:
     :Name: Internal Simlink 6
     :Essence: '3.6'
@@ -5227,9 +4170,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Internal Simlink
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Simlink 7:
     :Name: Internal Simlink 7
     :Essence: '4.2'
@@ -5250,9 +4190,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Internal Simlink
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Simlink 8:
     :Name: Internal Simlink 8
     :Essence: '4.8'
@@ -5273,9 +4210,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Internal Simlink
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Simlink 9:
     :Name: Internal Simlink 9
     :Essence: '5.4'
@@ -5296,9 +4230,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Internal Simlink
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Simlink 10:
     :Name: Internal Simlink 10
     :Essence: '6'
@@ -5319,9 +4250,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Internal Simlink
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Internal Voice Mask:
     :Name: Internal Voice Mask
     :Essence: '0.1'
@@ -5335,16 +4263,6 @@
     :Conflicts: ''
     :Option: ''
     :Maxlevel: '10'
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Invoked Memory Stimulator:
     :Name: Invoked Memory Stimulator
     :Essence: '0.25'
@@ -5354,20 +4272,6 @@
     :Avail: 10/2 mo
     :Index: '4.0'
     :Page: mm.21
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Jolt-Alert:
     :Name: Jolt-Alert
     :Essence: '0.1'
@@ -5377,20 +4281,6 @@
     :Avail: 4/48 hrs
     :Index: '1.5'
     :Page: mm.29
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Knowsoft Link:
     :Name: Knowsoft Link
     :Essence: '0.1'
@@ -5400,20 +4290,6 @@
     :Avail: 3/24 hrs
     :Index: '1.0'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Laser Designator:
     :Name: Laser Designator
     :Essence: '0.1'
@@ -5428,15 +4304,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Laser Microphone:
     :Name: Laser Microphone
     :Essence: '0.1'
@@ -5451,15 +4318,6 @@
     :Option: 'yes'
     :Maxlevel: '10'
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Laser Sight:
     :Name: Laser Sight
     :Essence: '0.1'
@@ -5478,11 +4336,6 @@
     :ECU: '1'
     :Conceal: "-1"
     :Cmod: "-1"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Laser Tracker:
     :Name: Laser Tracker
     :Essence: '0.2'
@@ -5497,15 +4350,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Light System:
     :Name: Light System
     :Essence: '0.2'
@@ -5520,15 +4364,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Limited Simsense Rig:
     :Name: Limited Simsense Rig
     :Essence: '0.1'
@@ -5538,20 +4373,6 @@
     :Avail: 4/48 hrs
     :Index: '1.5'
     :Page: mm.32
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Lockpick Gun:
     :Name: Lockpick Gun
     :Essence: ''
@@ -5565,16 +4386,6 @@
     :Conflicts: ''
     :Option: 'yes'
     :Maxlevel: '10'
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Lockpicks:
     :Name: Lockpicks
     :Essence: ''
@@ -5587,17 +4398,6 @@
     :Required: Body Compartment
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Low Frequency:
     :Name: Low Frequency
     :Essence: '0.2'
@@ -5612,15 +4412,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cyberears
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Low-Light:
     :Name: Low-Light
     :Essence: '0.2'
@@ -5635,15 +4426,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Low-frequency Modulator:
     :Name: Low-frequency Modulator
     :Essence: ''
@@ -5656,17 +4438,6 @@
     :Required: Internal Voice Mask
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Lower Limb Strength Enhancement 1:
     :Name: Lower Limb Strength Enhancement 1
     :Essence: ''
@@ -5687,9 +4458,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: Lower Limb Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Lower Limb Strength Enhancement 2:
     :Name: Lower Limb Strength Enhancement 2
     :Essence: ''
@@ -5710,9 +4478,6 @@
     :Cmod: "-2"
     :Space: ''
     :Base: Lower Limb Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Lower Limb Strength Enhancement 3:
     :Name: Lower Limb Strength Enhancement 3
     :Essence: ''
@@ -5733,9 +4498,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Lower Limb Strength Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Magnetic System:
     :Name: Magnetic System
     :Essence: '0.3'
@@ -5754,11 +4516,6 @@
     :ECU: '3'
     :Conceal: ''
     :Cmod: "-1"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Memory:
     :Name: Memory
     :Essence: Mp/300
@@ -5768,20 +4525,6 @@
     :Avail: 3/24 hrs
     :Index: '0.8'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Microscopic Vision:
     :Name: Microscopic Vision
     :Essence: '0.1'
@@ -5796,15 +4539,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Move-by-wire 1:
     :Name: Move-by-wire 1
     :Essence: '2.5'
@@ -5828,6 +4562,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Quickness +1,Reaction +2,Initative +1
   :Move-by-wire 2:
     :Name: Move-by-wire 2
     :Essence: '4'
@@ -5851,6 +4586,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Quickness +2,Reaction +4,Initative +2
   :Move-by-wire 3:
     :Name: Move-by-wire 3
     :Essence: '5.5'
@@ -5874,6 +4610,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Quickness +3,Reaction +6,Initative +3
   :Move-by-wire 4:
     :Name: Move-by-wire 4
     :Essence: '7'
@@ -5897,6 +4634,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Quickness +4,Reaction +8,Initiative +4
   :Muscle Replacement 1:
     :Name: Muscle Replacement 1
     :Essence: '1'
@@ -5920,6 +4658,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Strength +1
   :Muscle Replacement 2:
     :Name: Muscle Replacement 2
     :Essence: '2'
@@ -5943,6 +4682,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Strength +2
   :Muscle Replacement 3:
     :Name: Muscle Replacement 3
     :Essence: '3'
@@ -5966,6 +4706,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Strength +3
   :Muscle Replacement 4:
     :Name: Muscle Replacement 4
     :Essence: '4'
@@ -5989,6 +4730,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Strength +4
   :OXSYS Cybergill:
     :Name: OXSYS Cybergill
     :Essence: '0.75'
@@ -5998,20 +4740,6 @@
     :Avail: 5/72 hrs
     :Index: '1.75'
     :Page: mm.31
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Olfactory Booster:
     :Name: Olfactory Booster
     :Essence: '0.2'
@@ -6021,20 +4749,6 @@
     :Avail: 6/8 days
     :Index: '1.0'
     :Page: mm.17
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Optical Magnification 1:
     :Name: Optical Magnification 1
     :Essence: '0.2'
@@ -6055,9 +4769,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Optical Magnification
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Optical Magnification 2:
     :Name: Optical Magnification 2
     :Essence: '0.2'
@@ -6078,9 +4789,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Optical Magnification
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Optical Magnification 3:
     :Name: Optical Magnification 3
     :Essence: '0.2'
@@ -6101,9 +4809,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Optical Magnification
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Opticam:
     :Name: Opticam
     :Essence: '0.5'
@@ -6118,15 +4823,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Optiscan Link:
     :Name: Optiscan Link
     :Essence: '0.15'
@@ -6141,15 +4837,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Optiscan Remote Adaptor:
     :Name: Optiscan Remote Adaptor
     :Essence: ''
@@ -6164,15 +4851,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Oral Dart:
     :Name: Oral Dart
     :Essence: '0.25'
@@ -6182,20 +4860,6 @@
     :Avail: 6/1 week
     :Index: '2.0'
     :Page: mm.17
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Oral Gun:
     :Name: Oral Gun
     :Essence: '0.4'
@@ -6205,20 +4869,6 @@
     :Avail: 6/72 hrs
     :Index: '3.0'
     :Page: mm.17
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Oral Spur:
     :Name: Oral Spur
     :Essence: '0.25'
@@ -6228,20 +4878,6 @@
     :Avail: 6/72 hrs
     :Index: '3.0'
     :Page: mm.17
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Oral Whip:
     :Name: Oral Whip
     :Essence: '0.25'
@@ -6251,20 +4887,6 @@
     :Avail: 8/1 week
     :Index: '2.5'
     :Page: mm.17
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Orientation System:
     :Name: Orientation System
     :Essence: '0.5'
@@ -6283,11 +4905,6 @@
     :ECU: '1'
     :Conceal: ''
     :Cmod: "-0.5"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Peg leg. hip length:
     :Name: Peg leg. hip length
     :Essence: '0.4'
@@ -6297,20 +4914,6 @@
     :Avail: 1/6 hrs
     :Index: '1.0'
     :Page: mm.39
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Peg leg. knee length:
     :Name: Peg leg. knee length
     :Essence: '0.2'
@@ -6320,20 +4923,6 @@
     :Avail: 1/6 hrs
     :Index: '1.0'
     :Page: mm.39
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Personalized Safety:
     :Name: Personalized Safety
     :Essence: ''
@@ -6343,20 +4932,6 @@
     :Avail: 4/48 hrs
     :Index: '1.5'
     :Page: mm.32
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Playback:
     :Name: Playback
     :Essence: '0.2'
@@ -6369,17 +4944,6 @@
     :Required: Voice Modulator
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Protective Covers:
     :Name: Protective Covers
     :Essence: ''
@@ -6394,15 +4958,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Protocol eumulation module:
     :Name: Protocol eumulation module
     :Essence: '0.2'
@@ -6419,13 +4974,6 @@
     :Cyberlimb: ''
     :Includes: ''
     :ECU: '0.25'
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Quickness Enhancement 1:
     :Name: Quickness Enhancement 1
     :Essence: ''
@@ -6446,9 +4994,6 @@
     :Cmod: "-0.5"
     :Space: ''
     :Base: Quickness Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Quickness Enhancement 2:
     :Name: Quickness Enhancement 2
     :Essence: ''
@@ -6469,9 +5014,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: Quickness Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Quickness Enhancement 3:
     :Name: Quickness Enhancement 3
     :Essence: ''
@@ -6492,9 +5034,6 @@
     :Cmod: "-1.5"
     :Space: ''
     :Base: Quickness Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Quickness Enhancementplus 4:
     :Name: Quickness Enhancementplus 4
     :Essence: '0.3'
@@ -6515,9 +5054,6 @@
     :Cmod: "-1"
     :Space: ''
     :Base: Quickness Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Quickness Enhancementplus 5:
     :Name: Quickness Enhancementplus 5
     :Essence: '0.6'
@@ -6538,9 +5074,6 @@
     :Cmod: "-2"
     :Space: ''
     :Base: Quickness Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Quickness Enhancementplus 6:
     :Name: Quickness Enhancementplus 6
     :Essence: '0.9'
@@ -6561,9 +5094,6 @@
     :Cmod: "-3"
     :Space: ''
     :Base: Quickness Enhancement
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :RAS Override:
     :Name: RAS Override
     :Essence: '0.05'
@@ -6573,20 +5103,6 @@
     :Avail: 4/48 hrs
     :Index: '1.0'
     :Page: mm.21
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Radio Receiver:
     :Name: Radio Receiver
     :Essence: '0.4'
@@ -6596,20 +5112,6 @@
     :Avail: 2/24 hrs
     :Index: '0.8'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Radio:
     :Name: Radio
     :Essence: '0.75'
@@ -6619,20 +5121,6 @@
     :Avail: 2/24 hrs
     :Index: '0.8'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Range Finder:
     :Name: Range Finder
     :Essence: '0.1'
@@ -6642,20 +5130,6 @@
     :Avail: 8/48 hrs
     :Index: '1.5'
     :Page: mm.32
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Rangefinder:
     :Name: Rangefinder
     :Essence: '0.1'
@@ -6670,15 +5144,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Reaction Enhancer 1:
     :Name: Reaction Enhancer 1
     :Essence: '0.3'
@@ -6702,6 +5167,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +1
   :Reaction Enhancer 2:
     :Name: Reaction Enhancer 2
     :Essence: '0.6'
@@ -6725,6 +5191,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +2
   :Reaction Enhancer 3:
     :Name: Reaction Enhancer 3
     :Essence: '0.9'
@@ -6748,6 +5215,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +3
   :Reaction Enhancer 4:
     :Name: Reaction Enhancer 4
     :Essence: '1.2'
@@ -6771,6 +5239,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +4
   :Reaction Enhancer 5:
     :Name: Reaction Enhancer 5
     :Essence: '1.5'
@@ -6794,6 +5263,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +5
   :Reaction Enhancer 6:
     :Name: Reaction Enhancer 6
     :Essence: '1.8'
@@ -6817,6 +5287,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +6
   :Recorder:
     :Name: Recorder
     :Essence: '0.3'
@@ -6831,15 +5302,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cyberears
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Reflex trigger:
     :Name: Reflex trigger
     :Essence: '0.2'
@@ -6852,17 +5314,6 @@
     :Required: Wired Reflexes
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Replacement Modification:
     :Name: Replacement Modification
     :Essence: ''
@@ -6875,17 +5326,6 @@
     :Required: Cyberlimb
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Replacement hand:
     :Name: Replacement hand
     :Essence: ''
@@ -6900,15 +5340,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cyberhand
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Retinal Clock:
     :Name: Retinal Clock
     :Essence: '0.1'
@@ -6923,15 +5354,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Retinal Duplication:
     :Name: Retinal Duplication
     :Essence: '0.1'
@@ -6946,15 +5368,6 @@
     :Option: 'yes'
     :Maxlevel: '10'
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Retractable Climbing Claws:
     :Name: Retractable Climbing Claws
     :Essence: '0.3'
@@ -6973,11 +5386,6 @@
     :ECU: '1'
     :Conceal: ''
     :Cmod: "-0.5"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Router:
     :Name: Router
     :Essence: '0.1'
@@ -6987,20 +5395,6 @@
     :Avail: 1/1 hrs
     :Index: '1.0'
     :Page: mm.22
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Ruthenium:
     :Name: Ruthenium
     :Essence: '0.2'
@@ -7013,17 +5407,6 @@
     :Required: Dermal Sheathing
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :SPU Math 1:
     :Name: SPU Math 1
     :Essence: '0.1'
@@ -7044,9 +5427,6 @@
     :Cmod: ''
     :Space: ''
     :Base: SPU Math
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :SPU Math 2:
     :Name: SPU Math 2
     :Essence: '0.15'
@@ -7067,9 +5447,6 @@
     :Cmod: ''
     :Space: ''
     :Base: SPU Math
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :SPU Math 3:
     :Name: SPU Math 3
     :Essence: '0.2'
@@ -7090,9 +5467,6 @@
     :Cmod: ''
     :Space: ''
     :Base: SPU Math
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Safety:
     :Name: Safety
     :Essence: ''
@@ -7109,13 +5483,6 @@
     :Cyberlimb: Cyberhand
     :Includes: ''
     :ECU: '0.5'
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Scanner Accessory:
     :Name: Scanner Accessory
     :Essence: ''
@@ -7129,16 +5496,6 @@
     :Conflicts: ''
     :Option: 'yes'
     :Maxlevel: '10'
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Secondary Pattern:
     :Name: Secondary Pattern
     :Essence: ''
@@ -7152,16 +5509,6 @@
     :Conflicts: ''
     :Option: 'yes'
     :Maxlevel: '10'
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Select Sound Filter:
     :Name: Select Sound Filter
     :Essence: '0.2'
@@ -7176,15 +5523,6 @@
     :Option: 'yes'
     :Maxlevel: '5'
     :Cyberlimb: Cyberears
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Shock Hand:
     :Name: Shock Hand
     :Essence: '0.25'
@@ -7226,11 +5564,6 @@
     :ECU: '4'
     :Conceal: ''
     :Cmod: "-1"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Silencer:
     :Name: Silencer
     :Essence: '0.2'
@@ -7249,11 +5582,6 @@
     :ECU: '0.5'
     :Conceal: "-2"
     :Cmod: "-1"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Simrig Full-X:
     :Name: Simrig Full-X
     :Essence: '2'
@@ -7263,20 +5591,6 @@
     :Avail: 6/12 days
     :Index: '1.0'
     :Page: sr3.302
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Simrig Sense Link:
     :Name: Simrig Sense Link
     :Essence: '2'
@@ -7286,20 +5600,6 @@
     :Avail: 2/5 days
     :Index: '1.0'
     :Page: sr3.302
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skates Retractable:
     :Name: Skates Retractable
     :Essence: ''
@@ -7318,11 +5618,6 @@
     :ECU: '4'
     :Conceal: ''
     :Cmod: "-2"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skates:
     :Name: Skates
     :Essence: ''
@@ -7341,11 +5636,6 @@
     :ECU: '2'
     :Conceal: ''
     :Cmod: "-5"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skillwires 1:
     :Name: Skillwires 1
     :Essence: '0.2'
@@ -7366,9 +5656,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Skillwires
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skillwires 2:
     :Name: Skillwires 2
     :Essence: '0.4'
@@ -7389,9 +5676,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Skillwires
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skillwires 3:
     :Name: Skillwires 3
     :Essence: '0.6'
@@ -7412,9 +5696,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Skillwires
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skillwires 4:
     :Name: Skillwires 4
     :Essence: '0.8'
@@ -7435,9 +5716,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Skillwires
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skillwires 5:
     :Name: Skillwires 5
     :Essence: '1.0'
@@ -7458,9 +5736,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Skillwires
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skillwires 6:
     :Name: Skillwires 6
     :Essence: '1.2'
@@ -7481,9 +5756,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Skillwires
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skillwires 7:
     :Name: Skillwires 7
     :Essence: '1.4'
@@ -7504,9 +5776,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Skillwires
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skillwires 8:
     :Name: Skillwires 8
     :Essence: '1.6'
@@ -7527,9 +5796,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Skillwires
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Skillwires 9:
     :Name: Skillwires 9
     :Essence: '1.8'
@@ -7550,9 +5816,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Skillwires
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Smartlink I:
     :Name: Smartlink I
     :Essence: '0.5'
@@ -7562,20 +5825,6 @@
     :Avail: 3/36 hrs
     :Index: '1.0'
     :Page: sr3.30
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Smartlink II:
     :Name: Smartlink II
     :Essence: '0.5'
@@ -7585,20 +5834,6 @@
     :Avail: 6/48 hrs
     :Index: '2.0'
     :Page: mm.31
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Smartlink-2 Processor:
     :Name: Smartlink-2 Processor
     :Essence: '0.2'
@@ -7608,20 +5843,6 @@
     :Avail: 4/48 hrs
     :Index: '2.0'
     :Page: mm.32
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Sound Supresser:
     :Name: Sound Supresser
     :Essence: '0.3'
@@ -7640,11 +5861,6 @@
     :ECU: '1'
     :Conceal: "-3"
     :Cmod: "-2"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Spatial Recognizer:
     :Name: Spatial Recognizer
     :Essence: '0.2'
@@ -7659,15 +5875,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cyberears
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Spurs Retractable:
     :Name: Spurs Retractable
     :Essence: '0.3'
@@ -7723,20 +5930,6 @@
     :Avail: 4/48 hrs
     :Index: '1.5'
     :Page: mm.32
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Stepped Reflex Trigger:
     :Name: Stepped Reflex Trigger
     :Essence: ''
@@ -7749,17 +5942,6 @@
     :Required: Reflex trigger
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Subdermal Display:
     :Name: Subdermal Display
     :Essence: '0.1'
@@ -7769,20 +5951,6 @@
     :Avail: 4/72 hrs
     :Index: '1.0'
     :Page: mm.26
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Subdermal Speakers:
     :Name: Subdermal Speakers
     :Essence: ".1"
@@ -7792,20 +5960,6 @@
     :Avail: 4/72 hrs
     :Index: '2.0'
     :Page: mm.19
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Subvocal Microphone:
     :Name: Subvocal Microphone
     :Essence: '0.1'
@@ -7815,20 +5969,6 @@
     :Avail: 4/72 hrs
     :Index: '2.0'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Superflash:
     :Name: Superflash
     :Essence: ''
@@ -7843,15 +5983,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Synthetic Fingerprint:
     :Name: Synthetic Fingerprint
     :Essence: ''
@@ -7865,16 +5996,6 @@
     :Conflicts: ''
     :Option: 'yes'
     :Maxlevel: '10'
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Tactical Computer:
     :Name: Tactical Computer
     :Essence: '1.5'
@@ -7884,20 +6005,6 @@
     :Avail: 12/60 days
     :Index: '4.0'
     :Page: mm.22
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Tactical sense program:
     :Name: Tactical sense program
     :Essence: ''
@@ -7910,17 +6017,6 @@
     :Required: Tactical Computer
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Telephone:
     :Name: Telephone
     :Essence: '0.5'
@@ -7930,20 +6026,6 @@
     :Avail: 3/24 hrs
     :Index: '0.9'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Telescoping Cyberlimb:
     :Name: Telescoping Cyberlimb
     :Essence: ''
@@ -7962,11 +6044,6 @@
     :ECU: '3'
     :Conceal: ''
     :Cmod: "-1"
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Thermographic:
     :Name: Thermographic
     :Essence: '0.2'
@@ -7981,15 +6058,6 @@
     :Option: ''
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Tonal Shift:
     :Name: Tonal Shift
     :Essence: ''
@@ -8002,17 +6070,6 @@
     :Required: Voice Modulator
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Tool Laser:
     :Name: Tool Laser
     :Essence: '0.25'
@@ -8027,15 +6084,6 @@
     :Option: 'yes'
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Tooth Compartment Storage:
     :Name: Tooth Compartment Storage
     :Essence: ''
@@ -8045,20 +6093,6 @@
     :Avail: 2/48 hrs
     :Index: '1.25'
     :Page: sr3.298
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Tracheal Vent:
     :Name: Tracheal Vent
     :Essence: '0.1'
@@ -8071,17 +6105,6 @@
     :Required: Air tank
     :Conflicts: ''
     :Option: 'yes'
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Transducer:
     :Name: Transducer
     :Essence: '0.1'
@@ -8091,20 +6114,6 @@
     :Avail: 4/1 wk
     :Index: '1.5'
     :Page: mm.19
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Ultrasound Vision:
     :Name: Ultrasound Vision
     :Essence: '0.5'
@@ -8119,15 +6128,6 @@
     :Option: ''
     :Maxlevel: ''
     :Cyberlimb: Cybereyes
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Vehicle Control Rig 1:
     :Name: Vehicle Control Rig 1
     :Essence: '2.0'
@@ -8148,9 +6148,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Vehicle Control Rig
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Vehicle Control Rig 2:
     :Name: Vehicle Control Rig 2
     :Essence: '3.0'
@@ -8171,9 +6168,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Vehicle Control Rig
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Vehicle Control Rig 3:
     :Name: Vehicle Control Rig 3
     :Essence: '5.0'
@@ -8194,9 +6188,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Vehicle Control Rig
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Venom Sack(2 doeses):
     :Name: Venom Sack(2 doeses)
     :Essence: '0.05'
@@ -8213,13 +6204,6 @@
     :Cyberlimb: Cyberlimb
     :Includes: ''
     :ECU: '0.25'
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Voice Modulator:
     :Name: Voice Modulator
     :Essence: '0.2'
@@ -8229,20 +6213,6 @@
     :Avail: 2/24 hrs
     :Index: '1.0'
     :Page: sr3.302
-    :Required: ''
-    :Conflicts: ''
-    :Option: ''
-    :Maxlevel: ''
-    :Cyberlimb: ''
-    :Includes: ''
-    :ECU: ''
-    :Conceal: ''
-    :Cmod: ''
-    :Space: ''
-    :Base: ''
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Weapon Mount Articulate Retractable:
     :Name: Weapon Mount Articulate Retractable
     :Essence: '1'
@@ -8263,9 +6233,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Weapon Mount
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Weapon Mount Articulate:
     :Name: Weapon Mount Articulate
     :Essence: ''
@@ -8286,9 +6253,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Weapon Mount
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Weapon Mount External Retractable:
     :Name: Weapon Mount External Retractable
     :Essence: ''
@@ -8309,9 +6273,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Weapon Mount
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Weapon Mount External:
     :Name: Weapon Mount External
     :Essence: ''
@@ -8332,9 +6293,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Weapon Mount
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Weapon Mount Tracking Retractable:
     :Name: Weapon Mount Tracking Retractable
     :Essence: ''
@@ -8355,9 +6313,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Weapon Mount
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Weapon Mount Tracking:
     :Name: Weapon Mount Tracking
     :Essence: ''
@@ -8378,9 +6333,6 @@
     :Cmod: ''
     :Space: ''
     :Base: Weapon Mount
-    :Ammo: ''
-    :Mode: ''
-    :Damage: ''
   :Wired Reflexes 1:
     :Name: Wired Reflexes 1
     :Essence: '2.0'
@@ -8404,6 +6356,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +2,Initative +1
   :Wired Reflexes 2:
     :Name: Wired Reflexes 2
     :Essence: '3.0'
@@ -8427,6 +6380,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +4,Initiative +2
   :Wired Reflexes 3:
     :Name: Wired Reflexes 3
     :Essence: '5.0'
@@ -8450,6 +6404,7 @@
     :Ammo: ''
     :Mode: ''
     :Damage: ''
+    :Stats: Reaction +6,Initative +3
 :magetypes:
   :None:
     :Points: 0
@@ -12384,3 +10339,15 @@
     - - :Water
       - 2
     :desc: Water gentle
+:senses:
+- :Thermographic Vision
+- :Low-Light Vision
+- :Microscopic Vision
+- :Magnification Vision
+- :Flare-Compensation Vision
+- :Improved Hearing
+- :High-Frequency Hearing
+- :Low-Frequency Hearing
+- :Dampening Hearing
+- :Improved Scent
+- :Improved Taste

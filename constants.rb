@@ -605,7 +605,11 @@ CONSTANTS = {
     Earth: { spells: [[:Manipulation,2]], spirits: [[:Earth,2]], desc: 'Earth stony'},
     Air: { spells: [[:Detection,2]], spirits: [[:Air,2]], desc: 'Air lofty'},
     Water: { spells: [[:Illusion,2]], spirits: [[:Water,2]], desc: 'Water gentle'}
-  }
+  },
+  senses: [
+    :'Thermographic Vision',:'Low-Light Vision',:'Microscopic Vision',:'Magnification Vision',
+    :'Flare-Compensation Vision',:'Improved Hearing',:'High-Frequency Hearing',:'Low-Frequency Hearing',
+    :'Dampening Hearing',:'Improved Scent',:'Improved Taste']
 
 }
 
