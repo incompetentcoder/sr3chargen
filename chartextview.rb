@@ -42,40 +42,56 @@ class Application
     updatespellpoints
   end
 
-  def choosespelldialog(name)
+  def choosespelldialog(name,entry)
     a = nil
     b = nil
-    type = name.sub(/.*(Attribute|Element|Sense|Skill).*/,'\1')
+    type = name.sub(/.*(Attribute|Element|Sense|Skill|Life-Form|Object|Race).*/,'\1')
     resp = []
-    index = case type
-            when /Attr/
-              CONSTANT[:attributes]
-            when /Elem|Sens/
-              CONSTANT[(type.to_s.downcase+'s').to_sym].keys
-            else
-              @notebook.skill.skillentries.keys
-            end
-    return -1 if index.length < 1
+      
+    if entry
+      entered = Gtk::Entry.new
+      entered.width_chars=30
+    else
+      index = case type
+      when /Attr/
+        CONSTANT[:attributes]
+      when /Elem|Sens/
+        CONSTANT[(type.to_s.downcase+'s').to_sym].keys
+      else
+        @notebook.skill.skillentries.keys
+      end
+      return -1 if index.length < 1
+    end
+
     dialog = Gtk::Dialog.new("Choose #{type}",@windows,Gtk::Dialog::MODAL)
-    index.each_with_index do |x,y|
+    if entry
+      dialog.add_action_widget(entered,1)
+      entered.show
+    else
+      index.each_with_index do |x,y|
       resp[y]=x
       dialog.add_button(x.to_s,y)
+      end
     end
+    
     dialog.run do |response|
-      a = name.sub(/#{type}/,"#{resp[response]}")
+      if entry
+        a = name.sub(/#{type}/,"#{entered.text}")
+      else
+        a = name.sub(/#{type}/,"#{resp[response]}")
+      end
       b = response
     end
+
     dialog.destroy
     [b,a]
   end
 
   def appendspell(name,category,subcategory)
     case name
-    when /Attribute\)|Sense\)|Element\)|Skill\)/
-      response,name2 = choosespelldialog(name)
+    when /\)/
+      response,name2 = choosespelldialog(name,name =~ /Fo|Obj|Race/ ? true : false )
       return if response < 0
-    when /Form\)|Object\)|Race\)/
-      name2 = nil
     else
       name2 = nil
     end
