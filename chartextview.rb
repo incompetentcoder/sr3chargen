@@ -2,6 +2,7 @@ require 'gtk2'
 require 'pp'
 require 'pry'
 require 'yaml'
+require 'set'
 
 CONSTANT = YAML.load_file(File.open('constants.yaml', 'r'))
 ATCH = [Gtk::EXPAND | Gtk::FILL, Gtk::SHRINK, 0, 0].freeze
@@ -41,9 +42,45 @@ class Application
     updatespellpoints
   end
 
+  def choosespelldialog(name)
+    a = nil
+    b = nil
+    type = name.sub(/.*(Attribute|Element|Sense|Skill).*/,'\1')
+    resp = []
+    index = case type
+            when /Attr/
+              CONSTANT[:attributes]
+            when /Elem|Sens/
+              CONSTANT[(type.to_s.downcase+'s').to_sym].keys
+            else
+              @notebook.skill.skillentries.keys
+            end
+    return -1 if index.length < 1
+    dialog = Gtk::Dialog.new("Choose #{type}",@windows,Gtk::Dialog::MODAL)
+    index.each_with_index do |x,y|
+      resp[y]=x
+      dialog.add_button(x.to_s,y)
+    end
+    dialog.run do |response|
+      a = name.sub(/#{type}/,"#{resp[response]}")
+      b = response
+    end
+    dialog.destroy
+    [b,a]
+  end
+
   def appendspell(name,category,subcategory)
-    if @a.appendspell(name.to_sym,category.to_sym,subcategory ? subcategory.to_sym : nil)
-      @notebook.spell.appendspell(name,category,subcategory)
+    case name
+    when /Attribute\)|Sense\)|Element\)|Skill\)/
+      response,name2 = choosespelldialog(name)
+      return if response < 0
+    when /Form\)|Object\)|Race\)/
+      name2 = nil
+    else
+      name2 = nil
+    end
+    if @a.appendspell(name.to_sym,category.to_sym,subcategory ? subcategory.to_sym : nil,name2 ? name2.to_sym : nil)
+      @notebook.spell.appendspell(name2,category,subcategory)
     end
   end
 
@@ -377,9 +414,9 @@ class Character
   end
 
 
-  def appendspell(name,category,subcategory)
+  def appendspell(name,category,subcategory,name2)
     if @spellpoints > 0
-      @spells[name] = [
+      @spells[name2 ? name2 : name] = [
         (subcategory ? CONSTANT[:spelltypes][category][subcategory][name] :
                      CONSTANT[:spelltypes][category][name]),1]
       @spellpoints -= 1
@@ -990,6 +1027,8 @@ class Attributeblock < Gtk::Frame
 
   def enableelement
     @element.each {|x| x.sensitive = true}
+    @totem[5].sensitive = true
+    @totem[7].sensitive = true
     if not @elementenabled
       CONSTANT[:elements].each_key {|x| @element[1].append_text(x.to_s)}
       @elementenabled = 1
@@ -1002,6 +1041,8 @@ class Attributeblock < Gtk::Frame
       x.active = -1 if x.class == Gtk::ComboBox
       x.sensitive = false
     end
+    @totem[5].sensitive = false
+    @totem[7].sensitive = false
     @tooltips.set_tip(@element[1],nil,nil)
     4.times {|x| @element[1].remove_text(0)}
     @elementenabled = nil
@@ -1191,6 +1232,7 @@ class Attributeblock < Gtk::Frame
 end
 
 class Skillblock < Gtk::ScrolledWindow
+  attr_accessor :skills, :skillentries
 
   def skilllvl(skill,data)
     @skillentries[skill][2].value = data[:Value]
@@ -1425,10 +1467,11 @@ class Spellblock < Gtk::Frame
     @spells = {}
     @header2 = {}
     @model = Gtk::TreeStore.new(String, String, String, String, String, String, String, String, String)
+    @model.set_sort_column_id(0,Gtk::SORT_ASCENDING)
     @view = Gtk::TreeView.new(@model)
     @order = {}
-    %w(Name Dur Range Area DTN DLVL Damage DamType Element).each_with_index do |a,b|
-      @order[a.to_sym]=b
+    %i(Name Dur Range Area DTN DLVL Damage DamType Element).each_with_index do |a,b|
+      @order[a]=b
     end
     [:Combat,:Detection,:Health].each do |x|
       parent = @model.append(nil)
@@ -1515,26 +1558,101 @@ class Spellblock < Gtk::Frame
   end
 end
 
-class Cyberblock < Gtk::ScrolledWindow
+class Cyberblock < Gtk::Frame
+  def addcyber(parent,rows,bases)
+    children = Hash.new
+    bases.each do |x|
+      children[x] = @model.append(parent)
+      children[x][0] = x
+    end
+    rows.values.each do |a|
+      if a[:Base] == ""
+        child = @model.append(parent)
+      else
+        child = @model.append(children[a[:Base]])
+      end
+      a.each_pair do |b,c|
+        child[@order[b]] = c.to_s if @order[b]
+      end
+    end
+  end
+
   def initialize(app)
     @app = app
     super()
-    self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
-    @table = Gtk::Table.new(10, 4, homgenous = true)
+    @win = Gtk::ScrolledWindow.new
+    @win2 = Gtk::ScrolledWindow.new
+    @vbox = Gtk::VBox.new(true,nil)
     @cyber = {}
-    @header1 = {}
-    @header1[:Category] = [Gtk::Label.new('Category'), Gtk::ComboBox.new]
+    @model = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String)
+    @model.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view = Gtk::TreeView.new(@model)
+    @order = {}
+    %i(Name Essence Price Conceal Legality Avail Required Conflicts).each_with_index do |x,y|
+      @order[x]=y
+    end
 
-    @table.attach @header1[:Category][0], 0, 1, 0, 1, *ATCH
-    add_with_viewport(@table)
+    %i(Brainware Senseware Commware Matrixware Riggerware Bodyware Cyberlimb).each do |x|
+      parent = @model.append(nil)
+      parent[0] = x
+      cyber = CONSTANT[:cyberware].find_all {|y| y[1][:Type] =~ /#{x[0..1].upcase}/}.to_h
+      bases = cyber.collect {|x| x[1][:Base] unless x[1][:Base] == ""}.compact.to_set
+      addcyber(parent,cyber,bases)
+    end
+    
+    (0..7).each do |x|
+      renderer = Gtk::CellRendererText.new
+      col = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+      col.set_sizing  Gtk::TreeViewColumn::GROW_ONLY
+      @view.append_column(col)
+    end
+    @view.enable_grid_lines = Gtk::TreeView::GRID_LINES_BOTH
+    @view.enable_tree_lines = true
+    @view.set_search_equal_func do |model,column,key,iter| 
+      if Regexp.new(key) =~ iter[0]
+        @view.scroll_to_cell(iter.path,nil,true,0.5,0.5)
+        false
+      else
+        true
+      end
+    end
+
+    @win.add(@view)
+    @vbox.pack_start_defaults(@win)
+    @vbox.show_all
+    add(@vbox)
   end
 end
 
-class Bioblock < Gtk::ScrolledWindow
+class Bioblock < Gtk::Frame
   def initialize(app)
     @app = app
     super()
-    self.set_policy(Gtk::POLICY_AUTOMATIC,Gtk::POLICY_AUTOMATIC)
+    @win = Gtk::ScrolledWindow.new
+    @win2 = Gtk::ScrolledWindow.new
+    @vbox = Gtk::VBox.new(true,nil)
+    @bio = {}
+    @model = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String)
+    @view = Gtk::TreeView.new(@model)
+    @order = %w(Name Bioindex Price Conceal Legality Avail Required Conflicts)
+
+    add(@vbox)
+  end
+end
+
+class Powerblock < Gtk::Frame
+  def initialize(app)
+    @app = app
+    super()
+    @win = Gtk::ScrolledWindow.new
+    @win2 = Gtk::ScrolledWindow.new
+    @vbox = Gtk::VBox.new(true,nil)
+    @powers = {}
+    @model = Gtk::TreeStore.new(String,String,String,String,String,String,String)
+    @view = Gtk::TreeView.new(@model)
+    @order = %w(Name Cost Levels Required Conflicts)
+    
+    add(@vbox)
   end
 end
 
