@@ -1582,10 +1582,10 @@ class Cyberblock < Gtk::Frame
       children[x][0] = x
     end
     rows.values.each do |a|
-      if a[:Base] == ""
-        child = @model.append(parent)
-      else
+      if a[:Base] 
         child = @model.append(children[a[:Base]])
+      else
+        child = @model.append(parent)
       end
       a.each_pair do |b,c|
         child[@order[b]] = c.to_s if @order[b]
