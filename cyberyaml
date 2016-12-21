@@ -1,7 +1,6 @@
 ---
 :ASIST Converter:
   :Name: ASIST Converter
-  :Essence: ''
   :Price: 1000¥
   :Type: " MA"
   :Legality: " Legal"
@@ -9,11 +8,9 @@
   :Index: " 1.5"
   :Page: " mm.19 "
   :Required: Datajack
-  :Conflicts: ''
   :Option: 'yes'
 :Ablative Armor:
   :Name: Ablative Armor
-  :Essence: ''
   :Price: 7000¥
   :Type: BO
   :Legality: 4P-Q
@@ -21,15 +18,11 @@
   :Index: '2.0'
   :Page: 'mm.37 '
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '5'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '1'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: Armor
 :Air tank:
   :Name: Air tank
@@ -42,7 +35,6 @@
   :Page: mm.29
 :Appendage Strength Enhancement 1:
   :Name: Appendage Strength Enhancement 1
-  :Essence: ''
   :Price: 35000¥
   :Type: CY
   :Legality: 6P-Q
@@ -50,19 +42,13 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Cyberhand,Cyberfoot
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: Appendage Strength Enhancement
 :Appendage Strength Enhancement 2:
   :Name: Appendage Strength Enhancement 2
-  :Essence: ''
   :Price: 70000¥
   :Type: CY
   :Legality: 6P-Q
@@ -70,19 +56,13 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Cyberhand,Cyberfoot
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-2"
-  :Space: ''
   :Base: Appendage Strength Enhancement
 :Appendage Strength Enhancement 3:
   :Name: Appendage Strength Enhancement 3
-  :Essence: ''
   :Price: 105000¥
   :Type: CY
   :Legality: 6P-Q
@@ -90,15 +70,10 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Cyberhand,Cyberfoot
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Appendage Strength Enhancement
 :Auto-inector One-shot:
   :Name: Auto-inector One-shot
@@ -127,10 +102,7 @@
   :Avail: 8/2 wks
   :Index: '2.0'
   :Page: mm.14
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberear
 :Balance Augmentor:
   :Name: Balance Augmentor
@@ -141,10 +113,7 @@
   :Avail: 8/2 wks
   :Index: '2.0'
   :Page: ct.24
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberears
 :Balance Tail:
   :Name: Balance Tail
@@ -157,7 +126,6 @@
   :Page: mm.25
 :Ballistic Armor:
   :Name: Ballistic Armor
-  :Essence: ''
   :Price: 2500¥
   :Type: BO
   :Legality: Legal
@@ -165,15 +133,11 @@
   :Index: '1.0'
   :Page: 'mm.37 '
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-0.5"
-  :Space: ''
   :Base: Armor
 :Basic Eyelaser High Power:
   :Name: Basic Eyelaser High Power
@@ -185,15 +149,8 @@
   :Index: '2.0'
   :Page: mm.14
   :Required: Cybereyes
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Basic Eyelaser
 :Basic Eyelaser Low Power:
   :Name: Basic Eyelaser Low Power
@@ -205,15 +162,8 @@
   :Index: '2.0'
   :Page: mm.14
   :Required: Cybereyes
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Basic Eyelaser
 :Basic Eyelaser Medium Power:
   :Name: Basic Eyelaser Medium Power
@@ -225,15 +175,8 @@
   :Index: '2.0'
   :Page: mm.14
   :Required: Cybereyes
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Basic Eyelaser
 :BattleTac Cyberlink:
   :Name: BattleTac Cyberlink
@@ -254,11 +197,7 @@
   :Index: '3.0'
   :Page: mm.23
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.25'
 :BattleTac IVIS Master Unit:
   :Name: BattleTac IVIS Master Unit
@@ -270,13 +209,8 @@
   :Index: '3.0'
   :Page: mm.23
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-0.5"
 :BattleTac modification:
   :Name: BattleTac modification
@@ -288,7 +222,6 @@
   :Index: '4.0'
   :Page: mm.23
   :Required: Tactical Computer
-  :Conflicts: ''
   :Option: 'yes'
 :Biomonitor System:
   :Name: Biomonitor System
@@ -317,21 +250,8 @@
   :Avail: 5/14 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Bone Lacing
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +1,Impact +1
+  :Stats: attributes[Body:+1];armor[Impact:+1]
 :Bone Lacing Ceramic:
   :Name: Bone Lacing Ceramic
   :Essence: '1.5'
@@ -341,21 +261,8 @@
   :Avail: 6/21 days
   :Index: '2.0'
   :Page: mm.27
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Bone Lacing
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +1,Impact +2
+  :Stats: attributes[Body:+1];armor[Impact:+2]
 :Bone Lacing Kevlar:
   :Name: Bone Lacing Kevlar
   :Essence: '1.0'
@@ -365,21 +272,8 @@
   :Avail: 6/21 days
   :Index: '2.0'
   :Page: mm.27
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Bone Lacing
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +1,Ballistic +1
+  :Stats: attributes[Body:+1];armor[Ballistic:+1]
 :Bone Lacing Plastic:
   :Name: Bone Lacing Plastic
   :Essence: '0.5'
@@ -389,21 +283,8 @@
   :Avail: 5/14 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Bone Lacing
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +1
+  :Stats: attributes[Body:+1]
 :Bone Lacing Titanium:
   :Name: Bone Lacing Titanium
   :Essence: '2.25'
@@ -413,21 +294,8 @@
   :Avail: 5/14 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Bone Lacing
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +2,Impact +1,Ballistic +1
+  :Stats: attributes[Body:+2];armor[Impact:+1,Ballistic:+1]
 :Boosted Reflexes 1:
   :Name: Boosted Reflexes 1
   :Essence: '0.5'
@@ -437,21 +305,9 @@
   :Avail: 3/24hrs
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Wired Reflexes, Move by Wire, Vehicle Control Rig
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Boosted Reflexes
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Initiative +1
+  :Stats: derived[Initiative|CBM:+1]
 :Boosted Reflexes 2:
   :Name: Boosted Reflexes 2
   :Essence: '1.25'
@@ -461,21 +317,9 @@
   :Avail: 3/24 hrs
   :Index: '1.25'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Wired Reflexes, Move Wire, Vehicle Control Rig
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Boosted Reflexes
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +1,Initative +1
+  :Stats: derived[Reaction|CBM:+1,Initative|CBM:+1]
 :Boosted Reflexes 3:
   :Name: Boosted Reflexes 3
   :Essence: '2.8'
@@ -485,21 +329,9 @@
   :Avail: 3/24 hrs
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Wired Reflexes, Move by Wire, Vehicle Control Rig
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Boosted Reflexes
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +2,Initative +2
+  :Stats: derived[Reaction|CBM:+2,Initative|CBM:+2]
 :Brightlight Feature:
   :Name: Brightlight Feature
   :Essence: '0.2'
@@ -510,13 +342,10 @@
   :Index: '3.0'
   :Page: mm.15
   :Required: Light System
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Built-in Program:
   :Name: Built-in Program
-  :Essence: ''
   :Price: Mp*200¥
   :Type: SE
   :Legality: Legal
@@ -524,7 +353,6 @@
   :Index: '1.0'
   :Page: mm.14
   :Required: Gas Spectrometer
-  :Conflicts: ''
   :Option: 'yes'
 :Built-ln Smartgun Link:
   :Name: Built-ln Smartgun Link
@@ -536,9 +364,7 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Cyberhand
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberhand
 :Camera:
   :Name: Camera
@@ -549,10 +375,7 @@
   :Avail: 6/24 hrs
   :Index: '2.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Chemical Analyzer:
   :Name: Chemical Analyzer
@@ -563,14 +386,8 @@
   :Avail: 4/6 days
   :Index: '1.0'
   :Page: mm.14
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-0.5"
 :Chipjack 1 slot:
   :Name: Chipjack 1 slot
@@ -581,16 +398,6 @@
   :Avail: 3/72 hrs
   :Index: '0.9'
   :Page: sr3.298
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack
 :Chipjack 2 slot:
   :Name: Chipjack 2 slot
@@ -601,16 +408,6 @@
   :Avail: 3/72 hrs
   :Index: '0.9'
   :Page: mm.21
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack
 :Chipjack 3 slot:
   :Name: Chipjack 3 slot
@@ -621,16 +418,6 @@
   :Avail: 3/72 hrs
   :Index: '0.9'
   :Page: mm.21
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack
 :Chipjack 4 slot:
   :Name: Chipjack 4 slot
@@ -641,16 +428,6 @@
   :Avail: 3/72 hrs
   :Index: '0.9'
   :Page: mm.21
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack
 :Chipjack Dedicated:
   :Name: Chipjack Dedicated
@@ -661,16 +438,6 @@
   :Avail: 2/48 hrs
   :Index: '1.0'
   :Page: cc.64
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack
 :Chipjack Expert Driver 1:
   :Name: Chipjack Expert Driver 1
@@ -682,15 +449,8 @@
   :Index: '1.0'
   :Page: 'mm.19 '
   :Required: Chipjack
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack Expert
 :Chipjack Expert Driver 2:
   :Name: Chipjack Expert Driver 2
@@ -702,15 +462,8 @@
   :Index: '1.0'
   :Page: 'mm.19 '
   :Required: Chipjack
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack Expert
 :Chipjack Expert Driver 3:
   :Name: Chipjack Expert Driver 3
@@ -722,15 +475,8 @@
   :Index: '1.0'
   :Page: 'mm.19 '
   :Required: Chipjack
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack Expert
 :Chipjack Expert Driver 4:
   :Name: Chipjack Expert Driver 4
@@ -742,15 +488,8 @@
   :Index: '1.0'
   :Page: 'mm.19 '
   :Required: Chipjack
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack Expert
 :Chipjack Expert Driver 5:
   :Name: Chipjack Expert Driver 5
@@ -762,15 +501,8 @@
   :Index: '1.0'
   :Page: 'mm.19 '
   :Required: Chipjack
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack Expert
 :Chipjack Expert Driver 6:
   :Name: Chipjack Expert Driver 6
@@ -782,15 +514,8 @@
   :Index: '1.0'
   :Page: 'mm.19 '
   :Required: Chipjack
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack Expert
 :Chipjack Expert Driver 7:
   :Name: Chipjack Expert Driver 7
@@ -802,15 +527,8 @@
   :Index: '1.0'
   :Page: 'mm.19 '
   :Required: Chipjack
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack Expert
 :Chipjack Expert Driver 8:
   :Name: Chipjack Expert Driver 8
@@ -822,15 +540,8 @@
   :Index: '1.0'
   :Page: 'mm.19 '
   :Required: Chipjack
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack Expert
 :Chipjack Expert Driver 9:
   :Name: Chipjack Expert Driver 9
@@ -842,15 +553,8 @@
   :Index: '1.0'
   :Page: 'mm.19 '
   :Required: Chipjack
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack Expert
 :Chipjack Expert Driver 10:
   :Name: Chipjack Expert Driver 10
@@ -862,15 +566,8 @@
   :Index: '1.0'
   :Page: 'mm.19 '
   :Required: Chipjack
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Chipjack Expert
 :Commlink:
   :Name: Commlink
@@ -883,7 +580,6 @@
   :Page: sr3.298
 :Cortex Bomb:
   :Name: Cortex Bomb
-  :Essence: ''
   :Price: 500000¥
   :Type: BR
   :Legality: 2-R
@@ -892,7 +588,6 @@
   :Page: sr2.247
 :Cortex Kink Bomb:
   :Name: Cortex Kink Bomb
-  :Essence: ''
   :Price: 28000¥
   :Type: BR
   :Legality: 2-R
@@ -901,7 +596,6 @@
   :Page: sr3.298
 :Cortex Microbomb:
   :Name: Cortex Microbomb
-  :Essence: ''
   :Price: 65500¥
   :Type: BR
   :Legality: 2-R
@@ -910,7 +604,6 @@
   :Page: sr3.298
 :Crainial Area Bomb:
   :Name: Crainial Area Bomb
-  :Essence: ''
   :Price: 500000¥
   :Type: BR
   :Legality: 2-R
@@ -926,16 +619,9 @@
   :Avail: 4/1 wk
   :Index: '0.8'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Cranial Cyberdeck
 :Cranial Cyberdeck CMT Avatar:
   :Name: Cranial Cyberdeck CMT Avatar
@@ -946,16 +632,9 @@
   :Avail: 8/2 wks
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Cranial Cyberdeck
 :Cranial Cyberdeck Fairlight Excalibur:
   :Name: Cranial Cyberdeck Fairlight Excalibur
@@ -966,16 +645,9 @@
   :Avail: 24/1 mo
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Cranial Cyberdeck
 :Cranial Cyberdeck Novatech Hyperdeck-6:
   :Name: Cranial Cyberdeck Novatech Hyperdeck-6
@@ -986,16 +658,9 @@
   :Avail: 6/2 wks
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Cranial Cyberdeck
 :Cranial Cyberdeck Novatech Slimcase-10:
   :Name: Cranial Cyberdeck Novatech Slimcase-10
@@ -1006,16 +671,9 @@
   :Avail: 18/1 mo
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Cranial Cyberdeck
 :Cranial Cyberdeck Renraku Kraftwerk-8:
   :Name: Cranial Cyberdeck Renraku Kraftwerk-8
@@ -1026,16 +684,9 @@
   :Avail: 10/1 mo
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Cranial Cyberdeck
 :Cranial Cyberdeck Sony CT-360-D:
   :Name: Cranial Cyberdeck Sony CT-360-D
@@ -1046,16 +697,9 @@
   :Avail: 6/2 wks
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Cranial Cyberdeck
 :Cranial Cyberdeck Transys Highlander:
   :Name: Cranial Cyberdeck Transys Highlander
@@ -1066,16 +710,9 @@
   :Avail: 14/1 mo
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Cranial Cyberdeck
 :Cranial Remote Deck:
   :Name: Cranial Remote Deck
@@ -1086,14 +723,8 @@
   :Avail: 4/72 hrs
   :Index: '2.0'
   :Page: mm.23
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '5'
-  :Conceal: ''
   :Cmod: "-4"
 :Cyberears:
   :Name: Cyberears
@@ -1113,15 +744,6 @@
   :Avail: 2/24 hrs
   :Index: '0.75'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
   :Space: '1.2'
 :Cyberfins:
   :Name: Cyberfins
@@ -1141,16 +763,11 @@
   :Avail: 8/6 days
   :Index: '2.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '1'
   :Conceal: '10'
   :Cmod: "-2"
-  :Space: ''
   :Base: Cybergun
   :Ammo: 5 (m)
   :Mode: SA
@@ -1164,16 +781,11 @@
   :Avail: 8/7 days
   :Index: '2.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '2.5'
   :Conceal: '8'
   :Cmod: "-2"
-  :Space: ''
   :Base: Cybergun
   :Ammo: 10 (c)
   :Mode: SA
@@ -1187,16 +799,11 @@
   :Avail: 8/7 days
   :Index: '2.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '1'
   :Conceal: '12'
   :Cmod: "-1"
-  :Space: ''
   :Base: Cybergun
   :Ammo: 6 (c)
   :Mode: SS
@@ -1210,16 +817,11 @@
   :Avail: 8/7 days
   :Index: '2.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '1.5'
   :Conceal: '10'
   :Cmod: "-1"
-  :Space: ''
   :Base: Cybergun
   :Ammo: 12 (c)
   :Mode: SA
@@ -1233,16 +835,11 @@
   :Avail: 8/7 days
   :Index: '2.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '2'
   :Conceal: '8'
   :Cmod: "-2"
-  :Space: ''
   :Base: Cybergun
   :Ammo: 35 (c)
   :Mode: SA/BF
@@ -1256,16 +853,11 @@
   :Avail: 8/7 days
   :Index: '2.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '3.5'
   :Conceal: '6'
   :Cmod: "-2"
-  :Space: ''
   :Base: Cybergun
   :Ammo: 10 (c)
   :Mode: SA
@@ -1279,16 +871,11 @@
   :Avail: 8/6 days
   :Index: '2.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '2'
   :Conceal: '8'
   :Cmod: "-2"
-  :Space: ''
   :Base: Cybergun
   :Ammo: 10 (c)
   :Mode: SA
@@ -1302,16 +889,11 @@
   :Avail: 8/7 days
   :Index: '2.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '3'
   :Conceal: '6'
   :Cmod: "-3"
-  :Space: ''
   :Base: Cybergun
   :Ammo: 24 (c)
   :Mode: SA/BF
@@ -1325,16 +907,11 @@
   :Avail: 6/4 days
   :Index: '1.5'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '1'
   :Conceal: '10'
   :Cmod: "-0.5"
-  :Space: ''
   :Base: Cybergun
   :Ammo: 10 (c)
   :Mode: SA
@@ -1348,15 +925,7 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: sr3.303
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberarm,Cyberforearm,Cyberhand
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
   :Space: '10'
   :Base: Cyberlimb
 :Cyberlimb Cyberarm Synthetic:
@@ -1368,15 +937,8 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: sr3.303
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberarm,Cyberforearm,Cyberhand
-  :ECU: ''
   :Conceal: '8'
-  :Cmod: ''
   :Space: '5'
   :Base: Cyberlimb
 :Cyberlimb Cyberfoot Obvious:
@@ -1388,15 +950,7 @@
   :Avail: 3/4 days
   :Index: '1.0'
   :Page: mm.39
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberfoot
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
   :Space: '2'
   :Base: Cyberlimb
 :Cyberlimb Cyberfoot Synthetic:
@@ -1408,15 +962,8 @@
   :Avail: 3/4 days
   :Index: '1.0'
   :Page: mm.39
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberfoot
-  :ECU: ''
   :Conceal: '8'
-  :Cmod: ''
   :Space: '1'
   :Base: Cyberlimb
 :Cyberlimb Cyberforearm Obvious:
@@ -1428,15 +975,7 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: mm.39
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberforearm,Cyberhand
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
   :Space: '4'
   :Base: Cyberlimb
 :Cyberlimb Cyberforearm Synthetic:
@@ -1448,15 +987,8 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: mm.39
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberforearm,Cyberhand
-  :ECU: ''
   :Conceal: '8'
-  :Cmod: ''
   :Space: '2'
   :Base: Cyberlimb
 :Cyberlimb Cyberhand Obvious:
@@ -1468,15 +1000,7 @@
   :Avail: 3/4 days
   :Index: '1.0'
   :Page: mm.39
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberhand
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
   :Space: '2'
   :Base: Cyberlimb
 :Cyberlimb Cyberhand Synthetic:
@@ -1488,15 +1012,8 @@
   :Avail: 3/4 days
   :Index: '1.0'
   :Page: mm.39
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberhand
-  :ECU: ''
   :Conceal: '8'
-  :Cmod: ''
   :Space: '1'
   :Base: Cyberlimb
 :Cyberlimb Cyberleg Kid Stealth:
@@ -1508,16 +1025,7 @@
   :Avail: 4/48 hrs
   :Index: '1.0'
   :Page: mm.37
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberleg,Cyberforeleg,Cyberfoot
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Cyberlimb
 :Cyberlimb Cyberleg Obvious:
   :Name: Cyberlimb Cyberleg Obvious
@@ -1528,15 +1036,7 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: sr3.303
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberleg,Cyberforeleg,Cyberfoot
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
   :Space: '20'
   :Base: Cyberlimb
 :Cyberlimb Cyberleg Synthetic:
@@ -1548,15 +1048,8 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: sr3.303
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberleg,Cyberforeleg,Cyberfoot
-  :ECU: ''
   :Conceal: '8'
-  :Cmod: ''
   :Space: '10'
   :Base: Cyberlimb
 :Cyberlimb Cyberlowerleg Obvious:
@@ -1568,15 +1061,7 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: mm.39
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberlowerleg,Cyberfoot
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
   :Space: '8'
   :Base: Cyberlimb
 :Cyberlimb Cyberlowerleg Synthetic:
@@ -1588,15 +1073,8 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: mm.39
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberlowerleg,Cyberfoot
-  :ECU: ''
   :Conceal: '8'
-  :Cmod: ''
   :Space: '4'
   :Base: Cyberlimb
 :Cyberlimb Cyberskull Obvious:
@@ -1608,16 +1086,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: mm.28
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberskull
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Cyberlimb
 :Cyberlimb Cyberskull Synthetic:
   :Name: Cyberlimb Cyberskull Synthetic
@@ -1628,16 +1097,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: mm.28
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cyberskull
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Cyberlimb
 :Cyberlimb Cybertorso Obvious:
   :Name: Cyberlimb Cybertorso Obvious
@@ -1648,16 +1108,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: mm.28
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cybertorso
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Cyberlimb
 :Cyberlimb Cybertorso Synthetic:
   :Name: Cyberlimb Cybertorso Synthetic
@@ -1668,16 +1119,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: mm.28
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
   :Includes: Cybertorso
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Cyberlimb
 :Dampener:
   :Name: Dampener
@@ -1688,10 +1130,7 @@
   :Avail: 4/48 hrs
   :Index: '1.25'
   :Page: sr3.299
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberears
 :Data Compactor 1:
   :Name: Data Compactor 1
@@ -1702,16 +1141,6 @@
   :Avail: 6/60 hrs
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Data Compactor
 :Data Compactor 2:
   :Name: Data Compactor 2
@@ -1722,16 +1151,6 @@
   :Avail: 6/60 hrs
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Data Compactor
 :Data Compactor 3:
   :Name: Data Compactor 3
@@ -1742,16 +1161,6 @@
   :Avail: 6/60 hrs
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Data Compactor
 :Data Compactor 4:
   :Name: Data Compactor 4
@@ -1762,16 +1171,6 @@
   :Avail: 6/60 hrs
   :Index: '1.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Data Compactor
 :Data Filter:
   :Name: Data Filter
@@ -1819,9 +1218,7 @@
   :Index: '2.0'
   :Page: mm.14
   :Required: Cybereyes
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Decryption module:
   :Name: Decryption module
@@ -1833,11 +1230,8 @@
   :Index: '2.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.25'
 :Dermal Plating 1:
   :Name: Dermal Plating 1
@@ -1848,21 +1242,9 @@
   :Avail: 4/12 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Dermal Sheathing, Orthoskin
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Dermal Plating
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +1
+  :Stats: attributes[Body:+1]
 :Dermal Plating 2:
   :Name: Dermal Plating 2
   :Essence: '1.0'
@@ -1872,21 +1254,9 @@
   :Avail: 4/12 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Dermal Sheathing, Orthoskin
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Dermal Plating
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +2
+  :Stats: attributes[Body:+2]
 :Dermal Plating 3:
   :Name: Dermal Plating 3
   :Essence: '1.5'
@@ -1896,21 +1266,9 @@
   :Avail: 4/12 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Dermal Sheathing, Orthoskin
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Dermal Plating
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +3
+  :Stats: attributes[Body:+3]
 :Dermal Sheathing 1:
   :Name: Dermal Sheathing 1
   :Essence: '0.7'
@@ -1920,21 +1278,9 @@
   :Avail: 6/14 days
   :Index: '1.5'
   :Page: mm.28
-  :Required: ''
   :Conflicts: Dermal Plating, Orthoskin
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Dermal Sheathing
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +2,Impact +1
+  :Stats: attributes[Body:+2];[Impact:+1]
 :Dermal Sheathing 2:
   :Name: Dermal Sheathing 2
   :Essence: '1.4'
@@ -1944,21 +1290,9 @@
   :Avail: 6/14 days
   :Index: '1.5'
   :Page: mm.28
-  :Required: ''
   :Conflicts: Dermal Plating, Orthoskin
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Dermal Sheathing
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +3,Impact +1
+  :Stats: attributes[Body:+3];armor[Impact:+1]
 :Dermal Sheathing 3:
   :Name: Dermal Sheathing 3
   :Essence: '2.1'
@@ -1968,21 +1302,9 @@
   :Avail: 8/14 days
   :Index: '1.5'
   :Page: mm.28
-  :Required: ''
   :Conflicts: Dermal Plating, Orthoskin
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Dermal Sheathing
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Body +4,Impact +2
+  :Stats: attributes[Body:+4];armor[Impact:+2]
 :Diagnosis Processor:
   :Name: Diagnosis Processor
   :Essence: '0.2'
@@ -2010,10 +1332,7 @@
   :Avail: 4/36 hrs
   :Index: '1.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :ECCM 1:
   :Name: ECCM 1
@@ -2025,15 +1344,9 @@
   :Index: '2.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: ECCM
 :ECCM 10:
   :Name: ECCM 10
@@ -2045,15 +1358,9 @@
   :Index: '5.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: ECCM
 :ECCM 2:
   :Name: ECCM 2
@@ -2065,15 +1372,9 @@
   :Index: '2.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: ECCM
 :ECCM 3:
   :Name: ECCM 3
@@ -2085,15 +1386,9 @@
   :Index: '2.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: ECCM
 :ECCM 4:
   :Name: ECCM 4
@@ -2105,15 +1400,9 @@
   :Index: '3.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: ECCM
 :ECCM 5:
   :Name: ECCM 5
@@ -2125,15 +1414,9 @@
   :Index: '3.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: ECCM
 :ECCM 6:
   :Name: ECCM 6
@@ -2145,15 +1428,9 @@
   :Index: '3.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: ECCM
 :ECCM 7:
   :Name: ECCM 7
@@ -2165,15 +1442,9 @@
   :Index: '4.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: ECCM
 :ECCM 8:
   :Name: ECCM 8
@@ -2185,15 +1456,9 @@
   :Index: '4.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: ECCM
 :ECCM 9:
   :Name: ECCM 9
@@ -2205,15 +1470,9 @@
   :Index: '4.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: ECCM
 :Port headware:
   :Name: Port headware
@@ -2245,7 +1504,6 @@
   :Index: '4.0'
   :Page: mm.22
   :Required: Tactical Computer
-  :Conflicts: ''
   :Option: 'yes'
 :Generic port:
   :Name: Generic port
@@ -2257,7 +1515,6 @@
   :Index: '4.0'
   :Page: mm.22
   :Required: Tactical Computer
-  :Conflicts: ''
   :Option: 'yes'
 :Electronic Magnification 1:
   :Name: Electronic Magnification 1
@@ -2268,17 +1525,10 @@
   :Avail: 5/48 hrs
   :Index: '1.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Electronic Magnification
+  :Stats: senses[Magnification Vision|Electronic:1]
 :Electronic Magnification 2:
   :Name: Electronic Magnification 2
   :Essence: '0.1'
@@ -2288,17 +1538,10 @@
   :Avail: 5/48 hrs
   :Index: '1.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Electronic Magnification
+  :Stats: senses[Magnification Vision|Electronic:2]
 :Electronic Magnification 3:
   :Name: Electronic Magnification 3
   :Essence: '0.1'
@@ -2308,17 +1551,10 @@
   :Avail: 5/48 hrs
   :Index: '1.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Electronic Magnification
+  :Stats: senses[Magnification Vision|Electronic:3]
 :Encephalon 1:
   :Name: Encephalon 1
   :Essence: '0.75'
@@ -2328,17 +1564,8 @@
   :Avail: 6/12 days
   :Index: '2.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Encephalon
+  :Stats: special[Taskpool:+1]
 :Encephalon 2:
   :Name: Encephalon 2
   :Essence: '1.75'
@@ -2348,17 +1575,8 @@
   :Avail: 6/12 days
   :Index: '2.0'
   :Page: mm.20
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Encephalon
+  :Stats: special[Taskpool:+2]
 :Encryption module:
   :Name: Encryption module
   :Essence: '0.2'
@@ -2369,11 +1587,8 @@
   :Index: '3.0'
   :Page: mm.24
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.25'
 :External Clip Port:
   :Name: External Clip Port
@@ -2385,17 +1600,13 @@
   :Index: '2.0'
   :Page: mm.41
   :Required: Cybergun
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '0.25'
   :Conceal: "-1"
   :Cmod: "-1"
 :External Program:
   :Name: External Program
-  :Essence: ''
   :Price: Mp*150¥
   :Type: SE
   :Legality: Legal
@@ -2403,7 +1614,6 @@
   :Index: '1.25'
   :Page: mm.14
   :Required: Gas Spectrometer
-  :Conflicts: ''
   :Option: 'yes'
 :Eye Display:
   :Name: Eye Display
@@ -2424,9 +1634,7 @@
   :Index: '2.0'
   :Page: mm.16
   :Required: Cybereyes
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Eyeweapon Gun:
   :Name: Eyeweapon Gun
@@ -2438,9 +1646,7 @@
   :Index: '3.0'
   :Page: mm.16
   :Required: Cybereyes
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Fangs Extendable:
   :Name: Fangs Extendable
@@ -2451,19 +1657,8 @@
   :Avail: 5/48 hrs
   :Index: '1.0'
   :Page: mm.42
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
   :Conceal: '9'
-  :Cmod: ''
-  :Space: ''
   :Base: Fangs
-  :Ammo: ''
-  :Mode: ''
   :Damage: "(STR+1)L"
 :Fangs:
   :Name: Fangs
@@ -2474,19 +1669,8 @@
   :Avail: 5/48 hrs
   :Index: '1.0'
   :Page: mm.42
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
   :Conceal: '5'
-  :Cmod: ''
-  :Space: ''
   :Base: Fangs
-  :Ammo: ''
-  :Mode: ''
   :Damage: "(STR+1)L"
 :Filtration Blood 1:
   :Name: Filtration Blood 1
@@ -2497,16 +1681,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Blood
 :Filtration Blood 2:
   :Name: Filtration Blood 2
@@ -2517,16 +1692,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Blood
 :Filtration Blood 3:
   :Name: Filtration Blood 3
@@ -2537,16 +1703,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Blood
 :Filtration Blood 4:
   :Name: Filtration Blood 4
@@ -2557,16 +1714,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Blood
 :Filtration Blood 5:
   :Name: Filtration Blood 5
@@ -2577,16 +1725,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Blood
 :Filtration Blood 6:
   :Name: Filtration Blood 6
@@ -2597,16 +1736,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Blood
 :Filtration Blood 7:
   :Name: Filtration Blood 7
@@ -2617,16 +1747,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Blood
 :Filtration Blood 8:
   :Name: Filtration Blood 8
@@ -2637,16 +1758,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Blood
 :Filtration Blood 9:
   :Name: Filtration Blood 9
@@ -2657,16 +1769,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Blood
 :Filtration Blood 10:
   :Name: Filtration Blood 10
@@ -2677,16 +1780,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Blood
 :Filtration IngestedToxin 1:
   :Name: Filtration IngestedToxin 1
@@ -2697,16 +1791,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration IngestedToxin
 :Filtration IngestedToxin 2:
   :Name: Filtration IngestedToxin 2
@@ -2717,16 +1802,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration IngestedToxin
 :Filtration IngestedToxin 3:
   :Name: Filtration IngestedToxin 3
@@ -2737,16 +1813,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration IngestedToxin
 :Filtration IngestedToxin 4:
   :Name: Filtration IngestedToxin 4
@@ -2757,16 +1824,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration IngestedToxin
 :Filtration IngestedToxin 5:
   :Name: Filtration IngestedToxin 5
@@ -2777,16 +1835,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration IngestedToxin
 :Filtration IngestedToxin 6:
   :Name: Filtration IngestedToxin 6
@@ -2797,16 +1846,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration IngestedToxin
 :Filtration IngestedToxin 7:
   :Name: Filtration IngestedToxin 7
@@ -2817,16 +1857,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration IngestedToxin
 :Filtration IngestedToxin 8:
   :Name: Filtration IngestedToxin 8
@@ -2837,16 +1868,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration IngestedToxin
 :Filtration IngestedToxin 9:
   :Name: Filtration IngestedToxin 9
@@ -2857,16 +1879,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration IngestedToxin
 :Filtration IngestedToxin 10:
   :Name: Filtration IngestedToxin 10
@@ -2877,16 +1890,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration IngestedToxin
 :Filtratlon Air 1:
   :Name: Filtratlon Air 1
@@ -2897,16 +1901,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Air
 :Filtratlon Air 2:
   :Name: Filtratlon Air 2
@@ -2917,16 +1912,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Air
 :Filtratlon Air 3:
   :Name: Filtratlon Air 3
@@ -2937,16 +1923,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Air
 :Filtratlon Air 4:
   :Name: Filtratlon Air 4
@@ -2957,16 +1934,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Air
 :Filtratlon Air 5:
   :Name: Filtratlon Air 5
@@ -2977,16 +1945,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Air
 :Filtratlon Air 6:
   :Name: Filtratlon Air 6
@@ -2997,16 +1956,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Air
 :Filtratlon Air 7:
   :Name: Filtratlon Air 7
@@ -3017,16 +1967,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Air
 :Filtratlon Air 8:
   :Name: Filtratlon Air 8
@@ -3037,16 +1978,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Air
 :Filtratlon Air 9:
   :Name: Filtratlon Air 9
@@ -3057,16 +1989,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Air
 :Filtratlon Air 10:
   :Name: Filtratlon Air 10
@@ -3077,16 +2000,7 @@
   :Avail: 6/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Filtration Air
 :Fingertip Compartment:
   :Name: Fingertip Compartment
@@ -3106,10 +2020,7 @@
   :Avail: 5/48 hrs
   :Index: '1.25'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Flex Hands:
   :Name: Flex Hands
@@ -3129,18 +2040,12 @@
   :Avail: 6/7 days
   :Index: '2.0'
   :Page: mm.28
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberfoot
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-1"
 :Full Limb Strength Enhancement 1:
   :Name: Full Limb Strength Enhancement 1
-  :Essence: ''
   :Price: 50000¥
   :Type: CY
   :Legality: 6P-Q
@@ -3148,19 +2053,13 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Cyberarm,Cyberleg
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: Full Limb Strength Enhancement
 :Full Limb Strength Enhancement 2:
   :Name: Full Limb Strength Enhancement 2
-  :Essence: ''
   :Price: 100000¥
   :Type: CY
   :Legality: 6P-Q
@@ -3168,19 +2067,13 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Cyberarm,Cyberleg
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-2"
-  :Space: ''
   :Base: Full Limb Strength Enhancement
 :Full Limb Strength Enhancement 3:
   :Name: Full Limb Strength Enhancement 3
-  :Essence: ''
   :Price: 150000¥
   :Type: CY
   :Legality: 6P-Q
@@ -3188,15 +2081,10 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Cyberarm,Cyberleg
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Full Limb Strength Enhancement
 :Full Limb Strength Enhancementplus 4:
   :Name: Full Limb Strength Enhancementplus 4
@@ -3208,15 +2096,11 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Full Limb Strength Enhancement 3
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '1'
-  :Conceal: ''
   :Cmod: "-2"
-  :Space: ''
   :Base: Full Limb Strength Enhancement
 :Full Limb Strength Enhancementplus 5:
   :Name: Full Limb Strength Enhancementplus 5
@@ -3228,15 +2112,11 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Full Limb Strength Enhancement 3
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '2'
-  :Conceal: ''
   :Cmod: "-4"
-  :Space: ''
   :Base: Full Limb Strength Enhancement
 :Full Limb Strength Enhancementplus 6:
   :Name: Full Limb Strength Enhancementplus 6
@@ -3248,15 +2128,11 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Full Limb Strength Enhancement 3
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '3'
-  :Conceal: ''
   :Cmod: "-6"
-  :Space: ''
   :Base: Full Limb Strength Enhancement
 :Gas Spectrometer:
   :Name: Gas Spectrometer
@@ -3267,18 +2143,11 @@
   :Avail: 4/6 days
   :Index: '1.0'
   :Page: mm.14
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-0.5 "
 :Gyromount:
   :Name: Gyromount
-  :Essence: ''
   :Price: 40000¥
   :Type: CY
   :Legality: 4P-R
@@ -3286,13 +2155,9 @@
   :Index: '2.0'
   :Page: mm.36
   :Required: Cyberarm
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberarm
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-1"
 :Hand Blade Retractable:
   :Name: Hand Blade Retractable
@@ -3303,19 +2168,12 @@
   :Avail: 6/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberhand
-  :Includes: ''
   :ECU: '1'
   :Conceal: '12'
   :Cmod: "-0.5"
-  :Space: ''
   :Base: Hand Blade
-  :Ammo: ''
-  :Mode: ''
   :Damage: "(STR+3)L"
 :Hand Blade:
   :Name: Hand Blade
@@ -3326,19 +2184,12 @@
   :Avail: 6/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberhand
-  :Includes: ''
   :ECU: '0.5'
   :Conceal: '5'
   :Cmod: "-5"
-  :Space: ''
   :Base: Hand Blade
-  :Ammo: ''
-  :Mode: ''
   :Damage: "(STR+3)L"
 :Hand Razors Retractable:
   :Name: Hand Razors Retractable
@@ -3349,19 +2200,12 @@
   :Avail: 5/72 hrs
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberhand
-  :Includes: ''
   :ECU: '0.5'
   :Conceal: '12'
   :Cmod: "-0.5"
-  :Space: ''
   :Base: Hand Razors
-  :Ammo: ''
-  :Mode: ''
   :Damage: "(STR+2)L"
 :Hand Razors:
   :Name: Hand Razors
@@ -3372,19 +2216,12 @@
   :Avail: 3/72 hrs
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberhand
-  :Includes: ''
   :ECU: '0.25'
   :Conceal: '6'
   :Cmod: "-0.5"
-  :Space: ''
   :Base: Hand Razors
-  :Ammo: ''
-  :Mode: ''
   :Damage: "(STR+2)L"
 :Hearing Amplification:
   :Name: Hearing Amplification
@@ -3395,11 +2232,9 @@
   :Avail: 4/48 hrs
   :Index: '1.25'
   :Page: sr3.299
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberears
+  :Stats: senses[Improved Hearing|Electronic]
 :High Frequency:
   :Name: High Frequency
   :Essence: '0.2'
@@ -3409,14 +2244,11 @@
   :Avail: 4/48 hrs
   :Index: '1.25'
   :Page: sr3.299
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberears
+  :Stats: senses[High-Frequency Hearing|Electronic]
 :High-frequency Modulator:
   :Name: High-frequency Modulator
-  :Essence: ''
   :Price: 8000¥
   :Type: CO
   :Legality: 6P-Q
@@ -3424,7 +2256,6 @@
   :Index: '1.25'
   :Page: mm.18
   :Required: Internal Voice Mask
-  :Conflicts: ''
   :Option: 'yes'
 :Holster:
   :Name: Holster
@@ -3436,11 +2267,7 @@
   :Index: '1.0'
   :Page: mm.37
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '4'
   :Conceal: '10'
 :Hook hand:
@@ -3461,19 +2288,12 @@
   :Avail: 5/48 hrs
   :Index: '1.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberskull
-  :Includes: ''
   :ECU: '1'
   :Conceal: '8'
   :Cmod: "-2"
-  :Space: ''
   :Base: Horns
-  :Ammo: ''
-  :Mode: ''
   :Damage: "(STR)M"
 :Horns:
   :Name: Horns
@@ -3484,19 +2304,11 @@
   :Avail: 4/48 hrs
   :Index: '1.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberskull
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Horns
-  :Ammo: ''
-  :Mode: ''
   :Damage: "(STR)M"
 :Hydraulic Jack 1:
   :Name: Hydraulic Jack 1
@@ -3507,16 +2319,11 @@
   :Avail: 5/6 days
   :Index: '1.0'
   :Page: mm.29
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '5'
   :Cyberlimb: Cyberleg
-  :Includes: ''
   :ECU: '4.5'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Hydraulic Jack
 :Hydraulic Jack 2:
   :Name: Hydraulic Jack 2
@@ -3527,16 +2334,11 @@
   :Avail: 5/6 days
   :Index: '1.0'
   :Page: mm.29
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '5'
   :Cyberlimb: Cyberleg
-  :Includes: ''
   :ECU: '5'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Hydraulic Jack
 :Hydraulic Jack 3:
   :Name: Hydraulic Jack 3
@@ -3547,16 +2349,11 @@
   :Avail: 5/6 days
   :Index: '1.0'
   :Page: mm.29
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '5'
   :Cyberlimb: Cyberleg
-  :Includes: ''
   :ECU: '5.5'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Hydraulic Jack
 :Hydraulic Jack 4:
   :Name: Hydraulic Jack 4
@@ -3567,16 +2364,11 @@
   :Avail: 5/6 days
   :Index: '1.0'
   :Page: mm.29
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '5'
   :Cyberlimb: Cyberleg
-  :Includes: ''
   :ECU: '6'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Hydraulic Jack
 :Hydraulic Jack 5:
   :Name: Hydraulic Jack 5
@@ -3587,16 +2379,11 @@
   :Avail: 5/6 days
   :Index: '1.0'
   :Page: mm.29
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '5'
   :Cyberlimb: Cyberleg
-  :Includes: ''
   :ECU: '6.5'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Hydraulic Jack
 :Image Link:
   :Name: Image Link
@@ -3607,10 +2394,7 @@
   :Avail: 4/48 hrs
   :Index: '2.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Image Scanner:
   :Name: Image Scanner
@@ -3622,11 +2406,9 @@
   :Index: '0.25'
   :Page: mm.28
   :Required: Ruthenium
-  :Conflicts: ''
   :Option: 'yes'
 :Impact Armor:
   :Name: Impact Armor
-  :Essence: ''
   :Price: 4000¥
   :Type: BO
   :Legality: Legal
@@ -3634,19 +2416,14 @@
   :Index: '1.0'
   :Page: 'mm.37 '
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-0.5"
-  :Space: ''
   :Base: Armor
 :Increased Volume:
   :Name: Increased Volume
-  :Essence: ''
   :Price: 10000¥
   :Type: BO
   :Legality: Legal
@@ -3654,7 +2431,6 @@
   :Index: '1.0'
   :Page: sr3.302
   :Required: Voice Modulator
-  :Conflicts: ''
   :Option: 'yes'
 :Independent Cybereyes Pair:
   :Name: Independent Cybereyes Pair
@@ -3685,7 +2461,6 @@
   :Page: mm.32
 :Injector:
   :Name: Injector
-  :Essence: ''
   :Price: cont+500¥
   :Type: BO
   :Legality: 6P-N
@@ -3693,11 +2468,9 @@
   :Index: '1.5'
   :Page: 'mm.26 '
   :Required: Body Compartment
-  :Conflicts: ''
   :Option: 'yes'
 :Integrity Enhancement 1:
   :Name: Integrity Enhancement 1
-  :Essence: ''
   :Price: 30000¥
   :Type: CY
   :Legality: 6P-N
@@ -3705,19 +2478,13 @@
   :Index: '1.5'
   :Page: mm.39
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '1'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: Integrity Enhancement
 :Integrity Enhancement 2:
   :Name: Integrity Enhancement 2
-  :Essence: ''
   :Price: 60000¥
   :Type: CY
   :Legality: 6P-N
@@ -3725,19 +2492,13 @@
   :Index: '1.5'
   :Page: mm.39
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '2'
-  :Conceal: ''
   :Cmod: "-2"
-  :Space: ''
   :Base: Integrity Enhancement
 :Integrity Enhancement 3:
   :Name: Integrity Enhancement 3
-  :Essence: ''
   :Price: 90000¥
   :Type: CY
   :Legality: 6P-N
@@ -3745,15 +2506,10 @@
   :Index: '1.5'
   :Page: mm.39
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '3'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Integrity Enhancement
 :Internal GPS:
   :Name: Internal GPS
@@ -3773,16 +2529,6 @@
   :Avail: 3/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Internal Simlink
 :Internal Simlink 2:
   :Name: Internal Simlink 2
@@ -3793,16 +2539,6 @@
   :Avail: 3/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Internal Simlink
 :Internal Simlink 3:
   :Name: Internal Simlink 3
@@ -3813,16 +2549,6 @@
   :Avail: 3/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Internal Simlink
 :Internal Simlink 4:
   :Name: Internal Simlink 4
@@ -3833,16 +2559,6 @@
   :Avail: 3/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Internal Simlink
 :Internal Simlink 5:
   :Name: Internal Simlink 5
@@ -3853,16 +2569,6 @@
   :Avail: 3/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Internal Simlink
 :Internal Simlink 6:
   :Name: Internal Simlink 6
@@ -3873,16 +2579,6 @@
   :Avail: 3/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Internal Simlink
 :Internal Simlink 7:
   :Name: Internal Simlink 7
@@ -3893,16 +2589,6 @@
   :Avail: 3/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Internal Simlink
 :Internal Simlink 8:
   :Name: Internal Simlink 8
@@ -3913,16 +2599,6 @@
   :Avail: 3/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Internal Simlink
 :Internal Simlink 9:
   :Name: Internal Simlink 9
@@ -3933,16 +2609,6 @@
   :Avail: 3/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Internal Simlink
 :Internal Simlink 10:
   :Name: Internal Simlink 10
@@ -3953,16 +2619,6 @@
   :Avail: 3/5 days
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Internal Simlink
 :Internal Voice Mask:
   :Name: Internal Voice Mask
@@ -3973,9 +2629,6 @@
   :Avail: 6/48 hrs
   :Index: '1.0'
   :Page: mm.18
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '10'
 :Invoked Memory Stimulator:
   :Name: Invoked Memory Stimulator
@@ -4014,9 +2667,7 @@
   :Index: '3.0'
   :Page: mm.14
   :Required: Basic Eyelaser High Power
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Laser Microphone:
   :Name: Laser Microphone
@@ -4028,7 +2679,6 @@
   :Index: '2.0'
   :Page: mm.14
   :Required: Basic Eyelaser Medium Power, Basic Eyelaser High Power
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
   :Cyberlimb: Cybereyes
@@ -4042,11 +2692,8 @@
   :Index: '2.0'
   :Page: mm.41
   :Required: Cybergun
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '1'
   :Conceal: "-1"
   :Cmod: "-1"
@@ -4060,9 +2707,7 @@
   :Index: '2.0'
   :Page: ct.23
   :Required: Basic Eyelaser
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Light System:
   :Name: Light System
@@ -4074,9 +2719,7 @@
   :Index: '1.5'
   :Page: mm.15
   :Required: Cybereyes
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Limited Simsense Rig:
   :Name: Limited Simsense Rig
@@ -4089,7 +2732,6 @@
   :Page: mm.32
 :Lockpick Gun:
   :Name: Lockpick Gun
-  :Essence: ''
   :Price: L*250¥
   :Type: BO
   :Legality: 6P-Q
@@ -4097,12 +2739,10 @@
   :Index: '2.0'
   :Page: 'mm.26 '
   :Required: Body Compartment
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
 :Lockpicks:
   :Name: Lockpicks
-  :Essence: ''
   :Price: 500¥
   :Type: BO
   :Legality: 6P-Q
@@ -4110,7 +2750,6 @@
   :Index: '3.0'
   :Page: 'mm.26 '
   :Required: Body Compartment
-  :Conflicts: ''
   :Option: 'yes'
 :Low Frequency:
   :Name: Low Frequency
@@ -4121,11 +2760,9 @@
   :Avail: 4/48 hrs
   :Index: '1.25'
   :Page: sr3.299
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberears
+  :Stats: senses[Low-Frequency Hearing|Electronic]
 :Low-Light:
   :Name: Low-Light
   :Essence: '0.2'
@@ -4135,14 +2772,11 @@
   :Avail: 4/36 hrs
   :Index: '1.25'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
+  :Stats: senses[Low-Light Vision|Electronic]
 :Low-frequency Modulator:
   :Name: Low-frequency Modulator
-  :Essence: ''
   :Price: 8000¥
   :Type: 'CO '
   :Legality: 6P-Q
@@ -4150,11 +2784,9 @@
   :Index: '1.25'
   :Page: mm.18
   :Required: Internal Voice Mask
-  :Conflicts: ''
   :Option: 'yes'
 :Lower Limb Strength Enhancement 1:
   :Name: Lower Limb Strength Enhancement 1
-  :Essence: ''
   :Price: 35000¥
   :Type: CY
   :Legality: 6P-Q
@@ -4162,19 +2794,13 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Cyberforearm, Cyberlowerleg
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: Lower Limb Strength Enhancement
 :Lower Limb Strength Enhancement 2:
   :Name: Lower Limb Strength Enhancement 2
-  :Essence: ''
   :Price: 70000¥
   :Type: CY
   :Legality: 6P-Q
@@ -4182,19 +2808,13 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Cyberforearm, Cyberlowerleg
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-2"
-  :Space: ''
   :Base: Lower Limb Strength Enhancement
 :Lower Limb Strength Enhancement 3:
   :Name: Lower Limb Strength Enhancement 3
-  :Essence: ''
   :Price: 105000¥
   :Type: CY
   :Legality: 6P-Q
@@ -4202,15 +2822,10 @@
   :Index: '1.5'
   :Page: sr3.303
   :Required: Cyberforearm, Cyberlowerleg
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Lower Limb Strength Enhancement
 :Magnetic System:
   :Name: Magnetic System
@@ -4221,14 +2836,9 @@
   :Avail: 6/7 days
   :Index: '2.0'
   :Page: mm.30
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '3'
-  :Conceal: ''
   :Cmod: "-1"
 :Memory:
   :Name: Memory
@@ -4248,11 +2858,9 @@
   :Avail: 5/48 hrs
   :Index: '1.0'
   :Page: mm.17
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
+  :Stats: senses[Microscopic Vision|Electronic]
 :Move-by-wire 1:
   :Name: Move-by-wire 1
   :Essence: '2.5'
@@ -4262,21 +2870,9 @@
   :Avail: 8/10 days
   :Index: '2.5'
   :Page: mm.30
-  :Required: ''
   :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Move-by-wire
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Quickness +1,Reaction +2,Initative +1
+  :Stats: attributes[Quickness:+1];derived[Reaction|CBM:+2,Initative|CBM:+1]
 :Move-by-wire 2:
   :Name: Move-by-wire 2
   :Essence: '4'
@@ -4286,21 +2882,9 @@
   :Avail: 12/20 days
   :Index: '3.0'
   :Page: mm.30
-  :Required: ''
   :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Move-by-wire
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Quickness +2,Reaction +4,Initative +2
+  :Stats: attributes[Quickness:+2];derived[Reaction|CBM:+4,Initative|CBM:+2]
 :Move-by-wire 3:
   :Name: Move-by-wire 3
   :Essence: '5.5'
@@ -4310,21 +2894,9 @@
   :Avail: 18/30 days
   :Index: '3.0'
   :Page: mm.30
-  :Required: ''
   :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Move-by-wire
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Quickness +3,Reaction +6,Initative +3
+  :Stats: attributes[Quickness:+3];derived[Reaction|CBM:+6,Initative|CBM:+3]
 :Move-by-wire 4:
   :Name: Move-by-wire 4
   :Essence: '7'
@@ -4334,21 +2906,9 @@
   :Avail: 20/45 days
   :Index: '3.5'
   :Page: mm.30
-  :Required: ''
   :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Move-by-wire
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Quickness +4,Reaction +8,Initiative +4
+  :Stats: attributes[Quickness:+4];derived[Reaction|CBM:+8,Initiative|CBM:+4]
 :Muscle Replacement 1:
   :Name: Muscle Replacement 1
   :Essence: '1'
@@ -4358,21 +2918,10 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Muscle Augmentation, Muscle Toner
-  :Option: ''
   :Maxlevel: '4'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Muscle Replacement
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Strength +1
+  :Stats: attributes[Strength:+1]
 :Muscle Replacement 2:
   :Name: Muscle Replacement 2
   :Essence: '2'
@@ -4382,21 +2931,10 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Muscle Augmentation, Muscle Toner
-  :Option: ''
   :Maxlevel: '4'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Muscle Replacement
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Strength +2
+  :Stats: attributes[Strength:+2]
 :Muscle Replacement 3:
   :Name: Muscle Replacement 3
   :Essence: '3'
@@ -4406,21 +2944,10 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Muscle Augmentation, Muscle Toner
-  :Option: ''
   :Maxlevel: '4'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Muscle Replacement
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Strength +3
+  :Stats: attributes[Strength:+3]
 :Muscle Replacement 4:
   :Name: Muscle Replacement 4
   :Essence: '4'
@@ -4430,21 +2957,10 @@
   :Avail: 4/4 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Muscle Augmentation, Muscle Toner
-  :Option: ''
   :Maxlevel: '4'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Muscle Replacement
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Strength +4
+  :Stats: attributes[Strength:+4]
 :OXSYS Cybergill:
   :Name: OXSYS Cybergill
   :Essence: '0.75'
@@ -4472,17 +2988,10 @@
   :Avail: 4/48 hrs
   :Index: '1.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Optical Magnification
+  :Stats: senses[Magnification Vision|Optical:1]
 :Optical Magnification 2:
   :Name: Optical Magnification 2
   :Essence: '0.2'
@@ -4492,17 +3001,10 @@
   :Avail: 4/48 hrs
   :Index: '1.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Optical Magnification
+  :Stats: senses[Magnification Vision|Optical:2]
 :Optical Magnification 3:
   :Name: Optical Magnification 3
   :Essence: '0.2'
@@ -4512,17 +3014,10 @@
   :Avail: 4/48 hrs
   :Index: '1.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Optical Magnification
+  :Stats: senses[Magnification Vision|Optical:3]
 :Opticam:
   :Name: Opticam
   :Essence: '0.5'
@@ -4532,10 +3027,7 @@
   :Avail: 5/72 hrs
   :Index: '2.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Optiscan Link:
   :Name: Optiscan Link
@@ -4547,13 +3039,10 @@
   :Index: '3.0'
   :Page: mm.14
   :Required: Basic Eyelaser
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Optiscan Remote Adaptor:
   :Name: Optiscan Remote Adaptor
-  :Essence: ''
   :Price: 2000¥
   :Type: SE
   :Legality: 3P-N
@@ -4561,9 +3050,7 @@
   :Index: '2.0'
   :Page: mm.14
   :Required: Basic Eyelaser
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Oral Dart:
   :Name: Oral Dart
@@ -4610,14 +3097,9 @@
   :Avail: 5/6 days
   :Index: '1.5'
   :Page: mm.18
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '1'
-  :Conceal: ''
   :Cmod: "-0.5"
 :Peg leg. hip length:
   :Name: Peg leg. hip length
@@ -4639,7 +3121,6 @@
   :Page: mm.39
 :Personalized Safety:
   :Name: Personalized Safety
-  :Essence: ''
   :Price: 200¥
   :Type: BO
   :Legality: Legal
@@ -4656,21 +3137,16 @@
   :Index: '1.0'
   :Page: sr3.302
   :Required: Voice Modulator
-  :Conflicts: ''
   :Option: 'yes'
 :Protective Covers:
   :Name: Protective Covers
-  :Essence: ''
   :Price: 500¥
   :Type: SE
   :Legality: Legal
   :Avail: 4/48 hrs
   :Index: '1.5'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Protocol eumulation module:
   :Name: Protocol eumulation module
@@ -4682,15 +3158,11 @@
   :Index: '2.0'
   :Page: mm.25
   :Required: Cranial Remote Deck
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '0.25'
 :Quickness Enhancement 1:
   :Name: Quickness Enhancement 1
-  :Essence: ''
   :Price: 30000¥
   :Type: CY
   :Legality: 6P-Q
@@ -4698,19 +3170,12 @@
   :Index: '1.5'
   :Page: mm.40
   :Required: Cyberarm,Cyberleg
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-0.5"
-  :Space: ''
   :Base: Quickness Enhancement
 :Quickness Enhancement 2:
   :Name: Quickness Enhancement 2
-  :Essence: ''
   :Price: 60000¥
   :Type: CY
   :Legality: 6P-Q
@@ -4718,19 +3183,12 @@
   :Index: '1.5'
   :Page: mm.40
   :Required: Cyberarm,Cyberleg
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: Quickness Enhancement
 :Quickness Enhancement 3:
   :Name: Quickness Enhancement 3
-  :Essence: ''
   :Price: 90000¥
   :Type: CY
   :Legality: 6P-Q
@@ -4738,15 +3196,9 @@
   :Index: '1.5'
   :Page: mm.40
   :Required: Cyberarm,Cyberleg
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
   :Cmod: "-1.5"
-  :Space: ''
   :Base: Quickness Enhancement
 :Quickness Enhancementplus 4:
   :Name: Quickness Enhancementplus 4
@@ -4758,15 +3210,10 @@
   :Index: '1.5'
   :Page: mm.40
   :Required: Quickness Enhancement 3
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '1'
-  :Conceal: ''
   :Cmod: "-1"
-  :Space: ''
   :Base: Quickness Enhancement
 :Quickness Enhancementplus 5:
   :Name: Quickness Enhancementplus 5
@@ -4778,15 +3225,10 @@
   :Index: '1.5'
   :Page: mm.40
   :Required: Quickness Enhancement 3
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '2'
-  :Conceal: ''
   :Cmod: "-2"
-  :Space: ''
   :Base: Quickness Enhancement
 :Quickness Enhancementplus 6:
   :Name: Quickness Enhancementplus 6
@@ -4798,15 +3240,10 @@
   :Index: '1.5'
   :Page: mm.40
   :Required: Quickness Enhancement 3
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '3'
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '3'
-  :Conceal: ''
   :Cmod: "-3"
-  :Space: ''
   :Base: Quickness Enhancement
 :RAS Override:
   :Name: RAS Override
@@ -4853,10 +3290,7 @@
   :Avail: 8/48 hrs
   :Index: '1.5'
   :Page: ssc.80
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Reaction Enhancer 1:
   :Name: Reaction Enhancer 1
@@ -4867,21 +3301,9 @@
   :Avail: 6/7 days
   :Index: '2.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '6'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Reaction Enhancer
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +1
+  :Stats: attributes[Reaction|CBM]:+1]
 :Reaction Enhancer 2:
   :Name: Reaction Enhancer 2
   :Essence: '0.6'
@@ -4891,21 +3313,9 @@
   :Avail: 6/7 days
   :Index: '2.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '6'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Reaction Enhancer
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +2
+  :Stats: attributes[Reaction|CBM]:+2]
 :Reaction Enhancer 3:
   :Name: Reaction Enhancer 3
   :Essence: '0.9'
@@ -4915,21 +3325,9 @@
   :Avail: 6/7 days
   :Index: '2.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '6'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Reaction Enhancer
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +3
+  :Stats: attributes[Reaction|CBM]:+3]
 :Reaction Enhancer 4:
   :Name: Reaction Enhancer 4
   :Essence: '1.2'
@@ -4939,21 +3337,9 @@
   :Avail: 6/7 days
   :Index: '2.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '6'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Reaction Enhancer
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +4
+  :Stats: attributes[Reaction|CBM]:+4]
 :Reaction Enhancer 5:
   :Name: Reaction Enhancer 5
   :Essence: '1.5'
@@ -4963,21 +3349,9 @@
   :Avail: 6/7 days
   :Index: '2.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '6'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Reaction Enhancer
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +5
+  :Stats: attributes[Reaction|CBM]:+5]
 :Reaction Enhancer 6:
   :Name: Reaction Enhancer 6
   :Essence: '1.8'
@@ -4987,21 +3361,9 @@
   :Avail: 6/7 days
   :Index: '2.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
   :Maxlevel: '6'
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Reaction Enhancer
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +6
+  :Stats: attributes[Reaction|CBM]:+6]
 :Recorder:
   :Name: Recorder
   :Essence: '0.3'
@@ -5011,10 +3373,7 @@
   :Avail: 8/48 hrs
   :Index: '2.0'
   :Page: sr3.299
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberears
 :Reflex trigger:
   :Name: Reflex trigger
@@ -5026,11 +3385,9 @@
   :Index: '1.0'
   :Page: sr3.302
   :Required: Wired Reflexes
-  :Conflicts: ''
   :Option: 'yes'
 :Replacement Modification:
   :Name: Replacement Modification
-  :Essence: ''
   :Price: x1.1
   :Type: CY
   :Legality: Legal
@@ -5038,11 +3395,9 @@
   :Index: '2.0'
   :Page: mm.39
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
 :Replacement hand:
   :Name: Replacement hand
-  :Essence: ''
   :Price: 28000¥+30%
   :Type: CY
   :Legality: 6I-N
@@ -5050,9 +3405,7 @@
   :Index: '2.0'
   :Page: ct.34
   :Required: Cyberhand
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberhand
 :Retinal Clock:
   :Name: Retinal Clock
@@ -5063,10 +3416,7 @@
   :Avail: 3/24 hrs
   :Index: '1.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Retinal Duplication:
   :Name: Retinal Duplication
@@ -5077,8 +3427,6 @@
   :Avail: 8/7 days
   :Index: '2.0'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
   :Cyberlimb: Cybereyes
@@ -5091,14 +3439,9 @@
   :Avail: 5/72 hrs
   :Index: '1.5'
   :Page: mm.31
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberhand
-  :Includes: ''
   :ECU: '1'
-  :Conceal: ''
   :Cmod: "-0.5"
 :Router:
   :Name: Router
@@ -5119,7 +3462,6 @@
   :Index: '0.25'
   :Page: mm.28
   :Required: Dermal Sheathing
-  :Conflicts: ''
   :Option: 'yes'
 :SPU Math 1:
   :Name: SPU Math 1
@@ -5130,16 +3472,6 @@
   :Avail: 6/60 hrs
   :Index: '1.0'
   :Page: mm.21
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: SPU Math
 :SPU Math 2:
   :Name: SPU Math 2
@@ -5150,16 +3482,6 @@
   :Avail: 6/60 hrs
   :Index: '1.0'
   :Page: mm.21
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: SPU Math
 :SPU Math 3:
   :Name: SPU Math 3
@@ -5170,20 +3492,9 @@
   :Avail: 6/60 hrs
   :Index: '1.0'
   :Page: mm.21
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: SPU Math
 :Safety:
   :Name: Safety
-  :Essence: ''
   :Price: 800¥
   :Type: CY
   :Legality: Legal
@@ -5191,15 +3502,11 @@
   :Index: '1.5'
   :Page: mm.37
   :Required: Cyberhand
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberhand
-  :Includes: ''
   :ECU: '0.5'
 :Scanner Accessory:
   :Name: Scanner Accessory
-  :Essence: ''
   :Price: L*500¥
   :Type: BO
   :Legality: 6P-V
@@ -5207,12 +3514,10 @@
   :Index: '3.0'
   :Page: 'mm.26 '
   :Required: Body Compartment
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
 :Secondary Pattern:
   :Name: Secondary Pattern
-  :Essence: ''
   :Price: "(L+2)*20000¥"
   :Type: BO
   :Legality: 5-Q
@@ -5220,7 +3525,6 @@
   :Index: '2.0'
   :Page: sr3.302
   :Required: Voice Modulator
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
 :Select Sound Filter:
@@ -5232,8 +3536,6 @@
   :Avail: 6/48 hrs
   :Index: '1.25'
   :Page: sr3.299
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '5'
   :Cyberlimb: Cyberears
@@ -5246,23 +3548,14 @@
   :Avail: 6/4 days
   :Index: '2.0'
   :Page: mm.41
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberhand
-  :Includes: ''
   :ECU: '1'
   :Conceal: '5'
   :Cmod: "-0.5"
-  :Space: ''
-  :Base: ''
-  :Ammo: ''
-  :Mode: ''
   :Damage: 8S Stun
 :Signal booster:
   :Name: Signal booster
-  :Essence: ''
   :Price: L*15000¥
   :Type: CY
   :Legality: Legal
@@ -5270,13 +3563,9 @@
   :Index: '1.5'
   :Page: mm.40
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-1"
 :Silencer:
   :Name: Silencer
@@ -5288,11 +3577,8 @@
   :Index: '2.0'
   :Page: mm.41
   :Required: Cybergun
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '0.5'
   :Conceal: "-2"
   :Cmod: "-1"
@@ -5316,7 +3602,6 @@
   :Page: sr3.302
 :Skates Retractable:
   :Name: Skates Retractable
-  :Essence: ''
   :Price: 2500¥
   :Type: CY
   :Legality: Legal
@@ -5324,17 +3609,12 @@
   :Index: '1.0'
   :Page: mm.38
   :Required: Cyberfoot
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberfoot
-  :Includes: ''
   :ECU: '4'
-  :Conceal: ''
   :Cmod: "-2"
 :Skates:
   :Name: Skates
-  :Essence: ''
   :Price: 1000¥
   :Type: CY
   :Legality: Legal
@@ -5342,13 +3622,9 @@
   :Index: '1.0'
   :Page: mm.38
   :Required: Cyberfoot
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberfoot
-  :Includes: ''
   :ECU: '2'
-  :Conceal: ''
   :Cmod: "-5"
 :Skillwires 1:
   :Name: Skillwires 1
@@ -5360,15 +3636,6 @@
   :Index: '1'
   :Page: sr3.302
   :Required: Chipjack
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Skillwires
 :Skillwires 2:
   :Name: Skillwires 2
@@ -5380,15 +3647,6 @@
   :Index: '1'
   :Page: sr3.302
   :Required: Chipjack
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Skillwires
 :Skillwires 3:
   :Name: Skillwires 3
@@ -5400,15 +3658,6 @@
   :Index: '1'
   :Page: sr3.302
   :Required: Chipjack
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Skillwires
 :Skillwires 4:
   :Name: Skillwires 4
@@ -5420,15 +3669,6 @@
   :Index: '1'
   :Page: sr3.302
   :Required: Chipjack
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Skillwires
 :Skillwires 5:
   :Name: Skillwires 5
@@ -5440,15 +3680,6 @@
   :Index: '1'
   :Page: sr3.302
   :Required: Chipjack
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Skillwires
 :Skillwires 6:
   :Name: Skillwires 6
@@ -5460,15 +3691,6 @@
   :Index: '1'
   :Page: sr3.302
   :Required: Chipjack
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Skillwires
 :Skillwires 7:
   :Name: Skillwires 7
@@ -5480,15 +3702,6 @@
   :Index: '1'
   :Page: sr3.302
   :Required: Chipjack
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Skillwires
 :Skillwires 8:
   :Name: Skillwires 8
@@ -5500,15 +3713,6 @@
   :Index: '1'
   :Page: sr3.302
   :Required: Chipjack
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Skillwires
 :Skillwires 9:
   :Name: Skillwires 9
@@ -5520,15 +3724,6 @@
   :Index: '1'
   :Page: sr3.302
   :Required: Chipjack
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Skillwires
 :Smartlink I:
   :Name: Smartlink I
@@ -5567,11 +3762,8 @@
   :Index: '2.0'
   :Page: mm.41
   :Required: Cybergun
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '1'
   :Conceal: "-3"
   :Cmod: "-2"
@@ -5584,10 +3776,7 @@
   :Avail: 4/48 hrs
   :Index: '2.0'
   :Page: mm.18
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberears
 :Spurs Retractable:
   :Name: Spurs Retractable
@@ -5598,19 +3787,12 @@
   :Avail: 5/72 hrs
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberforearm
-  :Includes: ''
   :ECU: '1'
   :Conceal: '9'
   :Cmod: "-0.5"
-  :Space: ''
   :Base: Spurs
-  :Ammo: ''
-  :Mode: ''
   :Damage: "(STR)M"
 :Spurs:
   :Name: Spurs
@@ -5621,19 +3803,11 @@
   :Avail: 3/72 hrs
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberforearm
-  :Includes: ''
   :ECU: '0.5'
-  :Conceal: ''
   :Cmod: "-4"
-  :Space: ''
   :Base: Spurs
-  :Ammo: ''
-  :Mode: ''
   :Damage: "(STR)M"
 :Standard Processor:
   :Name: Standard Processor
@@ -5646,7 +3820,6 @@
   :Page: mm.32
 :Stepped Reflex Trigger:
   :Name: Stepped Reflex Trigger
-  :Essence: ''
   :Price: x1.25
   :Type: BO
   :Legality: 4P-Q
@@ -5654,7 +3827,6 @@
   :Index: as
   :Page: Page mm.32
   :Required: Reflex trigger
-  :Conflicts: ''
   :Option: 'yes'
 :Subdermal Display:
   :Name: Subdermal Display
@@ -5685,7 +3857,6 @@
   :Page: sr3.298
 :Superflash:
   :Name: Superflash
-  :Essence: ''
   :Price: 500¥
   :Type: SE
   :Legality: 7P-Q
@@ -5693,13 +3864,10 @@
   :Index: '3.0'
   :Page: mm.15
   :Required: Light System
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Synthetic Fingerprint:
   :Name: Synthetic Fingerprint
-  :Essence: ''
   :Price: L*2000¥
   :Type: BO
   :Legality: 4P-Q
@@ -5707,7 +3875,6 @@
   :Index: '3.0'
   :Page: mm.26
   :Required: Body Compartment
-  :Conflicts: ''
   :Option: 'yes'
   :Maxlevel: '10'
 :Tactical Computer:
@@ -5721,7 +3888,6 @@
   :Page: mm.22
 :Tactical sense program:
   :Name: Tactical sense program
-  :Essence: ''
   :Price: 5000¥
   :Type: BR
   :Legality: 6P-R
@@ -5729,7 +3895,6 @@
   :Index: '4.0'
   :Page: mm.22
   :Required: Tactical Computer
-  :Conflicts: ''
   :Option: 'yes'
 :Telephone:
   :Name: Telephone
@@ -5742,7 +3907,6 @@
   :Page: sr3.298
 :Telescoping Cyberlimb:
   :Name: Telescoping Cyberlimb
-  :Essence: ''
   :Price: 10000¥
   :Type: CY
   :Legality: Legal
@@ -5750,13 +3914,8 @@
   :Index: '1.5'
   :Page: mm.40
   :Required: Cyberforearm,Cyberlowerleg
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
   :ECU: '3'
-  :Conceal: ''
   :Cmod: "-1"
 :Thermographic:
   :Name: Thermographic
@@ -5767,14 +3926,10 @@
   :Avail: 4/36 hrs
   :Index: '1.25'
   :Page: sr3.300
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
+  :Stats: sense[Thermographic Vision|Electronic]
 :Tonal Shift:
   :Name: Tonal Shift
-  :Essence: ''
   :Price: 25000¥
   :Type: BO
   :Legality: Legal
@@ -5782,7 +3937,6 @@
   :Index: '1.0'
   :Page: sr3.302
   :Required: Voice Modulator
-  :Conflicts: ''
   :Option: 'yes'
 :Tool Laser:
   :Name: Tool Laser
@@ -5794,13 +3948,10 @@
   :Index: '2.0'
   :Page: mm.15
   :Required: Basic Eyelaser High Power
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Tooth Compartment Storage:
   :Name: Tooth Compartment Storage
-  :Essence: ''
   :Price: 1500¥
   :Type: SE
   :Legality: Legal
@@ -5817,7 +3968,6 @@
   :Index: '1.5'
   :Page: mm.29
   :Required: Air tank
-  :Conflicts: ''
   :Option: 'yes'
 :Transducer:
   :Name: Transducer
@@ -5837,10 +3987,6 @@
   :Avail: 6/48 hrs
   :Index: '2.0'
   :Page: mm.18
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
   :Cyberlimb: Cybereyes
 :Vehicle Control Rig 1:
   :Name: Vehicle Control Rig 1
@@ -5851,17 +3997,8 @@
   :Avail: 6/48 hrs
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Vehicle Control Rig
+  :Stats: derived[Reaction|Rigg:+2,Initiative|Rigg:+1]
 :Vehicle Control Rig 2:
   :Name: Vehicle Control Rig 2
   :Essence: '3.0'
@@ -5871,17 +4008,8 @@
   :Avail: 8/48 hrs
   :Index: '1.25'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Vehicle Control Rig
+  :Stats: derived[Reaction|Rigg:+4,Initiative|Rigg:+2]
 :Vehicle Control Rig 3:
   :Name: Vehicle Control Rig 3
   :Essence: '5.0'
@@ -5891,17 +4019,8 @@
   :Avail: 8/48 hrs
   :Index: '1.5'
   :Page: sr3.302
-  :Required: ''
-  :Conflicts: ''
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Vehicle Control Rig
+  :Stats: derived[Reaction|Rigg:+6,Initiative|Rigg:+3]
 :Venom Sack(2 doeses):
   :Name: Venom Sack(2 doeses)
   :Essence: '0.05'
@@ -5912,11 +4031,8 @@
   :Index: '2.0'
   :Page: mm.41
   :Required: Fangs,Horns,Hand Blade,Hand Razors,Spurs
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
   :ECU: '0.25'
 :Voice Modulator:
   :Name: Voice Modulator
@@ -5937,19 +4053,11 @@
   :Index: '2.0'
   :Page: mm.40
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Weapon Mount
 :Weapon Mount Articulate:
   :Name: Weapon Mount Articulate
-  :Essence: ''
   :Price: 110000¥
   :Type: CY
   :Legality: 2P-R
@@ -5957,19 +4065,11 @@
   :Index: '2.0'
   :Page: mm.40
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Weapon Mount
 :Weapon Mount External Retractable:
   :Name: Weapon Mount External Retractable
-  :Essence: ''
   :Price: 15000¥
   :Type: CY
   :Legality: 3P-R
@@ -5977,19 +4077,11 @@
   :Index: '2.0'
   :Page: mm.40
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Weapon Mount
 :Weapon Mount External:
   :Name: Weapon Mount External
-  :Essence: ''
   :Price: 5000¥
   :Type: CY
   :Legality: 3P-R
@@ -5997,19 +4089,11 @@
   :Index: '2.0'
   :Page: mm.40
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Weapon Mount
 :Weapon Mount Tracking Retractable:
   :Name: Weapon Mount Tracking Retractable
-  :Essence: ''
   :Price: 40000¥
   :Type: CY
   :Legality: 3P-R
@@ -6017,19 +4101,11 @@
   :Index: '2.0'
   :Page: mm.40
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Weapon Mount
 :Weapon Mount Tracking:
   :Name: Weapon Mount Tracking
-  :Essence: ''
   :Price: 25000¥
   :Type: CY
   :Legality: 3P-R
@@ -6037,15 +4113,8 @@
   :Index: '2.0'
   :Page: mm.40
   :Required: Cyberlimb
-  :Conflicts: ''
   :Option: 'yes'
-  :Maxlevel: ''
   :Cyberlimb: Cyberlimb
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Weapon Mount
 :Wired Reflexes 1:
   :Name: Wired Reflexes 1
@@ -6056,21 +4125,9 @@
   :Avail: 4/8 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Boosted Reflexes, Move by Wire
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Wired Reflexes
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +2,Initative +1
+  :Stats: derived[Reaction|CBM:+2,Initative|CBM:+1]
 :Wired Reflexes 2:
   :Name: Wired Reflexes 2
   :Essence: '3.0'
@@ -6080,21 +4137,9 @@
   :Avail: 4/8 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Boosted Reflexes, Move by wire
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Wired Reflexes
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +4,Initiative +2
+  :Stats: derived[Reaction|CBM:+4,Initiative|CBM:+2]
 :Wired Reflexes 3:
   :Name: Wired Reflexes 3
   :Essence: '5.0'
@@ -6104,18 +4149,6 @@
   :Avail: 8/14 days
   :Index: '1.0'
   :Page: sr3.302
-  :Required: ''
   :Conflicts: Boosted Reflexes, Move by wire
-  :Option: ''
-  :Maxlevel: ''
-  :Cyberlimb: ''
-  :Includes: ''
-  :ECU: ''
-  :Conceal: ''
-  :Cmod: ''
-  :Space: ''
   :Base: Wired Reflexes
-  :Ammo: ''
-  :Mode: ''
-  :Damage: ''
-  :Stats: Reaction +6,Initative +3
+  :Stats: derived[Reaction|CBM:+6,Initative|CBM:+3]

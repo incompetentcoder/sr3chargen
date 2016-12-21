@@ -3,9 +3,9 @@ Cyberwear
 ASIST Converter ¬ ¬1000¥ ¬ MA ¬ Legal ¬ 6/36 hrs ¬ 1.5 ¬ mm.19  ¬Datajack ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Ablative Armor ¬ ¬7000¥ ¬BO ¬4P-Q ¬12/3 wks ¬2.0 ¬mm.37  ¬Cyberlimb ¬ ¬yes ¬5 ¬Cyberlimb ¬ ¬1 ¬ ¬-1 ¬ ¬Armor ¬ ¬ ¬ ¬
 Air tank ¬0.25 ¬1200¥ ¬BO ¬Legal ¬4/5 days ¬1.5 ¬mm.29 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Appendage Strength Enhancement 1 ¬ ¬35000¥ ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberhand,Cyberfoot ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-1 ¬ ¬Appendage Strength Enhancement ¬ ¬ ¬ ¬ ¬
-Appendage Strength Enhancement 2 ¬ ¬70000¥ ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberhand,Cyberfoot ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-2 ¬ ¬Appendage Strength Enhancement ¬ ¬ ¬ ¬ ¬
-Appendage Strength Enhancement 3 ¬ ¬105000¥ ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberhand,Cyberfoot ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-3 ¬ ¬Appendage Strength Enhancement ¬ ¬ ¬ ¬ ¬
+Appendage Strength Enhancement 1 ¬ ¬35000¥ ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberhand,Cyberfoot ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-1 ¬ ¬Appendage Strength Enhancement ¬ ¬ ¬ ¬
+Appendage Strength Enhancement 2 ¬ ¬70000¥ ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberhand,Cyberfoot ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-2 ¬ ¬Appendage Strength Enhancement ¬ ¬ ¬ ¬
+Appendage Strength Enhancement 3 ¬ ¬105000¥ ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberhand,Cyberfoot ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-3 ¬ ¬Appendage Strength Enhancement ¬ ¬ ¬ ¬
 Auto-inector One-shot ¬0.05 ¬Cont+1500¥ ¬BO ¬4P-N ¬4/72 hrs ¬1.5 ¬mm.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Auto-injector Reusable ¬0.1 ¬Cont+1000¥ ¬BO ¬6P-N ¬4/72 hrs ¬1.5 ¬mm.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Balance Augmenter ¬0.4 ¬14000¥ ¬SE ¬Legal ¬8/2 wks ¬2.0 ¬mm.14 ¬ ¬ ¬yes ¬ ¬Cyberear ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -21,14 +21,14 @@ BattleTac IVIS Master Unit ¬0.15 ¬150000¥ ¬RI ¬5P-R ¬8/14 days ¬3.0 ¬mm.
 BattleTac modification ¬0 ¬10000¥ ¬BR ¬2P-R ¬ + 6/- ¬4.0 ¬mm.23 ¬Tactical Computer ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Biomonitor System ¬0.3 ¬5000¥ ¬BO ¬Legal ¬6/72 hrs ¬2.0 ¬mm.26 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Body Compartment ¬0.2 ¬5000¥ ¬BO ¬Legal ¬4/48 hrs ¬1.0 ¬mm.26 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Bone Lacing Aluminum ¬1.15 ¬25000¥ ¬BO ¬6P-Q ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬Body +1,Impact +1
-Bone Lacing Ceramic ¬1.5 ¬40000¥ ¬BO ¬6P-Q ¬6/21 days ¬2.0 ¬mm.27 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬Body +1,Impact +2
-Bone Lacing Kevlar ¬1.0 ¬20000¥ ¬BO ¬6P-Q ¬6/21 days ¬2.0 ¬mm.27 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬Body +1,Ballistic +1
-Bone Lacing Plastic ¬0.5 ¬7500¥ ¬BO ¬6P-N ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬Body +1
-Bone Lacing Titanium ¬2.25 ¬75000¥ ¬BO ¬6-R ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬Body +2,Impact +1,Ballistic +1
-Boosted Reflexes 1 ¬0.5 ¬15000¥ ¬BO ¬8P-Q ¬3/24hrs ¬1.0 ¬sr3.302 ¬ ¬Wired Reflexes, Move by Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬Initiative +1
-Boosted Reflexes 2 ¬1.25 ¬40000¥ ¬BO ¬6P-Q ¬3/24 hrs ¬1.25 ¬sr3.302 ¬ ¬Wired Reflexes, Move Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬Reaction +1,Initative +1
-Boosted Reflexes 3 ¬2.8 ¬90000¥ ¬BO ¬5P-Q ¬3/24 hrs ¬1.5 ¬sr3.302 ¬ ¬Wired Reflexes, Move by Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬Reaction +2,Initative +2
+Bone Lacing Aluminum ¬1.15 ¬25000¥ ¬BO ¬6P-Q ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body:+1];armor[Impact:+1]
+Bone Lacing Ceramic ¬1.5 ¬40000¥ ¬BO ¬6P-Q ¬6/21 days ¬2.0 ¬mm.27 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body:+1];armor[Impact:+2]
+Bone Lacing Kevlar ¬1.0 ¬20000¥ ¬BO ¬6P-Q ¬6/21 days ¬2.0 ¬mm.27 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body:+1];armor[Ballistic:+1]
+Bone Lacing Plastic ¬0.5 ¬7500¥ ¬BO ¬6P-N ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body:+1]
+Bone Lacing Titanium ¬2.25 ¬75000¥ ¬BO ¬6-R ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body:+2];armor[Impact:+1,Ballistic:+1]
+Boosted Reflexes 1 ¬0.5 ¬15000¥ ¬BO ¬8P-Q ¬3/24hrs ¬1.0 ¬sr3.302 ¬ ¬Wired Reflexes, Move by Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Initiative|CBM:+1]
+Boosted Reflexes 2 ¬1.25 ¬40000¥ ¬BO ¬6P-Q ¬3/24 hrs ¬1.25 ¬sr3.302 ¬ ¬Wired Reflexes, Move Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+1,Initative|CBM:+1]
+Boosted Reflexes 3 ¬2.8 ¬90000¥ ¬BO ¬5P-Q ¬3/24 hrs ¬1.5 ¬sr3.302 ¬ ¬Wired Reflexes, Move by Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+2,Initative|CBM:+2]
 Brightlight Feature ¬0.2 ¬2200¥ ¬SE ¬7P-Q ¬8/2 wks ¬3.0 ¬mm.15 ¬Light System ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Built-in Program ¬ ¬Mp*200¥ ¬SE ¬Legal ¬4/6 days ¬1.0 ¬mm.14  ¬Chemical Analyzer ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Built-in Program ¬ ¬Mp*200¥ ¬SE ¬Legal ¬4/6 days ¬1.0 ¬mm.14 ¬Gas Spectrometer ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -104,12 +104,12 @@ Datajack Induction ¬0.3 ¬3000¥ ¬BR ¬Legal ¬5/4 days ¬2.0 ¬mm.21 ¬ ¬ ¬
 Datajack ¬0.2 ¬1000¥ ¬BR ¬Legal ¬1/1 hrs ¬0.9 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 DatajackEye ¬0.25 ¬2200¥ ¬SE ¬4P-N ¬6/48 hrs ¬2.0 ¬mm.14 ¬Cybereyes ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Decryption module ¬0.2 ¬L*17500¥ ¬RI ¬ 8P-W ¬L+2/L days ¬2.0 ¬mm.24 ¬Cranial Remote Deck ¬ ¬yes ¬10 ¬ ¬ ¬0.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Dermal Plating 1 ¬0.5 ¬6000¥ ¬BO ¬6P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬Body +1
-Dermal Plating 2 ¬1.0 ¬15000¥ ¬BO ¬6P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬Body +2
-Dermal Plating 3 ¬1.5 ¬45000¥ ¬BO ¬5P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬Body +3
-Dermal Sheathing 1 ¬0.7 ¬24000¥ ¬BO ¬6P-N ¬6/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬Body +2,Impact +1
-Dermal Sheathing 2 ¬1.4 ¬60000¥ ¬BO ¬6P-N ¬6/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬Body +3,Impact +1
-Dermal Sheathing 3 ¬2.1 ¬120000¥ ¬BO ¬5P-N ¬8/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬Body +4,Impact +2
+Dermal Plating 1 ¬0.5 ¬6000¥ ¬BO ¬6P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬attributes[Body:+1]
+Dermal Plating 2 ¬1.0 ¬15000¥ ¬BO ¬6P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬attributes[Body:+2]
+Dermal Plating 3 ¬1.5 ¬45000¥ ¬BO ¬5P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬attributes[Body:+3]
+Dermal Sheathing 1 ¬0.7 ¬24000¥ ¬BO ¬6P-N ¬6/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬attributes[Body:+2];[Impact:+1]
+Dermal Sheathing 2 ¬1.4 ¬60000¥ ¬BO ¬6P-N ¬6/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬attributes[Body:+3];armor[Impact:+1]
+Dermal Sheathing 3 ¬2.1 ¬120000¥ ¬BO ¬5P-N ¬8/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬attributes[Body:+4];armor[Impact:+2]
 Diagnosis Processor ¬0.2 ¬2500¥ ¬BO ¬Legal ¬6/72 hrs ¬2.0 ¬mm.26 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Direct Neural Interface ¬0.1 ¬4500¥ ¬BO ¬5P-Q ¬4/6 days ¬1.0 ¬mm.38 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Display Link ¬0.1 ¬1000¥ ¬SE ¬Legal ¬4/36 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -127,11 +127,11 @@ Port headware ¬0.01 ¬200¥ ¬BR ¬Legal ¬1/1 hrs ¬1.0 ¬mm.22 ¬Router ¬ ¬
 Port non-headware ¬0.01 ¬500¥ ¬BR ¬Legal ¬1/1 hrs ¬1.0 ¬mm.22 ¬Router ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Dedicated port ¬0.1 ¬10000¥ ¬BR ¬2P-R ¬12/60 days ¬4.0 ¬mm.22 ¬Tactical Computer ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Generic port ¬0.1 ¬5000¥ ¬BR ¬2P-R ¬12/60 days ¬4.0 ¬mm.22 ¬Tactical Computer ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Electronic Magnification 1 ¬0.1 ¬3500¥ ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Electronic Magnification ¬ ¬ ¬ ¬
-Electronic Magnification 2 ¬0.1 ¬7500¥ ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Electronic Magnification ¬ ¬ ¬ ¬
-Electronic Magnification 3 ¬0.1 ¬11000¥ ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Electronic Magnification ¬ ¬ ¬ ¬
-Encephalon 1 ¬0.75 ¬40000¥ ¬BR ¬Legal ¬6/12 days ¬2.0 ¬mm.20 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Encephalon ¬ ¬ ¬ ¬
-Encephalon 2 ¬1.75 ¬115000¥ ¬BR ¬Legal ¬6/12 days ¬2.0 ¬mm.20 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Encephalon ¬ ¬ ¬ ¬
+Electronic Magnification 1 ¬0.1 ¬3500¥ ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Electronic Magnification ¬ ¬ ¬ ¬senses[Magnification Vision|Electronic:1]
+Electronic Magnification 2 ¬0.1 ¬7500¥ ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Electronic Magnification ¬ ¬ ¬ ¬senses[Magnification Vision|Electronic:2]
+Electronic Magnification 3 ¬0.1 ¬11000¥ ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Electronic Magnification ¬ ¬ ¬ ¬senses[Magnification Vision|Electronic:3]
+Encephalon 1 ¬0.75 ¬40000¥ ¬BR ¬Legal ¬6/12 days ¬2.0 ¬mm.20 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Encephalon ¬ ¬ ¬ ¬special[Taskpool:+1]
+Encephalon 2 ¬1.75 ¬115000¥ ¬BR ¬Legal ¬6/12 days ¬2.0 ¬mm.20 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Encephalon ¬ ¬ ¬ ¬special[Taskpool:+2]
 Encryption module ¬0.2 ¬L*10000¥ ¬RI ¬8P-W ¬L/L days ¬3.0 ¬mm.24 ¬Cranial Remote Deck ¬ ¬yes ¬10 ¬ ¬ ¬0.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 External Clip Port ¬0.1 ¬100¥ ¬BO ¬as gun ¬8/7 days ¬2.0 ¬mm.41 ¬Cybergun ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬0.25 ¬-1 ¬-1 ¬ ¬ ¬ ¬ ¬ ¬
 External Program ¬ ¬Mp*150¥ ¬SE ¬Legal ¬5/4 days ¬1.25 ¬mm.14  ¬Chemical Analyzer ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -187,12 +187,12 @@ Hand Blade Retractable ¬0.25 ¬10000¥ ¬BO ¬4P-R ¬6/5 days ¬1.5 ¬sr3.302 �
 Hand Blade ¬0.1 ¬7500¥ ¬BO ¬4P-R ¬6/5 days ¬1.5 ¬sr3.302 ¬ ¬ ¬yes ¬ ¬Cyberhand ¬ ¬0.5 ¬5 ¬-5 ¬ ¬Hand Blade ¬ ¬ ¬(STR+3)L ¬
 Hand Razors Retractable ¬0.2 ¬9000¥ ¬BO ¬3-B ¬5/72 hrs ¬1.0 ¬sr3.302 ¬ ¬ ¬yes ¬ ¬Cyberhand ¬ ¬0.5 ¬12 ¬-0.5 ¬ ¬Hand Razors ¬ ¬ ¬(STR+2)L ¬
 Hand Razors ¬0.1 ¬4500¥ ¬BO ¬3-B ¬3/72 hrs ¬1.0 ¬sr3.302 ¬ ¬ ¬yes ¬ ¬Cyberhand ¬ ¬0.25 ¬6 ¬-0.5 ¬ ¬Hand Razors ¬ ¬ ¬(STR+2)L ¬
-Hearing Amplification ¬0.2 ¬3500¥ ¬SE ¬Legal ¬4/48 hrs ¬1.25 ¬sr3.299 ¬ ¬ ¬yes ¬ ¬Cyberears ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-High Frequency ¬0.2 ¬3000¥ ¬SE ¬Legal ¬4/48 hrs ¬1.25 ¬sr3.299 ¬ ¬ ¬yes ¬ ¬Cyberears ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
+Hearing Amplification ¬0.2 ¬3500¥ ¬SE ¬Legal ¬4/48 hrs ¬1.25 ¬sr3.299 ¬ ¬ ¬yes ¬ ¬Cyberears ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬senses[Improved Hearing|Electronic]
+High Frequency ¬0.2 ¬3000¥ ¬SE ¬Legal ¬4/48 hrs ¬1.25 ¬sr3.299 ¬ ¬ ¬yes ¬ ¬Cyberears ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬senses[High-Frequency Hearing|Electronic]
 High-frequency Modulator ¬ ¬8000¥ ¬CO ¬6P-Q ¬6/48 hrs ¬1.25 ¬mm.18 ¬Internal Voice Mask ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Holster ¬0.1 ¬5000¥ ¬BO ¬5P-N ¬4/48 hrs ¬1.0 ¬mm.37 ¬Cyberlimb ¬ ¬yes ¬ ¬ ¬ ¬4 ¬10 ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Hook hand ¬0.1 ¬30¥ ¬BO ¬Legal ¬1/6 days ¬1.0 ¬mm.38 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Horns Retractable ¬0.25 ¬16000¥ ¬BR ¬5P-N ¬5/48 hrs ¬1.0 ¬mm.41 ¬ ¬ ¬yes ¬ ¬Cyberskull ¬ ¬1 ¬8 ¬-2 ¬ ¬Horns ¬ ¬ ¬(STR)M ¬ ¬
+Horns Retractable ¬0.25 ¬16000¥ ¬BR ¬5P-N ¬5/48 hrs ¬1.0 ¬mm.41 ¬ ¬ ¬yes ¬ ¬Cyberskull ¬ ¬1 ¬8 ¬-2 ¬ ¬Horns ¬ ¬ ¬(STR)M ¬
 Horns ¬0.1 ¬12000¥ ¬BR ¬Legal ¬4/48 hrs ¬1.0 ¬mm.41 ¬ ¬ ¬yes ¬ ¬Cyberskull ¬ ¬0.5 ¬ ¬-3 ¬ ¬Horns ¬ ¬ ¬(STR)M ¬
 Hydraulic Jack 1 ¬1 ¬5000¥ ¬BO ¬Legal ¬5/6 days ¬1.0 ¬mm.29 ¬ ¬ ¬yes ¬5 ¬Cyberleg ¬ ¬4.5 ¬ ¬-3 ¬ ¬Hydraulic Jack ¬ ¬ ¬ ¬
 Hydraulic Jack 2 ¬1.25 ¬10000¥ ¬BO ¬Legal ¬5/6 days ¬1.0 ¬mm.29 ¬ ¬ ¬yes ¬5 ¬Cyberleg ¬ ¬5 ¬ ¬-3 ¬ ¬Hydraulic Jack ¬ ¬ ¬ ¬
@@ -233,28 +233,28 @@ Light System ¬0.2 ¬1200¥ ¬SE ¬Legal ¬4/72 hrs ¬1.5 ¬mm.15 ¬Cybereyes ¬
 Limited Simsense Rig ¬0.1 ¬1000¥ ¬BO ¬5P-N ¬4/48 hrs ¬1.5 ¬mm.32 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Lockpick Gun ¬ ¬L*250¥ ¬BO ¬6P-Q ¬8/2 wks ¬2.0 ¬mm.26  ¬Body Compartment ¬ ¬yes ¬10 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Lockpicks ¬ ¬500¥ ¬BO ¬6P-Q ¬8/2 wks ¬3.0 ¬mm.26  ¬Body Compartment ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Low Frequency ¬0.2 ¬3000¥ ¬SE ¬Legal ¬4/48 hrs ¬1.25 ¬sr3.299 ¬ ¬ ¬yes ¬ ¬Cyberears ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Low-Light ¬0.2 ¬3000¥ ¬SE ¬Legal ¬4/36 hrs ¬1.25 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
+Low Frequency ¬0.2 ¬3000¥ ¬SE ¬Legal ¬4/48 hrs ¬1.25 ¬sr3.299 ¬ ¬ ¬yes ¬ ¬Cyberears ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬senses[Low-Frequency Hearing|Electronic]
+Low-Light ¬0.2 ¬3000¥ ¬SE ¬Legal ¬4/36 hrs ¬1.25 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬senses[Low-Light Vision|Electronic]
 Low-frequency Modulator ¬ ¬8000¥ ¬CO  ¬6P-Q ¬6/48 hrs ¬1.25 ¬mm.18 ¬Internal Voice Mask ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Lower Limb Strength Enhancement 1 ¬ ¬35000¥ ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberforearm, Cyberlowerleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-1 ¬ ¬Lower Limb Strength Enhancement ¬ ¬ ¬ ¬
 Lower Limb Strength Enhancement 2 ¬ ¬70000¥ ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberforearm, Cyberlowerleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-2 ¬ ¬Lower Limb Strength Enhancement ¬ ¬ ¬ ¬
 Lower Limb Strength Enhancement 3 ¬ ¬105000¥ ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberforearm, Cyberlowerleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-3 ¬ ¬Lower Limb Strength Enhancement ¬ ¬ ¬ ¬
 Magnetic System ¬0.3 ¬2800¥ ¬BO ¬Legal ¬6/7 days ¬2.0 ¬mm.30 ¬ ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬3 ¬ ¬-1 ¬ ¬ ¬ ¬ ¬ ¬
 Memory ¬Mp/300 ¬Mpx150¥ ¬BR ¬Legal ¬3/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Microscopic Vision ¬0.1 ¬5000¥ ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬mm.17 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Move-by-wire 1 ¬2.5 ¬250000¥ ¬BO ¬3P-R ¬8/10 days ¬2.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬Quickness +1,Reaction +2,Initative +1
-Move-by-wire 2 ¬4 ¬500000¥ ¬BO ¬3P-R ¬12/20 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬Quickness +2,Reaction +4,Initative +2
-Move-by-wire 3 ¬5.5 ¬1000000¥ ¬BO ¬3P-R ¬18/30 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬Quickness +3,Reaction +6,Initative +3
-Move-by-wire 4 ¬7 ¬2000000¥ ¬BO ¬3P-R ¬20/45 days ¬3.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬Quickness +4,Reaction +8,Initiative +4
-Muscle Replacement 1 ¬1 ¬20000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬Strength +1
-Muscle Replacement 2 ¬2 ¬40000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬Strength +2
-Muscle Replacement 3 ¬3 ¬60000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬Strength +3
-Muscle Replacement 4 ¬4 ¬80000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬Strength +4
+Microscopic Vision ¬0.1 ¬5000¥ ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬mm.17 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬senses[Microscopic Vision|Electronic]
+Move-by-wire 1 ¬2.5 ¬250000¥ ¬BO ¬3P-R ¬8/10 days ¬2.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness:+1];derived[Reaction|CBM:+2,Initative|CBM:+1]
+Move-by-wire 2 ¬4 ¬500000¥ ¬BO ¬3P-R ¬12/20 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness:+2];derived[Reaction|CBM:+4,Initative|CBM:+2]
+Move-by-wire 3 ¬5.5 ¬1000000¥ ¬BO ¬3P-R ¬18/30 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness:+3];derived[Reaction|CBM:+6,Initative|CBM:+3]
+Move-by-wire 4 ¬7 ¬2000000¥ ¬BO ¬3P-R ¬20/45 days ¬3.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness:+4];derived[Reaction|CBM:+8,Initiative|CBM:+4]
+Muscle Replacement 1 ¬1 ¬20000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength:+1]
+Muscle Replacement 2 ¬2 ¬40000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength:+2]
+Muscle Replacement 3 ¬3 ¬60000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength:+3]
+Muscle Replacement 4 ¬4 ¬80000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength:+4]
 OXSYS Cybergill ¬0.75 ¬12500¥ ¬BO ¬Legal ¬5/72 hrs ¬1.75 ¬mm.31 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Olfactory Booster ¬0.2 ¬L*1000¥ ¬SE ¬Legal ¬6/8 days ¬1.0 ¬mm.17 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Optical Magnification 1 ¬0.2 ¬2500¥ ¬SE ¬Legal ¬4/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Optical Magnification ¬ ¬ ¬ ¬
-Optical Magnification 2 ¬0.2 ¬4000¥ ¬SE ¬Legal ¬4/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Optical Magnification ¬ ¬ ¬ ¬
-Optical Magnification 3 ¬0.2 ¬6000¥ ¬SE ¬Legal ¬4/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Optical Magnification ¬ ¬ ¬ ¬
+Optical Magnification 1 ¬0.2 ¬2500¥ ¬SE ¬Legal ¬4/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Optical Magnification ¬ ¬ ¬ ¬senses[Magnification Vision|Optical:1]
+Optical Magnification 2 ¬0.2 ¬4000¥ ¬SE ¬Legal ¬4/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Optical Magnification ¬ ¬ ¬ ¬senses[Magnification Vision|Optical:2]
+Optical Magnification 3 ¬0.2 ¬6000¥ ¬SE ¬Legal ¬4/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Optical Magnification ¬ ¬ ¬ ¬senses[Magnification Vision|Optical:3]
 Opticam ¬0.5 ¬20000¥ ¬SE ¬Legal ¬5/72 hrs ¬2.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Optiscan Link ¬0.15 ¬2500¥ ¬SE ¬3P-N ¬8/72 hrs ¬3.0 ¬mm.14 ¬Basic Eyelaser ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Optiscan Remote Adaptor ¬ ¬2000¥ ¬SE ¬3P-N ¬8/2 wks ¬2.0 ¬mm.14 ¬Basic Eyelaser ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -280,12 +280,12 @@ Radio Receiver ¬0.4 ¬L*1000¥ ¬CO ¬Legal ¬2/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬
 Radio ¬0.75 ¬L*2000¥ ¬CO ¬Legal ¬2/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Range Finder ¬0.1 ¬2000¥ ¬BO ¬5P-N ¬8/48 hrs ¬1.5 ¬mm.32 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Rangefinder ¬0.1 ¬2000¥ ¬SE ¬Legal ¬8/48 hrs ¬1.5 ¬ssc.80 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Reaction Enhancer 1 ¬0.3 ¬60000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬Reaction +1
-Reaction Enhancer 2 ¬0.6 ¬120000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬Reaction +2
-Reaction Enhancer 3 ¬0.9 ¬180000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬Reaction +3
-Reaction Enhancer 4 ¬1.2 ¬240000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬Reaction +4
-Reaction Enhancer 5 ¬1.5 ¬300000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬Reaction +5
-Reaction Enhancer 6 ¬1.8 ¬360000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬Reaction +6
+Reaction Enhancer 1 ¬0.3 ¬60000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+1]
+Reaction Enhancer 2 ¬0.6 ¬120000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+2]
+Reaction Enhancer 3 ¬0.9 ¬180000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+3]
+Reaction Enhancer 4 ¬1.2 ¬240000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+4]
+Reaction Enhancer 5 ¬1.5 ¬300000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+5]
+Reaction Enhancer 6 ¬1.8 ¬360000¥ ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+6]
 Recorder ¬0.3 ¬7000¥ ¬SE ¬12P-N ¬8/48 hrs ¬2.0 ¬sr3.299 ¬ ¬ ¬yes ¬ ¬Cyberears ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Reflex trigger ¬0.2 ¬13000¥ ¬BO ¬4P-Q ¬as ¬1.0 ¬sr3.302 ¬Wired Reflexes ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Replacement Modification ¬ ¬x1.1 ¬CY ¬Legal ¬ +2/+ 2 days ¬2.0 ¬mm.39 ¬Cyberlimb ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -336,16 +336,16 @@ Tactical Computer ¬1.5 ¬4000000¥ ¬BR ¬2P-R ¬12/60 days ¬4.0 ¬mm.22 ¬ ¬
 Tactical sense program ¬ ¬5000¥ ¬BR ¬6P-R ¬8/1 mo ¬4.0 ¬mm.22 ¬Tactical Computer ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Telephone ¬0.5 ¬3700¥ ¬CO ¬Legal ¬3/24 hrs ¬0.9 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Telescoping Cyberlimb ¬ ¬10000¥ ¬CY ¬Legal ¬6/72 hrs ¬1.5 ¬mm.40 ¬Cyberforearm,Cyberlowerleg ¬ ¬yes ¬ ¬ ¬ ¬3 ¬ ¬-1 ¬ ¬ ¬ ¬ ¬ ¬
-Thermographic ¬0.2 ¬3000¥ ¬SE ¬Legal ¬4/36 hrs ¬1.25 ¬sr3.300 ¬ ¬ ¬ ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
+Thermographic ¬0.2 ¬3000¥ ¬SE ¬Legal ¬4/36 hrs ¬1.25 ¬sr3.300 ¬ ¬ ¬ ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬sense[Thermographic Vision|Electronic]
 Tonal Shift ¬ ¬25000¥ ¬BO ¬Legal ¬2/24 hrs ¬1.0 ¬sr3.302 ¬Voice Modulator ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Tool Laser ¬0.25 ¬3000¥ ¬SE ¬5P-N ¬8/1 week ¬2.0 ¬mm.15 ¬Basic Eyelaser High Power ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Tooth Compartment Storage ¬ ¬1500¥ ¬SE ¬Legal ¬2/48 hrs ¬1.25 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Tracheal Vent ¬0.1 ¬750¥ ¬BO ¬Legal ¬4/5 days ¬1.5 ¬mm.29 ¬Air tank ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Transducer ¬0.1 ¬2000¥ ¬CO ¬Legal ¬4/1 wk ¬1.5 ¬mm.19 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Ultrasound Vision ¬0.5 ¬10000¥ ¬SE ¬Legal ¬6/48 hrs ¬2.0 ¬mm.18 ¬ ¬ ¬ ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Vehicle Control Rig 1 ¬2.0 ¬12000¥ ¬BO ¬6P-N ¬6/48 hrs ¬1.0 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Vehicle Control Rig ¬ ¬ ¬ ¬
-Vehicle Control Rig 2 ¬3.0 ¬60000¥ ¬BO ¬6P-N ¬8/48 hrs ¬1.25 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Vehicle Control Rig ¬ ¬ ¬ ¬
-Vehicle Control Rig 3 ¬5.0 ¬300000¥ ¬BO ¬5P-N ¬8/48 hrs ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Vehicle Control Rig ¬ ¬ ¬ ¬
+Vehicle Control Rig 1 ¬2.0 ¬12000¥ ¬BO ¬6P-N ¬6/48 hrs ¬1.0 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Vehicle Control Rig ¬ ¬ ¬ ¬derived[Reaction|Rigg:+2,Initiative|Rigg:+1]
+Vehicle Control Rig 2 ¬3.0 ¬60000¥ ¬BO ¬6P-N ¬8/48 hrs ¬1.25 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Vehicle Control Rig ¬ ¬ ¬ ¬derived[Reaction|Rigg:+4,Initiative|Rigg:+2]
+Vehicle Control Rig 3 ¬5.0 ¬300000¥ ¬BO ¬5P-N ¬8/48 hrs ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Vehicle Control Rig ¬ ¬ ¬ ¬derived[Reaction|Rigg:+6,Initiative|Rigg:+3]
 Venom Sack(2 doeses) ¬0.05 ¬500¥ ¬BO ¬4P-Q ¬4/48 hrs ¬2.0 ¬mm.41 ¬Fangs,Horns,Hand Blade,Hand Razors,Spurs ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬0.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Voice Modulator ¬0.2 ¬25000¥ ¬BO ¬Legal ¬2/24 hrs ¬1.0 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Weapon Mount Articulate Retractable ¬1 ¬200000¥ ¬CY ¬2P-R ¬12/24 days ¬2.0 ¬mm.40 ¬Cyberlimb ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬ ¬ ¬ ¬ ¬Weapon Mount ¬ ¬ ¬ ¬
@@ -354,6 +354,6 @@ Weapon Mount External Retractable ¬ ¬15000¥ ¬CY ¬3P-R ¬6/4 days ¬2.0 ¬mm
 Weapon Mount External ¬ ¬5000¥ ¬CY ¬3P-R ¬6/4 days ¬2.0 ¬mm.40 ¬Cyberlimb ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬ ¬ ¬ ¬ ¬Weapon Mount ¬ ¬ ¬ ¬
 Weapon Mount Tracking Retractable ¬ ¬40000¥ ¬CY ¬3P-R ¬8/7 days ¬2.0 ¬mm.40 ¬Cyberlimb ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬ ¬ ¬ ¬ ¬Weapon Mount ¬ ¬ ¬ ¬
 Weapon Mount Tracking ¬ ¬25000¥ ¬CY ¬3P-R ¬8/7 days ¬2.0 ¬mm.40 ¬Cyberlimb ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬ ¬ ¬ ¬ ¬Weapon Mount ¬ ¬ ¬ ¬
-Wired Reflexes 1 ¬2.0 ¬55000¥ ¬BO ¬5P-Q ¬4/8 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by Wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬Reaction +2,Initative +1
-Wired Reflexes 2 ¬3.0 ¬165000¥ ¬BO ¬4P-Q ¬4/8 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬Reaction +4,Initiative +2
-Wired Reflexes 3 ¬5.0 ¬500000¥ ¬BO ¬3-R ¬8/14 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬Reaction +6,Initative +3
+Wired Reflexes 1 ¬2.0 ¬55000¥ ¬BO ¬5P-Q ¬4/8 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by Wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+2,Initative|CBM:+1]
+Wired Reflexes 2 ¬3.0 ¬165000¥ ¬BO ¬4P-Q ¬4/8 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+4,Initiative|CBM:+2]
+Wired Reflexes 3 ¬5.0 ¬500000¥ ¬BO ¬3-R ¬8/14 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+6,Initative|CBM:+3]

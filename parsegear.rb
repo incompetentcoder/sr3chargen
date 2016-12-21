@@ -12,7 +12,7 @@ def parsecyber(name,cyber)
 			cyber[name]=Hash.new
 			c.split(" ¬").each_with_index do |d,e|
         if e < 23
-          cyber[name][header[e].to_sym]=d.to_s
+          cyber[name][header[e].to_sym]=d.to_s unless d == ''
         end
 			end
 		end
