@@ -105,7 +105,7 @@ class Application
   def checkspells(which,type)
     if @a.getmagetype =~ /ist/
       if which
-        enablespells(which,type)
+        enablespells(which,type) unless @spellsenabled
       else
         disablespells
       end
@@ -271,11 +271,13 @@ class Application
       spells=CONSTANT[:spelltypes].keys
     end
     @notebook.spell.enablespells(spells)
+    @spellsenabled = true
   end
 
   def disablespells
     @notebook.spell.clear
     @notebook.get_nth_page(3).sensitive=false
+    @spellsenabled = false
   end
 
   def setmagetype(magetype)
@@ -364,6 +366,7 @@ class Application
   end
 
   def initialize
+    @spellsenabled = false
     @windows = Gtk::Window.new
     @tooltips = Gtk::Tooltips.new
     @a = Character.new(self)
