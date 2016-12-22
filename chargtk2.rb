@@ -678,6 +678,7 @@ class Character
       @derived[:Pools][:'Control Pool'] = 0
     else
       @derived[:Pools][:'Control Pool'] = @derived[:Reaction][:Rigg]
+    end
   end
 
   def checkage
