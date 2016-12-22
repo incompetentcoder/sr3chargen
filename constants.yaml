@@ -287,7 +287,7 @@
 :cyberware:
   :ASIST Converter:
     :Name: ASIST Converter
-    :Price: 1000¥
+    :Price: '1000'
     :Type: " MA"
     :Legality: " Legal"
     :Avail: " 6/36 hrs"
@@ -297,7 +297,7 @@
     :Option: 'yes'
   :Ablative Armor:
     :Name: Ablative Armor
-    :Price: 7000¥
+    :Price: '7000'
     :Type: BO
     :Legality: 4P-Q
     :Avail: 12/3 wks
@@ -313,7 +313,7 @@
   :Air tank:
     :Name: Air tank
     :Essence: '0.25'
-    :Price: 1200¥
+    :Price: '1200'
     :Type: BO
     :Legality: Legal
     :Avail: 4/5 days
@@ -321,7 +321,7 @@
     :Page: mm.29
   :Appendage Strength Enhancement 1:
     :Name: Appendage Strength Enhancement 1
-    :Price: 35000¥
+    :Price: '35000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 6/4 days
@@ -335,7 +335,7 @@
     :Base: Appendage Strength Enhancement
   :Appendage Strength Enhancement 2:
     :Name: Appendage Strength Enhancement 2
-    :Price: 70000¥
+    :Price: '70000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 6/4 days
@@ -349,7 +349,7 @@
     :Base: Appendage Strength Enhancement
   :Appendage Strength Enhancement 3:
     :Name: Appendage Strength Enhancement 3
-    :Price: 105000¥
+    :Price: '105000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 6/4 days
@@ -364,7 +364,7 @@
   :Auto-inector One-shot:
     :Name: Auto-inector One-shot
     :Essence: '0.05'
-    :Price: Cont+1500¥
+    :Price: Cont+1500
     :Type: BO
     :Legality: 4P-N
     :Avail: 4/72 hrs
@@ -373,7 +373,7 @@
   :Auto-injector Reusable:
     :Name: Auto-injector Reusable
     :Essence: '0.1'
-    :Price: Cont+1000¥
+    :Price: Cont+1000
     :Type: BO
     :Legality: 6P-N
     :Avail: 4/72 hrs
@@ -382,7 +382,7 @@
   :Balance Augmenter:
     :Name: Balance Augmenter
     :Essence: '0.4'
-    :Price: 14000¥
+    :Price: '14000'
     :Type: SE
     :Legality: Legal
     :Avail: 8/2 wks
@@ -393,7 +393,7 @@
   :Balance Augmentor:
     :Name: Balance Augmentor
     :Essence: '0.4'
-    :Price: 14000¥
+    :Price: '14000'
     :Type: SE
     :Legality: Legal
     :Avail: 8/2 wks
@@ -404,7 +404,7 @@
   :Balance Tail:
     :Name: Balance Tail
     :Essence: '0.5'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: BO
     :Legality: Legal
     :Avail: 8/1 wk
@@ -412,7 +412,7 @@
     :Page: mm.25
   :Ballistic Armor:
     :Name: Ballistic Armor
-    :Price: 2500¥
+    :Price: '2500'
     :Type: BO
     :Legality: Legal
     :Avail: 8/2 wks
@@ -428,7 +428,7 @@
   :Basic Eyelaser High Power:
     :Name: Basic Eyelaser High Power
     :Essence: '0.5'
-    :Price: 8000¥
+    :Price: '8000'
     :Type: SE
     :Legality: 5P-N
     :Avail: 8/2 wks
@@ -441,7 +441,7 @@
   :Basic Eyelaser Low Power:
     :Name: Basic Eyelaser Low Power
     :Essence: '0.2'
-    :Price: 3000¥
+    :Price: '3000'
     :Type: SE
     :Legality: 5P-N
     :Avail: 8/72 hrs
@@ -454,7 +454,7 @@
   :Basic Eyelaser Medium Power:
     :Name: Basic Eyelaser Medium Power
     :Essence: '0.3'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: SE
     :Legality: 5P-N
     :Avail: 8/1 wk
@@ -467,7 +467,7 @@
   :BattleTac Cyberlink:
     :Name: BattleTac Cyberlink
     :Essence: '0.2'
-    :Price: 30000¥
+    :Price: '30000'
     :Type: BR
     :Legality: 2P-R
     :Avail: 12/30 days
@@ -476,7 +476,7 @@
   :BattleTac FDDM Master Unit:
     :Name: BattleTac FDDM Master Unit
     :Essence: '0.15'
-    :Price: 200000¥
+    :Price: '200000'
     :Type: RI
     :Legality: 5P-R
     :Avail: 10/21 days
@@ -488,7 +488,7 @@
   :BattleTac IVIS Master Unit:
     :Name: BattleTac IVIS Master Unit
     :Essence: '0.15'
-    :Price: 150000¥
+    :Price: '150000'
     :Type: RI
     :Legality: 5P-R
     :Avail: 8/14 days
@@ -501,7 +501,7 @@
   :BattleTac modification:
     :Name: BattleTac modification
     :Essence: '0'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: BR
     :Legality: 2P-R
     :Avail: " + 6/-"
@@ -512,7 +512,7 @@
   :Biomonitor System:
     :Name: Biomonitor System
     :Essence: '0.3'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/72 hrs
@@ -521,7 +521,7 @@
   :Body Compartment:
     :Name: Body Compartment
     :Essence: '0.2'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: BO
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -530,62 +530,86 @@
   :Bone Lacing Aluminum:
     :Name: Bone Lacing Aluminum
     :Essence: '1.15'
-    :Price: 25000¥
+    :Price: '25000'
     :Type: BO
     :Legality: 6P-Q
     :Avail: 5/14 days
     :Index: '1.5'
     :Page: sr3.302
     :Base: Bone Lacing
-    :Stats: attributes[Body:+1];armor[Impact:+1]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 1
+      :armor:
+        :Impact: 1
   :Bone Lacing Ceramic:
     :Name: Bone Lacing Ceramic
     :Essence: '1.5'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: BO
     :Legality: 6P-Q
     :Avail: 6/21 days
     :Index: '2.0'
     :Page: mm.27
     :Base: Bone Lacing
-    :Stats: attributes[Body:+1];armor[Impact:+2]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 1
+      :armor:
+        :Impact: 2
   :Bone Lacing Kevlar:
     :Name: Bone Lacing Kevlar
     :Essence: '1.0'
-    :Price: 20000¥
+    :Price: '20000'
     :Type: BO
     :Legality: 6P-Q
     :Avail: 6/21 days
     :Index: '2.0'
     :Page: mm.27
     :Base: Bone Lacing
-    :Stats: attributes[Body:+1];armor[Ballistic:+1]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 1
+      :armor:
+        :Ballistic: 1
   :Bone Lacing Plastic:
     :Name: Bone Lacing Plastic
     :Essence: '0.5'
-    :Price: 7500¥
+    :Price: '7500'
     :Type: BO
     :Legality: 6P-N
     :Avail: 5/14 days
     :Index: '1.5'
     :Page: sr3.302
     :Base: Bone Lacing
-    :Stats: attributes[Body:+1]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 1
   :Bone Lacing Titanium:
     :Name: Bone Lacing Titanium
     :Essence: '2.25'
-    :Price: 75000¥
+    :Price: '75000'
     :Type: BO
     :Legality: 6-R
     :Avail: 5/14 days
     :Index: '1.5'
     :Page: sr3.302
     :Base: Bone Lacing
-    :Stats: attributes[Body:+2];armor[Impact:+1,Ballistic:+1]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 2
+      :armor:
+        :Impact: 1
+        :Ballistic: 1
   :Boosted Reflexes 1:
     :Name: Boosted Reflexes 1
     :Essence: '0.5'
-    :Price: 15000¥
+    :Price: '15000'
     :Type: BO
     :Legality: 8P-Q
     :Avail: 3/24hrs
@@ -593,11 +617,14 @@
     :Page: sr3.302
     :Conflicts: Wired Reflexes, Move by Wire, Vehicle Control Rig
     :Base: Boosted Reflexes
-    :Stats: derived[Initiative|CBM:+1]
+    :Stats:
+      :derived:
+        :Initiative:
+          :CBM: 1
   :Boosted Reflexes 2:
     :Name: Boosted Reflexes 2
     :Essence: '1.25'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: BO
     :Legality: 6P-Q
     :Avail: 3/24 hrs
@@ -605,11 +632,16 @@
     :Page: sr3.302
     :Conflicts: Wired Reflexes, Move Wire, Vehicle Control Rig
     :Base: Boosted Reflexes
-    :Stats: derived[Reaction|CBM:+1,Initative|CBM:+1]
+    :Stats:
+      :derived:
+        :Reaction:
+          :CBM: 1
+        :Initative:
+          :CBM: 1
   :Boosted Reflexes 3:
     :Name: Boosted Reflexes 3
     :Essence: '2.8'
-    :Price: 90000¥
+    :Price: '90000'
     :Type: BO
     :Legality: 5P-Q
     :Avail: 3/24 hrs
@@ -617,11 +649,16 @@
     :Page: sr3.302
     :Conflicts: Wired Reflexes, Move by Wire, Vehicle Control Rig
     :Base: Boosted Reflexes
-    :Stats: derived[Reaction|CBM:+2,Initative|CBM:+2]
+    :Stats:
+      :derived:
+        :Reaction:
+          :CBM: 2
+        :Initative:
+          :CBM: 2
   :Brightlight Feature:
     :Name: Brightlight Feature
     :Essence: '0.2'
-    :Price: 2200¥
+    :Price: '2200'
     :Type: SE
     :Legality: 7P-Q
     :Avail: 8/2 wks
@@ -632,7 +669,7 @@
     :Cyberlimb: Cybereyes
   :Built-in Program:
     :Name: Built-in Program
-    :Price: Mp*200¥
+    :Price: Mp*200
     :Type: SE
     :Legality: Legal
     :Avail: 4/6 days
@@ -643,7 +680,7 @@
   :Built-ln Smartgun Link:
     :Name: Built-ln Smartgun Link
     :Essence: '0.25'
-    :Price: 2500¥
+    :Price: '2500'
     :Type: CY
     :Legality: 5P-N
     :Avail: 6/4 days
@@ -655,7 +692,7 @@
   :Camera:
     :Name: Camera
     :Essence: '0.4'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: SE
     :Legality: Legal
     :Avail: 6/24 hrs
@@ -666,7 +703,7 @@
   :Chemical Analyzer:
     :Name: Chemical Analyzer
     :Essence: '0.2'
-    :Price: 2500¥
+    :Price: '2500'
     :Type: SE
     :Legality: Legal
     :Avail: 4/6 days
@@ -678,7 +715,7 @@
   :Chipjack 1 slot:
     :Name: Chipjack 1 slot
     :Essence: '0.2'
-    :Price: 1000¥
+    :Price: '1000'
     :Type: BR
     :Legality: Legal
     :Avail: 3/72 hrs
@@ -688,7 +725,7 @@
   :Chipjack 2 slot:
     :Name: Chipjack 2 slot
     :Essence: '0.25'
-    :Price: 2000¥
+    :Price: '2000'
     :Type: BR
     :Legality: Legal
     :Avail: 3/72 hrs
@@ -698,7 +735,7 @@
   :Chipjack 3 slot:
     :Name: Chipjack 3 slot
     :Essence: '0.3'
-    :Price: 3000¥
+    :Price: '3000'
     :Type: BR
     :Legality: Legal
     :Avail: 3/72 hrs
@@ -708,7 +745,7 @@
   :Chipjack 4 slot:
     :Name: Chipjack 4 slot
     :Essence: '0.35'
-    :Price: 4000¥
+    :Price: '4000'
     :Type: BR
     :Legality: Legal
     :Avail: 3/72 hrs
@@ -718,7 +755,7 @@
   :Chipjack Dedicated:
     :Name: Chipjack Dedicated
     :Essence: '0.1'
-    :Price: chip+500¥
+    :Price: chip+500
     :Type: BR
     :Legality: 3-Y
     :Avail: 2/48 hrs
@@ -728,7 +765,7 @@
   :Chipjack Expert Driver 1:
     :Name: Chipjack Expert Driver 1
     :Essence: '0.1'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -741,7 +778,7 @@
   :Chipjack Expert Driver 2:
     :Name: Chipjack Expert Driver 2
     :Essence: '0.2'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -754,7 +791,7 @@
   :Chipjack Expert Driver 3:
     :Name: Chipjack Expert Driver 3
     :Essence: '0.3'
-    :Price: 15000¥
+    :Price: '15000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -767,7 +804,7 @@
   :Chipjack Expert Driver 4:
     :Name: Chipjack Expert Driver 4
     :Essence: '0.4'
-    :Price: 20000¥
+    :Price: '20000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -780,7 +817,7 @@
   :Chipjack Expert Driver 5:
     :Name: Chipjack Expert Driver 5
     :Essence: '0.5'
-    :Price: 25000¥
+    :Price: '25000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -793,7 +830,7 @@
   :Chipjack Expert Driver 6:
     :Name: Chipjack Expert Driver 6
     :Essence: '0.6'
-    :Price: 30000¥
+    :Price: '30000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -806,7 +843,7 @@
   :Chipjack Expert Driver 7:
     :Name: Chipjack Expert Driver 7
     :Essence: '0.7'
-    :Price: 35000¥
+    :Price: '35000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -819,7 +856,7 @@
   :Chipjack Expert Driver 8:
     :Name: Chipjack Expert Driver 8
     :Essence: '0.8'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -832,7 +869,7 @@
   :Chipjack Expert Driver 9:
     :Name: Chipjack Expert Driver 9
     :Essence: '0.9'
-    :Price: 45000¥
+    :Price: '45000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -845,7 +882,7 @@
   :Chipjack Expert Driver 10:
     :Name: Chipjack Expert Driver 10
     :Essence: '1.0'
-    :Price: 50000¥
+    :Price: '50000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -858,7 +895,7 @@
   :Commlink:
     :Name: Commlink
     :Essence: '0.3'
-    :Price: L*5000¥
+    :Price: L*5000
     :Type: CO
     :Legality: Legal
     :Avail: 3/48 hrs
@@ -866,7 +903,7 @@
     :Page: sr3.298
   :Cortex Bomb:
     :Name: Cortex Bomb
-    :Price: 500000¥
+    :Price: '500000'
     :Type: BR
     :Legality: 2-R
     :Avail: 20/14 days
@@ -874,7 +911,7 @@
     :Page: sr2.247
   :Cortex Kink Bomb:
     :Name: Cortex Kink Bomb
-    :Price: 28000¥
+    :Price: '28000'
     :Type: BR
     :Legality: 2-R
     :Avail: 12/14 days
@@ -882,7 +919,7 @@
     :Page: sr3.298
   :Cortex Microbomb:
     :Name: Cortex Microbomb
-    :Price: 65500¥
+    :Price: '65500'
     :Type: BR
     :Legality: 2-R
     :Avail: 18/48 hrs
@@ -890,7 +927,7 @@
     :Page: sr3.298
   :Crainial Area Bomb:
     :Name: Crainial Area Bomb
-    :Price: 500000¥
+    :Price: '500000'
     :Type: BR
     :Legality: 2-R
     :Avail: 20/14 days
@@ -899,7 +936,7 @@
   :Cranial Cyberdeck Allegiance Sigma:
     :Name: Cranial Cyberdeck Allegiance Sigma
     :Essence: '1.9'
-    :Price: 14000¥
+    :Price: '14000'
     :Type: MA
     :Legality: 4P-S
     :Avail: 4/1 wk
@@ -912,7 +949,7 @@
   :Cranial Cyberdeck CMT Avatar:
     :Name: Cranial Cyberdeck CMT Avatar
     :Essence: '2.8'
-    :Price: 300000¥
+    :Price: '300000'
     :Type: MA
     :Legality: 4P-S
     :Avail: 8/2 wks
@@ -925,7 +962,7 @@
   :Cranial Cyberdeck Fairlight Excalibur:
     :Name: Cranial Cyberdeck Fairlight Excalibur
     :Essence: '3.5'
-    :Price: 2.000000¥
+    :Price: '2.000000'
     :Type: MA
     :Legality: 4P-S
     :Avail: 24/1 mo
@@ -938,7 +975,7 @@
   :Cranial Cyberdeck Novatech Hyperdeck-6:
     :Name: Cranial Cyberdeck Novatech Hyperdeck-6
     :Essence: '2.7'
-    :Price: 150000¥
+    :Price: '150000'
     :Type: MA
     :Legality: 4P-S
     :Avail: 6/2 wks
@@ -951,7 +988,7 @@
   :Cranial Cyberdeck Novatech Slimcase-10:
     :Name: Cranial Cyberdeck Novatech Slimcase-10
     :Essence: '3.2'
-    :Price: 1500000¥
+    :Price: '1500000'
     :Type: MA
     :Legality: 4P-S
     :Avail: 18/1 mo
@@ -964,7 +1001,7 @@
   :Cranial Cyberdeck Renraku Kraftwerk-8:
     :Name: Cranial Cyberdeck Renraku Kraftwerk-8
     :Essence: '2.9'
-    :Price: 450000¥
+    :Price: '450000'
     :Type: MA
     :Legality: 4P-S
     :Avail: 10/1 mo
@@ -977,7 +1014,7 @@
   :Cranial Cyberdeck Sony CT-360-D:
     :Name: Cranial Cyberdeck Sony CT-360-D
     :Essence: '2.5'
-    :Price: 57000¥
+    :Price: '57000'
     :Type: MA
     :Legality: 4P-S
     :Avail: 6/2 wks
@@ -990,7 +1027,7 @@
   :Cranial Cyberdeck Transys Highlander:
     :Name: Cranial Cyberdeck Transys Highlander
     :Essence: '3.0'
-    :Price: 700000¥
+    :Price: '700000'
     :Type: MA
     :Legality: 4P-S
     :Avail: 14/1 mo
@@ -1003,7 +1040,7 @@
   :Cranial Remote Deck:
     :Name: Cranial Remote Deck
     :Essence: '0.3'
-    :Price: L*25000¥
+    :Price: L*25000
     :Type: RI
     :Legality: Legal
     :Avail: 4/72 hrs
@@ -1015,7 +1052,7 @@
   :Cyberears:
     :Name: Cyberears
     :Essence: '0.3'
-    :Price: 4000¥
+    :Price: '4000'
     :Type: SE
     :Legality: Legal
     :Avail: 2/24 hrs
@@ -1024,7 +1061,7 @@
   :Cybereyes:
     :Name: Cybereyes
     :Essence: '0.2'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: SE
     :Legality: Legal
     :Avail: 2/24 hrs
@@ -1034,7 +1071,7 @@
   :Cyberfins:
     :Name: Cyberfins
     :Essence: '0.3'
-    :Price: 10500¥
+    :Price: '10500'
     :Type: BO
     :Legality: Legal
     :Avail: 5/48 hrs
@@ -1043,7 +1080,7 @@
   :Cybergun Dart:
     :Name: Cybergun Dart
     :Essence: '0.3'
-    :Price: 1400¥
+    :Price: '1400'
     :Type: BO
     :Legality: 5P-Q
     :Avail: 8/6 days
@@ -1061,7 +1098,7 @@
   :Cybergun Heavy pistol:
     :Name: Cybergun Heavy pistol
     :Essence: '0.6'
-    :Price: 800¥
+    :Price: '800'
     :Type: BO
     :Legality: 4P-Q
     :Avail: 8/7 days
@@ -1079,7 +1116,7 @@
   :Cybergun Hold-out pistol:
     :Name: Cybergun Hold-out pistol
     :Essence: '0.15'
-    :Price: 1000¥
+    :Price: '1000'
     :Type: BO
     :Legality: 6P-Q
     :Avail: 8/7 days
@@ -1097,7 +1134,7 @@
   :Cybergun Light Pistol:
     :Name: Cybergun Light Pistol
     :Essence: '0.35'
-    :Price: 650¥
+    :Price: '650'
     :Type: BO
     :Legality: 6P-Q
     :Avail: 8/7 days
@@ -1115,7 +1152,7 @@
   :Cybergun Machine Pistol:
     :Name: Cybergun Machine Pistol
     :Essence: '0.4'
-    :Price: 900¥
+    :Price: '900'
     :Type: BO
     :Legality: 4P-Q
     :Avail: 8/7 days
@@ -1133,7 +1170,7 @@
   :Cybergun Shotgun:
     :Name: Cybergun Shotgun
     :Essence: '1.1'
-    :Price: 1200¥
+    :Price: '1200'
     :Type: BO
     :Legality: 4P-Q
     :Avail: 8/7 days
@@ -1151,7 +1188,7 @@
   :Cybergun Squirt:
     :Name: Cybergun Squirt
     :Essence: '0.4'
-    :Price: 1400¥
+    :Price: '1400'
     :Type: BO
     :Legality: 5P-Q
     :Avail: 8/6 days
@@ -1169,7 +1206,7 @@
   :Cybergun Submachinegun:
     :Name: Cybergun Submachinegun
     :Essence: '0.6'
-    :Price: 1800¥
+    :Price: '1800'
     :Type: BO
     :Legality: 3P-Q
     :Avail: 8/7 days
@@ -1187,7 +1224,7 @@
   :Cybergun Taser:
     :Name: Cybergun Taser
     :Essence: '0.3'
-    :Price: 2000¥
+    :Price: '2000'
     :Type: BO
     :Legality: 5P-Q
     :Avail: 6/4 days
@@ -1205,7 +1242,7 @@
   :Cyberlimb Cyberarm Obvious:
     :Name: Cyberlimb Cyberarm Obvious
     :Essence: '1.0'
-    :Price: 75000¥
+    :Price: '75000'
     :Type: CY
     :Legality: Legal
     :Avail: 4/4 days
@@ -1217,7 +1254,7 @@
   :Cyberlimb Cyberarm Synthetic:
     :Name: Cyberlimb Cyberarm Synthetic
     :Essence: '1.0'
-    :Price: 100000¥
+    :Price: '100000'
     :Type: CY
     :Legality: Legal
     :Avail: 4/4 days
@@ -1230,7 +1267,7 @@
   :Cyberlimb Cyberfoot Obvious:
     :Name: Cyberlimb Cyberfoot Obvious
     :Essence: '0.35'
-    :Price: 20000¥
+    :Price: '20000'
     :Type: CY
     :Legality: Legal
     :Avail: 3/4 days
@@ -1242,7 +1279,7 @@
   :Cyberlimb Cyberfoot Synthetic:
     :Name: Cyberlimb Cyberfoot Synthetic
     :Essence: '0.35'
-    :Price: 25000¥
+    :Price: '25000'
     :Type: CY
     :Legality: Legal
     :Avail: 3/4 days
@@ -1255,7 +1292,7 @@
   :Cyberlimb Cyberforearm Obvious:
     :Name: Cyberlimb Cyberforearm Obvious
     :Essence: '0.65'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: CY
     :Legality: Legal
     :Avail: 4/4 days
@@ -1267,7 +1304,7 @@
   :Cyberlimb Cyberforearm Synthetic:
     :Name: Cyberlimb Cyberforearm Synthetic
     :Essence: '0.65'
-    :Price: 50000¥
+    :Price: '50000'
     :Type: CY
     :Legality: Legal
     :Avail: 4/4 days
@@ -1280,7 +1317,7 @@
   :Cyberlimb Cyberhand Obvious:
     :Name: Cyberlimb Cyberhand Obvious
     :Essence: '0.35'
-    :Price: 20000¥
+    :Price: '20000'
     :Type: CY
     :Legality: Legal
     :Avail: 3/4 days
@@ -1292,7 +1329,7 @@
   :Cyberlimb Cyberhand Synthetic:
     :Name: Cyberlimb Cyberhand Synthetic
     :Essence: '0.35'
-    :Price: 25000¥
+    :Price: '25000'
     :Type: CY
     :Legality: Legal
     :Avail: 3/4 days
@@ -1305,7 +1342,7 @@
   :Cyberlimb Cyberleg Kid Stealth:
     :Name: Cyberlimb Cyberleg Kid Stealth
     :Essence: '1.0'
-    :Price: 100000¥
+    :Price: '100000'
     :Type: CY
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -1316,7 +1353,7 @@
   :Cyberlimb Cyberleg Obvious:
     :Name: Cyberlimb Cyberleg Obvious
     :Essence: '1.0'
-    :Price: 75000¥
+    :Price: '75000'
     :Type: CY
     :Legality: Legal
     :Avail: 4/4 days
@@ -1328,7 +1365,7 @@
   :Cyberlimb Cyberleg Synthetic:
     :Name: Cyberlimb Cyberleg Synthetic
     :Essence: '1.0'
-    :Price: 100000¥
+    :Price: '100000'
     :Type: CY
     :Legality: Legal
     :Avail: 4/4 days
@@ -1341,7 +1378,7 @@
   :Cyberlimb Cyberlowerleg Obvious:
     :Name: Cyberlimb Cyberlowerleg Obvious
     :Essence: '0.65'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: CY
     :Legality: Legal
     :Avail: 4/4 days
@@ -1353,7 +1390,7 @@
   :Cyberlimb Cyberlowerleg Synthetic:
     :Name: Cyberlimb Cyberlowerleg Synthetic
     :Essence: '0.65'
-    :Price: 50000¥
+    :Price: '50000'
     :Type: CY
     :Legality: Legal
     :Avail: 4/4 days
@@ -1366,7 +1403,7 @@
   :Cyberlimb Cyberskull Obvious:
     :Name: Cyberlimb Cyberskull Obvious
     :Essence: '0.75'
-    :Price: 35000¥
+    :Price: '35000'
     :Type: CY
     :Legality: Legal
     :Avail: 6/4 days
@@ -1377,7 +1414,7 @@
   :Cyberlimb Cyberskull Synthetic:
     :Name: Cyberlimb Cyberskull Synthetic
     :Essence: '0.75'
-    :Price: 55000¥
+    :Price: '55000'
     :Type: CY
     :Legality: Legal
     :Avail: 6/4 days
@@ -1388,7 +1425,7 @@
   :Cyberlimb Cybertorso Obvious:
     :Name: Cyberlimb Cybertorso Obvious
     :Essence: '1.5'
-    :Price: 90000¥
+    :Price: '90000'
     :Type: CY
     :Legality: Legal
     :Avail: 6/4 days
@@ -1399,7 +1436,7 @@
   :Cyberlimb Cybertorso Synthetic:
     :Name: Cyberlimb Cybertorso Synthetic
     :Essence: '1.5'
-    :Price: 120000¥
+    :Price: '120000'
     :Type: CY
     :Legality: Legal
     :Avail: 6/4 days
@@ -1410,7 +1447,7 @@
   :Dampener:
     :Name: Dampener
     :Essence: '0.1'
-    :Price: 3500¥
+    :Price: '3500'
     :Type: SE
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -1421,7 +1458,7 @@
   :Data Compactor 1:
     :Name: Data Compactor 1
     :Essence: '0.1'
-    :Price: 9500¥
+    :Price: '9500'
     :Type: BR
     :Legality: Legal
     :Avail: 6/60 hrs
@@ -1431,7 +1468,7 @@
   :Data Compactor 2:
     :Name: Data Compactor 2
     :Essence: '0.15'
-    :Price: 19000¥
+    :Price: '19000'
     :Type: BR
     :Legality: Legal
     :Avail: 6/60 hrs
@@ -1441,7 +1478,7 @@
   :Data Compactor 3:
     :Name: Data Compactor 3
     :Essence: '0.2'
-    :Price: 28500¥
+    :Price: '28500'
     :Type: BR
     :Legality: Legal
     :Avail: 6/60 hrs
@@ -1451,7 +1488,7 @@
   :Data Compactor 4:
     :Name: Data Compactor 4
     :Essence: '0.25'
-    :Price: 38000¥
+    :Price: '38000'
     :Type: BR
     :Legality: Legal
     :Avail: 6/60 hrs
@@ -1461,7 +1498,7 @@
   :Data Filter:
     :Name: Data Filter
     :Essence: '0.3'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: BR
     :Legality: Legal
     :Avail: 6/36 hrs
@@ -1470,7 +1507,7 @@
   :Data Lock:
     :Name: Data Lock
     :Essence: '0.2'
-    :Price: 1000¥+Enc
+    :Price: 1000+Enc
     :Type: BR
     :Legality: Legal
     :Avail: 6/36 hrs
@@ -1479,7 +1516,7 @@
   :Datajack Induction:
     :Name: Datajack Induction
     :Essence: '0.3'
-    :Price: 3000¥
+    :Price: '3000'
     :Type: BR
     :Legality: Legal
     :Avail: 5/4 days
@@ -1488,7 +1525,7 @@
   :Datajack:
     :Name: Datajack
     :Essence: '0.2'
-    :Price: 1000¥
+    :Price: '1000'
     :Type: BR
     :Legality: Legal
     :Avail: 1/1 hrs
@@ -1497,7 +1534,7 @@
   :DatajackEye:
     :Name: DatajackEye
     :Essence: '0.25'
-    :Price: 2200¥
+    :Price: '2200'
     :Type: SE
     :Legality: 4P-N
     :Avail: 6/48 hrs
@@ -1509,7 +1546,7 @@
   :Decryption module:
     :Name: Decryption module
     :Essence: '0.2'
-    :Price: L*17500¥
+    :Price: L*17500
     :Type: RI
     :Legality: " 8P-W"
     :Avail: L+2/L days
@@ -1522,7 +1559,7 @@
   :Dermal Plating 1:
     :Name: Dermal Plating 1
     :Essence: '0.5'
-    :Price: 6000¥
+    :Price: '6000'
     :Type: BO
     :Legality: 6P-N
     :Avail: 4/12 days
@@ -1530,11 +1567,14 @@
     :Page: sr3.302
     :Conflicts: Dermal Sheathing, Orthoskin
     :Base: Dermal Plating
-    :Stats: attributes[Body:+1]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 1
   :Dermal Plating 2:
     :Name: Dermal Plating 2
     :Essence: '1.0'
-    :Price: 15000¥
+    :Price: '15000'
     :Type: BO
     :Legality: 6P-N
     :Avail: 4/12 days
@@ -1542,11 +1582,14 @@
     :Page: sr3.302
     :Conflicts: Dermal Sheathing, Orthoskin
     :Base: Dermal Plating
-    :Stats: attributes[Body:+2]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 2
   :Dermal Plating 3:
     :Name: Dermal Plating 3
     :Essence: '1.5'
-    :Price: 45000¥
+    :Price: '45000'
     :Type: BO
     :Legality: 5P-N
     :Avail: 4/12 days
@@ -1554,11 +1597,14 @@
     :Page: sr3.302
     :Conflicts: Dermal Sheathing, Orthoskin
     :Base: Dermal Plating
-    :Stats: attributes[Body:+3]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 3
   :Dermal Sheathing 1:
     :Name: Dermal Sheathing 1
     :Essence: '0.7'
-    :Price: 24000¥
+    :Price: '24000'
     :Type: BO
     :Legality: 6P-N
     :Avail: 6/14 days
@@ -1566,11 +1612,16 @@
     :Page: mm.28
     :Conflicts: Dermal Plating, Orthoskin
     :Base: Dermal Sheathing
-    :Stats: attributes[Body:+2];[Impact:+1]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 2
+      :armor:
+        :Impact: 1
   :Dermal Sheathing 2:
     :Name: Dermal Sheathing 2
     :Essence: '1.4'
-    :Price: 60000¥
+    :Price: '60000'
     :Type: BO
     :Legality: 6P-N
     :Avail: 6/14 days
@@ -1578,11 +1629,16 @@
     :Page: mm.28
     :Conflicts: Dermal Plating, Orthoskin
     :Base: Dermal Sheathing
-    :Stats: attributes[Body:+3];armor[Impact:+1]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 3
+      :armor:
+        :Impact: 1
   :Dermal Sheathing 3:
     :Name: Dermal Sheathing 3
     :Essence: '2.1'
-    :Price: 120000¥
+    :Price: '120000'
     :Type: BO
     :Legality: 5P-N
     :Avail: 8/14 days
@@ -1590,11 +1646,16 @@
     :Page: mm.28
     :Conflicts: Dermal Plating, Orthoskin
     :Base: Dermal Sheathing
-    :Stats: attributes[Body:+4];armor[Impact:+2]
+    :Stats:
+      :attributes:
+        :Body:
+          :CM: 4
+      :armor:
+        :Impact: 2
   :Diagnosis Processor:
     :Name: Diagnosis Processor
     :Essence: '0.2'
-    :Price: 2500¥
+    :Price: '2500'
     :Type: BO
     :Legality: Legal
     :Avail: 6/72 hrs
@@ -1603,7 +1664,7 @@
   :Direct Neural Interface:
     :Name: Direct Neural Interface
     :Essence: '0.1'
-    :Price: 4500¥
+    :Price: '4500'
     :Type: BO
     :Legality: 5P-Q
     :Avail: 4/6 days
@@ -1612,7 +1673,7 @@
   :Display Link:
     :Name: Display Link
     :Essence: '0.1'
-    :Price: 1000¥
+    :Price: '1000'
     :Type: SE
     :Legality: Legal
     :Avail: 4/36 hrs
@@ -1623,7 +1684,7 @@
   :ECCM 1:
     :Name: ECCM 1
     :Essence: '0.2'
-    :Price: 15000¥
+    :Price: '15000'
     :Type: RI
     :Legality: Legal
     :Avail: 4/7 days
@@ -1637,7 +1698,7 @@
   :ECCM 10:
     :Name: ECCM 10
     :Essence: '0.45'
-    :Price: 900000¥
+    :Price: '900000'
     :Type: R
     :Legality: 4P-R
     :Avail: 18/45 days
@@ -1651,7 +1712,7 @@
   :ECCM 2:
     :Name: ECCM 2
     :Essence: '0.2'
-    :Price: 30000¥
+    :Price: '30000'
     :Type: RI
     :Legality: Legal
     :Avail: 4/7 days
@@ -1665,7 +1726,7 @@
   :ECCM 3:
     :Name: ECCM 3
     :Essence: '0.2'
-    :Price: 45000¥
+    :Price: '45000'
     :Type: RI
     :Legality: Legal
     :Avail: 4/7 days
@@ -1679,7 +1740,7 @@
   :ECCM 4:
     :Name: ECCM 4
     :Essence: '0.3'
-    :Price: 140000¥
+    :Price: '140000'
     :Type: RI
     :Legality: 6P-Q
     :Avail: 6/14 days
@@ -1693,7 +1754,7 @@
   :ECCM 5:
     :Name: ECCM 5
     :Essence: '0.3'
-    :Price: 175000¥
+    :Price: '175000'
     :Type: RI
     :Legality: 6P-Q
     :Avail: 6/14 days
@@ -1707,7 +1768,7 @@
   :ECCM 6:
     :Name: ECCM 6
     :Essence: '0.3'
-    :Price: 210000¥
+    :Price: '210000'
     :Type: RI
     :Legality: 6P-Q
     :Avail: 6/14 days
@@ -1721,7 +1782,7 @@
   :ECCM 7:
     :Name: ECCM 7
     :Essence: '0.4'
-    :Price: 525000¥
+    :Price: '525000'
     :Type: RI
     :Legality: 5P-R
     :Avail: 12/28 days
@@ -1735,7 +1796,7 @@
   :ECCM 8:
     :Name: ECCM 8
     :Essence: '0.4'
-    :Price: 600000¥
+    :Price: '600000'
     :Type: RI
     :Legality: 5P-R
     :Avail: 12/28 days
@@ -1749,7 +1810,7 @@
   :ECCM 9:
     :Name: ECCM 9
     :Essence: '0.4'
-    :Price: 675000¥
+    :Price: '675000'
     :Type: RI
     :Legality: 5P-R
     :Avail: 12/28 days
@@ -1763,7 +1824,7 @@
   :Port headware:
     :Name: Port headware
     :Essence: '0.01'
-    :Price: 200¥
+    :Price: '200'
     :Type: BR
     :Legality: Legal
     :Avail: 1/1 hrs
@@ -1773,7 +1834,7 @@
   :Port non-headware:
     :Name: Port non-headware
     :Essence: '0.01'
-    :Price: 500¥
+    :Price: '500'
     :Type: BR
     :Legality: Legal
     :Avail: 1/1 hrs
@@ -1783,7 +1844,7 @@
   :Dedicated port:
     :Name: Dedicated port
     :Essence: '0.1'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: BR
     :Legality: 2P-R
     :Avail: 12/60 days
@@ -1794,7 +1855,7 @@
   :Generic port:
     :Name: Generic port
     :Essence: '0.1'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: BR
     :Legality: 2P-R
     :Avail: 12/60 days
@@ -1805,7 +1866,7 @@
   :Electronic Magnification 1:
     :Name: Electronic Magnification 1
     :Essence: '0.1'
-    :Price: 3500¥
+    :Price: '3500'
     :Type: SE
     :Legality: Legal
     :Avail: 5/48 hrs
@@ -1814,11 +1875,14 @@
     :Option: 'yes'
     :Cyberlimb: Cybereyes
     :Base: Electronic Magnification
-    :Stats: senses[Magnification Vision|Electronic:1]
+    :Stats:
+      :senses:
+        :Magnification Vision:
+          :Electronic: 1
   :Electronic Magnification 2:
     :Name: Electronic Magnification 2
     :Essence: '0.1'
-    :Price: 7500¥
+    :Price: '7500'
     :Type: SE
     :Legality: Legal
     :Avail: 5/48 hrs
@@ -1827,11 +1891,14 @@
     :Option: 'yes'
     :Cyberlimb: Cybereyes
     :Base: Electronic Magnification
-    :Stats: senses[Magnification Vision|Electronic:2]
+    :Stats:
+      :senses:
+        :Magnification Vision:
+          :Electronic: 2
   :Electronic Magnification 3:
     :Name: Electronic Magnification 3
     :Essence: '0.1'
-    :Price: 11000¥
+    :Price: '11000'
     :Type: SE
     :Legality: Legal
     :Avail: 5/48 hrs
@@ -1840,33 +1907,40 @@
     :Option: 'yes'
     :Cyberlimb: Cybereyes
     :Base: Electronic Magnification
-    :Stats: senses[Magnification Vision|Electronic:3]
+    :Stats:
+      :senses:
+        :Magnification Vision:
+          :Electronic: 3
   :Encephalon 1:
     :Name: Encephalon 1
     :Essence: '0.75'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: BR
     :Legality: Legal
     :Avail: 6/12 days
     :Index: '2.0'
     :Page: mm.20
     :Base: Encephalon
-    :Stats: special[Taskpool:+1]
+    :Stats:
+      :special:
+        :Taskpool: 1
   :Encephalon 2:
     :Name: Encephalon 2
     :Essence: '1.75'
-    :Price: 115000¥
+    :Price: '115000'
     :Type: BR
     :Legality: Legal
     :Avail: 6/12 days
     :Index: '2.0'
     :Page: mm.20
     :Base: Encephalon
-    :Stats: special[Taskpool:+2]
+    :Stats:
+      :special:
+        :Taskpool: 2
   :Encryption module:
     :Name: Encryption module
     :Essence: '0.2'
-    :Price: L*10000¥
+    :Price: L*10000
     :Type: RI
     :Legality: 8P-W
     :Avail: L/L days
@@ -1879,7 +1953,7 @@
   :External Clip Port:
     :Name: External Clip Port
     :Essence: '0.1'
-    :Price: 100¥
+    :Price: '100'
     :Type: BO
     :Legality: as gun
     :Avail: 8/7 days
@@ -1893,7 +1967,7 @@
     :Cmod: "-1"
   :External Program:
     :Name: External Program
-    :Price: Mp*150¥
+    :Price: Mp*150
     :Type: SE
     :Legality: Legal
     :Avail: 5/4 days
@@ -1904,7 +1978,7 @@
   :Eye Display:
     :Name: Eye Display
     :Essence: '0.1'
-    :Price: 300¥
+    :Price: '300'
     :Type: BO
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -1913,7 +1987,7 @@
   :Eyeeapon Dart:
     :Name: Eyeeapon Dart
     :Essence: '0.25'
-    :Price: 4200¥
+    :Price: '4200'
     :Type: SE
     :Legality: 7P-Q
     :Avail: 8/2 wks
@@ -1925,7 +1999,7 @@
   :Eyeweapon Gun:
     :Name: Eyeweapon Gun
     :Essence: '0.4'
-    :Price: 6400¥
+    :Price: '6400'
     :Type: SE
     :Legality: 7P-Q
     :Avail: 6/1 week
@@ -1937,7 +2011,7 @@
   :Fangs Extendable:
     :Name: Fangs Extendable
     :Essence: '0.15'
-    :Price: 8000¥
+    :Price: '8000'
     :Type: BO
     :Legality: 5P-N
     :Avail: 5/48 hrs
@@ -1949,7 +2023,7 @@
   :Fangs:
     :Name: Fangs
     :Essence: '0.1'
-    :Price: 8000¥
+    :Price: '8000'
     :Type: BO
     :Legality: 5P-N
     :Avail: 5/48 hrs
@@ -1961,7 +2035,7 @@
   :Filtration Blood 1:
     :Name: Filtration Blood 1
     :Essence: '0.2'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -1972,7 +2046,7 @@
   :Filtration Blood 2:
     :Name: Filtration Blood 2
     :Essence: '0.4'
-    :Price: 20000¥
+    :Price: '20000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -1983,7 +2057,7 @@
   :Filtration Blood 3:
     :Name: Filtration Blood 3
     :Essence: '0.6'
-    :Price: 30000¥
+    :Price: '30000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -1994,7 +2068,7 @@
   :Filtration Blood 4:
     :Name: Filtration Blood 4
     :Essence: '0.8'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2005,7 +2079,7 @@
   :Filtration Blood 5:
     :Name: Filtration Blood 5
     :Essence: '1'
-    :Price: 50000¥
+    :Price: '50000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2016,7 +2090,7 @@
   :Filtration Blood 6:
     :Name: Filtration Blood 6
     :Essence: '1.2'
-    :Price: 60000¥
+    :Price: '60000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2027,7 +2101,7 @@
   :Filtration Blood 7:
     :Name: Filtration Blood 7
     :Essence: '1.4'
-    :Price: 70000¥
+    :Price: '70000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2038,7 +2112,7 @@
   :Filtration Blood 8:
     :Name: Filtration Blood 8
     :Essence: '1.6'
-    :Price: 80000¥
+    :Price: '80000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2049,7 +2123,7 @@
   :Filtration Blood 9:
     :Name: Filtration Blood 9
     :Essence: '1.8'
-    :Price: 90000¥
+    :Price: '90000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2060,7 +2134,7 @@
   :Filtration Blood 10:
     :Name: Filtration Blood 10
     :Essence: '2.0'
-    :Price: 100000¥
+    :Price: '100000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2071,7 +2145,7 @@
   :Filtration IngestedToxin 1:
     :Name: Filtration IngestedToxin 1
     :Essence: '0.2'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: B
     :Legality: Legal
     :Avail: 6/4 days
@@ -2082,7 +2156,7 @@
   :Filtration IngestedToxin 2:
     :Name: Filtration IngestedToxin 2
     :Essence: '0.4'
-    :Price: 20000¥
+    :Price: '20000'
     :Type: B
     :Legality: Legal
     :Avail: 6/4 days
@@ -2093,7 +2167,7 @@
   :Filtration IngestedToxin 3:
     :Name: Filtration IngestedToxin 3
     :Essence: '0.6'
-    :Price: 30000¥
+    :Price: '30000'
     :Type: B
     :Legality: Legal
     :Avail: 6/4 days
@@ -2104,7 +2178,7 @@
   :Filtration IngestedToxin 4:
     :Name: Filtration IngestedToxin 4
     :Essence: '0.8'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: B
     :Legality: Legal
     :Avail: 6/4 days
@@ -2115,7 +2189,7 @@
   :Filtration IngestedToxin 5:
     :Name: Filtration IngestedToxin 5
     :Essence: '1.0'
-    :Price: 50000¥
+    :Price: '50000'
     :Type: B
     :Legality: Legal
     :Avail: 6/4 days
@@ -2126,7 +2200,7 @@
   :Filtration IngestedToxin 6:
     :Name: Filtration IngestedToxin 6
     :Essence: '1.2'
-    :Price: 60000¥
+    :Price: '60000'
     :Type: B
     :Legality: Legal
     :Avail: 6/4 days
@@ -2137,7 +2211,7 @@
   :Filtration IngestedToxin 7:
     :Name: Filtration IngestedToxin 7
     :Essence: '1.4'
-    :Price: 70000¥
+    :Price: '70000'
     :Type: B
     :Legality: Legal
     :Avail: 6/4 days
@@ -2148,7 +2222,7 @@
   :Filtration IngestedToxin 8:
     :Name: Filtration IngestedToxin 8
     :Essence: '1.6'
-    :Price: 80000¥
+    :Price: '80000'
     :Type: B
     :Legality: Legal
     :Avail: 6/4 days
@@ -2159,7 +2233,7 @@
   :Filtration IngestedToxin 9:
     :Name: Filtration IngestedToxin 9
     :Essence: '1.8'
-    :Price: 90000¥
+    :Price: '90000'
     :Type: B
     :Legality: Legal
     :Avail: 6/4 days
@@ -2170,7 +2244,7 @@
   :Filtration IngestedToxin 10:
     :Name: Filtration IngestedToxin 10
     :Essence: '2.0'
-    :Price: 100000¥
+    :Price: '100000'
     :Type: B
     :Legality: Legal
     :Avail: 6/4 days
@@ -2181,7 +2255,7 @@
   :Filtratlon Air 1:
     :Name: Filtratlon Air 1
     :Essence: '0.1'
-    :Price: 15000¥
+    :Price: '15000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2192,7 +2266,7 @@
   :Filtratlon Air 2:
     :Name: Filtratlon Air 2
     :Essence: '0.2'
-    :Price: 30000¥
+    :Price: '30000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2203,7 +2277,7 @@
   :Filtratlon Air 3:
     :Name: Filtratlon Air 3
     :Essence: '0.3'
-    :Price: 45000¥
+    :Price: '45000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2214,7 +2288,7 @@
   :Filtratlon Air 4:
     :Name: Filtratlon Air 4
     :Essence: '0.4'
-    :Price: 60000¥
+    :Price: '60000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2225,7 +2299,7 @@
   :Filtratlon Air 5:
     :Name: Filtratlon Air 5
     :Essence: '0.5'
-    :Price: 75000¥
+    :Price: '75000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2236,7 +2310,7 @@
   :Filtratlon Air 6:
     :Name: Filtratlon Air 6
     :Essence: '0.6'
-    :Price: 80000¥
+    :Price: '80000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2247,7 +2321,7 @@
   :Filtratlon Air 7:
     :Name: Filtratlon Air 7
     :Essence: '0.7'
-    :Price: 95000¥
+    :Price: '95000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2258,7 +2332,7 @@
   :Filtratlon Air 8:
     :Name: Filtratlon Air 8
     :Essence: '0.8'
-    :Price: 110000¥
+    :Price: '110000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2269,7 +2343,7 @@
   :Filtratlon Air 9:
     :Name: Filtratlon Air 9
     :Essence: '0.9'
-    :Price: 125000¥
+    :Price: '125000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2280,7 +2354,7 @@
   :Filtratlon Air 10:
     :Name: Filtratlon Air 10
     :Essence: '1.0'
-    :Price: 140000¥
+    :Price: '140000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/4 days
@@ -2291,7 +2365,7 @@
   :Fingertip Compartment:
     :Name: Fingertip Compartment
     :Essence: '0.1'
-    :Price: 3000¥
+    :Price: '3000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/24 hrs
@@ -2300,7 +2374,7 @@
   :Flare Compensation:
     :Name: Flare Compensation
     :Essence: '0.1'
-    :Price: 2000¥
+    :Price: '2000'
     :Type: SE
     :Legality: Legal
     :Avail: 5/48 hrs
@@ -2311,7 +2385,7 @@
   :Flex Hands:
     :Name: Flex Hands
     :Essence: '0.4'
-    :Price: 8000¥
+    :Price: '8000'
     :Type: BO
     :Legality: 7P-N
     :Avail: 6/72 hrs
@@ -2320,7 +2394,7 @@
   :Foot Anchor:
     :Name: Foot Anchor
     :Essence: '0.4'
-    :Price: 14000¥
+    :Price: '14000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/7 days
@@ -2332,7 +2406,7 @@
     :Cmod: "-1"
   :Full Limb Strength Enhancement 1:
     :Name: Full Limb Strength Enhancement 1
-    :Price: 50000¥
+    :Price: '50000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 6/4 days
@@ -2346,7 +2420,7 @@
     :Base: Full Limb Strength Enhancement
   :Full Limb Strength Enhancement 2:
     :Name: Full Limb Strength Enhancement 2
-    :Price: 100000¥
+    :Price: '100000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 6/4 days
@@ -2360,7 +2434,7 @@
     :Base: Full Limb Strength Enhancement
   :Full Limb Strength Enhancement 3:
     :Name: Full Limb Strength Enhancement 3
-    :Price: 150000¥
+    :Price: '150000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 6/4 days
@@ -2375,7 +2449,7 @@
   :Full Limb Strength Enhancementplus 4:
     :Name: Full Limb Strength Enhancementplus 4
     :Essence: '0.4'
-    :Price: 75000¥
+    :Price: '75000'
     :Type: CY
     :Legality: 6P-R
     :Avail: 6/4 days
@@ -2391,7 +2465,7 @@
   :Full Limb Strength Enhancementplus 5:
     :Name: Full Limb Strength Enhancementplus 5
     :Essence: '0.8'
-    :Price: 150000¥
+    :Price: '150000'
     :Type: CY
     :Legality: 6P-R
     :Avail: 6/4 days
@@ -2407,7 +2481,7 @@
   :Full Limb Strength Enhancementplus 6:
     :Name: Full Limb Strength Enhancementplus 6
     :Essence: '1.2'
-    :Price: 225000¥
+    :Price: '225000'
     :Type: CY
     :Legality: 6P-R
     :Avail: 6/4 days
@@ -2423,7 +2497,7 @@
   :Gas Spectrometer:
     :Name: Gas Spectrometer
     :Essence: '0.2'
-    :Price: 2500¥
+    :Price: '2500'
     :Type: SE
     :Legality: Legal
     :Avail: 4/6 days
@@ -2434,7 +2508,7 @@
     :Cmod: "-0.5 "
   :Gyromount:
     :Name: Gyromount
-    :Price: 40000¥
+    :Price: '40000'
     :Type: CY
     :Legality: 4P-R
     :Avail: 10/3 wks
@@ -2448,7 +2522,7 @@
   :Hand Blade Retractable:
     :Name: Hand Blade Retractable
     :Essence: '0.25'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: BO
     :Legality: 4P-R
     :Avail: 6/5 days
@@ -2464,7 +2538,7 @@
   :Hand Blade:
     :Name: Hand Blade
     :Essence: '0.1'
-    :Price: 7500¥
+    :Price: '7500'
     :Type: BO
     :Legality: 4P-R
     :Avail: 6/5 days
@@ -2480,7 +2554,7 @@
   :Hand Razors Retractable:
     :Name: Hand Razors Retractable
     :Essence: '0.2'
-    :Price: 9000¥
+    :Price: '9000'
     :Type: BO
     :Legality: 3-B
     :Avail: 5/72 hrs
@@ -2496,7 +2570,7 @@
   :Hand Razors:
     :Name: Hand Razors
     :Essence: '0.1'
-    :Price: 4500¥
+    :Price: '4500'
     :Type: BO
     :Legality: 3-B
     :Avail: 3/72 hrs
@@ -2512,7 +2586,7 @@
   :Hearing Amplification:
     :Name: Hearing Amplification
     :Essence: '0.2'
-    :Price: 3500¥
+    :Price: '3500'
     :Type: SE
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -2520,11 +2594,13 @@
     :Page: sr3.299
     :Option: 'yes'
     :Cyberlimb: Cyberears
-    :Stats: senses[Improved Hearing|Electronic]
+    :Stats:
+      :senses:
+        :Improved Hearing: :Electronic
   :High Frequency:
     :Name: High Frequency
     :Essence: '0.2'
-    :Price: 3000¥
+    :Price: '3000'
     :Type: SE
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -2532,10 +2608,12 @@
     :Page: sr3.299
     :Option: 'yes'
     :Cyberlimb: Cyberears
-    :Stats: senses[High-Frequency Hearing|Electronic]
+    :Stats:
+      :senses:
+        :High-Frequency Hearing: :Electronic
   :High-frequency Modulator:
     :Name: High-frequency Modulator
-    :Price: 8000¥
+    :Price: '8000'
     :Type: CO
     :Legality: 6P-Q
     :Avail: 6/48 hrs
@@ -2546,7 +2624,7 @@
   :Holster:
     :Name: Holster
     :Essence: '0.1'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: BO
     :Legality: 5P-N
     :Avail: 4/48 hrs
@@ -2559,7 +2637,7 @@
   :Hook hand:
     :Name: Hook hand
     :Essence: '0.1'
-    :Price: 30¥
+    :Price: '30'
     :Type: BO
     :Legality: Legal
     :Avail: 1/6 days
@@ -2568,7 +2646,7 @@
   :Horns Retractable:
     :Name: Horns Retractable
     :Essence: '0.25'
-    :Price: 16000¥
+    :Price: '16000'
     :Type: BR
     :Legality: 5P-N
     :Avail: 5/48 hrs
@@ -2584,7 +2662,7 @@
   :Horns:
     :Name: Horns
     :Essence: '0.1'
-    :Price: 12000¥
+    :Price: '12000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -2599,7 +2677,7 @@
   :Hydraulic Jack 1:
     :Name: Hydraulic Jack 1
     :Essence: '1'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: BO
     :Legality: Legal
     :Avail: 5/6 days
@@ -2614,7 +2692,7 @@
   :Hydraulic Jack 2:
     :Name: Hydraulic Jack 2
     :Essence: '1.25'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: BO
     :Legality: Legal
     :Avail: 5/6 days
@@ -2629,7 +2707,7 @@
   :Hydraulic Jack 3:
     :Name: Hydraulic Jack 3
     :Essence: '1.5'
-    :Price: 15000¥
+    :Price: '15000'
     :Type: BO
     :Legality: Legal
     :Avail: 5/6 days
@@ -2644,7 +2722,7 @@
   :Hydraulic Jack 4:
     :Name: Hydraulic Jack 4
     :Essence: '1.75'
-    :Price: 20000¥
+    :Price: '20000'
     :Type: BO
     :Legality: Legal
     :Avail: 5/6 days
@@ -2659,7 +2737,7 @@
   :Hydraulic Jack 5:
     :Name: Hydraulic Jack 5
     :Essence: '2'
-    :Price: 25000¥
+    :Price: '25000'
     :Type: BO
     :Legality: Legal
     :Avail: 5/6 days
@@ -2674,7 +2752,7 @@
   :Image Link:
     :Name: Image Link
     :Essence: '0.2'
-    :Price: 1600¥
+    :Price: '1600'
     :Type: SE
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -2685,7 +2763,7 @@
   :Image Scanner:
     :Name: Image Scanner
     :Essence: '0.05'
-    :Price: 8000¥
+    :Price: '8000'
     :Type: BO
     :Legality: 4P-N
     :Avail: 2/4 days
@@ -2695,7 +2773,7 @@
     :Option: 'yes'
   :Impact Armor:
     :Name: Impact Armor
-    :Price: 4000¥
+    :Price: '4000'
     :Type: BO
     :Legality: Legal
     :Avail: 8/2 wks
@@ -2710,7 +2788,7 @@
     :Base: Armor
   :Increased Volume:
     :Name: Increased Volume
-    :Price: 10000¥
+    :Price: '10000'
     :Type: BO
     :Legality: Legal
     :Avail: 2/24 hrs
@@ -2721,7 +2799,7 @@
   :Independent Cybereyes Pair:
     :Name: Independent Cybereyes Pair
     :Essence: '0.5'
-    :Price: 15000¥
+    :Price: '15000'
     :Type: SE
     :Legality: Legal
     :Avail: 6/72 hrs
@@ -2730,7 +2808,7 @@
   :Independent Cybereyes Single:
     :Name: Independent Cybereyes Single
     :Essence: '0.3'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: SE
     :Legality: Legal
     :Avail: 6/72 hrs
@@ -2739,7 +2817,7 @@
   :Induction Pad:
     :Name: Induction Pad
     :Essence: '0.1'
-    :Price: 200¥
+    :Price: '200'
     :Type: BO
     :Legality: 5P-N
     :Avail: 4/48 hrs
@@ -2747,7 +2825,7 @@
     :Page: mm.32
   :Injector:
     :Name: Injector
-    :Price: cont+500¥
+    :Price: cont+500
     :Type: BO
     :Legality: 6P-N
     :Avail: 4/72 hrs
@@ -2757,7 +2835,7 @@
     :Option: 'yes'
   :Integrity Enhancement 1:
     :Name: Integrity Enhancement 1
-    :Price: 30000¥
+    :Price: '30000'
     :Type: CY
     :Legality: 6P-N
     :Avail: 6/4 days
@@ -2771,7 +2849,7 @@
     :Base: Integrity Enhancement
   :Integrity Enhancement 2:
     :Name: Integrity Enhancement 2
-    :Price: 60000¥
+    :Price: '60000'
     :Type: CY
     :Legality: 6P-N
     :Avail: 6/4 days
@@ -2785,7 +2863,7 @@
     :Base: Integrity Enhancement
   :Integrity Enhancement 3:
     :Name: Integrity Enhancement 3
-    :Price: 90000¥
+    :Price: '90000'
     :Type: CY
     :Legality: 6P-N
     :Avail: 6/4 days
@@ -2800,7 +2878,7 @@
   :Internal GPS:
     :Name: Internal GPS
     :Essence: '0.1'
-    :Price: 2000¥
+    :Price: '2000'
     :Type: SE
     :Legality: Legal
     :Avail: 5/6 days
@@ -2809,7 +2887,7 @@
   :Internal Simlink 1:
     :Name: Internal Simlink 1
     :Essence: '0.6'
-    :Price: 80000¥
+    :Price: '80000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/5 days
@@ -2819,7 +2897,7 @@
   :Internal Simlink 2:
     :Name: Internal Simlink 2
     :Essence: '1.2'
-    :Price: 90000¥
+    :Price: '90000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/5 days
@@ -2829,7 +2907,7 @@
   :Internal Simlink 3:
     :Name: Internal Simlink 3
     :Essence: '1.8'
-    :Price: 100000¥
+    :Price: '100000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/5 days
@@ -2839,7 +2917,7 @@
   :Internal Simlink 4:
     :Name: Internal Simlink 4
     :Essence: '2.4'
-    :Price: 110000¥
+    :Price: '110000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/5 days
@@ -2849,7 +2927,7 @@
   :Internal Simlink 5:
     :Name: Internal Simlink 5
     :Essence: '3'
-    :Price: 120000¥
+    :Price: '120000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/5 days
@@ -2859,7 +2937,7 @@
   :Internal Simlink 6:
     :Name: Internal Simlink 6
     :Essence: '3.6'
-    :Price: 130000¥
+    :Price: '130000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/5 days
@@ -2869,7 +2947,7 @@
   :Internal Simlink 7:
     :Name: Internal Simlink 7
     :Essence: '4.2'
-    :Price: 140000¥
+    :Price: '140000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/5 days
@@ -2879,7 +2957,7 @@
   :Internal Simlink 8:
     :Name: Internal Simlink 8
     :Essence: '4.8'
-    :Price: 150000¥
+    :Price: '150000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/5 days
@@ -2889,7 +2967,7 @@
   :Internal Simlink 9:
     :Name: Internal Simlink 9
     :Essence: '5.4'
-    :Price: 160000¥
+    :Price: '160000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/5 days
@@ -2899,7 +2977,7 @@
   :Internal Simlink 10:
     :Name: Internal Simlink 10
     :Essence: '6'
-    :Price: 170000¥
+    :Price: '170000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/5 days
@@ -2909,7 +2987,7 @@
   :Internal Voice Mask:
     :Name: Internal Voice Mask
     :Essence: '0.1'
-    :Price: L*4000¥
+    :Price: L*4000
     :Type: CO
     :Legality: 6P-Q
     :Avail: 6/48 hrs
@@ -2919,7 +2997,7 @@
   :Invoked Memory Stimulator:
     :Name: Invoked Memory Stimulator
     :Essence: '0.25'
-    :Price: 100000¥
+    :Price: '100000'
     :Type: BR
     :Legality: 3P-Q
     :Avail: 10/2 mo
@@ -2928,7 +3006,7 @@
   :Jolt-Alert:
     :Name: Jolt-Alert
     :Essence: '0.1'
-    :Price: 1500¥
+    :Price: '1500'
     :Type: BO
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -2937,7 +3015,7 @@
   :Knowsoft Link:
     :Name: Knowsoft Link
     :Essence: '0.1'
-    :Price: 1000¥
+    :Price: '1000'
     :Type: BR
     :Legality: Legal
     :Avail: 3/24 hrs
@@ -2946,7 +3024,7 @@
   :Laser Designator:
     :Name: Laser Designator
     :Essence: '0.1'
-    :Price: 6000¥
+    :Price: '6000'
     :Type: SE
     :Legality: 5P-R
     :Avail: 12/1 mth
@@ -2958,7 +3036,7 @@
   :Laser Microphone:
     :Name: Laser Microphone
     :Essence: '0.1'
-    :Price: L*2000¥
+    :Price: L*2000
     :Type: SE
     :Legality: 5P-N
     :Avail: L/72 hrs
@@ -2971,7 +3049,7 @@
   :Laser Sight:
     :Name: Laser Sight
     :Essence: '0.1'
-    :Price: 700¥
+    :Price: '700'
     :Type: BO
     :Legality: Legal
     :Avail: 8/7 days
@@ -2986,7 +3064,7 @@
   :Laser Tracker:
     :Name: Laser Tracker
     :Essence: '0.2'
-    :Price: 3200¥
+    :Price: '3200'
     :Type: SE
     :Legality: 7I-Q
     :Avail: 8/72 hrs
@@ -2998,7 +3076,7 @@
   :Light System:
     :Name: Light System
     :Essence: '0.2'
-    :Price: 1200¥
+    :Price: '1200'
     :Type: SE
     :Legality: Legal
     :Avail: 4/72 hrs
@@ -3010,7 +3088,7 @@
   :Limited Simsense Rig:
     :Name: Limited Simsense Rig
     :Essence: '0.1'
-    :Price: 1000¥
+    :Price: '1000'
     :Type: BO
     :Legality: 5P-N
     :Avail: 4/48 hrs
@@ -3018,7 +3096,7 @@
     :Page: mm.32
   :Lockpick Gun:
     :Name: Lockpick Gun
-    :Price: L*250¥
+    :Price: L*250
     :Type: BO
     :Legality: 6P-Q
     :Avail: 8/2 wks
@@ -3029,7 +3107,7 @@
     :Maxlevel: '10'
   :Lockpicks:
     :Name: Lockpicks
-    :Price: 500¥
+    :Price: '500'
     :Type: BO
     :Legality: 6P-Q
     :Avail: 8/2 wks
@@ -3040,7 +3118,7 @@
   :Low Frequency:
     :Name: Low Frequency
     :Essence: '0.2'
-    :Price: 3000¥
+    :Price: '3000'
     :Type: SE
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -3048,11 +3126,13 @@
     :Page: sr3.299
     :Option: 'yes'
     :Cyberlimb: Cyberears
-    :Stats: senses[Low-Frequency Hearing|Electronic]
+    :Stats:
+      :senses:
+        :Low-Frequency Hearing: :Electronic
   :Low-Light:
     :Name: Low-Light
     :Essence: '0.2'
-    :Price: 3000¥
+    :Price: '3000'
     :Type: SE
     :Legality: Legal
     :Avail: 4/36 hrs
@@ -3060,10 +3140,12 @@
     :Page: sr3.300
     :Option: 'yes'
     :Cyberlimb: Cybereyes
-    :Stats: senses[Low-Light Vision|Electronic]
+    :Stats:
+      :senses:
+        :Low-Light Vision: :Electronic
   :Low-frequency Modulator:
     :Name: Low-frequency Modulator
-    :Price: 8000¥
+    :Price: '8000'
     :Type: 'CO '
     :Legality: 6P-Q
     :Avail: 6/48 hrs
@@ -3073,7 +3155,7 @@
     :Option: 'yes'
   :Lower Limb Strength Enhancement 1:
     :Name: Lower Limb Strength Enhancement 1
-    :Price: 35000¥
+    :Price: '35000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 6/4 days
@@ -3087,7 +3169,7 @@
     :Base: Lower Limb Strength Enhancement
   :Lower Limb Strength Enhancement 2:
     :Name: Lower Limb Strength Enhancement 2
-    :Price: 70000¥
+    :Price: '70000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 6/4 days
@@ -3101,7 +3183,7 @@
     :Base: Lower Limb Strength Enhancement
   :Lower Limb Strength Enhancement 3:
     :Name: Lower Limb Strength Enhancement 3
-    :Price: 105000¥
+    :Price: '105000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 6/4 days
@@ -3116,7 +3198,7 @@
   :Magnetic System:
     :Name: Magnetic System
     :Essence: '0.3'
-    :Price: 2800¥
+    :Price: '2800'
     :Type: BO
     :Legality: Legal
     :Avail: 6/7 days
@@ -3129,7 +3211,7 @@
   :Memory:
     :Name: Memory
     :Essence: Mp/300
-    :Price: Mpx150¥
+    :Price: Mpx150
     :Type: BR
     :Legality: Legal
     :Avail: 3/24 hrs
@@ -3138,7 +3220,7 @@
   :Microscopic Vision:
     :Name: Microscopic Vision
     :Essence: '0.1'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: SE
     :Legality: Legal
     :Avail: 5/48 hrs
@@ -3146,11 +3228,13 @@
     :Page: mm.17
     :Option: 'yes'
     :Cyberlimb: Cybereyes
-    :Stats: senses[Microscopic Vision|Electronic]
+    :Stats:
+      :senses:
+        :Microscopic Vision: :Electronic
   :Move-by-wire 1:
     :Name: Move-by-wire 1
     :Essence: '2.5'
-    :Price: 250000¥
+    :Price: '250000'
     :Type: BO
     :Legality: 3P-R
     :Avail: 8/10 days
@@ -3158,11 +3242,19 @@
     :Page: mm.30
     :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
     :Base: Move-by-wire
-    :Stats: attributes[Quickness:+1];derived[Reaction|CBM:+2,Initative|CBM:+1]
+    :Stats:
+      :attributes:
+        :Quickness:
+          :CM: 1
+      :derived:
+        :Reaction:
+          :CBM: 2
+        :Initative:
+          :CBM: 1
   :Move-by-wire 2:
     :Name: Move-by-wire 2
     :Essence: '4'
-    :Price: 500000¥
+    :Price: '500000'
     :Type: BO
     :Legality: 3P-R
     :Avail: 12/20 days
@@ -3170,11 +3262,19 @@
     :Page: mm.30
     :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
     :Base: Move-by-wire
-    :Stats: attributes[Quickness:+2];derived[Reaction|CBM:+4,Initative|CBM:+2]
+    :Stats:
+      :attributes:
+        :Quickness:
+          :CM: 2
+      :derived:
+        :Reaction:
+          :CBM: 4
+        :Initative:
+          :CBM: 2
   :Move-by-wire 3:
     :Name: Move-by-wire 3
     :Essence: '5.5'
-    :Price: 1000000¥
+    :Price: '1000000'
     :Type: BO
     :Legality: 3P-R
     :Avail: 18/30 days
@@ -3182,11 +3282,19 @@
     :Page: mm.30
     :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
     :Base: Move-by-wire
-    :Stats: attributes[Quickness:+3];derived[Reaction|CBM:+6,Initative|CBM:+3]
+    :Stats:
+      :attributes:
+        :Quickness:
+          :CM: 3
+      :derived:
+        :Reaction:
+          :CBM: 6
+        :Initative:
+          :CBM: 3
   :Move-by-wire 4:
     :Name: Move-by-wire 4
     :Essence: '7'
-    :Price: 2000000¥
+    :Price: '2000000'
     :Type: BO
     :Legality: 3P-R
     :Avail: 20/45 days
@@ -3194,11 +3302,19 @@
     :Page: mm.30
     :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
     :Base: Move-by-wire
-    :Stats: attributes[Quickness:+4];derived[Reaction|CBM:+8,Initiative|CBM:+4]
+    :Stats:
+      :attributes:
+        :Quickness:
+          :CM: 4
+      :derived:
+        :Reaction:
+          :CBM: 8
+        :Initiative:
+          :CBM: 4
   :Muscle Replacement 1:
     :Name: Muscle Replacement 1
     :Essence: '1'
-    :Price: 20000¥
+    :Price: '20000'
     :Type: BO
     :Legality: 5P-Q
     :Avail: 4/4 days
@@ -3207,11 +3323,14 @@
     :Conflicts: Muscle Augmentation, Muscle Toner
     :Maxlevel: '4'
     :Base: Muscle Replacement
-    :Stats: attributes[Strength:+1]
+    :Stats:
+      :attributes:
+        :Strength:
+          :CM: 1
   :Muscle Replacement 2:
     :Name: Muscle Replacement 2
     :Essence: '2'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: BO
     :Legality: 5P-Q
     :Avail: 4/4 days
@@ -3220,11 +3339,14 @@
     :Conflicts: Muscle Augmentation, Muscle Toner
     :Maxlevel: '4'
     :Base: Muscle Replacement
-    :Stats: attributes[Strength:+2]
+    :Stats:
+      :attributes:
+        :Strength:
+          :CM: 2
   :Muscle Replacement 3:
     :Name: Muscle Replacement 3
     :Essence: '3'
-    :Price: 60000¥
+    :Price: '60000'
     :Type: BO
     :Legality: 5P-Q
     :Avail: 4/4 days
@@ -3233,11 +3355,14 @@
     :Conflicts: Muscle Augmentation, Muscle Toner
     :Maxlevel: '4'
     :Base: Muscle Replacement
-    :Stats: attributes[Strength:+3]
+    :Stats:
+      :attributes:
+        :Strength:
+          :CM: 3
   :Muscle Replacement 4:
     :Name: Muscle Replacement 4
     :Essence: '4'
-    :Price: 80000¥
+    :Price: '80000'
     :Type: BO
     :Legality: 5P-Q
     :Avail: 4/4 days
@@ -3246,11 +3371,14 @@
     :Conflicts: Muscle Augmentation, Muscle Toner
     :Maxlevel: '4'
     :Base: Muscle Replacement
-    :Stats: attributes[Strength:+4]
+    :Stats:
+      :attributes:
+        :Strength:
+          :CM: 4
   :OXSYS Cybergill:
     :Name: OXSYS Cybergill
     :Essence: '0.75'
-    :Price: 12500¥
+    :Price: '12500'
     :Type: BO
     :Legality: Legal
     :Avail: 5/72 hrs
@@ -3259,7 +3387,7 @@
   :Olfactory Booster:
     :Name: Olfactory Booster
     :Essence: '0.2'
-    :Price: L*1000¥
+    :Price: L*1000
     :Type: SE
     :Legality: Legal
     :Avail: 6/8 days
@@ -3268,7 +3396,7 @@
   :Optical Magnification 1:
     :Name: Optical Magnification 1
     :Essence: '0.2'
-    :Price: 2500¥
+    :Price: '2500'
     :Type: SE
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -3277,11 +3405,14 @@
     :Option: 'yes'
     :Cyberlimb: Cybereyes
     :Base: Optical Magnification
-    :Stats: senses[Magnification Vision|Optical:1]
+    :Stats:
+      :senses:
+        :Magnification Vision:
+          :Optical: 1
   :Optical Magnification 2:
     :Name: Optical Magnification 2
     :Essence: '0.2'
-    :Price: 4000¥
+    :Price: '4000'
     :Type: SE
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -3290,11 +3421,14 @@
     :Option: 'yes'
     :Cyberlimb: Cybereyes
     :Base: Optical Magnification
-    :Stats: senses[Magnification Vision|Optical:2]
+    :Stats:
+      :senses:
+        :Magnification Vision:
+          :Optical: 2
   :Optical Magnification 3:
     :Name: Optical Magnification 3
     :Essence: '0.2'
-    :Price: 6000¥
+    :Price: '6000'
     :Type: SE
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -3303,11 +3437,14 @@
     :Option: 'yes'
     :Cyberlimb: Cybereyes
     :Base: Optical Magnification
-    :Stats: senses[Magnification Vision|Optical:3]
+    :Stats:
+      :senses:
+        :Magnification Vision:
+          :Optical: 3
   :Opticam:
     :Name: Opticam
     :Essence: '0.5'
-    :Price: 20000¥
+    :Price: '20000'
     :Type: SE
     :Legality: Legal
     :Avail: 5/72 hrs
@@ -3318,7 +3455,7 @@
   :Optiscan Link:
     :Name: Optiscan Link
     :Essence: '0.15'
-    :Price: 2500¥
+    :Price: '2500'
     :Type: SE
     :Legality: 3P-N
     :Avail: 8/72 hrs
@@ -3329,7 +3466,7 @@
     :Cyberlimb: Cybereyes
   :Optiscan Remote Adaptor:
     :Name: Optiscan Remote Adaptor
-    :Price: 2000¥
+    :Price: '2000'
     :Type: SE
     :Legality: 3P-N
     :Avail: 8/2 wks
@@ -3341,7 +3478,7 @@
   :Oral Dart:
     :Name: Oral Dart
     :Essence: '0.25'
-    :Price: 3600¥
+    :Price: '3600'
     :Type: BR
     :Legality: 6P-Q
     :Avail: 6/1 week
@@ -3350,7 +3487,7 @@
   :Oral Gun:
     :Name: Oral Gun
     :Essence: '0.4'
-    :Price: 5600¥
+    :Price: '5600'
     :Type: BR
     :Legality: 6P-Q
     :Avail: 6/72 hrs
@@ -3359,7 +3496,7 @@
   :Oral Spur:
     :Name: Oral Spur
     :Essence: '0.25'
-    :Price: 5600¥
+    :Price: '5600'
     :Type: BR
     :Legality: 6P-Q
     :Avail: 6/72 hrs
@@ -3368,7 +3505,7 @@
   :Oral Whip:
     :Name: Oral Whip
     :Essence: '0.25'
-    :Price: 10500¥
+    :Price: '10500'
     :Type: BR
     :Legality: 6P-Q
     :Avail: 8/1 week
@@ -3377,7 +3514,7 @@
   :Orientation System:
     :Name: Orientation System
     :Essence: '0.5'
-    :Price: 15000¥
+    :Price: '15000'
     :Type: SE
     :Legality: Legal
     :Avail: 5/6 days
@@ -3390,7 +3527,7 @@
   :Peg leg. hip length:
     :Name: Peg leg. hip length
     :Essence: '0.4'
-    :Price: 120¥
+    :Price: '120'
     :Type: BO
     :Legality: Legal
     :Avail: 1/6 hrs
@@ -3399,7 +3536,7 @@
   :Peg leg. knee length:
     :Name: Peg leg. knee length
     :Essence: '0.2'
-    :Price: 50¥
+    :Price: '50'
     :Type: BO
     :Legality: Legal
     :Avail: 1/6 hrs
@@ -3407,7 +3544,7 @@
     :Page: mm.39
   :Personalized Safety:
     :Name: Personalized Safety
-    :Price: 200¥
+    :Price: '200'
     :Type: BO
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -3416,7 +3553,7 @@
   :Playback:
     :Name: Playback
     :Essence: '0.2'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: BO
     :Legality: Legal
     :Avail: " 4/48 hrs"
@@ -3426,7 +3563,7 @@
     :Option: 'yes'
   :Protective Covers:
     :Name: Protective Covers
-    :Price: 500¥
+    :Price: '500'
     :Type: SE
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -3437,7 +3574,7 @@
   :Protocol eumulation module:
     :Name: Protocol eumulation module
     :Essence: '0.2'
-    :Price: L*5000¥
+    :Price: L*5000
     :Type: RI
     :Legality: Legal
     :Avail: L+2/L days
@@ -3449,7 +3586,7 @@
     :ECU: '0.25'
   :Quickness Enhancement 1:
     :Name: Quickness Enhancement 1
-    :Price: 30000¥
+    :Price: '30000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 8/4 days
@@ -3462,7 +3599,7 @@
     :Base: Quickness Enhancement
   :Quickness Enhancement 2:
     :Name: Quickness Enhancement 2
-    :Price: 60000¥
+    :Price: '60000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 8/4 days
@@ -3475,7 +3612,7 @@
     :Base: Quickness Enhancement
   :Quickness Enhancement 3:
     :Name: Quickness Enhancement 3
-    :Price: 90000¥
+    :Price: '90000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 8/4 days
@@ -3489,7 +3626,7 @@
   :Quickness Enhancementplus 4:
     :Name: Quickness Enhancementplus 4
     :Essence: '0.3'
-    :Price: 45000¥
+    :Price: '45000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 8/4 days
@@ -3504,7 +3641,7 @@
   :Quickness Enhancementplus 5:
     :Name: Quickness Enhancementplus 5
     :Essence: '0.6'
-    :Price: 90000¥
+    :Price: '90000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 8/4 days
@@ -3519,7 +3656,7 @@
   :Quickness Enhancementplus 6:
     :Name: Quickness Enhancementplus 6
     :Essence: '0.9'
-    :Price: 135000¥
+    :Price: '135000'
     :Type: CY
     :Legality: 6P-Q
     :Avail: 8/4 days
@@ -3534,7 +3671,7 @@
   :RAS Override:
     :Name: RAS Override
     :Essence: '0.05'
-    :Price: 1000¥
+    :Price: '1000'
     :Type: BR
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -3543,7 +3680,7 @@
   :Radio Receiver:
     :Name: Radio Receiver
     :Essence: '0.4'
-    :Price: L*1000¥
+    :Price: L*1000
     :Type: CO
     :Legality: Legal
     :Avail: 2/24 hrs
@@ -3552,7 +3689,7 @@
   :Radio:
     :Name: Radio
     :Essence: '0.75'
-    :Price: L*2000¥
+    :Price: L*2000
     :Type: CO
     :Legality: Legal
     :Avail: 2/24 hrs
@@ -3561,7 +3698,7 @@
   :Range Finder:
     :Name: Range Finder
     :Essence: '0.1'
-    :Price: 2000¥
+    :Price: '2000'
     :Type: BO
     :Legality: 5P-N
     :Avail: 8/48 hrs
@@ -3570,7 +3707,7 @@
   :Rangefinder:
     :Name: Rangefinder
     :Essence: '0.1'
-    :Price: 2000¥
+    :Price: '2000'
     :Type: SE
     :Legality: Legal
     :Avail: 8/48 hrs
@@ -3581,7 +3718,7 @@
   :Reaction Enhancer 1:
     :Name: Reaction Enhancer 1
     :Essence: '0.3'
-    :Price: 60000¥
+    :Price: '60000'
     :Type: BO
     :Legality: 6P-R
     :Avail: 6/7 days
@@ -3589,11 +3726,14 @@
     :Page: sr3.302
     :Maxlevel: '6'
     :Base: Reaction Enhancer
-    :Stats: attributes[Reaction|CBM]:+1]
+    :Stats:
+      :attributes:
+        :Reaction:
+          :CBM: 1
   :Reaction Enhancer 2:
     :Name: Reaction Enhancer 2
     :Essence: '0.6'
-    :Price: 120000¥
+    :Price: '120000'
     :Type: BO
     :Legality: 6P-R
     :Avail: 6/7 days
@@ -3601,11 +3741,14 @@
     :Page: sr3.302
     :Maxlevel: '6'
     :Base: Reaction Enhancer
-    :Stats: attributes[Reaction|CBM]:+2]
+    :Stats:
+      :attributes:
+        :Reaction:
+          :CBM: 2
   :Reaction Enhancer 3:
     :Name: Reaction Enhancer 3
     :Essence: '0.9'
-    :Price: 180000¥
+    :Price: '180000'
     :Type: BO
     :Legality: 6P-R
     :Avail: 6/7 days
@@ -3613,11 +3756,14 @@
     :Page: sr3.302
     :Maxlevel: '6'
     :Base: Reaction Enhancer
-    :Stats: attributes[Reaction|CBM]:+3]
+    :Stats:
+      :attributes:
+        :Reaction:
+          :CBM: 3
   :Reaction Enhancer 4:
     :Name: Reaction Enhancer 4
     :Essence: '1.2'
-    :Price: 240000¥
+    :Price: '240000'
     :Type: BO
     :Legality: 6P-R
     :Avail: 6/7 days
@@ -3625,11 +3771,14 @@
     :Page: sr3.302
     :Maxlevel: '6'
     :Base: Reaction Enhancer
-    :Stats: attributes[Reaction|CBM]:+4]
+    :Stats:
+      :attributes:
+        :Reaction:
+          :CBM: 4
   :Reaction Enhancer 5:
     :Name: Reaction Enhancer 5
     :Essence: '1.5'
-    :Price: 300000¥
+    :Price: '300000'
     :Type: BO
     :Legality: 6P-R
     :Avail: 6/7 days
@@ -3637,11 +3786,14 @@
     :Page: sr3.302
     :Maxlevel: '6'
     :Base: Reaction Enhancer
-    :Stats: attributes[Reaction|CBM]:+5]
+    :Stats:
+      :attributes:
+        :Reaction:
+          :CBM: 5
   :Reaction Enhancer 6:
     :Name: Reaction Enhancer 6
     :Essence: '1.8'
-    :Price: 360000¥
+    :Price: '360000'
     :Type: BO
     :Legality: 6P-R
     :Avail: 6/7 days
@@ -3649,11 +3801,14 @@
     :Page: sr3.302
     :Maxlevel: '6'
     :Base: Reaction Enhancer
-    :Stats: attributes[Reaction|CBM]:+6]
+    :Stats:
+      :attributes:
+        :Reaction:
+          :CBM: 6
   :Recorder:
     :Name: Recorder
     :Essence: '0.3'
-    :Price: 7000¥
+    :Price: '7000'
     :Type: SE
     :Legality: 12P-N
     :Avail: 8/48 hrs
@@ -3664,7 +3819,7 @@
   :Reflex trigger:
     :Name: Reflex trigger
     :Essence: '0.2'
-    :Price: 13000¥
+    :Price: '13000'
     :Type: BO
     :Legality: 4P-Q
     :Avail: as
@@ -3684,7 +3839,7 @@
     :Option: 'yes'
   :Replacement hand:
     :Name: Replacement hand
-    :Price: 28000¥+30%
+    :Price: 28000+30%
     :Type: CY
     :Legality: 6I-N
     :Avail: 4/48 hrs
@@ -3696,7 +3851,7 @@
   :Retinal Clock:
     :Name: Retinal Clock
     :Essence: '0.1'
-    :Price: 450¥
+    :Price: '450'
     :Type: SE
     :Legality: Legal
     :Avail: 3/24 hrs
@@ -3707,7 +3862,7 @@
   :Retinal Duplication:
     :Name: Retinal Duplication
     :Essence: '0.1'
-    :Price: L*25000¥
+    :Price: L*25000
     :Type: SE
     :Legality: 3-Q
     :Avail: 8/7 days
@@ -3719,7 +3874,7 @@
   :Retractable Climbing Claws:
     :Name: Retractable Climbing Claws
     :Essence: '0.3'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: BO
     :Legality: 6P-N
     :Avail: 5/72 hrs
@@ -3732,7 +3887,7 @@
   :Router:
     :Name: Router
     :Essence: '0.1'
-    :Price: 1000¥
+    :Price: '1000'
     :Type: BR
     :Legality: Legal
     :Avail: 1/1 hrs
@@ -3741,7 +3896,7 @@
   :Ruthenium:
     :Name: Ruthenium
     :Essence: '0.2'
-    :Price: 150000¥
+    :Price: '150000'
     :Type: BO
     :Legality: 4P-N
     :Avail: 2/4 days
@@ -3752,7 +3907,7 @@
   :SPU Math 1:
     :Name: SPU Math 1
     :Essence: '0.1'
-    :Price: 2000¥
+    :Price: '2000'
     :Type: BR
     :Legality: Legal
     :Avail: 6/60 hrs
@@ -3762,7 +3917,7 @@
   :SPU Math 2:
     :Name: SPU Math 2
     :Essence: '0.15'
-    :Price: 5000¥
+    :Price: '5000'
     :Type: BR
     :Legality: Legal
     :Avail: 6/60 hrs
@@ -3772,7 +3927,7 @@
   :SPU Math 3:
     :Name: SPU Math 3
     :Essence: '0.2'
-    :Price: 11000¥
+    :Price: '11000'
     :Type: BR
     :Legality: Legal
     :Avail: 6/60 hrs
@@ -3781,7 +3936,7 @@
     :Base: SPU Math
   :Safety:
     :Name: Safety
-    :Price: 800¥
+    :Price: '800'
     :Type: CY
     :Legality: Legal
     :Avail: 3/36 hrs
@@ -3793,7 +3948,7 @@
     :ECU: '0.5'
   :Scanner Accessory:
     :Name: Scanner Accessory
-    :Price: L*500¥
+    :Price: L*500
     :Type: BO
     :Legality: 6P-V
     :Avail: L/72 hrs
@@ -3804,7 +3959,7 @@
     :Maxlevel: '10'
   :Secondary Pattern:
     :Name: Secondary Pattern
-    :Price: "(L+2)*20000¥"
+    :Price: "(L+2)*20000"
     :Type: BO
     :Legality: 5-Q
     :Avail: 6/7 days
@@ -3816,7 +3971,7 @@
   :Select Sound Filter:
     :Name: Select Sound Filter
     :Essence: '0.2'
-    :Price: L*10000¥
+    :Price: L*10000
     :Type: SE
     :Legality: Legal
     :Avail: 6/48 hrs
@@ -3828,7 +3983,7 @@
   :Shock Hand:
     :Name: Shock Hand
     :Essence: '0.25'
-    :Price: 1300¥
+    :Price: '1300'
     :Type: BO
     :Legality: 4P-Q
     :Avail: 6/4 days
@@ -3842,7 +3997,7 @@
     :Damage: 8S Stun
   :Signal booster:
     :Name: Signal booster
-    :Price: L*15000¥
+    :Price: L*15000
     :Type: CY
     :Legality: Legal
     :Avail: 6/72 hrs
@@ -3856,7 +4011,7 @@
   :Silencer:
     :Name: Silencer
     :Essence: '0.2'
-    :Price: 1000¥
+    :Price: '1000'
     :Type: BO
     :Legality: as gun
     :Avail: 8/7 days
@@ -3871,7 +4026,7 @@
   :Simrig Full-X:
     :Name: Simrig Full-X
     :Essence: '2'
-    :Price: 500000¥
+    :Price: '500000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/12 days
@@ -3880,7 +4035,7 @@
   :Simrig Sense Link:
     :Name: Simrig Sense Link
     :Essence: '2'
-    :Price: 300000¥
+    :Price: '300000'
     :Type: BO
     :Legality: Legal
     :Avail: 2/5 days
@@ -3888,7 +4043,7 @@
     :Page: sr3.302
   :Skates Retractable:
     :Name: Skates Retractable
-    :Price: 2500¥
+    :Price: '2500'
     :Type: CY
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -3901,7 +4056,7 @@
     :Cmod: "-2"
   :Skates:
     :Name: Skates
-    :Price: 1000¥
+    :Price: '1000'
     :Type: CY
     :Legality: Legal
     :Avail: 3/24 hrs
@@ -3915,7 +4070,7 @@
   :Skillwires 1:
     :Name: Skillwires 1
     :Essence: '0.2'
-    :Price: 1500¥
+    :Price: '1500'
     :Type: BO
     :Legality: Legal
     :Avail: 1/10 days
@@ -3926,7 +4081,7 @@
   :Skillwires 2:
     :Name: Skillwires 2
     :Essence: '0.4'
-    :Price: 12000¥
+    :Price: '12000'
     :Type: BO
     :Legality: Legal
     :Avail: 2/10 days
@@ -3937,7 +4092,7 @@
   :Skillwires 3:
     :Name: Skillwires 3
     :Essence: '0.6'
-    :Price: 40000¥
+    :Price: '40000'
     :Type: BO
     :Legality: Legal
     :Avail: 3/10 days
@@ -3948,7 +4103,7 @@
   :Skillwires 4:
     :Name: Skillwires 4
     :Essence: '0.8'
-    :Price: 90000¥
+    :Price: '90000'
     :Type: BO
     :Legality: Legal
     :Avail: 4/10 days
@@ -3959,7 +4114,7 @@
   :Skillwires 5:
     :Name: Skillwires 5
     :Essence: '1.0'
-    :Price: 180000¥
+    :Price: '180000'
     :Type: BO
     :Legality: Legal
     :Avail: 5/10 days
@@ -3970,7 +4125,7 @@
   :Skillwires 6:
     :Name: Skillwires 6
     :Essence: '1.2'
-    :Price: 325000¥
+    :Price: '325000'
     :Type: BO
     :Legality: Legal
     :Avail: 6/10 days
@@ -3981,7 +4136,7 @@
   :Skillwires 7:
     :Name: Skillwires 7
     :Essence: '1.4'
-    :Price: 500000¥
+    :Price: '500000'
     :Type: BO
     :Legality: Legal
     :Avail: 7/10 days
@@ -3992,7 +4147,7 @@
   :Skillwires 8:
     :Name: Skillwires 8
     :Essence: '1.6'
-    :Price: 750000¥
+    :Price: '750000'
     :Type: BO
     :Legality: Legal
     :Avail: 8/10 days
@@ -4003,7 +4158,7 @@
   :Skillwires 9:
     :Name: Skillwires 9
     :Essence: '1.8'
-    :Price: 1000000¥
+    :Price: '1000000'
     :Type: BO
     :Legality: Legal
     :Avail: 9/10 days
@@ -4014,7 +4169,7 @@
   :Smartlink I:
     :Name: Smartlink I
     :Essence: '0.5'
-    :Price: 2500¥
+    :Price: '2500'
     :Type: BO
     :Legality: 5P-N
     :Avail: 3/36 hrs
@@ -4023,7 +4178,7 @@
   :Smartlink II:
     :Name: Smartlink II
     :Essence: '0.5'
-    :Price: 3500¥
+    :Price: '3500'
     :Type: BO
     :Legality: 5P-N
     :Avail: 6/48 hrs
@@ -4032,7 +4187,7 @@
   :Smartlink-2 Processor:
     :Name: Smartlink-2 Processor
     :Essence: '0.2'
-    :Price: 2000¥
+    :Price: '2000'
     :Type: BO
     :Legality: 5P-N
     :Avail: 4/48 hrs
@@ -4041,7 +4196,7 @@
   :Sound Supresser:
     :Name: Sound Supresser
     :Essence: '0.3'
-    :Price: 1500¥
+    :Price: '1500'
     :Type: BO
     :Legality: as gun
     :Avail: 8/7 days
@@ -4056,7 +4211,7 @@
   :Spatial Recognizer:
     :Name: Spatial Recognizer
     :Essence: '0.2'
-    :Price: 1200¥
+    :Price: '1200'
     :Type: SE
     :Legality: Legal
     :Avail: 4/48 hrs
@@ -4067,7 +4222,7 @@
   :Spurs Retractable:
     :Name: Spurs Retractable
     :Essence: '0.3'
-    :Price: 11500¥
+    :Price: '11500'
     :Type: BO
     :Legality: 3-B
     :Avail: 5/72 hrs
@@ -4083,7 +4238,7 @@
   :Spurs:
     :Name: Spurs
     :Essence: '0.1'
-    :Price: 7000¥
+    :Price: '7000'
     :Type: BO
     :Legality: 3-B
     :Avail: 3/72 hrs
@@ -4098,7 +4253,7 @@
   :Standard Processor:
     :Name: Standard Processor
     :Essence: '0.2'
-    :Price: 1000¥
+    :Price: '1000'
     :Type: BO
     :Legality: 5P-N
     :Avail: 4/48 hrs
@@ -4117,7 +4272,7 @@
   :Subdermal Display:
     :Name: Subdermal Display
     :Essence: '0.1'
-    :Price: 500¥
+    :Price: '500'
     :Type: BO
     :Legality: Legal
     :Avail: 4/72 hrs
@@ -4126,7 +4281,7 @@
   :Subdermal Speakers:
     :Name: Subdermal Speakers
     :Essence: ".1"
-    :Price: 650¥
+    :Price: '650'
     :Type: CO
     :Legality: Legal
     :Avail: 4/72 hrs
@@ -4135,7 +4290,7 @@
   :Subvocal Microphone:
     :Name: Subvocal Microphone
     :Essence: '0.1'
-    :Price: 850¥
+    :Price: '850'
     :Type: CO
     :Legality: Legal
     :Avail: 4/72 hrs
@@ -4143,7 +4298,7 @@
     :Page: sr3.298
   :Superflash:
     :Name: Superflash
-    :Price: 500¥
+    :Price: '500'
     :Type: SE
     :Legality: 7P-Q
     :Avail: 8/2 wks
@@ -4154,7 +4309,7 @@
     :Cyberlimb: Cybereyes
   :Synthetic Fingerprint:
     :Name: Synthetic Fingerprint
-    :Price: L*2000¥
+    :Price: L*2000
     :Type: BO
     :Legality: 4P-Q
     :Avail: L*2/1 wk
@@ -4166,7 +4321,7 @@
   :Tactical Computer:
     :Name: Tactical Computer
     :Essence: '1.5'
-    :Price: 4000000¥
+    :Price: '4000000'
     :Type: BR
     :Legality: 2P-R
     :Avail: 12/60 days
@@ -4174,7 +4329,7 @@
     :Page: mm.22
   :Tactical sense program:
     :Name: Tactical sense program
-    :Price: 5000¥
+    :Price: '5000'
     :Type: BR
     :Legality: 6P-R
     :Avail: 8/1 mo
@@ -4185,7 +4340,7 @@
   :Telephone:
     :Name: Telephone
     :Essence: '0.5'
-    :Price: 3700¥
+    :Price: '3700'
     :Type: CO
     :Legality: Legal
     :Avail: 3/24 hrs
@@ -4193,7 +4348,7 @@
     :Page: sr3.298
   :Telescoping Cyberlimb:
     :Name: Telescoping Cyberlimb
-    :Price: 10000¥
+    :Price: '10000'
     :Type: CY
     :Legality: Legal
     :Avail: 6/72 hrs
@@ -4206,17 +4361,19 @@
   :Thermographic:
     :Name: Thermographic
     :Essence: '0.2'
-    :Price: 3000¥
+    :Price: '3000'
     :Type: SE
     :Legality: Legal
     :Avail: 4/36 hrs
     :Index: '1.25'
     :Page: sr3.300
     :Cyberlimb: Cybereyes
-    :Stats: sense[Thermographic Vision|Electronic]
+    :Stats:
+      :sense:
+        :Thermographic Vision: :Electronic
   :Tonal Shift:
     :Name: Tonal Shift
-    :Price: 25000¥
+    :Price: '25000'
     :Type: BO
     :Legality: Legal
     :Avail: 2/24 hrs
@@ -4227,7 +4384,7 @@
   :Tool Laser:
     :Name: Tool Laser
     :Essence: '0.25'
-    :Price: 3000¥
+    :Price: '3000'
     :Type: SE
     :Legality: 5P-N
     :Avail: 8/1 week
@@ -4238,7 +4395,7 @@
     :Cyberlimb: Cybereyes
   :Tooth Compartment Storage:
     :Name: Tooth Compartment Storage
-    :Price: 1500¥
+    :Price: '1500'
     :Type: SE
     :Legality: Legal
     :Avail: 2/48 hrs
@@ -4247,7 +4404,7 @@
   :Tracheal Vent:
     :Name: Tracheal Vent
     :Essence: '0.1'
-    :Price: 750¥
+    :Price: '750'
     :Type: BO
     :Legality: Legal
     :Avail: 4/5 days
@@ -4258,7 +4415,7 @@
   :Transducer:
     :Name: Transducer
     :Essence: '0.1'
-    :Price: 2000¥
+    :Price: '2000'
     :Type: CO
     :Legality: Legal
     :Avail: 4/1 wk
@@ -4267,7 +4424,7 @@
   :Ultrasound Vision:
     :Name: Ultrasound Vision
     :Essence: '0.5'
-    :Price: 10000¥
+    :Price: '10000'
     :Type: SE
     :Legality: Legal
     :Avail: 6/48 hrs
@@ -4277,40 +4434,55 @@
   :Vehicle Control Rig 1:
     :Name: Vehicle Control Rig 1
     :Essence: '2.0'
-    :Price: 12000¥
+    :Price: '12000'
     :Type: BO
     :Legality: 6P-N
     :Avail: 6/48 hrs
     :Index: '1.0'
     :Page: sr3.302
     :Base: Vehicle Control Rig
-    :Stats: derived[Reaction|Rigg:+2,Initiative|Rigg:+1]
+    :Stats:
+      :derived:
+        :Reaction:
+          :Rigg: 2
+        :Initiative:
+          :Rigg: 1
   :Vehicle Control Rig 2:
     :Name: Vehicle Control Rig 2
     :Essence: '3.0'
-    :Price: 60000¥
+    :Price: '60000'
     :Type: BO
     :Legality: 6P-N
     :Avail: 8/48 hrs
     :Index: '1.25'
     :Page: sr3.302
     :Base: Vehicle Control Rig
-    :Stats: derived[Reaction|Rigg:+4,Initiative|Rigg:+2]
+    :Stats:
+      :derived:
+        :Reaction:
+          :Rigg: 4
+        :Initiative:
+          :Rigg: 2
   :Vehicle Control Rig 3:
     :Name: Vehicle Control Rig 3
     :Essence: '5.0'
-    :Price: 300000¥
+    :Price: '300000'
     :Type: BO
     :Legality: 5P-N
     :Avail: 8/48 hrs
     :Index: '1.5'
     :Page: sr3.302
     :Base: Vehicle Control Rig
-    :Stats: derived[Reaction|Rigg:+6,Initiative|Rigg:+3]
+    :Stats:
+      :derived:
+        :Reaction:
+          :Rigg: 6
+        :Initiative:
+          :Rigg: 3
   :Venom Sack(2 doeses):
     :Name: Venom Sack(2 doeses)
     :Essence: '0.05'
-    :Price: 500¥
+    :Price: '500'
     :Type: BO
     :Legality: 4P-Q
     :Avail: 4/48 hrs
@@ -4323,7 +4495,7 @@
   :Voice Modulator:
     :Name: Voice Modulator
     :Essence: '0.2'
-    :Price: 25000¥
+    :Price: '25000'
     :Type: BO
     :Legality: Legal
     :Avail: 2/24 hrs
@@ -4332,7 +4504,7 @@
   :Weapon Mount Articulate Retractable:
     :Name: Weapon Mount Articulate Retractable
     :Essence: '1'
-    :Price: 200000¥
+    :Price: '200000'
     :Type: CY
     :Legality: 2P-R
     :Avail: 12/24 days
@@ -4344,7 +4516,7 @@
     :Base: Weapon Mount
   :Weapon Mount Articulate:
     :Name: Weapon Mount Articulate
-    :Price: 110000¥
+    :Price: '110000'
     :Type: CY
     :Legality: 2P-R
     :Avail: 12/24 days
@@ -4356,7 +4528,7 @@
     :Base: Weapon Mount
   :Weapon Mount External Retractable:
     :Name: Weapon Mount External Retractable
-    :Price: 15000¥
+    :Price: '15000'
     :Type: CY
     :Legality: 3P-R
     :Avail: 6/4 days
@@ -4368,7 +4540,7 @@
     :Base: Weapon Mount
   :Weapon Mount External:
     :Name: Weapon Mount External
-    :Price: 5000¥
+    :Price: '5000'
     :Type: CY
     :Legality: 3P-R
     :Avail: 6/4 days
@@ -4380,7 +4552,7 @@
     :Base: Weapon Mount
   :Weapon Mount Tracking Retractable:
     :Name: Weapon Mount Tracking Retractable
-    :Price: 40000¥
+    :Price: '40000'
     :Type: CY
     :Legality: 3P-R
     :Avail: 8/7 days
@@ -4392,7 +4564,7 @@
     :Base: Weapon Mount
   :Weapon Mount Tracking:
     :Name: Weapon Mount Tracking
-    :Price: 25000¥
+    :Price: '25000'
     :Type: CY
     :Legality: 3P-R
     :Avail: 8/7 days
@@ -4405,7 +4577,7 @@
   :Wired Reflexes 1:
     :Name: Wired Reflexes 1
     :Essence: '2.0'
-    :Price: 55000¥
+    :Price: '55000'
     :Type: BO
     :Legality: 5P-Q
     :Avail: 4/8 days
@@ -4413,11 +4585,16 @@
     :Page: sr3.302
     :Conflicts: Boosted Reflexes, Move by Wire
     :Base: Wired Reflexes
-    :Stats: derived[Reaction|CBM:+2,Initative|CBM:+1]
+    :Stats:
+      :derived:
+        :Reaction:
+          :CBM: 2
+        :Initative:
+          :CBM: 1
   :Wired Reflexes 2:
     :Name: Wired Reflexes 2
     :Essence: '3.0'
-    :Price: 165000¥
+    :Price: '165000'
     :Type: BO
     :Legality: 4P-Q
     :Avail: 4/8 days
@@ -4425,11 +4602,16 @@
     :Page: sr3.302
     :Conflicts: Boosted Reflexes, Move by wire
     :Base: Wired Reflexes
-    :Stats: derived[Reaction|CBM:+4,Initiative|CBM:+2]
+    :Stats:
+      :derived:
+        :Reaction:
+          :CBM: 4
+        :Initiative:
+          :CBM: 2
   :Wired Reflexes 3:
     :Name: Wired Reflexes 3
     :Essence: '5.0'
-    :Price: 500000¥
+    :Price: '500000'
     :Type: BO
     :Legality: 3-R
     :Avail: 8/14 days
@@ -4437,7 +4619,12 @@
     :Page: sr3.302
     :Conflicts: Boosted Reflexes, Move by wire
     :Base: Wired Reflexes
-    :Stats: derived[Reaction|CBM:+6,Initative|CBM:+3]
+    :Stats:
+      :derived:
+        :Reaction:
+          :CBM: 6
+        :Initative:
+          :CBM: 3
 :magetypes:
   :None:
     :Points: 0
