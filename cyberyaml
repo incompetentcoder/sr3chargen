@@ -251,7 +251,12 @@
   :Index: '1.5'
   :Page: sr3.302
   :Base: Bone Lacing
-  :Stats: attributes[Body:+1];armor[Impact:+1]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 1
+    :armor:
+      :Impact: 1
 :Bone Lacing Ceramic:
   :Name: Bone Lacing Ceramic
   :Essence: '1.5'
@@ -262,7 +267,12 @@
   :Index: '2.0'
   :Page: mm.27
   :Base: Bone Lacing
-  :Stats: attributes[Body:+1];armor[Impact:+2]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 1
+    :armor:
+      :Impact: 2
 :Bone Lacing Kevlar:
   :Name: Bone Lacing Kevlar
   :Essence: '1.0'
@@ -273,7 +283,12 @@
   :Index: '2.0'
   :Page: mm.27
   :Base: Bone Lacing
-  :Stats: attributes[Body:+1];armor[Ballistic:+1]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 1
+    :armor:
+      :Ballistic: 1
 :Bone Lacing Plastic:
   :Name: Bone Lacing Plastic
   :Essence: '0.5'
@@ -284,7 +299,10 @@
   :Index: '1.5'
   :Page: sr3.302
   :Base: Bone Lacing
-  :Stats: attributes[Body:+1]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 1
 :Bone Lacing Titanium:
   :Name: Bone Lacing Titanium
   :Essence: '2.25'
@@ -295,7 +313,13 @@
   :Index: '1.5'
   :Page: sr3.302
   :Base: Bone Lacing
-  :Stats: attributes[Body:+2];armor[Impact:+1,Ballistic:+1]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 2
+    :armor:
+      :Impact: 1
+      :Ballistic: 1
 :Boosted Reflexes 1:
   :Name: Boosted Reflexes 1
   :Essence: '0.5'
@@ -307,7 +331,10 @@
   :Page: sr3.302
   :Conflicts: Wired Reflexes, Move by Wire, Vehicle Control Rig
   :Base: Boosted Reflexes
-  :Stats: derived[Initiative|CBM:+1]
+  :Stats:
+    :derived:
+      :Initiative:
+        :CBM: 1
 :Boosted Reflexes 2:
   :Name: Boosted Reflexes 2
   :Essence: '1.25'
@@ -319,7 +346,12 @@
   :Page: sr3.302
   :Conflicts: Wired Reflexes, Move Wire, Vehicle Control Rig
   :Base: Boosted Reflexes
-  :Stats: derived[Reaction|CBM:+1,Initative|CBM:+1]
+  :Stats:
+    :derived:
+      :Reaction:
+        :CBM: 1
+      :Initative:
+        :CBM: 1
 :Boosted Reflexes 3:
   :Name: Boosted Reflexes 3
   :Essence: '2.8'
@@ -331,7 +363,12 @@
   :Page: sr3.302
   :Conflicts: Wired Reflexes, Move by Wire, Vehicle Control Rig
   :Base: Boosted Reflexes
-  :Stats: derived[Reaction|CBM:+2,Initative|CBM:+2]
+  :Stats:
+    :derived:
+      :Reaction:
+        :CBM: 2
+      :Initative:
+        :CBM: 2
 :Brightlight Feature:
   :Name: Brightlight Feature
   :Essence: '0.2'
@@ -1244,7 +1281,10 @@
   :Page: sr3.302
   :Conflicts: Dermal Sheathing, Orthoskin
   :Base: Dermal Plating
-  :Stats: attributes[Body:+1]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 1
 :Dermal Plating 2:
   :Name: Dermal Plating 2
   :Essence: '1.0'
@@ -1256,7 +1296,10 @@
   :Page: sr3.302
   :Conflicts: Dermal Sheathing, Orthoskin
   :Base: Dermal Plating
-  :Stats: attributes[Body:+2]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 2
 :Dermal Plating 3:
   :Name: Dermal Plating 3
   :Essence: '1.5'
@@ -1268,7 +1311,10 @@
   :Page: sr3.302
   :Conflicts: Dermal Sheathing, Orthoskin
   :Base: Dermal Plating
-  :Stats: attributes[Body:+3]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 3
 :Dermal Sheathing 1:
   :Name: Dermal Sheathing 1
   :Essence: '0.7'
@@ -1280,7 +1326,12 @@
   :Page: mm.28
   :Conflicts: Dermal Plating, Orthoskin
   :Base: Dermal Sheathing
-  :Stats: attributes[Body:+2];[Impact:+1]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 2
+    :armor:
+      :Impact: 1
 :Dermal Sheathing 2:
   :Name: Dermal Sheathing 2
   :Essence: '1.4'
@@ -1292,7 +1343,12 @@
   :Page: mm.28
   :Conflicts: Dermal Plating, Orthoskin
   :Base: Dermal Sheathing
-  :Stats: attributes[Body:+3];armor[Impact:+1]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 3
+    :armor:
+      :Impact: 1
 :Dermal Sheathing 3:
   :Name: Dermal Sheathing 3
   :Essence: '2.1'
@@ -1304,7 +1360,12 @@
   :Page: mm.28
   :Conflicts: Dermal Plating, Orthoskin
   :Base: Dermal Sheathing
-  :Stats: attributes[Body:+4];armor[Impact:+2]
+  :Stats:
+    :attributes:
+      :Body:
+        :CM: 4
+    :armor:
+      :Impact: 2
 :Diagnosis Processor:
   :Name: Diagnosis Processor
   :Essence: '0.2'
@@ -1528,7 +1589,10 @@
   :Option: 'yes'
   :Cyberlimb: Cybereyes
   :Base: Electronic Magnification
-  :Stats: senses[Magnification Vision|Electronic:1]
+  :Stats:
+    :senses:
+      :Magnification Vision:
+        :Electronic: 1
 :Electronic Magnification 2:
   :Name: Electronic Magnification 2
   :Essence: '0.1'
@@ -1541,7 +1605,10 @@
   :Option: 'yes'
   :Cyberlimb: Cybereyes
   :Base: Electronic Magnification
-  :Stats: senses[Magnification Vision|Electronic:2]
+  :Stats:
+    :senses:
+      :Magnification Vision:
+        :Electronic: 2
 :Electronic Magnification 3:
   :Name: Electronic Magnification 3
   :Essence: '0.1'
@@ -1554,7 +1621,10 @@
   :Option: 'yes'
   :Cyberlimb: Cybereyes
   :Base: Electronic Magnification
-  :Stats: senses[Magnification Vision|Electronic:3]
+  :Stats:
+    :senses:
+      :Magnification Vision:
+        :Electronic: 3
 :Encephalon 1:
   :Name: Encephalon 1
   :Essence: '0.75'
@@ -1565,7 +1635,9 @@
   :Index: '2.0'
   :Page: mm.20
   :Base: Encephalon
-  :Stats: special[Taskpool:+1]
+  :Stats:
+    :special:
+      :Taskpool: 1
 :Encephalon 2:
   :Name: Encephalon 2
   :Essence: '1.75'
@@ -1576,7 +1648,9 @@
   :Index: '2.0'
   :Page: mm.20
   :Base: Encephalon
-  :Stats: special[Taskpool:+2]
+  :Stats:
+    :special:
+      :Taskpool: 2
 :Encryption module:
   :Name: Encryption module
   :Essence: '0.2'
@@ -2234,7 +2308,9 @@
   :Page: sr3.299
   :Option: 'yes'
   :Cyberlimb: Cyberears
-  :Stats: senses[Improved Hearing|Electronic]
+  :Stats:
+    :senses:
+      :Improved Hearing: :Electronic
 :High Frequency:
   :Name: High Frequency
   :Essence: '0.2'
@@ -2246,7 +2322,9 @@
   :Page: sr3.299
   :Option: 'yes'
   :Cyberlimb: Cyberears
-  :Stats: senses[High-Frequency Hearing|Electronic]
+  :Stats:
+    :senses:
+      :High-Frequency Hearing: :Electronic
 :High-frequency Modulator:
   :Name: High-frequency Modulator
   :Price: 8000¥
@@ -2762,7 +2840,9 @@
   :Page: sr3.299
   :Option: 'yes'
   :Cyberlimb: Cyberears
-  :Stats: senses[Low-Frequency Hearing|Electronic]
+  :Stats:
+    :senses:
+      :Low-Frequency Hearing: :Electronic
 :Low-Light:
   :Name: Low-Light
   :Essence: '0.2'
@@ -2774,7 +2854,9 @@
   :Page: sr3.300
   :Option: 'yes'
   :Cyberlimb: Cybereyes
-  :Stats: senses[Low-Light Vision|Electronic]
+  :Stats:
+    :senses:
+      :Low-Light Vision: :Electronic
 :Low-frequency Modulator:
   :Name: Low-frequency Modulator
   :Price: 8000¥
@@ -2860,7 +2942,9 @@
   :Page: mm.17
   :Option: 'yes'
   :Cyberlimb: Cybereyes
-  :Stats: senses[Microscopic Vision|Electronic]
+  :Stats:
+    :senses:
+      :Microscopic Vision: :Electronic
 :Move-by-wire 1:
   :Name: Move-by-wire 1
   :Essence: '2.5'
@@ -2872,7 +2956,15 @@
   :Page: mm.30
   :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
   :Base: Move-by-wire
-  :Stats: attributes[Quickness:+1];derived[Reaction|CBM:+2,Initative|CBM:+1]
+  :Stats:
+    :attributes:
+      :Quickness:
+        :CM: 1
+    :derived:
+      :Reaction:
+        :CBM: 2
+      :Initative:
+        :CBM: 1
 :Move-by-wire 2:
   :Name: Move-by-wire 2
   :Essence: '4'
@@ -2884,7 +2976,15 @@
   :Page: mm.30
   :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
   :Base: Move-by-wire
-  :Stats: attributes[Quickness:+2];derived[Reaction|CBM:+4,Initative|CBM:+2]
+  :Stats:
+    :attributes:
+      :Quickness:
+        :CM: 2
+    :derived:
+      :Reaction:
+        :CBM: 4
+      :Initative:
+        :CBM: 2
 :Move-by-wire 3:
   :Name: Move-by-wire 3
   :Essence: '5.5'
@@ -2896,7 +2996,15 @@
   :Page: mm.30
   :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
   :Base: Move-by-wire
-  :Stats: attributes[Quickness:+3];derived[Reaction|CBM:+6,Initative|CBM:+3]
+  :Stats:
+    :attributes:
+      :Quickness:
+        :CM: 3
+    :derived:
+      :Reaction:
+        :CBM: 6
+      :Initative:
+        :CBM: 3
 :Move-by-wire 4:
   :Name: Move-by-wire 4
   :Essence: '7'
@@ -2908,7 +3016,15 @@
   :Page: mm.30
   :Conflicts: Wired Reflexes, Boosted Reflexes, Synaptic Accelerator
   :Base: Move-by-wire
-  :Stats: attributes[Quickness:+4];derived[Reaction|CBM:+8,Initiative|CBM:+4]
+  :Stats:
+    :attributes:
+      :Quickness:
+        :CM: 4
+    :derived:
+      :Reaction:
+        :CBM: 8
+      :Initiative:
+        :CBM: 4
 :Muscle Replacement 1:
   :Name: Muscle Replacement 1
   :Essence: '1'
@@ -2921,7 +3037,10 @@
   :Conflicts: Muscle Augmentation, Muscle Toner
   :Maxlevel: '4'
   :Base: Muscle Replacement
-  :Stats: attributes[Strength:+1]
+  :Stats:
+    :attributes:
+      :Strength:
+        :CM: 1
 :Muscle Replacement 2:
   :Name: Muscle Replacement 2
   :Essence: '2'
@@ -2934,7 +3053,10 @@
   :Conflicts: Muscle Augmentation, Muscle Toner
   :Maxlevel: '4'
   :Base: Muscle Replacement
-  :Stats: attributes[Strength:+2]
+  :Stats:
+    :attributes:
+      :Strength:
+        :CM: 2
 :Muscle Replacement 3:
   :Name: Muscle Replacement 3
   :Essence: '3'
@@ -2947,7 +3069,10 @@
   :Conflicts: Muscle Augmentation, Muscle Toner
   :Maxlevel: '4'
   :Base: Muscle Replacement
-  :Stats: attributes[Strength:+3]
+  :Stats:
+    :attributes:
+      :Strength:
+        :CM: 3
 :Muscle Replacement 4:
   :Name: Muscle Replacement 4
   :Essence: '4'
@@ -2960,7 +3085,10 @@
   :Conflicts: Muscle Augmentation, Muscle Toner
   :Maxlevel: '4'
   :Base: Muscle Replacement
-  :Stats: attributes[Strength:+4]
+  :Stats:
+    :attributes:
+      :Strength:
+        :CM: 4
 :OXSYS Cybergill:
   :Name: OXSYS Cybergill
   :Essence: '0.75'
@@ -2991,7 +3119,10 @@
   :Option: 'yes'
   :Cyberlimb: Cybereyes
   :Base: Optical Magnification
-  :Stats: senses[Magnification Vision|Optical:1]
+  :Stats:
+    :senses:
+      :Magnification Vision:
+        :Optical: 1
 :Optical Magnification 2:
   :Name: Optical Magnification 2
   :Essence: '0.2'
@@ -3004,7 +3135,10 @@
   :Option: 'yes'
   :Cyberlimb: Cybereyes
   :Base: Optical Magnification
-  :Stats: senses[Magnification Vision|Optical:2]
+  :Stats:
+    :senses:
+      :Magnification Vision:
+        :Optical: 2
 :Optical Magnification 3:
   :Name: Optical Magnification 3
   :Essence: '0.2'
@@ -3017,7 +3151,10 @@
   :Option: 'yes'
   :Cyberlimb: Cybereyes
   :Base: Optical Magnification
-  :Stats: senses[Magnification Vision|Optical:3]
+  :Stats:
+    :senses:
+      :Magnification Vision:
+        :Optical: 3
 :Opticam:
   :Name: Opticam
   :Essence: '0.5'
@@ -3303,7 +3440,10 @@
   :Page: sr3.302
   :Maxlevel: '6'
   :Base: Reaction Enhancer
-  :Stats: attributes[Reaction|CBM]:+1]
+  :Stats:
+    :attributes:
+      :Reaction:
+        :CBM: 1
 :Reaction Enhancer 2:
   :Name: Reaction Enhancer 2
   :Essence: '0.6'
@@ -3315,7 +3455,10 @@
   :Page: sr3.302
   :Maxlevel: '6'
   :Base: Reaction Enhancer
-  :Stats: attributes[Reaction|CBM]:+2]
+  :Stats:
+    :attributes:
+      :Reaction:
+        :CBM: 2
 :Reaction Enhancer 3:
   :Name: Reaction Enhancer 3
   :Essence: '0.9'
@@ -3327,7 +3470,10 @@
   :Page: sr3.302
   :Maxlevel: '6'
   :Base: Reaction Enhancer
-  :Stats: attributes[Reaction|CBM]:+3]
+  :Stats:
+    :attributes:
+      :Reaction:
+        :CBM: 3
 :Reaction Enhancer 4:
   :Name: Reaction Enhancer 4
   :Essence: '1.2'
@@ -3339,7 +3485,10 @@
   :Page: sr3.302
   :Maxlevel: '6'
   :Base: Reaction Enhancer
-  :Stats: attributes[Reaction|CBM]:+4]
+  :Stats:
+    :attributes:
+      :Reaction:
+        :CBM: 4
 :Reaction Enhancer 5:
   :Name: Reaction Enhancer 5
   :Essence: '1.5'
@@ -3351,7 +3500,10 @@
   :Page: sr3.302
   :Maxlevel: '6'
   :Base: Reaction Enhancer
-  :Stats: attributes[Reaction|CBM]:+5]
+  :Stats:
+    :attributes:
+      :Reaction:
+        :CBM: 5
 :Reaction Enhancer 6:
   :Name: Reaction Enhancer 6
   :Essence: '1.8'
@@ -3363,7 +3515,10 @@
   :Page: sr3.302
   :Maxlevel: '6'
   :Base: Reaction Enhancer
-  :Stats: attributes[Reaction|CBM]:+6]
+  :Stats:
+    :attributes:
+      :Reaction:
+        :CBM: 6
 :Recorder:
   :Name: Recorder
   :Essence: '0.3'
@@ -3927,7 +4082,9 @@
   :Index: '1.25'
   :Page: sr3.300
   :Cyberlimb: Cybereyes
-  :Stats: sense[Thermographic Vision|Electronic]
+  :Stats:
+    :sense:
+      :Thermographic Vision: :Electronic
 :Tonal Shift:
   :Name: Tonal Shift
   :Price: 25000¥
@@ -3998,7 +4155,12 @@
   :Index: '1.0'
   :Page: sr3.302
   :Base: Vehicle Control Rig
-  :Stats: derived[Reaction|Rigg:+2,Initiative|Rigg:+1]
+  :Stats:
+    :derived:
+      :Reaction:
+        :Rigg: 2
+      :Initiative:
+        :Rigg: 1
 :Vehicle Control Rig 2:
   :Name: Vehicle Control Rig 2
   :Essence: '3.0'
@@ -4009,7 +4171,12 @@
   :Index: '1.25'
   :Page: sr3.302
   :Base: Vehicle Control Rig
-  :Stats: derived[Reaction|Rigg:+4,Initiative|Rigg:+2]
+  :Stats:
+    :derived:
+      :Reaction:
+        :Rigg: 4
+      :Initiative:
+        :Rigg: 2
 :Vehicle Control Rig 3:
   :Name: Vehicle Control Rig 3
   :Essence: '5.0'
@@ -4020,7 +4187,12 @@
   :Index: '1.5'
   :Page: sr3.302
   :Base: Vehicle Control Rig
-  :Stats: derived[Reaction|Rigg:+6,Initiative|Rigg:+3]
+  :Stats:
+    :derived:
+      :Reaction:
+        :Rigg: 6
+      :Initiative:
+        :Rigg: 3
 :Venom Sack(2 doeses):
   :Name: Venom Sack(2 doeses)
   :Essence: '0.05'
@@ -4127,7 +4299,12 @@
   :Page: sr3.302
   :Conflicts: Boosted Reflexes, Move by Wire
   :Base: Wired Reflexes
-  :Stats: derived[Reaction|CBM:+2,Initative|CBM:+1]
+  :Stats:
+    :derived:
+      :Reaction:
+        :CBM: 2
+      :Initative:
+        :CBM: 1
 :Wired Reflexes 2:
   :Name: Wired Reflexes 2
   :Essence: '3.0'
@@ -4139,7 +4316,12 @@
   :Page: sr3.302
   :Conflicts: Boosted Reflexes, Move by wire
   :Base: Wired Reflexes
-  :Stats: derived[Reaction|CBM:+4,Initiative|CBM:+2]
+  :Stats:
+    :derived:
+      :Reaction:
+        :CBM: 4
+      :Initiative:
+        :CBM: 2
 :Wired Reflexes 3:
   :Name: Wired Reflexes 3
   :Essence: '5.0'
@@ -4151,4 +4333,9 @@
   :Page: sr3.302
   :Conflicts: Boosted Reflexes, Move by wire
   :Base: Wired Reflexes
-  :Stats: derived[Reaction|CBM:+6,Initative|CBM:+3]
+  :Stats:
+    :derived:
+      :Reaction:
+        :CBM: 6
+      :Initative:
+        :CBM: 3

@@ -21,11 +21,11 @@ BattleTac IVIS Master Unit ¬0.15 ¬150000¥ ¬RI ¬5P-R ¬8/14 days ¬3.0 ¬mm.
 BattleTac modification ¬0 ¬10000¥ ¬BR ¬2P-R ¬ + 6/- ¬4.0 ¬mm.23 ¬Tactical Computer ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Biomonitor System ¬0.3 ¬5000¥ ¬BO ¬Legal ¬6/72 hrs ¬2.0 ¬mm.26 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Body Compartment ¬0.2 ¬5000¥ ¬BO ¬Legal ¬4/48 hrs ¬1.0 ¬mm.26 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Bone Lacing Aluminum ¬1.15 ¬25000¥ ¬BO ¬6P-Q ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body:+1];armor[Impact:+1]
-Bone Lacing Ceramic ¬1.5 ¬40000¥ ¬BO ¬6P-Q ¬6/21 days ¬2.0 ¬mm.27 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body:+1];armor[Impact:+2]
-Bone Lacing Kevlar ¬1.0 ¬20000¥ ¬BO ¬6P-Q ¬6/21 days ¬2.0 ¬mm.27 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body:+1];armor[Ballistic:+1]
-Bone Lacing Plastic ¬0.5 ¬7500¥ ¬BO ¬6P-N ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body:+1]
-Bone Lacing Titanium ¬2.25 ¬75000¥ ¬BO ¬6-R ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body:+2];armor[Impact:+1,Ballistic:+1]
+Bone Lacing Aluminum ¬1.15 ¬25000¥ ¬BO ¬6P-Q ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body|CM:+1];armor[Impact:+1]
+Bone Lacing Ceramic ¬1.5 ¬40000¥ ¬BO ¬6P-Q ¬6/21 days ¬2.0 ¬mm.27 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body|CM:+1];armor[Impact:+2]
+Bone Lacing Kevlar ¬1.0 ¬20000¥ ¬BO ¬6P-Q ¬6/21 days ¬2.0 ¬mm.27 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body|CM:+1];armor[Ballistic:+1]
+Bone Lacing Plastic ¬0.5 ¬7500¥ ¬BO ¬6P-N ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body|CM:+1]
+Bone Lacing Titanium ¬2.25 ¬75000¥ ¬BO ¬6-R ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body|CM:+2];armor[Impact:+1,Ballistic:+1]
 Boosted Reflexes 1 ¬0.5 ¬15000¥ ¬BO ¬8P-Q ¬3/24hrs ¬1.0 ¬sr3.302 ¬ ¬Wired Reflexes, Move by Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Initiative|CBM:+1]
 Boosted Reflexes 2 ¬1.25 ¬40000¥ ¬BO ¬6P-Q ¬3/24 hrs ¬1.25 ¬sr3.302 ¬ ¬Wired Reflexes, Move Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+1,Initative|CBM:+1]
 Boosted Reflexes 3 ¬2.8 ¬90000¥ ¬BO ¬5P-Q ¬3/24 hrs ¬1.5 ¬sr3.302 ¬ ¬Wired Reflexes, Move by Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+2,Initative|CBM:+2]
@@ -104,12 +104,12 @@ Datajack Induction ¬0.3 ¬3000¥ ¬BR ¬Legal ¬5/4 days ¬2.0 ¬mm.21 ¬ ¬ ¬
 Datajack ¬0.2 ¬1000¥ ¬BR ¬Legal ¬1/1 hrs ¬0.9 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 DatajackEye ¬0.25 ¬2200¥ ¬SE ¬4P-N ¬6/48 hrs ¬2.0 ¬mm.14 ¬Cybereyes ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Decryption module ¬0.2 ¬L*17500¥ ¬RI ¬ 8P-W ¬L+2/L days ¬2.0 ¬mm.24 ¬Cranial Remote Deck ¬ ¬yes ¬10 ¬ ¬ ¬0.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Dermal Plating 1 ¬0.5 ¬6000¥ ¬BO ¬6P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬attributes[Body:+1]
-Dermal Plating 2 ¬1.0 ¬15000¥ ¬BO ¬6P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬attributes[Body:+2]
-Dermal Plating 3 ¬1.5 ¬45000¥ ¬BO ¬5P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬attributes[Body:+3]
-Dermal Sheathing 1 ¬0.7 ¬24000¥ ¬BO ¬6P-N ¬6/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬attributes[Body:+2];[Impact:+1]
-Dermal Sheathing 2 ¬1.4 ¬60000¥ ¬BO ¬6P-N ¬6/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬attributes[Body:+3];armor[Impact:+1]
-Dermal Sheathing 3 ¬2.1 ¬120000¥ ¬BO ¬5P-N ¬8/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬attributes[Body:+4];armor[Impact:+2]
+Dermal Plating 1 ¬0.5 ¬6000¥ ¬BO ¬6P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬attributes[Body|CM:+1]
+Dermal Plating 2 ¬1.0 ¬15000¥ ¬BO ¬6P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬attributes[Body|CM:+2]
+Dermal Plating 3 ¬1.5 ¬45000¥ ¬BO ¬5P-N ¬4/12 days ¬1.0 ¬sr3.302 ¬ ¬Dermal Sheathing, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Plating ¬ ¬ ¬ ¬attributes[Body|CM:+3]
+Dermal Sheathing 1 ¬0.7 ¬24000¥ ¬BO ¬6P-N ¬6/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬attributes[Body|CM:+2];armor[Impact:+1]
+Dermal Sheathing 2 ¬1.4 ¬60000¥ ¬BO ¬6P-N ¬6/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬attributes[Body|CM:+3];armor[Impact:+1]
+Dermal Sheathing 3 ¬2.1 ¬120000¥ ¬BO ¬5P-N ¬8/14 days ¬1.5 ¬mm.28 ¬ ¬Dermal Plating, Orthoskin ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Dermal Sheathing ¬ ¬ ¬ ¬attributes[Body|CM:+4];armor[Impact:+2]
 Diagnosis Processor ¬0.2 ¬2500¥ ¬BO ¬Legal ¬6/72 hrs ¬2.0 ¬mm.26 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Direct Neural Interface ¬0.1 ¬4500¥ ¬BO ¬5P-Q ¬4/6 days ¬1.0 ¬mm.38 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Display Link ¬0.1 ¬1000¥ ¬SE ¬Legal ¬4/36 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -242,14 +242,14 @@ Lower Limb Strength Enhancement 3 ¬ ¬105000¥ ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬s
 Magnetic System ¬0.3 ¬2800¥ ¬BO ¬Legal ¬6/7 days ¬2.0 ¬mm.30 ¬ ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬3 ¬ ¬-1 ¬ ¬ ¬ ¬ ¬ ¬
 Memory ¬Mp/300 ¬Mpx150¥ ¬BR ¬Legal ¬3/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Microscopic Vision ¬0.1 ¬5000¥ ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬mm.17 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬senses[Microscopic Vision|Electronic]
-Move-by-wire 1 ¬2.5 ¬250000¥ ¬BO ¬3P-R ¬8/10 days ¬2.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness:+1];derived[Reaction|CBM:+2,Initative|CBM:+1]
-Move-by-wire 2 ¬4 ¬500000¥ ¬BO ¬3P-R ¬12/20 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness:+2];derived[Reaction|CBM:+4,Initative|CBM:+2]
-Move-by-wire 3 ¬5.5 ¬1000000¥ ¬BO ¬3P-R ¬18/30 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness:+3];derived[Reaction|CBM:+6,Initative|CBM:+3]
-Move-by-wire 4 ¬7 ¬2000000¥ ¬BO ¬3P-R ¬20/45 days ¬3.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness:+4];derived[Reaction|CBM:+8,Initiative|CBM:+4]
-Muscle Replacement 1 ¬1 ¬20000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength:+1]
-Muscle Replacement 2 ¬2 ¬40000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength:+2]
-Muscle Replacement 3 ¬3 ¬60000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength:+3]
-Muscle Replacement 4 ¬4 ¬80000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength:+4]
+Move-by-wire 1 ¬2.5 ¬250000¥ ¬BO ¬3P-R ¬8/10 days ¬2.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+1];derived[Reaction|CBM:+2,Initative|CBM:+1]
+Move-by-wire 2 ¬4 ¬500000¥ ¬BO ¬3P-R ¬12/20 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+2];derived[Reaction|CBM:+4,Initative|CBM:+2]
+Move-by-wire 3 ¬5.5 ¬1000000¥ ¬BO ¬3P-R ¬18/30 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+3];derived[Reaction|CBM:+6,Initative|CBM:+3]
+Move-by-wire 4 ¬7 ¬2000000¥ ¬BO ¬3P-R ¬20/45 days ¬3.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+4];derived[Reaction|CBM:+8,Initiative|CBM:+4]
+Muscle Replacement 1 ¬1 ¬20000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength|CM:+1]
+Muscle Replacement 2 ¬2 ¬40000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength|CM:+2]
+Muscle Replacement 3 ¬3 ¬60000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength|CM:+3]
+Muscle Replacement 4 ¬4 ¬80000¥ ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength|CM:+4]
 OXSYS Cybergill ¬0.75 ¬12500¥ ¬BO ¬Legal ¬5/72 hrs ¬1.75 ¬mm.31 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Olfactory Booster ¬0.2 ¬L*1000¥ ¬SE ¬Legal ¬6/8 days ¬1.0 ¬mm.17 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Optical Magnification 1 ¬0.2 ¬2500¥ ¬SE ¬Legal ¬4/48 hrs ¬1.0 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬Optical Magnification ¬ ¬ ¬ ¬senses[Magnification Vision|Optical:1]

@@ -586,7 +586,7 @@ class Character
     
 
   def vcr
-    @cyberware[:Bodyware].find {|x| x[0] == :VCR}
+    @cyberware[:Bodyware].find {|x| x[0] =~ /Vehicle Control/}
   end
 
   def deck
@@ -674,7 +674,10 @@ class Character
   end
 
   def updatecontrolpool
-    @derived[:Pools][:'Control Pool'] = 0
+    if vcr
+      @derived[:Pools][:'Control Pool'] = 0
+    else
+      @derived[:Pools][:'Control Pool'] = @derived[:Reaction][:Rigg]
   end
 
   def checkage
@@ -1346,25 +1349,6 @@ class Skillblock < Gtk::ScrolledWindow
     @header[:ADD] = Gtk::Button.new('Add')
     @header[:ADD].sensitive = false
 
-#    @model = Gtk::TreeStore.new(String)
-#    @view = Gtk::TreeView.new(@model)
-#    CONSTANT[:activeskills].keys.each do |x|
-#      parent = @model.append(nil)
-#      parent[0] = x
-#      CONSTANT[:activeskills][x].keys.each do |y|
-#        child = @model.append(parent)
-#        child[0]=y
-#      end
-#    end
-#    1.times do |x|
-#      renderer = Gtk::CellRendererText.new
-#      col = Gtk::TreeViewColumn.new("Name",renderer,:text => 0)
-#      @view.append_column(col)
-#    end
-#    @window = Gtk::Window.new
-#    @window.add(@view)
-#    @window.show_all
-
     @header[:ADD].signal_connect('clicked') do |x|
       @app.addskill(getattr,getskill,getspecial) unless @skillentries.include? getskill
     end
@@ -1418,9 +1402,9 @@ end
 
 class Spellblock < Gtk::Frame
   def enablespells(spells)
-  newspell
-  @view.collapse_all
-  @allowed = spells
+    newspell
+    @view.collapse_all
+    @allowed = spells
   end
 
   def spelllvl(name,value)
@@ -1470,7 +1454,6 @@ class Spellblock < Gtk::Frame
   end
 
   def appendspell(name,category,subcategory)
-    pp name,category,subcategory
     count = @spells.count
     @spells[name] = [ 
       Gtk::Label.new(name),Gtk::Label.new(subcategory ? category+"/"+subcategory : category),

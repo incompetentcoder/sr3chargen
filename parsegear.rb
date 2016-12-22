@@ -12,7 +12,39 @@ def parsecyber(name,cyber)
 			cyber[name]=Hash.new
 			c.split(" ¬").each_with_index do |d,e|
         if e < 23
-          cyber[name][header[e].to_sym]=d.to_s unless d == ''
+          unless header[e] == "Stats"
+            cyber[name][header[e].to_sym]=d.to_s unless d == ''
+          else
+            stuff = {}
+            stats = d.split(";")
+            stats.each do |stat|
+              pp stat
+              base = stat.split("[")[0]
+              pp stat.split("[")[1].delete("]").split(",")
+              stat.split("[")[1].delete("]").split(",").each do |values|
+                value = values.split("|")
+                if value[1]
+                  stuff[base.to_sym]={} unless stuff.has_key?(base.to_sym)
+                  value2,bonus = value[1].split(":")
+                    if bonus
+                      stuff[base.to_sym][value[0].to_sym] = {}
+                      stuff[base.to_sym][value[0].to_sym][value2.to_sym] = bonus.to_i
+                    else
+                      stuff[base.to_sym][value[0].to_sym] = value2.to_sym
+                    end
+                else
+                  value,bonus = value[0].split(":")
+                  if bonus
+                    stuff[base.to_sym] = {} unless stuff.has_key?(base.to_sym)
+                    stuff[base.to_sym][value.to_sym] = bonus.to_i
+                  else 
+                    stuff[base.to_sym] = value.to_sym
+                  end
+                end
+              end
+            end
+            cyber[name][header[e].to_sym] = stuff
+          end 
         end
 			end
 		end
