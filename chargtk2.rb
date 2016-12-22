@@ -20,7 +20,9 @@ class Application
   end
 
   def save
+    @a.remove_instance_variable(:@app)
     pp @a
+    @a.setapp(self)
   end
 
   def gettotem
@@ -96,7 +98,7 @@ class Application
       name2 = nil
     end
     if @a.appendspell(name.to_sym,category.to_sym,subcategory ? subcategory.to_sym : nil,name2 ? name2.to_sym : nil)
-      @notebook.spell.appendspell(name2,category,subcategory)
+      @notebook.spell.appendspell(name2 ? name2 : name,category,subcategory)
     end
   end
 
@@ -228,9 +230,13 @@ class Application
     @guiattributes.updateinitiative(@a.updateinitiative)
   end
 
+  def getattr(attr,which)
+    @a.attributes[attr][:Points]
+  end
+
   def setattribute(attr, value)
-    @guiattributes.setattribute(attr, @a.setattribute(attr, value.value))
-    updateattr(attr)
+    @guiattributes.setattribute(attr, @a.setattribute(attr, value.value.to_i))
+    updateattr(attr) if getattr(attr,:Points) == value.value
     setpointsrem
   end
 
@@ -387,6 +393,10 @@ end
 class Character
   attr_reader :name, :streetname, :age, :attributes,
               :points, :metatype, :magetype, :gender
+  def setapp(app)
+    @app = app
+  end
+
   def setname(name)
     @name = name
   end
@@ -791,11 +801,14 @@ class Character
   end
 
   def setattribute(attr, value)
-    if (value / 2 + @attributes[attr][:RM] > 0) && value.to_i.even?
-      if checkpoints(value - @attributes[attr][:Points])
-        if @app.checkskills(attr,value/2,@attributes[attr][:ACT])
-          modpoints(value - @attributes[attr][:Points])
-          @attributes[attr][:Points] = value
+    if value.even?
+      if (value / 2 + @attributes[attr][:RM] > 0)
+        if checkpoints(value - @attributes[attr][:Points])
+          if @app.checkskills(attr,@attributes[attr][:ACT]-@attributes[attr][:BA]+
+              value/2+@attributes[attr][:RM],@attributes[attr][:ACT])
+            modpoints(value - @attributes[attr][:Points])
+            @attributes[attr][:Points] = value
+          end
         end
       end
     end
@@ -837,8 +850,8 @@ class Character
     @spells = {}
     @totem = nil
     @element = nil 
-    @cyberware = {:Bodyware => {}, :Senseware => {}, :Cyberlimbs => {},
-                  :Headware => {}}
+    @cyberware = {:Bodyware => {}, :Senseware => {}, :Cyberlimb => {},
+                  :Matrixware => {}, :Brainware => {}, :Riggerware => {}}
     @bioware = {}
     @derived = {:Pools => {}, :Reaction => {}, :Initiative => {}}
     @special = { :Essence => 6, :'Body Index' => 0, :Magic => 0 }
@@ -1457,6 +1470,7 @@ class Spellblock < Gtk::Frame
   end
 
   def appendspell(name,category,subcategory)
+    pp name,category,subcategory
     count = @spells.count
     @spells[name] = [ 
       Gtk::Label.new(name),Gtk::Label.new(subcategory ? category+"/"+subcategory : category),
@@ -1481,7 +1495,7 @@ class Spellblock < Gtk::Frame
     @vbox = Gtk::VBox.new(true,nil)
     @table = Gtk::Table.new(11,1,true)
     @spells = {}
-    @header2 = {}
+    @header = {}
     @model = Gtk::TreeStore.new(String, String, String, String, String, String, String, String, String)
     @model.set_sort_column_id(0,Gtk::SORT_ASCENDING)
     @view = Gtk::TreeView.new(@model)
@@ -1546,7 +1560,7 @@ class Spellblock < Gtk::Frame
     (0..8).each do |x|
       renderer = Gtk::CellRendererText.new
       col = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
-      col.set_sizing  Gtk::TreeViewColumn::GROW_ONLY
+      col.set_sizing  Gtk::TreeViewColumn::AUTOSIZE
       @view.append_column(col)
     end
     @view.enable_grid_lines = Gtk::TreeView::GRID_LINES_BOTH
@@ -1560,9 +1574,9 @@ class Spellblock < Gtk::Frame
       end
     end
 
-    @table.attach @header2[:Category] = Gtk::Label.new('Spell'), 0, 4, 0, 1, *ATCH
-    @table.attach @header2[:Spell] = Gtk::Label.new('Category'), 4, 8, 0, 1, *ATCH
-    @table.attach @header2[:Points] = Gtk::Label.new('Points'), 8, 10, 0, 1, *ATCH
+    @table.attach @header[:Category] = Gtk::Label.new('Spell'), 0, 4, 0, 1, *ATCH
+    @table.attach @header[:Spell] = Gtk::Label.new('Category'), 4, 8, 0, 1, *ATCH
+    @table.attach @header[:Points] = Gtk::Label.new('Points'), 8, 10, 0, 1, *ATCH
     @table.attach Gtk::Label.new("Del"), 10, 11, 0, 1, *ATCH
 
     @win.add(@view)
@@ -1603,6 +1617,9 @@ class Cyberblock < Gtk::Frame
     @model = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String)
     @model.set_sort_column_id(0,Gtk::SORT_ASCENDING)
     @view = Gtk::TreeView.new(@model)
+    @model2 = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String)
+    @model2.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view2 = Gtk::TreeView.new(@model2)
     @order = {}
     %i(Name Essence Price Conceal Legality Avail Required Conflicts).each_with_index do |x,y|
       @order[x]=y
@@ -1612,15 +1629,20 @@ class Cyberblock < Gtk::Frame
       parent = @model.append(nil)
       parent[0] = x
       cyber = CONSTANT[:cyberware].find_all {|y| y[1][:Type] =~ /#{x[0..1].upcase}/}.to_h
-      bases = cyber.collect {|x| x[1][:Base] unless x[1][:Base] == ""}.compact.to_set
+      bases = cyber.collect {|y| y[1][:Base] unless y[1][:Base] == ""}.compact.to_set
       addcyber(parent,cyber,bases)
     end
     
     (0..7).each do |x|
       renderer = Gtk::CellRendererText.new
       col = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
-      col.set_sizing  Gtk::TreeViewColumn::GROW_ONLY
+      col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
       @view.append_column(col)
+      if x < 6
+        col2 = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+        col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+        @view2.append_column(col2)
+      end
     end
     @view.enable_grid_lines = Gtk::TreeView::GRID_LINES_BOTH
     @view.enable_tree_lines = true
@@ -1633,8 +1655,10 @@ class Cyberblock < Gtk::Frame
       end
     end
 
+    @win2.add(@view2)
     @win.add(@view)
     @vbox.pack_start_defaults(@win)
+    @vbox.pack_start_defaults(@win2)
     @vbox.show_all
     add(@vbox)
   end
