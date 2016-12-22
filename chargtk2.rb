@@ -172,7 +172,7 @@ class Application
     @a.settotem(totem,group,boni)
     totem = gettotem ? gettotem[0] : nil
     checkspells(totem,:totem)
-#    @guiattributes.nototem unless totem
+    @guiattributes.nototem unless totem
   end
 
   def availabletotems(group)
@@ -675,9 +675,9 @@ class Character
 
   def updatecontrolpool
     if vcr
-      @derived[:Pools][:'Control Pool'] = 0
-    else
       @derived[:Pools][:'Control Pool'] = @derived[:Reaction][:Rigg]
+    else
+      @derived[:Pools][:'Control Pool'] = 0
     end
   end
 
@@ -1255,7 +1255,7 @@ class Attributeblock < Gtk::Frame
         @app.settotem(x.active_text.to_sym,@totem[1].active_text.to_sym)
       else
         @tooltips.set_tip(@totem[3],'',nil)
-        @app.settotem(nil,nil)
+        @app.settotem(nil,nil) unless @app.gettotem == nil
       end
 #      x.active = -1 unless @app.gettotem
       settotemboni(@app.gettotem)
@@ -1403,9 +1403,10 @@ end
 
 class Spellblock < Gtk::Frame
   def enablespells(spells)
-    newspell
+    newspell unless @spells.empty?
     @view.collapse_all
     @allowed = spells
+    @spells = {}
   end
 
   def spelllvl(name,value)
@@ -1413,7 +1414,7 @@ class Spellblock < Gtk::Frame
   end
   
   def clear(which=nil)
-    newspell
+    newspell unless @spells.empty?
     @allowed = nil
     @view.collapse_all
     @spells = {}
