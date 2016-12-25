@@ -18,9 +18,7 @@ def parsecyber(name,cyber)
             stuff = {}
             stats = d.split(";")
             stats.each do |stat|
-              pp stat
               base = stat.split("[")[0]
-              pp stat.split("[")[1].delete("]").split(",")
               stat.split("[")[1].delete("]").split(",").each do |values|
                 value = values.split("|")
                 if value[1]
