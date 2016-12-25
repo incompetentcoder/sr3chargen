@@ -37,6 +37,9 @@ class Application
   def getessence
     @a.getessence
   end
+  def getpointsrem
+    @a.getpointsrem
+  end
 
   def getnuyenrem
     @a.getnuyenrem
@@ -185,7 +188,7 @@ class Application
       if which
         enablespells(which,type) unless @spellsenabled
       else
-        disablespells
+        disablespells if @spellsenabled
       end
     end
   end
@@ -333,7 +336,9 @@ class Application
   end
 
   def setmetatype(metatype)
+    test = metatype.active_text.split(':')[0].to_sym
     @basic.setmetatype(@a.setmetatype(metatype))
+    errordialog("Insufficient Points",getpointsrem) unless @a.getmetatype == test
     setmetamods
     setpointsrem
   end
@@ -357,7 +362,9 @@ class Application
   end
 
   def setmagetype(magetype)
+    test = magetype.active_text.split(':')[0].to_sym
     @basic.setmagetype(@a.setmagetype(magetype))
+    errordialog("Insufficient Points",getpointsrem) unless @a.getmagetype == test
     setpointsrem
     setmagic
     setspellpoints
@@ -550,9 +557,19 @@ class Character
       if CONSTANT[:totems][group][totem][:req]
         CONSTANT[:totems][group][totem][:req].each do |x|
           if CONSTANT[:attributes].include? x[0]
-            @attributes[x[0]][:ACT] < x[1] ? (return false) : true
+            if @attributes[x[0]][:ACT] < x[1]
+              @app.errordialog("Requirements not met",x)
+              return false
+            else
+              return true
+            end
           else
-            @derived[x[0]][:CBM] < x[1] ? (return false) : true
+            if @derived[x[0]][:CBM] < x[1]
+              @app.errordialog("Requirements not met",x)
+              return false
+            else
+              return true
+            end
           end
         end
       else
@@ -860,6 +877,10 @@ class Character
 
   def getnuyenrem
     @nuyenrem
+  end
+
+  def getpointsrem
+    @pointsrem
   end
 
   def checkpoints(points)
