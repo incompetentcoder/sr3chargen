@@ -74,13 +74,13 @@ CONSTANTS = {
   		  rage lasts for 3 turns, every success on test substracts a turn, rage
   		  can be avoided with 3 successes. Berserk Bear will attack whoever is
   		  closest with most powerful weapons, rage ends if target is
-  		  incapacitated'.delete("\n\t"),
+  		  incapacitated',
         properties: 'Slow Moving, Easy Going, Healers, Savage When Angered'
       },
       boar: {
         environment: 'Forest', spells: [[:Combat, 2], [:Illusion, -1]],
         desc: '+1 service from any summoned spirit for Combat purposes,
-  		Willpower(6) test to withdraw from conflict'.delete("\n\t"),
+  		Willpower(6) test to withdraw from conflict',
         properties: 'Aggressive, Territorial, Blatant, Not A Real Thinker'
       },
       buffalo: {
@@ -92,13 +92,13 @@ CONSTANTS = {
         environment: 'Forest,Mountains,Plains', req: [[:Charisma, 4]],
         spells: [[:Health, 2], [:Detection, 1], [:Combat, 1]],
         properties: 'Proud, Protector, Leader, Generous to Freinds,
-  		Aggressive to Those Who Threaten Herd'.delete("\n\t")
+  		Aggressive to Those Who Threaten Herd'
       },
       cat: {
         environment: 'Urban', spells: [[:Illusion, 2]], spirits: [[:City, 2]],
         desc: '+1 all Mental target numbers if not clean. Unwounded Shaman make
   		  Willpower(6) test to cast damaging spell, cast least-damaging spell at
-  		  1/2 force if it fails. Ignore if wounded'.delete("\n\t"),
+  		  1/2 force if it fails. Ignore if wounded',
         properties: 'Vain, Sly, Clean, Aloof, Toy with Prey'
       },
       cheetah: {
@@ -114,7 +114,7 @@ CONSTANTS = {
         environment: 'On or by the sea', spells: [[:Illusion, -1]],
         spirits: [[:Sea, 2]], desc: '+1 die for all damage resistance tests
   		  including drain, willpower(6) test to change mind, complex
-  		  action'.delete("\n\t"),
+  		  action',
         properties: 'Grumpy, Steadfast in his ways, work focussed'
       },
       crocodile: {
@@ -125,7 +125,7 @@ CONSTANTS = {
       dog: {
         environment: 'Urban', spells: [[:Detection, 2]],
         spirits: [[:Field, 2], [:Hearth, 2]], desc: 'Willpower(6) test to 
-        change course of action, complex action'.delete("\n\t"),
+        change course of action, complex action',
         properties: 'Loyal, Generous, Stubborn, Savage Defender of Home'
       },
       dolphin: {
@@ -136,7 +136,7 @@ CONSTANTS = {
       dove: {
         environment: 'Forests', spells: [[:Health, 2], [:Detection, 1]],
         spirits: [[:Sky, 1]], desc: 'Cannot cast Combat spells, Willpower(6) 
-        Test to purposefully inflict harm on a metahuman'.delete("\n\t"),
+        Test to purposefully inflict harm on a metahuman',
         properties: 'Peaceful, Mediator, Martyr'
       },
       eagle: {
@@ -159,15 +159,15 @@ CONSTANTS = {
         environment: 'Anywhere on land', spells: [[:Illusion, 2], 
         [:Combat, -1]], spirits: [[:Choose, [[:Land1, 2], [:Man1, 2]]]], desc: 
         'Willpower(6) Test to spare fallen enemy, Choose one Spirit of Land or 
-        Man'.delete("\n\t"), properties: 'Sly, Clever, Thief, Trickster'
+        Man', properties: 'Sly, Clever, Thief, Trickster'
       },
       gator: {
         environment: 'Swamp,River,Urban',
         spells: [[:Combat, 2], [:Detection, 2], [:Illusion, -1]],
-        spirits: [[:Choose, [[:Swamp, 2], [:Lake, 2], [:River, 2], [:City]]]], 
+        spirits: [[:Choose, [[:Swamp, 2], [:Lake, 2], [:River, 2], [:City, 2]]]], 
         desc: 'Willpower(6) Test to break off fight or  conflict, as wilderness
         totem +2 to Swamp, Lake or River spirits, as urban totem +2 to city
-        spirits'.delete("\n\t"),
+        spirits',
         properties: 'Lazy, Bad Tempered, Glutton, Good Fighter'
       },
       gecko: {
@@ -178,21 +178,21 @@ CONSTANTS = {
       },
       goose: {
         environment: 'Anywhere near water', spells: [[:Combat, 1], 
-        [:Detection, 2]], spirits: [[:Choose, [[:Land1, 1], [:Sky, 1], 
-        [:Water, 1]]]], desc: '+1 Land, Sky or Water spirits, +2 to all Magical 
-        TNs away from home/city region, 28 days to reset'.delete("\n\t"),
+        [:Detection, 2]], spirits: [[:Choose, [[:Land1, 1], [:Sky1, 1], 
+        [:Water1, 1]]]], desc: '+1 for a single Land, Sky or Water spirit, +2 to 
+        all Magical TNs away from home/city region, 28 days to reset',
         properties: 'Proud, Territorial, Loud When Bothered'
       },
       horse: {
         environment: 'Prairie', spells: [[:Health, 2]], spirits: [[:Prairie]],
         desc: '-1 die resisting Combat or Illusion spells, can learn Movement
-  		  critter power as Metamagic'.delete("\n\t"),
+  		  critter power as Metamagic',
         properties: 'Swift, Noble, Strong, Loves Her Freedom'
       },
       hyena: {
         environment: 'Savannah', spells: [[:Combat, 2], [:Health, -1]],
         desc: '+2 dice to banish any spirit, Willpower(6) to perform any action
-  		  with no benefit to self'.delete("\n\t"),
+  		  with no benefit to self',
         properties: 'Aggressive, Cunning, Easily Angered, Self Serving'
       },
       jackal: {
@@ -218,7 +218,7 @@ CONSTANTS = {
         spirits: [[:Choose, [[:Desert, 2], [:Forest, 2], [:Mountain, 2]]]], 
         desc: '+2 to all TNs in tight quarters. When trapped with no clear 
         view of the sky, shaman must make Willpower(6) Test or fly into panic 
-        for 3 turns, -1/success, will do everything to escape.'.delete("\n\t"),
+        for 3 turns, -1/success, will do everything to escape.',
         properties: 'Lazy at Times, Can Move Quickly, Thoughtful in Stillness'
       },
       monkey: {
@@ -485,7 +485,7 @@ CONSTANTS = {
         Fearless, Aggressive, Ruthless, Easily Angered'
       },
       gargoyle: {
-        environment: 'Urban', spells: [[:Detection, 1], [:Illusion]],
+        environment: 'Urban', spells: [[:Detection, 1], [:Illusion,1]],
         spirits: [[:City, 2], [:Water, -1]], desc: 'Must live in a skyscraper
         or castlelike structure up high', properties: '
         Patient, Observant, Fierce Fighter'

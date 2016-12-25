@@ -6,8 +6,8 @@ Air tank ¬0.25 ¬1200 ¬BO ¬Legal ¬4/5 days ¬1.5 ¬mm.29 ¬ ¬ ¬ ¬ ¬ ¬ �
 Appendage Strength Enhancement 1 ¬ ¬35000 ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberhand,Cyberfoot ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-1 ¬ ¬Appendage Strength Enhancement ¬ ¬ ¬ ¬
 Appendage Strength Enhancement 2 ¬ ¬70000 ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberhand,Cyberfoot ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-2 ¬ ¬Appendage Strength Enhancement ¬ ¬ ¬ ¬
 Appendage Strength Enhancement 3 ¬ ¬105000 ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberhand,Cyberfoot ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-3 ¬ ¬Appendage Strength Enhancement ¬ ¬ ¬ ¬
-Auto-inector One-shot ¬0.05 ¬Cont+1500 ¬BO ¬4P-N ¬4/72 hrs ¬1.5 ¬mm.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Auto-injector Reusable ¬0.1 ¬Cont+1000 ¬BO ¬6P-N ¬4/72 hrs ¬1.5 ¬mm.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
+Auto-inector One-shot ¬0.05 ¬1500 ¬BO ¬4P-N ¬4/72 hrs ¬1.5 ¬mm.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
+Auto-injector Reusable ¬0.1 ¬1000 ¬BO ¬6P-N ¬4/72 hrs ¬1.5 ¬mm.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Balance Augmenter ¬0.4 ¬14000 ¬SE ¬Legal ¬8/2 wks ¬2.0 ¬mm.14 ¬ ¬ ¬yes ¬ ¬Cyberear ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Balance Augmentor ¬0.4 ¬14000 ¬SE ¬Legal ¬8/2 wks ¬2.0 ¬ct.24 ¬ ¬ ¬yes ¬ ¬Cyberears ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Balance Tail ¬0.5 ¬10000 ¬BO ¬Legal ¬8/1 wk ¬2.0 ¬mm.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -99,7 +99,7 @@ Data Compactor 2 ¬0.15 ¬19000 ¬BR ¬Legal ¬6/60 hrs ¬1.0 ¬mm.20 ¬ ¬ ¬ �
 Data Compactor 3 ¬0.2 ¬28500 ¬BR ¬Legal ¬6/60 hrs ¬1.0 ¬mm.20 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Data Compactor ¬ ¬ ¬ ¬
 Data Compactor 4 ¬0.25 ¬38000 ¬BR ¬Legal ¬6/60 hrs ¬1.0 ¬mm.20 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Data Compactor ¬ ¬ ¬ ¬
 Data Filter ¬0.3 ¬5000 ¬BR ¬Legal ¬6/36 hrs ¬1.5 ¬mm.20 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Data Lock ¬0.2 ¬1000+Enc ¬BR ¬Legal ¬6/36 hrs ¬1.5 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
+Data Lock ¬0.2 ¬(L+1)*1000 ¬BR ¬Legal ¬6/36 hrs ¬1.5 ¬sr3.298 ¬ ¬ ¬ ¬10 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Datajack Induction ¬0.3 ¬3000 ¬BR ¬Legal ¬5/4 days ¬2.0 ¬mm.21 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Datajack ¬0.2 ¬1000 ¬BR ¬Legal ¬1/1 hrs ¬0.9 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 DatajackEye ¬0.25 ¬2200 ¬SE ¬4P-N ¬6/48 hrs ¬2.0 ¬mm.14 ¬Cybereyes ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -206,7 +206,7 @@ Increased Volume ¬ ¬10000 ¬BO ¬Legal ¬2/24 hrs ¬1.0 ¬sr3.302 ¬Voice Modu
 Independent Cybereyes Pair ¬0.5 ¬15000 ¬SE ¬Legal ¬6/72 hrs ¬2.0 ¬mm.16 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Independent Cybereyes Single ¬0.3 ¬10000 ¬SE ¬Legal ¬6/72 hrs ¬2.0 ¬mm.16 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Induction Pad ¬0.1 ¬200 ¬BO ¬5P-N ¬4/48 hrs ¬1.5 ¬mm.32 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Injector ¬ ¬cont+500 ¬BO ¬6P-N ¬4/72 hrs ¬1.5 ¬mm.26  ¬Body Compartment ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
+Injector ¬ ¬500 ¬BO ¬6P-N ¬4/72 hrs ¬1.5 ¬mm.26  ¬Body Compartment ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Integrity Enhancement 1 ¬ ¬30000 ¬CY ¬6P-N ¬6/4 days ¬1.5 ¬mm.39 ¬Cyberlimb ¬ ¬yes ¬3 ¬ ¬ ¬1 ¬ ¬-1 ¬ ¬Integrity Enhancement ¬ ¬ ¬ ¬
 Integrity Enhancement 2 ¬ ¬60000 ¬CY ¬6P-N ¬6/4 days ¬1.5 ¬mm.39 ¬Cyberlimb ¬ ¬yes ¬3 ¬ ¬ ¬2 ¬ ¬-2 ¬ ¬Integrity Enhancement ¬ ¬ ¬ ¬
 Integrity Enhancement 3 ¬ ¬90000 ¬CY ¬6P-N ¬6/4 days ¬1.5 ¬mm.39 ¬Cyberlimb ¬ ¬yes ¬3 ¬ ¬ ¬3 ¬ ¬-3 ¬ ¬Integrity Enhancement ¬ ¬ ¬ ¬
@@ -240,7 +240,7 @@ Lower Limb Strength Enhancement 1 ¬ ¬35000 ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.
 Lower Limb Strength Enhancement 2 ¬ ¬70000 ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberforearm, Cyberlowerleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-2 ¬ ¬Lower Limb Strength Enhancement ¬ ¬ ¬ ¬
 Lower Limb Strength Enhancement 3 ¬ ¬105000 ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberforearm, Cyberlowerleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-3 ¬ ¬Lower Limb Strength Enhancement ¬ ¬ ¬ ¬
 Magnetic System ¬0.3 ¬2800 ¬BO ¬Legal ¬6/7 days ¬2.0 ¬mm.30 ¬ ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬3 ¬ ¬-1 ¬ ¬ ¬ ¬ ¬ ¬
-Memory ¬Mp/300 ¬Mpx150 ¬BR ¬Legal ¬3/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
+Memory ¬Mp/300 ¬Mp*150 ¬BR ¬Legal ¬3/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Microscopic Vision ¬0.1 ¬5000 ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬mm.17 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬senses[Microscopic Vision|Electronic]
 Move-by-wire 1 ¬2.5 ¬250000 ¬BO ¬3P-R ¬8/10 days ¬2.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+1];derived[Reaction|CBM:+2,Initative|CBM:+1]
 Move-by-wire 2 ¬4 ¬500000 ¬BO ¬3P-R ¬12/20 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+2];derived[Reaction|CBM:+4,Initative|CBM:+2]

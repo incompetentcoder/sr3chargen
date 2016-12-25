@@ -3,6 +3,7 @@ require 'pp'
 require 'pry'
 require 'yaml'
 require 'set'
+require 'dentaku'
 
 CONSTANT = YAML.load_file(File.open('constants.yaml', 'r'))
 ATCH = [Gtk::EXPAND | Gtk::FILL, Gtk::SHRINK, 0, 0].freeze
@@ -21,7 +22,7 @@ class Application
 
   def save
     @a.remove_instance_variable(:@app)
-    pp @a
+    puts @a.to_yaml
     @a.setapp(self)
   end
 
@@ -31,6 +32,82 @@ class Application
   
   def getelement
     @a.getelement
+  end
+
+  def getessence
+    @a.getessence
+  end
+
+  def getnuyenrem
+    @a.getnuyenrem
+  end
+
+  def selectcyberlvl(cyber,lvl,shorter)
+    case lvl
+    when "M"
+      text = "Select MP"
+      adj = [25,500,25]
+    when "L"
+      text = "Select Level"
+      adj = [1,shorter[:Maxlevel],1]
+    end
+    dialog = Gtk::Dialog.new("#{text}",@windows,Gtk::Dialog::MODAL)
+    dialog.action_area.layout_style=Gtk::ButtonBox::SPREAD
+    spin = Gtk::SpinButton.new(*adj)
+    dialog.vbox.add(Gtk::Label.new("#{text}"))
+    dialog.vbox.add(spin)
+    dialog.add_button("Ok",1)
+    dialog.add_button("Cancel",-1)
+    dialog.show_all
+    dialog.run do |response|
+      pp spin.value
+    end
+    dialog.destroy
+
+  end
+
+  def cybernamebaseincludes
+    cyber = @a.getcyberware
+    cyber.collect {|x| x[1].values[0][:Base]}.compact +
+      cyber.collect {|x| x[1].values[0][:Name]}.compact +
+      cyber.collect {|x| x[1].values[0][:Includes].split(",")}
+  end
+
+  def errordialog(error,data)
+    dialog = 
+      Gtk::MessageDialog.new(@windows, Gtk::Dialog::DESTROY_WITH_PARENT,
+                             Gtk::MessageDialog::ERROR, Gtk::MessageDialog::BUTTONS_OK,
+                             "#{error}: #{data}")
+    dialog.run
+    dialog.destroy
+  end
+
+  def setcyber(cyber)
+    shorter = CONSTANT[:cyberware][cyber]
+    if shorter[:Conflicts]
+      if (conf = shorter[:Conflicts].split(",") & cybernamebaseincludes)
+        errordialog("Conflict",conf)
+        return
+      end
+    end
+    if shorter[:Required]
+      if (shorter[:Required].split(",") & cybernamebaseincludes).empty?
+        errordialog("Required",shorter[:Required])
+        return
+      end
+    end
+    if (Dentaku(shorter[:Price].sub(/Mp/,'25').sub(/L/,'1')) > getnuyenrem)
+      errordialog("Insufficient Money",getnuyenrem)
+      return
+    end
+    if (Dentaku(shorter[:Essence].sub(/Mp/,'25').sub(/L/,'1')) > getessence)
+      errordialog("Insufficient Essence",getessence)
+      return
+    end
+    pp cyber
+    if lvl = CONSTANT[:cyberware][cyber][:Price][/M|L/]
+      selectcyberlvl(cyber,lvl,shorter)
+    end
   end
 
   def spelllvl(name,value)
@@ -66,6 +143,7 @@ class Application
 
     dialog = Gtk::Dialog.new("Choose #{type}",@windows,Gtk::Dialog::MODAL)
     dialog.action_area.layout_style=Gtk::ButtonBox::SPREAD
+    dialog.vbox.add(Gtk::Label.new("Choose #{type}"))
     if entry
       dialog.vbox.add(entered)
     else
@@ -114,28 +192,26 @@ class Application
 
   def dialogchoose(stuff,type)
     a = nil
-#    dialog=Gtk::Dialog.new("Choose Boni",@windows,Gtk::Dialog::MODAL,
-#                           [stuff[0].join(" : "),0],
-#                           [stuff[1].join(" : "),1])
-#    dialog.run do |response|
-#      response == 0 ? a=stuff[0] : a=stuff[1]
-#      dialog.destroy
-#    end
     dialog = Gtk::Dialog.new("Choose #{type} Boni",@windows,Gtk::Dialog::MODAL)
-    resp = []
+    dialog.vbox.add(Gtk::Label.new("Choose #{type} Boni"))
+    cb = Gtk::ComboBox.new
+    dialog.vbox.add(cb)
+    dialog.add_button("Ok",1)
     stuff.each_with_index do |x,y|
       if x[0].to_s =~ /1/
         CONSTANT[:spirits][:Nature][x[0][0...-1].to_sym].each_with_index do |a,b|
-          resp.push [a,x[1]]
-          dialog.add_button(a.to_s+":"+x[1].to_s,resp.length-1)
+          cb.append_text(a.to_s+":"+x[1].to_s)
         end
       else
-        resp.push x
-        dialog.add_button(x.join(":"),resp.length-1)
+        cb.append_text(x.join(":"))
       end
     end
+    cb.active = 0
+    dialog.show_all
     dialog.run do |response|
-      a=resp[response]
+      a = cb.active_text.split(":")
+      a[0] = a[0].to_sym
+      a[1] = a[1].to_i
     end
     dialog.destroy
     a
@@ -396,6 +472,11 @@ end
 class Character
   attr_reader :name, :streetname, :age, :attributes,
               :points, :metatype, :magetype, :gender
+  
+  def getessence
+    @special[:Essence]
+  end
+
   def setapp(app)
     @app = app
   end
@@ -427,6 +508,10 @@ class Character
 
   def getelement
     @element
+  end
+
+  def getcyberware
+    @cyberware
   end
 
   def spelllvl(name,value)
@@ -589,20 +674,22 @@ class Character
     
 
   def vcr
-    @cyberware[:Bodyware].find {|x| x[0] =~ /Vehicle Control/}
+    @cyberware.find {|x| x[1].keys[0] =~ /Vehicle Control/}
   end
 
   def deck
   end
 
   def cinit
-    all = @cyberware[:Bodyware].find_all {|x| x[1][:Stats][:Initiative]}
-    sum = all.inject(0) {|sum,x| sum + x[1][:Stats][:Initiative]}
+  #  all = @cyberware.collect {|x| x[1].values[0][:Stats][:derived][:Initiative][:CBM]}
+  #  sum = all.inject(0) {|sum,x| sum + x}
+    sum = @cyberware.collect {|x| x[1].values[0][:Stats][:derived][:Initiative][:CBM]}.reduce(:+).to_i
   end
 
   def binit
-    all = @bioware.find_all {|x| x[1][:Stats][:Initiative]}
-    sum = all.inject(0) {|sum,x| sum + x[1][:Stats][:Initiative]}
+  # all = @bioware.collect {|x| x[1].values[0][:Stats][:derived][:Initiative][:CBM]}
+  # sum = all.inject(0) {|sum,x| sum + x}
+    sum = @bioware.collect {|x| x[1].values[0][:Stats][:derived][:Initiative][:CBM]}.reduce(:+).to_i
   end
 
   def reaccbm
@@ -612,7 +699,9 @@ class Character
         reac += @attributes[x][y]
       end
     end
-    (reac / 2).floor
+    reac = (reac / 2).floor + 
+      @bioware.collect {|x| x[1].values[0][:Stats][:derived][:Reaction][:CBM]}.reduce(:+).to_i +
+      @cyberware.collect {|x| x[1].values[0][:Stats][:derived][:Reaction][:CBM]}.reduce(:+).to_i
   end
 
   def updatereaction
@@ -857,8 +946,7 @@ class Character
     @spells = {}
     @totem = nil
     @element = nil 
-    @cyberware = {:Bodyware => {}, :Senseware => {}, :Cyberlimb => {},
-                  :Matrixware => {}, :Brainware => {}, :Riggerware => {}}
+    @cyberware = {}
     @bioware = {}
     @derived = {:Pools => {}, :Reaction => {}, :Initiative => {}}
     @special = { :Essence => 6, :'Body Index' => 0, :Magic => 0 }
@@ -1531,8 +1619,9 @@ class Spellblock < Gtk::Frame
     @view.signal_connect('row-activated') do |a,b,c|
       subcategory = nil
       name = @model.get_iter(b)[0]
-      unless (CONSTANT[:spelltypes].keys + CONSTANT[:subspelltypes][:Manipulation] +
-          CONSTANT[:subspelltypes][:Illusion]).include? name.to_sym
+#      unless (CONSTANT[:spelltypes].keys + CONSTANT[:subspelltypes][:Manipulation] +
+#          CONSTANT[:subspelltypes][:Illusion]).include? name.to_sym
+      if @model.get_iter(b)[1]
         if b.depth == 3
           b.up!
           subcategory = @model.get_iter(b)[0]
@@ -1640,6 +1729,15 @@ class Cyberblock < Gtk::Frame
         false
       else
         true
+      end
+    end
+
+    @view.signal_connect('row-activated') do |a,b,c|
+      if @model.get_iter(b)[1]
+        pp CONSTANT[:cyberware][@model.get_iter(b)[0].to_sym]
+        @app.setcyber(@model.get_iter(b)[0].to_sym)
+      else
+        a.row_expanded?(b) ? a.collapse_row(b) : a.expand_row(b,false)
       end
     end
 

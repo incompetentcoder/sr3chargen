@@ -364,7 +364,7 @@
   :Auto-inector One-shot:
     :Name: Auto-inector One-shot
     :Essence: '0.05'
-    :Price: Cont+1500
+    :Price: '1500'
     :Type: BO
     :Legality: 4P-N
     :Avail: 4/72 hrs
@@ -373,7 +373,7 @@
   :Auto-injector Reusable:
     :Name: Auto-injector Reusable
     :Essence: '0.1'
-    :Price: Cont+1000
+    :Price: '1000'
     :Type: BO
     :Legality: 6P-N
     :Avail: 4/72 hrs
@@ -1507,12 +1507,13 @@
   :Data Lock:
     :Name: Data Lock
     :Essence: '0.2'
-    :Price: 1000+Enc
+    :Price: "(L+1)*1000"
     :Type: BR
     :Legality: Legal
     :Avail: 6/36 hrs
     :Index: '1.5'
     :Page: sr3.298
+    :Maxlevel: '10'
   :Datajack Induction:
     :Name: Datajack Induction
     :Essence: '0.3'
@@ -2825,7 +2826,7 @@
     :Page: mm.32
   :Injector:
     :Name: Injector
-    :Price: cont+500
+    :Price: '500'
     :Type: BO
     :Legality: 6P-N
     :Avail: 4/72 hrs
@@ -3211,7 +3212,7 @@
   :Memory:
     :Name: Memory
     :Essence: Mp/300
-    :Price: Mpx150
+    :Price: Mp*150
     :Type: BR
     :Legality: Legal
     :Avail: 3/24 hrs
@@ -7646,6 +7647,7 @@
           - - :River
             - 2
           - - :City
+            - 2
       :desc: Willpower(6) Test to break off fight or conflict, as wilderness totem
         +2 to Swamp, Lake or River spirits, as urban totem +2 to city spirits
       :properties: Lazy, Bad Tempered, Glutton, Good Fighter
@@ -7672,12 +7674,12 @@
       - - :Choose
         - - - :Land1
             - 1
-          - - :Sky
+          - - :Sky1
             - 1
-          - - :Water
+          - - :Water1
             - 1
-      :desc: "+1 Land, Sky or Water spirits, +2 to all Magical TNs away from home/city
-        region, 28 days to reset"
+      :desc: "+1 for a single Land, Sky or Water spirit, +2 to all Magical TNs away
+        from home/city region, 28 days to reset"
       :properties: Proud, Territorial, Loud When Bothered
     :horse:
       :environment: Prairie
@@ -8301,6 +8303,7 @@
       - - :Detection
         - 1
       - - :Illusion
+        - 1
       :spirits:
       - - :City
         - 2
