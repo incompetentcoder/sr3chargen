@@ -81,8 +81,9 @@ class Application
       Gtk::MessageDialog.new(@windows, Gtk::Dialog::DESTROY_WITH_PARENT,
                              Gtk::MessageDialog::ERROR, Gtk::MessageDialog::BUTTONS_OK,
                              "#{error}: #{data}")
-    dialog.run
-    dialog.destroy
+    GLib::Timeout.add(3000) { (dialog.response(Gtk::RESPONSE_OK) unless dialog.destroyed?) ? true : false }
+    dialog.run if dialog
+    dialog.destroy if dialog
   end
 
   def setcyber(cyber)
