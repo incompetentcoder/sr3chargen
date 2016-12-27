@@ -37,6 +37,12 @@ class Application
   def getessence
     @a.getessence
   end
+
+  def updateessence
+    @guiattributes.setessence(getessence)
+    setmagic
+  end
+  
   def getpointsrem
     @a.getpointsrem
   end
@@ -45,74 +51,131 @@ class Application
     @a.getnuyenrem
   end
 
+  def checkupdatecyberlvl(shorter,lvl,level,text,button)
+    array = lvlcalc(shorter,lvl,level)
+    text.text = sclspretty(array)
+    button.sensitive = checkmoneycyber(array) ? false : true
+  end
+
+  def lvlcalc(shorter,replace,level)
+    level = (replace == "L" ? "1" : "25") unless level 
+    [Dentaku(shorter[:Price].sub(/#{replace}/,level)).to_f.round,
+     shorter[:Essence] ? 
+     Dentaku(shorter[:Essence].sub(/#{replace}/,level)).to_f.round(2) : 0]
+  end
+
+  def sclspretty(array)
+    "Price: | #{array[0]} | Essence: #{array[1]}"
+  end
+
   def selectcyberlvl(cyber,lvl,shorter)
+    b = c = nil
     case lvl
-    when "M"
+    when "Mp"
       text = "Select MP"
       adj = [25,500,25]
     when "L"
       text = "Select Level"
-      adj = [1,shorter[:Maxlevel],1]
+      adj = [1,shorter[:Maxlevel].to_i,1]
     end
     dialog = Gtk::Dialog.new("#{text}",@windows,Gtk::Dialog::MODAL)
     dialog.action_area.layout_style=Gtk::ButtonBox::SPREAD
     spin = Gtk::SpinButton.new(*adj)
-    dialog.vbox.add(Gtk::Label.new("#{text}"))
+    dialog.vbox.add(Gtk::Label.new("#{cyber} : #{text}"))
+    dialog.vbox.add(a = Gtk::Label.new("#{sclspretty(lvlcalc(shorter,lvl,nil))}"))
     dialog.vbox.add(spin)
-    dialog.add_button("Ok",1)
-    dialog.add_button("Cancel",-1)
+    ok = dialog.add_button("Ok",1)
+    cancel = dialog.add_button("Cancel",-1)
+    spin.signal_connect('value_changed') {|x| checkupdatecyberlvl(shorter,lvl,x.value.to_s,a,ok)}
     dialog.show_all
     dialog.run do |response|
-      pp spin.value
+      b = response
+      c = spin.value.to_i.to_s
     end
     dialog.destroy
+    [b,c]
+  end
 
+  def checkmoneycyber(array)
+    array[0] > getnuyenrem || array[1] > getessence
   end
 
   def cybernamebaseincludes
     cyber = @a.getcyberware
-    cyber.collect {|x| x[1].values[0][:Base]}.compact +
-      cyber.collect {|x| x[1].values[0][:Name]}.compact +
-      cyber.collect {|x| x[1].values[0][:Includes].split(",")}
+    shit = [] 
+    cyber.each {|x| shit+= x[1].values.collect{|y| y[:Base]}.compact}
+    cyber.each {|x| shit+= x[1].values.collect{|y| y[:Name]}.compact}
+    cyber.each {|x| shit+= x[1].values.collect{|y| y[:Includes].split(",") if y[:Includes]}.compact}
+    shit
   end
 
   def errordialog(error,data)
     dialog = 
       Gtk::MessageDialog.new(@windows, Gtk::Dialog::DESTROY_WITH_PARENT,
                              Gtk::MessageDialog::ERROR, Gtk::MessageDialog::BUTTONS_OK,
-                             "#{error}: #{data}")
+                             data ? "#{error}: #{data}" : "#{error}")
     GLib::Timeout.add(3000) { (dialog.response(Gtk::RESPONSE_OK) unless dialog.destroyed?) ? true : false }
     dialog.run if dialog
     dialog.destroy if dialog
   end
 
   def setcyber(cyber)
+    level = lvl = nil
+    err = ""
     shorter = CONSTANT[:cyberware][cyber]
     if shorter[:Conflicts]
-      if (conf = shorter[:Conflicts].split(",") & cybernamebaseincludes)
-        errordialog("Conflict",conf)
-        return
+      unless (conf = shorter[:Conflicts].split(",") & cybernamebaseincludes).empty?
+#        errordialog("Conflict",conf)
+        err+="Conflicts: #{conf}\n"
       end
     end
     if shorter[:Required]
       if (shorter[:Required].split(",") & cybernamebaseincludes).empty?
-        errordialog("Required",shorter[:Required])
-        return
+#        errordialog("Required",shorter[:Required]);
+        err+="Required: #{shorter[:Required]}\n"
       end
     end
     if (Dentaku(shorter[:Price].sub(/Mp/,'25').sub(/L/,'1')) > getnuyenrem)
-      errordialog("Insufficient Money",getnuyenrem)
+#      errordialog("Insufficient Money",getnuyenrem);
+      err+="Insufficient Money: #{getnuyenrem}\n"
+    end
+    if shorter[:Essence]
+      if (Dentaku(shorter[:Essence].sub(/Mp/,'25').sub(/L/,'1')) > getessence)
+#      errordialog("Insufficient Essence",getessence);
+        err+="Insufficient Essence: #{getessence}\n"
+      end
+    end
+    if @a.getcyberware.collect {|x| x[1].values[0][:Name]}.include? cyber.to_s
+      err="Already installed: #{cyber}\n"
+    end
+    unless err.empty?
+      errordialog(err,nil)
       return
     end
-    if (Dentaku(shorter[:Essence].sub(/Mp/,'25').sub(/L/,'1')) > getessence)
-      errordialog("Insufficient Essence",getessence)
-      return
+    if lvl = CONSTANT[:cyberware][cyber][:Price][/Mp|L/]
+      return unless (level = selectcyberlvl(cyber,lvl,shorter))[0] == 1
     end
-    pp cyber
-    if lvl = CONSTANT[:cyberware][cyber][:Price][/M|L/]
-      selectcyberlvl(cyber,lvl,shorter)
-    end
+    addcyber(shorter,cyber,level,lvl)
   end
+
+  def addcyber(shorter,cyber,level,lvl)
+    actual = Marshal.load(Marshal.dump(shorter))
+    if level
+      [:Price,:Essence].each do |x|
+        actual[x] = Dentaku(actual[x].sub(/#{lvl}/,level[1])).to_f.round(2) if actual[x]
+      end
+      tn,time = actual[:Avail].split("/")
+      time = time.split(" ")
+      actual[:Avail] = Dentaku(tn.sub(/#{lvl}/,level[1])).to_i.to_s + "/" +
+        Dentaku(time[0].sub(/#{lvl}/,level[1])).to_i.to_s + " "+time[1]
+    end
+    type = actual[:Type]
+    @notebook.cyber.installcyber(actual,cyber,level,lvl)
+    @a.addcyber(actual,cyber,level,lvl,type)
+    setnuyenrem
+    updateessence
+  end
+    
 
   def spelllvl(name,value)
     @notebook.spell.spelllvl(name,@a.spelllvl(name.to_sym,value))
@@ -522,6 +585,13 @@ class Character
     @cyberware
   end
 
+  def addcyber(actual,cyber,level,lvl,type)
+    @cyberware[type] = {} unless @cyberware[type]
+    @cyberware[type][cyber.to_s + (level ? " " + level[1] : "")] = actual
+    (@special[:Essence] -= actual[:Essence].to_f.round(2)).to_f.round(2)
+    @nuyenrem -= actual[:Price].to_i
+  end
+
   def spelllvl(name,value)
     if value > @spells[name][1]
       if value - @spells[name][1] < @spellpoints
@@ -698,28 +768,37 @@ class Character
   def deck
   end
 
+  def hasstat(thing,w,x,y,z)
+    thing[w][x][y][z] if
+    thing[w] && thing[w][x] && thing[w][x][y]
+  end
+
   def cinit
+    sum = 0
   #  all = @cyberware.collect {|x| x[1].values[0][:Stats][:derived][:Initiative][:CBM]}
   #  sum = all.inject(0) {|sum,x| sum + x}
-    sum = @cyberware.collect {|x| x[1].values[0][:Stats][:derived][:Initiative][:CBM]}.reduce(:+).to_i
+    @cyberware.each {|x| sum += x[1].values.collect {|y| hasstat(y,:Stats,:derived,:Initiative,:CBM)}.compact.reduce(:+).to_i}
+    sum
   end
 
   def binit
+    sum = 0
   # all = @bioware.collect {|x| x[1].values[0][:Stats][:derived][:Initiative][:CBM]}
   # sum = all.inject(0) {|sum,x| sum + x}
-    sum = @bioware.collect {|x| x[1].values[0][:Stats][:derived][:Initiative][:CBM]}.reduce(:+).to_i
+    @bioware.each {|x| sum += x[1].values.collect {|y| hasstat(y,:Stats,:derived,:Initiative,:CBM)}.compact.reduce(:+).to_i}
+    sum
   end
 
   def reaccbm
-    reac = 0
+    reac = sumb = sumc = 0
     [:Intelligence,:Quickness].each do |x|
       [:BA,:CM,:BM,:MM]. each do |y|
         reac += @attributes[x][y]
       end
     end
-    reac = (reac / 2).floor + 
-      @bioware.collect {|x| x[1].values[0][:Stats][:derived][:Reaction][:CBM]}.reduce(:+).to_i +
-      @cyberware.collect {|x| x[1].values[0][:Stats][:derived][:Reaction][:CBM]}.reduce(:+).to_i
+    @bioware.each {|x| sumb += x[1].values.collect {|y| hasstat(y,:Stats,:derived,:Reaction,:CBM)}.compact.reduce(:+).to_i}
+    @cyberware.each {|x| sumc += x[1].values.collect {|y| hasstat(y,:Stats,:derived,:Reaction,:CBM)}.compact.reduce(:+).to_i}
+    (reac/2 + sumb + sumc).floor
   end
 
   def updatereaction
@@ -849,13 +928,18 @@ class Character
   def setnuyen(nuyen)
     money, points = nuyen.active_text.split(':').map(&:to_i)
     pointsdiff = points - CONSTANT[:nuyen].rassoc(@nuyen)[0]
-    if checkpoints(pointsdiff)
+    moneydiff = (@nuyen - @nuyenrem) < money
+    if checkpoints(pointsdiff) && moneydiff
       modpoints(pointsdiff)
       diff = @nuyen - @nuyenrem
       @nuyen = money
       @nuyenrem = @nuyen - diff
       nuyen.active
     else
+      err = ""
+      err+="Insufficient Points\n" unless checkpoints(pointsdiff)
+      err+="New nuyen < already spent\n" unless moneydiff
+      @app.errordialog(err,nil)
       CONSTANT[:nuyen].find_index { |x,y| y == @nuyen}
     end
   end
@@ -1142,8 +1226,12 @@ class Attributeblock < Gtk::Frame
     @special[:Spellpoints][1].text = points.to_s
   end
 
+  def setessence(essence)
+    @special[:Essence][1].text = essence.round(2).to_s
+  end
+
   def setmagic(magic)
-    @special[:Magic][1].text = magic.to_s
+    @special[:Magic][1].text = magic.floor.to_s
   end
 
   def setattribute(attr, value)
@@ -1706,6 +1794,14 @@ class Cyberblock < Gtk::Frame
     end
   end
 
+  def installcyber(actual,cyber,level,lvl)
+    child = @model2.append(nil)
+    actual.each_pair do |b,c|
+      child[@order[b]] = c.to_s if @order[b]
+    end
+    child[0] = cyber.to_s + (level ? " " + level[1] : "")
+  end
+
   def initialize(app)
     @app = app
     super()
@@ -1755,8 +1851,7 @@ class Cyberblock < Gtk::Frame
     end
 
     @view.signal_connect('row-activated') do |a,b,c|
-      if @model.get_iter(b)[1]
-        pp CONSTANT[:cyberware][@model.get_iter(b)[0].to_sym]
+      if @model.get_iter(b)[2]
         @app.setcyber(@model.get_iter(b)[0].to_sym)
       else
         a.row_expanded?(b) ? a.collapse_row(b) : a.expand_row(b,false)
@@ -1805,7 +1900,7 @@ class Powerblock < Gtk::Frame
 end
 
 class Notebook < Gtk::Notebook
-  attr_accessor :skill, :spell, :totem
+  attr_accessor :skill, :spell, :totem, :cyber
   
   def initialize(app)
     @app = app

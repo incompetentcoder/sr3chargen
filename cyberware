@@ -27,8 +27,8 @@ Bone Lacing Kevlar ¬1.0 ¬20000 ¬BO ¬6P-Q ¬6/21 days ¬2.0 ¬mm.27 ¬ ¬ ¬ 
 Bone Lacing Plastic ¬0.5 ¬7500 ¬BO ¬6P-N ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body|CM:+1]
 Bone Lacing Titanium ¬2.25 ¬75000 ¬BO ¬6-R ¬5/14 days ¬1.5 ¬sr3.302 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Bone Lacing ¬ ¬ ¬ ¬attributes[Body|CM:+2];armor[Impact:+1,Ballistic:+1]
 Boosted Reflexes 1 ¬0.5 ¬15000 ¬BO ¬8P-Q ¬3/24hrs ¬1.0 ¬sr3.302 ¬ ¬Wired Reflexes, Move by Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Initiative|CBM:+1]
-Boosted Reflexes 2 ¬1.25 ¬40000 ¬BO ¬6P-Q ¬3/24 hrs ¬1.25 ¬sr3.302 ¬ ¬Wired Reflexes, Move Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+1,Initative|CBM:+1]
-Boosted Reflexes 3 ¬2.8 ¬90000 ¬BO ¬5P-Q ¬3/24 hrs ¬1.5 ¬sr3.302 ¬ ¬Wired Reflexes, Move by Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+2,Initative|CBM:+2]
+Boosted Reflexes 2 ¬1.25 ¬40000 ¬BO ¬6P-Q ¬3/24 hrs ¬1.25 ¬sr3.302 ¬ ¬Wired Reflexes, Move Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+1,Initiative|CBM:+1]
+Boosted Reflexes 3 ¬2.8 ¬90000 ¬BO ¬5P-Q ¬3/24 hrs ¬1.5 ¬sr3.302 ¬ ¬Wired Reflexes, Move by Wire, Vehicle Control Rig ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Boosted Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+2,Initiative|CBM:+2]
 Brightlight Feature ¬0.2 ¬2200 ¬SE ¬7P-Q ¬8/2 wks ¬3.0 ¬mm.15 ¬Light System ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Built-in Program ¬ ¬Mp*200 ¬SE ¬Legal ¬4/6 days ¬1.0 ¬mm.14  ¬Chemical Analyzer ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Built-in Program ¬ ¬Mp*200 ¬SE ¬Legal ¬4/6 days ¬1.0 ¬mm.14 ¬Gas Spectrometer ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -242,9 +242,9 @@ Lower Limb Strength Enhancement 3 ¬ ¬105000 ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3
 Magnetic System ¬0.3 ¬2800 ¬BO ¬Legal ¬6/7 days ¬2.0 ¬mm.30 ¬ ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬3 ¬ ¬-1 ¬ ¬ ¬ ¬ ¬ ¬
 Memory ¬Mp/300 ¬Mp*150 ¬BR ¬Legal ¬3/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Microscopic Vision ¬0.1 ¬5000 ¬SE ¬Legal ¬5/48 hrs ¬1.0 ¬mm.17 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬senses[Microscopic Vision|Electronic]
-Move-by-wire 1 ¬2.5 ¬250000 ¬BO ¬3P-R ¬8/10 days ¬2.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+1];derived[Reaction|CBM:+2,Initative|CBM:+1]
-Move-by-wire 2 ¬4 ¬500000 ¬BO ¬3P-R ¬12/20 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+2];derived[Reaction|CBM:+4,Initative|CBM:+2]
-Move-by-wire 3 ¬5.5 ¬1000000 ¬BO ¬3P-R ¬18/30 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+3];derived[Reaction|CBM:+6,Initative|CBM:+3]
+Move-by-wire 1 ¬2.5 ¬250000 ¬BO ¬3P-R ¬8/10 days ¬2.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+1];derived[Reaction|CBM:+2,Initiative|CBM:+1]
+Move-by-wire 2 ¬4 ¬500000 ¬BO ¬3P-R ¬12/20 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+2];derived[Reaction|CBM:+4,Initiative|CBM:+2]
+Move-by-wire 3 ¬5.5 ¬1000000 ¬BO ¬3P-R ¬18/30 days ¬3.0 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+3];derived[Reaction|CBM:+6,Initiative|CBM:+3]
 Move-by-wire 4 ¬7 ¬2000000 ¬BO ¬3P-R ¬20/45 days ¬3.5 ¬mm.30 ¬ ¬Wired Reflexes, Boosted Reflexes, Synaptic Accelerator ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Move-by-wire ¬ ¬ ¬ ¬attributes[Quickness|CM:+4];derived[Reaction|CBM:+8,Initiative|CBM:+4]
 Muscle Replacement 1 ¬1 ¬20000 ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength|CM:+1]
 Muscle Replacement 2 ¬2 ¬40000 ¬BO ¬5P-Q ¬4/4 days ¬1.0 ¬sr3.302 ¬ ¬Muscle Augmentation, Muscle Toner ¬ ¬4 ¬ ¬ ¬ ¬ ¬ ¬ ¬Muscle Replacement ¬ ¬ ¬ ¬attributes[Strength|CM:+2]
@@ -280,12 +280,12 @@ Radio Receiver ¬0.4 ¬L*1000 ¬CO ¬Legal ¬2/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ �
 Radio ¬0.75 ¬L*2000 ¬CO ¬Legal ¬2/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Range Finder ¬0.1 ¬2000 ¬BO ¬5P-N ¬8/48 hrs ¬1.5 ¬mm.32 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Rangefinder ¬0.1 ¬2000 ¬SE ¬Legal ¬8/48 hrs ¬1.5 ¬ssc.80 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Reaction Enhancer 1 ¬0.3 ¬60000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+1]
-Reaction Enhancer 2 ¬0.6 ¬120000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+2]
-Reaction Enhancer 3 ¬0.9 ¬180000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+3]
-Reaction Enhancer 4 ¬1.2 ¬240000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+4]
-Reaction Enhancer 5 ¬1.5 ¬300000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+5]
-Reaction Enhancer 6 ¬1.8 ¬360000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬attributes[Reaction|CBM]:+6]
+Reaction Enhancer 1 ¬0.3 ¬60000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬derived[Reaction|CBM]:+1]
+Reaction Enhancer 2 ¬0.6 ¬120000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬derived[Reaction|CBM]:+2]
+Reaction Enhancer 3 ¬0.9 ¬180000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬derived[Reaction|CBM]:+3]
+Reaction Enhancer 4 ¬1.2 ¬240000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬derived[Reaction|CBM]:+4]
+Reaction Enhancer 5 ¬1.5 ¬300000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬derived[Reaction|CBM]:+5]
+Reaction Enhancer 6 ¬1.8 ¬360000 ¬BO ¬6P-R ¬6/7 days ¬2.0 ¬sr3.302 ¬ ¬ ¬ ¬6 ¬ ¬ ¬ ¬ ¬ ¬ ¬Reaction Enhancer ¬ ¬ ¬ ¬derived[Reaction|CBM]:+6]
 Recorder ¬0.3 ¬7000 ¬SE ¬12P-N ¬8/48 hrs ¬2.0 ¬sr3.299 ¬ ¬ ¬yes ¬ ¬Cyberears ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Reflex trigger ¬0.2 ¬13000 ¬BO ¬4P-Q ¬as ¬1.0 ¬sr3.302 ¬Wired Reflexes ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Replacement Modification ¬ ¬x1.1 ¬CY ¬Legal ¬ +2/+ 2 days ¬2.0 ¬mm.39 ¬Cyberlimb ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
@@ -354,6 +354,6 @@ Weapon Mount External Retractable ¬ ¬15000 ¬CY ¬3P-R ¬6/4 days ¬2.0 ¬mm.4
 Weapon Mount External ¬ ¬5000 ¬CY ¬3P-R ¬6/4 days ¬2.0 ¬mm.40 ¬Cyberlimb ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬ ¬ ¬ ¬ ¬Weapon Mount ¬ ¬ ¬ ¬
 Weapon Mount Tracking Retractable ¬ ¬40000 ¬CY ¬3P-R ¬8/7 days ¬2.0 ¬mm.40 ¬Cyberlimb ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬ ¬ ¬ ¬ ¬Weapon Mount ¬ ¬ ¬ ¬
 Weapon Mount Tracking ¬ ¬25000 ¬CY ¬3P-R ¬8/7 days ¬2.0 ¬mm.40 ¬Cyberlimb ¬ ¬yes ¬ ¬Cyberlimb ¬ ¬ ¬ ¬ ¬ ¬Weapon Mount ¬ ¬ ¬ ¬
-Wired Reflexes 1 ¬2.0 ¬55000 ¬BO ¬5P-Q ¬4/8 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by Wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+2,Initative|CBM:+1]
+Wired Reflexes 1 ¬2.0 ¬55000 ¬BO ¬5P-Q ¬4/8 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by Wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+2,Initiative|CBM:+1]
 Wired Reflexes 2 ¬3.0 ¬165000 ¬BO ¬4P-Q ¬4/8 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+4,Initiative|CBM:+2]
-Wired Reflexes 3 ¬5.0 ¬500000 ¬BO ¬3-R ¬8/14 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+6,Initative|CBM:+3]
+Wired Reflexes 3 ¬5.0 ¬500000 ¬BO ¬3-R ¬8/14 days ¬1.0 ¬sr3.302 ¬ ¬Boosted Reflexes, Move by wire ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬Wired Reflexes ¬ ¬ ¬ ¬derived[Reaction|CBM:+6,Initiative|CBM:+3]

@@ -636,7 +636,7 @@
       :derived:
         :Reaction:
           :CBM: 1
-        :Initative:
+        :Initiative:
           :CBM: 1
   :Boosted Reflexes 3:
     :Name: Boosted Reflexes 3
@@ -653,7 +653,7 @@
       :derived:
         :Reaction:
           :CBM: 2
-        :Initative:
+        :Initiative:
           :CBM: 2
   :Brightlight Feature:
     :Name: Brightlight Feature
@@ -3250,7 +3250,7 @@
       :derived:
         :Reaction:
           :CBM: 2
-        :Initative:
+        :Initiative:
           :CBM: 1
   :Move-by-wire 2:
     :Name: Move-by-wire 2
@@ -3270,7 +3270,7 @@
       :derived:
         :Reaction:
           :CBM: 4
-        :Initative:
+        :Initiative:
           :CBM: 2
   :Move-by-wire 3:
     :Name: Move-by-wire 3
@@ -3290,7 +3290,7 @@
       :derived:
         :Reaction:
           :CBM: 6
-        :Initative:
+        :Initiative:
           :CBM: 3
   :Move-by-wire 4:
     :Name: Move-by-wire 4
@@ -3728,7 +3728,7 @@
     :Maxlevel: '6'
     :Base: Reaction Enhancer
     :Stats:
-      :attributes:
+      :derived:
         :Reaction:
           :CBM: 1
   :Reaction Enhancer 2:
@@ -3743,7 +3743,7 @@
     :Maxlevel: '6'
     :Base: Reaction Enhancer
     :Stats:
-      :attributes:
+      :derived:
         :Reaction:
           :CBM: 2
   :Reaction Enhancer 3:
@@ -3758,7 +3758,7 @@
     :Maxlevel: '6'
     :Base: Reaction Enhancer
     :Stats:
-      :attributes:
+      :derived:
         :Reaction:
           :CBM: 3
   :Reaction Enhancer 4:
@@ -3773,7 +3773,7 @@
     :Maxlevel: '6'
     :Base: Reaction Enhancer
     :Stats:
-      :attributes:
+      :derived:
         :Reaction:
           :CBM: 4
   :Reaction Enhancer 5:
@@ -3788,7 +3788,7 @@
     :Maxlevel: '6'
     :Base: Reaction Enhancer
     :Stats:
-      :attributes:
+      :derived:
         :Reaction:
           :CBM: 5
   :Reaction Enhancer 6:
@@ -3803,7 +3803,7 @@
     :Maxlevel: '6'
     :Base: Reaction Enhancer
     :Stats:
-      :attributes:
+      :derived:
         :Reaction:
           :CBM: 6
   :Recorder:
@@ -4590,7 +4590,7 @@
       :derived:
         :Reaction:
           :CBM: 2
-        :Initative:
+        :Initiative:
           :CBM: 1
   :Wired Reflexes 2:
     :Name: Wired Reflexes 2
@@ -4624,7 +4624,7 @@
       :derived:
         :Reaction:
           :CBM: 6
-        :Initative:
+        :Initiative:
           :CBM: 3
 :magetypes:
   :None:
