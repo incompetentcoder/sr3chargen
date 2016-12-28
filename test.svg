@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="935" height="1210" viewBox="0 0 935 1210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+.g3_1{
+}
+.g5_1{
+fill: none;
+stroke: #000000;
+stroke-width: 3;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g2_1{
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g4_1{
+fill: #FFFFFF;
+}
+.g1_1{
+fill: none;
+stroke: #000000;
+stroke-width: 2;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+
+.s9_1{
+font-size: 12.00px;
+font-family: Cambria;
+fill: #000000;
+}
+.s8_1{
+font-size: 6.88px;
+font-family: Cambria;
+fill: #000000;
+}
+.s4_1{
+font-size: 16.81px;
+font-family: Cambria;
+font-weight: bold;
+fill: #000000;
+}
+.s5_1{
+font-size: 16.81px;
+font-family: Cambria;
+fill: #000000;
+}
+.s6_1{
+font-size: 15.28px;
+font-family: Cambria;
+fill: #000000;
+}
+.s7_1{
+font-size: 13.75px;
+font-family: Cambria;
+fill: #000000;
+}
+.s3_1{
+font-size: 16.81px;
+font-family: Cambria;
+font-weight: bold;
+fill: #FFFFFF;
+}
+.s1_1{
+font-size: 24.44px;
+font-family: Cambria;
+font-weight: bold;
+fill: #000000;
+}
+.s2_1{
+font-size: 13.75px;
+font-family: Cambria;
+font-weight: bold;
+fill: #FFFFFF;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,1210
+L935,1210
+L935,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<path d="M53,52l304,0l0,56L53,108Z" class="g1_1" />
+<path d="M53,119l182,0l0,55L53,174Z" class="g1_1" />
+<path d="M248,119l49,0l0,55l-49,0Z" class="g1_1" />
+<path d="M309,119l48,0l0,55l-48,0Z" class="g1_1" />
+<path d="M53,185l828,0l0,49L53,234Z" class="g1_1" />
+<path d="M53,246l828,0l0,49L53,295Z" class="g1_1" />
+<path d="M53,307l280,0l0,218L53,525Z" class="g1_1" />
+<path d="M352,307l395,0l0,218l-395,0Z" class="g1_1" />
+<path d="M769,307l112,0l0,218l-112,0Z" class="g1_1" />
+<path d="M53,546l304,0l0,599l-304,0Z" class="g1_1" />
+<path d="M377,546l179,0l0,188l-179,0Z" class="g1_1" />
+<path d="M377,747l179,0l0,398l-179,0Z" class="g1_1" />
+<path d="M577,546l304,0l0,279l-304,0Z" class="g1_1" />
+<path d="M577,840l304,0l0,305l-304,0Z" class="g1_1" />
+
+<text 
+x="548" 
+y="79" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" 
+class="s1_1"
+>CHARACTER RECORD SHEET</text>
+
+<path fill-rule="evenodd" d="M53.5,108.5l56,0l0,-21l-56,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M53.5,174.5l56,0l0,-20l-56,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M248.5,174.5l49,0l0,-20l-49,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M357.5,174.5l-47,0l0,-20l47,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M53.5,234.5l102,0l0,-21l-102,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M53.5,295.5l61,0l0,-19l-61,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M53.5,307.5l280,0l0,27l-280,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M352.5,307.5l395,0l0,27l-395,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M769.5,334.5l112,0l0,-27l-112,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M53.5,546.5l304,0l0,27l-304,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M377.5,546.5l179,0l0,27l-179,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M577.5,546.5l304,0l0,27l-304,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M377.5,747.5l179,0l0,28l-179,0Z" class="g2_1" />
+<path fill-rule="evenodd" d="M577.5,840.5l304,0l0,27l-304,0Z" class="g2_1" />
+
+<text 
+x="62" 
+y="102" 
+dx="0,0,0,0" 
+class="s2_1"
+>NAME</text>
+
+<text
+x="62"
+y="78"
+dx="0,0,0"
+class="s4_1"
+>insertname</text>
+
+<text 
+x="64" 
+y="169" 
+dx="0,0,0,0" 
+class="s2_1"
+>RACE</text>
+
+<text
+x="64"
+y="145"
+dx="0,0,0"
+class="s4_1"
+>Human</text>
+
+<text
+x="260" 
+y="169" 
+dx="0,0,0" 
+class="s2_1"
+>SEX</text>
+
+<text
+x="260"
+y="145"
+dx="0,0,0"
+class="s1_1"
+>♂</text>
+
+<text 
+x="321" 
+y="169" 
+dx="0,0,0" 
+class="s2_1"
+>AGE</text>
+
+<text
+x="321"
+y="145"
+dx="0,0,0"
+class="s4_1"
+>20</text>
+
+<text 
+x="59" 
+y="228" 
+dx="0,0,0,0,0,0,0,0,0,0,0" 
+class="s2_1"
+>DESCRIPTION</text>
+
+<text
+x="59"
+y="204"
+dx="0,0,0"
+class="s7_1"
+>desc</text>
+
+<text 
+x="61" 
+y="290" 
+dx="0,0,0,0,0" 
+class="s2_1"
+>NOTES</text>
+
+<text
+x="61"
+y="266"
+dx="0,0,0"
+class="s7_1"
+>notes</text>
+
+<text 
+x="65" 
+y="326" 
+dx="0,0,0,0,0,0,0,0,0,0" 
+class="s3_1"
+>ATTRIBUTES</text>
+
+<text 
+x="366" 
+y="326" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" 
+class="s3_1"
+>CONDITION MONITOR</text>
+
+<text 
+x="782" 
+y="326" 
+dx="0,0,0,0,0" 
+class="s3_1"
+>KARMA</text>
+
+<text 
+x="66" 
+y="565" 
+dx="0,0,0,0,0,0" 
+class="s3_1"
+>SKILLS</text>
+
+<text 
+x="390" 
+y="565" 
+dx="0,0,0,0,0,0,0,0,0,0" 
+class="s3_1"
+>DICE POOLS</text>
+
+<text 
+x="594" 
+y="565" 
+dx="0,0,0,0,0,0,-1.5,0,0" 
+class="s3_1"
+>CYBERWARE/BIOWARE</text>
+
+<text 
+x="392" 
+y="766" 
+dx="0,0,0,0,0,0,0,0,0,0" 
+class="s3_1"
+>ARMOR/GEAR</text>
+
+<text 
+x="594" 
+y="859" 
+dx="0,0,0,0,0,0" 
+class="s3_1"
+>SPELLS/POWERS</text>
+
+<path d="M167,361l55,0" class="g1_1" />
+<path d="M167,381l55,0" class="g1_1" />
+<path d="M167,401l55,0" class="g1_1" />
+<path d="M167,421l55,0" class="g1_1" />
+<path d="M167,441l55,0" class="g1_1" />
+<path d="M167,461l55,0" class="g1_1" />
+<path d="M167,482l55,0" class="g1_1" />
+<path d="M167,502l55,0" class="g1_1" />
+
+<text 
+x="114" 
+y="361" 
+dx="0,0,0,0" 
+class="s4_1"
+>Body</text>
+
+<text
+x="170"
+y="358"
+dx="0,0,0"
+class="s7_1"
+>attrb</text>
+
+<text 
+x="71" 
+y="381" 
+dx="0,0,0,0,0,0,0,0,0" 
+class="s4_1"
+>Quickness</text>
+
+<text
+x="170"
+y="378"
+dx="0,0,0"
+class="s7_1"
+>attrq</text>
+
+<text 
+x="87" 
+y="402" 
+dx="0,0,0,0,0,0,0,0" 
+class="s4_1"
+>Strength</text>
+
+<text
+x="170"
+y="399"
+dx="0,0,0"
+class="s7_1"
+>attrs</text>
+
+<text 
+x="77" 
+y="422" 
+dx="0,0,0,0,0,0,0,0" 
+class="s4_1"
+>Charisma</text>
+
+<text
+x="170"
+y="419"
+dx="0,0,0"
+class="s7_1"
+>attrc</text>
+
+<text 
+x="62" 
+y="442" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0" 
+class="s4_1"
+>Intelligence</text>
+
+<text
+x="170"
+y="439"
+dx="0,0,0"
+class="s7_1"
+>attri</text>
+
+<text 
+x="75" 
+y="462" 
+dx="0,0,0,0,0,0,0,0,0" 
+class="s4_1"
+>Willpower</text>
+
+<text
+x="170"
+y="459"
+dx="0,0,0"
+class="s7_1"
+>attrw</text>
+
+<text 
+x="91" 
+y="482" 
+dx="0,0,0,0,0,0,0" 
+class="s4_1"
+>Essence</text>
+
+<text
+x="170"
+y="479"
+dx="0,0,0"
+class="s7_1"
+>speciale</text>
+
+<text 
+x="96" 
+y="502" 
+dx="0,0,0,0,0,0,0" 
+class="s4_1"
+>(Magic)</text>
+
+<text
+x="170"
+y="499"
+dx="0,0,0"
+class="s7_1"
+>specialm</text>
+
+<path d="M237,367l82,0l0,56l-82,0Z" class="g1_1" />
+<path d="M237,446l82,0l0,56l-82,0Z" class="g1_1" />
+<text 
+x="391" 
+y="399" 
+dx="0,0,0,0" 
+class="s4_1"
+>Stun</text>
+
+<text 
+x="363" 
+y="428" 
+dx="0,0,0,0,0,0,0,0" 
+class="s4_1"
+>Physical</text>
+
+<text 
+x="237" 
+y="362" 
+dx="0,0,0,0,0,0,0,0" 
+class="s5_1"
+>Reaction</text>
+
+<text
+x="243"
+y="377"
+dx="0,0,0"
+class="s9_1"
+>RBase:</text>
+
+<text
+x="243"
+y="388"
+dx="0,0,0"
+class="s9_1"
+>RCBM:</text>
+
+<text
+x="243"
+y="399"
+dx="0,0,0"
+class="s9_1"
+>RAstral:</text>
+
+<text
+x="243"
+y="410"
+dx="0,0,0"
+class="s9_1"
+>RVehicle:</text>
+
+<text
+x="243"
+y="421"
+dx="0,0,0"
+class="s9_1"
+>RDeck:</text>
+
+<text 
+x="237" 
+y="441" 
+dx="0,0,0,0,0,0,0,0,0,0" 
+class="s5_1"
+>Initiative</text>
+
+<text
+x="243"
+y="456"
+dx="0,0,0"
+class="s9_1"
+>IBase:</text>
+
+<text
+x="243"
+y="467"
+dx="0,0,0"
+class="s9_1"
+>ICBM:</text>
+
+<text
+x="243"
+y="478"
+dx="0,0,0"
+class="s9_1"
+>IAstral:</text>
+
+<text
+x="243"
+y="489"
+dx="0,0,0"
+class="s9_1"
+>IVehicle:</text>
+
+<text
+x="243"
+y="500"
+dx="0,0,0"
+class="s9_1"
+>IDeck:</text>
+
+<text 
+x="426" 
+y="511" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" 
+class="s6_1"
+>Physical Damage Overflow</text>
+
+<path d="M620,488l57,0l0,28l-57,0Z" class="g1_1" />
+<text 
+x="440" 
+y="358" 
+dx="0,0,0,0,0" 
+class="s7_1"
+>Light</text>
+
+<text 
+x="442" 
+y="374" 
+dx="0,0,0,0" 
+class="s7_1"
+>Stun</text>
+
+<text 
+x="481" 
+y="358" 
+dx="0,0,0,0,0,0,0,0" 
+class="s7_1"
+>Moderate</text>
+
+<text 
+x="497" 
+y="374" 
+dx="0,0,0,0" 
+class="s7_1"
+>Stun</text>
+
+<text 
+x="570" 
+y="358" 
+dx="0,0,0,0,0,0,0" 
+class="s7_1"
+>Serious</text>
+
+<text 
+x="579" 
+y="374" 
+dx="0,0,0,0" 
+class="s7_1"
+>Stun</text>
+
+<text 
+x="682" 
+y="358" 
+dx="0,0,0,0,0,0" 
+class="s7_1"
+>Deadly</text>
+
+<text 
+x="689" 
+y="374" 
+dx="0,0,0,0" 
+class="s7_1"
+>Stun</text>
+
+<text 
+x="441" 
+y="470" 
+dx="0,0,0,0,0" 
+class="s7_1"
+>Light</text>
+
+<text 
+x="434" 
+y="487" 
+dx="0,0,0,0,0" 
+class="s7_1"
+>Wound</text>
+
+<text 
+x="481" 
+y="470" 
+dx="0,0,0,0,0,0,0,0" 
+class="s7_1"
+>Moderate</text>
+
+<text 
+x="489" 
+y="487" 
+dx="0,0,0,0,0" 
+class="s7_1"
+>Wound</text>
+
+<text 
+x="570" 
+y="470" 
+dx="0,0,0,0,0,0,0" 
+class="s7_1"
+>Serious</text>
+
+<text 
+x="571" 
+y="487" 
+dx="0,0,0,0,0" 
+class="s7_1"
+>Wound</text>
+
+<text 
+x="682" 
+y="470" 
+dx="0,0,0,0,0,0" 
+class="s7_1"
+>Deadly</text>
+
+<text 
+x="682" 
+y="487" 
+dx="0,0,0,0,0" 
+class="s7_1"
+>Wound</text>
+
+<path d="M469,379l28,0l0,28l-28,0Z" class="g1_1" />
+<path d="M525,379l27,0l0,28l-27,0Z" class="g1_1" />
+<path d="M552,379l28,0l0,28l-28,0Z" class="g1_1" />
+<path d="M607,379l28,0l0,28l-28,0Z" class="g1_1" />
+<path d="M635,379l28,0l0,28l-28,0Z" class="g1_1" />
+<path d="M662,379l28,0l0,28l-28,0Z" class="g1_1" />
+<path d="M442,379l27,0l0,28l-27,0Z" class="g1_1" />
+<text 
+x="444" 
+y="391" 
+dx="0,0,0,0,0" 
+class="s8_1"
+>+1TN#</text>
+
+<text 
+x="445" 
+y="399" 
+dx="0,0,0,0,0,0,0,0" 
+class="s8_1"
+>-1 Init.</text>
+
+<path d="M497,379l28,0l0,28l-28,0Z" class="g1_1" />
+<text 
+x="499" 
+y="391" 
+dx="0,0,0,0,0" 
+class="s8_1"
+>+2TN#</text>
+
+<text 
+x="501" 
+y="399" 
+dx="0,0,0,0,0,0,0,0" 
+class="s8_1"
+>-2 Init.</text>
+
+<path d="M580,379l27,0l0,28l-27,0Z" class="g1_1" />
+<text 
+x="582" 
+y="391" 
+dx="0,0,0,0,0" 
+class="s8_1"
+>+3TN#</text>
+
+<text 
+x="583" 
+y="399" 
+dx="0,0,0,0,0,0,0,0" 
+class="s8_1"
+>-3 Init.</text>
+
+<path d="M690,379l28,0l0,28l-28,0Z" class="g1_1" />
+<text 
+x="697" 
+y="395" 
+dx="0,0,0,0" 
+class="s8_1"
+>Unc.</text>
+
+<path d="M469,427l28,0l0,28l-28,0Z" class="g1_1" />
+<path d="M525,427l27,0l0,28l-27,0Z" class="g1_1" />
+<path d="M552,427l28,0l0,28l-28,0Z" class="g1_1" />
+<path d="M607,427l28,0l0,28l-28,0Z" class="g1_1" />
+<path d="M635,427l28,0l0,28l-28,0Z" class="g1_1" />
+<path d="M662,427l28,0l0,28l-28,0Z" class="g1_1" />
+<path d="M442,427l27,0l0,28l-27,0Z" class="g1_1" />
+<text 
+x="444" 
+y="439" 
+dx="0,0,0,0,0" 
+class="s8_1"
+>+1TN#</text>
+
+<text 
+x="445" 
+y="448" 
+dx="0,0,0,0,0,0,0,0" 
+class="s8_1"
+>-1 Init.</text>
+
+<path d="M497,427l28,0l0,28l-28,0Z" class="g1_1" />
+<text 
+x="499" 
+y="439" 
+dx="0,0,0,0,0" 
+class="s8_1"
+>+2TN#</text>
+
+<text 
+x="501" 
+y="448" 
+dx="0,0,0,0,0,0,0,0" 
+class="s8_1"
+>-2 Init.</text>
+
+<path d="M580,427l27,0l0,28l-27,0Z" class="g1_1" />
+<text 
+x="582" 
+y="439" 
+dx="0,0,0,0,0" 
+class="s8_1"
+>+3TN#</text>
+
+<text 
+x="583" 
+y="448" 
+dx="0,0,0,0,0,0,0,0" 
+class="s8_1"
+>-3 Init.</text>
+
+<path d="M690,427l28,0l0,28l-28,0Z" class="g1_1" />
+<text 
+x="697" 
+y="435" 
+dx="0,0,0,0" 
+class="s8_1"
+>Unc.</text>
+
+<text 
+x="694" 
+y="443" 
+dx="0,0,0,0,0" 
+class="s8_1"
+>Mabye</text>
+
+<text 
+x="696" 
+y="452" 
+dx="0,0,0,0" 
+class="s8_1"
+>Dead</text>
+
+<path d="M785,367l80,0l0,56l-80,0Z" class="g1_1" />
+<path d="M785,446l80,0l0,56l-80,0Z" class="g1_1" />
+<text 
+x="786" 
+y="361" 
+dx="0,0,0,0,0,0,0,0,0,0" 
+class="s6_1"
+>Karma Pool</text>
+
+<text 
+x="782" 
+y="440" 
+dx="0,0,0,0,0,0,0,0,0,0" 
+class="s6_1"
+>Good Karma</text>
+
+<text 
+x="66" 
+y="599" 
+dx="0,0,0,0" 
+class="s6_1"
+>Name</text>
+
+<text 
+x="307" 
+y="599" 
+dx="0,0,0,0,0,0" 
+class="s6_1"
+>Rating</text>
+
+<text
+x="66"
+y="614"
+dx="0,0,0"
+class="s7_1"
+>skill1</text>
+
+<text
+x="308"
+y="614"
+dx="0,0,0"
+class="s7_1"
+>skill1r</text>
+
+<text
+x="66"
+y="634"
+dx="0,0,0"
+class="s7_1"
+>skill2</text>
+
+<text
+x="308"
+y="634"
+dx="0,0,0"
+class="s7_1"
+>skill2r</text>
+
+<text
+x="66"
+y="653"
+dx="0,0,0"
+class="s7_1"
+>skill3</text>
+
+<text
+x="308"
+y="653"
+dx="0,0,0"
+class="s7_1"
+>skill3r</text>
+
+<text
+x="66"
+y="672"
+dx="0,0,0"
+class="s7_1"
+>skill4</text>
+
+<text
+x="308"
+y="672"
+dx="0,0,0"
+class="s7_1"
+>skill4r</text>
+
+<text
+x="66"
+y="692"
+dx="0,0,0"
+class="s7_1"
+>skill5</text>
+
+<text
+x="308"
+y="692"
+dx="0,0,0"
+class="s7_1"
+>skill5r</text>
+
+<text
+x="66"
+y="712"
+dx="0,0,0"
+class="s7_1"
+>skill6</text>
+
+<text
+x="308"
+y="712"
+dx="0,0,0"
+class="s7_1"
+>skill6r</text>
+
+<text
+x="66"
+y="731"
+dx="0,0,0"
+class="s7_1"
+>skill7</text>
+
+<text
+x="308"
+y="731"
+dx="0,0,0"
+class="s7_1"
+>skill7r</text>
+
+<text
+x="66"
+y="751"
+dx="0,0,0"
+class="s7_1"
+>skill8</text>
+
+<text
+x="308"
+y="751"
+dx="0,0,0"
+class="s7_1"
+>skill8r</text>
+
+<text
+x="66"
+y="771"
+dx="0,0,0"
+class="s7_1"
+>skill9</text>
+
+<text
+x="308"
+y="771"
+dx="0,0,0"
+class="s7_1"
+>skill9r</text>
+
+<text
+x="66"
+y="790"
+dx="0,0,0"
+class="s7_1"
+>skill10</text>
+
+<text
+x="308"
+y="790"
+dx="0,0,0"
+class="s7_1"
+>skill10r</text>
+
+<text
+x="66"
+y="810"
+dx="0,0,0"
+class="s7_1"
+>skill11</text>
+
+<text
+x="308"
+y="810"
+dx="0,0,0"
+class="s7_1"
+>skill11r</text>
+
+<text
+x="66"
+y="829"
+dx="0,0,0"
+class="s7_1"
+>skill12</text>
+
+<text
+x="308"
+y="829"
+dx="0,0,0"
+class="s7_1"
+>skill12r</text>
+
+<text
+x="66"
+y="849"
+dx="0,0,0"
+class="s7_1"
+>skill13</text>
+
+<text
+x="308"
+y="849"
+dx="0,0,0"
+class="s7_1"
+>skill13r</text>
+
+
+<path d="M66,616l227,0" class="g1_1" />
+<path d="M308,616l41,0" class="g1_1" />
+<path d="M66,636l227,0" class="g1_1" />
+<path d="M308,636l41,0" class="g1_1" />
+<path d="M66,655l227,0" class="g1_1" />
+<path d="M308,655l41,0" class="g1_1" />
+<path d="M66,675l227,0" class="g1_1" />
+<path d="M308,675l41,0" class="g1_1" />
+<path d="M66,694l227,0" class="g1_1" />
+<path d="M308,694l41,0" class="g1_1" />
+<path d="M66,714l227,0" class="g1_1" />
+<path d="M308,714l41,0" class="g1_1" />
+<path d="M66,733l227,0" class="g1_1" />
+<path d="M308,733l41,0" class="g1_1" />
+<path d="M66,753l227,0" class="g1_1" />
+<path d="M308,753l41,0" class="g1_1" />
+<path d="M66,773l227,0" class="g1_1" />
+<path d="M308,773l41,0" class="g1_1" />
+<path d="M66,792l227,0" class="g1_1" />
+<path d="M308,792l41,0" class="g1_1" />
+<path d="M66,812l227,0" class="g1_1" />
+<path d="M308,812l41,0" class="g1_1" />
+<path d="M66,831l227,0" class="g1_1" />
+<path d="M308,831l41,0" class="g1_1" />
+<path d="M66,851l227,0" class="g1_1" />
+<path d="M308,851l41,0" class="g1_1" />
+<path d="M66,870l227,0" class="g1_1" />
+<path d="M308,870l41,0" class="g1_1" />
+<path d="M66,890l227,0" class="g1_1" />
+<path d="M308,890l41,0" class="g1_1" />
+<path d="M66,909l227,0" class="g1_1" />
+<path d="M308,909l41,0" class="g1_1" />
+<path d="M66,929l227,0" class="g1_1" />
+<path d="M308,929l41,0" class="g1_1" />
+<path d="M66,948l227,0" class="g1_1" />
+<path d="M308,948l41,0" class="g1_1" />
+<path d="M66,968l227,0" class="g1_1" />
+<path d="M308,968l41,0" class="g1_1" />
+<path d="M66,987l227,0" class="g1_1" />
+<path d="M308,987l41,0" class="g1_1" />
+<path d="M66,1007l227,0" class="g1_1" />
+<path d="M308,1007l41,0" class="g1_1" />
+<path d="M66,1026l227,0" class="g1_1" />
+<path d="M308,1026l41,0" class="g1_1" />
+<path d="M66,1046l227,0" class="g1_1" />
+<path d="M308,1046l41,0" class="g1_1" />
+<path d="M66,1065l227,0" class="g1_1" />
+<path d="M308,1065l41,0" class="g1_1" />
+<path d="M66,1085l227,0" class="g1_1" />
+<path d="M308,1085l41,0" class="g1_1" />
+<path d="M66,1104l227,0" class="g1_1" />
+<path d="M308,1104l41,0" class="g1_1" />
+<path d="M66,1124l227,0" class="g1_1" />
+<path d="M308,1124l41,0" class="g1_1" />
+<path d="M487,588l55,0l0,28l-55,0Z" class="g1_1" />
+<path d="M487,623l55,0l0,27l-55,0Z" class="g1_1" />
+<path d="M487,657l55,0l0,28l-55,0Z" class="g1_1" />
+<path d="M487,692l55,0l0,28l-55,0Z" class="g1_1" />
+<text 
+x="390" 
+y="607" 
+dx="0,0,0,0,0,0,0,0,0,0,0" 
+class="s6_1"
+>Combat Pool</text>
+
+<text
+x="495"
+y="607"
+dx="0,0,0"
+class="s6_1"
+>ComP</text>
+
+<text 
+x="390" 
+y="641" 
+dx="0,0,0,0" 
+class="s6_1"
+>Magic Pool</text>
+
+<text 
+x="495" 
+y="641" 
+dx="0,0,0,0" 
+class="s6_1"
+>MagP</text>
+
+<text 
+x="390" 
+y="676" 
+dx="0,0,0,0" 
+class="s6_1"
+>Hacking Pool</text>
+
+<text 
+x="495" 
+y="676" 
+dx="0,0,0,0" 
+class="s6_1"
+>HacP</text>
+
+<text 
+x="390" 
+y="711" 
+dx="0,0,0,0" 
+class="s6_1"
+>Control Pool</text>
+
+<text 
+x="495" 
+y="711" 
+dx="0,0,0,0" 
+class="s6_1"
+>ConP</text>
+
+<text 
+x="590" 
+y="599" 
+dx="0,-2.2,0,0" 
+class="s6_1"
+>Type</text>
+
+<text 
+x="827" 
+y="599" 
+dx="0,0,0,0,0,0" 
+class="s6_1"
+>Rating</text>
+
+<text
+x="590"
+y="614"
+dx="0,0,0"
+class="s7_1"
+>cyber1</text>
+
+<text
+x="827"
+y="614"
+dx="0,0,0"
+class="s7_1"
+>cyber1r</text>
+
+<text
+x="590"
+y="628"
+dx="0,0,0"
+class="s7_1"
+>cyber2</text>
+
+<text
+x="827"
+y="628"
+dx="0,0,0"
+class="s7_1"
+>cyber2r</text>
+
+<text
+x="590"
+y="641"
+dx="0,0,0"
+class="s7_1"
+>cyber3</text>
+
+<text
+x="827"
+y="641"
+dx="0,0,0"
+class="s7_1"
+>cyber3r</text>
+
+<text
+x="590"
+y="655"
+dx="0,0,0"
+class="s7_1"
+>cyber4</text>
+
+<text
+x="827"
+y="655"
+dx="0,0,0"
+class="s7_1"
+>cyber4r</text>
+
+<text
+x="590"
+y="668"
+dx="0,0,0"
+class="s7_1"
+>cyber5</text>
+
+<text
+x="827"
+y="668"
+dx="0,0,0"
+class="s7_1"
+>cyber5r</text>
+
+<text
+x="590"
+y="682"
+dx="0,0,0"
+class="s7_1"
+>cyber6</text>
+
+<text
+x="827"
+y="682"
+dx="0,0,0"
+class="s7_1"
+>cyber6r</text>
+
+<text
+x="590"
+y="696"
+dx="0,0,0"
+class="s7_1"
+>cyber7</text>
+
+<text
+x="827"
+y="696"
+dx="0,0,0"
+class="s7_1"
+>cyber7r</text>
+
+<text
+x="590"
+y="723"
+dx="0,0,0"
+class="s7_1"
+>bio1</text>
+
+<text
+x="827"
+y="723"
+dx="0,0,0"
+class="s7_1"
+>bio1r</text>
+
+<text
+x="590"
+y="736"
+dx="0,0,0"
+class="s7_1"
+>bio2</text>
+
+<text
+x="827"
+y="736"
+dx="0,0,0"
+class="s7_1"
+>bio2r</text>
+
+<text
+x="590"
+y="750"
+dx="0,0,0"
+class="s7_1"
+>bio3</text>
+
+<text
+x="827"
+y="750"
+dx="0,0,0"
+class="s7_1"
+>bio3r</text>
+
+<text
+x="590"
+y="764"
+dx="0,0,0"
+class="s7_1"
+>bio4</text>
+
+<text
+x="827"
+y="764"
+dx="0,0,0"
+class="s7_1"
+>bio4r</text>
+
+<text
+x="590"
+y="777"
+dx="0,0,0"
+class="s7_1"
+>bio5</text>
+
+<text
+x="827"
+y="777"
+dx="0,0,0"
+class="s7_1"
+>bio5r</text>
+
+<text
+x="590"
+y="791"
+dx="0,0,0"
+class="s7_1"
+>bio6</text>
+
+<text
+x="827"
+y="791"
+dx="0,0,0"
+class="s7_1"
+>bio6r</text>
+
+<text
+x="590"
+y="804"
+dx="0,0,0"
+class="s7_1"
+>bio7</text>
+
+<text
+x="827"
+y="804"
+dx="0,0,0"
+class="s7_1"
+>bio7r</text>
+
+
+<path d="M590,616l225,0" class="g1_1" />
+<path d="M829,616l39,0" class="g1_1" />
+<path d="M590,630l225,0" class="g1_1" />
+<path d="M829,630l39,0" class="g1_1" />
+<path d="M590,643l225,0" class="g1_1" />
+<path d="M829,643l39,0" class="g1_1" />
+<path d="M590,657l225,0" class="g1_1" />
+<path d="M829,657l39,0" class="g1_1" />
+<path d="M590,670l225,0" class="g1_1" />
+<path d="M829,670l39,0" class="g1_1" />
+<path d="M590,684l225,0" class="g1_1" />
+<path d="M829,684l39,0" class="g1_1" />
+<path d="M590,698l225,0" class="g1_1" />
+<path d="M829,698l39,0" class="g1_1" />
+<path d="M578,706l302,0" class="g1_1" />
+<path d="M578,707l302,0" class="g1_1" />
+<path d="M578,708l302,0" class="g1_1" />
+<path d="M578,709l302,0" class="g1_1" />
+<path d="M590,725l225,0" class="g1_1" />
+<path d="M829,725l39,0" class="g1_1" />
+<path d="M590,738l225,0" class="g1_1" />
+<path d="M829,738l39,0" class="g1_1" />
+<path d="M590,752l225,0" class="g1_1" />
+<path d="M829,752l39,0" class="g1_1" />
+<path d="M590,766l225,0" class="g1_1" />
+<path d="M829,766l39,0" class="g1_1" />
+<path d="M590,779l225,0" class="g1_1" />
+<path d="M829,779l39,0" class="g1_1" />
+<path d="M590,793l225,0" class="g1_1" />
+<path d="M829,793l39,0" class="g1_1" />
+<path d="M590,806l225,0" class="g1_1" />
+<path d="M829,806l39,0" class="g1_1" />
+<text 
+x="390" 
+y="801" 
+dx="0,-2.2,0,0" 
+class="s6_1"
+>Type</text>
+
+<text 
+x="502" 
+y="801" 
+dx="0,0,0,0,0,0" 
+class="s6_1"
+>Rating</text>
+
+<path d="M390,818l97,0" class="g1_1" />
+<path d="M502,818l40,0" class="g1_1" />
+<path d="M390,838l97,0" class="g1_1" />
+<path d="M502,838l40,0" class="g1_1" />
+<path d="M390,858l97,0" class="g1_1" />
+<path d="M502,858l40,0" class="g1_1" />
+<path d="M390,877l97,0" class="g1_1" />
+<path d="M502,877l40,0" class="g1_1" />
+<path d="M390,897l97,0" class="g1_1" />
+<path d="M502,897l40,0" class="g1_1" />
+<path d="M390,917l97,0" class="g1_1" />
+<path d="M502,917l40,0" class="g1_1" />
+<path d="M390,937l97,0" class="g1_1" />
+<path d="M502,937l40,0" class="g1_1" />
+<path d="M390,957l97,0" class="g1_1" />
+<path d="M502,957l40,0" class="g1_1" />
+<path d="M390,977l97,0" class="g1_1" />
+<path d="M502,977l40,0" class="g1_1" />
+<path d="M390,997l97,0" class="g1_1" />
+<path d="M502,997l40,0" class="g1_1" />
+<path d="M390,1017l97,0" class="g1_1" />
+<path d="M502,1017l40,0" class="g1_1" />
+<path d="M390,1037l97,0" class="g1_1" />
+<path d="M502,1037l40,0" class="g1_1" />
+<path d="M390,1057l97,0" class="g1_1" />
+<path d="M502,1057l40,0" class="g1_1" />
+<path d="M390,1076l97,0" class="g1_1" />
+<path d="M502,1076l40,0" class="g1_1" />
+<path d="M390,1096l97,0" class="g1_1" />
+<path d="M502,1096l40,0" class="g1_1" />
+<path d="M390,1116l97,0" class="g1_1" />
+<path d="M502,1116l40,0" class="g1_1" />
+<path d="M390,1136l97,0" class="g1_1" />
+<path d="M502,1136l40,0" class="g1_1" />
+<text 
+x="590" 
+y="888" 
+dx="0,0,0,0" 
+class="s6_1"
+>Name</text>
+
+<text 
+x="777" 
+y="888" 
+dx="0,-1.7,0,0,0" 
+class="s6_1"
+>Force</text>
+
+<text 
+x="829" 
+y="887" 
+dx="0,0,0,0,0" 
+class="s6_1"
+>Drain</text>
+
+<text
+x="590"
+y="907"
+dx="0,0,0"
+class="s7_1"
+>spell1</text>
+
+<text
+x="777"
+y="907"
+dx="0,0,0"
+class="s7_1"
+>spell1f</text>
+
+<text
+x="829"
+y="907"
+dx="0,0,0"
+class="s7_1"
+>spell1d</text>
+
+<text
+x="590"
+y="921"
+dx="0,0,0"
+class="s7_1"
+>spell2</text>
+
+<text
+x="777"
+y="921"
+dx="0,0,0"
+class="s7_1"
+>spell2f</text>
+
+<text
+x="829"
+y="921"
+dx="0,0,0"
+class="s7_1"
+>spell2d</text>
+
+<text
+x="590"
+y="935"
+dx="0,0,0"
+class="s7_1"
+>spell3</text>
+
+<text
+x="777"
+y="935"
+dx="0,0,0"
+class="s7_1"
+>spell3f</text>
+
+<text
+x="829"
+y="935"
+dx="0,0,0"
+class="s7_1"
+>spell3d</text>
+
+<text
+x="590"
+y="949"
+dx="0,0,0"
+class="s7_1"
+>spell4</text>
+
+<text
+x="777"
+y="949"
+dx="0,0,0"
+class="s7_1"
+>spell4f</text>
+
+<text
+x="829"
+y="949"
+dx="0,0,0"
+class="s7_1"
+>spell4d</text>
+
+<text
+x="590"
+y="963"
+dx="0,0,0"
+class="s7_1"
+>spell5</text>
+
+<text
+x="777"
+y="963"
+dx="0,0,0"
+class="s7_1"
+>spell5f</text>
+
+<text
+x="829"
+y="963"
+dx="0,0,0"
+class="s7_1"
+>spell5d</text>
+
+<text
+x="590"
+y="977"
+dx="0,0,0"
+class="s7_1"
+>spell6</text>
+
+<text
+x="777"
+y="977"
+dx="0,0,0"
+class="s7_1"
+>spell6f</text>
+
+<text
+x="829"
+y="977"
+dx="0,0,0"
+class="s7_1"
+>spell6d</text>
+
+<text
+x="590"
+y="991"
+dx="0,0,0"
+class="s7_1"
+>spell7</text>
+
+<text
+x="777"
+y="991"
+dx="0,0,0"
+class="s7_1"
+>spell7f</text>
+
+<text
+x="829"
+y="991"
+dx="0,0,0"
+class="s7_1"
+>spell7d</text>
+
+<text
+x="590"
+y="1005"
+dx="0,0,0"
+class="s7_1"
+>spell8</text>
+
+<text
+x="777"
+y="1005"
+dx="0,0,0"
+class="s7_1"
+>spell8f</text>
+
+<text
+x="829"
+y="1005"
+dx="0,0,0"
+class="s7_1"
+>spell8d</text>
+
+<text
+x="590"
+y="1034"
+dx="0,0,0"
+class="s7_1"
+>power1</text>
+
+<text
+x="777"
+y="1034"
+dx="0,0,0"
+class="s7_1"
+>power1l</text>
+
+<text
+x="829"
+y="1034"
+dx="0,0,0"
+class="s7_1"
+>power1c</text>
+
+<text
+x="590"
+y="1048"
+dx="0,0,0"
+class="s7_1"
+>power2</text>
+
+<text
+x="777"
+y="1048"
+dx="0,0,0"
+class="s7_1"
+>power2l</text>
+
+<text
+x="829"
+y="1048"
+dx="0,0,0"
+class="s7_1"
+>power2c</text>
+
+<text
+x="590"
+y="1062"
+dx="0,0,0"
+class="s7_1"
+>power3</text>
+
+<text
+x="777"
+y="1062"
+dx="0,0,0"
+class="s7_1"
+>power3l</text>
+
+<text
+x="829"
+y="1062"
+dx="0,0,0"
+class="s7_1"
+>power3c</text>
+
+<text
+x="590"
+y="1076"
+dx="0,0,0"
+class="s7_1"
+>power4</text>
+
+<text
+x="777"
+y="1076"
+dx="0,0,0"
+class="s7_1"
+>power4l</text>
+
+<text
+x="829"
+y="1076"
+dx="0,0,0"
+class="s7_1"
+>power4c</text>
+
+<text
+x="590"
+y="1090"
+dx="0,0,0"
+class="s7_1"
+>power5</text>
+
+<text
+x="777"
+y="1090"
+dx="0,0,0"
+class="s7_1"
+>power5l</text>
+
+<text
+x="829"
+y="1090"
+dx="0,0,0"
+class="s7_1"
+>power5c</text>
+
+<text
+x="590"
+y="1104"
+dx="0,0,0"
+class="s7_1"
+>power6</text>
+
+<text
+x="777"
+y="1104"
+dx="0,0,0"
+class="s7_1"
+>power6l</text>
+
+<text
+x="829"
+y="1104"
+dx="0,0,0"
+class="s7_1"
+>power6c</text>
+
+<text
+x="590"
+y="1118"
+dx="0,0,0"
+class="s7_1"
+>power7</text>
+
+<text
+x="777"
+y="1118"
+dx="0,0,0"
+class="s7_1"
+>power7l</text>
+
+<text
+x="829"
+y="1118"
+dx="0,0,0"
+class="s7_1"
+>power7c</text>
+
+<text
+x="590"
+y="1132"
+dx="0,0,0"
+class="s7_1"
+>power8</text>
+
+<text
+x="777"
+y="1132"
+dx="0,0,0"
+class="s7_1"
+>power8l</text>
+
+<text
+x="829"
+y="1132"
+dx="0,0,0"
+class="s7_1"
+>power8c</text>
+
+
+<path d="M590,909l169,0" class="g1_1" />
+<path d="M773,909l42,0" class="g1_1" />
+<path d="M829,909l39,0" class="g1_1" />
+<path d="M590,923l169,0" class="g1_1" />
+<path d="M773,923l42,0" class="g1_1" />
+<path d="M829,923l39,0" class="g1_1" />
+<path d="M590,937l169,0" class="g1_1" />
+<path d="M773,937l42,0" class="g1_1" />
+<path d="M829,937l39,0" class="g1_1" />
+<path d="M590,951l169,0" class="g1_1" />
+<path d="M773,951l42,0" class="g1_1" />
+<path d="M829,951l39,0" class="g1_1" />
+<path d="M590,965l169,0" class="g1_1" />
+<path d="M773,965l42,0" class="g1_1" />
+<path d="M829,965l39,0" class="g1_1" />
+<path d="M590,979l169,0" class="g1_1" />
+<path d="M773,979l42,0" class="g1_1" />
+<path d="M829,979l39,0" class="g1_1" />
+<path d="M590,993l169,0" class="g1_1" />
+<path d="M773,993l42,0" class="g1_1" />
+<path d="M829,993l39,0" class="g1_1" />
+<path d="M590,1007l169,0" class="g1_1" />
+<path d="M773,1007l42,0" class="g1_1" />
+<path d="M829,1007l39,0" class="g1_1" />
+<path d="M577,1015l304,0" class="g1_1" />
+<path d="M577,1016l304,0" class="g1_1" />
+<path d="M577,1017l304,0" class="g1_1" />
+<path d="M577,1018l304,0" class="g1_1" />
+<path d="M590,1036l169,0" class="g1_1" />
+<path d="M773,1036l42,0" class="g1_1" />
+<path d="M829,1036l39,0" class="g1_1" />
+<path d="M590,1050l169,0" class="g1_1" />
+<path d="M773,1050l42,0" class="g1_1" />
+<path d="M829,1050l39,0" class="g1_1" />
+<path d="M590,1064l169,0" class="g1_1" />
+<path d="M773,1064l42,0" class="g1_1" />
+<path d="M829,1064l39,0" class="g1_1" />
+<path d="M590,1078l169,0" class="g1_1" />
+<path d="M773,1078l42,0" class="g1_1" />
+<path d="M829,1078l39,0" class="g1_1" />
+<path d="M590,1092l169,0" class="g1_1" />
+<path d="M773,1092l42,0" class="g1_1" />
+<path d="M829,1092l39,0" class="g1_1" />
+<path d="M590,1106l169,0" class="g1_1" />
+<path d="M773,1106l42,0" class="g1_1" />
+<path d="M829,1106l39,0" class="g1_1" />
+<path d="M590,1120l169,0" class="g1_1" />
+<path d="M773,1120l42,0" class="g1_1" />
+<path d="M829,1120l39,0" class="g1_1" />
+<path d="M590,1134l169,0" class="g1_1" />
+<path d="M773,1134l42,0" class="g1_1" />
+<path d="M829,1134l39,0" class="g1_1" />
+<path fill-rule="evenodd" d="M448.8,162.5c-16.7,2.4,-18.2,-1.2,-30.3,-5.9l4.9,-21.2l8,-7.9c-0.6,-6.9,2.3,-13,6.6,-18.2c8.6,-9.4,22.2,-13.5,34.5,-10.4c37.9,0,75.7,0,113.5,0c8.8,0,17.7,2,23.4,9.2c10.4,-7.8,24.9,-12.6,37.9,-9.1l-0.1,-0.1c75.9,0,150.8,0,226.7,0L853,118.7c-9.2,9.4,-16.9,33.4,-22.7,45.8c-6.8,-1.1,-13.1,-1.4,-18.9,-5.5l-11.6,3.3l-36.3,0c-5.8,1.5,-12.7,1.7,-18.1,-1l-11.8,1.1c-5.5,0.4,-8.3,-1.8,-13.5,-0.1l-26.6,0l-1.6,2.3c-3.3,-0.8,-6.7,-1.4,-10,-2.3l-11.5,0l-2,2.7c-8.1,-2.3,-17.6,-4,-21.2,-12.8c-5.1,4,-10.7,7.1,-16.9,9.1c-11.9,3.6,-27,3.1,-35,-7.8c-8.4,6.3,-17.1,8.8,-27.6,8.8c-39.3,0,-78.6,0,-117.8,0Z" class="g3_1" />
+<image x="426" y="104" width="432" height="54" xlink:href="1/img/1.png" />
+<image x="428" y="106" width="424" height="49" xlink:href="1/img/2.png" />
+<path fill-rule="evenodd" d="M433.4,141c1.9,1.6,3.7,2.8,5.4,3.5c1.8,0.7,3.7,1,5.6,1c1.9,0,3.6,-0.4,5.2,-1.2c1.5,-0.9,2.6,-2,3.3,-3.3c1,-2.1,-0.3,-4.3,-3.9,-6.5c-1.1,-0.6,-1.9,-1.1,-2.5,-1.5c-2.1,-1.5,-3.5,-3.2,-4,-5.3c-0.5,-2,-0.2,-4.3,1,-6.8c1.7,-3.6,4.4,-6.5,8.2,-8.7c3.8,-2.2,8,-3.3,12.6,-3.3c1.8,0,3.4,0.2,4.9,0.5c1.5,0.3,3.1,0.8,4.6,1.5l-3.3,6.9c-1.4,-0.9,-2.7,-1.7,-3.9,-2.1c-1.2,-0.5,-2.3,-0.7,-3.3,-0.7c-1.6,0,-3.1,0.4,-4.5,1.2c-1.4,0.7,-2.4,1.7,-2.9,2.9c-0.8,1.7,0.6,3.8,4.2,6.2c1.4,0.9,2.5,1.7,3.3,2.3c1.8,1.3,2.8,2.9,3.1,4.7c0.3,1.8,-0.2,4,-1.4,6.5c-1.8,4,-4.8,7.1,-9,9.6c-4.1,2.4,-8.6,3.6,-13.5,3.6c-1.9,0,-3.8,-0.2,-5.6,-0.6c-1.9,-0.3,-3.7,-0.9,-5.6,-1.6Zm70.1,-14.9l4.2,-9c1,-2,1.5,-3.5,1.6,-4.5c0.1,-1,-0.1,-1.9,-0.6,-2.7l16.5,0c-1.3,0.8,-2.3,1.7,-3.2,2.7c-0.8,1,-1.7,2.5,-2.7,4.5L506.7,144c-0.9,2,-1.5,3.6,-1.6,4.6c-0.1,1,0.1,1.9,0.6,2.7l-16.5,0c1.3,-0.8,2.3,-1.7,3.2,-2.7c0.8,-1,1.7,-2.6,2.7,-4.6l5.4,-11.4l-13.5,0L481.7,144c-1.1,2.1,-1.6,3.7,-1.7,4.6c-0.1,1,0.1,1.9,0.6,2.7l-16.4,0c1.3,-0.8,2.3,-1.7,3.1,-2.7c0.8,-0.9,1.7,-2.5,2.7,-4.6l12.7,-26.9c1,-2.2,1.6,-3.8,1.7,-4.7c0,-0.9,-0.2,-1.7,-0.7,-2.5l16.4,0c-1.3,0.8,-2.3,1.7,-3.1,2.6c-0.8,0.9,-1.7,2.5,-2.7,4.6l-4.2,9Zm26,7.1l8.5,0l1.8,-12.7Zm-23.3,18.1c1.5,-1.1,2.7,-2.1,3.8,-3.1c1.1,-1,2,-2,2.9,-3.1l22.8,-27.8c0.1,-0.2,0.3,-0.4,0.6,-0.7c1,-1.2,1.6,-2.1,1.9,-2.7c0.3,-0.7,0.5,-1.3,0.5,-1.8c-0.1,-0.6,-0.2,-1.3,-0.6,-2.2l14.6,0l-4.2,34c-0.2,1.4,-0.2,2.8,0,4.1c0.2,1.3,0.6,2.4,1.1,3.3l-18,0c1.4,-1,2.4,-1.8,2.9,-2.4c0.6,-0.6,1,-1.2,1.3,-1.9c0.2,-0.4,0.4,-0.7,0.5,-1.1c0.1,-0.3,0.2,-0.7,0.2,-0.9l0.7,-6l-12.5,0l-4.6,5.7c-0.6,0.8,-1,1.3,-1.2,1.6c-0.2,0.4,-0.4,0.7,-0.5,0.9c-0.4,0.7,-0.5,1.4,-0.5,2.1c0,0.7,0.2,1.4,0.5,2Zm60.6,-6.7c0.6,0.2,1.2,0.4,1.8,0.5c0.6,0,1.2,0.1,1.8,0.1c3.3,0,6.5,-1.3,9.7,-3.9c3.2,-2.6,5.9,-6,7.9,-10.3c2.1,-4.4,2.7,-7.9,2,-10.4c-0.8,-2.5,-2.9,-3.8,-6.2,-3.8c-0.6,0,-1.2,0,-1.9,0.1c-0.7,0,-1.4,0.1,-2.1,0.2Zm-16.9,6.7c1.3,-0.8,2.3,-1.7,3.1,-2.7c0.8,-0.9,1.8,-2.5,2.8,-4.6l12.6,-26.9c1,-2.1,1.6,-3.7,1.6,-4.6c0.1,-0.9,-0.1,-1.8,-0.6,-2.6l16.6,0c7.5,0,12.5,1.8,15,5.5c2.5,3.6,2.2,8.7,-0.9,15.3c-1.6,3.3,-3.6,6.4,-6.1,9.1c-2.5,2.8,-5.4,5.2,-8.7,7.2c-2.4,1.5,-5,2.6,-7.7,3.3c-2.7,0.7,-5.9,1,-9.5,1Zm67.6,1c-6.8,0,-11.5,-2,-13.9,-6.1c-2.5,-4.1,-2.2,-9.3,0.7,-15.7c1.4,-2.9,3.4,-5.7,6,-8.4c2.5,-2.8,5.5,-5.2,8.8,-7.3c3.1,-1.9,6.2,-3.4,9.4,-4.4c3.2,-1,6.4,-1.5,9.4,-1.5c6.9,0,11.6,2,14.1,6.1c2.4,4,2.2,9.2,-0.8,15.6c-1.4,2.9,-3.4,5.8,-6,8.5c-2.6,2.8,-5.6,5.3,-8.9,7.3c-3,1.9,-6.1,3.4,-9.3,4.4c-3.2,1,-6.4,1.5,-9.5,1.5Zm-0.2,-23.1c-2.4,5.1,-3.3,9.3,-2.7,12.4c0.7,3.1,2.7,4.6,6.1,4.6c3.3,0,6.5,-1.2,9.6,-3.6c3.1,-2.5,5.6,-5.8,7.7,-10.1c2.4,-5.2,3.3,-9.3,2.6,-12.4c-0.7,-3.1,-2.7,-4.6,-6.1,-4.6c-3.3,0,-6.5,1.2,-9.6,3.7c-3.1,2.4,-5.6,5.8,-7.6,10Zm46.8,23.1c-1.7,-0.5,-3.1,-1,-4.1,-1.6c-1,-0.5,-1.7,-1.2,-2.2,-2c-1.1,-1.7,-1.3,-4.5,-0.6,-8.3c0.1,-0.5,0.2,-1,0.3,-1.3l4.1,-21.7c0,-0.1,0,-0.2,0.1,-0.3c0.5,-2.4,0.5,-4.9,-0.2,-7.2l13,0l-5.9,28.6l12.6,-17.2c0.7,-1.1,1.3,-2,1.8,-2.7c0.5,-0.7,0.8,-1.3,1.1,-1.8c0.7,-1.6,1,-3.8,0.8,-6.5l0,-0.4l13,0c-0.2,0.3,-0.4,0.7,-0.6,1c-0.2,0.4,-0.3,0.6,-0.3,0.6c-0.7,1.5,-1.2,3,-1.4,4.6c-0.1,0.2,-0.1,0.4,-0.1,0.5L691,138.5l14.6,-20.1c0.5,-0.7,0.9,-1.3,1.3,-1.8c0.3,-0.6,0.6,-1.2,0.9,-1.7c0.5,-1.1,0.6,-2.5,0.4,-4.1c0,-0.4,-0.1,-0.7,-0.1,-0.9l10.4,0l-31.3,42.4c-2,-0.4,-3.6,-0.9,-4.7,-1.5c-1.2,-0.5,-2,-1.2,-2.5,-1.9c-1.1,-1.5,-1.2,-4,-0.5,-7.6c0.1,-0.5,0.2,-0.9,0.2,-1.2L682,127.9Zm54.2,-1l-16.4,0c1.3,-0.8,2.3,-1.7,3.1,-2.7c0.9,-0.9,1.8,-2.5,2.8,-4.6l12.6,-26.9c1.1,-2.2,1.6,-3.8,1.7,-4.7c0.1,-0.9,-0.2,-1.7,-0.7,-2.5l16.2,0c5.4,0,9,0.9,10.8,2.7c1.8,1.9,1.8,4.6,0,8.3c-1,2.2,-2.5,4.2,-4.5,5.8c-2,1.7,-4.6,3.1,-7.8,4.3l1.5,12.9c0.1,1,0.4,2.1,0.7,3.3c0.4,1.2,0.9,2.4,1.5,3.6l-7.2,0.6c-0.2,0.1,-0.4,0.1,-0.6,0.1c-0.2,0,-0.6,0,-1.1,0c-2.1,0,-3.6,-0.6,-4.6,-1.6c-0.9,-1.1,-1.4,-3.1,-1.6,-5.9l-0.4,-10.5L719.4,144c-1,2.1,-1.6,3.7,-1.7,4.6c0,1,0.1,1.9,0.6,2.7Zm7.5,-21c2.5,-0.6,4.6,-1.5,6.4,-2.9c1.8,-1.4,3.2,-3.1,4.2,-5.1c0.9,-1.9,1.1,-3.4,0.5,-4.5c-0.5,-1.2,-1.7,-1.7,-3.5,-1.7c-0.2,0,-0.4,0,-0.5,0c-0.2,0,-0.3,0,-0.4,0.1Zm35.8,6.8c-1.3,2.7,-1.7,4.7,-1.3,6.1c0.4,1.4,1.6,2.1,3.6,2.1c2.1,0,4.1,-0.7,5.8,-2.1c1.7,-1.3,3.2,-3.4,4.5,-6.1l9.4,-20c0.8,-1.7,1.3,-3.2,1.5,-4.3c0.2,-1,0,-2,-0.5,-2.9l16.4,0c-1.2,0.8,-2.2,1.6,-3,2.5c-0.8,0.9,-1.7,2.5,-2.8,4.7L782.6,144c-1,2.1,-1.6,3.7,-1.7,4.6c-0.1,1,0.1,1.9,0.6,2.7l-13.8,0l2.1,-4.4c-2.6,1.9,-5,3.3,-7.3,4.2c-2.4,0.9,-4.8,1.3,-7.2,1.3c-2.1,0,-3.8,-0.3,-5.1,-1c-1.3,-0.7,-2.2,-1.7,-2.8,-3c-0.4,-1.2,-0.5,-2.6,-0.2,-4.2c0.3,-1.5,1.2,-3.8,2.6,-6.8l9.5,-20.3c1.1,-2.2,1.6,-3.8,1.7,-4.7c0.1,-0.9,-0.1,-1.7,-0.6,-2.5l16.4,0c-1.3,0.8,-2.3,1.7,-3.1,2.6c-0.8,0.9,-1.7,2.5,-2.7,4.6Zm25.1,14.2c1.6,-1.1,2.9,-2.3,4,-3.6c1,-1.4,2.3,-3.6,3.8,-6.8l10.4,-22.2c1.1,-2.2,1.6,-3.9,1.7,-5.1c0,-1.2,-0.2,-2.4,-0.8,-3.7l12.8,0l6.8,25.3l7.7,-16.3c1,-2,1.5,-3.7,1.7,-5c0.2,-1.3,0,-2.7,-0.4,-4l11.9,0c-1.5,1.4,-2.8,2.8,-3.8,4.1c-1.1,1.4,-2,3.1,-3,5.1l-0.8,1.7l-14.9,31.6c-5.4,-0.7,-9,-4,-10.7,-9.8l-0.2,-0.5l-4.8,-16.3l-8.3,17.6c-1,2.1,-1.5,3.7,-1.7,4.8c-0.1,1.1,0.2,2.1,0.7,3.1Z" class="g4_1" />
+<path d="M718.5,393.5l5,0l0,24l-287,0l0,24l6,0" class="g5_1" />
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: Cambria;
+	src: url("lin.woff") format("woff");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Cambria;
+	src: url("linb.woff") format("woff");
+	font-weight: bold;
+}
+
+
+
+]]></style>
+
+</svg>

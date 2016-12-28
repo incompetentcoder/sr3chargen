@@ -21,13 +21,44 @@ class Application
   end
 
   def save
+    if getpointsrem < 0
+      errordialog("Invalid Character",getpointsrem)
+      return
+    end
     @a.remove_instance_variable(:@app)
-    puts @a.to_yaml
+    dialog=Gtk::FileChooserDialog.new("Save",nil,Gtk::FileChooser::ACTION_SAVE,nil,
+                                      [Gtk::Stock::SAVE,Gtk::Dialog::RESPONSE_ACCEPT],
+                                      [Gtk::Stock::CANCEL,Gtk::Dialog::RESPONSE_CANCEL])
+    dialog.run do |x|
+      if x == Gtk::Dialog::RESPONSE_ACCEPT
+        a = File.open(dialog.filename,'w+')
+        a.write(YAML.dump(@a))
+        a.close
+        b = File.open(dialog.filename+".svg",'w+')
+        b.write(makecharsheet)
+        b.close
+      end
+    end
+    dialog.destroy
+#    puts @a.to_yaml
     @a.setapp(self)
   end
 
+  def makecharsheet
+    a = File.open("test.svg").read
+    getattributes.each do |x|
+      a.sub!("attr"+x[0].to_s[0].downcase,"#{x[1][:BA]} / #{x[1][:ACT]}")
+    end
+    a
+  end
+    
+
   def gettotem
     @a.gettotem
+  end
+
+  def getattributes
+    @a.attributes
   end
   
   def getelement
