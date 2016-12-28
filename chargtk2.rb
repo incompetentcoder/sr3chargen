@@ -47,11 +47,32 @@ class Application
   def makecharsheet
     a = File.open("test.svg").read
     getattributes.each do |x|
-      a.sub!("attr"+x[0].to_s[0].downcase,"#{x[1][:BA]} / #{x[1][:ACT]}")
+      temp = ""
+      [:CM,:BM,:MM].each do |y|
+        temp+="/#{x[1][:BA]+x[1][y]}" if x[1][y] > 0
+      end
+      temp+="/#{x[1][:ACT]}" unless temp.empty?
+      a.sub!("attr"+x[0].to_s[0].downcase,"#{x[1][:BA]}#{temp}")
     end
+    shit = {}
+    getskills.each {|x| shit.merge!(x[1]) unless x[1].empty?}
+    shit.each_with_index do |y,z|
+      a.sub!("skill"+(z+1).to_s,"#{y[0]} #{y[1][:Specialization]}")
+      a.sub!("skill"+(z+1).to_s+"r","#{y[1][:Specialization] ? 
+        (((y[1][:Value].to_i) -1).to_s + "/" + ((y[1][:Value].to_i) +1).to_s) : 
+          y[1][:Value].to_i}")
+    end
+    getderived[:Pools].each do |x|
+      a.sub!("#{x[0].to_s[0..2]}P","#{x[1]}")
+    end
+    [:Reaction,:Initiative].each do |x|
+      getderived[x].each do |y|
+        a.sub!("#{x.to_s[0]+y[0].to_s}:","#{x.to_s[0]+y[0].to_s+":"+y[1].to_s}")
+      end
+    end
+    a.gsub!(/(skill|cyber|bio|spell|power)\d{1,}r?</,"<")
     a
   end
-    
 
   def gettotem
     @a.gettotem
@@ -59,6 +80,26 @@ class Application
 
   def getattributes
     @a.attributes
+  end
+
+  def getskills
+    @a.activeskills
+  end
+
+  def getderived
+    @a.derived
+  end
+
+  def getspecial
+    @a.special
+  end
+
+  def getname
+    @a.name
+  end
+  
+  def getstreetname
+    @a.streetname
   end
   
   def getelement
@@ -573,7 +614,8 @@ end
 
 class Character
   attr_reader :name, :streetname, :age, :attributes,
-              :points, :metatype, :magetype, :gender
+              :points, :metatype, :magetype, :gender,
+              :derived, :special, :activeskills
   
   def getessence
     @special[:Essence]
