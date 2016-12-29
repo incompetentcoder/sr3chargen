@@ -70,12 +70,28 @@ class Application
         a.sub!("#{x.to_s[0]+y[0].to_s}:","#{x.to_s[0]+y[0].to_s+":"+y[1].to_s}")
       end
     end
-    a.gsub!(/(skill|cyber|bio|spell|power)\d{1,}r?</,"<")
+    [:Essence,:Magic].each do |x|
+      a.sub!("special"+"#{x.to_s[0].downcase}","#{getspecial[x]}")
+    end
+    a.sub!("insertname","#{getname}")
+    a.sub!("insertstreetname","#{getstreetname}")
+    a.sub!("insertage","#{getage}")
+    a.sub!("insertsex","#{getgender == "Male" ? "♂" : "♀"}")
+    a.sub!("insertrace","#{getmetatype}")
+    a.gsub!(/(skill|cyber|bio|spell|power)\d{1,}(r|f|d|l|c)?</,"<")
     a
   end
 
   def gettotem
     @a.gettotem
+  end
+
+  def getage
+    @a.age
+  end
+
+  def getgender
+    @a.gender
   end
 
   def getattributes
@@ -172,8 +188,7 @@ class Application
     array[0] > getnuyenrem || array[1] > getessence
   end
 
-  def cybernamebaseincludes
-    cyber = @a.getcyberware
+  def cybernamebaseincludes(cyber)
     shit = [] 
     cyber.each {|x| shit+= x[1].values.collect{|y| y[:Base]}.compact}
     cyber.each {|x| shit+= x[1].values.collect{|y| y[:Name]}.compact}
@@ -196,13 +211,13 @@ class Application
     err = ""
     shorter = CONSTANT[:cyberware][cyber]
     if shorter[:Conflicts]
-      unless (conf = shorter[:Conflicts].split(",") & cybernamebaseincludes).empty?
+      unless (conf = shorter[:Conflicts].split(",") & cybernamebaseincludes(@a.getcyberware)).empty?
 #        errordialog("Conflict",conf)
         err+="Conflicts: #{conf}\n"
       end
     end
     if shorter[:Required]
-      if (shorter[:Required].split(",") & cybernamebaseincludes).empty?
+      if (shorter[:Required].split(",") & cybernamebaseincludes(@a.getcyberware)).empty?
 #        errordialog("Required",shorter[:Required]);
         err+="Required: #{shorter[:Required]}\n"
       end
@@ -246,6 +261,31 @@ class Application
     @a.addcyber(actual,cyber,level,lvl,type)
     setnuyenrem
     updateessence
+  end
+
+  def remcyber(cyber,name)
+    temp = Marshal.load(Marshal.dump(@a.getcyberware))
+    err = ""
+    temp.each {|x| x[1].delete(cyber)}
+#    binding.pry
+    temp.each do |w|
+      w[1].each_pair do |x,y|
+        if y[:Required]
+          if (y[:Required].split(",") & cybernamebaseincludes(temp)).empty?
+            err+="Required: #{y[:Required]}\n"
+          end
+        end
+      end
+    end
+    if err.empty?
+      @a.remcyber(cyber,name)
+      setnuyenrem
+      updateessence
+      true
+    else
+      errordialog(err,nil)
+      false
+    end
   end
     
 
@@ -663,6 +703,30 @@ class Character
     @cyberware[type][cyber.to_s + (level ? " " + level[1] : "")] = actual
     (@special[:Essence] -= actual[:Essence].to_f.round(2)).to_f.round(2)
     @nuyenrem -= actual[:Price].to_i
+    if actual[:Stats]
+      if actual[:Stats][:attributes]
+        actual[:Stats][:attributes].each_pair do |x,y|
+          @attributes[x][y.keys[0]]+=y.values[0]
+          @app.updateattr(x)
+        end
+      end
+    end
+  end
+
+  def remcyber(cyber,name)
+    type = CONSTANT[:cyberware][name.to_sym][:Type]
+    if @cyberware[type][cyber][:Stats]
+      if @cyberware[type][cyber][:Stats][:attributes]
+        @cyberware[type][cyber][:Stats][:attributes].each_pair do |x,y|
+          @attributes[x][y.keys[0]]-=y.values[0]
+          @app.updateattr(x)
+        end
+      end
+    end
+    @nuyenrem += @cyberware[type][cyber][:Price].to_i
+    (@special[:Essence] += @cyberware[type][cyber][:Essence].to_f.round(2)).to_f.round(2)
+    @cyberware[type].delete(cyber)
+    @cyberware.delete(type) if @cyberware[type].empty?
   end
 
   def spelllvl(name,value)
@@ -1246,7 +1310,7 @@ class Mainblock < Gtk::Frame
 
     @elements[:Metatype][1].active = 0
     @elements[:Magetype][1].active = 0
-    @elements[:Age][1].value = 20
+    @elements[:Age][1].value = 15
     @elements[:Height][1].value = 170
     @elements[:Weight][1].value = 70
     @elements[:Nuyen][1].active = 1
@@ -1872,7 +1936,9 @@ class Cyberblock < Gtk::Frame
     actual.each_pair do |b,c|
       child[@order[b]] = c.to_s if @order[b]
     end
+    child[8] = child[0]
     child[0] = cyber.to_s + (level ? " " + level[1] : "")
+#    binding.pry
   end
 
   def initialize(app)
@@ -1928,6 +1994,12 @@ class Cyberblock < Gtk::Frame
         @app.setcyber(@model.get_iter(b)[0].to_sym)
       else
         a.row_expanded?(b) ? a.collapse_row(b) : a.expand_row(b,false)
+      end
+    end
+
+    @view2.signal_connect('row-activated') do |a,b,c|
+      if @app.remcyber(@model2.get_iter(b)[0],@model2.get_iter(b)[8])
+        @model2.remove(@model2.get_iter(b))
       end
     end
 

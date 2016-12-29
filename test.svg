@@ -145,6 +145,13 @@ dx="0,0,0"
 class="s4_1"
 >insertname</text>
 
+<text
+x="115"
+y="100"
+dx="0,0,0"
+class="s4_1"
+>insertstreetname</text>
+
 <text 
 x="64" 
 y="169" 
@@ -157,7 +164,7 @@ x="64"
 y="145"
 dx="0,0,0"
 class="s4_1"
->Human</text>
+>insertrace</text>
 
 <text
 x="260" 
@@ -171,7 +178,7 @@ x="260"
 y="145"
 dx="0,0,0"
 class="s1_1"
->♂</text>
+>insertsex</text>
 
 <text 
 x="321" 
@@ -185,7 +192,7 @@ x="321"
 y="145"
 dx="0,0,0"
 class="s4_1"
->20</text>
+>insertage</text>
 
 <text 
 x="59" 
