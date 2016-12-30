@@ -193,7 +193,7 @@ class Application
     cyber.each {|x| shit+= x[1].values.collect{|y| y[:Base]}.compact}
     cyber.each {|x| shit+= x[1].values.collect{|y| y[:Name]}.compact}
     cyber.each {|x| shit+= x[1].values.collect{|y| y[:Includes].split(",") if y[:Includes]}.compact}
-    shit
+    shit.flatten
   end
 
   def errordialog(error,data)
@@ -206,18 +206,75 @@ class Application
     dialog.destroy if dialog
   end
 
+  def sidedialog(side)
+    b = c = nil
+    dialog=Gtk::Dialog.new("Choose side",@windows,Gtk::Dialog::MODAL)
+    radio1 = Gtk::RadioButton.new("_Left")
+    radio2 = Gtk::RadioButton.new(radio1,"_Right")
+    dialog.vbox.add(Gtk::Label.new("Choose Side"))
+    dialog.vbox.add(radio1)
+    dialog.vbox.add(radio2)
+    ok = dialog.add_button("Ok",1)
+    cancel = dialog.add_button("Cancel",-1)
+    if side
+      if side == "Left" 
+        radio1.sensitive = false;radio2.active=true
+      else
+        radio2.sensitive = false;radio1.active=true
+      end
+    end
+    dialog.show_all
+    dialog.run do |response|
+      b = response
+      c = (radio1.active? ? radio1 : radio2).label[1..-1]
+    end
+    dialog.destroy
+    [b,c]
+  end
+
+  def selectside(cyber)
+    side = nil
+    if @a.getcyberware["CY"]
+      side = cybernameincludesside(cyber)
+    end
+    if side != "error"
+      get = sidedialog(side)
+      get[0] > 0 ? get[1] : nil
+    else
+      errordialog("already have cyberlimbs on both sides",nil)
+      nil
+    end
+  end
+
+  def cybernameincludesside(cyber)
+    side = nil
+    has = @a.getcyberware["CY"].select {|x,y| y[:Base] == "Cyberlimb" && x[/torso|skull/].nil?}
+    has.each_pair do |x,y|
+      unless (cyber[:Includes].split(',') & y[:Includes].split(',')).empty?
+        if side && side != x.split(' ')[-1]
+          return "error"
+        else
+          side = x.split(' ')[-1]
+        end
+      end
+    end
+    side
+  end
+
   def setcyber(cyber)
-    level = lvl = nil
+    level = lvl = side = place = nil
     err = ""
     shorter = CONSTANT[:cyberware][cyber]
+    installed = cybernamebaseincludes(@a.getcyberware)
     if shorter[:Conflicts]
-      unless (conf = shorter[:Conflicts].split(",") & cybernamebaseincludes(@a.getcyberware)).empty?
+      unless (conf = shorter[:Conflicts].split(",") & installed).empty?
 #        errordialog("Conflict",conf)
         err+="Conflicts: #{conf}\n"
       end
     end
     if shorter[:Required]
-      if (shorter[:Required].split(",") & cybernamebaseincludes(@a.getcyberware)).empty?
+      if (shorter[:Required].split(",") & installed).empty?
+        pp cybernamebaseincludes(@a.getcyberware)
 #        errordialog("Required",shorter[:Required]);
         err+="Required: #{shorter[:Required]}\n"
       end
@@ -226,26 +283,76 @@ class Application
 #      errordialog("Insufficient Money",getnuyenrem);
       err+="Insufficient Money: #{getnuyenrem}\n"
     end
-    if shorter[:Essence]
+    if shorter[:Essence] && !(shorter[:Option] && (installed.include?(shorter[:Cyberlimb])))
       if (Dentaku(shorter[:Essence].sub(/Mp/,'25').sub(/L/,'1')) > getessence)
 #      errordialog("Insufficient Essence",getessence);
         err+="Insufficient Essence: #{getessence}\n"
       end
     end
-    if @a.getcyberware.collect {|x| x[1].values[0][:Name]}.include? cyber.to_s
+    if @a.getcyberware.collect {|x| x[1].values[0][:Name]}.include? cyber.to_s &&
+        (cyber.to_s[/Cyberlimb/].nil? && cyber.to_s[/skull|torso/])
       err="Already installed: #{cyber}\n"
     end
     unless err.empty?
       errordialog(err,nil)
       return
     end
-    if lvl = CONSTANT[:cyberware][cyber][:Price][/Mp|L/]
+    if lvl = shorter[:Price][/Mp|L/]
       return unless (level = selectcyberlvl(cyber,lvl,shorter))[0] == 1
     end
-    addcyber(shorter,cyber,level,lvl)
+    if option = shorter[:Option]
+      if (cybernamebaseincludes(@a.getcyberware).include? shorter[:Cyberlimb])
+        if shorter[:Cyberlimb][/eyes|ears|skull|torso/]
+          parent = [1,shorter[:Cyberlimb]]
+        else
+          return unless (parent = placeoption(shorter))[0] == 1
+        end
+      end
+    end
+    if cyber.to_s.start_with?("Cyberlimb") && cyber.to_s[/torso|skull/].nil?
+      return unless side = selectside(shorter)
+    end
+
+    addcyber(shorter,cyber,level,lvl,side,parent)
   end
 
-  def addcyber(shorter,cyber,level,lvl)
+  def placeoption(shorter)
+    b = c = nil
+    dialog = Gtk::Dialog.new("Put option into limb?",@windows,Gtk::Dialog::MODAL)
+    temp = @a.getcyberware["CY"].select {|x,y| y[:Name].start_with?("Cyberlimb")}
+    sides = { "Left Arm" => temp.select {|x,y| (x[/arm|hand/] &&
+                             x.split(" ")[-1] == "Left")},
+              "Right Arm" => temp.select {|x,y| (x[/arm|hand/] && 
+                             x.split(" ")[-1] == "Right")},
+              "Left Leg" => temp.select {|x,y| (x[/leg|foot/] && 
+                             x.split(" ")[-1] == "Left")},
+              "Right Leg" => temp.select {|x,y| (x[/leg|foot/] && 
+                             x.split(" ")[-1] == "Right")}}
+    radios = [radio1 = Gtk::RadioButton.new("Left Arm: " + sides["Left Arm"].keys[0].to_s),
+    radio2 = Gtk::RadioButton.new(radio1,"Right Arm: " + sides["Right Arm"].keys[0].to_s),
+    radio3 = Gtk::RadioButton.new(radio1,"Left Leg: " + sides["Left Leg"].keys[0].to_s),
+    radio4 = Gtk::RadioButton.new(radio1,"Right Leg: " + sides["Right Leg"].keys[0].to_s)]
+    dialog.vbox.add(Gtk::Label.new("Put option into limb?"))
+    radios.each {|x| dialog.vbox.add(x)}
+    ok = dialog.add_button("Ok",1)
+    cancel = dialog.add_button("Cancel",-1)
+    if shorter[:Required]
+      radios.each do |x| 
+        x.sensitive=false unless (sides[x.label.split(":")[0]].empty? ? false :
+          sides[x.label.split(":")[0]].values[0][:Includes].split(' ').include?(shorter[:Required]))
+      end
+      radios.find {|x| x.sensitive?}.active=true
+    end
+    dialog.show_all
+    dialog.run do |response|
+      b = response
+      c = sides[radios[0].group.find {|x| x.active?}.label.split(':')[0]].keys[0]
+    end
+    dialog.destroy
+    [b,c]
+  end
+
+  def addcyber(shorter,cyber,level,lvl,side,parent)
     actual = Marshal.load(Marshal.dump(shorter))
     if level
       [:Price,:Essence].each do |x|
@@ -257,26 +364,30 @@ class Application
         Dentaku(time[0].sub(/#{lvl}/,level[1])).to_i.to_s + " "+time[1]
     end
     type = actual[:Type]
-    @notebook.cyber.installcyber(actual,cyber,level,lvl)
-    @a.addcyber(actual,cyber,level,lvl,type)
+    @notebook.cyber.installcyber(actual,cyber,level,lvl,side,parent)
+    @a.addcyber(actual,cyber,level,lvl,type,side,parent)
     setnuyenrem
     updateessence
   end
 
   def remcyber(cyber,name)
     temp = Marshal.load(Marshal.dump(@a.getcyberware))
-    err = ""
-    temp.each {|x| x[1].delete(cyber)}
-#    binding.pry
-    temp.each do |w|
-      w[1].each_pair do |x,y|
-        if y[:Required]
-          if (y[:Required].split(",") & cybernamebaseincludes(temp)).empty?
-            err+="Required: #{y[:Required]}\n"
+    actual = err = ""
+    temp.each {|x| actual = x[1].delete(cyber)}
+    if actual[:Children]
+      err+="Options installed: #{actual[:Children]}\n"
+    else
+      temp.each do |w|
+        w[1].each_pair do |x,y|
+          if y[:Required]
+            if (y[:Required].split(",") & cybernamebaseincludes(temp)).empty?
+              err+="Required: #{y[:Required]}\n"
+            end
           end
         end
       end
     end
+
     if err.empty?
       @a.remcyber(cyber,name)
       setnuyenrem
@@ -698,9 +809,35 @@ class Character
     @cyberware
   end
 
-  def addcyber(actual,cyber,level,lvl,type)
+  def calcessenceoption(actual,parent,par)
+    actual[:Essence] = actual[:Essence].to_f.round(2)
+    if par == "SE"
+      total = parent[:Children].inject(0) {|sum,x| sum + CONSTANT[:cyberware][x.to_sym][:Essence].to_f.round(2)}
+      total = total.round(2)
+      if total < 0.5
+        if actual[:Essence] < (0.5 - total)
+          actual[:Essence] = 0
+        else
+          actual[:Essence] = actual[:Essence] - (0.5 - total)
+        end
+      end
+    else
+      actual[:Essence] = 0 unless actual[:Type] == "CY"
+    end
+  end
+
+  def addcyber(actual,cyber,level,lvl,type,side,parent)
+    if parent
+      if parent[1]
+        actual[:Parent] = parent[1]
+        par = parent[1].start_with?("Cyberlimb") ? "CY" : "SE"
+        @cyberware[par][parent[1]][:Children] = [] unless @cyberware[par][parent[1]][:Children]
+        calcessenceoption(actual,@cyberware[par][parent[1]],par)
+        @cyberware[par][parent[1]][:Children].push(cyber)
+      end
+    end
     @cyberware[type] = {} unless @cyberware[type]
-    @cyberware[type][cyber.to_s + (level ? " " + level[1] : "")] = actual
+    @cyberware[type][cyber.to_s + (level ? " " + level[1] : "") + (side ? " " + side : "")] = actual
     (@special[:Essence] -= actual[:Essence].to_f.round(2)).to_f.round(2)
     @nuyenrem -= actual[:Price].to_i
     if actual[:Stats]
@@ -722,6 +859,11 @@ class Character
           @app.updateattr(x)
         end
       end
+    end
+    if p2 = @cyberware[type][cyber][:Parent]
+      t2 = p2[/eyes|ears/] ? "SE" : "CY"
+      @cyberware[t2][p2][:Children].delete(cyber.to_sym)
+      @cyberware[t2][p2].delete(:Children) if @cyberware[t2][p2][:Children].empty?
     end
     @nuyenrem += @cyberware[type][cyber][:Price].to_i
     (@special[:Essence] += @cyberware[type][cyber][:Essence].to_f.round(2)).to_f.round(2)
@@ -1931,13 +2073,20 @@ class Cyberblock < Gtk::Frame
     end
   end
 
-  def installcyber(actual,cyber,level,lvl)
-    child = @model2.append(nil)
+  def installcyber(actual,cyber,level,lvl,side,parent)
+    child = nil
+    if parent
+      if parent[1]
+        @model2.each {|x,y,z| child = @model2.append(z) if z[0] == parent[1]}
+      end
+    else
+      child = @model2.append(nil)
+    end
     actual.each_pair do |b,c|
       child[@order[b]] = c.to_s if @order[b]
     end
     child[8] = child[0]
-    child[0] = cyber.to_s + (level ? " " + level[1] : "")
+    child[0] = cyber.to_s + (level ? " " + level[1] : "") + (side ? " " + side : "")
 #    binding.pry
   end
 
