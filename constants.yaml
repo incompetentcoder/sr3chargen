@@ -3596,6 +3596,7 @@
     :Required: Cyberarm,Cyberleg
     :Option: 'yes'
     :Maxlevel: '3'
+    :Cyberlimb: Cyberlimb
     :Cmod: "-0.5"
     :Base: Quickness Enhancement
   :Quickness Enhancement 2:
@@ -3609,6 +3610,7 @@
     :Required: Cyberarm,Cyberleg
     :Option: 'yes'
     :Maxlevel: '3'
+    :Cyberlimb: Cyberlimb
     :Cmod: "-1"
     :Base: Quickness Enhancement
   :Quickness Enhancement 3:
@@ -3622,6 +3624,7 @@
     :Required: Cyberarm,Cyberleg
     :Option: 'yes'
     :Maxlevel: '3'
+    :Cyberlimb: Cyberlimb
     :Cmod: "-1.5"
     :Base: Quickness Enhancement
   :Quickness Enhancementplus 4:
@@ -3636,6 +3639,7 @@
     :Required: Quickness Enhancement 3
     :Option: 'yes'
     :Maxlevel: '3'
+    :Cyberlimb: Cyberlimb
     :ECU: '1'
     :Cmod: "-1"
     :Base: Quickness Enhancement
@@ -3651,6 +3655,7 @@
     :Required: Quickness Enhancement 3
     :Option: 'yes'
     :Maxlevel: '3'
+    :Cyberlimb: Cyberlimb
     :ECU: '2'
     :Cmod: "-2"
     :Base: Quickness Enhancement
@@ -3666,6 +3671,7 @@
     :Required: Quickness Enhancement 3
     :Option: 'yes'
     :Maxlevel: '3'
+    :Cyberlimb: Cyberlimb
     :ECU: '3'
     :Cmod: "-3"
     :Base: Quickness Enhancement

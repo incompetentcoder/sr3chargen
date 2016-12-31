@@ -269,12 +269,12 @@ Personalized Safety ¬ ¬200 ¬BO ¬Legal ¬4/48 hrs ¬1.5 ¬mm.32 ¬ ¬ ¬ ¬ �
 Playback ¬0.2 ¬40000 ¬BO ¬Legal ¬ 4/48 hrs ¬1.0 ¬sr3.302 ¬Voice Modulator ¬ ¬yes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Protective Covers ¬ ¬500 ¬SE ¬Legal ¬4/48 hrs ¬1.5 ¬sr3.300 ¬ ¬ ¬yes ¬ ¬Cybereyes ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Protocol eumulation module ¬0.2 ¬L*5000 ¬RI ¬Legal ¬L+2/L days ¬2.0 ¬mm.25 ¬Cranial Remote Deck ¬ ¬yes ¬10 ¬ ¬ ¬0.25 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
-Quickness Enhancement 1 ¬ ¬30000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬ ¬ ¬ ¬ ¬-0.5 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
-Quickness Enhancement 2 ¬ ¬60000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬ ¬ ¬ ¬ ¬-1 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
-Quickness Enhancement 3 ¬ ¬90000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬ ¬ ¬ ¬ ¬-1.5 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
-Quickness Enhancementplus 4 ¬0.3 ¬45000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬ ¬ ¬1 ¬ ¬-1 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
-Quickness Enhancementplus 5 ¬0.6 ¬90000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬ ¬ ¬2 ¬ ¬-2 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
-Quickness Enhancementplus 6 ¬0.9 ¬135000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬ ¬ ¬3 ¬ ¬-3 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
+Quickness Enhancement 1 ¬ ¬30000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-0.5 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
+Quickness Enhancement 2 ¬ ¬60000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-1 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
+Quickness Enhancement 3 ¬ ¬90000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-1.5 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
+Quickness Enhancementplus 4 ¬0.3 ¬45000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬1 ¬ ¬-1 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
+Quickness Enhancementplus 5 ¬0.6 ¬90000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬2 ¬ ¬-2 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
+Quickness Enhancementplus 6 ¬0.9 ¬135000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬3 ¬ ¬-3 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
 RAS Override ¬0.05 ¬1000 ¬BR ¬Legal ¬4/48 hrs ¬1.0 ¬mm.21 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Radio Receiver ¬0.4 ¬L*1000 ¬CO ¬Legal ¬2/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Radio ¬0.75 ¬L*2000 ¬CO ¬Legal ¬2/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
