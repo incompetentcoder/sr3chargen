@@ -304,6 +304,25 @@ class Application
     [b,c]
   end
 
+  def checkhasoption(option,shorter)
+    if option.empty?
+      true
+    elsif option.values[0][:Children]
+      success = []
+      option.values[0][:Children].each do |x|
+        temp = nil
+        @a.getcyberware.each {|y| temp = y[1].select {|z,a| z == x}}
+#        binding.pry
+        success.push (temp[x][:Base] == shorter[:Base] || 
+                      temp[x][:Name] == shorter[:Name])
+      end
+      !(success.include?(true))
+    else
+      true
+    end
+  end
+
+
   def setcyber(cyber)
     level = lvl = side = place = grade = nil
     err = ""
@@ -312,29 +331,30 @@ class Application
 
     if shorter[:Conflicts]
       unless (conf = shorter[:Conflicts].split(",") & installed).empty?
-#        errordialog("Conflict",conf)
         err+="Conflicts: #{conf}\n"
       end
     end
     if shorter[:Required]
       if (shorter[:Required].split(",") & installed).empty?
-#        errordialog("Required",shorter[:Required]);
         err+="Required: #{shorter[:Required]}\n"
-      elsif (shorter[:Option] && shorter[:Required][/hand|arm|foot|leg|limb/] && shorter[:ECU])
+      elsif (shorter[:Option] && shorter[:Required][/hand|arm|foot|leg|limb/])
         temp = @a.getcyberware["CY"].select { |x,y| 
-          ((y[:Includes].split(',')+[y[:Base]]) & shorter[:Required].split(','))[0]}
+          ((y[:Includes].split(',')+[y[:Base]]) & shorter[:Required].split(','))[0] if y[:Base] == "Cyberlimb"}
         success = []
-        temp.each_pair {|x,y| success.push checkspace([{x => y}][0],shorter[:ECU])}
-        err+="Not enough Space in any Limb: #{shorter[:ECU]}\n" unless success.include?(true)
+        success2 = []
+        if shorter[:ECU]
+          temp.each_pair {|x,y| success.push checkspace([{x => y}][0],shorter[:ECU])}
+          err+="Not enough Space in any Limb: #{shorter[:ECU]}\n" unless success.include?(true)
+        end
+        temp.each_pair {|x,y| success2.push checkhasoption([{x => y}][0],shorter)}
+        err+="Already have this option in all available limbs\n" unless success2.include?(true)
       end
     end
     if (Dentaku(shorter[:Price].sub(/Mp/,'25').sub(/L/,'1')) > getnuyenrem * 2)
-#      errordialog("Insufficient Money",getnuyenrem);
       err+="Insufficient Money: #{getnuyenrem}\n"
     end
     if shorter[:Essence] && !(shorter[:Option] && (installed.include?(shorter[:Cyberlimb])))
       if (Dentaku(shorter[:Essence].sub(/Mp/,'25').sub(/L/,'1')) > getessence * 1.25)
-#      errordialog("Insufficient Essence",getessence);
         err+="Insufficient Essence: #{getessence}\n"
       end
     end
@@ -357,6 +377,8 @@ class Application
         else
           return unless (parent = placeoption(shorter))[0] == 1
           grade = parent[2]
+          side = parent[1].keys[0]
+          parent[1] = parent[1].values[0].keys[0]
         end
       end
     end
@@ -368,7 +390,6 @@ class Application
     unless lvl || side || parent
       return unless (grade = gradedialog(shorter))
     end
-
 
     addcyber(shorter,cyber,level,lvl,side,parent,grade)
   end
@@ -414,18 +435,19 @@ class Application
         x.sensitive=false unless (sides[x.label.split(":")[0]].empty? ? false :
         (((sides[x.label.split(":")[0]].values[0][:Includes].split(',') & shorter[:Required].split(","))[0] ||
          ([sides[x.label.split(":")[0]].values[0][:Base].to_s] & shorter[:Required].split(","))[0]) &&
-        checkspace(sides[x.label.split(":")[0]],shorter[:ECU].to_f)))
+        checkspace(sides[x.label.split(":")[0]],shorter[:ECU].to_f) && checkhasoption(sides[x.label.split(":")[0]],shorter)))
       end
     end
     radios.each do |x|
-      x.sensitive=false unless checkspace(sides[x.label.split(":")[0]],shorter[:ECU].to_f)
+      x.sensitive=false unless (checkspace(sides[x.label.split(":")[0]],shorter[:ECU].to_f) &&
+        checkhasoption(sides[x.label.split(":")[0]],shorter))
     end
     (test = radios.find {|x| x.sensitive?}) ? test.active = true : (return [nil])
     grade.signal_connect('changed') {|x| checkupdatecyberlvl(shorter,"L","1",a,ok,x.active_text,nil)} 
     dialog.show_all
     dialog.run do |response|
       b = response
-      c = sides[radios[0].group.find {|x| x.active?}.label.split(':')[0]].keys[0]
+      c = sides.select {|x,y| x == radios[0].group.find {|x| x.active?}.label.split(':')[0]}
       d = grade.active_text.split(':')[0]
     end
     dialog.destroy
@@ -918,7 +940,7 @@ class Character
         par = parent[1].start_with?("Cyberlimb") ? "CY" : "SE"
         @cyberware[par][parent[1]][:Children] = [] unless @cyberware[par][parent[1]][:Children]
         calcessenceoption(actual,@cyberware[par][parent[1]],par)
-        @cyberware[par][parent[1]][:Children].push(cyber)
+        @cyberware[par][parent[1]][:Children].push(cyber.to_s + (level ? " " + level[1] : "") + (side ? " " + side : ""))
         if actual[:ECU]
           @cyberware[par][parent[1]][:Space] = 
             (@cyberware[par][parent[1]][:Space].to_f - actual[:ECU].to_f).round(2).to_s
@@ -951,7 +973,7 @@ class Character
     end
     if p2 = @cyberware[type][cyber][:Parent]
       t2 = p2[/eyes|ears/] ? "SE" : "CY"
-      @cyberware[t2][p2][:Children].delete(cyber.to_sym)
+      @cyberware[t2][p2][:Children].delete(cyber)
       @cyberware[t2][p2].delete(:Children) if @cyberware[t2][p2][:Children].empty?
     end
     @nuyenrem += @cyberware[type][cyber][:Price].to_i
@@ -2164,10 +2186,9 @@ class Cyberblock < Gtk::Frame
 
   def installcyber(actual,cyber,level,lvl,side,parent)
     child = nil
-    if parent
-      if parent[1]
-        @model2.each {|x,y,z| child = @model2.append(z) if z[0] == parent[1]}
-      end
+    if parent && parent[1]
+      pp parent[1]
+      @model2.each {|x,y,z| child = @model2.append(z) if z[0] == parent[1]}
     else
       child = @model2.append(nil)
     end
