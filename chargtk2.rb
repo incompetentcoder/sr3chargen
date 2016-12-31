@@ -139,25 +139,37 @@ class Application
     @a.getnuyenrem
   end
 
-  def checkupdatecyberlvl(shorter,lvl,level,text,button)
-    array = lvlcalc(shorter,lvl,level)
+  def checkupdatecyberlvl(shorter,lvl,level,text,button,grade,option)
+    array = lvlcalc(shorter,lvl,level,grade.split(':')[0])
     text.text = sclspretty(array)
     button.sensitive = checkmoneycyber(array) ? false : true
+    button.sensitive = (button.sensitive? && checkspace(option,array[2])) if option
   end
 
-  def lvlcalc(shorter,replace,level)
+  def checkspace(option,space)
+    if option.empty?
+      true
+    else
+      option.values[0][:Space].to_f.round(2) >= space.to_f.round(2)
+    end
+  end
+
+  def lvlcalc(shorter,replace,level,grade)
+    shortg = CONSTANT[:grades][grade.to_sym]
     level = (replace == "L" ? "1" : "25") unless level 
-    [Dentaku(shorter[:Price].sub(/#{replace}/,level)).to_f.round,
+    [Dentaku(shorter[:Price].sub(/#{replace}/,level)+"*"+shortg[:Price].to_s).to_f.round,
      shorter[:Essence] ? 
-     Dentaku(shorter[:Essence].sub(/#{replace}/,level)).to_f.round(2) : 0]
+    Dentaku(shorter[:Essence].sub(/#{replace}/,level)+"*"+shortg[:Essence].to_s).to_f.round(2) : 0,
+    shorter[:ECU] ? 
+    Dentaku(shorter[:ECU]).to_f.round(2) : nil]
   end
 
   def sclspretty(array)
-    "Price: | #{array[0]} | Essence: #{array[1]}"
+    "Price: | #{array[0]} | Essence: #{array[1]}" + (array[2] ? " | ECU: #{array[2]}" : "")
   end
 
   def selectcyberlvl(cyber,lvl,shorter)
-    b = c = nil
+    b = c = d = nil
     case lvl
     when "Mp"
       text = "Select MP"
@@ -170,18 +182,23 @@ class Application
     dialog.action_area.layout_style=Gtk::ButtonBox::SPREAD
     spin = Gtk::SpinButton.new(*adj)
     dialog.vbox.add(Gtk::Label.new("#{cyber} : #{text}"))
-    dialog.vbox.add(a = Gtk::Label.new("#{sclspretty(lvlcalc(shorter,lvl,nil))}"))
+    dialog.vbox.add(a = Gtk::Label.new("#{sclspretty(lvlcalc(shorter,lvl,nil,"Normal"))}"))
+    grade = gradebox
+    grade.active = 1
+    dialog.vbox.add(grade)
     dialog.vbox.add(spin)
     ok = dialog.add_button("Ok",1)
     cancel = dialog.add_button("Cancel",-1)
-    spin.signal_connect('value_changed') {|x| checkupdatecyberlvl(shorter,lvl,x.value.to_s,a,ok)}
+    grade.signal_connect('changed') {|x| checkupdatecyberlvl(shorter,lvl,spin.value.to_s,a,ok,x.active_text,nil)}
+    spin.signal_connect('value_changed') {|x| checkupdatecyberlvl(shorter,lvl,x.value.to_s,a,ok,grade.active_text,nil)}
     dialog.show_all
     dialog.run do |response|
       b = response
       c = spin.value.to_i.to_s
+      d = grade.active_text.split(':')[0]
     end
     dialog.destroy
-    [b,c]
+    [b,c,d]
   end
 
   def checkmoneycyber(array)
@@ -206,16 +223,21 @@ class Application
     dialog.destroy if dialog
   end
 
-  def sidedialog(side)
-    b = c = nil
+  def sidedialog(side,shorter)
+    b = c = d = lvl = nil
     dialog=Gtk::Dialog.new("Choose side",@windows,Gtk::Dialog::MODAL)
     radio1 = Gtk::RadioButton.new("_Left")
     radio2 = Gtk::RadioButton.new(radio1,"_Right")
     dialog.vbox.add(Gtk::Label.new("Choose Side"))
+    grade = gradebox
+    grade.active = 1
+    dialog.vbox.add(grade)
+    dialog.vbox.add(a = Gtk::Label.new("#{sclspretty(lvlcalc(shorter,"L","1","Normal"))}"))
     dialog.vbox.add(radio1)
     dialog.vbox.add(radio2)
     ok = dialog.add_button("Ok",1)
     cancel = dialog.add_button("Cancel",-1)
+    grade.signal_connect('changed') {|x| checkupdatecyberlvl(shorter,"L","1",a,ok,x.active_text,nil)}
     if side
       if side == "Left" 
         radio1.sensitive = false;radio2.active=true
@@ -227,9 +249,10 @@ class Application
     dialog.run do |response|
       b = response
       c = (radio1.active? ? radio1 : radio2).label[1..-1]
+      d = grade.active_text.split(':')[0]
     end
     dialog.destroy
-    [b,c]
+    [b,c,d]
   end
 
   def selectside(cyber)
@@ -238,8 +261,8 @@ class Application
       side = cybernameincludesside(cyber)
     end
     if side != "error"
-      get = sidedialog(side)
-      get[0] > 0 ? get[1] : nil
+      get = sidedialog(side,cyber)
+      get[0] > 0 ? get[1..2] : nil
     else
       errordialog("already have cyberlimbs on both sides",nil)
       nil
@@ -261,11 +284,32 @@ class Application
     side
   end
 
+  def gradedialog(shorter)
+    b = c = nil
+    dialog=Gtk::Dialog.new("Choose grade",@windows,Gtk::Dialog::MODAL)
+    dialog.vbox.add(Gtk::Label.new("Choose grade"))
+    grade = gradebox
+    grade.active = 1
+    dialog.vbox.add(grade)
+    dialog.vbox.add(a = Gtk::Label.new("#{sclspretty(lvlcalc(shorter,"L","1","Normal"))}"))
+    ok = dialog.add_button("Ok",1)
+    cancel = dialog.add_button("Cancel",-1)
+    grade.signal_connect('changed') {|x| checkupdatecyberlvl(shorter,"L","1",a,ok,x.active_text,nil)}
+    dialog.show_all
+    dialog.run do |response|
+      b = response
+      c = grade.active_text.split(':')[0]
+    end
+    dialog.destroy
+    [b,c]
+  end
+
   def setcyber(cyber)
-    level = lvl = side = place = nil
+    level = lvl = side = place = grade = nil
     err = ""
     shorter = CONSTANT[:cyberware][cyber]
     installed = cybernamebaseincludes(@a.getcyberware)
+
     if shorter[:Conflicts]
       unless (conf = shorter[:Conflicts].split(",") & installed).empty?
 #        errordialog("Conflict",conf)
@@ -274,17 +318,22 @@ class Application
     end
     if shorter[:Required]
       if (shorter[:Required].split(",") & installed).empty?
-        pp cybernamebaseincludes(@a.getcyberware)
 #        errordialog("Required",shorter[:Required]);
         err+="Required: #{shorter[:Required]}\n"
+      elsif (shorter[:Option] && shorter[:Required][/hand|arm|foot|leg|limb/] && shorter[:ECU])
+        temp = @a.getcyberware["CY"].select { |x,y| 
+          ((y[:Includes].split(',')+[y[:Base]]) & shorter[:Required].split(','))[0]}
+        success = []
+        temp.each_pair {|x,y| success.push checkspace([{x => y}][0],shorter[:ECU])}
+        err+="Not enough Space in any Limb: #{shorter[:ECU]}\n" unless success.include?(true)
       end
     end
-    if (Dentaku(shorter[:Price].sub(/Mp/,'25').sub(/L/,'1')) > getnuyenrem)
+    if (Dentaku(shorter[:Price].sub(/Mp/,'25').sub(/L/,'1')) > getnuyenrem * 2)
 #      errordialog("Insufficient Money",getnuyenrem);
       err+="Insufficient Money: #{getnuyenrem}\n"
     end
     if shorter[:Essence] && !(shorter[:Option] && (installed.include?(shorter[:Cyberlimb])))
-      if (Dentaku(shorter[:Essence].sub(/Mp/,'25').sub(/L/,'1')) > getessence)
+      if (Dentaku(shorter[:Essence].sub(/Mp/,'25').sub(/L/,'1')) > getessence * 1.25)
 #      errordialog("Insufficient Essence",getessence);
         err+="Insufficient Essence: #{getessence}\n"
       end
@@ -299,6 +348,7 @@ class Application
     end
     if lvl = shorter[:Price][/Mp|L/]
       return unless (level = selectcyberlvl(cyber,lvl,shorter))[0] == 1
+      grade = level[2]
     end
     if option = shorter[:Option]
       if (cybernamebaseincludes(@a.getcyberware).include? shorter[:Cyberlimb])
@@ -306,18 +356,33 @@ class Application
           parent = [1,shorter[:Cyberlimb]]
         else
           return unless (parent = placeoption(shorter))[0] == 1
+          grade = parent[2]
         end
       end
     end
     if cyber.to_s.start_with?("Cyberlimb") && cyber.to_s[/torso|skull/].nil?
       return unless side = selectside(shorter)
+      grade = side[1]
+      side = side[0]
+    end
+    unless lvl || side || parent
+      return unless (grade = gradedialog(shorter))
     end
 
-    addcyber(shorter,cyber,level,lvl,side,parent)
+
+    addcyber(shorter,cyber,level,lvl,side,parent,grade)
+  end
+
+  def gradebox
+    a = Gtk::ComboBox.new
+    a.append_text("Used: Price*0.5")
+    a.append_text("Normal: no changes")
+    a.append_text("Alpha: Price*2 | Essence*0.8 | Space*0.9")
+    a
   end
 
   def placeoption(shorter)
-    b = c = nil
+    b = c = d = nil
     dialog = Gtk::Dialog.new("Put option into limb?",@windows,Gtk::Dialog::MODAL)
     temp = @a.getcyberware["CY"].select {|x,y| y[:Name].start_with?("Cyberlimb")}
     sides = { "Left Arm" => temp.select {|x,y| (x[/arm|hand/] &&
@@ -328,31 +393,46 @@ class Application
                              x.split(" ")[-1] == "Left")},
               "Right Leg" => temp.select {|x,y| (x[/leg|foot/] && 
                              x.split(" ")[-1] == "Right")}}
-    radios = [radio1 = Gtk::RadioButton.new("Left Arm: " + sides["Left Arm"].keys[0].to_s),
-    radio2 = Gtk::RadioButton.new(radio1,"Right Arm: " + sides["Right Arm"].keys[0].to_s),
-    radio3 = Gtk::RadioButton.new(radio1,"Left Leg: " + sides["Left Leg"].keys[0].to_s),
-    radio4 = Gtk::RadioButton.new(radio1,"Right Leg: " + sides["Right Leg"].keys[0].to_s)]
+    radios = [radio1 = Gtk::RadioButton.new("Left Arm: " + (sides["Left Arm"].empty? ? "" :
+      sides["Left Arm"].keys[0] + " Space:" + sides["Left Arm"].values[0][:Space].to_s)),
+    radio2 = Gtk::RadioButton.new(radio1,"Right Arm: " + (sides["Right Arm"].empty? ? "" :
+      sides["Right Arm"].keys[0] + " Space:" + sides["Right Arm"].values[0][:Space].to_s)),
+    radio3 = Gtk::RadioButton.new(radio1,"Left Leg: " + (sides["Left Leg"].empty? ? "" : 
+      sides["Left Leg"].keys[0] + " Space:" + sides["Left Leg"].values[0][:Space].to_s)),
+    radio4 = Gtk::RadioButton.new(radio1,"Right Leg: " + (sides["Right Leg"].empty? ? "" :
+      sides["Right Leg"].keys[0] + " Space:" + sides["Right Leg"].values[0][:Space].to_s))]
     dialog.vbox.add(Gtk::Label.new("Put option into limb?"))
+    dialog.vbox.add(a = Gtk::Label.new("#{sclspretty(lvlcalc(shorter,"L","1","Normal"))}"))    
+    grade = gradebox
+    grade.active = 1
+    dialog.vbox.add(grade)
     radios.each {|x| dialog.vbox.add(x)}
     ok = dialog.add_button("Ok",1)
     cancel = dialog.add_button("Cancel",-1)
     if shorter[:Required]
       radios.each do |x| 
         x.sensitive=false unless (sides[x.label.split(":")[0]].empty? ? false :
-          sides[x.label.split(":")[0]].values[0][:Includes].split(' ').include?(shorter[:Required]))
+        (((sides[x.label.split(":")[0]].values[0][:Includes].split(',') & shorter[:Required].split(","))[0] ||
+         ([sides[x.label.split(":")[0]].values[0][:Base].to_s] & shorter[:Required].split(","))[0]) &&
+        checkspace(sides[x.label.split(":")[0]],shorter[:ECU].to_f)))
       end
-      radios.find {|x| x.sensitive?}.active=true
     end
+    radios.each do |x|
+      x.sensitive=false unless checkspace(sides[x.label.split(":")[0]],shorter[:ECU].to_f)
+    end
+    (test = radios.find {|x| x.sensitive?}) ? test.active = true : (return [nil])
+    grade.signal_connect('changed') {|x| checkupdatecyberlvl(shorter,"L","1",a,ok,x.active_text,nil)} 
     dialog.show_all
     dialog.run do |response|
       b = response
       c = sides[radios[0].group.find {|x| x.active?}.label.split(':')[0]].keys[0]
+      d = grade.active_text.split(':')[0]
     end
     dialog.destroy
-    [b,c]
+    [b,c,d]
   end
 
-  def addcyber(shorter,cyber,level,lvl,side,parent)
+  def addcyber(shorter,cyber,level,lvl,side,parent,grade)
     actual = Marshal.load(Marshal.dump(shorter))
     if level
       [:Price,:Essence].each do |x|
@@ -362,6 +442,11 @@ class Application
       time = time.split(" ")
       actual[:Avail] = Dentaku(tn.sub(/#{lvl}/,level[1])).to_i.to_s + "/" +
         Dentaku(time[0].sub(/#{lvl}/,level[1])).to_i.to_s + " "+time[1]
+    end
+    if grade
+      [:Price,:Essence,:Space].each do |x|
+        actual[x] = Dentaku(actual[x]+"*"+CONSTANT[:grades][grade.to_sym][x].to_s).to_f.round(2) if actual[x]
+      end
     end
     type = actual[:Type]
     @notebook.cyber.installcyber(actual,cyber,level,lvl,side,parent)
@@ -373,7 +458,7 @@ class Application
   def remcyber(cyber,name)
     temp = Marshal.load(Marshal.dump(@a.getcyberware))
     actual = err = ""
-    temp.each {|x| actual = x[1].delete(cyber)}
+    temp.each {|x| actual = x[1].delete(cyber) if (x[1] && x[1][cyber])}
     if actual[:Children]
       err+="Options installed: #{actual[:Children]}\n"
     else
@@ -834,6 +919,10 @@ class Character
         @cyberware[par][parent[1]][:Children] = [] unless @cyberware[par][parent[1]][:Children]
         calcessenceoption(actual,@cyberware[par][parent[1]],par)
         @cyberware[par][parent[1]][:Children].push(cyber)
+        if actual[:ECU]
+          @cyberware[par][parent[1]][:Space] = 
+            (@cyberware[par][parent[1]][:Space].to_f - actual[:ECU].to_f).round(2).to_s
+        end
       end
     end
     @cyberware[type] = {} unless @cyberware[type]
