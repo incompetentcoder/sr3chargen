@@ -78,6 +78,14 @@ class Application
     a.sub!("insertage","#{getage}")
     a.sub!("insertsex","#{getgender == "Male" ? "♂" : "♀"}")
     a.sub!("insertrace","#{getmetatype}")
+#    binding.pry
+    temp = {}
+    @a.getcyberware.each {|x| temp.merge!(x[1])}
+    temp.first(7).each_with_index do |x,y|
+      a.sub!("cyber#{y}<","#{x[0]}<")
+      a.sub!("cyber#{y}r<","#{x[1][:Essence]}<")
+    end
+
     a.gsub!(/(skill|cyber|bio|spell|power)\d{1,}(r|f|d|l|c)?</,"<")
     a
   end
@@ -371,6 +379,7 @@ class Application
       grade = level[2]
     end
     if option = shorter[:Option]
+ #     binding.pry
       if (cybernamebaseincludes(@a.getcyberware).include? shorter[:Cyberlimb])
         if shorter[:Cyberlimb][/eyes|ears|skull|torso/]
           parent = [1,shorter[:Cyberlimb]]
@@ -389,6 +398,7 @@ class Application
     end
     unless lvl || side || parent
       return unless (grade = gradedialog(shorter))
+      grade = grade[1]
     end
 
     addcyber(shorter,cyber,level,lvl,side,parent,grade)
@@ -400,6 +410,16 @@ class Application
     a.append_text("Normal: no changes")
     a.append_text("Alpha: Price*2 | Essence*0.8 | Space*0.9")
     a
+  end
+
+  def sideincludes(limb,side,shorter)
+    return false if limb.empty?
+    all = limb.values[0][:Includes].split(',') + [limb.values[0][:Base].to_s] +
+      (limb.values[0][:Children] ? limb.values[0][:Children].map {|a| @a.getcyberware.find {|x| 
+      x[1].find {|y| y[0] == a}}[1].values[0].values_at(:Base,:Name)}.flatten : [])
+    binding.pry
+    pp all
+    !((all & shorter[:Required].split(',')).empty?)
   end
 
   def placeoption(shorter)
@@ -433,8 +453,9 @@ class Application
     if shorter[:Required]
       radios.each do |x| 
         x.sensitive=false unless (sides[x.label.split(":")[0]].empty? ? false :
-        (((sides[x.label.split(":")[0]].values[0][:Includes].split(',') & shorter[:Required].split(","))[0] ||
-         ([sides[x.label.split(":")[0]].values[0][:Base].to_s] & shorter[:Required].split(","))[0]) &&
+#        (((sides[x.label.split(":")[0]].values[0][:Includes].split(',') & shorter[:Required].split(","))[0] ||
+#         ([sides[x.label.split(":")[0]].values[0][:Base].to_s] & shorter[:Required].split(","))[0]) &&
+        (sideincludes(sides[x.label.split(':')[0]]," "+x.label.split(':')[0],shorter) &&
         checkspace(sides[x.label.split(":")[0]],shorter[:ECU].to_f) && checkhasoption(sides[x.label.split(":")[0]],shorter)))
       end
     end
@@ -938,18 +959,36 @@ class Character
       if parent[1]
         actual[:Parent] = parent[1]
         par = parent[1].start_with?("Cyberlimb") ? "CY" : "SE"
-        @cyberware[par][parent[1]][:Children] = [] unless @cyberware[par][parent[1]][:Children]
-        calcessenceoption(actual,@cyberware[par][parent[1]],par)
-        @cyberware[par][parent[1]][:Children].push(cyber.to_s + (level ? " " + level[1] : "") + (side ? " " + side : ""))
+#        @cyberware[par][parent[1]][:Children] = [] unless @cyberware[par][parent[1]][:Children]
+#        calcessenceoption(actual,@cyberware[par][parent[1]],par)
+#        @cyberware[par][parent[1]][:Children].push(cyber.to_s + (level ? " " + level[1] : "") + (side ? " " + side : ""))
         if actual[:ECU]
           @cyberware[par][parent[1]][:Space] = 
             (@cyberware[par][parent[1]][:Space].to_f - actual[:ECU].to_f).round(2).to_s
         end
+        if actual[:Required]
+          if (([@cyberware[par][parent[1]][:Base].to_s] + @cyberware[par][parent[1]][:Includes].split(',')) &
+            actual[:Required].split(',')).empty?
+            @cyberware[par][parent[1]][:Children].each do |a|
+              @cyberware.each do |b| 
+                temp = b[1].select {|c,d| c == a}.flatten
+                binding.pry
+                if temp[0] && [temp[1][:Name],temp[1][:Base]].include?(actual[:Required])
+                  actual[:Required] = temp[0]
+                  break
+                end
+              end
+            end
+          end
+        end
+        @cyberware[par][parent[1]][:Children] = [] unless @cyberware[par][parent[1]][:Children]
+        calcessenceoption(actual,@cyberware[par][parent[1]],par)
+        @cyberware[par][parent[1]][:Children].push(cyber.to_s + (level ? " " + level[1] : "") + (side ? " " + side : ""))
       end
     end
     @cyberware[type] = {} unless @cyberware[type]
     @cyberware[type][cyber.to_s + (level ? " " + level[1] : "") + (side ? " " + side : "")] = actual
-    (@special[:Essence] -= actual[:Essence].to_f.round(2)).to_f.round(2)
+    @special[:Essence] = (@special[:Essence] - actual[:Essence].to_f.round(2)).to_f.round(2)
     @nuyenrem -= actual[:Price].to_i
     if actual[:Stats]
       if actual[:Stats][:attributes]

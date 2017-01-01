@@ -2176,7 +2176,7 @@
   :Cyberlimb: Cyberlimb
   :ECU: '1'
   :Cmod: "-2"
-  :Base: Full Limb Strength Enhancement
+  :Base: Full Limb Strength Enhancementplus
 :Full Limb Strength Enhancementplus 5:
   :Name: Full Limb Strength Enhancementplus 5
   :Essence: '0.8'
@@ -2192,7 +2192,7 @@
   :Cyberlimb: Cyberlimb
   :ECU: '2'
   :Cmod: "-4"
-  :Base: Full Limb Strength Enhancement
+  :Base: Full Limb Strength Enhancementplus
 :Full Limb Strength Enhancementplus 6:
   :Name: Full Limb Strength Enhancementplus 6
   :Essence: '1.2'
@@ -2208,7 +2208,7 @@
   :Cyberlimb: Cyberlimb
   :ECU: '3'
   :Cmod: "-6"
-  :Base: Full Limb Strength Enhancement
+  :Base: Full Limb Strength Enhancementplus
 :Gas Spectrometer:
   :Name: Gas Spectrometer
   :Essence: '0.2'
@@ -3356,7 +3356,7 @@
   :Cyberlimb: Cyberlimb
   :ECU: '1'
   :Cmod: "-1"
-  :Base: Quickness Enhancement
+  :Base: Quickness Enhancementplus
 :Quickness Enhancementplus 5:
   :Name: Quickness Enhancementplus 5
   :Essence: '0.6'
@@ -3372,7 +3372,7 @@
   :Cyberlimb: Cyberlimb
   :ECU: '2'
   :Cmod: "-2"
-  :Base: Quickness Enhancement
+  :Base: Quickness Enhancementplus
 :Quickness Enhancementplus 6:
   :Name: Quickness Enhancementplus 6
   :Essence: '0.9'
@@ -3388,7 +3388,7 @@
   :Cyberlimb: Cyberlimb
   :ECU: '3'
   :Cmod: "-3"
-  :Base: Quickness Enhancement
+  :Base: Quickness Enhancementplus
 :RAS Override:
   :Name: RAS Override
   :Essence: '0.05'

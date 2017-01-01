@@ -178,9 +178,9 @@ Foot Anchor ¬0.4 ¬14000 ¬BO ¬Legal ¬6/7 days ¬2.0 ¬mm.28 ¬ ¬ ¬yes ¬ �
 Full Limb Strength Enhancement 1 ¬ ¬50000 ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-1 ¬ ¬Full Limb Strength Enhancement ¬ ¬ ¬ ¬
 Full Limb Strength Enhancement 2 ¬ ¬100000 ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-2 ¬ ¬Full Limb Strength Enhancement ¬ ¬ ¬ ¬
 Full Limb Strength Enhancement 3 ¬ ¬150000 ¬CY ¬6P-Q ¬6/4 days ¬1.5 ¬sr3.303 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-3 ¬ ¬Full Limb Strength Enhancement ¬ ¬ ¬ ¬
-Full Limb Strength Enhancementplus 4 ¬0.4 ¬75000 ¬CY ¬6P-R ¬6/4 days ¬1.5 ¬sr3.303 ¬Full Limb Strength Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬1 ¬ ¬-2 ¬ ¬Full Limb Strength Enhancement ¬ ¬ ¬ ¬
-Full Limb Strength Enhancementplus 5 ¬0.8 ¬150000 ¬CY ¬6P-R ¬6/4 days ¬1.5 ¬sr3.303 ¬Full Limb Strength Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬2 ¬ ¬-4 ¬ ¬Full Limb Strength Enhancement ¬ ¬ ¬ ¬
-Full Limb Strength Enhancementplus 6 ¬1.2 ¬225000 ¬CY ¬6P-R ¬6/4 days ¬1.5 ¬sr3.303 ¬Full Limb Strength Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬3 ¬ ¬-6 ¬ ¬Full Limb Strength Enhancement ¬ ¬ ¬ ¬
+Full Limb Strength Enhancementplus 4 ¬0.4 ¬75000 ¬CY ¬6P-R ¬6/4 days ¬1.5 ¬sr3.303 ¬Full Limb Strength Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬1 ¬ ¬-2 ¬ ¬Full Limb Strength Enhancementplus ¬ ¬ ¬ ¬
+Full Limb Strength Enhancementplus 5 ¬0.8 ¬150000 ¬CY ¬6P-R ¬6/4 days ¬1.5 ¬sr3.303 ¬Full Limb Strength Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬2 ¬ ¬-4 ¬ ¬Full Limb Strength Enhancementplus ¬ ¬ ¬ ¬
+Full Limb Strength Enhancementplus 6 ¬1.2 ¬225000 ¬CY ¬6P-R ¬6/4 days ¬1.5 ¬sr3.303 ¬Full Limb Strength Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬3 ¬ ¬-6 ¬ ¬Full Limb Strength Enhancementplus ¬ ¬ ¬ ¬
 Gas Spectrometer ¬0.2 ¬2500 ¬SE ¬Legal ¬4/6 days ¬1.0 ¬mm.14 ¬ ¬ ¬yes ¬ ¬ ¬ ¬0.5 ¬ ¬-0.5  ¬ ¬ ¬ ¬ ¬ ¬
 Gyromount ¬ ¬40000 ¬CY ¬4P-R ¬10/3 wks ¬2.0 ¬mm.36 ¬Cyberarm ¬ ¬yes ¬ ¬Cyberarm ¬ ¬4 ¬ ¬-1 ¬ ¬ ¬ ¬ ¬ ¬
 Hand Blade Retractable ¬0.25 ¬10000 ¬BO ¬4P-R ¬6/5 days ¬1.5 ¬sr3.302 ¬ ¬ ¬yes ¬ ¬Cyberhand ¬ ¬1 ¬12 ¬-0.5 ¬ ¬Hand Blade ¬ ¬ ¬(STR+3)L ¬
@@ -272,9 +272,9 @@ Protocol eumulation module ¬0.2 ¬L*5000 ¬RI ¬Legal ¬L+2/L days ¬2.0 ¬mm.2
 Quickness Enhancement 1 ¬ ¬30000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-0.5 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
 Quickness Enhancement 2 ¬ ¬60000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-1 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
 Quickness Enhancement 3 ¬ ¬90000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Cyberarm,Cyberleg ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬ ¬ ¬-1.5 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
-Quickness Enhancementplus 4 ¬0.3 ¬45000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬1 ¬ ¬-1 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
-Quickness Enhancementplus 5 ¬0.6 ¬90000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬2 ¬ ¬-2 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
-Quickness Enhancementplus 6 ¬0.9 ¬135000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬3 ¬ ¬-3 ¬ ¬Quickness Enhancement ¬ ¬ ¬ ¬
+Quickness Enhancementplus 4 ¬0.3 ¬45000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬1 ¬ ¬-1 ¬ ¬Quickness Enhancementplus ¬ ¬ ¬ ¬
+Quickness Enhancementplus 5 ¬0.6 ¬90000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬2 ¬ ¬-2 ¬ ¬Quickness Enhancementplus ¬ ¬ ¬ ¬
+Quickness Enhancementplus 6 ¬0.9 ¬135000 ¬CY ¬6P-Q ¬8/4 days ¬1.5 ¬mm.40 ¬Quickness Enhancement 3 ¬ ¬yes ¬3 ¬Cyberlimb ¬ ¬3 ¬ ¬-3 ¬ ¬Quickness Enhancementplus ¬ ¬ ¬ ¬
 RAS Override ¬0.05 ¬1000 ¬BR ¬Legal ¬4/48 hrs ¬1.0 ¬mm.21 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Radio Receiver ¬0.4 ¬L*1000 ¬CO ¬Legal ¬2/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
 Radio ¬0.75 ¬L*2000 ¬CO ¬Legal ¬2/24 hrs ¬0.8 ¬sr3.298 ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬ ¬
