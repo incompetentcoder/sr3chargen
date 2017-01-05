@@ -318,9 +318,9 @@ class Application
     elsif option.values[0][:Children]
       success = []
       option.values[0][:Children].each do |x|
-        temp = nil
-        @a.getcyberware.each {|y| temp = y[1].select {|z,a| z == x}}
-#        binding.pry
+        temp = {}
+        @a.getcyberware.each {|y| temp.merge! y[1].select {|z,a| z == x}}
+        binding.pry
         success.push (temp[x][:Base] == shorter[:Base] || 
                       temp[x][:Name] == shorter[:Name])
       end
@@ -414,10 +414,11 @@ class Application
 
   def sideincludes(limb,side,shorter)
     return false if limb.empty?
+  #  binding.pry
     all = limb.values[0][:Includes].split(',') + [limb.values[0][:Base].to_s] +
-      (limb.values[0][:Children] ? limb.values[0][:Children].map {|a| @a.getcyberware.find {|x| 
-      x[1].find {|y| y[0] == a}}[1].values[0].values_at(:Base,:Name)}.flatten : [])
-    binding.pry
+      (limb.values[0][:Children] ? limb.values[0][:Children].map {|a| @a.getcyberware.collect {|x| 
+      x[1].find {|y| y[0] == a}}.compact[0][1].values_at(:Base,:Name)}.flatten : [])
+  #  binding.pry
     pp all
     !((all & shorter[:Required].split(',')).empty?)
   end
@@ -972,7 +973,7 @@ class Character
             @cyberware[par][parent[1]][:Children].each do |a|
               @cyberware.each do |b| 
                 temp = b[1].select {|c,d| c == a}.flatten
-                binding.pry
+  #              binding.pry
                 if temp[0] && [temp[1][:Name],temp[1][:Base]].include?(actual[:Required])
                   actual[:Required] = temp[0]
                   break
@@ -993,10 +994,13 @@ class Character
     if actual[:Stats]
       if actual[:Stats][:attributes]
         actual[:Stats][:attributes].each_pair do |x,y|
-          @attributes[x][y.keys[0]]+=y.values[0]
+#          @attributes[x][y.keys[0]]+=y.values[0]
           @app.updateattr(x)
         end
       end
+    end
+    if actual[:Name].start_with? "Cyberlimb"
+      [:Body,:Quickness,:Strength].each {|x| @app.updateattr(x)}
     end
   end
 
@@ -1417,7 +1421,64 @@ class Character
     @spellpoints
   end
 
+  def updatecm(a,attr)
+    mod1 = mod2 = total = 0.0
+    limbs = []
+    halflimbs = []
+    @cyberware.each {|x| mod2 += x[1].values.collect {|y| hasstat(y,:Stats,:attributes,attr,:CM)}.compact.reduce(:+).to_i}
+    case attr
+    when :Strength
+      limbs = @cyberware["CY"].collect {|x| x[1] if x[0] =~ /Cyberlimb Cyber(arm|leg)/}.compact if @cyberware["CY"]
+      total = limbs.inject(0) do |sum,x|
+        if x[:Children] && test = x[:Children].find {|y| y=~/Strength.*plus/}
+          sum + test[/\d/].to_i
+        elsif x[:Children] && test = x[:Children] && x[:Children].find {|y| y=~/Strength.*/}
+          sum + test[/\d/].to_i
+        else
+          sum + 0
+        end if limbs
+      end 
+      mod1 = ((limbs.count * (4+a[:RM].to_f - a[:BA].to_f) + total.to_f)/4)    
+      mod2*(1-limbs.count/4) + mod1
+
+    when :Body
+      limbs = @cyberware["CY"].collect {|x| x[1] if x[0] =~ /Cyberlimb Cyber(arm|leg|torso)/}.compact if @cyberware["CY"]
+      halflimbs = @cyberware["CY"].collect {|x| x[1] if x[0] =~ /Cyberlimb Cyber(fore|hand|foot|skull)/}.compact if @cyberware["CY"]
+      mod1 = limbs.count/2 + halflimbs.count/4
+      mod2 - ((meh = limbs.count + halflimbs.count/2) > 2 ? (meh-2) : 0) + mod1
+
+    when :Quickness
+      limbs = @cyberware["CY"].collect {|x| x[1] if x[0] =~ /Cyberlimb Cyber(arm|leg)/}.compact if @cyberware["CY"]
+      total = limbs.inject(0) do |sum,x|
+        if x[:Children] && test = x[:Children].find {|y| y=~/Quickness.*plus/}
+          sum + test[/\d/].to_i
+        elsif x[:Children] && test = x[:Children] && x[:Children].find {|y| y=~/Quickness.*/}
+          sum + test[/\d/].to_i
+        else
+          sum + 0
+        end
+      end if limbs
+      mod1 = ((limbs.count * (4+a[:RM].to_f - a[:BA].to_f) + total.to_f)/4)
+      mod2 + mod1
+
+    end
+  end
+
+  def updatebm(a,attr)
+  end
+
+  def updatemm(a,attr)
+  end
+
+
   def updateattr(attr)
+    if [:Body,:Quickness,:Strength].include?(attr)
+      a = @attributes[attr]
+      a[:CM] = updatecm(a,attr).to_i
+      a[:BM] = updatebm(a,attr).to_i
+      a[:MM] = updatemm(a,attr).to_i
+    end
+
     @app.checkskills(attr, @attributes[attr][:BA] + @attributes[attr][:BM] +
                      @attributes[attr][:CM] + @attributes[attr][:MM],
                      @attributes[attr][:ACT],1)
