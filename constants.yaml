@@ -4632,6 +4632,6091 @@
           :CBM: 6
         :Initiative:
           :CBM: 3
+:gear:
+  :Barton Arms Bracer:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: Barton Arms Bracer
+      :Range: Hold-out
+      :Conc.: '7'
+      :Ammo: 1(b)
+      :Mode: O
+      :Damage: 6L
+      :Weight: '0.3'
+      :Price: '1300'
+      :Legality: 8P-E
+      :Avail: 12/7 days
+      :Index: '3.0'
+      :Page: cc.31
+  :Barton Arms Gun Cane:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: Barton Arms Gun Cane
+      :Range: Hold-out
+      :Conc.: 2/9
+      :Ammo: 1(b)
+      :Mode: O
+      :Damage: 6L
+      :Weight: '1'
+      :Price: '500'
+      :Legality: 6-K
+      :Avail: 10/7 days
+      :Index: '2.0'
+      :Page: cc.31
+  :Cavalier Scout:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: Cavalier Scout
+      :Range: Hold-out
+      :Conc.: '9'
+      :Ammo: 7(c)
+      :Mode: S
+      :Damage: 4L
+      :Weight: '0.25'
+      :Price: '600'
+      :Legality: 10P-E
+      :Avail: 10/72 hrs
+      :Index: '2.0'
+      :Page: cc.15
+  :Glock Bodygun:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: Glock Bodygun
+      :Range: Hold-out
+      :Conc.: '9'
+      :Ammo: 4(c)
+      :Mode: S
+      :Damage: 5L
+      :Weight: '0.5'
+      :Price: '1200'
+      :Legality: 5P-E
+      :Avail: 8/7 days
+      :Index: 3.0 cre.wd
+  :Last Chance .45 (s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: Last Chance .45 (s)
+      :Range: Hold-out
+      :Conc.: '5'
+      :Ammo: 6(y)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '1.0'
+      :Price: '650'
+      :Legality: 5P-E
+      :Avail: 7/5 days
+      :Index: '2.0'
+      :Page: kg11.47
+      :Extras:
+      - :Smartlink
+  :Morrissey Élan:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: Morrissey Élan
+      :Range: Hold-out
+      :Conc.: '8'
+      :Ammo: 5(c)
+      :Mode: S
+      :Damage: 5L
+      :Weight: '0.5'
+      :Price: '500'
+      :Legality: 10P-E
+      :Avail: 8/7 days
+      :Index: '2.0'
+      :Page: cc.16
+  :Raecor Sting:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: Raecor Sting
+      :Range: Hold-out
+      :Conc.: '9'
+      :Ammo: 5(c)
+      :Mode: O
+      :Damage: 4M(f)
+      :Weight: '0.25'
+      :Price: '375'
+      :Legality: 6P-E
+      :Avail: 10/7 days
+      :Index: '2.0'
+      :Page: cc.16
+  :StreetlineSpecial:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: StreetlineSpecial
+      :Range: Hold-out
+      :Conc.: '8'
+      :Ammo: 6(c)
+      :Mode: O
+      :Damage: 4L
+      :Weight: '0.5'
+      :Price: '100'
+      :Legality: 10P-E
+      :Avail: 2/12 hrs
+      :Index: '0.75'
+      :Page: sr3.276
+  :Tiffani Needler:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: Tiffani Needler
+      :Range: Hold-out
+      :Conc.: '8'
+      :Ammo: 4(c)
+      :Mode: S
+      :Damage: 5L(n)
+      :Weight: '0.5'
+      :Price: '650'
+      :Legality: 10P-E
+      :Avail: 7/48 hrs
+      :Index: '2.0'
+      :Page: cc.16
+  :Tiffani Self-Defender:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: Tiffani Self-Defender
+      :Range: Hold-out
+      :Conc.: '8'
+      :Ammo: 4(c)
+      :Mode: O
+      :Damage: 4L
+      :Weight: '0.5'
+      :Price: '450'
+      :Legality: 10P-E
+      :Avail: 2/12 hrs
+      :Index: '0.75'
+      :Page: cc.16
+  :Walther Palm Pistol:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Hold-out Pistols
+    :Stats:
+      :Name: Walther Palm Pistol
+      :Range: Hold-out
+      :Conc.: '9'
+      :Ammo: 2(b)
+      :Mode: O
+      :Damage: 4L
+      :Weight: '0.25'
+      :Price: '200'
+      :Legality: 10P-E
+      :Avail: 3/12 hrs
+      :Index: '0.75'
+      :Page: sr3.27
+  :Ares Light Fire 70:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Ares Light Fire 70
+      :Range: Light
+      :Conc.: '5'
+      :Ammo: 16(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '0.5'
+      :Price: '475'
+      :Legality: 8P-E
+      :Avail: 3/12 hrs
+      :Index: '0.8'
+      :Page: cc.16
+  :Ares Light Fire 70 (q):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Ares Light Fire 70 (q)
+      :Range: Light
+      :Conc.: '4'
+      :Ammo: 16(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '0.6'
+      :Price: '1125'
+      :Legality: 8P-E
+      :Avail: 3/12 hrs
+      :Index: '0.8'
+      :Page: cc.16
+      :Extras:
+      - :Silencer
+  :Beretta Model 101T:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Beretta Model 101T
+      :Range: Light
+      :Conc.: '5'
+      :Ammo: 10(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '1'
+      :Price: '350'
+      :Legality: 8P-E
+      :Avail: 3/12hrs
+      :Index: '0.8'
+      :Page: sr3.277
+  :Beretta 200ST (t):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Beretta 200ST (t)
+      :Range: Light
+      :Conc.: '4'
+      :Ammo: 26(c)
+      :Mode: S/B
+      :Damage: 6L
+      :Weight: '2'
+      :Price: '750'
+      :Legality: 6-G
+      :Avail: 5/24 hrs
+      :Index: '1.5'
+      :Page: cc.16
+      :Extras:
+      - :Telescoping stock
+  :Ceska vz/120:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Ceska vz/120
+      :Range: Light
+      :Conc.: '7'
+      :Ammo: 18(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '1'
+      :Price: '500'
+      :Legality: 8P-E
+      :Avail: 3/12 hrs
+      :Index: '0.8'
+      :Page: cc.16
+  :Colt America L36:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Colt America L36
+      :Range: Light
+      :Conc.: '6'
+      :Ammo: 11(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '1'
+      :Price: '350'
+      :Legality: 8P-E
+      :Avail: 3/12 hrs
+      :Index: '0.8'
+      :Page: sr3.277
+  :Colt Asp:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Colt Asp
+      :Range: Light
+      :Conc.: '5'
+      :Ammo: 6(y)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '1'
+      :Price: '200'
+      :Legality: 8P-E
+      :Avail: 3/12 hrs
+      :Index: '0.5'
+      :Page: cc.16
+  :Executive Action:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Executive Action
+      :Range: Light
+      :Conc.: '6'
+      :Ammo: 24(c)
+      :Mode: S/B
+      :Damage: 6L
+      :Weight: '1.5'
+      :Price: '1150'
+      :Legality: 6-G
+      :Avail: 14/7 days
+      :Index: '3.0'
+      :Page: cc.16
+  :Fichetti Security 500:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Fichetti Security 500
+      :Range: Light
+      :Conc.: '7'
+      :Ammo: 10(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '1'
+      :Price: '400'
+      :Legality: 8P-E
+      :Avail: 3/12 hrs
+      :Index: '0.8'
+      :Page: sr3.277
+  :Fichetti Security 500a (t):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Fichetti Security 500a (t)
+      :Range: Light
+      :Conc.: '6'
+      :Ammo: 25(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '1.25'
+      :Price: '450'
+      :Legality: 8P-E
+      :Avail: 3/12 hrs
+      :Index: '0.8'
+      :Page: sr3.277
+      :Extras:
+      - :Telescoping stock
+  :Hammerli Model 610S (1):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Hammerli Model 610S (1)
+      :Range: Heavy
+      :Conc.: '4'
+      :Ammo: 6(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '2.5'
+      :Price: '1295'
+      :Legality: 8P-E
+      :Avail: 8/24 hrs
+      :Index: '2.5'
+      :Page: fof.27
+      :Extras:
+      - &1
+        :recoil: 1
+  :SA Puzzler:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: SA Puzzler
+      :Range: Light
+      :Conc.: '6'
+      :Ammo: 12(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '0.75'
+      :Price: '900'
+      :Legality: 8P-E
+      :Avail: 9/1 wk
+      :Index: '2.0'
+      :Page: cc.16
+  :Seco LD-I20 (l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Seco LD-I20 (l)
+      :Range: Light
+      :Conc.: '5'
+      :Ammo: 12(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: '1'
+      :Price: '400'
+      :Legality: 8P-E
+      :Avail: 3/12 hrs
+      :Index: '0.8'
+      :Page: cc.16
+      :Extras:
+      - :Laser sight
+  :Taurus Multi-6:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Taurus Multi-6
+      :Range: Light
+      :Conc.: '6'
+      :Ammo: 6(y)
+      :Mode: O/S
+      :Damage: 6L/7M
+      :Weight: '1'
+      :Price: '500'
+      :Legality: 8P-E
+      :Avail: 5/24 hrs
+      :Index: '0.75'
+      :Page: cc.16
+  :Walther PB-120:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Light Pistols
+    :Stats:
+      :Name: Walther PB-120
+      :Range: Light
+      :Conc.: 8(6)
+      :Ammo: 10(15)(c)
+      :Mode: S
+      :Damage: 6L
+      :Weight: ".75"
+      :Price: '700'
+      :Legality: 8P-E
+      :Avail: 6/36 hrs
+      :Index: '2.0'
+      :Page: cc.1
+  :Ares Crusader MP (2):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Machinepistols
+    :Stats:
+      :Name: Ares Crusader MP (2)
+      :Range: MP
+      :Conc.: '6'
+      :Ammo: 40(c)
+      :Mode: S/B
+      :Damage: 6L
+      :Weight: '3.25'
+      :Price: '950'
+      :Legality: 5-G
+      :Avail: 5/36 hrs
+      :Index: '2.0'
+      :Page: cc.18
+      :Extras:
+      - &2
+        :recoil: 2
+  :Ceska Black Scorpion (t):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Machinepistols
+    :Stats:
+      :Name: Ceska Black Scorpion (t)
+      :Range: MP
+      :Conc.: '5'
+      :Ammo: 35(c)
+      :Mode: S/B
+      :Damage: 6L
+      :Weight: '3'
+      :Price: '850'
+      :Legality: 5-G
+      :Avail: 5/36 hrs
+      :Index: '2.0'
+      :Page: sr3.277
+      :Extras:
+      - :Telescoping stock
+  :Steyr TMP:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Machinepistols
+    :Stats:
+      :Name: Steyr TMP
+      :Range: MP
+      :Conc.: '6'
+      :Ammo: 30(c)
+      :Mode: S/B/F
+      :Damage: 6L
+      :Weight: '2'
+      :Price: '900'
+      :Legality: 5-G
+      :Avail: 8/48 hrs
+      :Index: '2.0'
+      :Page: cc.1
+  :AI Dagger (l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: AI Dagger (l)
+      :Range: Heavy
+      :Conc.: '6'
+      :Ammo: 15(c)
+      :Mode: S
+      :Damage: 8M
+      :Weight: '2'
+      :Price: '350'
+      :Legality: 6P-E
+      :Avail: 4/3 days
+      :Index: '1.0'
+      :Page: kg9.21
+      :Extras:
+      - :Laser sight
+  :Ares LongArm:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Ares LongArm
+      :Range: Heavy
+      :Conc.: '4'
+      :Ammo: 9(c)
+      :Mode: S
+      :Damage: 7M
+      :Weight: '3.25'
+      :Price: '1650'
+      :Legality: 6P-E
+      :Avail: 4/3 days
+      :Index: '1.5'
+      :Page: kg11.47
+  :Ares Predator:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Ares Predator
+      :Range: Heavy
+      :Conc.: '5'
+      :Ammo: 15(c)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '2.25'
+      :Price: '450'
+      :Legality: 6P-E
+      :Avail: 3/24 hrs
+      :Index: '0.5'
+      :Page: sr3.277
+  :Ares Predator II (s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Ares Predator II (s)
+      :Range: Heavy
+      :Conc.: '4'
+      :Ammo: 15(c)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '2.5'
+      :Price: '550'
+      :Legality: 6P-E
+      :Avail: 4/24 hrs
+      :Index: '0.5'
+      :Page: cc.18
+      :Extras:
+      - :Smartlink
+  :Ares Predator III (S):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Ares Predator III (S)
+      :Range: Heavy
+      :Conc.: '4'
+      :Ammo: 15(c)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '2.25'
+      :Price: '650'
+      :Legality: 6P-E
+      :Avail: 5/24 hrs
+      :Index: '1'
+      :Page: cc.18
+      :Extras:
+      - :Smartlink2
+  :Ares Redline:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Ares Redline
+      :Range: Heavy
+      :Conc.: '3'
+      :Ammo: 10(bat)
+      :Mode: S
+      :Damage: 12M
+      :Weight: '5'
+      :Price: '75000'
+      :Legality: 4-K
+      :Avail: 18/3 wks
+      :Index: '3.0'
+      :Page: cc.30
+  :Ares Viper Slivergun (q):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Ares Viper Slivergun (q)
+      :Range: Heavy
+      :Conc.: '6'
+      :Ammo: 30(c)
+      :Mode: S
+      :Damage: 9S(f)
+      :Weight: '2'
+      :Price: '600'
+      :Legality: 6P-E
+      :Avail: 3/48 hrs
+      :Index: 1.0 sr3.277
+      :Extras:
+      - :Silencer
+  :ASW/GL Plus 20:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: ASW/GL Plus 20
+      :Range: Heavy
+      :Conc.: '5'
+      :Ammo: 12(c)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '1.75'
+      :Price: '600'
+      :Legality: 6P-E
+      :Avail: 4/48 hrs
+      :Index: '1.2'
+      :Page: kg2.26
+  :Browning Max-Power:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Browning Max-Power
+      :Range: Heavy
+      :Conc.: '6'
+      :Ammo: 10(c)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '2'
+      :Price: '450'
+      :Legality: 6P-E
+      :Avail: 3/24 hrs
+      :Index: '1.0'
+      :Page: sr3.277
+  :Browning Ultra-Power (l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Browning Ultra-Power (l)
+      :Range: Heavy
+      :Conc.: '6'
+      :Ammo: 10(c)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '2.25'
+      :Price: '525'
+      :Legality: 6P-E
+      :Avail: 4/24 hrs
+      :Index: '1.5'
+      :Page: cc.18
+      :Extras:
+      - :Laser sight
+  :Cavalier Deputy:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Cavalier Deputy
+      :Range: Heavy
+      :Conc.: '4'
+      :Ammo: 7(y)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '2.25'
+      :Price: '300'
+      :Legality: 6P-E
+      :Avail: 3/24 hrs
+      :Index: '0.5'
+      :Page: cc.18
+  :Colt Manhunter (l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Colt Manhunter (l)
+      :Range: Heavy
+      :Conc.: '5'
+      :Ammo: 16(c)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '2.5'
+      :Price: '425'
+      :Legality: 6P-E
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.18
+      :Extras:
+      - :Laser sight
+  :FN 5-7C (1):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: FN 5-7C (1)
+      :Range: Heavy
+      :Conc.: '5'
+      :Ammo: 20(c)
+      :Mode: S/B
+      :Damage: 6L
+      :Weight: '2.5'
+      :Price: '700'
+      :Legality: 6P-E
+      :Avail: 9/48 hrs
+      :Index: '2.0'
+      :Page: cc.18
+      :Extras:
+      - *1
+  :Glock-30:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Glock-30
+      :Range: Heavy
+      :Conc.: '4'
+      :Ammo: 30(c)
+      :Mode: S/B
+      :Damage: 8M
+      :Weight: '2.5'
+      :Price: '1700'
+      :Legality: 5P-G
+      :Avail: 6/48 hrs
+      :Index: 2.5 cb1.43
+  :Morrissey Alta (l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Morrissey Alta (l)
+      :Range: Heavy
+      :Conc.: '6'
+      :Ammo: 12(c)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '1'
+      :Price: '1200'
+      :Legality: 6P-E
+      :Avail: 8/48 hrs
+      :Index: '2.0'
+      :Page: cc.19
+      :Extras:
+      - :Laser sight
+  :Morrissey Elite (l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Morrissey Elite (l)
+      :Range: Light
+      :Conc.: '7'
+      :Ammo: 5(c)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '1'
+      :Price: '550'
+      :Legality: 6P-E
+      :Avail: 6/48 hrs
+      :Index: '0.5'
+      :Page: cc.19
+      :Extras:
+      - :Laser sight
+  :Remington Roomsweeper:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Remington Roomsweeper
+      :Range: Heavy
+      :Conc.: '6'
+      :Ammo: 8(m)
+      :Mode: S
+      :Damage: 9S(f)
+      :Weight: '2.5'
+      :Price: '300'
+      :Legality: 6P-E
+      :Avail: 3/24 hrs
+      :Index: 1.0 sr3.277
+  :Ruger Super Warhawk:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Ruger Super Warhawk
+      :Range: Heavy
+      :Conc.: '4'
+      :Ammo: 6(y)
+      :Mode: O
+      :Damage: 10M
+      :Weight: '2.5'
+      :Price: '300'
+      :Legality: 6P-E
+      :Avail: 3/24 hrs
+      :Index: '1.0'
+      :Page: sr3.277
+  :Ruger Thunderbolt Pistol (l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Ruger Thunderbolt Pistol (l)
+      :Range: Heavy
+      :Conc.: '4'
+      :Ammo: 12(c)
+      :Mode: B
+      :Damage: 12S(bf)
+      :Weight: '2.75'
+      :Price: '1250'
+      :Legality: 2P-E
+      :Avail: 14/12 days
+      :Index: '6.0'
+      :Page: cc.19
+      :Extras:
+      - :Laser sight
+  :Ruger Thunderbolt Pistol (s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Ruger Thunderbolt Pistol (s)
+      :Range: Heavy
+      :Conc.: '4'
+      :Ammo: 12(c)
+      :Mode: B
+      :Damage: 12S(bf)
+      :Weight: '2.75'
+      :Price: '1400'
+      :Legality: 2P-E
+      :Avail: 14/12 days
+      :Index: '6.0'
+      :Page: cc.19
+      :Extras:
+      - :Smartlink
+  :Savalette Guardian (1s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: Savalette Guardian (1s)
+      :Range: Heavy
+      :Conc.: '5'
+      :Ammo: 12(c)
+      :Mode: S/B
+      :Damage: 9M
+      :Weight: '3.25'
+      :Price: '900'
+      :Legality: 6P-E
+      :Avail: 6/36 hrs
+      :Index: '2.5'
+      :Page: cc.19
+      :Extras:
+      - *1
+      - :Smartlink
+  :WW Infiltrator:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Heavy Pistols
+    :Stats:
+      :Name: WW Infiltrator
+      :Range: Heavy
+      :Conc.: '5'
+      :Ammo: 15(c)
+      :Mode: S
+      :Damage: 9M
+      :Weight: '2'
+      :Price: '1200'
+      :Legality: 6P-E
+      :Avail: 9/1 wk
+      :Index: '2.0'
+      :Page: cc.1
+  :Ares Cascade:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Ares Cascade
+      :Range: SMG/Shotgun
+      :Conc.: '4'
+      :Ammo: 60/100(c)
+      :Mode: S
+      :Damage: As chemical
+      :Weight: '5.5'
+      :Price: '1800'
+      :Legality: 6P-E
+      :Avail: 12/14 days
+      :Index: '2.0'
+      :Page: mm.115
+  :Ares Squirt:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Ares Squirt
+      :Range: Light
+      :Conc.: '7'
+      :Ammo: 10/20
+      :Mode: S
+      :Damage: chemical
+      :Weight: '1.75'
+      :Price: '750'
+      :Legality: 4-E
+      :Avail: 8/3 days
+      :Index: '2.0'
+      :Page: st.92
+  :Ares Supersquirt II:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Ares Supersquirt II
+      :Range: Light
+      :Conc.: '7'
+      :Ammo: 20/20(c)
+      :Mode: S
+      :Damage: As chemical
+      :Weight: '2'
+      :Price: '800'
+      :Legality: 6P-E
+      :Avail: 9/14 days
+      :Index: '1.5'
+      :Page: mm.115
+  :Dart Pistol:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Dart Pistol
+      :Range: Light
+      :Conc.: '7'
+      :Ammo: 5(c)
+      :Mode: S
+      :Damage: toxin
+      :Weight: '1.5'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 6/2 days
+      :Index: '2.0'
+      :Page: mm.116
+  :Dart Rifle:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Dart Rifle
+      :Range: Shotgun
+      :Conc.: '4'
+      :Ammo: 10(c)
+      :Mode: S
+      :Damage: toxin
+      :Weight: '3.25'
+      :Price: '1700'
+      :Legality: Legal
+      :Avail: 8/2 days
+      :Index: '2.0'
+      :Page: mm.116
+  :Defiance Super Shock:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Defiance Super Shock
+      :Range: Taser
+      :Conc.: '4'
+      :Ammo: 4(m)
+      :Mode: S
+      :Damage: 10S stun
+      :Weight: '2'
+      :Price: '1000'
+      :Legality: 6P-E
+      :Avail: 5/24 hrs
+      :Index: '1.0'
+      :Page: sr3.277
+  :ETI Zeus Volter:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: ETI Zeus Volter
+      :Range: Taser
+      :Conc.: '4'
+      :Ammo: 6(charge)
+      :Mode: A
+      :Damage: 7S stun/7S
+      :Weight: '4'
+      :Price: '50000'
+      :Legality: 5-K
+      :Avail: 12/7days
+      :Index: '3.0'
+      :Page: cb2.43
+  :Flamethrower:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Flamethrower
+      :Range: Shotgun
+      :Conc.: " "
+      :Ammo: 10(tank)
+      :Mode: O
+      :Damage: 8M fire
+      :Weight: '21'
+      :Price: '1000'
+      :Legality: 2-K
+      :Avail: 10/1 wk
+      :Index: '3.0'
+      :Page: cc.29
+  :FN-AAL Gyrojet Pisrtol:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: FN-AAL Gyrojet Pisrtol
+      :Range: Heavy
+      :Conc.: '5'
+      :Ammo: 10(c)
+      :Mode: S
+      :Damage: 12M
+      :Weight: '2'
+      :Price: '1000'
+      :Legality: 6-K
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: cc.31
+  :Grapple Gun:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Grapple Gun
+      :Range: Heavy Crossbow
+      :Conc.: '7'
+      :Ammo: '1'
+      :Mode: O
+      :Damage: '2.25'
+      :Weight: '450'
+      :Price: 4P-U
+      :Legality: 4/36 hrs
+      :Avail: '2.0'
+      :Index: sr3.295
+  :Kendachi Dragon Flamer:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Kendachi Dragon Flamer
+      :Range: Taser
+      :Conc.: '3'
+      :Ammo: '4'
+      :Mode: O
+      :Damage: 6S fire
+      :Weight: '3.0'
+      :Price: '1600'
+      :Legality: 3-K
+      :Avail: 6/7 days
+      :Index: '2.5'
+      :Page: cb1.48
+  :Lightning Plasma Shock:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Lightning Plasma Shock
+      :Range: Heavy
+      :Conc.: '4'
+      :Ammo: 12(c)
+      :Mode: S
+      :Damage: 7M stun
+      :Weight: '3.0'
+      :Price: '3500'
+      :Legality: 6-K
+      :Avail: 14/14 days
+      :Index: '2.5'
+      :Page: kg6.34
+  :Mjolnir Plasma:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Mjolnir Plasma
+      :Range: Cannon
+      :Conc.: 20(c)
+      :Ammo: S
+      :Mode: 14D stun
+      :Damage: '20'
+      :Weight: '50000'
+      :Price: 4-K
+      :Legality: 18/14 days
+      :Avail: '2.5'
+      :Index: kg6.33
+  :Narcoject Pistol:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Narcoject Pistol
+      :Range: Light
+      :Conc.: '7'
+      :Ammo: 5(c)
+      :Mode: S
+      :Damage: As toxin
+      :Weight: '1.5'
+      :Price: '600'
+      :Legality: 4P-E
+      :Avail: 6/2 days
+      :Index: '2.0'
+      :Page: ssc.62
+  :Narcoject Rifle:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Narcoject Rifle
+      :Range: Shotgun
+      :Conc.: '4'
+      :Ammo: 10(c)
+      :Mode: S
+      :Damage: toxin
+      :Weight: '3.25'
+      :Price: '1700'
+      :Legality: 4P-F
+      :Avail: 8/2 days
+      :Index: '2.0'
+      :Page: ssc.62
+  :Net Gun Standard:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Net Gun Standard
+      :Range: SMG
+      :Conc.: '4'
+      :Ammo: 4(b)
+      :Mode: S
+      :Damage: Special
+      :Weight: '4'
+      :Price: '750'
+      :Legality: 6P-E
+      :Avail: 8/36 hrs
+      :Index: '2.0'
+      :Page: cc.31
+  :Net Gun Large:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Net Gun Large
+      :Range: SMG
+      :Conc.: '3'
+      :Ammo: 4(b)
+      :Mode: S
+      :Damage: Special
+      :Weight: '4.5'
+      :Price: '1150'
+      :Legality: 6P-E
+      :Avail: 8/36 hrs
+      :Index: '2.0'
+      :Page: cc.31
+  :Bacteriatech, standard:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Bacteriatech, standard
+      :Range: SMG
+      :Conc.: '3'
+      :Ammo: 4(b)
+      :Mode: S
+      :Damage: Special
+      :Weight: '4.5'
+      :Price: '1500'
+      :Legality: 6P-E
+      :Avail: 8/14 days
+      :Index: '4.0'
+      :Page: cs.70
+  :Bacteriatech, large:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Bacteriatech, large
+      :Range: SMG
+      :Conc.: '2'
+      :Ammo: 4(b)
+      :Mode: S
+      :Damage: Special
+      :Weight: '5'
+      :Price: '2500'
+      :Legality: 6P-E
+      :Avail: 8/14 days
+      :Index: '5.0'
+      :Page: cs.70
+  :Shiawase Blazer:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Shiawase Blazer
+      :Range: Light
+      :Conc.: '4'
+      :Ammo: 4(tank)
+      :Mode: O
+      :Damage: 6M fire
+      :Weight: '6'
+      :Price: '750'
+      :Legality: 4-K
+      :Avail: 12/2 wks
+      :Index: '3.0'
+      :Page: cc.30
+  :Splat Gun:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Splat Gun
+      :Range: Shotgun
+      :Conc.: '4'
+      :Ammo: 2(m)
+      :Mode: O
+      :Damage: special
+      :Weight: '3'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 9/7 days
+      :Index: '2.0'
+      :Page: mm.116
+  :Spray Tank:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Spray Tank
+      :Range: Taser
+      :Conc.: '4'
+      :Ammo: '20'
+      :Mode: O
+      :Damage: chemical
+      :Weight: '5'
+      :Price: '100'
+      :Legality: Legal
+      :Avail: 3/12 hrs
+      :Index: '1.0'
+      :Page: mm.116
+  :Thunderbolt Plasma Shock:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Thunderbolt Plasma Shock
+      :Range: Assault
+      :Conc.: '2'
+      :Ammo: 24(c)
+      :Mode: S
+      :Damage: 8M stun
+      :Weight: '6'
+      :Price: '5500'
+      :Legality: 5-K
+      :Avail: 16/14 days
+      :Index: '2.5'
+      :Page: kg6.34
+  :Winter System Microflare:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Winter System Microflare
+      :Range: Bow
+      :Conc.: '3'
+      :Ammo: '1'
+      :Mode: O
+      :Damage: 5M
+      :Weight: '2'
+      :Price: '50'
+      :Legality: Legal
+      :Avail: 2/12 hrs
+      :Index: '1.0'
+      :Page: ssc.46
+  :Yamaha Pulsar:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Special Weapons
+    :Stats:
+      :Name: Yamaha Pulsar
+      :Range: Taser
+      :Conc.: '5'
+      :Ammo: 4(m)
+      :Mode: S
+      :Damage: 8D stun
+      :Weight: '2.0'
+      :Price: '1350'
+      :Legality: 6P-E
+      :Avail: 12/7 dyas
+      :Index: '2.0'
+      :Page: cc.1
+  :AK-97 SMG/Carbine (t):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: AK-97 SMG/Carbine (t)
+      :Range: SMG
+      :Conc.: '4'
+      :Ammo: 30(c)
+      :Mode: S/B/F
+      :Damage: 6M
+      :Weight: '4'
+      :Price: '800'
+      :Legality: 4-G
+      :Avail: 5/3 days
+      :Index: '1.0'
+      :Page: sr2.239
+      :Extras:
+      - :Telescoping stock
+  :Ares Executive Protector (qt):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Ares Executive Protector (qt)
+      :Range: SMG
+      :Conc.: 10/3
+      :Ammo: 35(c)
+      :Mode: S/B/F
+      :Damage: 6M
+      :Weight: 5/3
+      :Price: '2000'
+      :Legality: 4-G
+      :Avail: 6/3 days
+      :Index: '1.5'
+      :Page: cc.30
+      :Extras:
+      - :Silencer
+      - :Telescoping stock
+  :Beretta Model 70 (lq):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Beretta Model 70 (lq)
+      :Range: SMG
+      :Conc.: '3'
+      :Ammo: 35(c)
+      :Mode: B/F
+      :Damage: 6M
+      :Weight: '3.75'
+      :Price: '900'
+      :Legality: 4-G
+      :Avail: 5/72 hrs
+      :Index: '1.0'
+      :Page: cc.19
+      :Extras:
+      - :Laser sight
+      - :Silencer
+  :Colt Cobra TZ-110 (2t):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Colt Cobra TZ-110 (2t)
+      :Range: SMG
+      :Conc.: '4'
+      :Ammo: 32(c)
+      :Mode: S/B/F
+      :Damage: 6M
+      :Weight: '3'
+      :Price: '800'
+      :Legality: 4-G
+      :Avail: 6/36 hrs
+      :Index: '2.0'
+      :Page: cc.20
+      :Extras:
+      - *2
+      - :Telescoping stock
+  :Colt Cobra TZ-115 (l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Colt Cobra TZ-115 (l)
+      :Range: SMG
+      :Conc.: '4'
+      :Ammo: 32(c)
+      :Mode: S/B/F
+      :Damage: 6M
+      :Weight: '3'
+      :Price: '750'
+      :Legality: 4-G
+      :Avail: 6/36 hrs
+      :Index: '2.0'
+      :Page: cc.20
+      :Extras:
+      - :Laser sight
+  :Colt Cobra TZ-118 (s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Colt Cobra TZ-118 (s)
+      :Range: SMG
+      :Conc.: '4'
+      :Ammo: 32(c)
+      :Mode: S/B/F
+      :Damage: 6M
+      :Weight: '3'
+      :Price: '850'
+      :Legality: 4-G
+      :Avail: 6/36 hrs
+      :Index: '2.0'
+      :Page: cc.20
+      :Extras:
+      - :Smartlink
+  :Colt M24A3:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Colt M24A3
+      :Range: SMG
+      :Conc.: '5'
+      :Ammo: 30(c)
+      :Mode: S/B
+      :Damage: 6M
+      :Weight: '3.5'
+      :Price: '1000'
+      :Legality: 2-G
+      :Avail: 5/48 hrs
+      :Index: '2.5'
+      :Page: cc.20
+  :ETI Rotary 05 (3s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: ETI Rotary 05 (3s)
+      :Range: SMG(S)
+      :Conc.: '3'
+      :Ammo: 120(b)
+      :Mode: F
+      :Damage: 6L
+      :Weight: '1.5'
+      :Price: '19000'
+      :Legality: 3-G
+      :Avail: 14/15 days
+      :Index: '3.0'
+      :Page: cb1.50
+      :Extras:
+      - &3
+        :recoil: 3
+      - :Smartlink
+  :Heckler & Koch HK227 (2lt):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Heckler & Koch HK227 (2lt)
+      :Range: SMG
+      :Conc.: '4'
+      :Ammo: 28(c)
+      :Mode: S/B/F
+      :Damage: 7M
+      :Weight: '4'
+      :Price: '1500'
+      :Legality: 4-G
+      :Avail: 4/24 hrs
+      :Index: '0.75'
+      :Page: sr3.277
+      :Extras:
+      - *2
+      - :Laser sight
+      - :Telescoping stock
+  :HK227-S (2lqt):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: HK227-S (2lqt)
+      :Range: SMG
+      :Conc.: '5'
+      :Ammo: 28(c)
+      :Mode: S/B
+      :Damage: 7M
+      :Weight: '3'
+      :Price: '1200'
+      :Legality: 3-G
+      :Avail: 10/7 days
+      :Index: '2.0'
+      :Page: sr3.277
+      :Extras:
+      - *2
+      - :Laser sight
+      - :Silencer
+      - :Telescoping stock
+  :Heckler & Koch MP-5T X (2l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Heckler & Koch MP-5T X (2l)
+      :Range: SMG
+      :Conc.: '5'
+      :Ammo: 20(c)
+      :Mode: S/B/F
+      :Damage: 6M
+      :Weight: '3.25'
+      :Price: '850'
+      :Legality: 4-G
+      :Avail: 5/36 hrs
+      :Index: '1.0'
+      :Page: cc.20
+      :Extras:
+      - *2
+      - :Laser sight
+  :Ingram Smartgun (2st):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Ingram Smartgun (2st)
+      :Range: SMG
+      :Conc.: '5'
+      :Ammo: 32(c)
+      :Mode: B/F
+      :Damage: 7M
+      :Weight: '3'
+      :Price: '950'
+      :Legality: 4-G
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: sr3.277
+      :Extras:
+      - *2
+      - :Smartlink
+      - :Telescoping stock
+  :Ingram Super Mach 100 (3):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Ingram Super Mach 100 (3)
+      :Range: SMG(S)
+      :Conc.: '4'
+      :Ammo: 60(c)
+      :Mode: S/B/F
+      :Damage: 6L
+      :Weight: '3'
+      :Price: '850'
+      :Legality: 3-G
+      :Avail: 9/48 hrs
+      :Index: '3.0'
+      :Page: cc.20
+      :Extras:
+      - *3
+  :Ingram Warrior-10:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Ingram Warrior-10
+      :Range: SMG
+      :Conc.: '4'
+      :Ammo: 30(c)
+      :Mode: S/B
+      :Damage: 7M
+      :Weight: '3'
+      :Price: '650'
+      :Legality: 5-G
+      :Avail: 3/24 hrs
+      :Index: '0.9'
+      :Page: cc.20
+  :Sandler TMP (lt):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Sandler TMP (lt)
+      :Range: SMG
+      :Conc.: '4'
+      :Ammo: 20(c)
+      :Mode: B/F
+      :Damage: 6M
+      :Weight: '3.25'
+      :Price: '500'
+      :Legality: 4-G
+      :Avail: 5/36 hrs
+      :Index: '1.0'
+      :Page: cc.20
+      :Extras:
+      - :Laser sight
+      - :Telescoping stock
+  :SCK Model 100 (s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: SCK Model 100 (s)
+      :Range: SMG
+      :Conc.: '4'
+      :Ammo: 30(c)
+      :Mode: S/B
+      :Damage: 7M
+      :Weight: '4.5'
+      :Price: '1000'
+      :Legality: 4-G
+      :Avail: 5/36hrs
+      :Index: '1.0'
+      :Page: cc.21
+      :Extras:
+      - :Smartlink
+  :Steyr AUG-CSL (1l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Steyr AUG-CSL (1l)
+      :Range: SMG
+      :Conc.: '5'
+      :Ammo: 40(c)
+      :Mode: S/B
+      :Damage: 6M
+      :Weight: '3.5'
+      :Price: '4500'
+      :Legality: 3-G
+      :Avail: 10/4 days 3.0
+      :Index: cc.23
+      :Extras:
+      - *1
+      - :Laser sight
+  :Uzi III (lt):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :SMGs
+    :Stats:
+      :Name: Uzi III (lt)
+      :Range: SMG
+      :Conc.: '5'
+      :Ammo: 24(c)
+      :Mode: B
+      :Damage: 6M
+      :Weight: '2'
+      :Price: '600'
+      :Legality: 4-G
+      :Avail: 4/24 hrs
+      :Index: '0.75'
+      :Page: sr3.27
+      :Extras:
+      - :Laser sight
+      - :Telescoping stock
+  :Barret Model 121 (2s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Rifles
+    :Stats:
+      :Name: Barret Model 121 (2s)
+      :Range: Sniper
+      :Conc.: " "
+      :Ammo: 14(c)
+      :Mode: S
+      :Damage: 14D
+      :Weight: '10'
+      :Price: '4800'
+      :Legality: 2-J
+      :Avail: 14/30 days
+      :Index: '5.0'
+      :Page: cc.21
+      :Extras:
+      - *2
+      - :Smartlink
+  :ETI Thor Ramjet Rifle (s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Rifles
+    :Stats:
+      :Name: ETI Thor Ramjet Rifle (s)
+      :Range: Sniper
+      :Conc.: " "
+      :Ammo: 9(c)
+      :Mode: S
+      :Damage: 5S/11D
+      :Weight: '4.5'
+      :Price: '100000'
+      :Legality: 1-K
+      :Avail: 17/20 days
+      :Index: '4.0'
+      :Page: cb2.36
+      :Extras:
+      - :Smartlink
+  :HK G38 (2lt):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Support Weapons
+    :Stats:
+      :Name: HK G38 (2lt)
+      :Range: LMG
+      :Conc.: " "
+      :Ammo: 30(c)
+      :Mode: B/F
+      :Damage: 8M
+      :Weight: '4'
+      :Price: '4000'
+      :Legality: 3-H
+      :Avail: 12/1 wk
+      :Index: '3.0'
+      :Page: cc.22
+      :Extras:
+      - *2
+      - :Laser sight
+      - :Telescoping stock
+  :Morph-Seeking Rifle (cS):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Rifles
+    :Stats:
+      :Name: Morph-Seeking Rifle (cS)
+      :Range: Sniper
+      :Conc.: " "
+      :Ammo: 6(m)
+      :Mode: S
+      :Damage: 16S
+      :Weight: 6 unavailable
+      :Price: 1-K
+      :Legality: unaviailable
+      :Avail: tnn.152
+      :Extras:
+      - 
+      - :Smartlink2
+  :Ranger Arms SM-3 (2oq):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Rifles
+    :Stats:
+      :Name: Ranger Arms SM-3 (2oq)
+      :Range: Sniper
+      :Conc.: " "
+      :Ammo: 6(m)
+      :Mode: S
+      :Damage: 14S
+      :Weight: '4'
+      :Price: '4000'
+      :Legality: 2-K
+      :Avail: 12/7 days
+      :Index: '4.0'
+      :Page: sr3.278
+      :Extras:
+      - *2
+      - &5
+        :Magnification: 3
+      - :Silencer
+  :Remington 750 (m):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Rifles
+    :Stats:
+      :Name: Remington 750 (m)
+      :Range: Sporting
+      :Conc.: '3'
+      :Ammo: 5(m)
+      :Mode: S
+      :Damage: 7S
+      :Weight: '3'
+      :Price: '600'
+      :Legality: 5P-F
+      :Avail: 3/24 hrs
+      :Index: '1.0'
+      :Page: sr3.278
+      :Extras:
+      - &4
+        :Magnification: 1
+  :Remington 950 (m):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Rifles
+    :Stats:
+      :Name: Remington 950 (m)
+      :Range: Sporting
+      :Conc.: '2'
+      :Ammo: 5(m)
+      :Mode: S
+      :Damage: 9S
+      :Weight: '4'
+      :Price: '1300'
+      :Legality: 5P-F
+      :Avail: 3/24 hrs
+      :Index: '1.0'
+      :Page: sr3.278
+      :Extras:
+      - *4
+  :Ruger 100 (o):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Rifles
+    :Stats:
+      :Name: Ruger 100 (o)
+      :Range: Sporting
+      :Conc.: '2'
+      :Ammo: 5(m)
+      :Mode: S
+      :Damage: 7S
+      :Weight: '3.75'
+      :Price: '1300'
+      :Legality: 5P-F
+      :Avail: 3/24 hrs
+      :Index: '1.0'
+      :Page: cc.21
+      :Extras:
+      - *5
+  :Steyr AUG-CSL Carbine (1l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Rifles
+    :Stats:
+      :Name: Steyr AUG-CSL Carbine (1l)
+      :Range: Sporting
+      :Conc.: '3'
+      :Ammo: 40(c)
+      :Mode: S/B
+      :Damage: 7S
+      :Weight: '3.75'
+      :Price: '4500'
+      :Legality: 3-F
+      :Avail: 10/4 days
+      :Index: '3.0'
+      :Page: cc.23
+      :Extras:
+      - *1
+      - :Laser sight
+  :Walther WA 2100 (s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Rifles
+    :Stats:
+      :Name: Walther WA 2100 (s)
+      :Range: Sniper
+      :Conc.: " "
+      :Ammo: 10(m)
+      :Mode: S
+      :Damage: 14S
+      :Weight: '4.5'
+      :Price: '6500'
+      :Legality: 2-J
+      :Avail: 12/7 days
+      :Index: '4.0'
+      :Page: cc.2
+      :Extras:
+      - :Smartlink
+  :Ares Thunderer:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Ares Thunderer
+      :Range: Shotgun
+      :Conc.: '1'
+      :Ammo: 10(c)
+      :Mode: S/B
+      :Damage: 10S
+      :Weight: '6.1'
+      :Price: '2925'
+      :Legality: 10P-E
+      :Avail: 8/1 mnth
+      :Index: '3.0'
+      :Page: cc.78
+  :Chandler Capture 100 (g):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Chandler Capture 100 (g)
+      :Range: Shotgun
+      :Conc.: '3'
+      :Ammo: 12(c)
+      :Mode: S
+      :Damage: 8S
+      :Weight: '3.75'
+      :Price: '1500'
+      :Legality: 5P-F
+      :Avail: 4/48 hrs
+      :Index: '1.5'
+      :Page: kg2.26
+      :Extras:
+      - :Minigrenade launcher
+  :Chandler Capture 100/SM (gs):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Chandler Capture 100/SM (gs)
+      :Range: Shotgun
+      :Conc.: '2'
+      :Ammo: 12(c)
+      :Mode: S
+      :Damage: 8S
+      :Weight: '4.0'
+      :Price: '2000'
+      :Legality: 5P-F
+      :Avail: 5/48 hrs
+      :Index: '1.7'
+      :Page: kg2.26
+      :Extras:
+      - :Minigrenade launcher
+      - :Smartlink
+  :Integral grenade launcher:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Integral grenade launcher
+      :Range: GR
+      :Conc.: "-2"
+      :Ammo: 4(m)
+      :Mode: O
+      :Damage: as genade
+      :Weight: "+2.0"
+      :Price: '1500'
+      :Legality: 5P-F
+      :Avail: 4/48 hrs
+      :Index: '1.5'
+      :Page: kg2.26
+  :Defiance T-250:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Defiance T-250
+      :Range: Shotgun
+      :Conc.: '4'
+      :Ammo: 5(m)
+      :Mode: S
+      :Damage: 10S
+      :Weight: '3'
+      :Price: '1400'
+      :Legality: 5P-F
+      :Avail: 3/24 hrs
+      :Index: '1.0'
+      :Page: sr3.279
+  :Eichiro Hatamoto II:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Eichiro Hatamoto II
+      :Range: Shotgun
+      :Conc.: '6'
+      :Ammo: 1(m)
+      :Mode: O
+      :Damage: 8S
+      :Weight: '2.5'
+      :Price: '1200'
+      :Legality: 5P-F
+      :Avail: 12/7 days
+      :Index: '2.0'
+      :Page: cc.18
+  :Enfield AS-7 (l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Enfield AS-7 (l)
+      :Range: Shotgun
+      :Conc.: '3'
+      :Ammo: 10(c)
+      :Mode: S/B
+      :Damage: 8S
+      :Weight: '4'
+      :Price: '1000'
+      :Legality: 5P-F
+      :Avail: 8/8 days
+      :Index: '1.0'
+      :Page: sr3.279
+      :Extras:
+      - :Laser sight
+  :Franchi SPAS-22 (t):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Franchi SPAS-22 (t)
+      :Range: Shotgun
+      :Conc.: 2(4)
+      :Ammo: 10(m)
+      :Mode: S/B
+      :Damage: 10S
+      :Weight: '4'
+      :Price: '1000'
+      :Legality: 5-F
+      :Avail: 8/8 days
+      :Index: '2.0'
+      :Page: cc.23
+      :Extras:
+      - :Telescoping stock
+  :H&K-101 Shotgun (3c):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: H&K-101 Shotgun (3c)
+      :Range: Shotgun
+      :Conc.: '4'
+      :Ammo: 30(c)
+      :Mode: S/B/F
+      :Damage: 7S(f)
+      :Weight: '2.75'
+      :Price: '2385'
+      :Legality: 3-G
+      :Avail: 10/5 days
+      :Index: '2.0'
+      :Page: cb1.48
+      :Extras:
+      - *3
+      - 
+  :Mossberg CMDT (l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Mossberg CMDT (l)
+      :Range: Shotgun
+      :Conc.: '2'
+      :Ammo: 8(c)
+      :Mode: S/B
+      :Damage: 9S
+      :Weight: '4.25'
+      :Price: '1000'
+      :Legality: 5-F
+      :Avail: 8/8 days
+      :Index: '2.0'
+      :Page: cc.23
+      :Extras:
+      - :Laser sight
+  :Mossberg CMDT/5M (s):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Mossberg CMDT/5M (s)
+      :Range: Shotgun
+      :Conc.: '2'
+      :Ammo: 8(c)
+      :Mode: S/B
+      :Damage: 9S
+      :Weight: '4.5'
+      :Price: '1500'
+      :Legality: 3-F
+      :Avail: 12/8 days
+      :Index: '2.0'
+      :Page: cc.23
+      :Extras:
+      - :Smartlink
+  :Remington 990:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Remington 990
+      :Range: Shotgun
+      :Conc.: '2'
+      :Ammo: 8(m)
+      :Mode: S
+      :Damage: 8S/10D(f)
+      :Weight: '4'
+      :Price: '650'
+      :Legality: 5P-F
+      :Avail: 3/48 hrs
+      :Index: '2.0'
+      :Page: cc.23
+  :Street Sweeper:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Shotguns
+    :Stats:
+      :Name: Street Sweeper
+      :Range: Shotgun
+      :Conc.: " "
+      :Ammo: 1(b)
+      :Mode: O
+      :Damage: 10S(f)
+      :Weight: '3'
+      :Price: '200'
+      :Legality: 3-F
+      :Avail: 5/24 hrs
+      :Index: '2.0'
+      :Page: cc.2
+  :AI R-11:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: AI R-11
+      :Range: Assault
+      :Conc.: '3'
+      :Ammo: 30(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '4'
+      :Price: '1100'
+      :Legality: 4-G
+      :Avail: 5/3 days
+      :Index: '1.0'
+      :Page: kg9.21
+  :AK-97:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: AK-97
+      :Range: Assault
+      :Conc.: '3'
+      :Ammo: 38(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '4.5'
+      :Price: '700'
+      :Legality: 2-G
+      :Avail: 3/36 hrs
+      :Index: '2.0'
+      :Page: sr3.278
+  :AK-98 (g):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: AK-98 (g)
+      :Range: Assault
+      :Conc.: '2'
+      :Ammo: 38(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '6'
+      :Price: '2500'
+      :Legality: 1-G
+      :Avail: 8/4 days
+      :Index: '4.0'
+      :Page: sr3.278
+      :Extras:
+      - :Minigrenade launcher
+  :Ares Alpha (2gS):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: Ares Alpha (2gS)
+      :Range: Assault
+      :Conc.: '2'
+      :Ammo: 42(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '5.25'
+      :Price: '2000'
+      :Legality: 1-G
+      :Avail: 8/48 hrs
+      :Index: '4.0'
+      :Page: cc.22
+      :Extras:
+      - *2
+      - :Minigrenade launcher
+      - :Smartlink2
+  :Ares ELD-AR:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: Ares ELD-AR
+      :Range: Assault
+      :Conc.: '4'
+      :Ammo: 50(c)
+      :Mode: S/B
+      :Damage: ammo
+      :Weight: '4.5'
+      :Price: '950'
+      :Legality: Legal
+      :Avail: 9/7 days
+      :Index: '2.0'
+      :Page: mm.115
+  :Ares HVAR (3S):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: Ares HVAR (3S)
+      :Range: Assault(S)
+      :Conc.: '2'
+      :Ammo: 50(c)
+      :Mode: S/B/F
+      :Damage: 6M
+      :Weight: '5'
+      :Price: '3200'
+      :Legality: 1-G
+      :Avail: 14/7 days
+      :Index: '4.0'
+      :Page: cc.22
+      :Extras:
+      - *3
+      - :Smartlink2
+  :Colt M22a2 (1gn):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: Colt M22a2 (1gn)
+      :Range: Assault
+      :Conc.: '3'
+      :Ammo: 40(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '4.75'
+      :Price: '1600'
+      :Legality: 2-G
+      :Avail: 4/3 days
+      :Index: '2.0'
+      :Page: cc.22
+      :Extras:
+      - *1
+      - :Minigrenade launcher
+      - :Magnification: 2
+  :Colt M-23:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: Colt M-23
+      :Range: Assault
+      :Conc.: '3'
+      :Ammo: 40(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '4.5'
+      :Price: '950'
+      :Legality: 3-G
+      :Avail: 6/36 hrs
+      :Index: '2.0'
+      :Page: cc.22
+  :FN HAR (2lt):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: FN HAR (2lt)
+      :Range: Assault
+      :Conc.: '2'
+      :Ammo: 35(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '4.5'
+      :Price: '1200'
+      :Legality: 2-G
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: sr3.277
+      :Extras:
+      - *2
+      - :Laser sight
+      - :Telescoping stock
+  :HK G12A3z (2lt):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: HK G12A3z (2lt)
+      :Range: Assault
+      :Conc.: '2'
+      :Ammo: 32(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '5.25'
+      :Price: '2200'
+      :Legality: 2-G
+      :Avail: 8/4 days
+      :Index: '3.0'
+      :Page: cc.22
+      :Extras:
+      - *2
+      - :Laser sight
+      - :Telescoping stock
+  :Samopal vz 88V (2lot):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: Samopal vz 88V (2lot)
+      :Range: Assault
+      :Conc.: '2'
+      :Ammo: 35(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '5.5'
+      :Price: '1800'
+      :Legality: 2-G
+      :Avail: 5/36 hrs
+      :Index: '2.0'
+      :Page: cc.23
+      :Extras:
+      - *2
+      - :Laser sight
+      - *5
+      - :Telescoping stock
+  :Sioux M-31a1 AICW (3cg):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: Sioux M-31a1 AICW (3cg)
+      :Range: Assault
+      :Conc.: " "
+      :Ammo: 150(c)
+      :Mode: S/B/F
+      :Damage: 7M
+      :Weight: '4.5'
+      :Price: '3000'
+      :Legality: 2-K
+      :Avail: 18/7 days
+      :Index: '2.0'
+      :Page: cb1.45
+      :Extras:
+      - *3
+      - 
+      - :Minigrenade launcher
+  :Steyr AUG-CSL AR (1l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Assault Rifles
+    :Stats:
+      :Name: Steyr AUG-CSL AR (1l)
+      :Range: Assault
+      :Conc.: '2'
+      :Ammo: 40(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '4.0'
+      :Price: '4500'
+      :Legality: 2-G
+      :Avail: 10/4 days
+      :Index: '3.0'
+      :Page: cc.2
+      :Extras:
+      - *1
+      - :Laser sight
+  :Ares HV MP-LMG (3S):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Support Weapons
+    :Stats:
+      :Name: Ares HV MP-LMG (3S)
+      :Range: LMG
+      :Conc.: " "
+      :Ammo: Belt/80(c)
+      :Mode: S/B/F
+      :Damage: 6S
+      :Weight: '8'
+      :Price: '4500'
+      :Legality: 2-K
+      :Avail: 20/14 days
+      :Index: '4.0'
+      :Page: cc.25
+      :Extras:
+      - *3
+      - :Smartlink2
+  :Ares MP Laser:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Support Weapons
+    :Stats:
+      :Name: Ares MP Laser
+      :Range: Sniper
+      :Conc.: " "
+      :Ammo: 20(pack)
+      :Mode: S
+      :Damage: 15M
+      :Weight: '30'
+      :Price: 2.5M
+      :Legality: 1-K
+      :Avail: NA
+      :Index: NA
+      :Page: ssc.54
+  :Ares MP Laser III:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Support Weapons
+    :Stats:
+      :Name: Ares MP Laser III
+      :Range: Sniper
+      :Conc.: " "
+      :Ammo: 20(pack)
+      :Mode: S
+      :Damage: 15M
+      :Weight: '20'
+      :Price: '120000'
+      :Legality: 2-K
+      :Avail: 24/3 wks
+      :Index: '3.0'
+      :Page: cc.30
+  :Ares MP-LMG (2bl):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Support Weapons
+    :Stats:
+      :Name: Ares MP-LMG (2bl)
+      :Range: LMG
+      :Conc.: " "
+      :Ammo: Belt/50(c)
+      :Mode: B/F
+      :Damage: 7S
+      :Weight: '7.5'
+      :Price: '2200'
+      :Legality: 2-H
+      :Avail: 6/5 days
+      :Index: '2.0'
+      :Page: cc.26
+      :Extras:
+      - *2
+      - :Brace pad
+      - :Laser sight
+  :Armtech MGL-12:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Support Weapons
+    :Stats:
+      :Name: Armtech MGL-12
+      :Range: GR
+      :Conc.: '3'
+      :Ammo: 12(c)
+      :Mode: S
+      :Damage: as grenade
+      :Weight: '5'
+      :Price: '2200'
+      :Legality: 1-K
+      :Avail: 6/36 hrs
+      :Index: '3.0'
+      :Page: cc.26
+  :Armtech MGL-Mini6:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Support Weapons
+    :Stats:
+      :Name: Armtech MGL-Mini6
+      :Range: GR
+      :Conc.: '6'
+      :Ammo: 6(c)
+      :Mode: S
+      :Damage: as grenade
+      :Weight: '2.5'
+      :Price: '1600'
+      :Legality: 1-K
+      :Avail: 6/36 hrs
+      :Index: '3.0'
+      :Page: cc.26
+  :Generic Under-Barrel Mini-Grenade Launcher:
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Support Weapons
+    :Stats:
+      :Name: Generic Under-Barrel Mini-Grenade Launcher
+      :Range: GR
+      :Conc.: "-3"
+      :Ammo: 6(m)
+      :Mode: O
+      :Damage: as grenade
+      :Weight: "+2"
+      :Price: '1700'
+      :Legality: 1-K
+      :Avail: 8/4 days
+      :Index: '3.0'
+      :Page: sr2.240
+  :Ingram Valiant (2b):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Support Weapons
+    :Stats:
+      :Name: Ingram Valiant (2b)
+      :Range: LMG
+      :Conc.: " "
+      :Ammo: Belt/50(c)
+      :Mode: B/F
+      :Damage: 7S
+      :Weight: '9'
+      :Price: '1500'
+      :Legality: 1-H
+      :Avail: 6/5 days
+      :Index: '2.0'
+      :Page: sr3.279
+      :Extras:
+      - *2
+      - :Brace pad
+  :Steyr AUG CSL (1l):
+    :Type:
+    - :Weapon
+    - :Firearm
+    - :Support Weapons
+    :Stats:
+      :Name: Steyr AUG CSL (1l)
+      :Range: LMG
+      :Conc.: " "
+      :Ammo: 40(c)
+      :Mode: S/B/F
+      :Damage: 8M
+      :Weight: '5.5'
+      :Price: '4500'
+      :Legality: 3-H
+      :Avail: 10/4 days
+      :Index: '3.0'
+      :Page: cc.2
+      :Extras:
+      - *1
+      - :Laser sight
+  :Bow:
+    :Type:
+    - :Weapon
+    - :Projectile Weapons
+    :Stats:
+      :Name: Bow
+      :Conc.: '2'
+      :Strength Min: 1+
+      :Damage: "(STR Min+2)M"
+      :Weight: '1'
+      :Price: 100*(STR Min)
+      :Legality: 5-D
+      :Avail: 3/36 hrs
+      :Index: '1.0'
+      :Page: sr3.276
+  :Crossbow Light:
+    :Type:
+    - :Weapon
+    - :Projectile Weapons
+    :Stats:
+      :Name: Crossbow Light
+      :Conc.: '2'
+      :Strength Min: '3'
+      :Damage: 6L
+      :Weight: '2'
+      :Price: '300'
+      :Legality: 6-D
+      :Avail: 4/36 hrs
+      :Index: '1.0'
+      :Page: sr3.276
+  :Crossbow  Medium:
+    :Type:
+    - :Weapon
+    - :Projectile Weapons
+    :Stats:
+      :Name: Crossbow  Medium
+      :Conc.: '2'
+      :Strength Min: '4'
+      :Damage: 6M
+      :Weight: '3'
+      :Price: '500'
+      :Legality: 6-D
+      :Avail: 5/36 hrs
+      :Index: '1.0'
+      :Page: sr3.276
+  :Crossbow  Heavy:
+    :Type:
+    - :Weapon
+    - :Projectile Weapons
+    :Stats:
+      :Name: Crossbow  Heavy
+      :Conc.: NA
+      :Strength Min: '5'
+      :Damage: 8S
+      :Weight: '4'
+      :Price: '750'
+      :Legality: 5-D
+      :Avail: 6/36 hrs
+      :Index: '1.0'
+      :Page: sr3.276
+  :Crossbow  Pistol:
+    :Type:
+    - :Weapon
+    - :Projectile Weapons
+    :Stats:
+      :Name: Crossbow  Pistol
+      :Conc.: '5'
+      :Strength Min: '2'
+      :Damage: 4L
+      :Weight: '1'
+      :Price: '200'
+      :Legality: 8P-D
+      :Avail: 3/26 hrs
+      :Index: '1.0'
+      :Page: cc.13
+  :Crossbow  Repeater:
+    :Type:
+    - :Weapon
+    - :Projectile Weapons
+    :Stats:
+      :Name: Crossbow  Repeater
+      :Conc.: '2'
+      :Strength Min: '4'
+      :Damage: 6M
+      :Weight: '4'
+      :Price: '800'
+      :Legality: 5P-D
+      :Avail: 8/48 hrs
+      :Index: '2.0'
+      :Page: cc.13
+  :Compressed Air Crossbow Light:
+    :Type:
+    - :Weapon
+    - :Projectile Weapons
+    :Stats:
+      :Name: Compressed Air Crossbow Light
+      :Conc.: '5'
+      :Strength Min: '1'
+      :Damage: 5M
+      :Weight: '2'
+      :Price: '550'
+      :Legality: 5-D
+      :Avail: 4/3 days
+      :Index: '2.0'
+      :Page: kg5.34
+  :Compressed Air Crossbow Heavy:
+    :Type:
+    - :Weapon
+    - :Projectile Weapons
+    :Stats:
+      :Name: Compressed Air Crossbow Heavy
+      :Conc.: '3'
+      :Strength Min: '1'
+      :Damage: 5S
+      :Weight: '4'
+      :Price: '800'
+      :Legality: 5-D
+      :Avail: 6/3 days
+      :Index: '2.0'
+      :Page: kg5.34
+  :Ranger-X Compound Bow:
+    :Type:
+    - :Weapon
+    - :Projectile Weapons
+    :Stats:
+      :Name: Ranger-X Compound Bow
+      :Conc.: '2'
+      :Strength Min: 2+
+      :Damage: "(STR Min+4)M"
+      :Weight: '1.5'
+      :Price: '550'
+      :Legality: 5P-D
+      :Avail: 5/36 hrs
+      :Index: '2.0'
+      :Page: cc.1
+  :Ares Monosword:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Ares Monosword
+      :Type: Edged
+      :Conc.: '3'
+      :Range: '1'
+      :Damage: "(STR+3)M"
+      :Weight: '2'
+      :Price: '1000'
+      :Legality: 3-B
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.8
+  :AZ-I50 Stun Baton:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Clubs
+    :Stats:
+      :Name: AZ-I50 Stun Baton
+      :Type: Clubs
+      :Conc.: '5'
+      :Range: '1'
+      :Damage: 8S Stun
+      :Weight: '1'
+      :Price: '1500'
+      :Legality: 5-C
+      :Avail: 3/36 hrs
+      :Index: '2.0'
+      :Page: cc.10
+  :Bo Staff:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Polearm
+    :Stats:
+      :Name: Bo Staff
+      :Type: Polearm
+      :Conc.: '2'
+      :Range: '2'
+      :Damage: "(STR+3)M Stun"
+      :Weight: '2'
+      :Price: '50'
+      :Legality: 8-C
+      :Avail: 4/48 hrs
+      :Index: '1.0'
+      :Page: cc.10
+  :Centurion Laser Axe:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Centurion Laser Axe
+      :Type: Edged
+      :Conc.: '2'
+      :Range: '1'
+      :Damage: "(STR)S"
+      :Weight: '5.2'
+      :Price: '3500'
+      :Legality: 3-B
+      :Avail: 6/48 hrs
+      :Index: '0.5'
+      :Page: ssc.7
+  :Chainknife:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Chainknife
+      :Type: Edged
+      :Conc.: '4'
+      :Range: '0'
+      :Damage: 3M
+      :Weight: '0.5'
+      :Price: '120'
+      :Legality: 3-B
+      :Avail: 6/72 hrs
+      :Index: '1.0'
+      :Page: cb2.44
+  :Chainsaw Large:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Chainsaw Large
+      :Type: Edged
+      :Conc.: " "
+      :Range: '1'
+      :Damage: 6S
+      :Weight: '4'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 3/8 hrs
+      :Index: '1.0'
+      :Page: kg7.37
+  :Chainsaw Small:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Chainsaw Small
+      :Type: Edged
+      :Conc.: " "
+      :Range: '1'
+      :Damage: 4M
+      :Weight: '1.5'
+      :Price: '100'
+      :Legality: Legal
+      :Avail: 2/8 hrs
+      :Index: '1.0'
+      :Page: kg7.37
+  :Claymore:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Polearm
+    :Stats:
+      :Name: Claymore
+      :Type: Polearm
+      :Conc.: " "
+      :Range: '2'
+      :Damage: "(STR+1)S"
+      :Weight: '6'
+      :Price: '1000'
+      :Legality: 3-B
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: cc.10
+  :Club:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Clubs
+    :Stats:
+      :Name: Club
+      :Type: Clubs
+      :Conc.: '5'
+      :Range: '1'
+      :Damage: "(STR+1)M Stun"
+      :Weight: '1'
+      :Price: '10'
+      :Legality: 6-C
+      :Avail: 2/6 hrs
+      :Index: '1.0'
+      :Page: sr3.275
+  :Combat Axe:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Combat Axe
+      :Type: Edged
+      :Conc.: '2'
+      :Range: '2'
+      :Damage: "(STR)S"
+      :Weight: '2.0'
+      :Price: '750'
+      :Legality: 3-B
+      :Avail: 3/24 hrs
+      :Index: '2.0'
+      :Page: sr3.275
+  :Cougar Short Blade:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Cougar Short Blade
+      :Type: Edged
+      :Conc.: '8'
+      :Range: '0'
+      :Damage: "(STR)M"
+      :Weight: '0.5'
+      :Price: '800'
+      :Legality: 8-A
+      :Avail: 5/72 hrs
+      :Index: '3.0'
+      :Page: cc.8
+  :Cougar Long Blade:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Cougar Long Blade
+      :Type: Edged
+      :Conc.: '5'
+      :Range: '0'
+      :Damage: "(STR+1)M"
+      :Weight: '0.75'
+      :Price: '1500'
+      :Legality: 8-A
+      :Avail: 8/72 hrs
+      :Index: '3.0'
+      :Page: cc.8
+  :Extendable Baton:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Clubs
+    :Stats:
+      :Name: Extendable Baton
+      :Type: Clubs
+      :Conc.: 9/5
+      :Range: '1'
+      :Damage: "(STR+1)M Stun"
+      :Weight: '1'
+      :Price: '25'
+      :Legality: 6-C
+      :Avail: 3/24 hrs
+      :Index: '1.0'
+      :Page: cc.8
+  :Forearm Snap Blades:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Forearm Snap Blades
+      :Type: Edged
+      :Conc.: '7'
+      :Range: '0'
+      :Damage: "(STR)M"
+      :Weight: '1.5'
+      :Price: '850'
+      :Legality: 4-B
+      :Avail: 4/48 hrs
+      :Index: 2.0 sr3.275
+  :Hardliner Gloves:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Unarmed
+    :Stats:
+      :Name: Hardliner Gloves
+      :Type: Unarmed
+      :Conc.: '9'
+      :Range: '0'
+      :Damage: "(STR+1)M Stun"
+      :Weight: '0.5'
+      :Price: '300'
+      :Legality: 8-C
+      :Avail: 2/24 hrs
+      :Index: '0.75'
+      :Page: cc.49
+  :Harpoon:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Polearm
+    :Stats:
+      :Name: Harpoon
+      :Type: Polearm
+      :Conc.: '2'
+      :Range: '2'
+      :Damage: "(STR+2)M"
+      :Weight: '4'
+      :Price: '500'
+      :Legality: 4-C
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: cc.10
+  :Javelin:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Polearm
+    :Stats:
+      :Name: Javelin
+      :Type: Polearm
+      :Conc.: '3'
+      :Range: '2'
+      :Damage: "(STR+2)L"
+      :Weight: '2'
+      :Price: '100'
+      :Legality: 6-C
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: cc.10
+  :Katana:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Katana
+      :Type: Edged
+      :Conc.: '3'
+      :Range: '1'
+      :Damage: "(STR+3)M"
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: 5-B
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: sr3.275
+  :Katar:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Katar
+      :Type: Edged
+      :Conc.: '7'
+      :Range: '0'
+      :Damage: "(STR+3)L"
+      :Weight: '0.75'
+      :Price: '800'
+      :Legality: 6-A
+      :Avail: 5/72 hrs
+      :Index: '2.0'
+      :Page: cc.8
+  :Knife:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Knife
+      :Type: Edged
+      :Conc.: '8'
+      :Range: '0'
+      :Damage: "(STR)L"
+      :Weight: '0.5'
+      :Price: '30'
+      :Legality: 8-A
+      :Avail: 2/4 hrs
+      :Index: '0.75'
+      :Page: sr3.275
+  :Kris:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Kris
+      :Type: Edged
+      :Conc.: '7'
+      :Range: '0'
+      :Damage: "(STR)M"
+      :Weight: '0.75'
+      :Price: '1000'
+      :Legality: 5-A
+      :Avail: 8/72 hrs
+      :Index: '3.0'
+      :Page: cc.8
+  :Kusarigama:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Whips
+    :Stats:
+      :Name: Kusarigama
+      :Type: Whips
+      :Conc.: '8'
+      :Range: '2'
+      :Damage: "(STR+1)M"
+      :Weight: '1'
+      :Price: '200'
+      :Legality: 5-C
+      :Avail: 6/48 hrs
+      :Index: '2.0'
+      :Page: cc.11
+  :Macauitl:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Macauitl
+      :Type: Edged
+      :Conc.: '3'
+      :Range: '1'
+      :Damage: "(STR+2)M"
+      :Weight: '1'
+      :Price: '3000'
+      :Legality: 3-B
+      :Avail: 18/7 days
+      :Index: '2.0'
+      :Page: cc.8
+  :Mace:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Clubs
+    :Stats:
+      :Name: Mace
+      :Type: Clubs
+      :Conc.: '4'
+      :Range: '1'
+      :Damage: "(STR+3)M Stun"
+      :Weight: '2'
+      :Price: '150'
+      :Legality: 5-C
+      :Avail: 5/48 hrs
+      :Index: '2.0'
+      :Page: cc.8
+  :Mace, Spiked:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Clubs
+    :Stats:
+      :Name: Mace, Spiked
+      :Type: Clubs
+      :Conc.: '3'
+      :Range: '1'
+      :Damage: "(STR+1)M"
+      :Weight: '2'
+      :Price: '150'
+      :Legality: 5-C
+      :Avail: 5/48 hrs
+      :Index: '2.0'
+      :Page: cc.8
+  :Manriki-gusari:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Whips
+    :Stats:
+      :Name: Manriki-gusari
+      :Type: Whips
+      :Conc.: '10'
+      :Range: '2'
+      :Damage: "(STR+2)L Stun"
+      :Weight: '1'
+      :Price: '150'
+      :Legality: 5-C
+      :Avail: 6/48 hrs
+      :Index: '2.0'
+      :Page: cc.11
+  :Morning Star:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Whips
+    :Stats:
+      :Name: Morning Star
+      :Type: Whips
+      :Conc.: '4'
+      :Range: '2'
+      :Damage: "(STR+2)M"
+      :Weight: '2'
+      :Price: '250'
+      :Legality: 4-C
+      :Avail: 5/48 hrs
+      :Index: '2.0'
+      :Page: cc.11
+  :Monofilament Whip:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Whips
+    :Stats:
+      :Name: Monofilament Whip
+      :Type: Whips
+      :Conc.: '10'
+      :Range: '2'
+      :Damage: 10S
+      :Weight: '1'
+      :Price: '3000'
+      :Legality: 1-K
+      :Avail: 24/14 days
+      :Index: '3.0'
+      :Page: sr3.275
+  :No-dachi:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Polearm
+    :Stats:
+      :Name: No-dachi
+      :Type: Polearm
+      :Conc.: " "
+      :Range: '2'
+      :Damage: "(STR+1)S"
+      :Weight: '5'
+      :Price: '3000'
+      :Legality: 4-B
+      :Avail: 8/72 hrs
+      :Index: '3.0'
+      :Page: cc.11
+  :Nunchaku:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Whips
+    :Stats:
+      :Name: Nunchaku
+      :Type: Whips
+      :Conc.: '7'
+      :Range: '1'
+      :Damage: "(STR+1)M Stun"
+      :Weight: '0.75'
+      :Price: '250'
+      :Legality: 8-C
+      :Avail: 4/48 hrs
+      :Index: '1.0'
+      :Page: cc.11
+  :Pole Arm:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Polearm
+    :Stats:
+      :Name: Pole Arm
+      :Type: Polearm
+      :Conc.: '2'
+      :Range: '2'
+      :Damage: "(STR+3)S"
+      :Weight: '4'
+      :Price: '500'
+      :Legality: 3-B
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: sr3.275
+  :Rattan stick:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Clubs
+    :Stats:
+      :Name: Rattan stick
+      :Type: Clubs
+      :Conc.: '5'
+      :Range: '1'
+      :Damage: "(STR+1)S Stun"
+      :Weight: '0.2'
+      :Price: '10'
+      :Legality: 6-C
+      :Avail: 2/6 hrs
+      :Index: '1.0'
+      :Page: cc.10
+  :Sai:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Clubs
+    :Stats:
+      :Name: Sai
+      :Type: Clubs
+      :Conc.: '6'
+      :Range: '0'
+      :Damage: "(STR+2)L Stun"
+      :Weight: '1'
+      :Price: '100'
+      :Legality: 8-C
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: cc.10
+  :Sap:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Clubs
+    :Stats:
+      :Name: Sap
+      :Type: Clubs
+      :Conc.: '8'
+      :Range: '1'
+      :Damage: "(STR+2)M Stun"
+      :Weight: '1'
+      :Price: '10'
+      :Legality: 5-C
+      :Avail: 2/6 hrs
+      :Index: '1.0'
+      :Page: sr3.275
+  :Serpent’s Fang Combat Knife:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Serpent’s Fang Combat Knife
+      :Type: Edged
+      :Conc.: '7'
+      :Range: '0'
+      :Damage: "(STR+2)L"
+      :Weight: '0.6'
+      :Price: '300'
+      :Legality: 4-B
+      :Avail: 6/6 hrs
+      :Index: '1.5'
+      :Page: kg11.46
+  :Shock Glove:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Unarmed
+    :Stats:
+      :Name: Shock Glove
+      :Type: Unarmed
+      :Conc.: '9'
+      :Range: '0'
+      :Damage: 7S Stun
+      :Weight: '0.5'
+      :Price: '950'
+      :Legality: 5-B
+      :Avail: 5/48 hrs
+      :Index: '2.0'
+      :Page: sr3.275
+  :Spear:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Polearm
+    :Stats:
+      :Name: Spear
+      :Type: Polearm
+      :Conc.: '2'
+      :Range: '2'
+      :Damage: "(STR+4)L"
+      :Weight: '2'
+      :Price: '75'
+      :Legality: 4-C
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: cc.11
+  :Staff:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Polearm
+    :Stats:
+      :Name: Staff
+      :Type: Polearm
+      :Conc.: '2'
+      :Range: '2'
+      :Damage: "(STR+2)M Stun"
+      :Weight: '2'
+      :Price: '50'
+      :Legality: 8-C
+      :Avail: 3/24 hrs
+      :Index: '1.0'
+      :Page: sr3.276
+  :Stun Baton:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Clubs
+    :Stats:
+      :Name: Stun Baton
+      :Type: Clubs
+      :Conc.: '4'
+      :Range: '1'
+      :Damage: 6S Stun
+      :Weight: '1'
+      :Price: '750'
+      :Legality: 5-C
+      :Avail: 3/36 hrs
+      :Index: '1.0'
+      :Page: sr3.276
+  :Survival Knife:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Survival Knife
+      :Type: Edged
+      :Conc.: '6'
+      :Range: '0'
+      :Damage: "(STR+2)L"
+      :Weight: '0.75'
+      :Price: '450'
+      :Legality: 6-A
+      :Avail: 3/6 hrs
+      :Index: '1.0'
+      :Page: sr3.276
+  :Sword:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Sword
+      :Type: Edged
+      :Conc.: '4'
+      :Range: '1'
+      :Damage: "(STR+ 2)M"
+      :Weight: '1'
+      :Price: '500'
+      :Legality: 4-B
+      :Avail: 3/24 hrs
+      :Index: '1.0'
+      :Page: sr3.276
+  :Telesoping Staff:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Polearm
+    :Stats:
+      :Name: Telesoping Staff
+      :Type: Polearm
+      :Conc.: 5/2
+      :Range: '2'
+      :Damage: "(STR+2)M Stun"
+      :Weight: '3'
+      :Price: '100'
+      :Legality: 8-C
+      :Avail: 4/48 hrs
+      :Index: '1.0'
+      :Page: cc.11
+  :Three-section Staff:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Polearm
+    :Stats:
+      :Name: Three-section Staff
+      :Type: Polearm
+      :Conc.: '4'
+      :Range: '2'
+      :Damage: "(STR+2)M Stun"
+      :Weight: '2'
+      :Price: '200'
+      :Legality: 8-C
+      :Avail: 5/72 hrs
+      :Index: '2.0'
+      :Page: cc.11
+  :Tomahawk:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Tomahawk
+      :Type: Edged
+      :Conc.: '6'
+      :Range: '1'
+      :Damage: "(STR)M"
+      :Weight: '0.5'
+      :Price: '200'
+      :Legality: 5-A
+      :Avail: 4/48 hrs
+      :Index: '1.0'
+      :Page: cc.8
+  :Vibro Knife:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Vibro Knife
+      :Type: Edged
+      :Conc.: '7'
+      :Range: '0'
+      :Damage: "(STR)M"
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: 6-A
+      :Avail: 5/72 hrs
+      :Index: '2.0'
+      :Page: cc.8
+  :Vibro Sword:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Edged
+    :Stats:
+      :Name: Vibro Sword
+      :Type: Edged
+      :Conc.: '3'
+      :Range: '1'
+      :Damage: "(STR)S"
+      :Weight: '2'
+      :Price: '2000'
+      :Legality: 3-B
+      :Avail: 5/72 hrs
+      :Index: '2.0'
+      :Page: cc.8
+  :Whip:
+    :Type:
+    - :Weapon
+    - :Melee Weapons
+    - Whips
+    :Stats:
+      :Name: Whip
+      :Type: Whips
+      :Conc.: '5'
+      :Range: '2'
+      :Damage: "(STR)L"
+      :Weight: '1'
+      :Price: '300'
+      :Legality: 10-C
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: sr3.27
+  :Shuriken:
+    :Type:
+    - :Weapon
+    - :Throwing Weapons
+    :Stats:
+      :Name: Shuriken
+      :Conc.: '8'
+      :Damage: "(STR)L"
+      :Weight: '0.25'
+      :Price: '30'
+      :Legality: 6-D
+      :Avail: 2/24 hrs
+      ! ':Index ': '2.0'
+      :Page: sr3.276
+  :Throwing Knife:
+    :Type:
+    - :Weapon
+    - :Throwing Weapons
+    :Stats:
+      :Name: Throwing Knife
+      :Conc.: '9'
+      :Damage: "(STR)L"
+      :Weight: '0.25'
+      :Price: '20'
+      :Legality: 8-D
+      :Avail: 2/24 hrs
+      ! ':Index ': '1.0'
+      :Page: sr3.27
+  :Anti-Personnel:
+    :Type:
+    - :Weapon
+    - :Rockets
+    :Stats:
+      :Name: Anti-Personnel
+      :Intelligence: NA
+      :Damage: 16D
+      :Weight: '2'
+      :Price: '1000'
+      :Legality: 1-K
+      :Avail: 8/14 days
+      :Index Page: '2.0'
+      ! '': sr3.280
+  :Anti-Vehicle:
+    :Type:
+    - :Weapon
+    - :Rockets
+    :Stats:
+      :Name: Anti-Vehicle
+      :Intelligence: NA
+      :Damage: 16D
+      :Weight: '3'
+      :Price: '2000'
+      :Legality: 1-K
+      :Avail: 8/14 days
+      :Index Page: '2.0'
+      ! '': sr3.280
+  :High-Explosive:
+    :Type:
+    - :Weapon
+    - :Rockets
+    :Stats:
+      :Name: High-Explosive
+      :Intelligence: NA
+      :Damage: 16D
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: 1-K
+      :Avail: 8/14 days
+      :Index Page: '2.0'
+      ! '': sr3.280
+  :Loral-Vought Jabberwocky:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Loral-Vought Jabberwocky
+      :Intelligence: '3'
+      :Damage: Special
+      :Weight: '20'
+      :Price: '7000'
+      :Legality: 1-K
+      :Avail: 12/3 wks
+      :Index: '5.0'
+      :Page: cc.44
+  :Piranha Armor-Piercing:
+    :Type:
+    - :Weapon
+    - :Rockets
+    :Stats:
+      :Name: Piranha Armor-Piercing
+      :Intelligence: NA
+      :Damage: 16D
+      :Weight: '4'
+      :Price: '3000'
+      :Legality: 1-K
+      :Avail: 16/21 days
+      :Index Page: '2.5'
+      ! '': r3.88
+  :Piranha High Explosive:
+    :Type:
+    - :Weapon
+    - :Rockets
+    :Stats:
+      :Name: Piranha High Explosive
+      :Intelligence: NA
+      :Damage: 12D
+      :Weight: '2.5'
+      :Price: '2500'
+      :Legality: 1-K
+      :Avail: 16/21 days
+      :Index Page: '2.5'
+      ! '': r3.88
+  :Piranha Ink-Dispensing:
+    :Type:
+    - :Weapon
+    - :Rockets
+    :Stats:
+      :Name: Piranha Ink-Dispensing
+      :Intelligence: NA
+      :Damage: ink
+      :Weight: '2.5'
+      :Price: '4000'
+      :Legality: 1-K
+      :Avail: 16/21 days
+      :Index Page: '2.5'
+      ! '': r3.88
+  :Zapper Static Discharge Rockets:
+    :Type:
+    - :Weapon
+    - :Rockets
+    :Stats:
+      :Name: Zapper Static Discharge Rockets
+      :Intelligence: NA
+      :Damage: 16D
+      :Weight: '25'
+      :Price: '2500'
+      :Legality: 1-K
+      :Avail: 10/2 wks
+      :Index Page: '2.5'
+      ! '': cc.44
+  :7.62cm:
+    :Type:
+    - :Weapon
+    - :Rockets
+    :Stats:
+      :Name: 7.62cm
+      :Intelligence: NA
+      :Damage: 3D/rkt
+      :Weight: '0.5'
+      :Price: '1000'
+      :Legality: 1-J
+      :Avail: 8/14 days
+      :Index Page: '2.0'
+      ! '': rbb.125
+  :12.7cm:
+    :Type:
+    - :Weapon
+    - :Rockets
+    :Stats:
+      :Name: 12.7cm
+      :Intelligence: NA
+      :Damage: 7D/rkt
+      :Weight: '0.75'
+      :Price: '1500'
+      :Legality: 1-J
+      :Avail: 8/14 days
+      :Index Page: '2.0'
+      ! '': rbb.12
+  :Anti-Personnel (APM):
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Anti-Personnel (APM)
+      :Intelligence: '3'
+      :Damage: 16D
+      :Weight: '2.25'
+      :Price: '1000'
+      :Legality: 1-K
+      :Avail: 12/14 days
+      :Index: '3.0'
+      :Page: sr3.280
+      :Extras:
+      - 
+      - 
+      - 
+  :Anti-Vehicle (AVM):
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Anti-Vehicle (AVM)
+      :Intelligence: '4'
+      :Damage: 16D
+      :Weight: '3.25'
+      :Price: '2000'
+      :Legality: 1-K
+      :Avail: 12/14 days
+      :Index: '3.0'
+      :Page: sr3.280
+      :Extras:
+      - 
+      - 
+      - 
+  :Arbelast II MAW:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Arbelast II MAW
+      :Intelligence: NA
+      :Damage: 15D (HE)
+      :Weight: '2.5'
+      :Price: '900'
+      :Legality: 1-J
+      :Avail: 8/48 hrs
+      :Index: '2.0'
+      :Page: cc.28
+  :Ares Dragon's Breath Attack AAM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Ares Dragon's Breath Attack AAM
+      :Intelligence: '9'
+      :Damage: 18D
+      :Weight: '20'
+      :Price: 1.5M
+      :Legality: 1-K
+      :Avail: 12/14 days
+      :Index: '3.0'
+      :Page: rbb.125
+  :Ares Dragon's Breath Dogfight AAM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Ares Dragon's Breath Dogfight AAM
+      :Intelligence: '8'
+      :Damage: 18D
+      :Weight: '20'
+      :Price: '500000'
+      :Legality: 1-K
+      :Avail: 12/14 days
+      :Index: '3.0'
+      :Page: rbb.125
+  :Ares Land Shark Anti-Vehicle Device:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Ares Land Shark Anti-Vehicle Device
+      :Intelligence: '1'
+      :Damage: 17D
+      :Weight: '5.0'
+      :Price: '3500'
+      :Legality: 1-K
+      :Avail: 13/14 days
+      :Index: '3.0'
+      :Page: ls.133
+  :Ballista Mk I:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Ballista Mk I
+      :Intelligence: NA
+      :Damage: 14D (AV)
+      :Weight: '2.75'
+      :Price: '1000'
+      :Legality: 1-J
+      :Avail: 12/21 days
+      :Index: '4.0'
+      :Page: cc.28
+  :Ballista Mk II:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Ballista Mk II
+      :Intelligence: '6'
+      :Damage: 14D (AV)
+      :Weight: '2.75'
+      :Price: '2500'
+      :Legality: 1-J
+      :Avail: 14/28 days
+      :Index: '4.0'
+      :Page: cc.28
+  :Ballista Mk III:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Ballista Mk III
+      :Intelligence: '5'
+      :Damage: 14D (AV)
+      :Weight: '2.75'
+      :Price: '2000'
+      :Legality: 1-J
+      :Avail: 18/28 days
+      :Index: '4.0'
+      :Page: cc.28
+  :Great Dragon ATGM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Great Dragon ATGM
+      :Intelligence: '4'
+      :Damage: 20D (AV)
+      :Weight: '3'
+      :Price: '1000'
+      :Legality: 1-J
+      :Avail: 8/48 hrs
+      :Index: '2.0'
+      :Page: cc.28
+  :High-Explosive (HEM):
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: High-Explosive (HEM)
+      :Intelligence: '3'
+      :Damage: 16D
+      :Weight: '2.25'
+      :Price: '1500'
+      :Legality: 1-K
+      :Avail: 12/14 days
+      :Index: '3.0'
+      :Page: sr3.280
+      :Extras:
+      - 
+      - 
+      - 
+  :Hyundai-CS Basic AAM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Hyundai-CS Basic AAM
+      :Intelligence: '8'
+      :Damage: 18D
+      :Weight: '10'
+      :Price: '100000'
+      :Legality: 1-K
+      :Avail: 12/14 days
+      :Index: '3.0'
+      :Page: rbb.125
+  :Hyundai-CS Improved AAM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Hyundai-CS Improved AAM
+      :Intelligence: '9'
+      :Damage: 18D
+      :Weight: '20'
+      :Price: '150000'
+      :Legality: 1-K
+      :Avail: 12/14 days
+      :Index: '3.0'
+      :Page: rbb.125
+  :Loral-Vought Silencer AARM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Loral-Vought Silencer AARM
+      :Intelligence: '5'
+      :Damage: 16D
+      :Weight: '250'
+      :Price: '25000'
+      :Legality: 1-K
+      :Avail: 16/28 days
+      :Index: '5.0'
+      :Page: r3.92
+  :M79B1 LAW:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: M79B1 LAW
+      :Intelligence: NA
+      :Damage: 12D (HE)
+      :Weight: '2.5'
+      :Price: '750'
+      :Legality: 1-J
+      :Avail: 6/36 hrs
+      :Index: '2.0'
+      :Page: cc.28
+  :Micromissiles:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Micromissiles
+      :Intelligence: NA
+      :Damage: 12S
+      :Weight: '0.8'
+      :Price: '1200'
+      :Legality: 1-J
+      :Avail: 14/15 days
+      :Index: '3.5'
+      :Page: cb2.41
+  :Mitsubishi-GM Bandit AGM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Mitsubishi-GM Bandit AGM
+      :Intelligence: '6'
+      :Damage: by warhead
+      :Weight: by warhead
+      :Price: '10000'
+      :Legality: 1-K
+      :Avail: 12/14 days
+      :Index: '3.0'
+      :Page: rbb.125
+  :Mitsubishi-GM Outlaw Block I:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Mitsubishi-GM Outlaw Block I
+      :Intelligence: '5'
+      :Damage: 14D
+      :Weight: '200'
+      :Price: '15000'
+      :Legality: 1-K
+      :Avail: 20/30 days
+      :Index: '5.0'
+      :Page: r3.91
+  :Mitsubishi-GM Outlaw Block III:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Mitsubishi-GM Outlaw Block III
+      :Intelligence: '5'
+      :Damage: 14D
+      :Weight: '200'
+      :Price: '25000'
+      :Legality: 1-K
+      :Avail: 20/30 days
+      :Index: '5.0'
+      :Page: r3.91
+  :Mitsubishi-GM Outlaw Block II I:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Mitsubishi-GM Outlaw Block II I
+      :Intelligence: '6'
+      :Damage: 20D (AV)
+      :Weight: '200'
+      :Price: '35000'
+      :Legality: 1-K
+      :Avail: 20/30 days
+      :Index: '5.0'
+      :Page: r3.91
+  :Mitsubishi-GM Super Bandit AGM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Mitsubishi-GM Super Bandit AGM
+      :Intelligence: '6'
+      :Damage: by warhead
+      :Weight: by warhead
+      :Price: '15000'
+      :Legality: 1-K
+      :Avail: 12/14 days
+      :Index: '3.0'
+      :Page: rbb.125
+  :Piranha Torpedo Armor-Piercing:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Piranha Torpedo Armor-Piercing
+      :Intelligence: '4'
+      :Damage: 16D
+      :Weight: '4.25'
+      :Price: '7500'
+      :Legality: 1-K
+      :Avail: 16/21 days
+      :Index: '3.5'
+      :Page: r3.88
+  :Piranha Torpedo High Explosive:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Piranha Torpedo High Explosive
+      :Intelligence: '4'
+      :Damage: 12D
+      :Weight: '2.75'
+      :Price: '5000'
+      :Legality: 1-K
+      :Avail: 16/21 days
+      :Index: '3.5'
+      :Page: r3.88
+  :Piranha Torpedo Ink-Dispensing:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Piranha Torpedo Ink-Dispensing
+      :Intelligence: '4'
+      :Damage: ink
+      :Weight: '2.75'
+      :Price: '4000'
+      :Legality: 1-K
+      :Avail: 16/21 days
+      :Index: '3.5'
+      :Page: r3.88
+  :Ruhrmetall Vogeljäger MRAAM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Ruhrmetall Vogeljäger MRAAM
+      :Intelligence: '5'
+      :Damage: 14D
+      :Weight: '17'
+      :Price: '5000'
+      :Legality: 1-K
+      :Avail: 18/28 days
+      :Index: '4.0'
+      :Page: r2.93
+  :Saab-Saaker AIM-11R AAM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Saab-Saaker AIM-11R AAM
+      :Intelligence: '6'
+      :Damage: 14D
+      :Weight: '90'
+      :Price: '25000'
+      :Legality: 1-K
+      :Avail: 20+/28+ days
+      :Index: '7.0'
+      :Page: r3.91
+  :Surface-to-Air (SAM):
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Surface-to-Air (SAM)
+      :Intelligence: '4'
+      :Damage: 13D
+      :Weight: '1.5'
+      :Price: '2500'
+      :Legality: 1-K
+      :Avail: 18/3 wks
+      :Index: '4.0'
+      :Page: cc.44
+      :Extras:
+      - :Smartlink2
+      - 
+      - 
+  :UIM-199 Kingfisher SSAM:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: UIM-199 Kingfisher SSAM
+      :Intelligence: '4'
+      :Damage: 14D
+      :Weight: '25'
+      :Price: '15000'
+      :Legality: 1-K
+      :Avail: 14/21 days
+      :Index: NA
+      :Page: r3.91
+  :Vogeljäger Missile:
+    :Type:
+    - :Weapon
+    - :Missiles
+    :Stats:
+      :Name: Vogeljäger Missile
+      :Intelligence: '5'
+      :Damage: 14D (AV)
+      :Weight: '17'
+      :Price: '5000'
+      :Legality: 1-J
+      :Avail: 18/28 days
+      :Index: '4.0'
+      :Page: cc.2
+  :AFR-7 Flash Grenade:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: AFR-7 Flash Grenade
+      :Conc.: '6'
+      :Damage: special
+      :Blast: special
+      :Weight: '0.25'
+      :Price: '40'
+      :Legality: 2-J
+      :Avail: 4/48 hrs
+      :Index: '1.0'
+      :Page: ssc.44
+  :Ares Air-timed Mini-grenade:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Ares Air-timed Mini-grenade
+      :Conc.: '8'
+      :Damage: as grenade
+      :Blast: as grenade
+      :Weight: '0.1'
+      :Price: '150'
+      :Legality: 2-J
+      :Avail: 10/4 days
+      :Index: '2.0'
+      :Page: ssc.68
+  :Concussion:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Concussion
+      :Conc.: '6'
+      :Damage: 12M stun
+      :Blast: "-1/1m"
+      :Weight: '0.25'
+      :Price: '30'
+      :Legality: 3-J
+      :Avail: 5/4 days
+      :Index: '2.0'
+      :Page: sr3.282
+  :Defensive AP:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Defensive AP
+      :Conc.: '6'
+      :Damage: 10D(f)
+      :Blast: "-1/.5m"
+      :Weight: '0.25'
+      :Price: '30'
+      :Legality: 3-J
+      :Avail: 4/4 days
+      :Index: '2.0'
+      :Page: sr3.282
+  :Defensive HE:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Defensive HE
+      :Conc.: '6'
+      :Damage: 10S
+      :Blast: "-1/.5m"
+      :Weight: '0.25'
+      :Price: '30'
+      :Legality: 3-J
+      :Avail: 4/4 days
+      :Index: '2.0'
+      :Page: sr3.282
+  :Dual-charge:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Dual-charge
+      :Conc.: '5'
+      :Damage: as grenade
+      :Blast: special
+      :Weight: '0.5'
+      :Price: '150'
+      :Legality: 3-J
+      :Avail: 8/1 wk
+      :Index: '3.0'
+      :Page: cc.40
+  :Flare:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Flare
+      :Conc.: '6'
+      :Damage: light
+      :Blast: 30 m
+      :Weight: '0.25'
+      :Price: '40'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '1.0'
+      :Page: cc.40
+  :Flash:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Flash
+      :Conc.: '6'
+      :Damage: 5L, light
+      :Blast: 1m, -1/5m
+      :Weight: '0.25'
+      :Price: '40'
+      :Legality: 3-J
+      :Avail: 4/48 hrs
+      :Index: '1.0'
+      :Page: cc.40
+  :Flash-Pak:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Flash-Pak
+      :Conc.: '12'
+      :Damage: special
+      :Blast: special
+      :Weight: '0.2'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '1.0'
+      :Page: sr3.283
+  :Incendiary:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Incendiary
+      :Conc.: '5'
+      :Damage: fire
+      :Blast: 10m
+      :Weight: '0.5'
+      :Price: '50'
+      :Legality: 3-J
+      :Avail: 4/4 days
+      :Index: '2.0'
+      :Page: cc.40
+  :Gas (Neuro-Stun Vll):
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Gas (Neuro-Stun Vll)
+      :Conc.: '5'
+      :Damage: 8S (stun)
+      :Blast: special
+      :Weight: '0.25'
+      :Price: '60'
+      :Legality: 3-J
+      :Avail: 8/4 days
+      :Index: '2.0'
+      :Page: sr3.283
+      :Extras:
+      - 
+      - 
+      - 
+      - 
+      - :Magnification: 3
+      - 
+      - :Smartlink2
+      - :Telescoping stock
+      - 
+      - :Magnification: 2
+      - 
+      - 
+      - :Laser sight
+      - :Laser sight
+  :Electromagnetic Pulse:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Electromagnetic Pulse
+      :Conc.: '5'
+      :Damage: special
+      :Blast: 10m
+      :Weight: '0.3'
+      :Price: '750'
+      :Legality: 2-V
+      :Avail: 12/10 days
+      :Index: '2.5'
+      :Page: cb1.47
+  :ETI Heavy Pistol Grenades:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: ETI Heavy Pistol Grenades
+      :Conc.: '8'
+      :Damage: as grenade
+      :Blast: as grenade
+      :Weight: '0.1'
+      :Price: x4
+      :Legality: 3-J
+      :Avail: "+3/8 days"
+      :Index: "+1.0"
+      :Page: cb2.48
+  :ETI “Nauseator”:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: ETI “Nauseator”
+      :Conc.: n/a
+      :Damage: 10S stun
+      :Blast: 20m
+      :Weight: '10'
+      :Price: '25000'
+      :Legality: 2-V
+      :Avail: 12/10 days
+      :Index: '2.75'
+      :Page: cb2.43
+  :ETI Rilfe grenades:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: ETI Rilfe grenades
+      :Conc.: '7'
+      :Damage: as grenade
+      :Blast: as grenade
+      :Weight: '0.2'
+      :Price: x3
+      :Legality: 3-J
+      :Avail: "+2/7 days"
+      :Index: "+0.5"
+      :Page: cb1.47
+  :Ink:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Ink
+      :Conc.: '6'
+      :Damage: none
+      :Blast: 5m (in water)
+      :Weight: '0.25'
+      :Price: '40'
+      :Legality: Legal
+      :Avail: 4/4 days
+      :Index: '2.0'
+      :Page: cc.40
+  :IPE Concussion:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: IPE Concussion
+      :Conc.: '6'
+      :Damage: 16M stun
+      :Blast: "-1/1m"
+      :Weight: '0.5'
+      :Price: '70'
+      :Legality: 3-J
+      :Avail: 8/1 wk
+      :Index: '2.0'
+      :Page: cc.41
+  :IPE Defensive AP:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: IPE Defensive AP
+      :Conc.: '6'
+      :Damage: 15D(f)
+      :Blast: "-1/.5m"
+      :Weight: '0.5'
+      :Price: '60'
+      :Legality: 3-J
+      :Avail: 8/1 wk
+      :Index: '2.0'
+      :Page: cc.41
+  :IPE Defensive HE:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: IPE Defensive HE
+      :Conc.: '6'
+      :Damage: 15S
+      :Blast: "-1/.5m"
+      :Weight: '0.5'
+      :Price: '60'
+      :Legality: 3-J
+      :Avail: 8/1 wk
+      :Index: '2.0'
+      :Page: cc.41
+  :IPE Mini-grenade:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: IPE Mini-grenade
+      :Conc.: '8'
+      :Damage: as grenade
+      :Blast: as grenade
+      :Weight: '0.1'
+      :Price: '80'
+      :Legality: 2-J
+      :Avail: 8/4 days
+      :Index: '2.0'
+      :Page: ssc.66
+  :IPE Offensive AP:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: IPE Offensive AP
+      :Conc.: '6'
+      :Damage: 15D(f)
+      :Blast: "-1/1m"
+      :Weight: '0.5'
+      :Price: '60'
+      :Legality: 3-J
+      :Avail: 8/1 wk
+      :Index: '2.0'
+      :Page: cc.41
+  :IPE Offensive HE:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: IPE Offensive HE
+      :Conc.: '6'
+      :Damage: 15S
+      :Blast: "-1/1m"
+      :Weight: '0.5'
+      :Price: '60'
+      :Legality: 3-J
+      :Avail: 8/1 wk
+      :Index: '2.0'
+      :Page: cc.41
+  :Mini-grenade:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Mini-grenade
+      :Conc.: '8'
+      :Damage: as grenade
+      :Blast: as grenade
+      :Weight: '0.1'
+      :Price: x2 as grem.
+      :Legality: "+2/as gren."
+      :Avail: "+1.0"
+      :Index: sr3.282
+  :Offensive AP:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Offensive AP
+      :Conc.: '6'
+      :Damage: 10D(f)
+      :Blast: "-1/1m"
+      :Weight: '0.25'
+      :Price: '30'
+      :Legality: 3-J
+      :Avail: 4/4 days
+      :Index: '2.0'
+      :Page: sr3.282
+  :Offensive HE:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Offensive HE
+      :Conc.: '6'
+      :Damage: 10S
+      :Blast: "-1/1m"
+      :Weight: '0.25'
+      :Price: '30'
+      :Legality: 3-J
+      :Avail: 4/4 days
+      :Index: '2.0'
+      :Page: sr3.282
+  :Paint:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Paint
+      :Conc.: '6'
+      :Damage: special
+      :Blast: 10m
+      :Weight: '0.25'
+      :Price: '20'
+      :Legality: 7P-U
+      :Avail: 4/4 days
+      :Index: '0.75'
+      :Page: cb2.49
+  :Smoke:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Smoke
+      :Conc.: '5'
+      :Damage: special
+      :Blast: special
+      :Weight: '0.25'
+      :Price: '30'
+      :Legality: Legal
+      :Avail: 3/24 hrs
+      :Index: '2.0'
+      :Page: fof.48
+  :Smoke, IR:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Smoke, IR
+      :Conc.: '5'
+      :Damage: special
+      :Blast: special
+      :Weight: '0.25'
+      :Price: '40'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '2.0'
+      :Page: fof.48
+  :Slasher Monowire bolo:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Slasher Monowire bolo
+      :Conc.: '6'
+      :Damage: 10S
+      :Blast: none
+      :Weight: '0.25'
+      :Price: '5000'
+      :Legality: 1-J
+      :Avail: 24/14 days
+      :Index: '3.5'
+      :Page: cb2.47
+  :Stench:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Stench
+      :Conc.: '6'
+      :Damage: "+4 to t#"
+      :Blast: 5m
+      :Weight: '0.25'
+      :Price: '30'
+      :Legality: 7P-V
+      :Avail: 4/4 days
+      :Index: '2.0'
+      :Page: cb2.49
+  :Superflash:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Superflash
+      :Conc.: '5'
+      :Damage: 12M Stun, light
+      :Blast: "-1/1m, 3km"
+      :Weight: '0.25'
+      :Price: '80'
+      :Legality: 2-J
+      :Avail: 10/2 wks
+      :Index: '3.0'
+      :Page: cc.41
+  :White Phosphorus:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: White Phosphorus
+      :Conc.: '6'
+      :Damage: 14M/10L
+      :Blast: "-1/1m"
+      :Weight: '0.25'
+      :Price: '120'
+      :Legality: 2-J
+      :Avail: 6/5 days
+      :Index: '3.0'
+      :Page: cc.41
+  :Z-IC Splash Grenade:
+    :Type:
+    - :Weapon
+    - :Grenades
+    :Stats:
+      :Name: Z-IC Splash Grenade
+      :Conc.: '5'
+      :Damage: as chemical
+      :Blast: special
+      :Weight: '0.25'
+      :Price: '50'
+      :Legality: 3-J
+      :Avail: 8/4 days
+      :Index: '2.0'
+      :Page: mm.11
+  :Alessio coveralls:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Alessio coveralls
+      :Conc.: "-"
+      :Rating: 0/1
+      :Weight: '1'
+      :Price: '300'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '1.0'
+      :Page: cb3.7
+  :Alessio coveralls, armored:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Alessio coveralls, armored
+      :Conc.: '15'
+      :Rating: 1/2
+      :Weight: '1'
+      :Price: '1600'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '1.0'
+      :Page: cb3.7
+  :Real Leather:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Real Leather
+      :Conc.: "-"
+      :Rating: 0/2
+      :Weight: '1'
+      :Price: '750'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '0.75'
+      :Page: sr3.284
+  :Synthetic Leather:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Synthetic Leather
+      :Conc.: "-"
+      :Rating: 0/1
+      :Weight: '1'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '0.6'
+      :Page: sr3.284
+  :Fine:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Fine
+      :Conc.: "-"
+      :Rating: 0/0
+      :Weight: '1'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '1.0'
+      :Page: sr3.284
+  :Ordinary:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Ordinary
+      :Conc.: "-"
+      :Rating: 0/0
+      :Weight: '1'
+      :Price: '50'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '0.8'
+      :Page: sr3.284
+  :Tres Chic:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Tres Chic
+      :Conc.: "-"
+      :Rating: 0/0
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '1.0'
+      :Page: sr3.284
+  :Armanté Dallas Cross-buttoned shirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Dallas Cross-buttoned shirt
+      :Conc.: '14'
+      :Rating: 0.75/0
+      :Weight: '0.1'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Dallas Double-breasted jacket*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Dallas Double-breasted jacket*
+      :Conc.: '12'
+      :Rating: 2/2
+      :Weight: '1.5'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Dallas Short jacket*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Dallas Short jacket*
+      :Conc.: '13'
+      :Rating: 1/0.5
+      :Weight: '0.5'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Dallas Slacks:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Dallas Slacks
+      :Conc.: '14'
+      :Rating: 0.75/0.25
+      :Weight: '0.1'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Dallas Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Dallas Vest
+      :Conc.: '14'
+      :Rating: 0.5/0.25
+      :Weight: '0.5'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Executive Tux:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Executive Tux
+      :Conc.: '12'
+      :Rating: 3/1
+      :Weight: '1.0'
+      :Price: '1100'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté London The Count:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté London The Count
+      :Conc.: '12'
+      :Rating: 2/2
+      :Weight: '1.0'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté London The Chairman:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté London The Chairman
+      :Conc.: '11'
+      :Rating: 2/2
+      :Weight: '2.0'
+      :Price: '5000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté London The Majesty:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté London The Majesty
+      :Conc.: '11'
+      :Rating: 2/2
+      :Weight: '2.0'
+      :Price: '3000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté London The Merlin:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté London The Merlin
+      :Conc.: '12'
+      :Rating: 2/2
+      :Weight: '1.0'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté London The Professional:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté London The Professional
+      :Conc.: '13'
+      :Rating: 2/2
+      :Weight: '2.0'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Starlight line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Starlight line
+      :Conc.: '13'
+      :Rating: 1/1
+      :Weight: '0.75'
+      :Price: '4500'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Venetian line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Venetian line
+      :Conc.: '14'
+      :Rating: 1/0
+      :Weight: '0.5'
+      :Price: '3500'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Ancien shawl:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Ancien shawl
+      :Conc.: '14'
+      :Rating: 1/0
+      :Weight: '0.3'
+      :Price: '750'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armor Clothing:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armor Clothing
+      :Conc.: '10'
+      :Rating: 3/0
+      :Weight: '2'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 2/36 hrs
+      :Index: '1.0'
+      :Page: sr3.283
+  :Armor Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armor Jacket
+      :Conc.: '7'
+      :Rating: 5/3
+      :Weight: '2'
+      :Price: '900'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '0.75'
+      :Page: sr3.283
+  :Armor Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armor Vest
+      :Conc.: '12'
+      :Rating: 2/1
+      :Weight: '1'
+      :Price: '200'
+      :Legality: Legal
+      :Avail: 2/36 hrs
+      :Index: '0.8'
+      :Page: sr3.283
+  :Armor Vest With Plates:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armor Vest With Plates
+      :Conc.: '10'
+      :Rating: 4/3
+      :Weight: '2'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '1.0'
+      :Page: sr3.283
+  :Combat boots:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Combat boots
+      :Conc.: "-"
+      :Rating: 0/1
+      :Weight: '1'
+      :Price: '120'
+      :Legality: Legal
+      :Avail: 2/1 day
+      :Index: 0.75 kg3.24
+  :Combat boots, full height:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Combat boots, full height
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1.5'
+      :Price: '275'
+      :Legality: Legal
+      :Avail: 4/3 days
+      :Index: 0.75 kg3.24
+  :Combat boots, tres chic:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Combat boots, tres chic
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1.75'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 4/7 days
+      :Index: 0.8 kg3.24
+  :Diving Armor:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Diving Armor
+      :Conc.: "-"
+      :Rating: 4/2
+      :Weight: '2'
+      :Price: '1750'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '1.25'
+      :Page: cc.51
+  :Form-Fitting Shirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Form-Fitting Shirt
+      :Conc.: '14'
+      :Rating: 2/0
+      :Weight: '0.75'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 6/1 wk
+      :Index: '1.0'
+      :Page: cc.51
+  :Form-Fitting Half-body suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Form-Fitting Half-body suit
+      :Conc.: '13'
+      :Rating: 3/1
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 6/10 days
+      :Index: '1.0'
+      :Page: cc.51
+  :Form-Fitting Full-body suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Form-Fitting Full-body suit
+      :Conc.: '12'
+      :Rating: 4/1
+      :Weight: '1.25'
+      :Price: '2000'
+      :Legality: Legal
+      :Avail: 6/2 wks
+      :Index: '1.0'
+      :Page: cc.51
+  :Forearm Guards:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Forearm Guards
+      :Conc.: '12'
+      :Rating: 0/1
+      :Weight: '0.2'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: 5/36 hrs
+      :Index: '0.75'
+      :Page: cc.51
+  :Heavy Partial Suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Heavy Partial Suit
+      :Conc.: "-"
+      :Rating: 6/4
+      :Weight: 10+Body
+      :Price: '10000'
+      :Legality: 4P-L
+      :Avail: 8/10 days
+      :Index: '2.0'
+      :Page: sr2.242
+  :Heavy Full Suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Heavy Full Suit
+      :Conc.: 8/6
+      :Rating: "-"
+      :Weight: 15+Body
+      :Price: '20000'
+      :Legality: 2P-L
+      :Avail: 16/14 days
+      :Index: '3.0'
+      :Page: sr2.242
+  :Heavy Helmet:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Heavy Helmet
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1'
+      :Price: '500'
+      :Legality: "(-1)P-L"
+      :Avail: 12/14 days
+      :Index: '1.5'
+      :Page: sr2.242
+  :Houndstooth suit jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Houndstooth suit jacket
+      :Conc.: '14'
+      :Rating: 1.5/.5
+      :Weight: '1'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: ngrl.37
+  :Houndstooth pants:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Houndstooth pants
+      :Conc.: '14'
+      :Rating: 1/.5
+      :Weight: '1'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: ngrl.37
+  :Houndstooth suit vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Houndstooth suit vest
+      :Conc.: '13'
+      :Rating: ".5/1"
+      :Weight: '0.75'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: ngrl.37
+  :Houndstooth sports jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Houndstooth sports jacket
+      :Conc.: '12'
+      :Rating: ".5/1.5"
+      :Weight: '1.25'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: ngrl.37
+  :Hunt Ball jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Hunt Ball jacket
+      :Conc.: '13'
+      :Rating: ".5/1.5"
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: ngrl.37
+  :Hunt Ball skirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Hunt Ball skirt
+      :Conc.: '14'
+      :Rating: ".5/1"
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: ngrl.37
+  :Hunt Ball slacks:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Hunt Ball slacks
+      :Conc.: '14'
+      :Rating: 1/.5
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: ngrl.37
+  :Kevlite Armor Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Armor Jacket
+      :Conc.: '6'
+      :Rating: 6/3
+      :Weight: '1.8'
+      :Price: '1260'
+      :Legality: Legal
+      :Avail: 6/7 days
+      :Index: '1.0'
+      :Page: kg9.20
+  :Kevlite Armor Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Armor Vest
+      :Conc.: '11'
+      :Rating: 3/1
+      :Weight: '0.8'
+      :Price: '280'
+      :Legality: Legal
+      :Avail: 6/7 days
+      :Index: '0.8'
+      :Page: kg9.20
+  :Kevlite Lined Coat:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Lined Coat
+      :Conc.: '7'
+      :Rating: 5/3
+      :Weight: '0.85'
+      :Price: '980'
+      :Legality: Legal
+      :Avail: 4/7 days
+      :Index: '1.0'
+      :Page: kg9.20
+  :Kevlite Partial Suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Partial Suit
+      :Conc.: "-"
+      :Rating: 7/5
+      :Weight: 8+Body
+      :Price: '14000'
+      :Legality: 3P-L
+      :Avail: 16/10 days
+      :Index: '3.0'
+      :Page: kg9.20
+  :Kevlite Full Suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Full Suit
+      :Conc.: "-"
+      :Rating: 9/7
+      :Weight: 12+Body
+      :Price: '28000'
+      :Legality: 2P-L
+      :Avail: 18/14 days
+      :Index: '4.0'
+      :Page: kg9.20
+  :Kevlite Helmet:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Helmet
+      :Conc.: "-"
+      :Rating: 2/1
+      :Weight: '1'
+      :Price: '240'
+      :Legality: "(-1)P-L"
+      :Avail: 14/10 days
+      :Index: '2.0'
+      :Page: kg9.20
+  :Kelmar Securetech™ Clothing:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kelmar Securetech™ Clothing
+      :Conc.: '12'
+      :Rating: 3/0
+      :Weight: '1.5'
+      :Price: '450'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '0.9'
+      :Page: sr3.283
+  :Kelmar Securetech™ Secure Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kelmar Securetech™ Secure Jacket
+      :Conc.: '9'
+      :Rating: 5/3
+      :Weight: '3'
+      :Price: '850'
+      :Legality: Legal
+      :Avail: 4/36 hrs
+      :Index: '0.8'
+      :Page: sr3.283
+  :Kelmar Securetech™ Secure Long Coat:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kelmar Securetech™ Secure Long Coat
+      :Conc.: '10'
+      :Rating: 4/2
+      :Weight: '2'
+      :Price: '650'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '0.9'
+      :Page: sr3.283
+  :Kelmar Securetech™ Secure Ultra-Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kelmar Securetech™ Secure Ultra-Vest
+      :Conc.: '14'
+      :Rating: 4/3
+      :Weight: '2.5'
+      :Price: '350'
+      :Legality: Legal
+      :Avail: 4/36 hrs
+      :Index: '0.9'
+      :Page: sr3.283
+  :Kelmar Securetech™ Secure Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kelmar Securetech™ Secure Vest
+      :Conc.: '15'
+      :Rating: 2/1
+      :Weight: '0.75'
+      :Price: '175'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '0.9'
+      :Page: sr3.283
+  :Lined Coat:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Lined Coat
+      :Conc.: '8'
+      :Rating: 4/2
+      :Weight: '1'
+      :Price: '700'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '0.75'
+      :Page: sr3.283
+  :Military Armor Light:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Military Armor Light
+      :Conc.: "-"
+      :Rating: 7/6
+      :Weight: 12+Body
+      :Price: '25000'
+      :Legality: 2-L
+      :Avail: 18/1 mth
+      :Index: '3.0'
+      :Page: cc.51
+  :Military Armor Medium:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Military Armor Medium
+      :Conc.: "-"
+      :Rating: 8/7
+      :Weight: 14+Body
+      :Price: '45000'
+      :Legality: 2-L
+      :Avail: 24/1 mth
+      :Index: '3.0'
+      :Page: cc.51
+  :Military Armor Heavy:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Military Armor Heavy
+      :Conc.: "-"
+      :Rating: 9/8
+      :Weight: 16+Body
+      :Price: '70000'
+      :Legality: 2-L
+      :Avail: 28/2 mth
+      :Index: '3.0'
+      :Page: cc.51
+  :Military Armor Helmet:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Military Armor Helmet
+      :Conc.: "-"
+      :Rating: "+2/+3"
+      :Weight: '3'
+      :Price: '2500'
+      :Legality: 2-L
+      :Avail: 18/1 mth
+      :Index: '3.0'
+      :Page: cc.51
+  :Mortimer of London Crimson Sky line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Mortimer of London Crimson Sky line
+      :Conc.: '12'
+      :Rating: 2/2
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Mortimer of London Greatcoat line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Mortimer of London Greatcoat line
+      :Conc.: '11'
+      :Rating: 4/2
+      :Weight: '3'
+      :Price: '2000'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Mortimer of London Summit line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Mortimer of London Summit line
+      :Conc.: '12'
+      :Rating: 3/2
+      :Weight: '3'
+      :Price: '2500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Mortimer of London Ulysses line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Mortimer of London Ulysses line
+      :Conc.: '10'
+      :Rating: 4/2
+      :Weight: '4'
+      :Price: '4000'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Motorcycle Helmet Standard:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Motorcycle Helmet Standard
+      :Conc.: "-"
+      :Rating: 0/1
+      :Weight: '1'
+      :Price: '200'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '1.0'
+      :Page: kg2.25
+  :Motorcycle Greek Warhelm:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Motorcycle Greek Warhelm
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1.25'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 3/1 day
+      :Index: '1.0'
+      :Page: kg2.25
+  :Motorcycle Roman Warhelm:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Motorcycle Roman Warhelm
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1.25'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 3/1 day
+      :Index: '1.0'
+      :Page: kg2.25
+  :Motorcycle Viking Warhelm:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Motorcycle Viking Warhelm
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1.25'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 3/1 day
+      :Index: '1.0'
+      :Page: kg2.25
+  :Motorcycle WWI German:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Motorcycle WWI German
+      :Conc.: "-"
+      :Rating: 0/1
+      :Weight: '2'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: 3/1 day
+      :Index: '1.0'
+      :Page: kg2.25
+  :Pattersion Fabrics Camo-Spec™ Full Suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Pattersion Fabrics Camo-Spec™ Full Suit
+      :Conc.: '10'
+      :Rating: 3/1
+      :Weight: '1.5'
+      :Price: '800'
+      :Legality: Legal
+      :Avail: 4/36 hrs
+      :Index: '1.0'
+      :Page: sr3.284*
+  :Pattersion Fabrics Camo-Spec™ Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Pattersion Fabrics Camo-Spec™ Jacket
+      :Conc.: '8'
+      :Rating: 5/3
+      :Weight: '3'
+      :Price: '1200'
+      :Legality: Legal
+      :Avail: 5/36 hrs
+      :Index: '1.0'
+      :Page: sr3.284*
+  :Light Security Armor:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Light Security Armor
+      :Conc.: 6/4
+      :Rating: 9+Body
+      :Weight: '7500'
+      :Price: 4P-L
+      :Legality: 12/10 days
+      :Avail: '2.0'
+      :Index: sr3.284
+  :Medium Security Armor:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Medium Security Armor
+      :Conc.: 6/5
+      :Rating: 11+body
+      :Weight: '9000'
+      :Price: 3P-L
+      :Legality: 14/10 days
+      :Avail: '2.5'
+      :Index: sr3.284
+  :Heavy Security Armor:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Heavy Security Armor
+      :Conc.: 7/5
+      :Rating: 13+body
+      :Weight: '12000'
+      :Price: 2P-L
+      :Legality: 16/14 days
+      :Avail: '3.0'
+      :Index: sr3.284
+  :Security Armor Helmet:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Security Armor Helmet
+      :Conc.: 1/2
+      :Rating: '1'
+      :Weight: '250'
+      :Price: "(-1)P-L"
+      :Legality: 12/14 days
+      :Avail: '2.0'
+      :Index: sr3.284
+  :Ballistic Shield:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Ballistic Shield
+      :Conc.: "-"
+      :Rating: "+3/+1"
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 8/14 days
+      :Index: '2.0'
+      :Page: sr3.284
+  ! ': Small Riot Shield':
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: " Small Riot Shield"
+      :Conc.: "-"
+      :Rating: "+1/+2"
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 8/14 days
+      :Index: '2.0'
+      :Page: sr3.284
+  ! ': Large Riot Shield':
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: " Large Riot Shield"
+      :Conc.: "-"
+      :Rating: "+2/+3"
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 8/14 days
+      :Index: '2.0'
+      :Page: sr3.284
+  :Vashon Island Actioneer Line Suit jacket*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Actioneer Line Suit jacket*
+      :Conc.: '13'
+      :Rating: 1.5/1
+      :Weight: '1'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Actioneer Line Slacks:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Actioneer Line Slacks
+      :Conc.: '14'
+      :Rating: 1/0.5
+      :Weight: '1'
+      :Price: '350'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Actioneer Line Hi-collar shirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Actioneer Line Hi-collar shirt
+      :Conc.: '14'
+      :Rating: 1.5/0.5
+      :Weight: '0.75'
+      :Price: '300'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Actioneer Line Long coat*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Actioneer Line Long coat*
+      :Conc.: '13'
+      :Rating: 2/2
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Grand Dame:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Grand Dame
+      :Conc.: '15'
+      :Rating: 1/1
+      :Weight: '2'
+      :Price: '7500'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.49
+  :Vashon Island Sleeping Tiger Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Sleeping Tiger Jacket
+      :Conc.: '8'
+      :Rating: 0.5/1.5
+      :Weight: '1.25'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Sleeping Tiger Shirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Sleeping Tiger Shirt
+      :Conc.: '10'
+      :Rating: 0.5/1
+      :Weight: '1'
+      :Price: '300'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Sleeping Tiger Slacks/Skirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Sleeping Tiger Slacks/Skirt
+      :Conc.: '12'
+      :Rating: 0.5/0.5
+      :Weight: '1'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Sleeping Tiger Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Sleeping Tiger Vest
+      :Conc.: '10'
+      :Rating: 0.5/1
+      :Weight: '0.75'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Victory Industrious Line Coverall:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Industrious Line Coverall
+      :Conc.: '9'
+      :Rating: 4/2
+      :Weight: '3'
+      :Price: '800'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '0.5'
+      :Page: cc.50
+  :Victory Industrious Line Hard Hat:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Industrious Line Hard Hat
+      :Conc.: "-"
+      :Rating: 0/+1
+      :Weight: '0.5'
+      :Price: '25'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '0.5'
+      :Page: cc.50
+  :Victory Industrious Line Jumpsuit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Industrious Line Jumpsuit
+      :Conc.: '11'
+      :Rating: 2/0
+      :Weight: '1'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '0.5'
+      :Page: cc.50
+  :Victory Industrious Line Winterized Coverall:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Industrious Line Winterized Coverall
+      :Conc.: '10'
+      :Rating: 4/4
+      :Weight: '5'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '0.75'
+      :Page: cc.50
+  :Victory Rapid Transit Line Light Jumpsuit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Rapid Transit Line Light Jumpsuit
+      :Conc.: '8'
+      :Rating: 1/2
+      :Weight: '1'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Rapid Transit Line Heavy Jumpsuit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Rapid Transit Line Heavy Jumpsuit
+      :Conc.: '6'
+      :Rating: 2/4
+      :Weight: '2'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Rapid Transit Line Helmet:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Rapid Transit Line Helmet
+      :Conc.: "-"
+      :Rating: 0/+2
+      :Weight: '0.5'
+      :Price: '50'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Camouflage Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Camouflage Jacket
+      :Conc.: '6'
+      :Rating: 4/2
+      :Weight: '2'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Camouflage Jumpsuit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Camouflage Jumpsuit
+      :Conc.: '9'
+      :Rating: 3/2
+      :Weight: '1.5'
+      :Price: '750'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Camouflage Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Camouflage Vest
+      :Conc.: '8'
+      :Rating: 2/2
+      :Weight: '1'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Fatigues:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Fatigues
+      :Conc.: '10'
+      :Rating: 2/0
+      :Weight: '2'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Light Armor Clothing:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Light Armor Clothing
+      :Conc.: '12'
+      :Rating: 1/0
+      :Weight: '1'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Heavy Armor Clothing:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Heavy Armor Clothing
+      :Conc.: '10'
+      :Rating: 4/0
+      :Weight: '3'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Zoé Country Club blazer:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Country Club blazer
+      :Conc.: '13'
+      :Rating: 3/1
+      :Weight: '1.0'
+      :Price: '2000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: 0.75 ngrl.37
+  :Zoé Futura Line Blazer*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Futura Line Blazer*
+      :Conc.: '13'
+      :Rating: 2/1
+      :Weight: '1.5'
+      :Price: '2500'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.49
+  :Zoé Futura Line Skirt/Slacks:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Futura Line Skirt/Slacks
+      :Conc.: '13'
+      :Rating: 1/1
+      :Weight: '1'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.49
+  :Zoé Futura Line Sweater*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Futura Line Sweater*
+      :Conc.: '13'
+      :Rating: 2/1
+      :Weight: '1.5'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.49
+  :Zoé Heritage Line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Heritage Line
+      :Conc.: '12'
+      :Rating: 4/2
+      :Weight: '1.5'
+      :Price: '10000'
+      :Legality: Legal
+      :Avail: 10/2 mths
+      :Index: '0.75'
+      :Page: cc.49
+  :Zoé Highland Laird kilt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Highland Laird kilt
+      :Conc.: '14'
+      :Rating: 4/2
+      :Weight: '1.5'
+      :Price: '2000'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: 0.75 ngrl.37
+  :Zoé Retrovision skirt suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Retrovision skirt suit
+      :Conc.: '13'
+      :Rating: 3/1
+      :Weight: '1.5'
+      :Price: '2500'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: 0.75 ngrl.37
+  :Zoé Second Skin line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Second Skin line
+      :Conc.: '15'
+      :Rating: 2/2
+      :Weight: '0.25'
+      :Price: '5000'
+      :Legality: Legal
+      :Avail: 10/1 mth
+      :Index: '0.75'
+      :Page: cc.4
 :magetypes:
   :None:
     :Points: 0

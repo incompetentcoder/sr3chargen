@@ -320,7 +320,7 @@ class Application
       option.values[0][:Children].each do |x|
         temp = {}
         @a.getcyberware.each {|y| temp.merge! y[1].select {|z,a| z == x}}
-        binding.pry
+       # binding.pry
         success.push (temp[x][:Base] == shorter[:Base] || 
                       temp[x][:Name] == shorter[:Name])
       end
@@ -328,6 +328,29 @@ class Application
     else
       true
     end
+  end
+  
+  def setweapon(weapon)
+    err = ""
+    num = nil
+    shorter = CONSTANT[:gear][weapon]
+    if shorter[:Stats][:Price].to_i > getnuyenrem 
+      err+="Insufficient Nuyen: #{shorter[:Stats][:Price]}\n"
+    end
+    if shorter[:Stats][:Avail].split('/')[0].to_i > 6
+      err+="Availability too high: #{shorter[:Stats][:Avail]}\n"
+    end
+    unless err.empty?
+      errordialog(err,nil)
+      return
+    end
+    actual = Marshal.load(Marshal.dump(shorter))
+    num = @a.weapons.values.collect {|x| x[:Stats][:Name] == weapon.to_s}.compact.count+1
+    weapon = (weapon.to_s+" #{num}").to_sym if num
+    @notebook.weapon.setweapon(actual,weapon)
+    @a.addweapon(actual,weapon)
+    setnuyenrem
+   # binding.pry
   end
 
 
@@ -527,6 +550,20 @@ class Application
       false
     end
   end
+
+  def remweapon(weapon)
+    err = ""
+   # binding.pry
+    if ch = @a.weapons[weapon][:Stats][:Children]
+      err+="Options installed: #{ch}\n"
+      errordialog(err,nil)
+      return false
+    end
+    @a.remweapon(weapon)
+    setnuyenrem
+    true
+  end
+
     
 
   def spelllvl(name,value)
@@ -895,7 +932,7 @@ end
 class Character
   attr_reader :name, :streetname, :age, :attributes,
               :points, :metatype, :magetype, :gender,
-              :derived, :special, :activeskills
+              :derived, :special, :activeskills, :weapons
   
   def getessence
     @special[:Essence]
@@ -936,6 +973,14 @@ class Character
 
   def getcyberware
     @cyberware
+  end
+
+  def addweapon(actual,weapon)
+    @nuyenrem = @nuyenrem - actual[:Stats][:Price].to_i
+   # binding.pry
+    @weapons.values.collect {|x| x[:Stats][:Name] == weapon.to_s}.compact.count+1
+#    if @weapons[weapon]
+    @weapons[weapon]=actual
   end
 
   def calcessenceoption(actual,parent,par)
@@ -1527,6 +1572,11 @@ class Character
     end
   end
 
+  def remweapon(weapon)
+    @nuyenrem += @weapons[weapon][:Stats][:Price].to_i
+    @weapons.delete(weapon)
+  end
+
   def initialize(app)
     @magetype = :None
     @metatype = :Human
@@ -1544,6 +1594,8 @@ class Character
     @element = nil 
     @cyberware = {}
     @bioware = {}
+    @gear = {}
+    @weapons = {}
     @derived = {:Pools => {}, :Reaction => {}, :Initiative => {}}
     @special = { :Essence => 6, :'Body Index' => 0, :Magic => 0 }
     @attributes = {}
@@ -2403,8 +2455,139 @@ class Powerblock < Gtk::Frame
   end
 end
 
+class Weaponblock < Gtk::Frame
+  
+  def addweps(parent,rows,bases)
+    children = Hash.new
+    unless bases.empty?
+      bases.each do |x|
+        children[x] = @model.append(parent)
+        children[x][0] = x
+      end
+    end
+    rows.each do |a|
+      if par=a[1][:Type][2]
+        child = @model.append(children[par])
+      else
+        child = @model.append(parent)
+      end
+      a[1][:Stats].each_pair do |b,c|
+        child[@order[b]] = c.to_s if @order[b]
+      end
+    end
+  end
+
+  def setweapon(actual,weapon)
+    child = @model2.append(nil)
+    actual[:Stats].each_pair do |b,c|
+      child[@order[b]] = c.to_s if @order[b]
+    end
+    child[0]=weapon.to_s
+  end
+
+  def initialize(app)
+    @app = app
+    super()
+    @tooltips = Gtk::Tooltips.new
+    @win = Gtk::ScrolledWindow.new
+    @win2 = Gtk::ScrolledWindow.new
+    @vbox = Gtk::VBox.new(true,nil)
+    @weapons = {}
+    @model = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String,String)
+    @model.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view = Gtk::TreeView.new(@model)
+    @model2 = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String,String)
+    @model2.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view2 = Gtk::TreeView.new(@model2)
+    @order = {}
+    %i(Name Range Conc. Ammo Mode Damage Price Legality Avail Extras).each_with_index do |x,y|
+      @order[x]=y
+    end
+    CONSTANT[:gear].collect{|x| x[1][:Type][1] if x[1][:Type][0] == :Weapon}.compact.to_set.each do |x|
+      parent = @model.append(nil)
+      parent[0] = x
+      weaps = CONSTANT[:gear].find_all {|y| y[1][:Type][1] == x}
+      bases = weaps.collect {|y| y[1][:Type][2]}.compact.to_set
+      addweps(parent,weaps,bases)
+    end
+
+    (0..8).each do |x|
+      renderer = Gtk::CellRendererText.new
+      col = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+      col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+      @view.append_column(col)
+      col2 = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+      col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+      @view2.append_column(col2)
+    end
+    @view.enable_grid_lines = Gtk::TreeView::GRID_LINES_BOTH
+    @view.enable_tree_lines = true
+   # @view.tooltip_column = 9
+    @view.has_tooltip = true
+    @view.set_search_equal_func do |model,column,key,iter| 
+      if Regexp.new(key) =~ iter[0]
+        @view.scroll_to_cell(iter.path,nil,true,0.5,0.5)
+        false
+      else
+        true
+      end
+    end
+
+    @view.signal_connect('query_tooltip') do |a,b,c,d,e|
+      if bleh = a.get_path(*a.convert_widget_to_bin_window_coords(b,c))
+        meh = @model.get_iter(bleh[0])[9].to_s
+        meh == "" ? false : e.set_text(meh)
+      end
+    end
+    
+    @view.signal_connect('row-activated') do |a,b,c|
+      if @model.get_iter(b)[2]
+        @app.setweapon(@model.get_iter(b)[0].to_sym)
+      else
+        a.row_expanded?(b) ? a.collapse_row(b) : a.expand_row(b,false)
+      end
+    end
+
+    @view2.signal_connect('row-activated') do |a,b,c|
+      if @app.remweapon(@model2.get_iter(b)[0].to_sym)
+        @model2.remove(@model2.get_iter(b))
+      end
+    end
+
+    
+    @win2.add(@view2)
+    @win.add(@view)
+    @vbox.pack_start_defaults(@win)
+    @vbox.pack_start_defaults(@win2)
+    @vbox.show_all
+    add(@vbox)
+  end
+end
+
+class Gearblock < Gtk::Frame
+  def initialize(app)
+    @app = app
+    super()
+    @win = Gtk::ScrolledWindow.new
+    @win2 = Gtk::ScrolledWindow.new
+    @vbox = Gtk::VBox.new(true,nil)
+    @gear = {}
+    @model = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String)
+    @model.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view = Gtk::TreeView.new(@model)
+    @model2 = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String)
+    @model2.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view2 = Gtk::TreeView.new(@model2)
+    @order = {}
+    %i(Name Range Conc. Ammo Mode Damage Price Legality Avail).each_with_index do |x,y|
+      @order[x]=y
+    end
+  end
+
+end
+
 class Notebook < Gtk::Notebook
-  attr_accessor :skill, :spell, :totem, :cyber
+  attr_accessor :skill, :spell, :totem, :cyber, :weapon
   
   def initialize(app)
     @app = app
@@ -2414,11 +2597,15 @@ class Notebook < Gtk::Notebook
     @spell = Spellblock.new(@app)
     @cyber = Cyberblock.new(@app)
     @bio = Bioblock.new(@app)
+    @weapon = Weaponblock.new(@app)
+    @gear = Gearblock.new(@app)
  #   @tview = SPELLVIEW.new(@app)
     append_page(@skill, Gtk::Label.new('Skills'))
     append_page(@cyber, Gtk::Label.new('Cyberware'))
     append_page(@bio, Gtk::Label.new('Bioware'))
     append_page(@spell, Gtk::Label.new('Spells'))
+    append_page(@weapon, Gtk::Label.new('Weapons'))
+    append_page(@gear, Gtk::Label.new('Gear'))
  #   append_page(@tview, Gtk::Label.new('txtv'))
     get_nth_page(3).sensitive = false
   end

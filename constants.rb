@@ -3,13 +3,13 @@ require 'pp'
 require 'pry'
 skills = YAML.load_file('skills.yaml')
 spells = YAML.load_file('spells.yaml')
-cyber = YAML.load_file('cyberyaml')
 CONSTANTS = {
   attributes: %i(Body Quickness Strength Charisma Intelligence Willpower),
   attrinfo: [:BA, :RM, :CM, :BM, :MM, :ACT, :Points],
   gender: [:Male, :Female],
   metatypes: YAML.load_file('metas.yaml'),
   cyberware: YAML.load_file('cyberyaml'),
+  gear: YAML.load_file('gearyaml'),
   magetypes: {
     :None => { Points: 0, Spellpoints: 0 },
     :'Full Magician' => { Points: 30, Spellpoints: 25 },
