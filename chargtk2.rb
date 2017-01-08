@@ -37,7 +37,10 @@ class Application
         b = File.open(dialog.filename+".svg",'w+')
         b.write(makecharsheet)
         b.close
-        GdkPixbuf::Pixbuf.new(:file => dialog.filename+".svg").save(dialog.filename+".png","png")
+        c = GdkPixbuf::Pixbuf.new(:file => dialog.filename+".svg",:width => 1402,:height => 1815).save(dialog.filename+".png","png")
+#        aspect = c.height.to_f/c.width.to_f
+#        binding.pry
+#        c.scale(Gdk.screen_height*1.25,Gdk.screen_height*1.25*aspect,Gdk::Pixbuf::INTERP_NEAREST).save(dialog.filename+".png","png")
       end
     end
     dialog.destroy
@@ -89,7 +92,7 @@ class Application
     @a.spells.first(8).each_with_index do |x,y|
       a.sub!("spell#{y+1}<","#{x[0]}<")
       a.sub!("spell#{y+1}f<","#{x[1][1].to_i}<")
-      a.sub!("spell#{y+1}d<","#{x[1][0][:DTN].to_s.slice(0..4)+"/"+x[1][0][:DLVL].to_s.slice(0..4)}<")
+      a.sub!("spell#{y+1}d<","#{x[1][0][:DTN].to_s.slice(0..2)+"|"+x[1][0][:DLVL].to_s.slice(0..2)}<")
     end
 
     a.gsub!(/(skill|cyber|bio|spell|power)\d{1,}(r|f|d|l|c)?</,"<")
