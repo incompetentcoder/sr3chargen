@@ -37,6 +37,7 @@ class Application
         b = File.open(dialog.filename+".svg",'w+')
         b.write(makecharsheet)
         b.close
+        GdkPixbuf::Pixbuf.new(:file => dialog.filename+".svg").save(dialog.filename+".png","png")
       end
     end
     dialog.destroy
@@ -57,8 +58,8 @@ class Application
     shit = {}
     getskills.each {|x| shit.merge!(x[1]) unless x[1].empty?}
     shit.each_with_index do |y,z|
-      a.sub!("skill"+(z+1).to_s,"#{y[0]} #{y[1][:Specialization]}")
-      a.sub!("skill"+(z+1).to_s+"r","#{y[1][:Specialization] ? 
+      a.sub!("skill#{z+1}","#{y[0]} #{y[1][:Specialization]}")
+      a.sub!("skill#{z+1}r","#{y[1][:Specialization] ? 
         (((y[1][:Value].to_i) -1).to_s + "/" + ((y[1][:Value].to_i) +1).to_s) : 
           y[1][:Value].to_i}")
     end
@@ -75,15 +76,20 @@ class Application
     end
     a.sub!("insertname","#{getname}")
     a.sub!("insertstreetname","#{getstreetname}")
-    a.sub!("insertage","#{getage}")
+    a.sub!("insertage","#{getage.to_i}")
     a.sub!("insertsex","#{getgender == "Male" ? "♂" : "♀"}")
     a.sub!("insertrace","#{getmetatype}")
 #    binding.pry
     temp = {}
     @a.getcyberware.each {|x| temp.merge!(x[1])}
     temp.first(7).each_with_index do |x,y|
-      a.sub!("cyber#{y}<","#{x[0]}<")
-      a.sub!("cyber#{y}r<","#{x[1][:Essence]}<")
+      a.sub!("cyber#{y+1}<","#{x[0]}<")
+      a.sub!("cyber#{y+1}r<","#{x[1][:Essence].round(2)}<")
+    end
+    @a.spells.first(8).each_with_index do |x,y|
+      a.sub!("spell#{y+1}<","#{x[0]}<")
+      a.sub!("spell#{y+1}f<","#{x[1][1].to_i}<")
+      a.sub!("spell#{y+1}d<","#{x[1][0][:DTN].to_s.slice(0..4)+"/"+x[1][0][:DLVL].to_s.slice(0..4)}<")
     end
 
     a.gsub!(/(skill|cyber|bio|spell|power)\d{1,}(r|f|d|l|c)?</,"<")
@@ -333,7 +339,7 @@ class Application
   def setweapon(weapon)
     err = ""
     num = nil
-    shorter = CONSTANT[:gear][weapon]
+    shorter = CONSTANT[:weapons][weapon]
     if shorter[:Stats][:Price].to_i > getnuyenrem 
       err+="Insufficient Nuyen: #{shorter[:Stats][:Price]}\n"
     end
@@ -932,7 +938,8 @@ end
 class Character
   attr_reader :name, :streetname, :age, :attributes,
               :points, :metatype, :magetype, :gender,
-              :derived, :special, :activeskills, :weapons
+              :derived, :special, :activeskills, :weapons,
+              :spells
   
   def getessence
     @special[:Essence]
@@ -2503,10 +2510,10 @@ class Weaponblock < Gtk::Frame
     %i(Name Range Conc. Ammo Mode Damage Price Legality Avail Extras).each_with_index do |x,y|
       @order[x]=y
     end
-    CONSTANT[:gear].collect{|x| x[1][:Type][1] if x[1][:Type][0] == :Weapon}.compact.to_set.each do |x|
+    CONSTANT[:weapons].collect{|x| x[1][:Type][1]}.compact.to_set.each do |x|
       parent = @model.append(nil)
       parent[0] = x
-      weaps = CONSTANT[:gear].find_all {|y| y[1][:Type][1] == x}
+      weaps = CONSTANT[:weapons].find_all {|y| y[1][:Type][1] == x}
       bases = weaps.collect {|y| y[1][:Type][2]}.compact.to_set
       addweps(parent,weaps,bases)
     end

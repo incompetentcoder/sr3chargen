@@ -9,7 +9,8 @@ CONSTANTS = {
   gender: [:Male, :Female],
   metatypes: YAML.load_file('metas.yaml'),
   cyberware: YAML.load_file('cyberyaml'),
-  gear: YAML.load_file('gearyaml'),
+  weapons: YAML.load_file('gearyaml'),
+  armors: YAML.load_file('armoryaml'),
   magetypes: {
     :None => { Points: 0, Spellpoints: 0 },
     :'Full Magician' => { Points: 30, Spellpoints: 25 },

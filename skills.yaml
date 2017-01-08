@@ -39,7 +39,20 @@
     :Desc: This skill covers AK's, M-23's, and other rifles you hold in two hands
       and shoot many, many times. When you need to kill every motherfucker in the
       room… you'll need to build the weapon of choice up with this skill.
-    :Specialization: []
+    :Specialization:
+    - AI R-11
+    - AK-97
+    - 'AK-98 '
+    - 'Ares Alpha '
+    - Ares ELD-AR
+    - 'Ares HVAR '
+    - 'Colt M22a2 '
+    - Colt M-23
+    - 'FN HAR '
+    - 'HK G12A3z '
+    - 'Samopal vz 88V '
+    - 'Sioux M-31a1 AICW '
+    - 'Steyr AUG-CSL AR '
   :Blowgun:
     :Desc: Used for the care, feeding, and growth of blowguns.
     :Specialization: []
@@ -47,11 +60,15 @@
     :Desc: The Gyrojet Pistols Skill encompasses the use of the weapon that is popular
       with the British Boat Squadron. The weapon can be used underwater or above water,
       firing miniature rockets.
-    :Specialization: []
+    :Specialization:
+    - FN-AAL Gyrojet Pisrtol
   :Laser Weapons:
     :Desc: This skill will allow you to build, upgrade, and repair those weapons that
       focus energy at one specific point, mostly lasers.
-    :Specialization: []
+    :Specialization:
+    - Ares MP Laser
+    - Ares MP Laser III
+    - Centurion Laser Axe
   :Oral Guns:
     :Desc: The Oral Guns Skill covers the use of these cyber weapons that are often
       housed in the roof of the mouth and are mostly effective for surprising opponents.
@@ -59,15 +76,88 @@
   :Pistols:
     :Desc: This skill covers the repairs, upgrades, and formation of all pistols,
       be they holdouts, light, machine, or heavy.
-    :Specialization: []
+    :Specialization:
+    - Barton Arms Bracer
+    - Barton Arms Gun Cane
+    - Cavalier Scout
+    - Glock Bodygun
+    - 'Last Chance .45 '
+    - Morrissey Élan
+    - Raecor Sting
+    - StreetlineSpecial
+    - Tiffani Needler
+    - Tiffani Self-Defender
+    - Walther Palm Pistol
+    - Ares Light Fire 70
+    - 'Ares Light Fire 70 '
+    - Beretta Model 101T
+    - 'Beretta 200ST '
+    - Ceska vz/120
+    - Colt America L36
+    - Colt Asp
+    - Executive Action
+    - Fichetti Security 500
+    - 'Fichetti Security 500a '
+    - 'Hammerli Model 610S '
+    - SA Puzzler
+    - 'Seco LD-I20 '
+    - Taurus Multi-6
+    - Walther PB-120
+    - 'Ares Crusader MP '
+    - 'Ceska Black Scorpion '
+    - Steyr TMP
+    - 'AI Dagger '
+    - Ares LongArm
+    - Ares Predator
+    - 'Ares Predator II '
+    - 'Ares Predator III '
+    - Ares Redline
+    - 'Ares Viper Slivergun '
+    - ASW/GL Plus 20
+    - Browning Max-Power
+    - 'Browning Ultra-Power '
+    - Cavalier Deputy
+    - 'Colt Manhunter '
+    - 'FN 5-7C '
+    - Glock-30
+    - 'Morrissey Alta '
+    - 'Morrissey Elite '
+    - Remington Roomsweeper
+    - Ruger Super Warhawk
+    - 'Ruger Thunderbolt Pistol '
+    - 'Ruger Thunderbolt Pistol '
+    - 'Savalette Guardian '
+    - WW Infiltrator
   :Rifles:
     :Desc: This skill covers the care and feeding of rifles, be they sporting or sniper.
       Likewise, new designs can be created using this skill.
-    :Specialization: []
+    :Specialization:
+    - 'Barret Model 121 '
+    - 'ETI Thor Ramjet Rifle '
+    - 'Morph-Seeking Rifle '
+    - 'Ranger Arms SM-3 '
+    - 'Remington 750 '
+    - 'Remington 950 '
+    - 'Ruger 100 '
+    - 'Steyr AUG-CSL Carbine '
+    - 'Walther WA 2100 '
   :Shotguns:
     :Desc: If ever you have need to design, modify, or repair a shotgun, this is the
       skill you need.
-    :Specialization: []
+    :Specialization:
+    - Ares Thunderer
+    - 'Chandler Capture 100 '
+    - 'Chandler Capture 100/SM '
+    - Integral grenade launcher
+    - Defiance T-250
+    - Eichiro Hatamoto II
+    - 'Enfield AS-7 '
+    - 'Franchi SPAS-22 '
+    - 'H&K-101 Shotgun '
+    - 'Mossberg CMDT '
+    - 'Mossberg CMDT/5M '
+    - Remington 990
+    - Street Sweeper
   :Stealth:
     :Desc: If ever one has the need to design, modify, or repair any stealth-related
       gear, well, here you go.
@@ -75,11 +165,35 @@
   :Submachine Guns:
     :Desc: This skill covers the creation, alteraion, and repair of submachine guns.
       Shoot em up, cowboy.
-    :Specialization: []
+    :Specialization:
+    - 'AK-97 SMG/Carbine '
+    - 'Ares Executive Protector '
+    - 'Beretta Model 70 '
+    - 'Colt Cobra TZ-110 '
+    - 'Colt Cobra TZ-115 '
+    - 'Colt Cobra TZ-118 '
+    - Colt M24A3
+    - 'ETI Rotary 05 '
+    - 'Heckler & Koch HK227 '
+    - 'HK227-S '
+    - 'Heckler & Koch MP-5T X '
+    - 'Ingram Smartgun '
+    - 'Ingram Super Mach 100 '
+    - Ingram Warrior-10
+    - 'Sandler TMP '
+    - 'SCK Model 100 '
+    - 'Steyr AUG-CSL '
+    - 'Uzi III '
   :Whips:
     :Desc: This skill covers the creation, alteraion, and repair of whips and other
       things that go SNAP! in the night.
-    :Specialization: []
+    :Specialization:
+    - Kusarigama
+    - Manriki-gusari
+    - Morning Star
+    - Monofilament Whip
+    - Nunchaku
+    - Whip
 :Strength:
   :Aikido:
     :Desc: This style, commonly considered a soft style, is nearly a defensive art,
@@ -119,7 +233,16 @@
   :Clubs:
     :Desc: Repairs, formation, and alterations to things that go whack on your head
       covered here.
-    :Specialization: []
+    :Specialization:
+    - AZ-I50 Stun Baton
+    - Club
+    - Extendable Baton
+    - Mace
+    - Mace, Spiked
+    - Rattan stick
+    - Sai
+    - Sap
+    - Stun Baton
   :Cyber-Implant Combat:
     :Desc: For the repair, modification, and other care and feeding stuff of cyber
       weaponry.
@@ -128,7 +251,27 @@
     :Desc: For those of you who just need to make the new Excalibur, the new Masamune.
       The new KABAR, whatever. This skill covers the forging, repair, and other such
       drek for slashy things that can be wielded in one hand.
-    :Specialization: []
+    :Specialization:
+    - Ares Monosword
+    - Centurion Laser Axe
+    - Chainknife
+    - Chainsaw Large
+    - Chainsaw Small
+    - Combat Axe
+    - Cougar Short Blade
+    - Cougar Long Blade
+    - Forearm Snap Blades
+    - Katana
+    - Katar
+    - Knife
+    - Kris
+    - Macauitl
+    - Serpent’s Fang Combat Knife
+    - Survival Knife
+    - Sword
+    - Tomahawk
+    - Vibro Knife
+    - Vibro Sword
   :Escrima:
     :Desc: A more commercial version of Arnis De Mano, Escrima tends to edge more
       towards the bare-handed skills of the Filipino martial arts, though the armed
@@ -165,12 +308,31 @@
     :Desc: This skill covers the creation, alteration, and repair of any of the varied
       staves, polearms, and other heavy melee weapons. Neil the Ork Barbarian would
       be proud.
-    :Specialization: []
+    :Specialization:
+    - Bo Staff
+    - Claymore
+    - Harpoon
+    - Javelin
+    - No-dachi
+    - Pole Arm
+    - Spear
+    - Staff
+    - Telesoping Staff
+    - Three-section Staff
   :Projectile Weapons:
     :Desc: Crossbows, longbows, and spearguns… If a weapon propels a projectile through
       mechanical as opposed to chemical force, Projectile Weapons is the skill you
       need to use.
-    :Specialization: []
+    :Specialization:
+    - Bow
+    - Crossbow Light
+    - Crossbow  Medium
+    - Crossbow  Heavy
+    - Crossbow  Pistol
+    - Crossbow  Repeater
+    - Compressed Air Crossbow Light
+    - Compressed Air Crossbow Heavy
+    - Ranger-X Compound Bow
   :Spray Weapons:
     :Desc: This skill will allow you to build, upgrade, and repair flamethrowers,
       spray tanks, and other devices that spray liquid in a cone-ish shape.
@@ -187,7 +349,9 @@
   :Throwing Weapons:
     :Desc: If ever one has the need to design, modify, or repair any knives, shuriken,
       et al, well, here you go.
-    :Specialization: []
+    :Specialization:
+    - Shuriken
+    - Throwing Knife
   :Underwater Combat:
     :Desc: Under the sea… Under the sea… If you try to fight without this, don't look
       at me… Fighting underwater requires new ways of thinking, as the water takes
@@ -377,7 +541,58 @@
   :Gyrojet Pistol B/R:
     :Desc: This skill will allow you to build, upgrade, and repair one particular
       esoteric weapon, the Gyrojet Pistol.
-    :Specialization: []
+    :Specialization:
+    - Barton Arms Bracer
+    - Barton Arms Gun Cane
+    - Cavalier Scout
+    - Glock Bodygun
+    - 'Last Chance .45 '
+    - Morrissey Élan
+    - Raecor Sting
+    - StreetlineSpecial
+    - Tiffani Needler
+    - Tiffani Self-Defender
+    - Walther Palm Pistol
+    - Ares Light Fire 70
+    - 'Ares Light Fire 70 '
+    - Beretta Model 101T
+    - 'Beretta 200ST '
+    - Ceska vz/120
+    - Colt America L36
+    - Colt Asp
+    - Executive Action
+    - Fichetti Security 500
+    - 'Fichetti Security 500a '
+    - 'Hammerli Model 610S '
+    - SA Puzzler
+    - 'Seco LD-I20 '
+    - Taurus Multi-6
+    - Walther PB-120
+    - 'Ares Crusader MP '
+    - 'Ceska Black Scorpion '
+    - Steyr TMP
+    - 'AI Dagger '
+    - Ares LongArm
+    - Ares Predator
+    - 'Ares Predator II '
+    - 'Ares Predator III '
+    - Ares Redline
+    - 'Ares Viper Slivergun '
+    - ASW/GL Plus 20
+    - Browning Max-Power
+    - 'Browning Ultra-Power '
+    - Cavalier Deputy
+    - 'Colt Manhunter '
+    - 'FN 5-7C '
+    - Glock-30
+    - 'Morrissey Alta '
+    - 'Morrissey Elite '
+    - Remington Roomsweeper
+    - Ruger Super Warhawk
+    - 'Ruger Thunderbolt Pistol '
+    - 'Ruger Thunderbolt Pistol '
+    - 'Savalette Guardian '
+    - WW Infiltrator
   :Heavy Weapons B/R:
     :Desc: This skill covers the repair, manipulation, creation, and upgrading of
       any obscenely freakin' 'UGE guns. Miniguns, true machine guns, and assault cannons
@@ -418,7 +633,58 @@
   :Pistols B/R:
     :Desc: This skill covers the repairs, upgrades, and formation of all pistols,
       be they holdouts, light, machine, or heavy.
-    :Specialization: []
+    :Specialization:
+    - Barton Arms Bracer
+    - Barton Arms Gun Cane
+    - Cavalier Scout
+    - Glock Bodygun
+    - 'Last Chance .45 '
+    - Morrissey Élan
+    - Raecor Sting
+    - StreetlineSpecial
+    - Tiffani Needler
+    - Tiffani Self-Defender
+    - Walther Palm Pistol
+    - Ares Light Fire 70
+    - 'Ares Light Fire 70 '
+    - Beretta Model 101T
+    - 'Beretta 200ST '
+    - Ceska vz/120
+    - Colt America L36
+    - Colt Asp
+    - Executive Action
+    - Fichetti Security 500
+    - 'Fichetti Security 500a '
+    - 'Hammerli Model 610S '
+    - SA Puzzler
+    - 'Seco LD-I20 '
+    - Taurus Multi-6
+    - Walther PB-120
+    - 'Ares Crusader MP '
+    - 'Ceska Black Scorpion '
+    - Steyr TMP
+    - 'AI Dagger '
+    - Ares LongArm
+    - Ares Predator
+    - 'Ares Predator II '
+    - 'Ares Predator III '
+    - Ares Redline
+    - 'Ares Viper Slivergun '
+    - ASW/GL Plus 20
+    - Browning Max-Power
+    - 'Browning Ultra-Power '
+    - Cavalier Deputy
+    - 'Colt Manhunter '
+    - 'FN 5-7C '
+    - Glock-30
+    - 'Morrissey Alta '
+    - 'Morrissey Elite '
+    - Remington Roomsweeper
+    - Ruger Super Warhawk
+    - 'Ruger Thunderbolt Pistol '
+    - 'Ruger Thunderbolt Pistol '
+    - 'Savalette Guardian '
+    - WW Infiltrator
   :Pole Arms/Staves B/R:
     :Desc: This skill covers the creation, alteration, and repair of any of the varied
       staves, polearms, and other heavy melee weapons. Neil the Ork Barbarian would

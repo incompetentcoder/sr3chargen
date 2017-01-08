@@ -194,7 +194,7 @@ Makeover ˛ P ˛ 6 ˛ Vol ˛ P ˛ LOS ˛  ˛ +1 ˛ M
 Mana Static ˛ M ˛ 4 ˛ False ˛ P ˛ LOS ˛ Y ˛ 0 ˛ D
 Mist ˛ P ˛ 4 ˛ False ˛ I ˛ LOS ˛ Y ˛ +1 ˛ M
 Petrify ˛ P ˛ Body ˛ Thres ˛ S ˛ LOS ˛  ˛ +1 ˛ S
-Physical Barrier ˛ P ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ S
+Physical Barrier ˛ P ˛ 6 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ S
 Reinforce ˛ P ˛ ObjectRes ˛ False ˛ S ˛ LOS ˛  ˛ +1 ˛ M
 Shadow ˛ P ˛ 4 ˛ False ˛ S ˛ LOS ˛ Y ˛ +2 ˛ M
 Shapechange ˛ P ˛ Body ˛ Thres/Vol ˛ S ˛ LOS ˛  ˛ +1 ˛ M

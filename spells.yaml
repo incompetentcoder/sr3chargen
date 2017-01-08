@@ -1953,12 +1953,13 @@ Manipulation:
       :Subclass: :Transformation
       :Name: :Physical Barrier
       :Type: :P
-      :Target: :False
-      :Res: :S
-      :Dur: :LOS
-      :Range: :Y
-      :Area: "+2"
-      :DTN: :S
+      :Target: 6
+      :Res: :False
+      :Dur: :S
+      :Range: :LOS
+      :Area: :Y
+      :DTN: "+2"
+      :DLVL: :S
     :Reinforce:
       :Class: :Manipulation
       :Subclass: :Transformation

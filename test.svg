@@ -37,7 +37,7 @@ stroke-linejoin: miter;
 }
 
 .s9_1{
-font-size: 12.00px;
+font-size: 11.00px;
 font-family: Cambria;
 fill: #000000;
 }
@@ -1394,336 +1394,336 @@ class="s6_1"
 x="590"
 y="907"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell1</text>
 
 <text
 x="777"
 y="907"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell1f</text>
 
 <text
 x="829"
 y="907"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell1d</text>
 
 <text
 x="590"
 y="921"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell2</text>
 
 <text
 x="777"
 y="921"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell2f</text>
 
 <text
 x="829"
 y="921"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell2d</text>
 
 <text
 x="590"
 y="935"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell3</text>
 
 <text
 x="777"
 y="935"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell3f</text>
 
 <text
 x="829"
 y="935"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell3d</text>
 
 <text
 x="590"
 y="949"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell4</text>
 
 <text
 x="777"
 y="949"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell4f</text>
 
 <text
 x="829"
 y="949"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell4d</text>
 
 <text
 x="590"
 y="963"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell5</text>
 
 <text
 x="777"
 y="963"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell5f</text>
 
 <text
 x="829"
 y="963"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell5d</text>
 
 <text
 x="590"
 y="977"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell6</text>
 
 <text
 x="777"
 y="977"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell6f</text>
 
 <text
 x="829"
 y="977"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell6d</text>
 
 <text
 x="590"
 y="991"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell7</text>
 
 <text
 x="777"
 y="991"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell7f</text>
 
 <text
 x="829"
 y="991"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell7d</text>
 
 <text
 x="590"
 y="1005"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell8</text>
 
 <text
 x="777"
 y="1005"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell8f</text>
 
 <text
 x="829"
 y="1005"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >spell8d</text>
 
 <text
 x="590"
 y="1034"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power1</text>
 
 <text
 x="777"
 y="1034"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power1l</text>
 
 <text
 x="829"
 y="1034"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power1c</text>
 
 <text
 x="590"
 y="1048"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power2</text>
 
 <text
 x="777"
 y="1048"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power2l</text>
 
 <text
 x="829"
 y="1048"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power2c</text>
 
 <text
 x="590"
 y="1062"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power3</text>
 
 <text
 x="777"
 y="1062"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power3l</text>
 
 <text
 x="829"
 y="1062"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power3c</text>
 
 <text
 x="590"
 y="1076"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power4</text>
 
 <text
 x="777"
 y="1076"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power4l</text>
 
 <text
 x="829"
 y="1076"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power4c</text>
 
 <text
 x="590"
 y="1090"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power5</text>
 
 <text
 x="777"
 y="1090"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power5l</text>
 
 <text
 x="829"
 y="1090"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power5c</text>
 
 <text
 x="590"
 y="1104"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power6</text>
 
 <text
 x="777"
 y="1104"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power6l</text>
 
 <text
 x="829"
 y="1104"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power6c</text>
 
 <text
 x="590"
 y="1118"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power7</text>
 
 <text
 x="777"
 y="1118"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power7l</text>
 
 <text
 x="829"
 y="1118"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power7c</text>
 
 <text
 x="590"
 y="1132"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power8</text>
 
 <text
 x="777"
 y="1132"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power8l</text>
 
 <text
 x="829"
 y="1132"
 dx="0,0,0"
-class="s7_1"
+class="s9_1"
 >power8c</text>
 
 
