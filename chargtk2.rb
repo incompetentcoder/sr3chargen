@@ -5,7 +5,9 @@ require 'yaml'
 require 'set'
 require 'dentaku'
 
-CONSTANT = YAML.load_file(File.open('constants.yaml', 'r'))
+PATH = File.expand_path(File.dirname(__FILE__))
+
+CONSTANT = YAML.load_file(File.open("#{PATH}/constants.yaml", 'r'))
 ATCH = [Gtk::EXPAND | Gtk::FILL, Gtk::SHRINK, 0, 0].freeze
 Gtk::RC.parse_string(<<-EOF)
 style "combocrap" {
@@ -49,7 +51,7 @@ class Application
   end
 
   def makecharsheet
-    a = File.open("test.svg").read
+    a = File.open("#{PATH}/test.svg").read
     getattributes.each do |x|
       temp = ""
       [:CM,:BM,:MM].each do |y|
