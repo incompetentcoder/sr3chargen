@@ -39,7 +39,7 @@ class Application
         b = File.open(dialog.filename+".svg",'w+')
         b.write(makecharsheet)
         b.close
-        c = GdkPixbuf::Pixbuf.new(file: "#{dialog.filename}.svg",width: 1402,height: 1815).save("#{dialog.filename}.png","png")
+        c = Gdk::Pixbuf.new(file: "#{dialog.filename}.svg",width: 1402,height: 1815).save("#{dialog.filename}.png","png")
 #        aspect = c.height.to_f/c.width.to_f
 #        binding.pry
 #        c.scale(Gdk.screen_height*1.25,Gdk.screen_height*1.25*aspect,Gdk::Pixbuf::INTERP_NEAREST).save(dialog.filename+".png","png")
@@ -956,7 +956,7 @@ class Application
     @table.n_rows = 12
     @windows.show_all
     @windows.signal_connect('destroy') {Gtk.main_quit}
-    @windows.resize([Gdk.screen_width,@table.size_request[0]].min,[Gdk::screen_height,@table.size_request[1]].min)
+    @windows.resize([Gdk.screen_width,@table.size_request[0]*1.1].min,[Gdk::screen_height,@table.size_request[1]*1.1].min)
     Gtk.init
     Gtk.main
   end
