@@ -37,7 +37,7 @@ class Application
         b = File.open(dialog.filename+".svg",'w+')
         b.write(makecharsheet)
         b.close
-        c = GdkPixbuf::Pixbuf.new(:file => dialog.filename+".svg",:width => 1402,:height => 1815).save(dialog.filename+".png","png")
+        c = GdkPixbuf::Pixbuf.new(file: "#{dialog.filename}.svg",width: 1402,height: 1815).save("#{dialog.filename}.png","png")
 #        aspect = c.height.to_f/c.width.to_f
 #        binding.pry
 #        c.scale(Gdk.screen_height*1.25,Gdk.screen_height*1.25*aspect,Gdk::Pixbuf::INTERP_NEAREST).save(dialog.filename+".png","png")
@@ -56,7 +56,7 @@ class Application
         temp+="/#{x[1][:BA]+x[1][y]}" if x[1][y] > 0
       end
       temp+="/#{x[1][:ACT]}" unless temp.empty?
-      a.sub!("attr"+x[0].to_s[0].downcase,"#{x[1][:BA]}#{temp}")
+      a.sub!("attr#{x[0].to_s[0].downcase}","#{x[1][:BA]}#{temp}")
     end
     shit = {}
     getskills.each {|x| shit.merge!(x[1]) unless x[1].empty?}
@@ -71,11 +71,11 @@ class Application
     end
     [:Reaction,:Initiative].each do |x|
       getderived[x].each do |y|
-        a.sub!("#{x.to_s[0]+y[0].to_s}:","#{x.to_s[0]+y[0].to_s+":"+y[1].to_s}")
+        a.sub!("#{x.to_s[0]+y[0].to_s}:","#{x.to_s[0]+y[0].to_s}:#{y[1]}")
       end
     end
     [:Essence,:Magic].each do |x|
-      a.sub!("special"+"#{x.to_s[0].downcase}","#{getspecial[x]}")
+      a.sub!("special#{x.to_s[0].downcase}","#{getspecial[x]}")
     end
     a.sub!("insertname","#{getname}")
     a.sub!("insertstreetname","#{getstreetname}")
@@ -195,7 +195,7 @@ class Application
       text = "Select Level"
       adj = [1,shorter[:Maxlevel].to_i,1]
     end
-    dialog = Gtk::Dialog.new("#{text}",@windows,Gtk::Dialog::MODAL)
+    dialog = Gtk::Dialog.new(text,@windows,Gtk::Dialog::MODAL)
     dialog.action_area.layout_style=Gtk::ButtonBox::SPREAD
     spin = Gtk::SpinButton.new(*adj)
     dialog.vbox.add(Gtk::Label.new("#{cyber} : #{text}"))
@@ -355,7 +355,7 @@ class Application
     end
     actual = Marshal.load(Marshal.dump(shorter))
     num = @a.weapons.values.collect {|x| x[:Stats][:Name] == weapon.to_s}.compact.count+1
-    weapon = (weapon.to_s+" #{num}").to_sym if num
+    weapon = ("#{weapon} #{num}").to_sym if num
     @notebook.weapon.setweapon(actual,weapon)
     @a.addweapon(actual,weapon)
     setnuyenrem
@@ -468,13 +468,13 @@ class Application
               "Right Leg" => temp.select {|x,y| (x[/leg|foot/] && 
                              x.split(" ")[-1] == "Right")}}
     radios = [radio1 = Gtk::RadioButton.new("Left Arm: " + (sides["Left Arm"].empty? ? "" :
-      sides["Left Arm"].keys[0] + " Space:" + sides["Left Arm"].values[0][:Space].to_s)),
+      "#{sides["Left Arm"].keys[0]} Space: #{sides["Left Arm"].values[0][:Space]}")),
     radio2 = Gtk::RadioButton.new(radio1,"Right Arm: " + (sides["Right Arm"].empty? ? "" :
-      sides["Right Arm"].keys[0] + " Space:" + sides["Right Arm"].values[0][:Space].to_s)),
+      "#{sides["Right Arm"].keys[0]} Space: #{sides["Right Arm"].values[0][:Space]}")),
     radio3 = Gtk::RadioButton.new(radio1,"Left Leg: " + (sides["Left Leg"].empty? ? "" : 
-      sides["Left Leg"].keys[0] + " Space:" + sides["Left Leg"].values[0][:Space].to_s)),
+      "#{sides["Left Leg"].keys[0]} Space: #{sides["Left Leg"].values[0][:Space]}")),
     radio4 = Gtk::RadioButton.new(radio1,"Right Leg: " + (sides["Right Leg"].empty? ? "" :
-      sides["Right Leg"].keys[0] + " Space:" + sides["Right Leg"].values[0][:Space].to_s))]
+      "#{sides["Right Leg"].keys[0]} Space: #{sides["Right Leg"].values[0][:Space]}"))]
     dialog.vbox.add(Gtk::Label.new("Put option into limb?"))
     dialog.vbox.add(a = Gtk::Label.new("#{sclspretty(lvlcalc(shorter,"L","1","Normal"))}"))    
     grade = gradebox
@@ -1198,25 +1198,26 @@ class Character
 
   def skilllvl(skill,value)
     attrib = findattr(skill)
+    attract = attrib == :Reaction ? @derived[:Reaction][:CBM] : @attributes[attrib][:ACT]
     current = @activeskills[attrib][skill][:Value]
     if value < current
-      if current > @attributes[attrib][:ACT]
-        if value > @attributes[attrib][:ACT]
+      if current > attract
+        if value > attract
           points = ((current - value) * -2)
         else
-          points = (((current - @attributes[attrib][:ACT]) *-2) +
-                    ((@attributes[attrib][:ACT] - value) *-1))
+          points = (((current - attract) *-2) +
+                    ((attract - value) *-1))
         end
       else
         points = ((current - value)*-1)
       end
     else
-      if current > @attributes[attrib][:ACT]
+      if current > attract
         points = ((value - current)*2)
       else
-        if value > @attributes[attrib][:ACT]
-        points = (((value - @attributes[attrib][:ACT]) *2) +
-                  ((@attributes[attrib][:ACT] - current) *1))
+        if value > attract
+        points = (((value - attract) *2) +
+                  ((attract - current) *1))
         else
           points = (value - current)
         end
@@ -1621,6 +1622,7 @@ class Character
                             end
       end
     end
+    @activeskills[:Reaction]={}
     CONSTANT[:derived][:Pools].each do |x|
       @derived[:Pools][x] = (x =~ /Astral|Magic/) ? 0 : 1
     end
@@ -1874,9 +1876,11 @@ class Attributeblock < Gtk::Frame
   def settotemboni(boni)
     if boni
       @totem[5].text = boni[2][:spells] ? 
-        boni[2][:spells].collect {|x| x[0].to_s + ":" + x[1].to_s}.join(", ") : ""
+        boni[2][:spells].collect {|x| "#{x[0]}:#{x[1]}"}.join(", ") : ""
       @totem[7].text = boni[2][:spirits] ? 
-        boni[2][:spirits].collect {|x| x[0].to_s + ":" + x[1].to_s}.join(", ") : ""
+        boni[2][:spirits].collect {|x| "#{x[0]}:#{x[1]}"}.join(", ") : ""
+      @totem[5].sensitive=true
+      @totem[7].sensitive=true
     else
       @totem[5].text = ''
       @totem[7].text = ''
@@ -2003,7 +2007,7 @@ class Attributeblock < Gtk::Frame
     @totem[3].signal_connect('changed') do |x|
       if x.active_text
         temp = CONSTANT[:totems][@totem[1].active_text.to_sym][x.active_text.to_sym]
-        @tooltips.set_tip(@totem[3],(temp[:desc] ? temp[:desc]+"\n" : '')+
+        @tooltips.set_tip(@totem[3],(temp[:desc] ? "#{temp[:desc]}\n" : '')+
           (temp[:properties] ? temp[:properties] : ''),nil)
         @app.settotem(x.active_text.to_sym,@totem[1].active_text.to_sym)
       else
@@ -2133,6 +2137,7 @@ class Skillblock < Gtk::ScrolledWindow
     CONSTANT[:attributes].each do |x|
       @header[:Attribute][1].append_text(x.to_s)
     end
+    @header[:Attribute][1].append_text("Reaction")
 
     @table.attach @header[:Attribute][0], 0, 3, 0, 1, *ATCH
     @table.attach @header[:Attribute][1], 0, 3, 1, 2, *ATCH
@@ -2211,7 +2216,7 @@ class Spellblock < Gtk::Frame
   def appendspell(name,category,subcategory)
     count = @spells.count
     @spells[name] = [ 
-      Gtk::Label.new(name),Gtk::Label.new(subcategory ? category+"/"+subcategory : category),
+      Gtk::Label.new(name),Gtk::Label.new(subcategory ? "#{category}/#{subcategory}" : category),
       Gtk::HScale.new(1,6,1),Gtk::Button.new(Gtk::Stock::NO)]
     @spells[name][2].value_pos = Gtk::POS_RIGHT
     @spells[name][2].signal_connect('value_changed') {|x| @app.spelllvl(name,x.value)}

@@ -960,7 +960,7 @@
   :Type:
   - :Weapon
   - :Firearm
-  - :Special Weapons
+  - :Spray Weapons
   :Stats:
     :Name: Ares Cascade
     :Range: SMG/Shotgun
@@ -978,7 +978,7 @@
   :Type:
   - :Weapon
   - :Firearm
-  - :Special Weapons
+  - :Spray Weapons
   :Stats:
     :Name: Ares Squirt
     :Range: Light
@@ -996,7 +996,7 @@
   :Type:
   - :Weapon
   - :Firearm
-  - :Special Weapons
+  - :Spray Weapons
   :Stats:
     :Name: Ares Supersquirt II
     :Range: Light
@@ -1010,6 +1010,186 @@
     :Avail: 9/14 days
     :Index: '1.5'
     :Page: mm.115
+:Flamethrower:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Spray Weapons
+  :Stats:
+    :Name: Flamethrower
+    :Range: Shotgun
+    :Conc.: " "
+    :Ammo: 10(tank)
+    :Mode: O
+    :Damage: 8M fire
+    :Weight: '21'
+    :Price: '1000'
+    :Legality: 2-K
+    :Avail: 10/1 wk
+    :Index: '3.0'
+    :Page: cc.29
+:Kendachi Dragon Flamer:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Spray Weapons
+  :Stats:
+    :Name: Kendachi Dragon Flamer
+    :Range: Taser
+    :Conc.: '3'
+    :Ammo: '4'
+    :Mode: O
+    :Damage: 6S fire
+    :Weight: '3.0'
+    :Price: '1600'
+    :Legality: 3-K
+    :Avail: 6/7 days
+    :Index: '2.5'
+    :Page: cb1.48
+:Shiawase Blazer:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Spray Weapons
+  :Stats:
+    :Name: Shiawase Blazer
+    :Range: Light
+    :Conc.: '4'
+    :Ammo: 4(tank)
+    :Mode: O
+    :Damage: 6M fire
+    :Weight: '6'
+    :Price: '750'
+    :Legality: 4-K
+    :Avail: 12/2 wks
+    :Index: '3.0'
+    :Page: cc.30
+:Splat Gun:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Spray Weapons
+  :Stats:
+    :Name: Splat Gun
+    :Range: Shotgun
+    :Conc.: '4'
+    :Ammo: 2(m)
+    :Mode: O
+    :Damage: special
+    :Weight: '3'
+    :Price: '600'
+    :Legality: Legal
+    :Avail: 9/7 days
+    :Index: '2.0'
+    :Page: mm.116
+:Spray Tank:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Spray Weapons
+  :Stats:
+    :Name: Spray Tank
+    :Range: Taser
+    :Conc.: '4'
+    :Ammo: '20'
+    :Mode: O
+    :Damage: chemical
+    :Weight: '5'
+    :Price: '100'
+    :Legality: Legal
+    :Avail: 3/12 hrs
+    :Index: '1.0'
+    :Page: mm.11
+:Defiance Super Shock:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Tasers
+  :Stats:
+    :Name: Defiance Super Shock
+    :Range: Taser
+    :Conc.: '4'
+    :Ammo: 4(m)
+    :Mode: S
+    :Damage: 10S stun
+    :Weight: '2'
+    :Price: '1000'
+    :Legality: 6P-E
+    :Avail: 5/24 hrs
+    :Index: '1.0'
+    :Page: sr3.277
+:ETI Zeus Volter:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Tasers
+  :Stats:
+    :Name: ETI Zeus Volter
+    :Range: Taser
+    :Conc.: '4'
+    :Ammo: 6(charge)
+    :Mode: A
+    :Damage: 7S stun/7S
+    :Weight: '4'
+    :Price: '50000'
+    :Legality: 5-K
+    :Avail: 12/7days
+    :Index: '3.0'
+    :Page: cb2.43
+:Lightning Plasma Shock:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Tasers
+  :Stats:
+    :Name: Lightning Plasma Shock
+    :Range: Heavy
+    :Conc.: '4'
+    :Ammo: 12(c)
+    :Mode: S
+    :Damage: 7M stun
+    :Weight: '3.0'
+    :Price: '3500'
+    :Legality: 6-K
+    :Avail: 14/14 days
+    :Index: '2.5'
+    :Page: kg6.34
+:Yamaha Pulsar:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Tasers
+  :Stats:
+    :Name: Yamaha Pulsar
+    :Range: Taser
+    :Conc.: '5'
+    :Ammo: 4(m)
+    :Mode: S
+    :Damage: 8D stun
+    :Weight: '2.0'
+    :Price: '1350'
+    :Legality: 6P-E
+    :Avail: 12/7 dyas
+    :Index: '2.0'
+    :Page: cc.19
+:Thunderbolt Plasma Shock:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Tasers
+  :Stats:
+    :Name: Thunderbolt Plasma Shock
+    :Range: Assault
+    :Conc.: '2'
+    :Ammo: 24(c)
+    :Mode: S
+    :Damage: 8M stun
+    :Weight: '6'
+    :Price: '5500'
+    :Legality: 5-K
+    :Avail: 16/14 days
+    :Index: '2.5'
+    :Page: kg6.3
 :Dart Pistol:
   :Type:
   - :Weapon
@@ -1046,60 +1226,6 @@
     :Avail: 8/2 days
     :Index: '2.0'
     :Page: mm.116
-:Defiance Super Shock:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Defiance Super Shock
-    :Range: Taser
-    :Conc.: '4'
-    :Ammo: 4(m)
-    :Mode: S
-    :Damage: 10S stun
-    :Weight: '2'
-    :Price: '1000'
-    :Legality: 6P-E
-    :Avail: 5/24 hrs
-    :Index: '1.0'
-    :Page: sr3.277
-:ETI Zeus Volter:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: ETI Zeus Volter
-    :Range: Taser
-    :Conc.: '4'
-    :Ammo: 6(charge)
-    :Mode: A
-    :Damage: 7S stun/7S
-    :Weight: '4'
-    :Price: '50000'
-    :Legality: 5-K
-    :Avail: 12/7days
-    :Index: '3.0'
-    :Page: cb2.43
-:Flamethrower:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Flamethrower
-    :Range: Shotgun
-    :Conc.: " "
-    :Ammo: 10(tank)
-    :Mode: O
-    :Damage: 8M fire
-    :Weight: '21'
-    :Price: '1000'
-    :Legality: 2-K
-    :Avail: 10/1 wk
-    :Index: '3.0'
-    :Page: cc.29
 :FN-AAL Gyrojet Pisrtol:
   :Type:
   - :Weapon
@@ -1135,59 +1261,6 @@
     :Legality: 4/36 hrs
     :Avail: '2.0'
     :Index: sr3.295
-:Kendachi Dragon Flamer:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Kendachi Dragon Flamer
-    :Range: Taser
-    :Conc.: '3'
-    :Ammo: '4'
-    :Mode: O
-    :Damage: 6S fire
-    :Weight: '3.0'
-    :Price: '1600'
-    :Legality: 3-K
-    :Avail: 6/7 days
-    :Index: '2.5'
-    :Page: cb1.48
-:Lightning Plasma Shock:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Lightning Plasma Shock
-    :Range: Heavy
-    :Conc.: '4'
-    :Ammo: 12(c)
-    :Mode: S
-    :Damage: 7M stun
-    :Weight: '3.0'
-    :Price: '3500'
-    :Legality: 6-K
-    :Avail: 14/14 days
-    :Index: '2.5'
-    :Page: kg6.34
-:Mjolnir Plasma:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Mjolnir Plasma
-    :Range: Cannon
-    :Conc.: 20(c)
-    :Ammo: S
-    :Mode: 14D stun
-    :Damage: '20'
-    :Weight: '50000'
-    :Price: 4-K
-    :Legality: 18/14 days
-    :Avail: '2.5'
-    :Index: kg6.33
 :Narcoject Pistol:
   :Type:
   - :Weapon
@@ -1224,42 +1297,6 @@
     :Avail: 8/2 days
     :Index: '2.0'
     :Page: ssc.62
-:Net Gun Standard:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Net Gun Standard
-    :Range: SMG
-    :Conc.: '4'
-    :Ammo: 4(b)
-    :Mode: S
-    :Damage: Special
-    :Weight: '4'
-    :Price: '750'
-    :Legality: 6P-E
-    :Avail: 8/36 hrs
-    :Index: '2.0'
-    :Page: cc.31
-:Net Gun Large:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Net Gun Large
-    :Range: SMG
-    :Conc.: '3'
-    :Ammo: 4(b)
-    :Mode: S
-    :Damage: Special
-    :Weight: '4.5'
-    :Price: '1150'
-    :Legality: 6P-E
-    :Avail: 8/36 hrs
-    :Index: '2.0'
-    :Page: cc.31
 :Bacteriatech, standard:
   :Type:
   - :Weapon
@@ -1296,78 +1333,6 @@
     :Avail: 8/14 days
     :Index: '5.0'
     :Page: cs.70
-:Shiawase Blazer:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Shiawase Blazer
-    :Range: Light
-    :Conc.: '4'
-    :Ammo: 4(tank)
-    :Mode: O
-    :Damage: 6M fire
-    :Weight: '6'
-    :Price: '750'
-    :Legality: 4-K
-    :Avail: 12/2 wks
-    :Index: '3.0'
-    :Page: cc.30
-:Splat Gun:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Splat Gun
-    :Range: Shotgun
-    :Conc.: '4'
-    :Ammo: 2(m)
-    :Mode: O
-    :Damage: special
-    :Weight: '3'
-    :Price: '600'
-    :Legality: Legal
-    :Avail: 9/7 days
-    :Index: '2.0'
-    :Page: mm.116
-:Spray Tank:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Spray Tank
-    :Range: Taser
-    :Conc.: '4'
-    :Ammo: '20'
-    :Mode: O
-    :Damage: chemical
-    :Weight: '5'
-    :Price: '100'
-    :Legality: Legal
-    :Avail: 3/12 hrs
-    :Index: '1.0'
-    :Page: mm.116
-:Thunderbolt Plasma Shock:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Thunderbolt Plasma Shock
-    :Range: Assault
-    :Conc.: '2'
-    :Ammo: 24(c)
-    :Mode: S
-    :Damage: 8M stun
-    :Weight: '6'
-    :Price: '5500'
-    :Legality: 5-K
-    :Avail: 16/14 days
-    :Index: '2.5'
-    :Page: kg6.34
 :Winter System Microflare:
   :Type:
   - :Weapon
@@ -1385,25 +1350,7 @@
     :Legality: Legal
     :Avail: 2/12 hrs
     :Index: '1.0'
-    :Page: ssc.46
-:Yamaha Pulsar:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Special Weapons
-  :Stats:
-    :Name: Yamaha Pulsar
-    :Range: Taser
-    :Conc.: '5'
-    :Ammo: 4(m)
-    :Mode: S
-    :Damage: 8D stun
-    :Weight: '2.0'
-    :Price: '1350'
-    :Legality: 6P-E
-    :Avail: 12/7 dyas
-    :Index: '2.0'
-    :Page: cc.1
+    :Page: ssc.4
 :AK-97 SMG/Carbine (t):
   :Type:
   - :Weapon
@@ -1820,7 +1767,7 @@
   :Type:
   - :Weapon
   - :Firearm
-  - :Support Weapons
+  - :LMG/MMG/HMG
   :Stats:
     :Name: HK G38 (2lt)
     :Range: LMG
@@ -2196,6 +2143,42 @@
     :Page: cc.23
     :Extras:
     - :Smartlink
+:Net Gun Standard:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Shotguns
+  :Stats:
+    :Name: Net Gun Standard
+    :Range: SMG
+    :Conc.: '4'
+    :Ammo: 4(b)
+    :Mode: S
+    :Damage: Special
+    :Weight: '4'
+    :Price: '750'
+    :Legality: 6P-E
+    :Avail: 8/36 hrs
+    :Index: '2.0'
+    :Page: cc.31
+:Net Gun Large:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Shotguns
+  :Stats:
+    :Name: Net Gun Large
+    :Range: SMG
+    :Conc.: '3'
+    :Ammo: 4(b)
+    :Mode: S
+    :Damage: Special
+    :Weight: '4.5'
+    :Price: '1150'
+    :Legality: 6P-E
+    :Avail: 8/36 hrs
+    :Index: '2.0'
+    :Page: cc.31
 :Remington 990:
   :Type:
   - :Weapon
@@ -2499,144 +2482,11 @@
     :Extras:
     - *1
     - :Laser sight
-:Ares HV MP-LMG (3S):
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Support Weapons
-  :Stats:
-    :Name: Ares HV MP-LMG (3S)
-    :Range: LMG
-    :Conc.: " "
-    :Ammo: Belt/80(c)
-    :Mode: S/B/F
-    :Damage: 6S
-    :Weight: '8'
-    :Price: '4500'
-    :Legality: 2-K
-    :Avail: 20/14 days
-    :Index: '4.0'
-    :Page: cc.25
-    :Extras:
-    - *3
-    - :Smartlink2
-:Ares MP Laser:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Support Weapons
-  :Stats:
-    :Name: Ares MP Laser
-    :Range: Sniper
-    :Conc.: " "
-    :Ammo: 20(pack)
-    :Mode: S
-    :Damage: 15M
-    :Weight: '30'
-    :Price: 2.5M
-    :Legality: 1-K
-    :Avail: NA
-    :Index: NA
-    :Page: ssc.54
-:Ares MP Laser III:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Support Weapons
-  :Stats:
-    :Name: Ares MP Laser III
-    :Range: Sniper
-    :Conc.: " "
-    :Ammo: 20(pack)
-    :Mode: S
-    :Damage: 15M
-    :Weight: '20'
-    :Price: '120000'
-    :Legality: 2-K
-    :Avail: 24/3 wks
-    :Index: '3.0'
-    :Page: cc.30
-:Ares MP-LMG (2bl):
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Support Weapons
-  :Stats:
-    :Name: Ares MP-LMG (2bl)
-    :Range: LMG
-    :Conc.: " "
-    :Ammo: Belt/50(c)
-    :Mode: B/F
-    :Damage: 7S
-    :Weight: '7.5'
-    :Price: '2200'
-    :Legality: 2-H
-    :Avail: 6/5 days
-    :Index: '2.0'
-    :Page: cc.26
-    :Extras:
-    - *2
-    - :Brace pad
-    - :Laser sight
-:Armtech MGL-12:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Support Weapons
-  :Stats:
-    :Name: Armtech MGL-12
-    :Range: GR
-    :Conc.: '3'
-    :Ammo: 12(c)
-    :Mode: S
-    :Damage: as grenade
-    :Weight: '5'
-    :Price: '2200'
-    :Legality: 1-K
-    :Avail: 6/36 hrs
-    :Index: '3.0'
-    :Page: cc.26
-:Armtech MGL-Mini6:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Support Weapons
-  :Stats:
-    :Name: Armtech MGL-Mini6
-    :Range: GR
-    :Conc.: '6'
-    :Ammo: 6(c)
-    :Mode: S
-    :Damage: as grenade
-    :Weight: '2.5'
-    :Price: '1600'
-    :Legality: 1-K
-    :Avail: 6/36 hrs
-    :Index: '3.0'
-    :Page: cc.26
-:Generic Under-Barrel Mini-Grenade Launcher:
-  :Type:
-  - :Weapon
-  - :Firearm
-  - :Support Weapons
-  :Stats:
-    :Name: Generic Under-Barrel Mini-Grenade Launcher
-    :Range: GR
-    :Conc.: "-3"
-    :Ammo: 6(m)
-    :Mode: O
-    :Damage: as grenade
-    :Weight: "+2"
-    :Price: '1700'
-    :Legality: 1-K
-    :Avail: 8/4 days
-    :Index: '3.0'
-    :Page: sr2.240
 :Ingram Valiant (2b):
   :Type:
   - :Weapon
   - :Firearm
-  - :Support Weapons
+  - :LMG/MMG/HMG
   :Stats:
     :Name: Ingram Valiant (2b)
     :Range: LMG
@@ -2657,7 +2507,7 @@
   :Type:
   - :Weapon
   - :Firearm
-  - :Support Weapons
+  - :LMG/MMG/HMG
   :Stats:
     :Name: Steyr AUG CSL (1l)
     :Range: LMG
@@ -2670,10 +2520,500 @@
     :Legality: 3-H
     :Avail: 10/4 days
     :Index: '3.0'
-    :Page: cc.2
+    :Page: cc.23
     :Extras:
     - *1
     - :Laser sight
+:FN MAG-5 MMG (2l):
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :LMG/MMG/HMG
+  :Stats:
+    :Name: FN MAG-5 MMG (2l)
+    :Range: MMG
+    :Conc.: " "
+    :Ammo: Belt/50(x)
+    :Mode: F
+    :Damage: 9S
+    :Weight: '9.5'
+    :Price: '3200'
+    :Legality: 2-H
+    :Avail: 18/14 days
+    :Index: '3.0'
+    :Page: cc.26
+    :Extras:
+    - *2
+    - :Laser sight
+:Generic HMG:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :LMG/MMG/HMG
+  :Stats:
+    :Name: Generic HMG
+    :Range: HMG
+    :Conc.: " "
+    :Ammo: 40(c)
+    :Mode: F
+    :Damage: 10S
+    :Weight: '15'
+    :Price: '4000'
+    :Legality: 2-H
+    :Avail: 18/14 days
+    :Index: '2.0'
+    :Page: sr2.239
+:Generic MMG:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :LMG/MMG/HMG
+  :Stats:
+    :Name: Generic MMG
+    :Range: MMG
+    :Conc.: " "
+    :Ammo: 40(c)
+    :Mode: F
+    :Damage: 9S
+    :Weight: '12'
+    :Price: '2500'
+    :Legality: 2-H
+    :Avail: 14/14 days
+    :Index: '2.0'
+    :Page: sr2.239
+:RPK HMG:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :LMG/MMG/HMG
+  :Stats:
+    :Name: RPK HMG
+    :Range: HMG
+    :Conc.: " "
+    :Ammo: 40(c)
+    :Mode: F
+    :Damage: 10S
+    :Weight: '15'
+    :Price: '4000'
+    :Legality: 2-H
+    :Avail: 18/18 days
+    :Index: '2.0'
+    :Page: sr3.279
+:Ultimax MMG:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :LMG/MMG/HMG
+  :Stats:
+    :Name: Ultimax MMG
+    :Range: MMG
+    :Conc.: " "
+    :Ammo: 40(c)
+    :Mode: F
+    :Damage: 9S
+    :Weight: '12'
+    :Price: '2500'
+    :Legality: 2-H
+    :Avail: 14/14 days
+    :Index: '2.0'
+    :Page: sr3.279
+:Vanquisher Minigun:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :LMG/MMG/HMG
+  :Stats:
+    :Name: Vanquisher Minigun
+    :Range: HMG(M)
+    :Conc.: " "
+    :Ammo: Belt
+    :Mode: F
+    :Damage: 10S
+    :Weight: '45'
+    :Price: '75000'
+    :Legality: 1-K
+    :Avail: 18/28 days
+    :Index: '3.5'
+    :Page: r3.89
+:Vengence Minigun:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :LMG/MMG/HMG
+  :Stats:
+    :Name: Vengence Minigun
+    :Range: MMG(M)
+    :Conc.: " "
+    :Ammo: Belt
+    :Mode: F
+    :Damage: 9S
+    :Weight: '30'
+    :Price: '50000'
+    :Legality: 1-K
+    :Avail: 18/28 days
+    :Index: '3.5'
+    :Page: r3.89
+:Vindicator Minigun:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :LMG/MMG/HMG
+  :Stats:
+    :Name: Vindicator Minigun
+    :Range: LMG(M)
+    :Conc.: " "
+    :Ammo: Belt/50(c)
+    :Mode: F
+    :Damage: 7S
+    :Weight: '15'
+    :Price: '2500'
+    :Legality: 1-K
+    :Avail: 24/14 days
+    :Index: '2.0'
+    :Page: cc.2
+:Ares Vigorous:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Cannons
+  :Stats:
+    :Name: Ares Vigorous
+    :Range: Cannon
+    :Conc.: " "
+    :Ammo: Belt/20(c)
+    :Mode: O
+    :Damage: 18D
+    :Weight: '20'
+    :Price: '6500'
+    :Legality: 2-H
+    :Avail: 16/14 days
+    :Index: '2.0'
+    :Page: sr3.279
+:Ares Vermicide:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Cannons
+  :Stats:
+    :Name: Ares Vermicide
+    :Range: Cannon
+    :Conc.: " "
+    :Ammo: 10(c)
+    :Mode: S
+    :Damage: 12D
+    :Weight: '45'
+    :Price: '12000'
+    :Legality: 2-H
+    :Avail: 16/14 days
+    :Index: '2.0'
+    :Page: sr3.311
+:Assault Cannon:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Cannons
+  :Stats:
+    :Name: Assault Cannon
+    :Range: Cannon
+    :Conc.: " "
+    :Ammo: 20(c)
+    :Mode: O
+    :Damage: 10D
+    :Weight: '20'
+    :Price: '6500'
+    :Legality: 2-H
+    :Avail: 16/14 days
+    :Index: '2.0'
+    :Page: sr2.239
+:Autocannon:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Cannons
+  :Stats:
+    :Name: Autocannon
+    :Range: Cannon
+    :Conc.: " "
+    :Ammo: 10(c)
+    :Mode: O
+    :Damage: 12D
+    :Weight: '36'
+    :Price: '12000'
+    :Legality: 1-K
+    :Avail: 12/14 days
+    :Index: '2.0'
+    :Page: sr2.253
+:Panther Assault Cannon (b):
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Cannons
+  :Stats:
+    :Name: Panther Assault Cannon (b)
+    :Range: Cannon
+    :Conc.: " "
+    :Ammo: Belt/22(c)
+    :Mode: O
+    :Damage: 18D
+    :Weight: '18'
+    :Price: '7200'
+    :Legality: 2-H
+    :Avail: 16/14 days
+    :Index: '2.0'
+    :Page: cc.26
+    :Extras:
+    - :Brace pad
+:Victory Assault Cannon:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Cannons
+  :Stats:
+    :Name: Victory Assault Cannon
+    :Range: Cannon(M)
+    :Conc.: " "
+    :Ammo: Belt
+    :Mode: F
+    :Damage: 20D
+    :Weight: '105'
+    :Price: '120000'
+    :Legality: 1-K
+    :Avail: 20/45 days
+    :Index: '5.0'
+    :Page: r3.91
+:Vigilant Autocannon:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Cannons
+  :Stats:
+    :Name: Vigilant Autocannon
+    :Range: Cannon(M)
+    :Conc.: " "
+    :Ammo: Belt
+    :Mode: O/F
+    :Damage: 18D
+    :Weight: '90'
+    :Price: '90000'
+    :Legality: 1-K
+    :Avail: 20/45 days
+    :Index: '5.0'
+    :Page: r3.9
+:Ares HV MP-LMG (3S):
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Laser Weapons
+  :Stats:
+    :Name: Ares HV MP-LMG (3S)
+    :Range: LMG
+    :Conc.: " "
+    :Ammo: Belt/80(c)
+    :Mode: S/B/F
+    :Damage: 6S
+    :Weight: '8'
+    :Price: '4500'
+    :Legality: 2-K
+    :Avail: 20/14 days
+    :Index: '4.0'
+    :Page: cc.25
+    :Extras:
+    - *3
+    - :Smartlink2
+:Ares MP Laser:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Laser Weapons
+  :Stats:
+    :Name: Ares MP Laser
+    :Range: Sniper
+    :Conc.: " "
+    :Ammo: 20(pack)
+    :Mode: S
+    :Damage: 15M
+    :Weight: '30'
+    :Price: 2.5M
+    :Legality: 1-K
+    :Avail: NA
+    :Index: NA
+    :Page: ssc.54
+:Ares MP Laser III:
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Laser Weapons
+  :Stats:
+    :Name: Ares MP Laser III
+    :Range: Sniper
+    :Conc.: " "
+    :Ammo: 20(pack)
+    :Mode: S
+    :Damage: 15M
+    :Weight: '20'
+    :Price: '120000'
+    :Legality: 2-K
+    :Avail: 24/3 wks
+    :Index: '3.0'
+    :Page: cc.30
+:Ares MP-LMG (2bl):
+  :Type:
+  - :Weapon
+  - :Firearm
+  - :Laser Weapons
+  :Stats:
+    :Name: Ares MP-LMG (2bl)
+    :Range: LMG
+    :Conc.: " "
+    :Ammo: Belt/50(c)
+    :Mode: B/F
+    :Damage: 7S
+    :Weight: '7.5'
+    :Price: '2200'
+    :Legality: 2-H
+    :Avail: 6/5 days
+    :Index: '2.0'
+    :Page: cc.2
+    :Extras:
+    - *2
+    - :Brace pad
+    - :Laser sight
+:Arbelast II MAW:
+  :Type:
+  - :Weapon
+  - :Missile Launchers
+  :Stats:
+    :Name: Arbelast II MAW
+    :Range: Missile
+    :Conc.: " "
+    :Ammo: '1'
+    :Mode: S
+    :Damage: 15D(HE)
+    :Weight: '2.75'
+    :Price: '1200'
+    :Legality: 1-K
+    :Avail: 8/48 hrs
+    :Index: '2.0'
+    :Page: cc.28
+:Ballista Mk I:
+  :Type:
+  - :Weapon
+  - :Missile Launchers
+  :Stats:
+    :Name: Ballista Mk I
+    :Range: Missile
+    :Conc.: " "
+    :Ammo: 4(m)
+    :Mode: S
+    :Damage: 14D(AV)
+    :Weight: '6.5'
+    :Price: '10500'
+    :Legality: 1-K
+    :Avail: '18/30 days '
+    :Index: '4.0'
+    :Page: cc.28
+:Great Dragon ATGM:
+  :Type:
+  - :Weapon
+  - :Missile Launchers
+  :Stats:
+    :Name: Great Dragon ATGM
+    :Range: Missile
+    :Conc.: " "
+    :Ammo: '1'
+    :Mode: S
+    :Damage: 20D(AV)
+    :Weight: '2.75'
+    :Price: '1200'
+    :Legality: 1-K
+    :Avail: 8/48 hrs
+    :Index: '2.0'
+    :Page: cc.28
+:M79B1 LAW:
+  :Type:
+  - :Weapon
+  - :Missile Launchers
+  :Stats:
+    :Name: M79B1 LAW
+    :Range: Missile
+    :Conc.: 4/0
+    :Ammo: '1'
+    :Mode: S
+    :Damage: 12D(HE)
+    :Weight: '2.5'
+    :Price: '700'
+    :Legality: 1-K
+    :Avail: 6/36 hrs
+    :Index: '2.0'
+    :Page: cc.28
+:Vogeljäger Missile:
+  :Type:
+  - :Weapon
+  - :Missile Launchers
+  :Stats:
+    :Name: Vogeljäger Missile
+    :Range: Missile
+    :Conc.: " "
+    :Ammo: '1'
+    :Mode: S
+    :Damage: 14D(AV)
+    :Weight: '8'
+    :Price: '125000'
+    :Legality: 1-k
+    :Avail: 18/28 days
+    :Index: '4.0'
+    :Page: cc.2
+:Armtech MGL-12:
+  :Type:
+  - :Weapon
+  - :Grenade Launchers
+  :Stats:
+    :Name: Armtech MGL-12
+    :Range: GR
+    :Conc.: '3'
+    :Ammo: 12(c)
+    :Mode: S
+    :Damage: as grenade
+    :Weight: '5'
+    :Price: '2200'
+    :Legality: 1-K
+    :Avail: 6/36 hrs
+    :Index: '3.0'
+    :Page: cc.26
+:Armtech MGL-Mini6:
+  :Type:
+  - :Weapon
+  - :Grenade Launchers
+  :Stats:
+    :Name: Armtech MGL-Mini6
+    :Range: GR
+    :Conc.: '6'
+    :Ammo: 6(c)
+    :Mode: S
+    :Damage: as grenade
+    :Weight: '2.5'
+    :Price: '1600'
+    :Legality: 1-K
+    :Avail: 6/36 hrs
+    :Index: '3.0'
+    :Page: cc.26
+:Generic Under-Barrel Mini-Grenade Launcher:
+  :Type:
+  - :Weapon
+  - :Grenade Launchers
+  :Stats:
+    :Name: Generic Under-Barrel Mini-Grenade Launcher
+    :Range: GR
+    :Conc.: "-3"
+    :Ammo: 6(m)
+    :Mode: O
+    :Damage: as grenade
+    :Weight: "+2"
+    :Price: '1700'
+    :Legality: 1-K
+    :Avail: 8/4 days
+    :Index: '3.0'
+    :Page: sr2.24
 :Bow:
   :Type:
   - :Weapon
@@ -3635,1074 +3975,3 @@
     :Avail: 2/24 hrs
     ! ':Index ': '1.0'
     :Page: sr3.27
-:Anti-Personnel:
-  :Type:
-  - :Weapon
-  - :Rockets
-  :Stats:
-    :Name: Anti-Personnel
-    :Intelligence: NA
-    :Damage: 16D
-    :Weight: '2'
-    :Price: '1000'
-    :Legality: 1-K
-    :Avail: 8/14 days
-    :Index Page: '2.0'
-    ! '': sr3.280
-:Anti-Vehicle:
-  :Type:
-  - :Weapon
-  - :Rockets
-  :Stats:
-    :Name: Anti-Vehicle
-    :Intelligence: NA
-    :Damage: 16D
-    :Weight: '3'
-    :Price: '2000'
-    :Legality: 1-K
-    :Avail: 8/14 days
-    :Index Page: '2.0'
-    ! '': sr3.280
-:High-Explosive:
-  :Type:
-  - :Weapon
-  - :Rockets
-  :Stats:
-    :Name: High-Explosive
-    :Intelligence: NA
-    :Damage: 16D
-    :Weight: '2'
-    :Price: '1500'
-    :Legality: 1-K
-    :Avail: 8/14 days
-    :Index Page: '2.0'
-    ! '': sr3.280
-:Loral-Vought Jabberwocky:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Loral-Vought Jabberwocky
-    :Intelligence: '3'
-    :Damage: Special
-    :Weight: '20'
-    :Price: '7000'
-    :Legality: 1-K
-    :Avail: 12/3 wks
-    :Index: '5.0'
-    :Page: cc.44
-:Piranha Armor-Piercing:
-  :Type:
-  - :Weapon
-  - :Rockets
-  :Stats:
-    :Name: Piranha Armor-Piercing
-    :Intelligence: NA
-    :Damage: 16D
-    :Weight: '4'
-    :Price: '3000'
-    :Legality: 1-K
-    :Avail: 16/21 days
-    :Index Page: '2.5'
-    ! '': r3.88
-:Piranha High Explosive:
-  :Type:
-  - :Weapon
-  - :Rockets
-  :Stats:
-    :Name: Piranha High Explosive
-    :Intelligence: NA
-    :Damage: 12D
-    :Weight: '2.5'
-    :Price: '2500'
-    :Legality: 1-K
-    :Avail: 16/21 days
-    :Index Page: '2.5'
-    ! '': r3.88
-:Piranha Ink-Dispensing:
-  :Type:
-  - :Weapon
-  - :Rockets
-  :Stats:
-    :Name: Piranha Ink-Dispensing
-    :Intelligence: NA
-    :Damage: ink
-    :Weight: '2.5'
-    :Price: '4000'
-    :Legality: 1-K
-    :Avail: 16/21 days
-    :Index Page: '2.5'
-    ! '': r3.88
-:Zapper Static Discharge Rockets:
-  :Type:
-  - :Weapon
-  - :Rockets
-  :Stats:
-    :Name: Zapper Static Discharge Rockets
-    :Intelligence: NA
-    :Damage: 16D
-    :Weight: '25'
-    :Price: '2500'
-    :Legality: 1-K
-    :Avail: 10/2 wks
-    :Index Page: '2.5'
-    ! '': cc.44
-:7.62cm:
-  :Type:
-  - :Weapon
-  - :Rockets
-  :Stats:
-    :Name: 7.62cm
-    :Intelligence: NA
-    :Damage: 3D/rkt
-    :Weight: '0.5'
-    :Price: '1000'
-    :Legality: 1-J
-    :Avail: 8/14 days
-    :Index Page: '2.0'
-    ! '': rbb.125
-:12.7cm:
-  :Type:
-  - :Weapon
-  - :Rockets
-  :Stats:
-    :Name: 12.7cm
-    :Intelligence: NA
-    :Damage: 7D/rkt
-    :Weight: '0.75'
-    :Price: '1500'
-    :Legality: 1-J
-    :Avail: 8/14 days
-    :Index Page: '2.0'
-    ! '': rbb.12
-:Anti-Personnel (APM):
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Anti-Personnel (APM)
-    :Intelligence: '3'
-    :Damage: 16D
-    :Weight: '2.25'
-    :Price: '1000'
-    :Legality: 1-K
-    :Avail: 12/14 days
-    :Index: '3.0'
-    :Page: sr3.280
-    :Extras:
-    - 
-    - 
-    - 
-:Anti-Vehicle (AVM):
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Anti-Vehicle (AVM)
-    :Intelligence: '4'
-    :Damage: 16D
-    :Weight: '3.25'
-    :Price: '2000'
-    :Legality: 1-K
-    :Avail: 12/14 days
-    :Index: '3.0'
-    :Page: sr3.280
-    :Extras:
-    - 
-    - 
-    - 
-:Arbelast II MAW:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Arbelast II MAW
-    :Intelligence: NA
-    :Damage: 15D (HE)
-    :Weight: '2.5'
-    :Price: '900'
-    :Legality: 1-J
-    :Avail: 8/48 hrs
-    :Index: '2.0'
-    :Page: cc.28
-:Ares Dragon's Breath Attack AAM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Ares Dragon's Breath Attack AAM
-    :Intelligence: '9'
-    :Damage: 18D
-    :Weight: '20'
-    :Price: 1.5M
-    :Legality: 1-K
-    :Avail: 12/14 days
-    :Index: '3.0'
-    :Page: rbb.125
-:Ares Dragon's Breath Dogfight AAM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Ares Dragon's Breath Dogfight AAM
-    :Intelligence: '8'
-    :Damage: 18D
-    :Weight: '20'
-    :Price: '500000'
-    :Legality: 1-K
-    :Avail: 12/14 days
-    :Index: '3.0'
-    :Page: rbb.125
-:Ares Land Shark Anti-Vehicle Device:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Ares Land Shark Anti-Vehicle Device
-    :Intelligence: '1'
-    :Damage: 17D
-    :Weight: '5.0'
-    :Price: '3500'
-    :Legality: 1-K
-    :Avail: 13/14 days
-    :Index: '3.0'
-    :Page: ls.133
-:Ballista Mk I:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Ballista Mk I
-    :Intelligence: NA
-    :Damage: 14D (AV)
-    :Weight: '2.75'
-    :Price: '1000'
-    :Legality: 1-J
-    :Avail: 12/21 days
-    :Index: '4.0'
-    :Page: cc.28
-:Ballista Mk II:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Ballista Mk II
-    :Intelligence: '6'
-    :Damage: 14D (AV)
-    :Weight: '2.75'
-    :Price: '2500'
-    :Legality: 1-J
-    :Avail: 14/28 days
-    :Index: '4.0'
-    :Page: cc.28
-:Ballista Mk III:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Ballista Mk III
-    :Intelligence: '5'
-    :Damage: 14D (AV)
-    :Weight: '2.75'
-    :Price: '2000'
-    :Legality: 1-J
-    :Avail: 18/28 days
-    :Index: '4.0'
-    :Page: cc.28
-:Great Dragon ATGM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Great Dragon ATGM
-    :Intelligence: '4'
-    :Damage: 20D (AV)
-    :Weight: '3'
-    :Price: '1000'
-    :Legality: 1-J
-    :Avail: 8/48 hrs
-    :Index: '2.0'
-    :Page: cc.28
-:High-Explosive (HEM):
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: High-Explosive (HEM)
-    :Intelligence: '3'
-    :Damage: 16D
-    :Weight: '2.25'
-    :Price: '1500'
-    :Legality: 1-K
-    :Avail: 12/14 days
-    :Index: '3.0'
-    :Page: sr3.280
-    :Extras:
-    - 
-    - 
-    - 
-:Hyundai-CS Basic AAM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Hyundai-CS Basic AAM
-    :Intelligence: '8'
-    :Damage: 18D
-    :Weight: '10'
-    :Price: '100000'
-    :Legality: 1-K
-    :Avail: 12/14 days
-    :Index: '3.0'
-    :Page: rbb.125
-:Hyundai-CS Improved AAM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Hyundai-CS Improved AAM
-    :Intelligence: '9'
-    :Damage: 18D
-    :Weight: '20'
-    :Price: '150000'
-    :Legality: 1-K
-    :Avail: 12/14 days
-    :Index: '3.0'
-    :Page: rbb.125
-:Loral-Vought Silencer AARM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Loral-Vought Silencer AARM
-    :Intelligence: '5'
-    :Damage: 16D
-    :Weight: '250'
-    :Price: '25000'
-    :Legality: 1-K
-    :Avail: 16/28 days
-    :Index: '5.0'
-    :Page: r3.92
-:M79B1 LAW:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: M79B1 LAW
-    :Intelligence: NA
-    :Damage: 12D (HE)
-    :Weight: '2.5'
-    :Price: '750'
-    :Legality: 1-J
-    :Avail: 6/36 hrs
-    :Index: '2.0'
-    :Page: cc.28
-:Micromissiles:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Micromissiles
-    :Intelligence: NA
-    :Damage: 12S
-    :Weight: '0.8'
-    :Price: '1200'
-    :Legality: 1-J
-    :Avail: 14/15 days
-    :Index: '3.5'
-    :Page: cb2.41
-:Mitsubishi-GM Bandit AGM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Mitsubishi-GM Bandit AGM
-    :Intelligence: '6'
-    :Damage: by warhead
-    :Weight: by warhead
-    :Price: '10000'
-    :Legality: 1-K
-    :Avail: 12/14 days
-    :Index: '3.0'
-    :Page: rbb.125
-:Mitsubishi-GM Outlaw Block I:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Mitsubishi-GM Outlaw Block I
-    :Intelligence: '5'
-    :Damage: 14D
-    :Weight: '200'
-    :Price: '15000'
-    :Legality: 1-K
-    :Avail: 20/30 days
-    :Index: '5.0'
-    :Page: r3.91
-:Mitsubishi-GM Outlaw Block III:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Mitsubishi-GM Outlaw Block III
-    :Intelligence: '5'
-    :Damage: 14D
-    :Weight: '200'
-    :Price: '25000'
-    :Legality: 1-K
-    :Avail: 20/30 days
-    :Index: '5.0'
-    :Page: r3.91
-:Mitsubishi-GM Outlaw Block II I:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Mitsubishi-GM Outlaw Block II I
-    :Intelligence: '6'
-    :Damage: 20D (AV)
-    :Weight: '200'
-    :Price: '35000'
-    :Legality: 1-K
-    :Avail: 20/30 days
-    :Index: '5.0'
-    :Page: r3.91
-:Mitsubishi-GM Super Bandit AGM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Mitsubishi-GM Super Bandit AGM
-    :Intelligence: '6'
-    :Damage: by warhead
-    :Weight: by warhead
-    :Price: '15000'
-    :Legality: 1-K
-    :Avail: 12/14 days
-    :Index: '3.0'
-    :Page: rbb.125
-:Piranha Torpedo Armor-Piercing:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Piranha Torpedo Armor-Piercing
-    :Intelligence: '4'
-    :Damage: 16D
-    :Weight: '4.25'
-    :Price: '7500'
-    :Legality: 1-K
-    :Avail: 16/21 days
-    :Index: '3.5'
-    :Page: r3.88
-:Piranha Torpedo High Explosive:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Piranha Torpedo High Explosive
-    :Intelligence: '4'
-    :Damage: 12D
-    :Weight: '2.75'
-    :Price: '5000'
-    :Legality: 1-K
-    :Avail: 16/21 days
-    :Index: '3.5'
-    :Page: r3.88
-:Piranha Torpedo Ink-Dispensing:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Piranha Torpedo Ink-Dispensing
-    :Intelligence: '4'
-    :Damage: ink
-    :Weight: '2.75'
-    :Price: '4000'
-    :Legality: 1-K
-    :Avail: 16/21 days
-    :Index: '3.5'
-    :Page: r3.88
-:Ruhrmetall Vogeljäger MRAAM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Ruhrmetall Vogeljäger MRAAM
-    :Intelligence: '5'
-    :Damage: 14D
-    :Weight: '17'
-    :Price: '5000'
-    :Legality: 1-K
-    :Avail: 18/28 days
-    :Index: '4.0'
-    :Page: r2.93
-:Saab-Saaker AIM-11R AAM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Saab-Saaker AIM-11R AAM
-    :Intelligence: '6'
-    :Damage: 14D
-    :Weight: '90'
-    :Price: '25000'
-    :Legality: 1-K
-    :Avail: 20+/28+ days
-    :Index: '7.0'
-    :Page: r3.91
-:Surface-to-Air (SAM):
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Surface-to-Air (SAM)
-    :Intelligence: '4'
-    :Damage: 13D
-    :Weight: '1.5'
-    :Price: '2500'
-    :Legality: 1-K
-    :Avail: 18/3 wks
-    :Index: '4.0'
-    :Page: cc.44
-    :Extras:
-    - :Smartlink2
-    - 
-    - 
-:UIM-199 Kingfisher SSAM:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: UIM-199 Kingfisher SSAM
-    :Intelligence: '4'
-    :Damage: 14D
-    :Weight: '25'
-    :Price: '15000'
-    :Legality: 1-K
-    :Avail: 14/21 days
-    :Index: NA
-    :Page: r3.91
-:Vogeljäger Missile:
-  :Type:
-  - :Weapon
-  - :Missiles
-  :Stats:
-    :Name: Vogeljäger Missile
-    :Intelligence: '5'
-    :Damage: 14D (AV)
-    :Weight: '17'
-    :Price: '5000'
-    :Legality: 1-J
-    :Avail: 18/28 days
-    :Index: '4.0'
-    :Page: cc.2
-:AFR-7 Flash Grenade:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: AFR-7 Flash Grenade
-    :Conc.: '6'
-    :Damage: special
-    :Blast: special
-    :Weight: '0.25'
-    :Price: '40'
-    :Legality: 2-J
-    :Avail: 4/48 hrs
-    :Index: '1.0'
-    :Page: ssc.44
-:Ares Air-timed Mini-grenade:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Ares Air-timed Mini-grenade
-    :Conc.: '8'
-    :Damage: as grenade
-    :Blast: as grenade
-    :Weight: '0.1'
-    :Price: '150'
-    :Legality: 2-J
-    :Avail: 10/4 days
-    :Index: '2.0'
-    :Page: ssc.68
-:Concussion:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Concussion
-    :Conc.: '6'
-    :Damage: 12M stun
-    :Blast: "-1/1m"
-    :Weight: '0.25'
-    :Price: '30'
-    :Legality: 3-J
-    :Avail: 5/4 days
-    :Index: '2.0'
-    :Page: sr3.282
-:Defensive AP:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Defensive AP
-    :Conc.: '6'
-    :Damage: 10D(f)
-    :Blast: "-1/.5m"
-    :Weight: '0.25'
-    :Price: '30'
-    :Legality: 3-J
-    :Avail: 4/4 days
-    :Index: '2.0'
-    :Page: sr3.282
-:Defensive HE:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Defensive HE
-    :Conc.: '6'
-    :Damage: 10S
-    :Blast: "-1/.5m"
-    :Weight: '0.25'
-    :Price: '30'
-    :Legality: 3-J
-    :Avail: 4/4 days
-    :Index: '2.0'
-    :Page: sr3.282
-:Dual-charge:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Dual-charge
-    :Conc.: '5'
-    :Damage: as grenade
-    :Blast: special
-    :Weight: '0.5'
-    :Price: '150'
-    :Legality: 3-J
-    :Avail: 8/1 wk
-    :Index: '3.0'
-    :Page: cc.40
-:Flare:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Flare
-    :Conc.: '6'
-    :Damage: light
-    :Blast: 30 m
-    :Weight: '0.25'
-    :Price: '40'
-    :Legality: Legal
-    :Avail: 2/24 hrs
-    :Index: '1.0'
-    :Page: cc.40
-:Flash:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Flash
-    :Conc.: '6'
-    :Damage: 5L, light
-    :Blast: 1m, -1/5m
-    :Weight: '0.25'
-    :Price: '40'
-    :Legality: 3-J
-    :Avail: 4/48 hrs
-    :Index: '1.0'
-    :Page: cc.40
-:Flash-Pak:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Flash-Pak
-    :Conc.: '12'
-    :Damage: special
-    :Blast: special
-    :Weight: '0.2'
-    :Price: '250'
-    :Legality: Legal
-    :Avail: 3/36 hrs
-    :Index: '1.0'
-    :Page: sr3.283
-:Incendiary:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Incendiary
-    :Conc.: '5'
-    :Damage: fire
-    :Blast: 10m
-    :Weight: '0.5'
-    :Price: '50'
-    :Legality: 3-J
-    :Avail: 4/4 days
-    :Index: '2.0'
-    :Page: cc.40
-:Gas (Neuro-Stun Vll):
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Gas (Neuro-Stun Vll)
-    :Conc.: '5'
-    :Damage: 8S (stun)
-    :Blast: special
-    :Weight: '0.25'
-    :Price: '60'
-    :Legality: 3-J
-    :Avail: 8/4 days
-    :Index: '2.0'
-    :Page: sr3.283
-    :Extras:
-    - 
-    - 
-    - 
-    - 
-    - :Magnification: 3
-    - 
-    - :Smartlink2
-    - :Telescoping stock
-    - 
-    - :Magnification: 2
-    - 
-    - 
-    - :Laser sight
-    - :Laser sight
-:Electromagnetic Pulse:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Electromagnetic Pulse
-    :Conc.: '5'
-    :Damage: special
-    :Blast: 10m
-    :Weight: '0.3'
-    :Price: '750'
-    :Legality: 2-V
-    :Avail: 12/10 days
-    :Index: '2.5'
-    :Page: cb1.47
-:ETI Heavy Pistol Grenades:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: ETI Heavy Pistol Grenades
-    :Conc.: '8'
-    :Damage: as grenade
-    :Blast: as grenade
-    :Weight: '0.1'
-    :Price: x4
-    :Legality: 3-J
-    :Avail: "+3/8 days"
-    :Index: "+1.0"
-    :Page: cb2.48
-:ETI “Nauseator”:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: ETI “Nauseator”
-    :Conc.: n/a
-    :Damage: 10S stun
-    :Blast: 20m
-    :Weight: '10'
-    :Price: '25000'
-    :Legality: 2-V
-    :Avail: 12/10 days
-    :Index: '2.75'
-    :Page: cb2.43
-:ETI Rilfe grenades:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: ETI Rilfe grenades
-    :Conc.: '7'
-    :Damage: as grenade
-    :Blast: as grenade
-    :Weight: '0.2'
-    :Price: x3
-    :Legality: 3-J
-    :Avail: "+2/7 days"
-    :Index: "+0.5"
-    :Page: cb1.47
-:Ink:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Ink
-    :Conc.: '6'
-    :Damage: none
-    :Blast: 5m (in water)
-    :Weight: '0.25'
-    :Price: '40'
-    :Legality: Legal
-    :Avail: 4/4 days
-    :Index: '2.0'
-    :Page: cc.40
-:IPE Concussion:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: IPE Concussion
-    :Conc.: '6'
-    :Damage: 16M stun
-    :Blast: "-1/1m"
-    :Weight: '0.5'
-    :Price: '70'
-    :Legality: 3-J
-    :Avail: 8/1 wk
-    :Index: '2.0'
-    :Page: cc.41
-:IPE Defensive AP:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: IPE Defensive AP
-    :Conc.: '6'
-    :Damage: 15D(f)
-    :Blast: "-1/.5m"
-    :Weight: '0.5'
-    :Price: '60'
-    :Legality: 3-J
-    :Avail: 8/1 wk
-    :Index: '2.0'
-    :Page: cc.41
-:IPE Defensive HE:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: IPE Defensive HE
-    :Conc.: '6'
-    :Damage: 15S
-    :Blast: "-1/.5m"
-    :Weight: '0.5'
-    :Price: '60'
-    :Legality: 3-J
-    :Avail: 8/1 wk
-    :Index: '2.0'
-    :Page: cc.41
-:IPE Mini-grenade:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: IPE Mini-grenade
-    :Conc.: '8'
-    :Damage: as grenade
-    :Blast: as grenade
-    :Weight: '0.1'
-    :Price: '80'
-    :Legality: 2-J
-    :Avail: 8/4 days
-    :Index: '2.0'
-    :Page: ssc.66
-:IPE Offensive AP:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: IPE Offensive AP
-    :Conc.: '6'
-    :Damage: 15D(f)
-    :Blast: "-1/1m"
-    :Weight: '0.5'
-    :Price: '60'
-    :Legality: 3-J
-    :Avail: 8/1 wk
-    :Index: '2.0'
-    :Page: cc.41
-:IPE Offensive HE:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: IPE Offensive HE
-    :Conc.: '6'
-    :Damage: 15S
-    :Blast: "-1/1m"
-    :Weight: '0.5'
-    :Price: '60'
-    :Legality: 3-J
-    :Avail: 8/1 wk
-    :Index: '2.0'
-    :Page: cc.41
-:Mini-grenade:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Mini-grenade
-    :Conc.: '8'
-    :Damage: as grenade
-    :Blast: as grenade
-    :Weight: '0.1'
-    :Price: x2 as grem.
-    :Legality: "+2/as gren."
-    :Avail: "+1.0"
-    :Index: sr3.282
-:Offensive AP:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Offensive AP
-    :Conc.: '6'
-    :Damage: 10D(f)
-    :Blast: "-1/1m"
-    :Weight: '0.25'
-    :Price: '30'
-    :Legality: 3-J
-    :Avail: 4/4 days
-    :Index: '2.0'
-    :Page: sr3.282
-:Offensive HE:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Offensive HE
-    :Conc.: '6'
-    :Damage: 10S
-    :Blast: "-1/1m"
-    :Weight: '0.25'
-    :Price: '30'
-    :Legality: 3-J
-    :Avail: 4/4 days
-    :Index: '2.0'
-    :Page: sr3.282
-:Paint:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Paint
-    :Conc.: '6'
-    :Damage: special
-    :Blast: 10m
-    :Weight: '0.25'
-    :Price: '20'
-    :Legality: 7P-U
-    :Avail: 4/4 days
-    :Index: '0.75'
-    :Page: cb2.49
-:Smoke:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Smoke
-    :Conc.: '5'
-    :Damage: special
-    :Blast: special
-    :Weight: '0.25'
-    :Price: '30'
-    :Legality: Legal
-    :Avail: 3/24 hrs
-    :Index: '2.0'
-    :Page: fof.48
-:Smoke, IR:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Smoke, IR
-    :Conc.: '5'
-    :Damage: special
-    :Blast: special
-    :Weight: '0.25'
-    :Price: '40'
-    :Legality: Legal
-    :Avail: 4/48 hrs
-    :Index: '2.0'
-    :Page: fof.48
-:Slasher Monowire bolo:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Slasher Monowire bolo
-    :Conc.: '6'
-    :Damage: 10S
-    :Blast: none
-    :Weight: '0.25'
-    :Price: '5000'
-    :Legality: 1-J
-    :Avail: 24/14 days
-    :Index: '3.5'
-    :Page: cb2.47
-:Stench:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Stench
-    :Conc.: '6'
-    :Damage: "+4 to t#"
-    :Blast: 5m
-    :Weight: '0.25'
-    :Price: '30'
-    :Legality: 7P-V
-    :Avail: 4/4 days
-    :Index: '2.0'
-    :Page: cb2.49
-:Superflash:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Superflash
-    :Conc.: '5'
-    :Damage: 12M Stun, light
-    :Blast: "-1/1m, 3km"
-    :Weight: '0.25'
-    :Price: '80'
-    :Legality: 2-J
-    :Avail: 10/2 wks
-    :Index: '3.0'
-    :Page: cc.41
-:White Phosphorus:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: White Phosphorus
-    :Conc.: '6'
-    :Damage: 14M/10L
-    :Blast: "-1/1m"
-    :Weight: '0.25'
-    :Price: '120'
-    :Legality: 2-J
-    :Avail: 6/5 days
-    :Index: '3.0'
-    :Page: cc.41
-:Z-IC Splash Grenade:
-  :Type:
-  - :Weapon
-  - :Grenades
-  :Stats:
-    :Name: Z-IC Splash Grenade
-    :Conc.: '5'
-    :Damage: as chemical
-    :Blast: special
-    :Weight: '0.25'
-    :Price: '50'
-    :Legality: 3-J
-    :Avail: 8/4 days
-    :Index: '2.0'
-    :Page: mm.11

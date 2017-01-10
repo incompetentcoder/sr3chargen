@@ -13,29 +13,35 @@ data = {}
   pp skills
   skills.each do |y|
     skillname = y[1..-1].to_sym
-    skill = a[/#{y}[\S\s]*?\n\n/]
+    skill = a[/#{y}\n[\S\s]*?\n\n/]
     skill.chomp!.chomp!
     data[x.to_sym][skillname] = {}
     data[x.to_sym][skillname][:Desc] = skill.split("\n")[1]
     data[x.to_sym][skillname][:Specialization] = skill.split("\n").length > 2 ? skill.split("\n")[2].split(",") : []
-    if weps2.include? skillname
-      data[x.to_sym][skillname][:Specialization] =
-        weps.collect{|x| x[1][:Stats][:Name].split('(')[0] if x[1][:Type][1] == skillname || x[1][:Type][2] == skillname}.compact
-    elsif skillname == :"Gyrojet Pistols"
-      data[x.to_sym][skillname][:Specialization] =
-        weps.collect{|x| x[1][:Stats][:Name].split('(')[0] if x[1][:Stats][:Name] =~ /gyrojet/i}.compact
+    if skillname == :"Gyrojet Pistols"
+      data[x.to_sym][skillname][:Specialization]+=
+        weps.collect{|x| x[1][:Stats][:Name].split(' (')[0] if x[1][:Stats][:Name] =~ /gyrojet/i}.compact
     elsif skillname =~ /pistol/i
-      data[x.to_sym][skillname][:Specialization] =
-        weps.collect{|x| x[1][:Stats][:Name].split('(')[0] if x[1][:Type][2].to_s =~ /pistol/i}.compact
-    elsif skillname == :"Laser Weapons"
-      data[x.to_sym][skillname][:Specialization] =
-        weps.collect{|x| x[1][:Stats][:Name].split('(')[0] if x[1][:Stats][:Name] =~ /laser/i}.compact
+      data[x.to_sym][skillname][:Specialization]+=
+        weps.collect{|x| x[1][:Stats][:Name].split(' (')[0] if x[1][:Type][2].to_s =~ /(pistol)|(taser)/i}.compact
     elsif skillname == :"Edged Weapons"
-      data[x.to_sym][skillname][:Specialization] =
-        weps.collect{|x| x[1][:Stats][:Name].split('(')[0] if x[1][:Type][2] == :"Edged"}.compact
+      data[x.to_sym][skillname][:Specialization]+=
+        weps.collect{|x| x[1][:Stats][:Name].split(' (')[0] if x[1][:Type][2] == :"Edged"}.compact
     elsif skillname == :"Pole Arms/Staves"
-      data[x.to_sym][skillname][:Specialization] =
-        weps.collect{|x| x[1][:Stats][:Name].split('(')[0] if x[1][:Type][2] == :"Polearm"}.compact
+      data[x.to_sym][skillname][:Specialization]+=
+        weps.collect{|x| x[1][:Stats][:Name].split(' (')[0] if x[1][:Type][2] == :"Polearm"}.compact
+    elsif skillname == :"Throwing Weapons"
+      data[x.to_sym][skillname][:Specialization]+=
+        weps.collect{|x| x[1][:Stats][:Name].split(' (')[0] if x[1][:Type][1] == skillname}.compact + ["Grenades","Darts","Caltrops","Nets"]
+    elsif skillname == :"Heavy Weapons"
+      data[x.to_sym][skillname][:Specialization]+=
+        weps.collect{|x| x[1][:Stats][:Name].split(' (')[0] if x[1][:Type][2] =~ /(mmg)|(cannon)|/i}.compact
+    elsif skillname == :"Launch Weapons"
+      data[x.to_sym][skillname][:Specialization]+=
+        weps.collect{|x| x[1][:Stats][:Name].split(' (')[0] if x[1][:Type][1] =~ /(launcher)/i}.compact
+    elsif weps2.include? skillname
+      data[x.to_sym][skillname][:Specialization]+=
+        weps.collect{|x| x[1][:Stats][:Name].split(' (')[0] if x[1][:Type][1] == skillname || x[1][:Type][2] == skillname}.compact
     end
   end
 end
