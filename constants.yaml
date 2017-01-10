@@ -8609,7 +8609,1384 @@
       :Avail: 2/24 hrs
       ! ':Index ': '1.0'
       :Page: sr3.27
-:armors: {}
+:armors:
+  :Alessio coveralls:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Alessio coveralls
+      :Conc.: "-"
+      :Rating: 0/1
+      :Weight: '1'
+      :Price: '300'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '1.0'
+      :Page: cb3.7
+  :Alessio coveralls, armored:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Alessio coveralls, armored
+      :Conc.: '15'
+      :Rating: 1/2
+      :Weight: '1'
+      :Price: '1600'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '1.0'
+      :Page: cb3.7
+  :Real Leather:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Real Leather
+      :Conc.: "-"
+      :Rating: 0/2
+      :Weight: '1'
+      :Price: '750'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '0.75'
+      :Page: sr3.284
+  :Synthetic Leather:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Synthetic Leather
+      :Conc.: "-"
+      :Rating: 0/1
+      :Weight: '1'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '0.6'
+      :Page: sr3.284
+  :Fine:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Fine
+      :Conc.: "-"
+      :Rating: 0/0
+      :Weight: '1'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '1.0'
+      :Page: sr3.284
+  :Ordinary:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Ordinary
+      :Conc.: "-"
+      :Rating: 0/0
+      :Weight: '1'
+      :Price: '50'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '0.8'
+      :Page: sr3.284
+  :Tres Chic:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Tres Chic
+      :Conc.: "-"
+      :Rating: 0/0
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '1.0'
+      :Page: sr3.284
+  :Armanté Dallas Cross-buttoned shirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Dallas Cross-buttoned shirt
+      :Conc.: '14'
+      :Rating: 0.75/0
+      :Weight: '0.1'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Dallas Double-breasted jacket*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Dallas Double-breasted jacket*
+      :Conc.: '12'
+      :Rating: 2/2
+      :Weight: '1.5'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Dallas Short jacket*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Dallas Short jacket*
+      :Conc.: '13'
+      :Rating: 1/0.5
+      :Weight: '0.5'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Dallas Slacks:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Dallas Slacks
+      :Conc.: '14'
+      :Rating: 0.75/0.25
+      :Weight: '0.1'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Dallas Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Dallas Vest
+      :Conc.: '14'
+      :Rating: 0.5/0.25
+      :Weight: '0.5'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Executive Tux:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Executive Tux
+      :Conc.: '12'
+      :Rating: 3/1
+      :Weight: '1.0'
+      :Price: '1100'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté London The Count:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté London The Count
+      :Conc.: '12'
+      :Rating: 2/2
+      :Weight: '1.0'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté London The Chairman:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté London The Chairman
+      :Conc.: '11'
+      :Rating: 2/2
+      :Weight: '2.0'
+      :Price: '5000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté London The Majesty:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté London The Majesty
+      :Conc.: '11'
+      :Rating: 2/2
+      :Weight: '2.0'
+      :Price: '3000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté London The Merlin:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté London The Merlin
+      :Conc.: '12'
+      :Rating: 2/2
+      :Weight: '1.0'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté London The Professional:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté London The Professional
+      :Conc.: '13'
+      :Rating: 2/2
+      :Weight: '2.0'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Starlight line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Starlight line
+      :Conc.: '13'
+      :Rating: 1/1
+      :Weight: '0.75'
+      :Price: '4500'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Venetian line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Venetian line
+      :Conc.: '14'
+      :Rating: 1/0
+      :Weight: '0.5'
+      :Price: '3500'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armanté Ancien shawl:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armanté Ancien shawl
+      :Conc.: '14'
+      :Rating: 1/0
+      :Weight: '0.3'
+      :Price: '750'
+      :Legality: Legal
+      :Avail: 2/48 hrs
+      :Index: '0.75'
+      :Page: cc.46
+  :Armor Clothing:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armor Clothing
+      :Conc.: '10'
+      :Rating: 3/0
+      :Weight: '2'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 2/36 hrs
+      :Index: '1.0'
+      :Page: sr3.283
+  :Armor Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armor Jacket
+      :Conc.: '7'
+      :Rating: 5/3
+      :Weight: '2'
+      :Price: '900'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '0.75'
+      :Page: sr3.283
+  :Armor Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armor Vest
+      :Conc.: '12'
+      :Rating: 2/1
+      :Weight: '1'
+      :Price: '200'
+      :Legality: Legal
+      :Avail: 2/36 hrs
+      :Index: '0.8'
+      :Page: sr3.283
+  :Armor Vest With Plates:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Armor Vest With Plates
+      :Conc.: '10'
+      :Rating: 4/3
+      :Weight: '2'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '1.0'
+      :Page: sr3.283
+  :Combat boots:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Combat boots
+      :Conc.: "-"
+      :Rating: 0/1
+      :Weight: '1'
+      :Price: '120'
+      :Legality: Legal
+      :Avail: 2/1 day
+      :Index: 0.75 kg3.24
+  :Combat boots, full height:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Combat boots, full height
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1.5'
+      :Price: '275'
+      :Legality: Legal
+      :Avail: 4/3 days
+      :Index: 0.75 kg3.24
+  :Combat boots, tres chic:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Combat boots, tres chic
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1.75'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 4/7 days
+      :Index: 0.8 kg3.24
+  :Diving Armor:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Diving Armor
+      :Conc.: "-"
+      :Rating: 4/2
+      :Weight: '2'
+      :Price: '1750'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '1.25'
+      :Page: cc.51
+  :Form-Fitting Shirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Form-Fitting Shirt
+      :Conc.: '14'
+      :Rating: 2/0
+      :Weight: '0.75'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 6/1 wk
+      :Index: '1.0'
+      :Page: cc.51
+  :Form-Fitting Half-body suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Form-Fitting Half-body suit
+      :Conc.: '13'
+      :Rating: 3/1
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 6/10 days
+      :Index: '1.0'
+      :Page: cc.51
+  :Form-Fitting Full-body suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Form-Fitting Full-body suit
+      :Conc.: '12'
+      :Rating: 4/1
+      :Weight: '1.25'
+      :Price: '2000'
+      :Legality: Legal
+      :Avail: 6/2 wks
+      :Index: '1.0'
+      :Page: cc.51
+  :Forearm Guards:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Forearm Guards
+      :Conc.: '12'
+      :Rating: 0/1
+      :Weight: '0.2'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: 5/36 hrs
+      :Index: '0.75'
+      :Page: cc.51
+  :Heavy Partial Suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Heavy Partial Suit
+      :Conc.: "-"
+      :Rating: 6/4
+      :Weight: 10+Body
+      :Price: '10000'
+      :Legality: 4P-L
+      :Avail: 8/10 days
+      :Index: '2.0'
+      :Page: sr2.242
+  :Heavy Full Suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Heavy Full Suit
+      :Conc.: 8/6
+      :Rating: "-"
+      :Weight: 15+Body
+      :Price: '20000'
+      :Legality: 2P-L
+      :Avail: 16/14 days
+      :Index: '3.0'
+      :Page: sr2.242
+  :Heavy Helmet:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Heavy Helmet
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1'
+      :Price: '500'
+      :Legality: "(-1)P-L"
+      :Avail: 12/14 days
+      :Index: '1.5'
+      :Page: sr2.242
+  :Houndstooth suit jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Houndstooth suit jacket
+      :Conc.: '14'
+      :Rating: 1.5/.5
+      :Weight: '1'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: ngrl.37
+  :Houndstooth pants:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Houndstooth pants
+      :Conc.: '14'
+      :Rating: 1/.5
+      :Weight: '1'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: ngrl.37
+  :Houndstooth suit vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Houndstooth suit vest
+      :Conc.: '13'
+      :Rating: ".5/1"
+      :Weight: '0.75'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: ngrl.37
+  :Houndstooth sports jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Houndstooth sports jacket
+      :Conc.: '12'
+      :Rating: ".5/1.5"
+      :Weight: '1.25'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: ngrl.37
+  :Hunt Ball jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Hunt Ball jacket
+      :Conc.: '13'
+      :Rating: ".5/1.5"
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: ngrl.37
+  :Hunt Ball skirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Hunt Ball skirt
+      :Conc.: '14'
+      :Rating: ".5/1"
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: ngrl.37
+  :Hunt Ball slacks:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Hunt Ball slacks
+      :Conc.: '14'
+      :Rating: 1/.5
+      :Weight: '1'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: ngrl.37
+  :Kevlite Armor Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Armor Jacket
+      :Conc.: '6'
+      :Rating: 6/3
+      :Weight: '1.8'
+      :Price: '1260'
+      :Legality: Legal
+      :Avail: 6/7 days
+      :Index: '1.0'
+      :Page: kg9.20
+  :Kevlite Armor Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Armor Vest
+      :Conc.: '11'
+      :Rating: 3/1
+      :Weight: '0.8'
+      :Price: '280'
+      :Legality: Legal
+      :Avail: 6/7 days
+      :Index: '0.8'
+      :Page: kg9.20
+  :Kevlite Lined Coat:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Lined Coat
+      :Conc.: '7'
+      :Rating: 5/3
+      :Weight: '0.85'
+      :Price: '980'
+      :Legality: Legal
+      :Avail: 4/7 days
+      :Index: '1.0'
+      :Page: kg9.20
+  :Kevlite Partial Suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Partial Suit
+      :Conc.: "-"
+      :Rating: 7/5
+      :Weight: 8+Body
+      :Price: '14000'
+      :Legality: 3P-L
+      :Avail: 16/10 days
+      :Index: '3.0'
+      :Page: kg9.20
+  :Kevlite Full Suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Full Suit
+      :Conc.: "-"
+      :Rating: 9/7
+      :Weight: 12+Body
+      :Price: '28000'
+      :Legality: 2P-L
+      :Avail: 18/14 days
+      :Index: '4.0'
+      :Page: kg9.20
+  :Kevlite Helmet:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kevlite Helmet
+      :Conc.: "-"
+      :Rating: 2/1
+      :Weight: '1'
+      :Price: '240'
+      :Legality: "(-1)P-L"
+      :Avail: 14/10 days
+      :Index: '2.0'
+      :Page: kg9.20
+  :Kelmar Securetech™ Clothing:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kelmar Securetech™ Clothing
+      :Conc.: '12'
+      :Rating: 3/0
+      :Weight: '1.5'
+      :Price: '450'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '0.9'
+      :Page: sr3.283
+  :Kelmar Securetech™ Secure Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kelmar Securetech™ Secure Jacket
+      :Conc.: '9'
+      :Rating: 5/3
+      :Weight: '3'
+      :Price: '850'
+      :Legality: Legal
+      :Avail: 4/36 hrs
+      :Index: '0.8'
+      :Page: sr3.283
+  :Kelmar Securetech™ Secure Long Coat:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kelmar Securetech™ Secure Long Coat
+      :Conc.: '10'
+      :Rating: 4/2
+      :Weight: '2'
+      :Price: '650'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '0.9'
+      :Page: sr3.283
+  :Kelmar Securetech™ Secure Ultra-Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kelmar Securetech™ Secure Ultra-Vest
+      :Conc.: '14'
+      :Rating: 4/3
+      :Weight: '2.5'
+      :Price: '350'
+      :Legality: Legal
+      :Avail: 4/36 hrs
+      :Index: '0.9'
+      :Page: sr3.283
+  :Kelmar Securetech™ Secure Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Kelmar Securetech™ Secure Vest
+      :Conc.: '15'
+      :Rating: 2/1
+      :Weight: '0.75'
+      :Price: '175'
+      :Legality: Legal
+      :Avail: 3/36 hrs
+      :Index: '0.9'
+      :Page: sr3.283
+  :Lined Coat:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Lined Coat
+      :Conc.: '8'
+      :Rating: 4/2
+      :Weight: '1'
+      :Price: '700'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '0.75'
+      :Page: sr3.283
+  :Military Armor Light:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Military Armor Light
+      :Conc.: "-"
+      :Rating: 7/6
+      :Weight: 12+Body
+      :Price: '25000'
+      :Legality: 2-L
+      :Avail: 18/1 mth
+      :Index: '3.0'
+      :Page: cc.51
+  :Military Armor Medium:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Military Armor Medium
+      :Conc.: "-"
+      :Rating: 8/7
+      :Weight: 14+Body
+      :Price: '45000'
+      :Legality: 2-L
+      :Avail: 24/1 mth
+      :Index: '3.0'
+      :Page: cc.51
+  :Military Armor Heavy:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Military Armor Heavy
+      :Conc.: "-"
+      :Rating: 9/8
+      :Weight: 16+Body
+      :Price: '70000'
+      :Legality: 2-L
+      :Avail: 28/2 mth
+      :Index: '3.0'
+      :Page: cc.51
+  :Military Armor Helmet:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Military Armor Helmet
+      :Conc.: "-"
+      :Rating: "+2/+3"
+      :Weight: '3'
+      :Price: '2500'
+      :Legality: 2-L
+      :Avail: 18/1 mth
+      :Index: '3.0'
+      :Page: cc.51
+  :Mortimer of London Crimson Sky line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Mortimer of London Crimson Sky line
+      :Conc.: '12'
+      :Rating: 2/2
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Mortimer of London Greatcoat line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Mortimer of London Greatcoat line
+      :Conc.: '11'
+      :Rating: 4/2
+      :Weight: '3'
+      :Price: '2000'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Mortimer of London Summit line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Mortimer of London Summit line
+      :Conc.: '12'
+      :Rating: 3/2
+      :Weight: '3'
+      :Price: '2500'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Mortimer of London Ulysses line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Mortimer of London Ulysses line
+      :Conc.: '10'
+      :Rating: 4/2
+      :Weight: '4'
+      :Price: '4000'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Motorcycle Helmet Standard:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Motorcycle Helmet Standard
+      :Conc.: "-"
+      :Rating: 0/1
+      :Weight: '1'
+      :Price: '200'
+      :Legality: Legal
+      :Avail: Always
+      :Index: '1.0'
+      :Page: kg2.25
+  :Motorcycle Greek Warhelm:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Motorcycle Greek Warhelm
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1.25'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 3/1 day
+      :Index: '1.0'
+      :Page: kg2.25
+  :Motorcycle Roman Warhelm:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Motorcycle Roman Warhelm
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1.25'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 3/1 day
+      :Index: '1.0'
+      :Page: kg2.25
+  :Motorcycle Viking Warhelm:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Motorcycle Viking Warhelm
+      :Conc.: "-"
+      :Rating: 1/1
+      :Weight: '1.25'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 3/1 day
+      :Index: '1.0'
+      :Page: kg2.25
+  :Motorcycle WWI German:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Motorcycle WWI German
+      :Conc.: "-"
+      :Rating: 0/1
+      :Weight: '2'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: 3/1 day
+      :Index: '1.0'
+      :Page: kg2.25
+  :Pattersion Fabrics Camo-Spec™ Full Suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Pattersion Fabrics Camo-Spec™ Full Suit
+      :Conc.: '10'
+      :Rating: 3/1
+      :Weight: '1.5'
+      :Price: '800'
+      :Legality: Legal
+      :Avail: 4/36 hrs
+      :Index: '1.0'
+      :Page: sr3.284*
+  :Pattersion Fabrics Camo-Spec™ Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Pattersion Fabrics Camo-Spec™ Jacket
+      :Conc.: '8'
+      :Rating: 5/3
+      :Weight: '3'
+      :Price: '1200'
+      :Legality: Legal
+      :Avail: 5/36 hrs
+      :Index: '1.0'
+      :Page: sr3.284*
+  :Light Security Armor:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Light Security Armor
+      :Conc.: 6/4
+      :Rating: 9+Body
+      :Weight: '7500'
+      :Price: 4P-L
+      :Legality: 12/10 days
+      :Avail: '2.0'
+      :Index: sr3.284
+  :Medium Security Armor:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Medium Security Armor
+      :Conc.: 6/5
+      :Rating: 11+body
+      :Weight: '9000'
+      :Price: 3P-L
+      :Legality: 14/10 days
+      :Avail: '2.5'
+      :Index: sr3.284
+  :Heavy Security Armor:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Heavy Security Armor
+      :Conc.: 7/5
+      :Rating: 13+body
+      :Weight: '12000'
+      :Price: 2P-L
+      :Legality: 16/14 days
+      :Avail: '3.0'
+      :Index: sr3.284
+  :Security Armor Helmet:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Security Armor Helmet
+      :Conc.: 1/2
+      :Rating: '1'
+      :Weight: '250'
+      :Price: "(-1)P-L"
+      :Legality: 12/14 days
+      :Avail: '2.0'
+      :Index: sr3.284
+  :Ballistic Shield:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Ballistic Shield
+      :Conc.: "-"
+      :Rating: "+3/+1"
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 8/14 days
+      :Index: '2.0'
+      :Page: sr3.284
+  ! ': Small Riot Shield':
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: " Small Riot Shield"
+      :Conc.: "-"
+      :Rating: "+1/+2"
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 8/14 days
+      :Index: '2.0'
+      :Page: sr3.284
+  ! ': Large Riot Shield':
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: " Large Riot Shield"
+      :Conc.: "-"
+      :Rating: "+2/+3"
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 8/14 days
+      :Index: '2.0'
+      :Page: sr3.284
+  :Vashon Island Actioneer Line Suit jacket*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Actioneer Line Suit jacket*
+      :Conc.: '13'
+      :Rating: 1.5/1
+      :Weight: '1'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Actioneer Line Slacks:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Actioneer Line Slacks
+      :Conc.: '14'
+      :Rating: 1/0.5
+      :Weight: '1'
+      :Price: '350'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Actioneer Line Hi-collar shirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Actioneer Line Hi-collar shirt
+      :Conc.: '14'
+      :Rating: 1.5/0.5
+      :Weight: '0.75'
+      :Price: '300'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Actioneer Line Long coat*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Actioneer Line Long coat*
+      :Conc.: '13'
+      :Rating: 2/2
+      :Weight: '2'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Grand Dame:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Grand Dame
+      :Conc.: '15'
+      :Rating: 1/1
+      :Weight: '2'
+      :Price: '7500'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.49
+  :Vashon Island Sleeping Tiger Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Sleeping Tiger Jacket
+      :Conc.: '8'
+      :Rating: 0.5/1.5
+      :Weight: '1.25'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Sleeping Tiger Shirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Sleeping Tiger Shirt
+      :Conc.: '10'
+      :Rating: 0.5/1
+      :Weight: '1'
+      :Price: '300'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Sleeping Tiger Slacks/Skirt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Sleeping Tiger Slacks/Skirt
+      :Conc.: '12'
+      :Rating: 0.5/0.5
+      :Weight: '1'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Vashon Island Sleeping Tiger Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Vashon Island Sleeping Tiger Vest
+      :Conc.: '10'
+      :Rating: 0.5/1
+      :Weight: '0.75'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 5/48 hrs
+      :Index: '0.75'
+      :Page: cc.48
+  :Victory Industrious Line Coverall:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Industrious Line Coverall
+      :Conc.: '9'
+      :Rating: 4/2
+      :Weight: '3'
+      :Price: '800'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '0.5'
+      :Page: cc.50
+  :Victory Industrious Line Hard Hat:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Industrious Line Hard Hat
+      :Conc.: "-"
+      :Rating: 0/+1
+      :Weight: '0.5'
+      :Price: '25'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '0.5'
+      :Page: cc.50
+  :Victory Industrious Line Jumpsuit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Industrious Line Jumpsuit
+      :Conc.: '11'
+      :Rating: 2/0
+      :Weight: '1'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '0.5'
+      :Page: cc.50
+  :Victory Industrious Line Winterized Coverall:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Industrious Line Winterized Coverall
+      :Conc.: '10'
+      :Rating: 4/4
+      :Weight: '5'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 2/24 hrs
+      :Index: '0.75'
+      :Page: cc.50
+  :Victory Rapid Transit Line Light Jumpsuit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Rapid Transit Line Light Jumpsuit
+      :Conc.: '8'
+      :Rating: 1/2
+      :Weight: '1'
+      :Price: '250'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Rapid Transit Line Heavy Jumpsuit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Rapid Transit Line Heavy Jumpsuit
+      :Conc.: '6'
+      :Rating: 2/4
+      :Weight: '2'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Rapid Transit Line Helmet:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Rapid Transit Line Helmet
+      :Conc.: "-"
+      :Rating: 0/+2
+      :Weight: '0.5'
+      :Price: '50'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Camouflage Jacket:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Camouflage Jacket
+      :Conc.: '6'
+      :Rating: 4/2
+      :Weight: '2'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Camouflage Jumpsuit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Camouflage Jumpsuit
+      :Conc.: '9'
+      :Rating: 3/2
+      :Weight: '1.5'
+      :Price: '750'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Camouflage Vest:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Camouflage Vest
+      :Conc.: '8'
+      :Rating: 2/2
+      :Weight: '1'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Fatigues:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Fatigues
+      :Conc.: '10'
+      :Rating: 2/0
+      :Weight: '2'
+      :Price: '500'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Light Armor Clothing:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Light Armor Clothing
+      :Conc.: '12'
+      :Rating: 1/0
+      :Weight: '1'
+      :Price: '400'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Victory Wild Hunt Line Heavy Armor Clothing:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Victory Wild Hunt Line Heavy Armor Clothing
+      :Conc.: '10'
+      :Rating: 4/0
+      :Weight: '3'
+      :Price: '600'
+      :Legality: Legal
+      :Avail: 4/24 hrs
+      :Index: '1.0'
+      :Page: cc.50
+  :Zoé Country Club blazer:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Country Club blazer
+      :Conc.: '13'
+      :Rating: 3/1
+      :Weight: '1.0'
+      :Price: '2000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: 0.75 ngrl.37
+  :Zoé Futura Line Blazer*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Futura Line Blazer*
+      :Conc.: '13'
+      :Rating: 2/1
+      :Weight: '1.5'
+      :Price: '2500'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.49
+  :Zoé Futura Line Skirt/Slacks:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Futura Line Skirt/Slacks
+      :Conc.: '13'
+      :Rating: 1/1
+      :Weight: '1'
+      :Price: '1500'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.49
+  :Zoé Futura Line Sweater*:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Futura Line Sweater*
+      :Conc.: '13'
+      :Rating: 2/1
+      :Weight: '1.5'
+      :Price: '1000'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: '0.75'
+      :Page: cc.49
+  :Zoé Heritage Line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Heritage Line
+      :Conc.: '12'
+      :Rating: 4/2
+      :Weight: '1.5'
+      :Price: '10000'
+      :Legality: Legal
+      :Avail: 10/2 mths
+      :Index: '0.75'
+      :Page: cc.49
+  :Zoé Highland Laird kilt:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Highland Laird kilt
+      :Conc.: '14'
+      :Rating: 4/2
+      :Weight: '1.5'
+      :Price: '2000'
+      :Legality: Legal
+      :Avail: 6/48 hrs
+      :Index: 0.75 ngrl.37
+  :Zoé Retrovision skirt suit:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Retrovision skirt suit
+      :Conc.: '13'
+      :Rating: 3/1
+      :Weight: '1.5'
+      :Price: '2500'
+      :Legality: Legal
+      :Avail: 4/48 hrs
+      :Index: 0.75 ngrl.37
+  :Zoé Second Skin line:
+    :Type:
+    - :Armor
+    :Stats:
+      :Name: Zoé Second Skin line
+      :Conc.: '15'
+      :Rating: 2/2
+      :Weight: '0.25'
+      :Price: '5000'
+      :Legality: Legal
+      :Avail: 10/1 mth
+      :Index: '0.75'
+      :Page: cc.4
 :magetypes:
   :None:
     :Points: 0

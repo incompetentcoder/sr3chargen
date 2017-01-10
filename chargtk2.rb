@@ -338,30 +338,50 @@ class Application
       true
     end
   end
-  
-  def setweapon(weapon)
+
+  def checkpriceavail(item)
     err = ""
-    num = nil
-    shorter = CONSTANT[:weapons][weapon]
     if shorter[:Stats][:Price].to_i > getnuyenrem 
       err+="Insufficient Nuyen: #{shorter[:Stats][:Price]}\n"
     end
     if shorter[:Stats][:Avail].split('/')[0].to_i > 6
       err+="Availability too high: #{shorter[:Stats][:Avail]}\n"
     end
-    unless err.empty?
+    return err
+  end
+
+  def getnumber(item,thing)
+    num = thing.values.collect {|x| x[:Stats][:Name] == item.to_s}.compact.count+1
+    num ? item = ("#{item} #{num}").to_sym : item
+  end
+      
+  def setweapon(weapon)
+    shorter = CONSTANT[:weapons][weapon]
+    unless (err = checkpriceavail(shorter)).empty?
       errordialog(err,nil)
       return
     end
     actual = Marshal.load(Marshal.dump(shorter))
-    num = @a.weapons.values.collect {|x| x[:Stats][:Name] == weapon.to_s}.compact.count+1
-    weapon = ("#{weapon} #{num}").to_sym if num
+    weapon = getnumber(weapon,@a.weapons)
     @notebook.weapon.setweapon(actual,weapon)
     @a.addweapon(actual,weapon)
     setnuyenrem
    # binding.pry
   end
 
+  def setarmor(armor)
+    shorter = CONSTANT[:armors][armor]
+    unless (err = checkpriceavail(shorter)).empty?
+      errordialog(err,nil)
+      return
+    end
+    actual = Marshal.load(Marshal.dump(shorter))
+    armor = getnumber(armor,@a.armor)
+    @notebook.armor.setarmor(actual,armor)
+    @a.addarmor(actual,armor)
+    setnuyenrem
+  end
+    
 
   def setcyber(cyber)
     level = lvl = side = place = grade = nil
@@ -913,6 +933,7 @@ class Application
   def initialize
     @spellsenabled = false
     @windows = Gtk::Window.new
+    @windows2 = Gtk::ScrolledWindow.new
     @tooltips = Gtk::Tooltips.new
     @a = Character.new(self)
     @guiattributes = Attributeblock.new(self)
@@ -922,7 +943,8 @@ class Application
     @notebook = Notebook.new(self)
     @tooltips.set_tip(@notebook,"Choose skills, spells if magetype with spellpoints, cyberware and gear in tabs",nil)
     @table = Gtk::Table.new(13, 12, homogenous = false)
-    @windows.add(@table)
+    @windows.add(@windows2)
+    @windows2.add_with_viewport(@table)
     updatepools
     updatereaction
     @table.attach @guiattributes, 0, 3, 4, 12
@@ -932,7 +954,8 @@ class Application
     @table.n_rows = 12
     @windows.show_all
     @windows.signal_connect('destroy') {Gtk.main_quit}
-    # binding.pry
+    @windows.resize([Gdk.screen_width,@table.size_request[0]].min,[Gdk::screen_height,@table.size_request[1]].min)
+    binding.pry
     Gtk.init
     Gtk.main
   end
@@ -987,10 +1010,12 @@ class Character
 
   def addweapon(actual,weapon)
     @nuyenrem = @nuyenrem - actual[:Stats][:Price].to_i
-   # binding.pry
-    @weapons.values.collect {|x| x[:Stats][:Name] == weapon.to_s}.compact.count+1
-#    if @weapons[weapon]
     @weapons[weapon]=actual
+  end
+
+  def addarmor(actual,armor)
+    @nuyenrem = @nuyenrem - actual[:Stats][:Price].to_i
+    @armors[armor]=actual
   end
 
   def calcessenceoption(actual,parent,par)
@@ -1607,6 +1632,7 @@ class Character
     @bioware = {}
     @gear = {}
     @weapons = {}
+    @armors = {}
     @derived = {:Pools => {}, :Reaction => {}, :Initiative => {}}
     @special = { :Essence => 6, :'Body Index' => 0, :Magic => 0 }
     @attributes = {}
@@ -2601,8 +2627,81 @@ class Gearblock < Gtk::Frame
 
 end
 
+class Armorblock < Gtk::Frame
+  
+  def addarmors(model,armors)
+    armors.each do |a|
+      child = model.append(nil)
+      a[1][:Stats].each_pair do |b,c|
+        child[@order[b]] = c.to_s if @order[b]
+      end
+    end
+  end
+
+  def setarmor(actual,armor)
+    child = @model2.append(nil)
+    actual[:Stats].each_pair do |b,c|
+      child[@order[b]] = c.to_s if @order[b]
+    end
+    child[0]=armor.to_s
+  end
+
+  def initialize(app)
+    @app = app
+    super()
+    @tooltips = Gtk::Tooltips.new
+    @win = Gtk::ScrolledWindow.new
+    @win2 = Gtk::ScrolledWindow.new
+    @vbox = Gtk::VBox.new(true,nil)
+    @armor = {}
+    @model = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String,String)
+    @model.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view = Gtk::TreeView.new(@model)
+    @model2 = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String,String)
+    @model2.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view2 = Gtk::TreeView.new(@model2)
+    @order={}
+    %i(Name Rating Conc. Weight Price Legality Avail).each_with_index do |x,y|
+      @order[x]=y
+    end
+    addarmors(@model,CONSTANT[:armors])
+
+    (0..6).each do |x|
+      renderer = Gtk::CellRendererText.new
+      col = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+      col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+      @view.append_column(col)
+      col2 = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+      col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+      @view2.append_column(col2)
+    end
+    @view.enable_grid_lines = Gtk::TreeView::GRID_LINES_BOTH
+    @view.enable_tree_lines = true
+   # @view.tooltip_column = 9
+    @view.has_tooltip = true
+    @view.set_search_equal_func do |model,column,key,iter| 
+      if Regexp.new(key) =~ iter[0]
+        @view.scroll_to_cell(iter.path,nil,true,0.5,0.5)
+        false
+      else
+        true
+      end
+    end
+
+
+
+    @win2.add(@view2)
+    @win.add(@view)
+    @vbox.pack_start_defaults(@win)
+    @vbox.pack_start_defaults(@win2)
+    @vbox.show_all
+    add(@vbox)
+  end
+end
+
+
 class Notebook < Gtk::Notebook
-  attr_accessor :skill, :spell, :totem, :cyber, :weapon
+  attr_accessor :skill, :spell, :totem, :cyber, :weapon, :gear
   
   def initialize(app)
     @app = app
@@ -2613,6 +2712,7 @@ class Notebook < Gtk::Notebook
     @cyber = Cyberblock.new(@app)
     @bio = Bioblock.new(@app)
     @weapon = Weaponblock.new(@app)
+    @armor = Armorblock.new(@app)
     @gear = Gearblock.new(@app)
  #   @tview = SPELLVIEW.new(@app)
     append_page(@skill, Gtk::Label.new('Skills'))
@@ -2620,6 +2720,7 @@ class Notebook < Gtk::Notebook
     append_page(@bio, Gtk::Label.new('Bioware'))
     append_page(@spell, Gtk::Label.new('Spells'))
     append_page(@weapon, Gtk::Label.new('Weapons'))
+    append_page(@armor, Gtk::Label.new('Armor'))
     append_page(@gear, Gtk::Label.new('Gear'))
  #   append_page(@tview, Gtk::Label.new('txtv'))
     get_nth_page(3).sensitive = false
