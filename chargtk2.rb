@@ -955,7 +955,6 @@ class Application
     @windows.show_all
     @windows.signal_connect('destroy') {Gtk.main_quit}
     @windows.resize([Gdk.screen_width,@table.size_request[0]].min,[Gdk::screen_height,@table.size_request[1]].min)
-    binding.pry
     Gtk.init
     Gtk.main
   end
