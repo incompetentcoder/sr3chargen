@@ -341,7 +341,7 @@ class Application
     end
   end
 
-  def checkpriceavail(item)
+  def checkpriceavail(shorter)
     err = ""
     if shorter[:Stats][:Price].to_i > getnuyenrem 
       err+="Insufficient Nuyen: #{shorter[:Stats][:Price]}\n"
@@ -378,7 +378,7 @@ class Application
       return
     end
     actual = Marshal.load(Marshal.dump(shorter))
-    armor = getnumber(armor,@a.armor)
+    armor = getnumber(armor,@a.armors)
     @notebook.armor.setarmor(actual,armor)
     @a.addarmor(actual,armor)
     setnuyenrem
@@ -595,7 +595,11 @@ class Application
     true
   end
 
-    
+  def remarmor(armor)
+    @a.remarmor(armor)
+    setnuyenrem
+    true
+  end
 
   def spelllvl(name,value)
     @notebook.spell.spelllvl(name,@a.spelllvl(name.to_sym,value))
@@ -966,7 +970,7 @@ class Character
   attr_reader :name, :streetname, :age, :attributes,
               :points, :metatype, :magetype, :gender,
               :derived, :special, :activeskills, :weapons,
-              :spells
+              :spells, :armors
   
   def getessence
     @special[:Essence]
@@ -1607,6 +1611,11 @@ class Character
       @attributes[x][:RM] = y
       @app.updateattr(x)
     end
+  end
+
+  def remarmor(armor)
+    @nuyenrem += @armors[armor][:Stats][:Price].to_i
+    @armors.delete(armor)
   end
 
   def remweapon(weapon)
@@ -2688,6 +2697,16 @@ class Armorblock < Gtk::Frame
         true
       end
     end
+    
+    @view.signal_connect('row-activated') do |a,b,c|
+      @app.setarmor(@model.get_iter(b)[0].to_sym)
+    end
+
+    @view2.signal_connect('row-activated') do |a,b,c|
+      if @app.remarmor(@model2.get_iter(b)[0].to_sym)
+        @model2.remove(@model2.get_iter(b))
+      end
+    end
 
 
 
@@ -2702,7 +2721,7 @@ end
 
 
 class Notebook < Gtk::Notebook
-  attr_accessor :skill, :spell, :totem, :cyber, :weapon, :gear
+  attr_accessor :skill, :spell, :totem, :cyber, :weapon, :gear, :armor
   
   def initialize(app)
     @app = app
