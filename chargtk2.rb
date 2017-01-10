@@ -1108,7 +1108,7 @@ class Character
 
   def spelllvl(name,value)
     if value > @spells[name][1]
-      if value - @spells[name][1] < @spellpoints
+      if value - @spells[name][1] <= @spellpoints
         @spellpoints -= value - @spells[name][1]
         @spells[name][1] = value
       end
