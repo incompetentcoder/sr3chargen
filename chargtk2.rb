@@ -1760,8 +1760,8 @@ class Mainblock < Gtk::Frame
     @elements[:Nuyen][1].active = 1
     @elements[:Nuyenrem][1].text = "5000"
 
-    @elements[:Name][1].signal_connect('activate') { |x| @app.setname(x) }
-    @elements[:Streetname][1].signal_connect('activate') { |x| @app.setstreetname(x) }
+    @elements[:Name][1].signal_connect('leave-notify-event') { |x,y| @app.setname(x) }
+    @elements[:Streetname][1].signal_connect('leave-notify-event') { |x,y| @app.setstreetname(x) }
     @elements[:Age][1].signal_connect('value_changed') { |x| @app.setage(x) }
     @elements[:Gender][1].signal_connect('changed') { |x| @app.setgender(x) }
     @elements[:Metatype][1].signal_connect('changed') { |x| @app.setmetatype(x) }
