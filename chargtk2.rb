@@ -20,6 +20,78 @@ EOF
 class Application
   attr_reader :notebook, :windows 
   def load
+    dialog=Gtk::FileChooserDialog.new("open",nil,Gtk::FileChooser::ACTION_OPEN,nil,
+                                      [Gtk::Stock::SAVE,Gtk::Dialog::RESPONSE_ACCEPT],
+                                      [Gtk::Stock::CANCEL,Gtk::Dialog::RESPONSE_CANCEL])
+    dialog.run do |x|
+      if x == Gtk::Dialog::RESPONSE_ACCEPT
+        @a=YAML.load_file(dialog.filename)
+        height=@a.height
+        weight=@a.weight
+        age=@a.age
+        @a.setapp(self)
+        @basic.setname(@a.name)
+        @basic.setstreetname(@a.streetname)
+        @basic.setgender(CONSTANT[:gender].find_index(getgender.to_sym)) if getgender
+        @basic.setmetatype(CONSTANT[:metatypes].find_index {|x,y| x == getmetatype})
+        temp={}
+        @a.getcyberware.collect {|a,b|  temp.merge! b}
+        temp.each_pair do |a,b|
+          actual = cyber = lvl = level = side = parent = nil
+          actual = b
+          pp actual[:Name]
+          cyber = a
+          if lvl = CONSTANT[:cyberware][actual[:Name].to_sym][:Price][/(MP)|(L)/]
+            level = [1,cyber.split(' ')[-1]]
+          end
+          side = cyber[/(left|right).*(arm|leg)/i]
+          parent = [1,actual[:Parent]] if actual[:Parent]
+          @notebook.cyber.installcyber(actual,cyber,level,lvl,side,parent)
+        end unless @a.getcyberware.empty?        
+        updateessence        
+        getattributes.each {|x| updateattr(x[0])} if getmetatype == :Human
+        @basic.setmagetype(CONSTANT[:magetypes].find_index {|x,y| x == @a.getmagetype})
+        tot = CONSTANT[:totems]
+        totem = @a.totem
+        case @a.getmagetype
+        when /Shaman$/
+          @guiattributes.totem[1].active = tot.keys.find_index(@a.totem[1])
+          @guiattributes.totem[3].active = tot[@a.totem[1]].keys.find_index(@a.totem[0])
+        when :Shamanist
+          @guiattributes.totem[1].active = tot.keys.find_index(@a.totem[1])
+          @guiattributes.totem[3].active = tot[@a.totem[1]].collect {|x| x[0] if x[1][:spells]}.compact.find_index(@a.totem[0])
+        when :Elementalist
+          @guiattributes.element[1].active = CONSTANT[:elements].keys.find_index(@a.element[0])          
+        end
+        unless @a.getmagetype == :None
+          @notebook.page=3
+          @a.spells.each do |a,b|
+            @notebook.spell.appendspell(a.to_s,b[0][:Class].to_s,b[0][:Subclass].to_s)
+            @notebook.spell.spelllvl(a.to_s,b[1])
+            @a.spellpoints -= b[1]
+          end unless @a.spells.empty?
+          updatespellpoints
+        end
+        getweapons.each do |x|
+          @notebook.weapon.setweapon(x[1],x[0])
+        end
+        getarmors.each do |x|
+          @notebook.armor.setarmor(x[1],x[0])
+        end
+        @basic.setnuyen(@a.getnuyen)
+        @basic.setage(age)
+        @basic.setheight(height)
+        @basic.setweight(weight)
+        getskills.each do |a,b|
+          b.each do |d,e|
+            @notebook.skill.addskill([a,d,e[:Specialization]])
+            @notebook.skill.skilllvl(d,getskills[a][d])
+          end unless b.empty?
+        end
+        @notebook.page=0
+      end
+    end
+    dialog.destroy
   end
 
   def save
@@ -48,6 +120,14 @@ class Application
     dialog.destroy
 #    puts @a.to_yaml
     @a.setapp(self)
+  end
+
+  def getweapons
+    @a.weapons
+  end
+
+  def getarmors
+    @a.armors
   end
 
   def makecharsheet
@@ -353,7 +433,7 @@ class Application
   end
 
   def getnumber(item,thing)
-    num = thing.values.collect {|x| x[:Stats][:Name] == item.to_s}.compact.count+1
+    num = thing.values.collect {|x| x if x[:Stats][:Name] == item.to_s}.compact.count+1
     num ? item = ("#{item} #{num}").to_sym : item
   end
       
@@ -722,7 +802,7 @@ class Application
 
   def settotem(totem,group)
     boni = nil
-    if totem
+    unless totem && gettotem && (totem == gettotem[0])
       boni = {:spells => nil, :spirits => nil}
       short = CONSTANT[:totems][group][totem]
       if short[:spells] && (short[:spells].flatten(1).include? :Choose)
@@ -736,7 +816,7 @@ class Application
         boni[:spirits] = short[:spirits]
       end
     end
-    @a.settotem(totem,group,boni)
+    @a.settotem(totem,group,(gettotem && (totem == gettotem[0])) ? gettotem[2] : boni)
     totem = gettotem ? gettotem[0] : nil
     checkspells(totem,:totem)
     @guiattributes.nototem unless totem
@@ -913,7 +993,7 @@ class Application
   end
 
   def updatespellpoints
-    @guiattributes.setspellpoints(@a.getspellpoints)
+    @guiattributes.setspellpoints(@a.getspellpoints.to_i)
   end
 
   def setmetamods
@@ -970,7 +1050,8 @@ class Character
   attr_reader :name, :streetname, :age, :attributes,
               :points, :metatype, :magetype, :gender,
               :derived, :special, :activeskills, :weapons,
-              :spells, :armors
+              :spells, :armors, :height, :weight, :totem
+  attr_accessor   :spellpoints
   
   def getessence
     @special[:Essence]
@@ -1419,12 +1500,14 @@ class Character
 
   def setmagetype(magetype)
     mage, points = magetype.active_text.split(':')
-    pointsdiff = points.to_i - CONSTANT[:magetypes][@magetype][:Points]
-    if checkpoints(pointsdiff)
-      modpoints(pointsdiff)
-      @magetype = mage.to_sym
+    unless mage.to_sym == @magetype
+      pointsdiff = points.to_i - CONSTANT[:magetypes][@magetype][:Points]
+      if checkpoints(pointsdiff)
+        modpoints(pointsdiff)
+        @magetype = mage.to_sym
+      end
+      clearspells
     end
-    clearspells
     CONSTANT[:magetypes].find_index { |x| x[0] == @magetype }
   end
 
@@ -1564,7 +1647,6 @@ class Character
       a[:BM] = updatebm(a,attr).to_i
       a[:MM] = updatemm(a,attr).to_i
     end
-
     @app.checkskills(attr, @attributes[attr][:BA] + @attributes[attr][:BM] +
                      @attributes[attr][:CM] + @attributes[attr][:MM],
                      @attributes[attr][:ACT],1)
@@ -1803,6 +1885,7 @@ class Mainblock < Gtk::Frame
 end
 
 class Attributeblock < Gtk::Frame
+  attr_accessor :totem, :element
   def updateattr(attr, datablock)
     @attributes[attr][:RM].text = datablock[:RM].to_i.to_s
     @attributes[attr][:BA].text = datablock[:BA].to_i.to_s
@@ -2196,6 +2279,8 @@ class Skillblock < Gtk::ScrolledWindow
 end
 
 class Spellblock < Gtk::Frame
+  attr_accessor :vbox,:table,:win2
+
   def enablespells(spells)
     newspell unless @spells.empty?
     @view.collapse_all

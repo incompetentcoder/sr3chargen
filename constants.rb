@@ -207,7 +207,10 @@ CONSTANTS = {
         properties: 'Jack of All Trades, Stealthy, Stalker'
       },
       leopard: {
-        environment: 'Forest and Savannah'
+        environment: 'Forest and Savannah', desc: '+2 dice for Combat and 
+        Health spells and all nature spirits at night, -1 die for resisting 
+        illusion spells', properties: 'Fast over Short Distances, Loner, Fierce 
+        When Cornered, Easily Angered, Intensely Protective of Family'
       },
       lion: {
         environment: 'Prairie', spells: [[:Combat, 2], [:Health, -1]],
@@ -238,7 +241,10 @@ CONSTANTS = {
         properties: 'Playful, Clever, Energetic, Enjoys Playing Tricks'
       },
       owl: {
-        environment: 'Anywhere'
+        environment: 'Anywhere',
+        desc: '+2 dice for Sorcery and Conjuring at night,
+        +2 to ALL magical TNs during daytime',
+        properties: 'Wise, Nocturnal, Loner, Hunter'
       },
       parrot: {
         environment: 'Jungle', spells: [[:Illusion, 2]], spirits: [[:Jungle, 2]],
