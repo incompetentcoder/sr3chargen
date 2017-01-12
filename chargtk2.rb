@@ -21,10 +21,11 @@ class Application
   attr_reader :notebook, :windows 
   def load
     dialog=Gtk::FileChooserDialog.new("open",nil,Gtk::FileChooser::ACTION_OPEN,nil,
-                                      [Gtk::Stock::SAVE,Gtk::Dialog::RESPONSE_ACCEPT],
+                                      [Gtk::Stock::OPEN,Gtk::Dialog::RESPONSE_ACCEPT],
                                       [Gtk::Stock::CANCEL,Gtk::Dialog::RESPONSE_CANCEL])
     dialog.run do |x|
       if x == Gtk::Dialog::RESPONSE_ACCEPT
+        @notebook.skill.clearskills 
         @a=YAML.load_file(dialog.filename)
         height=@a.height
         weight=@a.weight
@@ -168,7 +169,7 @@ class Application
     temp = {}
     @a.getcyberware.each {|x| temp.merge!(x[1])}
     temp.first(7).each_with_index do |x,y|
-      a.sub!("cyber#{y+1}<","#{x[0]}<")
+      a.sub!("cyber#{y+1}<","#{x[0].to_s.length > 37 ? x[0].to_s[0..20]+".."+x[0].to_s[-17..-1] : x[0]}<")
       a.sub!("cyber#{y+1}r<","#{x[1][:Essence].round(2)}<")
     end
     @a.spells.first(8).each_with_index do |x,y|
@@ -1309,7 +1310,7 @@ class Character
 
   def skilllvl(skill,value)
     attrib = findattr(skill)
-    attract = attrib == :Reaction ? @derived[:Reaction][:CBM] : @attributes[attrib][:ACT]
+    attract = attrib == :Reaction ? @derived[:Reaction][:CBM] : (@attributes[attrib][:ACT] - @attributes[attrib][:CM])
     current = @activeskills[attrib][skill][:Value]
     if value < current
       if current > attract
@@ -1627,7 +1628,7 @@ class Character
           sum + 0
         end
       end if limbs
-      mod1 = ((limbs.count * (4+a[:RM].to_f - a[:BA].to_f) + total.to_f)/4)
+      mod1 = ((limbs.count * (4 - a[:BA].to_f) + total.to_f)/4)
       mod2 + mod1
 
     end
@@ -1648,8 +1649,8 @@ class Character
       a[:MM] = updatemm(a,attr).to_i
     end
     @app.checkskills(attr, @attributes[attr][:BA] + @attributes[attr][:BM] +
-                     @attributes[attr][:CM] + @attributes[attr][:MM],
-                     @attributes[attr][:ACT],1)
+                    @attributes[attr][:MM],
+                     @attributes[attr][:ACT] - @attributes[attr][:CM],1)
     @attributes[attr][:BA] = @attributes[attr][:Points] / 2 +
                              @attributes[attr][:RM]
     @attributes[attr][:ACT] = @attributes[attr][:BA] + @attributes[attr][:BM] +
@@ -1664,8 +1665,9 @@ class Character
     if value.even?
       if (value / 2 + @attributes[attr][:RM] > 0)
         if checkpoints(value - @attributes[attr][:Points])
-          if @app.checkskills(attr,@attributes[attr][:ACT]-@attributes[attr][:BA]+
-              value/2+@attributes[attr][:RM],@attributes[attr][:ACT])
+          if @app.checkskills(attr,@attributes[attr][:ACT] - @attributes[attr][:BA] +
+              value/2 + @attributes[attr][:RM] - @attributes[attr][:CM],
+              @attributes[attr][:ACT] - @attributes[attr][:CM])
             modpoints(value - @attributes[attr][:Points])
             @attributes[attr][:Points] = value
           end
@@ -2169,6 +2171,10 @@ class Skillblock < Gtk::ScrolledWindow
     if @header[:Specialization][1].active_text
       @header[:Specialization][1].active_text.to_sym
     end
+  end
+
+  def clearskills
+    @skillentries.keys.each {|x| delskill(x)}
   end
 
   def addskill(x)
