@@ -40,7 +40,6 @@ class Application
         temp.each_pair do |a,b|
           actual = cyber = lvl = level = side = parent = nil
           actual = b
-          pp actual[:Name]
           cyber = a
           if lvl = CONSTANT[:cyberware][actual[:Name].to_sym][:Price][/(MP)|(L)/]
             level = [1,cyber.split(' ')[-1]]
@@ -873,8 +872,8 @@ class Application
     @basic.checkheight(@a.checkheight,meta)
   end
 
-  def updatereaction
-    @guiattributes.updatereaction(@a.updatereaction)
+  def updatereaction(oldr=nil)
+    @guiattributes.updatereaction(@a.updatereaction(oldr))
     @guiattributes.updateinitiative(@a.updateinitiative)
   end
 
@@ -1002,9 +1001,10 @@ class Application
   end
 
   def updateattr(attr)
+    oldr = @a.reacbm if [:Quickness,:Intelligence].include? attr
     @guiattributes.updateattr(attr, @a.updateattr(attr))
     updatepools if [:Quickness,:Intelligence,:Willpower].include? attr
-    updatereaction if [:Quickness,:Intelligence].include? attr
+    updatereaction(oldr) if [:Quickness,:Intelligence].include? attr
   end
 
   def setmagic
@@ -1310,7 +1310,7 @@ class Character
 
   def skilllvl(skill,value)
     attrib = findattr(skill)
-    attract = attrib == :Reaction ? @derived[:Reaction][:CBM] : (@attributes[attrib][:ACT] - @attributes[attrib][:CM])
+    attract = attrib == :Reaction ? reacbm : (@attributes[attrib][:ACT] - @attributes[attrib][:CM])
     current = @activeskills[attrib][skill][:Value]
     if value < current
       if current > attract
@@ -1389,6 +1389,17 @@ class Character
     @bioware.each {|x| sum += x[1].values.collect {|y| hasstat(y,:Stats,:derived,:Initiative,:CBM)}.compact.reduce(:+).to_i}
     sum
   end
+  
+  def reacbm
+    reac = sumb = summ = 0
+    [:Intelligence,:Quickness].each do |x|
+      [:BA,:BM,:MM]. each do |y|
+        reac += @attributes[x][y]
+      end
+    end
+    @bioware.each {|x| sumb += x[1].values.collect {|y| hasstat(y,:Stats,:derived,:Reaction,:CBM)}.compact.reduce(:+).to_i}
+    (reac/2 + sumb + summ).floor
+  end
 
   def reaccbm
     reac = sumb = sumc = 0
@@ -1402,7 +1413,7 @@ class Character
     (reac/2 + sumb + sumc).floor
   end
 
-  def updatereaction
+  def updatereaction(oldr=nil)
     @derived[:Reaction][:Base] = ((@attributes[:Quickness][:BA] + 
                      @attributes[:Intelligence][:BA]) / 2).floor
     @derived[:Reaction][:CBM] = reaccbm
@@ -1414,6 +1425,7 @@ class Character
     if @totem && CONSTANT[:totems][@totem[1]][@totem[0]][:req]
       @app.settotem(@totem[0],@totem[1])
     end
+    @app.checkskills(:Reaction,reacbm,oldr) if oldr
     @derived[:Reaction]
   end
   
