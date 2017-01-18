@@ -616,7 +616,47 @@ CONSTANTS = {
   senses: [
     :'Thermographic Vision',:'Low-Light Vision',:'Microscopic Vision',:'Magnification Vision',
     :'Flare-Compensation Vision',:'Improved Hearing',:'High-Frequency Hearing',:'Low-Frequency Hearing',
-    :'Dampening Hearing',:'Improved Scent',:'Improved Taste']
+    :'Dampening Hearing',:'Improved Scent',:'Improved Taste'],
+  questions: {
+    Background: ['Where is your character from?','Does your character have a family?',
+                 'Does your character have an ethnic background?'],
+    Appearance: ['What does your character look like?', 'What does your character dress like?',
+                 'Does your character have physical quirks?'],
+    Resources: ['Where did your character learn their Active Skills?',
+                'Where did your character learn their Knowledge Skills?',
+                'Where did your character get his goodies?', 'Where does your character live?',
+                "Who are your character's contacts?","Who are your character's enemies?"],
+    Personality: ["What are your character's likes and dislikes?",
+                  "What is your character's moral code?",'Does your character have goals?',
+                  'Does your character have personal beliefs?',
+                  'Does your character have personality quirks?'],
+    Reasons: ['Why does your character run the shadows?',
+              'How does your character view his/her role as a shadowrunner?'],
+    Magic: ["Where did your character learn magic?"]
+    },
+  weapontypes: { Firearms: [:'Hold-out Pistols',:'Light Pistols',:'Heavy Pistols',:'Machinepistols',
+                            :'Spray Weapons',:'Tasers',:'Special Weapons',:'Submachine Guns',:'Rifles',
+                            :'LMG/MMG/HMG',:'Shotguns',:'Assault Rifles',:'Cannons',:'Laser Weapons'],
+                'Melee Weapons': [:'Edged',:'Clubs',:'Polearm',:'Unarmed',:'Whips'],
+                'Throwing Weapons': [], 'Missile Launchers': [], 'Grenade Launchers': [],
+                'Projectile Weapons': []},
+  ammotypes: { Bullets: [:'Hold-out Pistols',:'Light Pistols',:'Heavy Pistols',:'Machinepistols',
+                      :'Submachine Guns',:'Rifles',:'LMG/MMG/HMG',:'Shotguns',:'Assault Rifles'],
+               Lasers: [:'Laser Weapons'],
+               Tanks: [:'Spray Weapons'],
+               Projectiles: [:'Projectile Weapons'],
+               Grenades: [:'Grenade Launchers'],
+               Missiles: [:'Missile Launchers'],
+               Rockets: [:'Missile Launchers'],
+               Shotguns: [:'Shotguns'],
+               Cannons: [:'Cannons'],
+               Tasers: [:'Tasers'],
+               'FN-AAL Gyrojet': [:'FN-AAL Gyrojet'],
+               'Net Gun Standard': [:'Net Gun Standard'],
+               'Net Gun Large': [:'Net Gun Large']
+    },
+  ammo: YAML.load_file('ammoyaml')
+                 
 
 }
 

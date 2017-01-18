@@ -25,7 +25,7 @@ class Application
                                       [Gtk::Stock::CANCEL,Gtk::Dialog::RESPONSE_CANCEL])
     dialog.run do |x|
       if x == Gtk::Dialog::RESPONSE_ACCEPT
-        @notebook.skill.clearskills 
+        @notebook.clear
         @a=YAML.load_file(dialog.filename)
         height=@a.height
         weight=@a.weight
@@ -135,9 +135,9 @@ class Application
     getattributes.each do |x|
       temp = ""
       [:CM,:BM,:MM].each do |y|
-        temp+="/#{x[1][:BA]+x[1][y]}" if x[1][y] > 0
+        temp+="(#{x[1][:BA]+x[1][y]})" if x[1][y] > 0
       end
-      temp+="/#{x[1][:ACT]}" unless temp.empty?
+      temp+=" #{x[1][:ACT]}" unless temp.empty?
       a.sub!("attr#{x[0].to_s[0].downcase}","#{x[1][:BA]}#{temp}")
     end
     shit = {}
@@ -176,9 +176,17 @@ class Application
       a.sub!("spell#{y+1}f<","#{x[1][1].to_i}<")
       a.sub!("spell#{y+1}d<","#{x[1][0][:DTN].to_s.slice(0..2)+"|"+x[1][0][:DLVL].to_s.slice(0..2)}<")
     end
+    @a.armors.first(5).each_with_index do |x,y|
+      a.sub!("armor#{y+1}<","#{x[0].to_s.length > 22 ? x[0].to_s[0..15]+".."+x[0].to_s[-8..-2] : x[0].to_s[0..-2]}<")
+      a.sub!("armor#{y+1}r<","#{x[1][:Stats][:Rating]}<")
+    end       
 
-    a.gsub!(/(skill|cyber|bio|spell|power)\d{1,}(r|f|d|l|c)?</,"<")
+    a.gsub!(/(skill|cyber|bio|spell|power|armor)\d{1,}(r|f|d|l|c)?</,"<")
     a
+  end
+
+  def setbackg(x,num,meh)
+    @a.setbackg(x,num,meh)
   end
 
   def gettotem
@@ -451,6 +459,18 @@ class Application
    # binding.pry
   end
 
+  def addammo(ammo,type)
+    shorter = CONSTANT[:ammo][type][ammo]
+    unless (err = checkpriceavail(shorter)).empty?
+      errordialog(err,nil)
+      return
+    end
+    actual = Marshal.load(Marshal.dump(shorter))
+    @notebook.ammo.setammo(ammo,type,actual)
+    @a.addammo(ammo,type,actual)
+    setnuyenrem
+  end
+
   def setarmor(armor)
     shorter = CONSTANT[:armors][armor]
     unless (err = checkpriceavail(shorter)).empty?
@@ -632,7 +652,7 @@ class Application
     setnuyenrem
     updateessence
   end
-
+  
   def remcyber(cyber,name)
     temp = Marshal.load(Marshal.dump(@a.getcyberware))
     actual = err = ""
@@ -662,6 +682,13 @@ class Application
     end
   end
 
+  def remammo(ammo)
+    type,ammo = ammo.to_s.split('|')
+    @a.remammo(ammo.to_sym,type.to_sym)
+    setnuyenrem
+    true
+  end
+    
   def remweapon(weapon)
     err = ""
    # binding.pry
@@ -1051,9 +1078,13 @@ class Character
   attr_reader :name, :streetname, :age, :attributes,
               :points, :metatype, :magetype, :gender,
               :derived, :special, :activeskills, :weapons,
-              :spells, :armors, :height, :weight, :totem
+              :spells, :armors, :height, :weight, :totem, :ammo
   attr_accessor   :spellpoints
   
+  def setbackg(x,num,meh)
+    @questions[x][num][:answer] = meh.buffer.text
+  end
+
   def getessence
     @special[:Essence]
   end
@@ -1098,6 +1129,18 @@ class Character
   def addweapon(actual,weapon)
     @nuyenrem = @nuyenrem - actual[:Stats][:Price].to_i
     @weapons[weapon]=actual
+  end
+
+  def addammo(ammo,type,actual)
+    @nuyenrem = @nuyenrem - actual[:Stats][:Price].to_i
+    @ammo[type] = {} unless @ammo[type]
+    @ammo[type][ammo]=actual
+  end
+
+  def remammo(ammo,type)
+    @nuyenrem = @nuyenrem + @ammo[type][ammo][:Stats][:Price].to_i
+    @ammo[type].delete(ammo)
+    @ammo.delete(type) if @ammo[type].empty?
   end
 
   def addarmor(actual,armor)
@@ -1525,7 +1568,7 @@ class Character
   end
 
   def setmagic
-    @special[:Magic] = @magetype == :None ? 0 : @special[:Essence]
+    @special[:Magic] = @magetype == :None ? 0 : @special[:Essence].to_i
   end
   
   def getmagetype
@@ -1739,6 +1782,7 @@ class Character
     @gear = {}
     @weapons = {}
     @armors = {}
+    @ammo = {}
     @derived = {:Pools => {}, :Reaction => {}, :Initiative => {}}
     @special = { :Essence => 6, :'Body Index' => 0, :Magic => 0 }
     @attributes = {}
@@ -1757,6 +1801,11 @@ class Character
     @activeskills[:Reaction]={}
     CONSTANT[:derived][:Pools].each do |x|
       @derived[:Pools][x] = (x =~ /Astral|Magic/) ? 0 : 1
+    end
+    @questions = {}
+    CONSTANT[:questions].each_pair do |a,b|
+      @questions[a] = []
+      b.each_with_index {|c,d| @questions[a][d]={question: c, answer: ''}}
     end
   end
 end
@@ -2472,6 +2521,12 @@ class Spellblock < Gtk::Frame
 end
 
 class Cyberblock < Gtk::Frame
+
+  def clearcyber
+    @model2.each {|a,b,c| @model2.remove(@model2.get_iter(b))}
+  end
+    
+
   def addcyber(parent,rows,bases)
     children = Hash.new
     bases.each do |x|
@@ -2578,6 +2633,9 @@ class Cyberblock < Gtk::Frame
 end
 
 class Bioblock < Gtk::Frame
+  def clearbio
+  end
+
   def initialize(app)
     @app = app
     super()
@@ -2594,6 +2652,9 @@ class Bioblock < Gtk::Frame
 end
 
 class Powerblock < Gtk::Frame
+  def clearpower
+  end
+
   def initialize(app)
     @app = app
     super()
@@ -2610,6 +2671,10 @@ class Powerblock < Gtk::Frame
 end
 
 class Weaponblock < Gtk::Frame
+  
+  def clearweapon
+    @model2.each {|a,b,c| @model2.remove(@model2.get_iter(b))}
+  end
   
   def addweps(parent,rows,bases)
     children = Hash.new
@@ -2719,6 +2784,11 @@ class Weaponblock < Gtk::Frame
 end
 
 class Gearblock < Gtk::Frame
+
+  def cleargear
+    @model2.each {|a,b,c| @model2.remove(@model2.get_iter(b))}
+  end
+
   def initialize(app)
     @app = app
     super()
@@ -2741,6 +2811,10 @@ class Gearblock < Gtk::Frame
 end
 
 class Armorblock < Gtk::Frame
+
+  def cleararmor
+    @model2.each {|a,b,c| @model2.remove(@model2.get_iter(b))}
+  end
   
   def addarmors(model,armors)
     armors.each do |a|
@@ -2822,9 +2896,167 @@ class Armorblock < Gtk::Frame
   end
 end
 
+class Ammoblock < Gtk::Frame
+  def clearammo
+  end
+
+  def setammo(ammo,type,actual)
+    child = @model2.append(nil)
+    actual[:Stats].each_pair do |b,c|
+      child[@order[b]] = c.to_s if @order[b]
+    end
+    child[0]="#{type.to_s}|#{ammo.to_s}"
+  end
+
+  
+  def addammos(model,types,ammo)
+    types.keys.each do |x|
+      parent=model.append(nil)
+      parent[0] = x.to_s
+      ammo[x].each do |z|
+        child = model.append(parent)
+        z[1][:Stats].each_pair do |b,c|
+          child[@order[b]] = c.to_s if @order[b]
+        end
+      end if ammo[x]
+    end
+  end
+
+  def initialize(app)
+    @app = app
+    super()
+    @tooltips = Gtk::Tooltips.new
+    @win = Gtk::ScrolledWindow.new
+    @win2 = Gtk::ScrolledWindow.new
+    @vbox = Gtk::VBox.new(true,nil)
+    @ammo = {}
+    @model = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String,String)
+    @model.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view = Gtk::TreeView.new(@model)
+    @model2 = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String,String)
+    @model2.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view2 = Gtk::TreeView.new(@model2)
+    @order={}
+    %i(Name Intel Blast Conc. Damage Weight Price Legality Avail).each_with_index do |x,y|
+      @order[x]=y
+    end
+    
+    
+    addammos(@model,CONSTANT[:ammotypes],CONSTANT[:ammo])
+    
+    (0..8).each do |x|
+      renderer = Gtk::CellRendererText.new
+      col = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+      col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+      @view.append_column(col)
+      col2 = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+      col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+      @view2.append_column(col2)
+    end
+    @view.enable_grid_lines = Gtk::TreeView::GRID_LINES_BOTH
+    @view.enable_tree_lines = true
+   # @view.tooltip_column = 9
+    @view.has_tooltip = true
+    @view.set_search_equal_func do |model,column,key,iter| 
+      if Regexp.new(key) =~ iter[0]
+        @view.scroll_to_cell(iter.path,nil,true,0.5,0.5)
+        false
+      else
+        true
+      end
+    end
+
+    @view.signal_connect('row-activated') do |a,b,c|
+      if @model.get_iter(b)[2]
+        name = @model.get_iter(b)[0].to_sym
+        b.up!
+        type = @model.get_iter(b)[0].to_sym
+        @app.addammo(name,type)
+      else
+        a.row_expanded?(b) ? a.collapse_row(b) : a.expand_row(b,false)
+      end
+    end
+
+    @view2.signal_connect('row-activated') do |a,b,c|
+      if @app.remammo(@model2.get_iter(b)[0].to_sym)
+        @model2.remove(@model2.get_iter(b))
+      end
+    end
+
+    
+
+    @win2.add(@view2)
+    @win.add(@view)
+    @vbox.pack_start_defaults(@win)
+    @vbox.pack_start_defaults(@win2)
+    @vbox.show_all
+    add(@vbox)
+
+  end
+end
+
+class EdgesFlaws < Gtk::Frame
+  def clearef
+  end
+
+  def initialize(app)
+    @app = app
+    super()
+  end
+end
+
+class Vehicles < Gtk::Frame
+  def clearvehicles
+  end
+
+  def initialize(app)
+    @app = app
+    super()
+  end
+end
+
+class Background < Gtk::ScrolledWindow
+  def clearbackg
+    @questions.each_pair {|x,y| y[1..-1].each {|z| z[1].buffer.set_text('')}}
+  end
+
+  def initialize(app)
+    @app = app
+    super()
+    @questions = {}
+    @vbox = Gtk::VBox.new
+    CONSTANT[:questions].each_pair do |x,y|
+      @questions[x] = []
+      @questions[x].push(Gtk::Label.new)[-1].set_markup("<big>#{x.to_s}</big>")
+      @vbox.add @questions[x][0]
+      y.each_with_index do |z,a|
+        @questions[x].push([Gtk::Label.new(z),Gtk::TextView.new])
+        @questions[x][-1][1].set_wrap_mode(Gtk::TextTag::WRAP_WORD)
+        @questions[x][-1][1].signal_connect('key-release-event') {|meh| @app.setbackg(x,a,meh)}
+        @vbox.add @questions[x][-1][0]
+        @vbox.add @questions[x][-1][1]
+      end
+      @vbox.add Gtk::HSeparator.new()
+    end
+    add_with_viewport(@vbox)
+  end
+end
 
 class Notebook < Gtk::Notebook
-  attr_accessor :skill, :spell, :totem, :cyber, :weapon, :gear, :armor
+  attr_accessor :skill, :spell, :totem, :cyber, :weapon, :gear, :armor, :ammo
+
+  def clear
+    @skill.clearskills
+    @cyber.clearcyber
+    @bio.clearbio
+    @weapon.clearweapon
+    @armor.cleararmor
+    @gear.cleargear
+    @ammo.clearammo
+    @ef.clearef
+    @vehicles.clearvehicles
+    @backg.clearbackg
+  end
   
   def initialize(app)
     @app = app
@@ -2837,14 +3069,22 @@ class Notebook < Gtk::Notebook
     @weapon = Weaponblock.new(@app)
     @armor = Armorblock.new(@app)
     @gear = Gearblock.new(@app)
+    @ammo = Ammoblock.new(@app)
+    @ef = EdgesFlaws.new(@app)
+    @vehicles = Vehicles.new(@app)
+    @backg = Background.new(@app)
  #   @tview = SPELLVIEW.new(@app)
     append_page(@skill, Gtk::Label.new('Skills'))
-    append_page(@cyber, Gtk::Label.new('Cyberware'))
-    append_page(@bio, Gtk::Label.new('Bioware'))
+    append_page(@cyber, Gtk::Label.new('Cyber'))
+    append_page(@bio, Gtk::Label.new('Bio'))
     append_page(@spell, Gtk::Label.new('Spells'))
     append_page(@weapon, Gtk::Label.new('Weapons'))
     append_page(@armor, Gtk::Label.new('Armor'))
     append_page(@gear, Gtk::Label.new('Gear'))
+    append_page(@ammo, Gtk::Label.new('Ammo'))
+    append_page(@ef, Gtk::Label.new('Edge/Flaw'))
+    append_page(@vehicles, Gtk::Label.new('Vehicles'))
+    append_page(@backg, Gtk::Label.new('Background'))
  #   append_page(@tview, Gtk::Label.new('txtv'))
     get_nth_page(3).sensitive = false
   end

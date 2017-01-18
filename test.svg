@@ -1322,53 +1322,125 @@ class="s9_1"
 <path d="M590,806l225,0" class="g1_1" />
 <path d="M829,806l39,0" class="g1_1" />
 <text 
-x="390" 
+x="386" 
 y="801" 
 dx="0,-2.2,0,0" 
 class="s6_1"
 >Type</text>
 
 <text 
-x="502" 
+x="506" 
 y="801" 
 dx="0,0,0,0,0,0" 
 class="s6_1"
 >Rating</text>
 
-<path d="M390,818l97,0" class="g1_1" />
-<path d="M502,818l40,0" class="g1_1" />
-<path d="M390,838l97,0" class="g1_1" />
-<path d="M502,838l40,0" class="g1_1" />
-<path d="M390,858l97,0" class="g1_1" />
-<path d="M502,858l40,0" class="g1_1" />
-<path d="M390,877l97,0" class="g1_1" />
-<path d="M502,877l40,0" class="g1_1" />
-<path d="M390,897l97,0" class="g1_1" />
-<path d="M502,897l40,0" class="g1_1" />
-<path d="M390,917l97,0" class="g1_1" />
-<path d="M502,917l40,0" class="g1_1" />
-<path d="M390,937l97,0" class="g1_1" />
-<path d="M502,937l40,0" class="g1_1" />
-<path d="M390,957l97,0" class="g1_1" />
-<path d="M502,957l40,0" class="g1_1" />
-<path d="M390,977l97,0" class="g1_1" />
-<path d="M502,977l40,0" class="g1_1" />
-<path d="M390,997l97,0" class="g1_1" />
-<path d="M502,997l40,0" class="g1_1" />
-<path d="M390,1017l97,0" class="g1_1" />
-<path d="M502,1017l40,0" class="g1_1" />
-<path d="M390,1037l97,0" class="g1_1" />
-<path d="M502,1037l40,0" class="g1_1" />
-<path d="M390,1057l97,0" class="g1_1" />
-<path d="M502,1057l40,0" class="g1_1" />
-<path d="M390,1076l97,0" class="g1_1" />
-<path d="M502,1076l40,0" class="g1_1" />
-<path d="M390,1096l97,0" class="g1_1" />
-<path d="M502,1096l40,0" class="g1_1" />
-<path d="M390,1116l97,0" class="g1_1" />
-<path d="M502,1116l40,0" class="g1_1" />
-<path d="M390,1136l97,0" class="g1_1" />
-<path d="M502,1136l40,0" class="g1_1" />
+<text
+x="382"
+y="816"
+dx="0,0,0"
+class="s9_1"
+>armor1</text>
+
+<text
+x="510"
+y="816"
+dx="0,0,0"
+class="s9_1"
+>armor1r</text>
+
+<text
+x="382"
+y="836"
+dx="0,0,0"
+class="s9_1"
+>armor2</text>
+
+<text
+x="510"
+y="836"
+dx="0,0,0"
+class="s9_1"
+>armor2r</text>
+
+<text
+x="382"
+y="856"
+dx="0,0,0"
+class="s9_1"
+>armor3</text>
+
+<text
+x="510"
+y="856"
+dx="0,0,0"
+class="s9_1"
+>armor3r</text>
+
+<text
+x="382"
+y="875"
+dx="0,0,0"
+class="s9_1"
+>armor4</text>
+
+<text
+x="510"
+y="875"
+dx="0,0,0"
+class="s9_1"
+>armor4r</text>
+
+<text
+x="382"
+y="895"
+dx="0,0,0"
+class="s9_1"
+>armor5</text>
+
+<text
+x="510"
+y="895"
+dx="0,0,0"
+class="s9_1"
+>armor5r</text>
+
+
+
+<path d="M384,818l114,0" class="g1_1" />
+<path d="M510,818l32,0" class="g1_1" />
+<path d="M384,838l114,0" class="g1_1" />
+<path d="M510,838l32,0" class="g1_1" />
+<path d="M384,858l114,0" class="g1_1" />
+<path d="M510,858l32,0" class="g1_1" />
+<path d="M384,877l114,0" class="g1_1" />
+<path d="M510,877l32,0" class="g1_1" />
+<path d="M384,897l114,0" class="g1_1" />
+<path d="M510,897l32,0" class="g1_1" />
+<path d="M384,917l114,0" class="g1_1" />
+<path d="M510,917l32,0" class="g1_1" />
+<path d="M384,937l114,0" class="g1_1" />
+<path d="M510,937l32,0" class="g1_1" />
+<path d="M384,957l114,0" class="g1_1" />
+<path d="M510,957l32,0" class="g1_1" />
+<path d="M384,977l114,0" class="g1_1" />
+<path d="M510,977l32,0" class="g1_1" />
+<path d="M384,997l114,0" class="g1_1" />
+<path d="M510,997l32,0" class="g1_1" />
+<path d="M384,1017l114,0" class="g1_1" />
+<path d="M510,1017l32,0" class="g1_1" />
+<path d="M384,1037l114,0" class="g1_1" />
+<path d="M510,1037l32,0" class="g1_1" />
+<path d="M384,1057l114,0" class="g1_1" />
+<path d="M510,1057l32,0" class="g1_1" />
+<path d="M384,1076l114,0" class="g1_1" />
+<path d="M510,1076l32,0" class="g1_1" />
+<path d="M384,1096l114,0" class="g1_1" />
+<path d="M510,1096l32,0" class="g1_1" />
+<path d="M384,1116l114,0" class="g1_1" />
+<path d="M510,1116l32,0" class="g1_1" />
+<path d="M384,1136l114,0" class="g1_1" />
+<path d="M510,1136l32,0" class="g1_1" />
 <text 
 x="590" 
 y="888" 

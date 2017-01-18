@@ -14464,3 +14464,2405 @@
 - :Dampening Hearing
 - :Improved Scent
 - :Improved Taste
+:questions:
+  :Background:
+  - Where is your character from?
+  - Does your character have a family?
+  - Does your character have an ethnic background?
+  :Appearance:
+  - What does your character look like?
+  - What does your character dress like?
+  - Does your character have physical quirks?
+  :Resources:
+  - Where did your character learn their Active Skills?
+  - Where did your character learn their Knowledge Skills?
+  - Where did your character get his goodies?
+  - Where does your character live?
+  - Who are your character's contacts?
+  - Who are your character's enemies?
+  :Personality:
+  - What are your character's likes and dislikes?
+  - What is your character's moral code?
+  - Does your character have goals?
+  - Does your character have personal beliefs?
+  - Does your character have personality quirks?
+  :Reasons:
+  - Why does your character run the shadows?
+  - How does your character view his/her role as a shadowrunner?
+  :Magic:
+  - Where did your character learn magic?
+:weapontypes:
+  :Firearms:
+  - :Hold-out Pistols
+  - :Light Pistols
+  - :Heavy Pistols
+  - :Machinepistols
+  - :Spray Weapons
+  - :Tasers
+  - :Special Weapons
+  - :Submachine Guns
+  - :Rifles
+  - :LMG/MMG/HMG
+  - :Shotguns
+  - :Assault Rifles
+  - :Cannons
+  - :Laser Weapons
+  :Melee Weapons:
+  - :Edged
+  - :Clubs
+  - :Polearm
+  - :Unarmed
+  - :Whips
+  :Throwing Weapons: []
+  :Missile Launchers: []
+  :Grenade Launchers: []
+  :Projectile Weapons: []
+:ammotypes:
+  :Bullets:
+  - :Hold-out Pistols
+  - :Light Pistols
+  - :Heavy Pistols
+  - :Machinepistols
+  - :Submachine Guns
+  - :Rifles
+  - :LMG/MMG/HMG
+  - :Shotguns
+  - :Assault Rifles
+  :Lasers:
+  - :Laser Weapons
+  :Tanks:
+  - :Spray Weapons
+  :Projectiles:
+  - :Projectile Weapons
+  :Grenades:
+  - :Grenade Launchers
+  :Missiles:
+  - :Missile Launchers
+  :Rockets:
+  - :Missile Launchers
+  :Shotguns:
+  - :Shotguns
+  :Cannons:
+  - :Cannons
+  :Tasers:
+  - :Tasers
+  :FN-AAL Gyrojet:
+  - :FN-AAL Gyrojet
+  :Net Gun Standard:
+  - :Net Gun Standard
+  :Net Gun Large:
+  - :Net Gun Large
+:ammo:
+  :Lasers:
+    :Ares MP Heavy Laser Battery:50:
+      :Type: :Lasers
+      :Stats:
+        :Name: Ares MP Heavy Laser Battery:50
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: " "
+        :Weight: '15'
+        :Price: '2000'
+        :Legality: Legal
+        :Avail: 10/1 mo
+        :Index: '2.0'
+        :Page: cc.30
+    :Ares MP Laser III Hip Battery:20:
+      :Type: :Lasers
+      :Stats:
+        :Name: Ares MP Laser III Hip Battery:20
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '4'
+        :Damage: " "
+        :Weight: '2'
+        :Price: '500'
+        :Legality: Legal
+        :Avail: 10/2 wks
+        :Index: '2.0'
+        :Page: cc.30
+    :Ares Redline Battery Clip:10:
+      :Type: :Lasers
+      :Stats:
+        :Name: Ares Redline Battery Clip:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '6'
+        :Damage: " "
+        :Weight: '1'
+        :Price: '250'
+        :Legality: Legal
+        :Avail: 10/2 wks
+        :Index: '2.0'
+        :Page: cc.3
+  :Projectiles:
+    :Standard Barbed:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Standard Barbed
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '2'
+        :Damage: " "
+        :Weight: '0.1'
+        :Price: '12'
+        :Legality: 10P-D
+        :Avail: 4/36 hrs
+        :Index: '1.0'
+        :Page: cc.12
+    :Standard Explosive:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Standard Explosive
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '2'
+        :Damage: "+1"
+        :Weight: '0.1'
+        :Price: '30'
+        :Legality: 8P-D
+        :Avail: 5/1 wk
+        :Index: '1.0'
+        :Page: cc.12
+    :Standard Explosive EX:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Standard Explosive EX
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '2'
+        :Damage: "+2"
+        :Weight: '0.1'
+        :Price: '70'
+        :Legality: 6P-D
+        :Avail: 7/2 wks
+        :Index: '2.0'
+        :Page: cc.12
+    :Standard Hammerhead:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Standard Hammerhead
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '2'
+        :Damage: "-2(Stun)"
+        :Weight: '0.1'
+        :Price: '20'
+        :Legality: 10P-D
+        :Avail: 4/36 hrs
+        :Index: '1.0'
+        :Page: cc.12
+    :Standard Incendiary:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Standard Incendiary
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '2'
+        :Damage: fire
+        :Weight: '0.1'
+        :Price: '60'
+        :Legality: 6-D
+        :Avail: 7/2 wks
+        :Index: '2.0'
+        :Page: cc.13
+    :Standard Screamer:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Standard Screamer
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '2'
+        :Damage: noise
+        :Weight: '0.1'
+        :Price: '10'
+        :Legality: Legal
+        :Avail: 4/24 hrs
+        :Index: '1.0'
+        :Page: cc.13
+    :Standard Arrows:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Standard Arrows
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: " "
+        :Weight: '0.1'
+        :Price: '10'
+        :Legality: Legal
+        :Avail: 3/36 hrs
+        :Index: '1.0'
+        :Page: sr3.276
+    :Ranger X Barbed:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Ranger X Barbed
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: " "
+        :Weight: '0.08'
+        :Price: '20'
+        :Legality: 10P-D
+        :Avail: 5/36 hrs
+        :Index: '1.0'
+        :Page: cc.12
+    :Ranger X Explosive:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Ranger X Explosive
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: "+1"
+        :Weight: '0.08'
+        :Price: '38'
+        :Legality: 8P-D
+        :Avail: 6/1 wk
+        :Index: '1.0'
+        :Page: cc.12
+    :Ranger X Explosive EX:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Ranger X Explosive EX
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: "+2"
+        :Weight: '0.08'
+        :Price: '78'
+        :Legality: 6P-D
+        :Avail: 8/2 wks
+        :Index: '2.0'
+        :Page: cc.12
+    :Ranger X Hammerhead:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Ranger X Hammerhead
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: "-2(Stun)"
+        :Weight: '0.08'
+        :Price: '28'
+        :Legality: 10P-D
+        :Avail: 5/36 hrs
+        :Index: '1.0'
+        :Page: cc.12
+    :Ranger X Incendiary:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Ranger X Incendiary
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: fire
+        :Weight: '0.08'
+        :Price: '68'
+        :Legality: 6-D
+        :Avail: 8/2 wks
+        :Index: '2.0'
+        :Page: cc.13
+    :Ranger X Screamer:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Ranger X Screamer
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: noise
+        :Weight: '0.08'
+        :Price: '18'
+        :Legality: Legal
+        :Avail: 5/24 hrs
+        :Index: '1.0'
+        :Page: cc.13
+    :Ranger X Arrows:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Ranger X Arrows
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '4'
+        :Damage: " "
+        :Weight: '0.08'
+        :Price: '18'
+        :Legality: Legal
+        :Avail: 4/36 hrs
+        :Index: '1.0'
+        :Page: sr3.276
+    :Pistol Crossbow Barbed:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Pistol Crossbow Barbed
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '5'
+        :Damage: " "
+        :Weight: '0.04'
+        :Price: '5'
+        :Legality: 10P-D
+        :Avail: 5/36 hrs
+        :Index: '1.0'
+        :Page: cc.12
+    :Pistol Crossbow Explosive:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Pistol Crossbow Explosive
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '5'
+        :Damage: "+1"
+        :Weight: '0.04'
+        :Price: '23'
+        :Legality: 8P-D
+        :Avail: 6/1 wk
+        :Index: '1.0'
+        :Page: cc.12
+    :Pistol Crossbow Explosive EX:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Pistol Crossbow Explosive EX
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '5'
+        :Damage: "+2"
+        :Weight: '0.04'
+        :Price: '63'
+        :Legality: 6P-D
+        :Avail: 8/2 wks
+        :Index: '2.0'
+        :Page: cc.12
+    :Pistol Crossbow Hammerhead:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Pistol Crossbow Hammerhead
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '5'
+        :Damage: "-2(Stun)"
+        :Weight: '0.04'
+        :Price: '13'
+        :Legality: 10P-D
+        :Avail: 5/36 hrs
+        :Index: '1.0'
+        :Page: cc.12
+    :Pistol Crossbow Incendiary:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Pistol Crossbow Incendiary
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '5'
+        :Damage: fire
+        :Weight: '0.04'
+        :Price: '53'
+        :Legality: 6-D
+        :Avail: 8/2 wks
+        :Index: '2.0'
+        :Page: cc.13
+    :Pistol Crossbow Screamer:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Pistol Crossbow Screamer
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '5'
+        :Damage: noise
+        :Weight: '0.04'
+        :Price: '3'
+        :Legality: Legal
+        :Avail: 5/24 hrs
+        :Index: '1.0'
+        :Page: cc.13
+    :Pistol Crossbow Arrows:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Pistol Crossbow Arrows
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '6'
+        :Damage: " "
+        :Weight: '0.04'
+        :Price: '3'
+        :Legality: Legal
+        :Avail: 4/36 hrs
+        :Index: '1.0'
+        :Page: sr3.276
+    :Crossbow Barbed:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Crossbow Barbed
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: " "
+        :Weight: '0.05'
+        :Price: '7'
+        :Legality: 10P-D
+        :Avail: 5/36 hrs
+        :Index: '1.0'
+        :Page: cc.12
+    :Crossbow Explosive:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Crossbow Explosive
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: "+1"
+        :Weight: '0.05'
+        :Price: '25'
+        :Legality: 8P-D
+        :Avail: 6/1 wk
+        :Index: '1.0'
+        :Page: cc.12
+    :Crossbow Explosive EX:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Crossbow Explosive EX
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: "+2"
+        :Weight: '0.05'
+        :Price: '65'
+        :Legality: 6P-D
+        :Avail: 8/2 wks
+        :Index: '2.0'
+        :Page: cc.12
+    :Crossbow Hammerhead:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Crossbow Hammerhead
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: "-2(Stun)"
+        :Weight: '0.05'
+        :Price: '15'
+        :Legality: 10P-D
+        :Avail: 5/36 hrs
+        :Index: '1.0'
+        :Page: cc.12
+    :Crossbow Incendiary:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Crossbow Incendiary
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: fire
+        :Weight: '0.05'
+        :Price: '55'
+        :Legality: 6-D
+        :Avail: 8/2 wks
+        :Index: '2.0'
+        :Page: cc.13
+    :Crossbow Screamer:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Crossbow Screamer
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: noise
+        :Weight: '0.05'
+        :Price: '5'
+        :Legality: Legal
+        :Avail: 5/24 hrs
+        :Index: '1.0'
+        :Page: cc.13
+    :Crossbow Arrows:
+      :Type: :Projectiles
+      :Stats:
+        :Name: Crossbow Arrows
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '4'
+        :Damage: " "
+        :Weight: '0.05'
+        :Price: '5'
+        :Legality: Legal
+        :Avail: 4/36 hrs
+        :Index: '1.0'
+        :Page: sr3.27
+  :Cannons:
+    :Standard box:10:
+      :Type: :Cannons
+      :Stats:
+        :Name: Standard box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: " "
+        :Weight: '1.25'
+        :Price: '450'
+        :Legality: weapon
+        :Avail: 5/3 days
+        :Index: '2.0'
+        :Page: sr3.279
+    :Standard belt:100:
+      :Type: :Cannons
+      :Stats:
+        :Name: Standard belt:100
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: " "
+        :Weight: '12.5'
+        :Price: '4250'
+        :Legality: weapon
+        :Avail: 5/3 days
+        :Index: '2.0'
+        :Page: sr3.279
+    :Standard belt:200:
+      :Type: :Cannons
+      :Stats:
+        :Name: Standard belt:200
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: " "
+        :Weight: '25'
+        :Price: '8350'
+        :Legality: weapon
+        :Avail: 5/3 days
+        :Index: '2.0'
+        :Page: sr3.279
+    :Standard belt:500:
+      :Type: :Cannons
+      :Stats:
+        :Name: Standard belt:500
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: " "
+        :Weight: '62.5'
+        :Price: '19500'
+        :Legality: weapon
+        :Avail: 5/3 days
+        :Index: '2.0'
+        :Page: sr3.279
+    :Standard belt:1000:
+      :Type: :Cannons
+      :Stats:
+        :Name: Standard belt:1000
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: " "
+        :Weight: '125'
+        :Price: '37000'
+        :Legality: weapon
+        :Avail: 5/3 days
+        :Index: '2.0'
+        :Page: sr3.279
+    :AV box:10:
+      :Type: :Cannons
+      :Stats:
+        :Name: AV box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: "(AV)"
+        :Weight: '1.5'
+        :Price: '1000'
+        :Legality: 2-M
+        :Avail: 16/2 wks
+        :Index: '4.0'
+        :Page: cc.39
+    :AV belt:100:
+      :Type: :Cannons
+      :Stats:
+        :Name: AV belt:100
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "(AV)"
+        :Weight: '15'
+        :Price: '9500'
+        :Legality: 2-M
+        :Avail: 16/2 wks
+        :Index: '4.0'
+        :Page: cc.3
+  :Bullets:
+    :AV box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: AV box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "(AV)"
+        :Weight: '1'
+        :Price: '200'
+        :Legality: 3-M
+        :Avail: 16/2 wks
+        :Index: '4.0'
+        :Page: cc.37
+    :APDS box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: APDS box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "(APDS)"
+        :Weight: '0.25'
+        :Price: '70'
+        :Legality: 3-M
+        :Avail: 14/14 days
+        :Index: '4.0'
+        :Page: sr3.279
+    :Capsule box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Capsule box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: chemical
+        :Weight: '0.25'
+        :Price: '10'
+        :Legality: chemical
+        :Avail: 4/48 hrs
+        :Index: '2.0'
+        :Page: cc.37
+    :ELD-AR gelcoat box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: ELD-AR gelcoat box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: chemical
+        :Weight: '0.15'
+        :Price: 300 + chemical
+        :Legality: chemical
+        :Avail: chemical
+        :Index: 2.0 mm.115
+    :Explosive box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Explosive box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "+1"
+        :Weight: '0.75'
+        :Price: '50'
+        :Legality: weapon
+        :Avail: 3/36 hrs
+        :Index: '0.8'
+        :Page: sr3.279
+    :EX Explosive box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: EX Explosive box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "+2"
+        :Weight: '0.75'
+        :Price: '100'
+        :Legality: weapon
+        :Avail: 6/72 hrs
+        :Index: '1.5'
+        :Page: sr3.279
+    :Flechette box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Flechette box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "(f)"
+        :Weight: '0.5'
+        :Price: '100'
+        :Legality: weapon
+        :Avail: 3/36 hrs
+        :Index: '0.8'
+        :Page: sr3.280
+    :Gel box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Gel box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "-2(Stun)"
+        :Weight: '0.25'
+        :Price: '30'
+        :Legality: weapon
+        :Avail: 4/48 hrs
+        :Index: '1.0'
+        :Page: sr3.280
+    :Glazer box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Glazer box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "+2(f)"
+        :Weight: '0.5'
+        :Price: '75'
+        :Legality: 3-M
+        :Avail: 10/1 wk
+        :Index: '3.0'
+        :Page: cc.38
+    :Hi-C Plastic box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Hi-C Plastic box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '9'
+        :Damage: " "
+        :Weight: '0.25'
+        :Price: '150'
+        :Legality: 3-M
+        :Avail: 6/1 wk
+        :Index: '3.0'
+        :Page: cc.38
+    :Hollow Point box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Hollow Point box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "(hp)"
+        :Weight: '0.5'
+        :Price: '50'
+        :Legality: weapon
+        :Avail: 5/48 hrs
+        :Index: '2.0'
+        :Page: cc.38
+    :Incendiary box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Incendiary box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: fire
+        :Weight: '0.75'
+        :Price: '150'
+        :Legality: 3-M
+        :Avail: 10/1 wk
+        :Index: '2.0'
+        :Page: cc.38
+    :Mecury Rounds box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Mecury Rounds box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "(f)"
+        :Weight: '1.5'
+        :Price: '50'
+        :Legality: 3-M
+        :Avail: 6/48 hrs
+        :Index: '1.5'
+        :Page: cc.38
+    :Standard box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Standard box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: " "
+        :Weight: '0.5'
+        :Price: '20'
+        :Legality: weapon
+        :Avail: 2/24 hrs
+        :Index: '0.75'
+        :Page: sr3.279
+    :Paint box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Paint box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: paint
+        :Weight: '0.15'
+        :Price: '5'
+        :Legality: Legal
+        :Avail: 2/24 hrs
+        :Index: '1.0'
+        :Page: mm.115
+    :Tracker AOD box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Tracker AOD box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: tracer signal
+        :Weight: '1'
+        :Price: Rating x 2,000
+        :Legality: 6-U
+        :Avail: Rating/1 wk
+        :Index: '1.0'
+        :Page: cc.39
+    :Tracker Standard box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Tracker Standard box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: tracer signal
+        :Weight: '1'
+        :Price: Rating x 3,000
+        :Legality: 6-U
+        :Avail: Rating/1 wk
+        :Index: '1.0'
+        :Page: cc.39
+    :Tracer box:10:
+      :Type: :Bullets
+      :Stats:
+        :Name: Tracer box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: tracer
+        :Weight: '0.5'
+        :Price: '75'
+        :Legality: weapon
+        :Avail: 3/24 hrs
+        :Index: '1.0'
+        :Page: sr3.280
+    :APDS belt:100:
+      :Type: :Bullets
+      :Stats:
+        :Name: APDS belt:100
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "(APDS)"
+        :Weight: '2.5'
+        :Price: '650'
+        :Legality: 3-M
+        :Avail: 14/14 days
+        :Index: '4.0'
+        :Page: ssc.65
+    :Explosive belt:100:
+      :Type: :Bullets
+      :Stats:
+        :Name: Explosive belt:100
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "+1"
+        :Weight: '7.5'
+        :Price: '450'
+        :Legality: weapon
+        :Avail: 3/36 hrs
+        :Index: '0.8'
+        :Page: ssc.65
+    :EX Explosive belt:100:
+      :Type: :Bullets
+      :Stats:
+        :Name: EX Explosive belt:100
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "+2"
+        :Weight: '7.5'
+        :Price: '900'
+        :Legality: weapon
+        :Avail: 6/72 hrs
+        :Index: '1.5'
+        :Page: cre.wd
+    :Flechette belt:100:
+      :Type: :Bullets
+      :Stats:
+        :Name: Flechette belt:100
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "(f)"
+        :Weight: '5'
+        :Price: '850'
+        :Legality: weapon
+        :Avail: 3/36 hrs
+        :Index: '0.8'
+        :Page: ssc.65
+    :Gel belt:100:
+      :Type: :Bullets
+      :Stats:
+        :Name: Gel belt:100
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "-2(Stun)"
+        :Weight: '3'
+        :Price: '250'
+        :Legality: weapon
+        :Avail: 4/48 hrs
+        :Index: '1.0'
+        :Page: ssc.65
+    :Regular belt:100:
+      :Type: :Bullets
+      :Stats:
+        :Name: Regular belt:100
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: " "
+        :Weight: '5'
+        :Price: '175'
+        :Legality: weapon 2/24 hrs
+        :Avail: '0.75'
+        :Index: ssc.65
+    :Traced belt:100:
+      :Type: :Bullets
+      :Stats:
+        :Name: Traced belt:100
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: tracer
+        :Weight: " "
+        :Price: "+100"
+        :Legality: weapon
+        :Avail: 3/24 hrs
+        :Index: '1.0'
+        :Page: cre.wd
+    :APDS belt:200:
+      :Type: :Bullets
+      :Stats:
+        :Name: APDS belt:200
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "(APDS)"
+        :Weight: '5'
+        :Price: '1250'
+        :Legality: 3-M
+        :Avail: 14/14 days
+        :Index: '4.0'
+        :Page: ssc.65
+    :Explosive belt:200:
+      :Type: :Bullets
+      :Stats:
+        :Name: Explosive belt:200
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "+1"
+        :Weight: '15'
+        :Price: '850'
+        :Legality: weapon
+        :Avail: 3/36 hrs
+        :Index: '0.8'
+        :Page: ssc.65
+    :EX Explosive belt:200:
+      :Type: :Bullets
+      :Stats:
+        :Name: EX Explosive belt:200
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "+2"
+        :Weight: '15'
+        :Price: '1700'
+        :Legality: weapon
+        :Avail: 6/72 hrs
+        :Index: '1.5'
+        :Page: cre.wd
+    :Flechette belt:200:
+      :Type: :Bullets
+      :Stats:
+        :Name: Flechette belt:200
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "(f)"
+        :Weight: '10'
+        :Price: '1600'
+        :Legality: weapon
+        :Avail: 3/36 hrs
+        :Index: '0.8'
+        :Page: ssc.65
+    :Gel belt:200:
+      :Type: :Bullets
+      :Stats:
+        :Name: Gel belt:200
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "-2(Stun)"
+        :Weight: '6'
+        :Price: '475'
+        :Legality: weapon
+        :Avail: 4/48 hrs
+        :Index: '1.0'
+        :Page: ssc.65
+    :Regular belt:200:
+      :Type: :Bullets
+      :Stats:
+        :Name: Regular belt:200
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: " "
+        :Weight: '10'
+        :Price: '325'
+        :Legality: weapon
+        :Avail: 2/24 hrs
+        :Index: '0.75'
+        :Page: ssc.65
+    :Traced belt:200:
+      :Type: :Bullets
+      :Stats:
+        :Name: Traced belt:200
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: tracer
+        :Weight: '10'
+        :Price: "+180"
+        :Legality: weapon
+        :Avail: 3/24 hrs
+        :Index: '1.0'
+        :Page: cre.wd
+    :APDS belt:500:
+      :Type: :Bullets
+      :Stats:
+        :Name: APDS belt:500
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "(APDS)"
+        :Weight: '12.5'
+        :Price: '3100'
+        :Legality: 3-M
+        :Avail: 14/14 days
+        :Index: '4.0'
+        :Page: sr3.279
+    :Explosive belt:500:
+      :Type: :Bullets
+      :Stats:
+        :Name: Explosive belt:500
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "+1"
+        :Weight: '37.5'
+        :Price: '2100'
+        :Legality: weapon
+        :Avail: 3/36 hrs
+        :Index: '0.8'
+        :Page: sr3.279
+    :EX Explosive belt:500:
+      :Type: :Bullets
+      :Stats:
+        :Name: EX Explosive belt:500
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "+2"
+        :Weight: '37.5'
+        :Price: '4200'
+        :Legality: weapon
+        :Avail: 6/72 hrs
+        :Index: '1.5'
+        :Page: cre.wd
+    :Flechette belt:500:
+      :Type: :Bullets
+      :Stats:
+        :Name: Flechette belt:500
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "(f)"
+        :Weight: '25'
+        :Price: '3800'
+        :Legality: weapon
+        :Avail: 3/36 hrs
+        :Index: '0.8'
+        :Page: ssc.65
+    :Gel belt:500:
+      :Type: :Bullets
+      :Stats:
+        :Name: Gel belt:500
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "-2(Stun)"
+        :Weight: '15'
+        :Price: '1050'
+        :Legality: weapon
+        :Avail: 4/48 hrs
+        :Index: '1.0'
+        :Page: ssc.65
+    :Regular belt:500:
+      :Type: :Bullets
+      :Stats:
+        :Name: Regular belt:500
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: " "
+        :Weight: '25'
+        :Price: '800'
+        :Legality: weapon
+        :Avail: 2/24 hrs
+        :Index: '0.75'
+        :Page: ssc.65
+    :Traced belt:500:
+      :Type: :Bullets
+      :Stats:
+        :Name: Traced belt:500
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: tracer
+        :Weight: "+400"
+        :Price: weapon
+        :Legality: 3/24 hrs
+        :Avail: '1.0'
+        :Index: cre.wd
+    :APDS belt:1000:
+      :Type: :Bullets
+      :Stats:
+        :Name: APDS belt:1000
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "(APDS)"
+        :Weight: '25'
+        :Price: '6000'
+        :Legality: 3-M
+        :Avail: 14/14 days
+        :Index: '4.0'
+        :Page: sr3.279
+    :Explosive belt:1000:
+      :Type: :Bullets
+      :Stats:
+        :Name: Explosive belt:1000
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "+1"
+        :Weight: '75'
+        :Price: '4000'
+        :Legality: weapon
+        :Avail: 3/36 hrs
+        :Index: '0.8'
+        :Page: sr3.279
+    :EX Explosive belt:1000:
+      :Type: :Bullets
+      :Stats:
+        :Name: EX Explosive belt:1000
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "+2"
+        :Weight: '75'
+        :Price: '8000'
+        :Legality: weapon
+        :Avail: 6/72 hrs
+        :Index: '1.5'
+        :Page: cre.wd
+    :Flechette belt:1000:
+      :Type: :Bullets
+      :Stats:
+        :Name: Flechette belt:1000
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "(f)"
+        :Weight: '50'
+        :Price: '7500'
+        :Legality: weapon
+        :Avail: 3/36 hrs
+        :Index: '0.8'
+        :Page: ssc.65
+    :Gel belt:1000:
+      :Type: :Bullets
+      :Stats:
+        :Name: Gel belt:1000
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: "-2(Stun)"
+        :Weight: '30'
+        :Price: '2000'
+        :Legality: weapon
+        :Avail: 4/48 hrs
+        :Index: '1.0'
+        :Page: ssc.65
+    :Regular belt:1000:
+      :Type: :Bullets
+      :Stats:
+        :Name: Regular belt:1000
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: " "
+        :Weight: '50'
+        :Price: '1575'
+        :Legality: weapon
+        :Avail: 2/24 hrs
+        :Index: '0.75'
+        :Page: ssc.65
+    :Traced belt:1000:
+      :Type: :Bullets
+      :Stats:
+        :Name: Traced belt:1000
+        :Intel: " "
+        :Blast: " "
+        :Conc.: " "
+        :Damage: tracer
+        :Weight: " "
+        :Price: "+750"
+        :Legality: weapon
+        :Avail: 3/24 hrs
+        :Index: '1.0'
+        :Page: cre.w
+  :FN-AAL Gyrojet:
+    :Standard box:10:
+      :Type: :FN-AAL Gyrojet
+      :Stats:
+        :Name: Standard box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: " "
+        :Weight: '1.75'
+        :Price: '80'
+        :Legality: weapon
+        :Avail: 4/48 hrs
+        :Index: '2.5'
+        :Page: cc.39
+    :Gyrojet Plus box:10:
+      :Type: :FN-AAL Gyrojet
+      :Stats:
+        :Name: Gyrojet Plus box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "(APDS,AV)"
+        :Weight: '2'
+        :Price: '120'
+        :Legality: 2-M
+        :Avail: 14/3 wks
+        :Index: '4.0'
+        :Page: cc.39
+    :Seeker Heads:
+      :Type: :FN-AAL Gyrojet
+      :Stats:
+        :Name: Seeker Heads
+        :Intel: " "
+        :Blast: " "
+        :Conc.: "-1"
+        :Damage: "+0.25"
+        :Weight: x2
+        :Price: "+1/x1.5"
+        :Legality: " "
+        :Avail: cc.4
+  :Net Gun Standard:
+    :Normal:
+      :Type: :Net Gun Standard
+      :Stats:
+        :Name: Normal
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '7'
+        :Damage: '5'
+        :Weight: '1500'
+        :Price: weapon
+        :Legality: 4/48 hrs
+        :Avail: '1.0'
+        :Index: cc.4
+  :Net Gun Large:
+    :Large:
+      :Type: :Net Gun Large
+      :Stats:
+        :Name: Large
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '5'
+        :Damage: '7.5'
+        :Weight: '3000'
+        :Price: weapon
+        :Legality: 4/48 hrs
+        :Avail: '1.0'
+        :Index: cc.4
+  :Shotguns:
+    :Big D’s Temper™ box:10:
+      :Type: :Shotguns
+      :Stats:
+        :Name: Big D’s Temper™ box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "+2(fire)"
+        :Weight: '1'
+        :Price: '200'
+        :Legality: 3-M
+        :Avail: 16/14 days
+        :Index: '5.0'
+        :Page: cc.39
+    :Bola box:10:
+      :Type: :Shotguns
+      :Stats:
+        :Name: Bola box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "+1(knockdown)"
+        :Weight: '1'
+        :Price: '100'
+        :Legality: weapon
+        :Avail: 5/72 hrs
+        :Index: '2.0'
+        :Page: cc.39
+    :Flare box:10:
+      :Type: :Shotguns
+      :Stats:
+        :Name: Flare box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "(flare)"
+        :Weight: '1'
+        :Price: '25'
+        :Legality: weapon
+        :Avail: 4/48 hrs
+        :Index: '1.0'
+        :Page: cc.39
+    :Regular box:10:
+      :Type: :Shotguns
+      :Stats:
+        :Name: Regular box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: " "
+        :Weight: '0.5'
+        :Price: '20'
+        :Legality: weapon
+        :Avail: 2/24 hrs
+        :Index: 0.75 sr3.279
+    :Shock Lock box:10:
+      :Type: :Shotguns
+      :Stats:
+        :Name: Shock Lock box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "(break)"
+        :Weight: '0.75'
+        :Price: '70'
+        :Legality: weapon
+        :Avail: 5/48 hrs
+        :Index: '2.0'
+        :Page: cc.39
+    :Stun box:10:
+      :Type: :Shotguns
+      :Stats:
+        :Name: Stun box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '8'
+        :Damage: "(Stun)"
+        :Weight: '0.5'
+        :Price: '25'
+        :Legality: weapon
+        :Avail: 3/12 hrs
+        :Index: '1.0'
+        :Page: cc.3
+  :Tasers:
+    :Standard Dart box:10:
+      :Type: :Tasers
+      :Stats:
+        :Name: Standard Dart box:10
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '3'
+        :Damage: " "
+        :Weight: '0.5'
+        :Price: '50'
+        :Legality: weapon
+        :Avail: 6/36 hrs
+        :Index: '1.5'
+        :Page: sr3.8
+  :Missiles:
+    :Anti-Personnel (APM):
+      :Type: :Missiles
+      :Stats:
+        :Name: Anti-Personnel (APM)
+        :Intel: '3'
+        :Blast: "-1/.5"
+        :Conc.: " "
+        :Damage: 16D
+        :Weight: '2.25'
+        :Price: '1000'
+        :Legality: 1-K
+        :Avail: 12/14 days
+        :Index: '3.0'
+        :Page: sr3.280
+    :Anti-Vehicle (AVM):
+      :Type: :Missiles
+      :Stats:
+        :Name: Anti-Vehicle (AVM)
+        :Intel: '4'
+        :Blast: "-8/1"
+        :Conc.: " "
+        :Damage: 16D
+        :Weight: '3.25'
+        :Price: '2000'
+        :Legality: 1-K
+        :Avail: 12/14 days
+        :Index: '3.0'
+        :Page: sr3.280
+    :Arbelast II MAW:
+      :Type: :Missiles
+      :Stats:
+        :Name: Arbelast II MAW
+        :Intel: " "
+        :Blast: "-1/.5"
+        :Conc.: " "
+        :Damage: 15D (HE)
+        :Weight: '2.5'
+        :Price: '900'
+        :Legality: 1-J
+        :Avail: 8/48 hrs
+        :Index: '2.0'
+        :Page: cc.28
+    :Ares Dragon's Breath Attack AAM:
+      :Type: :Missiles
+      :Stats:
+        :Name: Ares Dragon's Breath Attack AAM
+        :Intel: '9'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 18D
+        :Weight: '20'
+        :Price: 1.5M
+        :Legality: 1-K
+        :Avail: 12/14 days
+        :Index: '3.0'
+        :Page: rbb.125
+    :Ares Dragon's Breath Dogfight AAM:
+      :Type: :Missiles
+      :Stats:
+        :Name: Ares Dragon's Breath Dogfight AAM
+        :Intel: '8'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 18D
+        :Weight: '20'
+        :Price: '500000'
+        :Legality: 1-K
+        :Avail: 12/14 days
+        :Index: '3.0'
+        :Page: rbb.125
+    :Ares Land Shark Anti-Vehicle Device:
+      :Type: :Missiles
+      :Stats:
+        :Name: Ares Land Shark Anti-Vehicle Device
+        :Intel: '1'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 17D
+        :Weight: '5.0'
+        :Price: '3500'
+        :Legality: 1-K
+        :Avail: 13/14 days
+        :Index: '3.0'
+        :Page: ls.133
+    :Ballista Mk I:
+      :Type: :Missiles
+      :Stats:
+        :Name: Ballista Mk I
+        :Intel: " "
+        :Blast: "-7/1"
+        :Conc.: " "
+        :Damage: 14D (AV)
+        :Weight: '2.75'
+        :Price: '1000'
+        :Legality: 1-J
+        :Avail: 12/21 days
+        :Index: '4.0'
+        :Page: cc.28
+    :Ballista Mk II:
+      :Type: :Missiles
+      :Stats:
+        :Name: Ballista Mk II
+        :Intel: '6'
+        :Blast: "-7/1"
+        :Conc.: " "
+        :Damage: 14D (AV)
+        :Weight: '2.75'
+        :Price: '2500'
+        :Legality: 1-J
+        :Avail: 14/28 days
+        :Index: '4.0'
+        :Page: cc.28
+    :Ballista Mk III:
+      :Type: :Missiles
+      :Stats:
+        :Name: Ballista Mk III
+        :Intel: '5'
+        :Blast: "-7/1 "
+        :Conc.: " "
+        :Damage: 14D (AV)
+        :Weight: '2.75'
+        :Price: '2000'
+        :Legality: 1-J
+        :Avail: 18/28 days
+        :Index: '4.0'
+        :Page: cc.28
+    :Great Dragon ATGM:
+      :Type: :Missiles
+      :Stats:
+        :Name: Great Dragon ATGM
+        :Intel: '4'
+        :Blast: "-5/1"
+        :Conc.: " "
+        :Damage: 20D (AV)
+        :Weight: '3'
+        :Price: '1000'
+        :Legality: 1-J
+        :Avail: 8/48 hrs
+        :Index: '2.0'
+        :Page: cc.28
+    :High-Explosive (HEM):
+      :Type: :Missiles
+      :Stats:
+        :Name: High-Explosive (HEM)
+        :Intel: '3'
+        :Blast: "-1/1"
+        :Conc.: " "
+        :Damage: 16D
+        :Weight: '2.25'
+        :Price: '1500'
+        :Legality: 1-K
+        :Avail: 12/14 days
+        :Index: '3.0'
+        :Page: sr3.280
+    :Hyundai-CS Basic AAM:
+      :Type: :Missiles
+      :Stats:
+        :Name: Hyundai-CS Basic AAM
+        :Intel: '8'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 18D
+        :Weight: '10'
+        :Price: '100000'
+        :Legality: 1-K
+        :Avail: 12/14 days
+        :Index: '3.0'
+        :Page: rbb.125
+    :Hyundai-CS Improved AAM:
+      :Type: :Missiles
+      :Stats:
+        :Name: Hyundai-CS Improved AAM
+        :Intel: '9'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 18D
+        :Weight: '20'
+        :Price: '150000'
+        :Legality: 1-K
+        :Avail: 12/14 days
+        :Index: '3.0'
+        :Page: rbb.125
+    :Loral-Vought Jabberwocky:
+      :Type: :Missiles
+      :Stats:
+        :Name: Loral-Vought Jabberwocky
+        :Intel: '3'
+        :Blast: special
+        :Conc.: " "
+        :Damage: special
+        :Weight: '20'
+        :Price: '7000'
+        :Legality: 1-K
+        :Avail: 12/3 wks
+        :Index: '5.0'
+        :Page: cc.44
+    :Loral-Vought Silencer AARM:
+      :Type: :Missiles
+      :Stats:
+        :Name: Loral-Vought Silencer AARM
+        :Intel: '5'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 16D
+        :Weight: '250'
+        :Price: '25000'
+        :Legality: 1-K
+        :Avail: 16/28 days
+        :Index: '5.0'
+        :Page: r3.92
+    :M79B1 LAW:
+      :Type: :Missiles
+      :Stats:
+        :Name: M79B1 LAW
+        :Intel: " "
+        :Blast: "-1/.5"
+        :Conc.: " "
+        :Damage: 12D (HE)
+        :Weight: '2.5'
+        :Price: '750'
+        :Legality: 1-J
+        :Avail: 6/36 hrs
+        :Index: '2.0'
+        :Page: cc.28
+    :Micromissiles:
+      :Type: :Missiles
+      :Stats:
+        :Name: Micromissiles
+        :Intel: " "
+        :Blast: "-5/.5"
+        :Conc.: '6'
+        :Damage: 12S
+        :Weight: '0.8'
+        :Price: '1200'
+        :Legality: 1-J
+        :Avail: 14/15 days
+        :Index: '3.5'
+        :Page: cb2.41
+    :Mitsubishi-GM Bandit AGM:
+      :Type: :Missiles
+      :Stats:
+        :Name: Mitsubishi-GM Bandit AGM
+        :Intel: '6'
+        :Blast: warhead
+        :Conc.: " "
+        :Damage: warhead
+        :Weight: warhead
+        :Price: '10000'
+        :Legality: 1-K
+        :Avail: 12/14 days
+        :Index: '3.0'
+        :Page: rbb.125
+    :Mitsubishi-GM Outlaw Block I:
+      :Type: :Missiles
+      :Stats:
+        :Name: Mitsubishi-GM Outlaw Block I
+        :Intel: '5'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 14D
+        :Weight: '200'
+        :Price: '15000'
+        :Legality: 1-K
+        :Avail: 20/30 days
+        :Index: '5.0'
+        :Page: r3.91
+    :Mitsubishi-GM Outlaw Block III:
+      :Type: :Missiles
+      :Stats:
+        :Name: Mitsubishi-GM Outlaw Block III
+        :Intel: '5'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 14D
+        :Weight: '200'
+        :Price: '25000'
+        :Legality: 1-K
+        :Avail: 20/30 days
+        :Index: '5.0'
+        :Page: r3.91
+    :Mitsubishi-GM Outlaw Block II I:
+      :Type: :Missiles
+      :Stats:
+        :Name: Mitsubishi-GM Outlaw Block II I
+        :Intel: '6'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 20D (AV)
+        :Weight: '200'
+        :Price: '35000'
+        :Legality: 1-K
+        :Avail: 20/30 days
+        :Index: '5.0'
+        :Page: r3.91
+    :Mitsubishi-GM Super Bandit AGM:
+      :Type: :Missiles
+      :Stats:
+        :Name: Mitsubishi-GM Super Bandit AGM
+        :Intel: '6'
+        :Blast: warhead
+        :Conc.: " "
+        :Damage: warhead
+        :Weight: warhead
+        :Price: '15000'
+        :Legality: 1-K
+        :Avail: 12/14 days
+        :Index: '3.0'
+        :Page: rbb.125
+    :Piranha Torpedo Armor-Piercing:
+      :Type: :Missiles
+      :Stats:
+        :Name: Piranha Torpedo Armor-Piercing
+        :Intel: '4'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 16D
+        :Weight: '4.25'
+        :Price: '7500'
+        :Legality: 1-K
+        :Avail: 16/21 days
+        :Index: '3.5'
+        :Page: r3.88
+    :Piranha Torpedo High Explosive:
+      :Type: :Missiles
+      :Stats:
+        :Name: Piranha Torpedo High Explosive
+        :Intel: '4'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 12D
+        :Weight: '2.75'
+        :Price: '5000'
+        :Legality: 1-K
+        :Avail: 16/21 days
+        :Index: '3.5'
+        :Page: r3.88
+    :Piranha Torpedo Ink-Dispensing:
+      :Type: :Missiles
+      :Stats:
+        :Name: Piranha Torpedo Ink-Dispensing
+        :Intel: '4'
+        :Blast: ink
+        :Conc.: " "
+        :Damage: ink
+        :Weight: '2.75'
+        :Price: '4000'
+        :Legality: 1-K
+        :Avail: 16/21 days
+        :Index: '3.5'
+        :Page: r3.88
+    :Ruhrmetall Vogeljäger MRAAM:
+      :Type: :Missiles
+      :Stats:
+        :Name: Ruhrmetall Vogeljäger MRAAM
+        :Intel: '5'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 14D
+        :Weight: '17'
+        :Price: '5000'
+        :Legality: 1-K
+        :Avail: 18/28 days
+        :Index: '4.0'
+        :Page: r2.93
+    :Saab-Saaker AIM-11R AAM:
+      :Type: :Missiles
+      :Stats:
+        :Name: Saab-Saaker AIM-11R AAM
+        :Intel: '6'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 14D
+        :Weight: '90'
+        :Price: '25000'
+        :Legality: 1-K
+        :Avail: 20+/28+ days
+        :Index: '7.0'
+        :Page: r3.91
+    :Surface-to-Air (SAM):
+      :Type: :Missiles
+      :Stats:
+        :Name: Surface-to-Air (SAM)
+        :Intel: '4'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 13D
+        :Weight: '1.5'
+        :Price: '2500'
+        :Legality: 1-K
+        :Avail: 18/3 wks
+        :Index: '4.0'
+        :Page: cc.44
+    :UIM-199 Kingfisher SSAM:
+      :Type: :Missiles
+      :Stats:
+        :Name: UIM-199 Kingfisher SSAM
+        :Intel: '4'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 14D
+        :Weight: '25'
+        :Price: '15000'
+        :Legality: 1-K
+        :Avail: 14/21 days
+        :Index: " "
+        :Page: r3.91
+    :Vogeljäger Missile:
+      :Type: :Missiles
+      :Stats:
+        :Name: Vogeljäger Missile
+        :Intel: '5'
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 14D (AV)
+        :Weight: '17'
+        :Price: '5000'
+        :Legality: 1-J
+        :Avail: 18/28 days
+        :Index: '4.0'
+        :Page: cc.2
+  :Rockets:
+    :Anti-Personnel:
+      :Type: :Rockets
+      :Stats:
+        :Name: Anti-Personnel
+        :Intel: " "
+        :Blast: "-1/.5"
+        :Conc.: " "
+        :Damage: 16D
+        :Weight: '2'
+        :Price: '1000'
+        :Legality: 1-K
+        :Avail: 8/14 days
+        :Index: '2.0'
+        :Page: sr3.280
+    :Anti-Vehicle:
+      :Type: :Rockets
+      :Stats:
+        :Name: Anti-Vehicle
+        :Intel: " "
+        :Blast: "-8/1"
+        :Conc.: " "
+        :Damage: 16D
+        :Weight: '3'
+        :Price: '2000'
+        :Legality: 1-K
+        :Avail: 8/14 days
+        :Index: '2.0'
+        :Page: sr3.280
+    :High-Explosive:
+      :Type: :Rockets
+      :Stats:
+        :Name: High-Explosive
+        :Intel: " "
+        :Blast: "-1/1"
+        :Conc.: " "
+        :Damage: 16D
+        :Weight: '2'
+        :Price: '1500'
+        :Legality: 1-K
+        :Avail: 8/14 days
+        :Index: '2.0'
+        :Page: sr3.280
+    :Loral-Vought Jabberwocky:
+      :Type: :Rockets
+      :Stats:
+        :Name: Loral-Vought Jabberwocky
+        :Intel: " "
+        :Blast: special
+        :Conc.: " "
+        :Damage: special
+        :Weight: '20'
+        :Price: '6000'
+        :Legality: 1-K
+        :Avail: 12/3 wks
+        :Index: '5.0'
+        :Page: cc.44
+    :Piranha Armor-Piercing:
+      :Type: :Rockets
+      :Stats:
+        :Name: Piranha Armor-Piercing
+        :Intel: " "
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 16D
+        :Weight: '4'
+        :Price: '3000'
+        :Legality: 1-K
+        :Avail: 16/21 days
+        :Index: '2.5'
+        :Page: r3.88
+    :Piranha High Explosive:
+      :Type: :Rockets
+      :Stats:
+        :Name: Piranha High Explosive
+        :Intel: " "
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 12D
+        :Weight: '2.5'
+        :Price: '2500'
+        :Legality: 1-K
+        :Avail: 16/21 days
+        :Index: '2.5'
+        :Page: r3.88
+    :Piranha Ink-Dispensing:
+      :Type: :Rockets
+      :Stats:
+        :Name: Piranha Ink-Dispensing
+        :Intel: " "
+        :Blast: ink
+        :Conc.: " "
+        :Damage: ink
+        :Weight: '2.5'
+        :Price: '4000'
+        :Legality: 1-K
+        :Avail: 16/21 days
+        :Index: '2.5'
+        :Page: r3.88
+    :Zapper Static Discharge Rockets:
+      :Type: :Rockets
+      :Stats:
+        :Name: Zapper Static Discharge Rockets
+        :Intel: " "
+        :Blast: "-2/1"
+        :Conc.: " "
+        :Damage: 16D
+        :Weight: '25'
+        :Price: '2500'
+        :Legality: 1-K
+        :Avail: 10/2 wks
+        :Index: '2.5'
+        :Page: cc.44
+    :7.62cm:
+      :Type: :Rockets
+      :Stats:
+        :Name: 7.62cm
+        :Intel: " "
+        :Blast: "-5/1"
+        :Conc.: '6'
+        :Damage: 3D/rkt
+        :Weight: '0.5'
+        :Price: '1000'
+        :Legality: 1-J
+        :Avail: 8/14 days
+        :Index: '2.0'
+        :Page: rbb.125
+    :12.7cm:
+      :Type: :Rockets
+      :Stats:
+        :Name: 12.7cm
+        :Intel: " "
+        :Blast: "-5/1"
+        :Conc.: '4'
+        :Damage: 7D/rkt
+        :Weight: '0.75'
+        :Price: '1500'
+        :Legality: 1-J
+        :Avail: 8/14 days
+        :Index: '2.0'
+        :Page: rbb.12
+  :Grenades:
+    :AFR-7 Flash Grenade:
+      :Type: :Grenades
+      :Stats:
+        :Name: AFR-7 Flash Grenade
+        :Intel: " "
+        :Blast: special
+        :Conc.: '6'
+        :Damage: special
+        :Weight: '0.25'
+        :Price: '40'
+        :Legality: 2-J
+        :Avail: 4/48 hrs
+        :Index: '1.0'
+        :Page: ssc.44
+    :Ares Air-timed Mini-grenade:
+      :Type: :Grenades
+      :Stats:
+        :Name: Ares Air-timed Mini-grenade
+        :Intel: " "
+        :Blast: grenade
+        :Conc.: '8'
+        :Damage: grenade
+        :Weight: '0.1'
+        :Price: '150'
+        :Legality: 2-J
+        :Avail: 10/4 days
+        :Index: '2.0'
+        :Page: ssc.68
+    :Concussion:
+      :Type: :Grenades
+      :Stats:
+        :Name: Concussion
+        :Intel: " "
+        :Blast: "-1/1"
+        :Conc.: '6'
+        :Damage: 12M(Stun)
+        :Weight: '0.25'
+        :Price: '30'
+        :Legality: 3-J
+        :Avail: 5/4 days
+        :Index: '2.0'
+        :Page: sr3.282
+    :Defensive AP:
+      :Type: :Grenades
+      :Stats:
+        :Name: Defensive AP
+        :Intel: " "
+        :Blast: "-1/.5"
+        :Conc.: '6'
+        :Damage: 10D(f)
+        :Weight: '0.25'
+        :Price: '30'
+        :Legality: 3-J
+        :Avail: 4/4 days
+        :Index: '2.0'
+        :Page: sr3.282
+    :Defensive HE:
+      :Type: :Grenades
+      :Stats:
+        :Name: Defensive HE
+        :Intel: " "
+        :Blast: "-1/.5"
+        :Conc.: '6'
+        :Damage: 10S
+        :Weight: '0.25'
+        :Price: '30'
+        :Legality: 3-J
+        :Avail: 4/4 days
+        :Index: '2.0'
+        :Page: sr3.282
+    :Dual-charge:
+      :Type: :Grenades
+      :Stats:
+        :Name: Dual-charge
+        :Intel: " "
+        :Blast: grenade
+        :Conc.: '5'
+        :Damage: special
+        :Weight: '0.5'
+        :Price: '150'
+        :Legality: 3-J
+        :Avail: 8/1 wk
+        :Index: '3.0'
+        :Page: cc.40
+    :Flare:
+      :Type: :Grenades
+      :Stats:
+        :Name: Flare
+        :Intel: " "
+        :Blast: '30'
+        :Conc.: '6'
+        :Damage: "(light)"
+        :Weight: '0.25'
+        :Price: '40'
+        :Legality: Legal
+        :Avail: 2/24 hrs
+        :Index: '1.0'
+        :Page: cc.40
+    :Flash:
+      :Type: :Grenades
+      :Stats:
+        :Name: Flash
+        :Intel: " "
+        :Blast: '5'
+        :Conc.: '6'
+        :Damage: 5L(light)
+        :Weight: '0.25'
+        :Price: '40'
+        :Legality: 3-J
+        :Avail: 4/48 hrs
+        :Index: '1.0'
+        :Page: cc.40
+    :Flash-Pak:
+      :Type: :Grenades
+      :Stats:
+        :Name: Flash-Pak
+        :Intel: " "
+        :Blast: special
+        :Conc.: '12'
+        :Damage: special
+        :Weight: '0.2'
+        :Price: '250'
+        :Legality: Legal
+        :Avail: 3/36 hrs
+        :Index: '1.0'
+        :Page: sr3.283
+    :Incendiary:
+      :Type: :Grenades
+      :Stats:
+        :Name: Incendiary
+        :Intel: " "
+        :Blast: '10'
+        :Conc.: '5'
+        :Damage: fire
+        :Weight: '0.5'
+        :Price: '50'
+        :Legality: 3-J
+        :Avail: 4/4 days
+        :Index: '2.0'
+        :Page: cc.40
+    :Gas (Neuro-Stun Vll):
+      :Type: :Grenades
+      :Stats:
+        :Name: Gas (Neuro-Stun Vll)
+        :Intel: " "
+        :Blast: special
+        :Conc.: '5'
+        :Damage: 8S(Stun)
+        :Weight: '0.25'
+        :Price: '60'
+        :Legality: 3-J
+        :Avail: 8/4 days
+        :Index: '2.0'
+        :Page: sr3.283
+    :Electromagnetic Pulse:
+      :Type: :Grenades
+      :Stats:
+        :Name: Electromagnetic Pulse
+        :Intel: " "
+        :Blast: '10'
+        :Conc.: '5'
+        :Damage: special
+        :Weight: '0.3'
+        :Price: '750'
+        :Legality: 2-V
+        :Avail: 12/10 days
+        :Index: '2.5'
+        :Page: cb1.47
+    :Ink:
+      :Type: :Grenades
+      :Stats:
+        :Name: Ink
+        :Intel: " "
+        :Blast: '5'
+        :Conc.: '6'
+        :Damage: ink
+        :Weight: '0.25'
+        :Price: '40'
+        :Legality: Legal
+        :Avail: 4/4 days
+        :Index: '2.0'
+        :Page: cc.40
+    :IPE Concussion:
+      :Type: :Grenades
+      :Stats:
+        :Name: IPE Concussion
+        :Intel: " "
+        :Blast: "-1/1"
+        :Conc.: '6'
+        :Damage: 16M stun
+        :Weight: '0.5'
+        :Price: '70'
+        :Legality: 3-J
+        :Avail: 8/1 wk
+        :Index: '2.0'
+        :Page: cc.41
+    :IPE Defensive AP:
+      :Type: :Grenades
+      :Stats:
+        :Name: IPE Defensive AP
+        :Intel: " "
+        :Blast: "-1/.5"
+        :Conc.: '6'
+        :Damage: 15D(f)
+        :Weight: '0.5'
+        :Price: '60'
+        :Legality: 3-J
+        :Avail: 8/1 wk
+        :Index: '2.0'
+        :Page: cc.41
+    :IPE Defensive HE:
+      :Type: :Grenades
+      :Stats:
+        :Name: IPE Defensive HE
+        :Intel: " "
+        :Blast: "-1/.5"
+        :Conc.: '6'
+        :Damage: 15S
+        :Weight: '0.5'
+        :Price: '60'
+        :Legality: 3-J
+        :Avail: 8/1 wk
+        :Index: '2.0'
+        :Page: cc.41
+    :IPE Offensive AP:
+      :Type: :Grenades
+      :Stats:
+        :Name: IPE Offensive AP
+        :Intel: " "
+        :Blast: "-1/1"
+        :Conc.: '6'
+        :Damage: 15D(f)
+        :Weight: '0.5'
+        :Price: '60'
+        :Legality: 3-J
+        :Avail: 8/1 wk
+        :Index: '2.0'
+        :Page: cc.41
+    :IPE Offensive HE:
+      :Type: :Grenades
+      :Stats:
+        :Name: IPE Offensive HE
+        :Intel: " "
+        :Blast: "-1/1"
+        :Conc.: '6'
+        :Damage: 15S
+        :Weight: '0.5'
+        :Price: '60'
+        :Legality: 3-J
+        :Avail: 8/1 wk
+        :Index: '2.0'
+        :Page: cc.41
+    :Mini-grenade:
+      :Type: :Grenades
+      :Stats:
+        :Name: Mini-grenade
+        :Intel: " "
+        :Blast: grenade
+        :Conc.: '8'
+        :Damage: grenade
+        :Weight: '0.1'
+        :Price: x2
+        :Legality: "+2/x1"
+        :Avail: "+1.0"
+        :Index: sr3.282
+    :Offensive AP:
+      :Type: :Grenades
+      :Stats:
+        :Name: Offensive AP
+        :Intel: " "
+        :Blast: "-1/1"
+        :Conc.: '6'
+        :Damage: 10D(f)
+        :Weight: '0.25'
+        :Price: '30'
+        :Legality: 3-J
+        :Avail: 4/4 days
+        :Index: '2.0'
+        :Page: sr3.282
+    :Offensive HE:
+      :Type: :Grenades
+      :Stats:
+        :Name: Offensive HE
+        :Intel: " "
+        :Blast: "-1/1"
+        :Conc.: '6'
+        :Damage: 10S
+        :Weight: '0.25'
+        :Price: '30'
+        :Legality: 3-J
+        :Avail: 4/4 days
+        :Index: '2.0'
+        :Page: sr3.282
+    :Paint:
+      :Type: :Grenades
+      :Stats:
+        :Name: Paint
+        :Intel: " "
+        :Blast: '10'
+        :Conc.: '6'
+        :Damage: paint
+        :Weight: '0.25'
+        :Price: '20'
+        :Legality: 7P-U
+        :Avail: 4/4 days
+        :Index: '0.75'
+        :Page: cb2.49
+    :Smoke:
+      :Type: :Grenades
+      :Stats:
+        :Name: Smoke
+        :Intel: " "
+        :Blast: special
+        :Conc.: '5'
+        :Damage: special
+        :Weight: '0.25'
+        :Price: '30'
+        :Legality: Legal
+        :Avail: 3/24 hrs
+        :Index: '2.0'
+        :Page: fof.48
+    :Smoke, IR:
+      :Type: :Grenades
+      :Stats:
+        :Name: Smoke, IR
+        :Intel: " "
+        :Blast: special
+        :Conc.: '5'
+        :Damage: special
+        :Weight: '0.25'
+        :Price: '40'
+        :Legality: Legal
+        :Avail: 4/48 hrs
+        :Index: '2.0'
+        :Page: fof.48
+    :Slasher Monowire bolo:
+      :Type: :Grenades
+      :Stats:
+        :Name: Slasher Monowire bolo
+        :Intel: " "
+        :Blast: " "
+        :Conc.: '6'
+        :Damage: 10S
+        :Weight: '0.25'
+        :Price: '5000'
+        :Legality: 1-J
+        :Avail: 24/14 days
+        :Index: '3.5'
+        :Page: cb2.47
+    :Stench:
+      :Type: :Grenades
+      :Stats:
+        :Name: Stench
+        :Intel: " "
+        :Blast: '5'
+        :Conc.: '6'
+        :Damage: stench
+        :Weight: '0.25'
+        :Price: '30'
+        :Legality: 7P-V
+        :Avail: 4/4 days
+        :Index: '2.0'
+        :Page: cb2.49
+    :Superflash:
+      :Type: :Grenades
+      :Stats:
+        :Name: Superflash
+        :Intel: " "
+        :Blast: "-1/1,3000"
+        :Conc.: '5'
+        :Damage: 12M(Stun,light)
+        :Weight: '0.25'
+        :Price: '80'
+        :Legality: 2-J
+        :Avail: 10/2 wks
+        :Index: '3.0'
+        :Page: cc.41
+    :White Phosphorus:
+      :Type: :Grenades
+      :Stats:
+        :Name: White Phosphorus
+        :Intel: " "
+        :Blast: 1/1
+        :Conc.: '6'
+        :Damage: 14M(phosphor)
+        :Weight: '0.25'
+        :Price: '120'
+        :Legality: 2-J
+        :Avail: 6/5 days
+        :Index: '3.0'
+        :Page: cc.41
+    :Z-IC Splash Grenade:
+      :Type: :Grenades
+      :Stats:
+        :Name: Z-IC Splash Grenade
+        :Intel: " "
+        :Blast: special
+        :Conc.: '5'
+        :Damage: chemical
+        :Weight: '0.25'
+        :Price: '50'
+        :Legality: 3-J
+        :Avail: 8/4 days
+        :Index: '2.0'
+        :Page: mm.11
