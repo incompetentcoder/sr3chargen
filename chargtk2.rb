@@ -126,8 +126,24 @@ class Application
     @a.weapons
   end
 
+  def addef(name,type)
+#    binding.pry
+    type == :edges ? addedge(name) : addflaw(name)
+  end
+
+  def remef(name)
+  end
+
   def getarmors
     @a.armors
+  end
+
+  def getflaws
+    @a.getflaws
+  end
+
+  def getedges
+    @a.getedges
   end
 
   def makecharsheet
@@ -233,17 +249,151 @@ class Application
     @a.getessence
   end
 
+  def getbioindex
+    @a.getbioindex
+  end
+
   def updateessence
     @guiattributes.setessence(getessence)
     setmagic
+  end
+
+  def updatebioindex
+    @guiattributes.setbodyindex(getbioindex)
+#    binding.pry
+    setmagic
+  end
+
+  def selectallpho(flaw)
+    a=b=nil
+    type,rare=flaw.split(' ').map{|x| x.to_sym}[0,1]
+    dialog = Gtk::Dialog.new("Choose #{type}",@windows,Gtk::Dialog::MODAL)
+    dialog.action_area.layout_style=Gtk::ButtonBox::SPREAD
+    dialog.vbox.add(Gtk::Label.new("Choose #{type}"))
+    cb = Gtk::ComboBox.new
+    CONSTANT[types][rare].each {|x| cb.append_text(x.to_s)}
+    dialog.vbox.add(cb)
+    dialog.add_button("Ok",1)
+    dialog.add_button("Cancel",-1)
+    dialog.show_all
+    dialog.run do |response|
+      a = cb.active_text
+      b = response
+    end
+
+    dialog.destroy
+    b < 1 ? false : a
+  end
+ 
+  def selectskill
+    getskills
+  end
+
+  def selectattribute
+    CONSTANT[:attributes]
+  end
+
+  def selectsprite
+    "meh"
   end
   
   def getpointsrem
     @a.getpointsrem
   end
 
+  def getedges
+    @a.getedges
+  end
+
   def getnuyenrem
     @a.getnuyenrem
+  end
+
+  def checkmultief(any,type)
+    which = type == :flaws ? getflaws : getedges
+    other = which.find{|x| x[1][:Name] == any}
+#    binding.pry
+  end
+
+  def checkconflictef(any,type)
+    b = CONSTANT[type][any].has_key?(:Base) ? [CONSTANT[type][any][:Base].to_s] : []
+    all = []
+    all += getedges.collect{|x| x[1][:Conflicts]}.compact
+    all += getflaws.collect{|x| x[1][:Conflicts]}.compact
+    all.map! {|x| x.split(',')}.flatten!
+#    binding.pry
+    return (all & ([any.to_s] + b))
+  end
+
+  def addedge(edge)
+    err = name = a = ''
+    err+='not enough points left, buy some flaws!' if CONSTANT[:edges][edge][:Value].to_i > getpointsrem
+    err+='already have that edge' if checkmultief(edge,:edges)
+    err+=a[0] unless (a=checkconflictef(edge,:edges)).empty?
+    unless err.empty?
+      errordialog(err,nil)
+      return false
+    end
+
+    case edge
+    when :Aptitude
+      err+="No skill selected" unless name = selectskill
+    when :'Bonus Attribute Point'
+      err+="No attribute selected" unless name = selectattribute
+    when :'Exceptional Attribute'
+      err+="No attribute selected" unless name = selectattribute
+    when /Water Sprite/
+      err+="Nothing selected" unless name = selectsprite(edge)
+    end
+    unless err.empty?
+      errordialog(err,nil)
+      return false
+    end
+    @a.addedge(edge,name)
+    setpointsrem
+    [edge,name]
+  end
+
+  def deledge(edge)
+    @a.deledge(edge)
+    @notebook.ef.deledge(edge)
+  end
+
+  def addflaw(flaw,points=nil)
+    err = name = ''
+    err+='already have that flaw' if checkmultief(flaw,:flaws)
+    err+=checkconflictef(flaw,:flaws)
+    unless err.empty?
+      errordialog(err,nil)
+      return false
+    end
+
+    case flaw
+    when :'Sensitive System'
+      err+="You would be below 0 Essence" if getessence <= 3 
+    when /(Allergy|Phobia)/
+      err+="Nothin selected" unless name = selectallpho(flaw)
+    when /Infirm/
+      pp infirm
+    when :Incompetence
+      err+="No skill selected" unless name = selectskill
+    when :Biorejection
+      err+="Cyberware installed" unless getcyberware.empty?
+    end
+
+    unless err.empty?
+      errordialog(err,nil)
+      return false
+    end
+    @a.addflaw(flaw,name,points)
+    @notebook.ef.addflaw(flaw,name) unless points
+    setpointsrem
+    [flaw,name]
+  end
+
+  def delflaw(flaw,points=nil)
+    @a.delflaw(flaw)
+    @notebook.ef.delflaw(flaw) unless points
   end
 
   def checkupdatecyberlvl(shorter,lvl,level,text,button,grade,option)
@@ -310,6 +460,13 @@ class Application
 
   def checkmoneycyber(array)
     array[0] > getnuyenrem || array[1] > getessence
+  end
+  
+  def biowarenamebaseincludes(bio)
+    shit = []
+    bio.each {|x| shit+= x[1].values.collect{|y| y[:Base]}.compact}
+    bio.each {|x| shit+= x[1].values.collect{|y| y[:Name]}.compact}
+    shit.flatten
   end
 
   def cybernamebaseincludes(cyber)
@@ -459,17 +616,17 @@ class Application
    # binding.pry
   end
 
-  def addammo(ammo,type)
-    shorter = CONSTANT[:ammo][type][ammo]
-    unless (err = checkpriceavail(shorter)).empty?
-      errordialog(err,nil)
-      return
-    end
-    actual = Marshal.load(Marshal.dump(shorter))
-    @notebook.ammo.setammo(ammo,type,actual)
-    @a.addammo(ammo,type,actual)
-    setnuyenrem
-  end
+#  def addammo(ammo,type)
+#    shorter = CONSTANT[:ammo][type][ammo]
+#    unless (err = checkpriceavail(shorter)).empty?
+#      errordialog(err,nil)
+#      return
+#    end
+#    actual = Marshal.load(Marshal.dump(shorter))
+#    @notebook.ammo.setammo(ammo,type,actual)
+#    @a.addammo(ammo,type,actual)
+#    setnuyenrem
+#  end
 
   def setarmor(armor)
     shorter = CONSTANT[:armors][armor]
@@ -484,12 +641,47 @@ class Application
     setnuyenrem
   end
     
+  def setbio(bio)
+    err = ""
+    shorter = CONSTANT[:bioware][bio]
+    installed = cybernamebaseincludes(@a.getcyberware) + biowarenamebaseincludes(@a.getbioware)
+    if shorter[:Conflicts]
+      unless (conf = shorter[:Conflicts].split(",") & installed).empty?
+        err+="Conflicts: #{conf}\n"
+      end
+    end
+    if (Dentaku(shorter[:Price].sub(/Mp/,'25').sub(/L/,'1')) > getnuyenrem * 2)
+      err+="Insufficient Money: #{getnuyenrem}\n"
+    end
+#    if shorter[:BioIndex] > 
+    if (@a.getbioware.collect {|x| x[1].values[0][:Name]}.include?(bio.to_s) ||
+        @a.getbioware.collect {|x| x[1].values[0][:Base]}.include?(shorter[:Base]))
+      err="Already installed: #{bio}\n"
+    end
+    unless err.empty?
+      errordialog(err,nil)
+      return
+    end
+    actual = Marshal.load(Marshal.dump(shorter))
+    @a.addbio(actual,bio)
+    @notebook.bio.setbio(actual,bio)
+    setnuyenrem
+    updatebioindex
+  end
+
+  def rembio(bio)
+    @a.rembio(bio.to_sym)
+    setnuyenrem
+    updatebioindex
+    true
+  end
+
 
   def setcyber(cyber)
     level = lvl = side = place = grade = nil
     err = ""
     shorter = CONSTANT[:cyberware][cyber]
-    installed = cybernamebaseincludes(@a.getcyberware)
+    installed = cybernamebaseincludes(@a.getcyberware) + biowarenamebaseincludes(@a.getbioware)
 
     if shorter[:Conflicts]
       unless (conf = shorter[:Conflicts].split(",") & installed).empty?
@@ -682,12 +874,12 @@ class Application
     end
   end
 
-  def remammo(ammo)
-    type,ammo = ammo.to_s.split('|')
-    @a.remammo(ammo.to_sym,type.to_sym)
-    setnuyenrem
-    true
-  end
+#  def remammo(ammo)
+#    type,ammo = ammo.to_s.split('|')
+#    @a.remammo(ammo.to_sym,type.to_sym)
+#    setnuyenrem
+#    true
+#  end
     
   def remweapon(weapon)
     err = ""
@@ -828,19 +1020,22 @@ class Application
   end
 
   def settotem(totem,group)
+#    binding.pry
     boni = nil
     unless totem && gettotem && (totem == gettotem[0])
       boni = {:spells => nil, :spirits => nil}
-      short = CONSTANT[:totems][group][totem]
-      if short[:spells] && (short[:spells].flatten(1).include? :Choose)
-        boni[:spells] = choosespells(short[:spells])
-      else
-        boni[:spells] = short[:spells]
-      end
-      if short[:spirits] && (short[:spirits].flatten(1).include? :Choose)
-        boni[:spirits] = choosespirits(short[:spirits])
-      else
-        boni[:spirits] = short[:spirits]
+      unless totem == nil
+        short = CONSTANT[:totems][group][totem]
+        if short[:spells] && (short[:spells].flatten(1).include? :Choose)
+          boni[:spells] = choosespells(short[:spells])
+        else
+          boni[:spells] = short[:spells]
+        end
+        if short[:spirits] && (short[:spirits].flatten(1).include? :Choose)
+          boni[:spirits] = choosespirits(short[:spirits])
+        else
+          boni[:spirits] = short[:spirits]
+        end
       end
     end
     @a.settotem(totem,group,(gettotem && (totem == gettotem[0])) ? gettotem[2] : boni)
@@ -1089,6 +1284,10 @@ class Character
     @special[:Essence]
   end
 
+  def getbioindex
+    @special[:'Body Index']
+  end
+
   def setapp(app)
     @app = app
   end
@@ -1126,22 +1325,56 @@ class Character
     @cyberware
   end
 
+  def getbioware
+    @bioware
+  end
+
+  def getflaws
+    @flaws
+  end
+
+  def getedges
+    @edges
+  end
+
+  def addedge(edge,name)
+    @edges[name.empty? ? edge : name]= CONSTANT[:edges][edge]
+    @pointsrem -= CONSTANT[:edges][edge][:Value].to_i
+  end
+
+  def addflaw(flaw,name,points)
+    actname = name.empty? ? flaw : name
+    @flaws[actname]= Marshal.load(Marshal.dump(CONSTANT[:flaws][flaw]))
+    @flaws[actname][:Value]=0 if points
+    @pointsrem += @flaws[actname][:Value].to_i
+  end
+
+  def delflaw(flaw)
+    @pointsrem-=@flaws[flaw][:Value].to_i
+    @flaws.delete(flaw)
+  end
+
+  def deledge(edge)
+    @pointsrem+=@edges[edge][:Value].to_i
+    @edges.delete(edge)
+  end
+
   def addweapon(actual,weapon)
     @nuyenrem = @nuyenrem - actual[:Stats][:Price].to_i
     @weapons[weapon]=actual
   end
 
-  def addammo(ammo,type,actual)
-    @nuyenrem = @nuyenrem - actual[:Stats][:Price].to_i
-    @ammo[type] = {} unless @ammo[type]
-    @ammo[type][ammo]=actual
-  end
+#  def addammo(ammo,type,actual)
+#    @nuyenrem = @nuyenrem - actual[:Stats][:Price].to_i
+#    @ammo[type] = {} unless @ammo[type]
+#    @ammo[type][ammo]=actual
+#  end
 
-  def remammo(ammo,type)
-    @nuyenrem = @nuyenrem + @ammo[type][ammo][:Stats][:Price].to_i
-    @ammo[type].delete(ammo)
-    @ammo.delete(type) if @ammo[type].empty?
-  end
+#  def remammo(ammo,type)
+#    @nuyenrem = @nuyenrem + @ammo[type][ammo][:Stats][:Price].to_i
+#    @ammo[type].delete(ammo)
+#    @ammo.delete(type) if @ammo[type].empty?
+#  end
 
   def addarmor(actual,armor)
     @nuyenrem = @nuyenrem - actual[:Stats][:Price].to_i
@@ -1164,6 +1397,44 @@ class Character
       actual[:Essence] = 0 unless actual[:Type] == "CY"
     end
   end
+
+  def addbio(actual,bio)
+    type = actual[:Type].to_sym
+    @bioware[type] = {} unless @bioware[type]
+    @bioware[type][bio]=actual
+    @special[:'Body Index'] += @bioware[type][bio][:'Body Index'].to_f.round(2)
+    @nuyenrem -= actual[:Price].to_i
+    if actual[:Stats]
+      if actual[:Stats][:attributes]
+        actual[:Stats][:attributes].each_pair do |x,y|
+          @app.updateattr(x)
+        end
+      end
+    end
+
+  end
+
+  def rembio(bio)
+    attributes=[]
+#    binding.pry
+    type = CONSTANT[:bioware][bio][:Type].to_sym
+    if @bioware[type][bio][:Stats]
+      if @bioware[type][bio][:Stats][:attributes]
+        @bioware[type][bio][:Stats][:attributes].each_pair do |x,y|
+#          @app.updateattr(x)
+          attributes.push(x)
+        end
+      end
+    end
+    @nuyenrem += @bioware[type][bio][:Price].to_i
+    (@special[:'Body Index'] -= @bioware[type][bio][:'Body Index'].to_f.round(2)).to_f.round(2)
+    @bioware[type].delete(bio)
+    @bioware.delete(type) if @bioware[type].empty?
+    attributes.each {|x| @app.updateattr(x)}
+  end
+
+
+
 
   def addcyber(actual,cyber,level,lvl,type,side,parent)
     if parent
@@ -1215,12 +1486,14 @@ class Character
   end
 
   def remcyber(cyber,name)
+    attributes = []
     type = CONSTANT[:cyberware][name.to_sym][:Type]
     if @cyberware[type][cyber][:Stats]
       if @cyberware[type][cyber][:Stats][:attributes]
         @cyberware[type][cyber][:Stats][:attributes].each_pair do |x,y|
-          @attributes[x][y.keys[0]]-=y.values[0]
-          @app.updateattr(x)
+#          @attributes[x][y.keys[0]]-=y.values[0]
+#          @app.updateattr(x)
+          attributes.push(x)
         end
       end
     end
@@ -1233,6 +1506,7 @@ class Character
     (@special[:Essence] += @cyberware[type][cyber][:Essence].to_f.round(2)).to_f.round(2)
     @cyberware[type].delete(cyber)
     @cyberware.delete(type) if @cyberware[type].empty?
+    attributes.each {|x| @app.updateattr(x)}
   end
 
   def spelllvl(name,value)
@@ -1274,26 +1548,40 @@ class Character
             if @attributes[x[0]][:ACT] < x[1]
               @app.errordialog("Requirements not met",x)
               return false
-            else
-              return true
             end
           else
             if @derived[x[0]][:CBM] < x[1]
               @app.errordialog("Requirements not met",x)
               return false
-            else
-              return true
             end
           end
         end
-      else
-        true
       end
+      if spec = CONSTANT[:totems][group][totem][:special]
+        spec.each_pair do |a,b|
+          case a
+          when :flaw
+            return false unless @app.addflaw(b,1)
+          end
+        end
+      end
+      true
     end
   end
 
   def settotem(totem,group,boni)
     if checktotem(totem,group)
+      if @totem
+        olt,olg = @totem[0,1]
+        if spec = CONSTANT[:totems][olg][olt][:special]
+          spec.each_pair do |a,b|
+            case a
+            when :flaw
+              @app.delflaw(b)
+            end
+          end
+        end
+      end
       @totem = [totem,group,boni]
     else
       @totem = nil
@@ -1626,6 +1914,10 @@ class Character
     @pointsrem
   end
 
+  def getedges
+    @edges
+  end
+
   def checkpoints(points)
     @pointsrem >= points
   end
@@ -1690,6 +1982,14 @@ class Character
   end
 
   def updatebm(a,attr)
+    mod1 = mod2 = total = 0
+    limbs = halflimbs = []
+    @bioware.each {|x| mod2 += x[1].values.collect {|y| hasstat(y,:Stats,:attributes,attr,:BM)}.compact.reduce(:+).to_i}
+    limbs = @cyberware["CY"].collect {|x| x[1] if x[0] =~ /Cyberlimb Cyber(arm|leg)/}.compact if @cyberware["CY"]
+    case attr
+    when :Strength,:Quickness
+      mod2 * (1-limbs.count*0.25)
+    end
   end
 
   def updatemm(a,attr)
@@ -1783,6 +2083,8 @@ class Character
     @weapons = {}
     @armors = {}
     @ammo = {}
+    @edges = {}
+    @flaws = {}
     @derived = {:Pools => {}, :Reaction => {}, :Initiative => {}}
     @special = { :Essence => 6, :'Body Index' => 0, :Magic => 0 }
     @attributes = {}
@@ -1964,6 +2266,10 @@ class Attributeblock < Gtk::Frame
 
   def setessence(essence)
     @special[:Essence][1].text = essence.round(2).to_s
+  end
+
+  def setbodyindex(bodyindex)
+    @special[:'Body Index'][1].text = bodyindex.round(2).to_s
   end
 
   def setmagic(magic)
@@ -2636,6 +2942,33 @@ class Bioblock < Gtk::Frame
   def clearbio
   end
 
+  def setbio(actual,bio)
+    child=@model2.append(nil)
+    actual.each_pair do |b,c|
+      child[@order[b]] = c.to_s if @order[b]
+    end
+  end
+
+
+  def addbio(parent,rows,bases)
+    children = Hash.new
+    bases.each do |x|
+      children[x] = @model.append(parent)
+      children[x][0] = x
+    end
+    rows.values.each do |a|
+      if a[:Base] 
+        child = @model.append(children[a[:Base]])
+      else
+        child = @model.append(parent)
+      end
+      a.each_pair do |b,c|
+        child[@order[b]] = c.to_s if @order[b]
+      end
+    end
+  end
+
+
   def initialize(app)
     @app = app
     super()
@@ -2645,8 +2978,64 @@ class Bioblock < Gtk::Frame
     @bio = {}
     @model = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String)
     @view = Gtk::TreeView.new(@model)
-    @order = %w(Name Bioindex Price Conceal Legality Avail Required Conflicts)
+    @model2 = Gtk::TreeStore.new(String,String,String,String,String,String,String,String,String)
+    @view2 = Gtk::TreeView.new(@model2)
+    @order = {}
+    [:Name,:Type,:'Body Index',:Price,:Legality,:Avail,:Conflicts].each_with_index do |x,y|
+      @order[x]=y
+    end
 
+    %i(Basic Cultured Cosmetic).each do |x|
+      parent = @model.append(nil)
+      parent[0] = x.to_s
+      bio = CONSTANT[:bioware].find_all {|y| y[1][:Type] =~ /#{x}/}.to_h
+      bases = bio.collect {|y| y[1][:Base] unless y[1][:Base] == ""}.compact.to_set
+      addbio(parent,bio,bases)
+    end
+    
+    (0..6).each do |x|
+      renderer = Gtk::CellRendererText.new
+      col = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+      col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+      @view.append_column(col)
+      if x < 6
+        col2 = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+        col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+        @view2.append_column(col2)
+      end
+    end
+    @view.enable_grid_lines = Gtk::TreeView::GRID_LINES_BOTH
+    @view.enable_tree_lines = true
+    @view.set_search_equal_func do |model,column,key,iter| 
+      if Regexp.new(key) =~ iter[0]
+        @view.scroll_to_cell(iter.path,nil,true,0.5,0.5)
+        false
+      else
+        true
+      end
+    end
+
+    @view.signal_connect('row-activated') do |a,b,c|
+      if @model.get_iter(b)[2]
+        @app.setbio(@model.get_iter(b)[0].to_sym)
+      else
+        a.row_expanded?(b) ? a.collapse_row(b) : a.expand_row(b,false)
+      end
+    end
+
+    @view2.signal_connect('row-activated') do |a,b,c|
+      if @app.rembio(@model2.get_iter(b)[0])
+        @model2.remove(@model2.get_iter(b))
+      end
+    end
+
+
+
+    @win2.add(@view2)
+    @win.add(@view)
+    @vbox.pack_start_defaults(@win)
+    @vbox.pack_start_defaults(@win2)
+    @vbox.show_all
     add(@vbox)
   end
 end
@@ -2998,10 +3387,105 @@ end
 class EdgesFlaws < Gtk::Frame
   def clearef
   end
+  
+  def addedgesflaws(parent,rows,bases)
+    children = Hash.new
+    bases.each do |x|
+      children[x] = @model.append(parent)
+      children[x][0] = x
+    end
+    rows.values.each do |a|
+      if a[:Base] 
+        child = @model.append(children[a[:Base]])
+      else
+        child = @model.append(parent)
+      end
+      a.each_pair do |b,c|
+        child[@order[b]] = c.to_s if @order[b]
+      end
+    end
+  end
+
+    
 
   def initialize(app)
     @app = app
     super()
+    @tooltips = Gtk::Tooltips.new
+    @win = Gtk::ScrolledWindow.new
+    @win2 = Gtk::ScrolledWindow.new
+    @vbox = Gtk::VBox.new(true,nil)
+    @ammo = {}
+    @model = Gtk::TreeStore.new(String,String,String,String,String)
+    @model.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view = Gtk::TreeView.new(@model)
+    @model2 = Gtk::TreeStore.new(String,String,String,String,String)
+    @model2.set_sort_column_id(0,Gtk::SORT_ASCENDING)
+    @view2 = Gtk::TreeView.new(@model2)
+    @order={}
+    %i(Name Value Description Page).each_with_index do |x,y|
+      @order[x]=y
+    end
+    %i(edges flaws).each do |x|
+      parent = @model.append(nil)
+      parent[0] = x.to_s
+      type = CONSTANT[x]
+      bases = type.collect {|y| y[1][:Base] unless y[1][:Base] == ""}.compact.to_set
+      addedgesflaws(parent,type,bases)
+    end
+
+    (0..3).each do |x|
+      renderer = Gtk::CellRendererText.new
+      col = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+      col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+      @view.append_column(col)
+      col2 = Gtk::TreeViewColumn.new("#{@order.rassoc(x)[0]}",renderer, :text => x)
+      col.set_sizing Gtk::TreeViewColumn::AUTOSIZE
+      @view2.append_column(col2)
+    end
+    @view.enable_grid_lines = Gtk::TreeView::GRID_LINES_BOTH
+    @view.enable_tree_lines = true
+   # @view.tooltip_column = 9
+    @view.has_tooltip = true
+    @view.set_search_equal_func do |model,column,key,iter| 
+      if Regexp.new(key) =~ iter[0]
+        @view.scroll_to_cell(iter.path,nil,true,0.5,0.5)
+        false
+      else
+        true
+      end
+    end
+
+    @view.signal_connect('row-activated') do |a,b,c|
+      if @model.get_iter(b)[2]
+        name = @model.get_iter(b)[0].to_sym
+        b.up!
+        b.up! if b.depth == 2
+        type = @model.get_iter(b)[0].to_sym
+        pp name,type
+        @app.addef(name,type)
+      else
+        a.row_expanded?(b) ? a.collapse_row(b) : a.expand_row(b,false)
+      end
+    end
+
+    @view2.signal_connect('row-activated') do |a,b,c|
+      if @app.remef(@model2.get_iter(b)[0].to_sym)
+        @model2.remove(@model2.get_iter(b))
+      end
+    end
+
+    
+
+    @win2.add(@view2)
+    @win.add(@view)
+    @vbox.pack_start_defaults(@win)
+    @vbox.pack_start_defaults(@win2)
+    @vbox.show_all
+    add(@vbox)
+   
+    
+
   end
 end
 
@@ -3043,7 +3527,7 @@ class Background < Gtk::ScrolledWindow
 end
 
 class Notebook < Gtk::Notebook
-  attr_accessor :skill, :spell, :totem, :cyber, :weapon, :gear, :armor, :ammo
+  attr_accessor :skill, :spell, :totem, :cyber, :weapon, :gear, :armor, :ammo, :bio
 
   def clear
     @skill.clearskills
@@ -3052,7 +3536,7 @@ class Notebook < Gtk::Notebook
     @weapon.clearweapon
     @armor.cleararmor
     @gear.cleargear
-    @ammo.clearammo
+#    @ammo.clearammo
     @ef.clearef
     @vehicles.clearvehicles
     @backg.clearbackg
@@ -3069,7 +3553,7 @@ class Notebook < Gtk::Notebook
     @weapon = Weaponblock.new(@app)
     @armor = Armorblock.new(@app)
     @gear = Gearblock.new(@app)
-    @ammo = Ammoblock.new(@app)
+ #   @ammo = Ammoblock.new(@app)
     @ef = EdgesFlaws.new(@app)
     @vehicles = Vehicles.new(@app)
     @backg = Background.new(@app)
@@ -3081,7 +3565,7 @@ class Notebook < Gtk::Notebook
     append_page(@weapon, Gtk::Label.new('Weapons'))
     append_page(@armor, Gtk::Label.new('Armor'))
     append_page(@gear, Gtk::Label.new('Gear'))
-    append_page(@ammo, Gtk::Label.new('Ammo'))
+#    append_page(@ammo, Gtk::Label.new('Ammo'))
     append_page(@ef, Gtk::Label.new('Edge/Flaw'))
     append_page(@vehicles, Gtk::Label.new('Vehicles'))
     append_page(@backg, Gtk::Label.new('Background'))

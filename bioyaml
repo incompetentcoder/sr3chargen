@@ -1,0 +1,956 @@
+---
+:Adrenal Pump 1:
+  :Name: Adrenal Pump 1
+  :Type: Basic
+  :Body Index: '1.25'
+  :Price: '60000'
+  :Legality: 5P-R
+  :Avail: 10/16 days
+  :Index: '3.0'
+  :Page: mm.64
+  :Stats: {}
+  :Base: Adrenal Pump
+:Adrenal Pump 2:
+  :Name: Adrenal Pump 2
+  :Type: Basic
+  :Body Index: '2.5'
+  :Price: '100000'
+  :Legality: 5P-R
+  :Avail: 10/16 days
+  :Index: '3.0'
+  :Page: mm.64
+  :Stats: {}
+  :Base: Adrenal Pump
+:Cat’s Eyes:
+  :Name: Cat’s Eyes
+  :Type: Basic
+  :Body Index: '0.2'
+  :Price: '15000'
+  :Legality: Legal
+  :Avail: 4/6 days
+  :Index: '1.0'
+  :Page: mm.64
+  :Conflicts: Cybereyes,Retinal Modification
+  :Stats:
+    :senses:
+      :Low-Light Vision: :Natural
+:Chemical Gland:
+  :Name: Chemical Gland
+  :Type: Basic
+  :Body Index: '0.6'
+  :Price: "(100*compound)+30000"
+  :Legality: 5-Q
+  :Avail: 10/4 days
+  :Index: '3.0'
+  :Page: mm.64
+:Digestive Expansion:
+  :Name: Digestive Expansion
+  :Type: Basic
+  :Body Index: '1.0'
+  :Price: '80000'
+  :Legality: Legal
+  :Avail: 6/10 days
+  :Index: '2.0'
+  :Page: mm.65
+  :Conflicts: Clean Metabolism,Dietware
+:Enhanced Articulation:
+  :Name: Enhanced Articulation
+  :Type: Basic
+  :Body Index: '0.6'
+  :Price: '40000'
+  :Legality: Legal
+  :Avail: 5/6 days
+  :Index: '1.5'
+  :Page: mm.66
+:Extended Volume 1:
+  :Name: Extended Volume 1
+  :Type: Basic
+  :Body Index: '0.2'
+  :Price: '8000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.66
+  :Stats: {}
+  :Base: Extended Volume
+:Extended Volume 2:
+  :Name: Extended Volume 2
+  :Type: Basic
+  :Body Index: '0.3'
+  :Price: '15000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.66
+  :Stats: {}
+  :Base: Extended Volume
+:Extended Volume 3:
+  :Name: Extended Volume 3
+  :Type: Basic
+  :Body Index: '0.4'
+  :Price: '25000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.66
+  :Stats: {}
+  :Base: Extended Volume
+:Metabolic Arrester:
+  :Name: Metabolic Arrester
+  :Type: Basic
+  :Body Index: '0.6'
+  :Price: '20000'
+  :Legality: Legal
+  :Avail: 6/8 days
+  :Index: '1.5'
+  :Page: mm.66
+  :Conflicts: Adrenal Pump,Suprathyroid Gland
+:Muscle Augmentation 1:
+  :Name: Muscle Augmentation 1
+  :Type: Basic
+  :Body Index: '0.4'
+  :Price: '20000'
+  :Legality: 4P-BC/D
+  :Avail: 6/6 days
+  :Index: '0.9'
+  :Page: mm.67
+  :Conflicts: Muscle Replacement
+  :Stats:
+    :attributes:
+      :Strength:
+        :BM: 1
+  :Base: Muscle Augmentation
+:Muscle Augmentation 2:
+  :Name: Muscle Augmentation 2
+  :Type: Basic
+  :Body Index: '0.8'
+  :Price: '40000'
+  :Legality: 4P-BC/D
+  :Avail: 6/6 days
+  :Index: '0.9'
+  :Page: mm.67
+  :Conflicts: Muscle Replacement
+  :Stats:
+    :attributes:
+      :Strength:
+        :BM: 2
+  :Base: Muscle Augmentation
+:Muscle Augmentation 3:
+  :Name: Muscle Augmentation 3
+  :Type: Basic
+  :Body Index: '1.2'
+  :Price: '60000'
+  :Legality: 4P-BC/D
+  :Avail: 6/6 days
+  :Index: '0.9'
+  :Page: mm.67
+  :Conflicts: Muscle Replacement
+  :Stats:
+    :attributes:
+      :Strength:
+        :BM: 3
+  :Base: Muscle Augmentation
+:Muscle Augmentation 4:
+  :Name: Muscle Augmentation 4
+  :Type: Basic
+  :Body Index: '1.6'
+  :Price: '80000'
+  :Legality: 4P-BC/D
+  :Avail: 6/6 days
+  :Index: '0.9'
+  :Page: mm.67
+  :Conflicts: Muscle Replacement
+  :Stats:
+    :attributes:
+      :Strength:
+        :BM: 4
+  :Base: Muscle Augmentation
+:Muscle Toning 1:
+  :Name: Muscle Toning 1
+  :Type: Basic
+  :Body Index: '0.4'
+  :Price: '25000'
+  :Legality: 4P-BC/D
+  :Avail: 6/6 days
+  :Index: '0.9'
+  :Page: mm.67
+  :Conflicts: Muscle Replacement
+  :Stats:
+    :attributes:
+      :Quickness:
+        :BM: 1
+  :Base: Muscle Toning
+:Muscle Toning 2:
+  :Name: Muscle Toning 2
+  :Type: Basic
+  :Body Index: '0.8'
+  :Price: '50000'
+  :Legality: 4P-BC/D
+  :Avail: 6/6 days
+  :Index: '0.9'
+  :Page: mm.67
+  :Conflicts: Muscle Replacement
+  :Stats:
+    :attributes:
+      :Quickness:
+        :BM: 2
+  :Base: Muscle Toning
+:Muscle Toning 3:
+  :Name: Muscle Toning 3
+  :Type: Basic
+  :Body Index: '1.2'
+  :Price: '75000'
+  :Legality: 4P-BC/D
+  :Avail: 6/6 days
+  :Index: '0.9'
+  :Page: mm.67
+  :Conflicts: Muscle Replacement
+  :Stats:
+    :attributes:
+      :Quickness:
+        :BM: 3
+  :Base: Muscle Toning
+:Muscle Toning 4:
+  :Name: Muscle Toning 4
+  :Type: Basic
+  :Body Index: '1.6'
+  :Price: '100000'
+  :Legality: 4P-BC/D
+  :Avail: 6/6 days
+  :Index: '0.9'
+  :Page: mm.67
+  :Conflicts: Muscle Replacement
+  :Stats:
+    :attributes:
+      :Quickness:
+        :BM: 4
+  :Base: Muscle Toning
+:Nephritic Screen:
+  :Name: Nephritic Screen
+  :Type: Basic
+  :Body Index: '0.4'
+  :Price: '20000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.67
+:Nictitating Membranes:
+  :Name: Nictitating Membranes
+  :Type: Basic
+  :Body Index: '0.1'
+  :Price: '8000'
+  :Legality: Legal
+  :Avail: 4/6 days
+  :Index: '1.0'
+  :Page: mm.68
+  :Conflicts: Cybereyes,Retinal Modification
+:Orthoskin 1:
+  :Name: Orthoskin 1
+  :Type: Basic
+  :Body Index: '0.5'
+  :Price: '25000'
+  :Legality: 5P-N
+  :Avail: 8/8 days
+  :Index: '0.8'
+  :Page: mm.68
+  :Conflicts: Dermal Plating,Dermal Sheathing,Cholorplast Skin,Sensitive Skin
+  :Stats:
+    :armor:
+      :Impact: 1
+  :Base: Orthoskin
+:Orthoskin 2:
+  :Name: Orthoskin 2
+  :Type: Basic
+  :Body Index: '1.0'
+  :Price: '60000'
+  :Legality: 5P-N
+  :Avail: 8/8 days
+  :Index: '0.8'
+  :Page: mm.68
+  :Conflicts: Dermal Plating,Dermal Sheathing,Chloroplast Skin,Sensitive Skin
+  :Stats:
+    :armor:
+      :Impact: 1
+      :Ballistic: 1
+  :Base: Orthoskin
+:Orthoskin 3:
+  :Name: Orthoskin 3
+  :Type: Basic
+  :Body Index: '1.5'
+  :Price: '100000'
+  :Legality: 5P-N
+  :Avail: 8/8 days
+  :Index: '0.8'
+  :Page: mm.68
+  :Conflicts: Dermal Plating,Dermal Sheathing,Chloroplast Skin,Sensitive Skin
+  :Stats:
+    :armor:
+      :Impact: 1
+      :Ballistic: 1
+  :Base: Orthoskin
+:Pathogenic Defense 1:
+  :Name: Pathogenic Defense 1
+  :Type: Basic
+  :Body Index: '0.2'
+  :Price: '24000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.5'
+  :Page: mm.68
+  :Stats: {}
+  :Base: Pathogenic Defense
+:Pathogenic Defense 2:
+  :Name: Pathogenic Defense 2
+  :Type: Basic
+  :Body Index: '0.4'
+  :Price: '48000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.5'
+  :Page: mm.68
+  :Stats: {}
+  :Base: Pathogenic Defense
+:Pathogenic Defense 3:
+  :Name: Pathogenic Defense 3
+  :Type: Basic
+  :Body Index: '0.6'
+  :Price: '72000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.5'
+  :Page: mm.68
+  :Stats: {}
+  :Base: Pathogenic Defense
+:Pathogenic Defense 4:
+  :Name: Pathogenic Defense 4
+  :Type: Basic
+  :Body Index: '0.8'
+  :Price: '96000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.5'
+  :Page: mm.68
+  :Stats: {}
+  :Base: Pathogenic Defense
+:Pathogenic Defense 5:
+  :Name: Pathogenic Defense 5
+  :Type: Basic
+  :Body Index: '1.0'
+  :Price: '120000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.5'
+  :Page: mm.68
+  :Stats: {}
+  :Base: Pathogenic Defense
+:Pathogenic Defense 6:
+  :Name: Pathogenic Defense 6
+  :Type: Basic
+  :Body Index: '1.2'
+  :Price: '144000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.5'
+  :Page: mm.68
+  :Stats: {}
+  :Base: Pathogenic Defense
+:Pathogenic Defense 7:
+  :Name: Pathogenic Defense 7
+  :Type: Basic
+  :Body Index: '1.4'
+  :Price: '168000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.5'
+  :Page: mm.68
+  :Stats: {}
+  :Base: Pathogenic Defense
+:Pathogenic Defense 8:
+  :Name: Pathogenic Defense 8
+  :Type: Basic
+  :Body Index: '1.6'
+  :Price: '192000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.5'
+  :Page: mm.68
+  :Stats: {}
+  :Base: Pathogenic Defense
+:Pathogenic Defense 9:
+  :Name: Pathogenic Defense 9
+  :Type: Basic
+  :Body Index: '1.8'
+  :Price: '216000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.5'
+  :Page: mm.68
+  :Stats: {}
+  :Base: Pathogenic Defense
+:Platelet Factory:
+  :Name: Platelet Factory
+  :Type: Basic
+  :Body Index: '0.4'
+  :Price: '30000'
+  :Legality: Legal
+  :Avail: 5/8 days
+  :Index: l.5
+  :Page: mm.68
+:Suprathyroid Gland:
+  :Name: Suprathyroid Gland
+  :Type: Basic
+  :Body Index: '1.4'
+  :Price: '50000'
+  :Legality: 6P-Q
+  :Avail: 8/12 days
+  :Index: '2.5'
+  :Page: mm.69
+  :Conflicts: Metabolic Arrester
+  :Stats:
+    :attributes:
+      :Body:
+        :BM: 1
+      :Quickness:
+        :BM: 1
+      :Strenght:
+        :BM: 1
+    :derived:
+      :Reaction:
+        :CBM: 1
+:Symbiotes 1:
+  :Name: Symbiotes 1
+  :Type: Basic
+  :Body Index: '0.4'
+  :Price: '15000'
+  :Legality: Legal
+  :Avail: 5/10 days
+  :Index: '1.0'
+  :Page: mm.69
+  :Stats: {}
+  :Base: Symbiotes
+:Symbiotes 2:
+  :Name: Symbiotes 2
+  :Type: Basic
+  :Body Index: '0.7'
+  :Price: '35000'
+  :Legality: Legal
+  :Avail: 5/10 days
+  :Index: '1.0'
+  :Page: mm.69
+  :Stats: {}
+  :Base: Symbiotes
+:Symbiotes 3:
+  :Name: Symbiotes 3
+  :Type: Basic
+  :Body Index: '1.0'
+  :Price: '60000'
+  :Legality: Legal
+  :Avail: 5/10 days
+  :Index: '1.0'
+  :Page: mm.69
+  :Stats: {}
+  :Base: Symbiotes
+:Synthacardium 1:
+  :Name: Synthacardium 1
+  :Type: Basic
+  :Body Index: '0.2'
+  :Price: '6000'
+  :Legality: Legal
+  :Avail: 4/10 days
+  :Index: '1.5'
+  :Page: mm.70
+  :Stats: {}
+  :Base: Synthacardium
+:Synthacardium 2:
+  :Name: Synthacardium 2
+  :Type: Basic
+  :Body Index: '0.3'
+  :Price: '15000'
+  :Legality: Legal
+  :Avail: 4/10 days
+  :Index: '1.5'
+  :Page: mm.70
+  :Stats: {}
+  :Base: Synthacardium
+:Tailored Pheromones 1:
+  :Name: Tailored Pheromones 1
+  :Type: Basic
+  :Body Index: '0.4'
+  :Price: '20000'
+  :Legality: Legal
+  :Avail: 12/14 days
+  :Index: '2.0'
+  :Page: mm.70
+  :Stats:
+    :attributes:
+      :Charisma:
+        :BM: 1
+  :Base: Tailored Pheromones
+:Tailored Pheromones 2:
+  :Name: Tailored Pheromones 2
+  :Type: Basic
+  :Body Index: '0.6'
+  :Price: '45000'
+  :Legality: Legal
+  :Avail: 12/14 days
+  :Index: '2.0'
+  :Page: mm.70
+  :Stats:
+    :attributes:
+      :Charisma:
+        :BM: 2
+  :Base: Tailored Pheromones
+:Toxin Extractor 1:
+  :Name: Toxin Extractor 1
+  :Type: Basic
+  :Body Index: '0.4'
+  :Price: '45000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Toxin Extractor
+:Toxin Extractor 2:
+  :Name: Toxin Extractor 2
+  :Type: Basic
+  :Body Index: '0.8'
+  :Price: '90000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Toxin Extractor
+:Toxin Extractor 3:
+  :Name: Toxin Extractor 3
+  :Type: Basic
+  :Body Index: '1.2'
+  :Price: '125000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Toxin Extractor
+:Toxin Extractor 4:
+  :Name: Toxin Extractor 4
+  :Type: Basic
+  :Body Index: '1.6'
+  :Price: '170000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Toxin Extractor
+:Toxin Extractor 5:
+  :Name: Toxin Extractor 5
+  :Type: Basic
+  :Body Index: '2.0'
+  :Price: '215000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Toxin Extractor
+:Toxin Extractor 6:
+  :Name: Toxin Extractor 6
+  :Type: Basic
+  :Body Index: '2.4'
+  :Price: '260000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Toxin Extractor
+:Tracheal Filter 1:
+  :Name: Tracheal Filter 1
+  :Type: Basic
+  :Body Index: '0.4'
+  :Price: '60000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Tracheal Filter
+:Tracheal Filter 2:
+  :Name: Tracheal Filter 2
+  :Type: Basic
+  :Body Index: '0.8'
+  :Price: '120000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Tracheal Filter
+:Tracheal Filter 3:
+  :Name: Tracheal Filter 3
+  :Type: Basic
+  :Body Index: '1.2'
+  :Price: '180000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Tracheal Filter
+:Tracheal Filter 4:
+  :Name: Tracheal Filter 4
+  :Type: Basic
+  :Body Index: '1.6'
+  :Price: '240000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Tracheal Filter
+:Tracheal Filter 5:
+  :Name: Tracheal Filter 5
+  :Type: Basic
+  :Body Index: '2.0'
+  :Price: '300000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Tracheal Filter
+:Tracheal Filter 6:
+  :Name: Tracheal Filter 6
+  :Type: Basic
+  :Body Index: '2.4'
+  :Price: '360000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.71
+  :Stats: {}
+  :Base: Tracheal Filter
+:Cerebral Booster 1:
+  :Name: Cerebral Booster 1
+  :Type: Cultured
+  :Body Index: '0.4'
+  :Price: '50000'
+  :Legality: Legal
+  :Avail: 6/14 days
+  :Index: '2.0'
+  :Page: mm.72
+  :Stats:
+    :attributes:
+      :Intelligence:
+        :BM: 1
+    :special:
+      :Taskpool: 1
+  :Base: Cerebral Booster
+:Cerebral Booster 2:
+  :Name: Cerebral Booster 2
+  :Type: Cultured
+  :Body Index: '0.8'
+  :Price: '110000'
+  :Legality: Legal
+  :Avail: 6/14 days
+  :Index: '2.0'
+  :Page: mm.72
+  :Stats:
+    :attributes:
+      :Intelligence:
+        :BM: 1
+    :special: :Taskpool+2
+  :Base: Cerebral Booster
+:Damage Compensator 1:
+  :Name: Damage Compensator 1
+  :Type: Cultured
+  :Body Index: '0.2'
+  :Price: '25000'
+  :Legality: 6P-N
+  :Avail: 6/6 days
+  :Index: '2.5'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Damage Compensator
+:Damage Compensator 2:
+  :Name: Damage Compensator 2
+  :Type: Cultured
+  :Body Index: '0.4'
+  :Price: '50000'
+  :Legality: 6P-N
+  :Avail: 6/6 days
+  :Index: '2.5'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Damage Compensator
+:Damage Compensator 3:
+  :Name: Damage Compensator 3
+  :Type: Cultured
+  :Body Index: '0.6'
+  :Price: '150000'
+  :Legality: 6P-N
+  :Avail: 10/6 days
+  :Index: '2.5'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Damage Compensator
+:Damage Compensator 4:
+  :Name: Damage Compensator 4
+  :Type: Cultured
+  :Body Index: '0.8'
+  :Price: '200000'
+  :Legality: 6P-N
+  :Avail: 10/6 days
+  :Index: '2.5'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Damage Compensator
+:Damage Compensator 5:
+  :Name: Damage Compensator 5
+  :Type: Cultured
+  :Body Index: '1.0'
+  :Price: '250000'
+  :Legality: 6P-N
+  :Avail: 10/6 days
+  :Index: '2.5'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Damage Compensator
+:Damage Compensator 6:
+  :Name: Damage Compensator 6
+  :Type: Cultured
+  :Body Index: '1.2'
+  :Price: '600000'
+  :Legality: 6P-N
+  :Avail: 12/6 days
+  :Index: '2.5'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Damage Compensator
+:Damage Compensator 7:
+  :Name: Damage Compensator 7
+  :Type: Cultured
+  :Body Index: '1.4'
+  :Price: '700000'
+  :Legality: 6P-N
+  :Avail: 12/6 days
+  :Index: '2.5'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Damage Compensator
+:Damage Compensator 8:
+  :Name: Damage Compensator 8
+  :Type: Cultured
+  :Body Index: '1.6'
+  :Price: '800000'
+  :Legality: 6P-N
+  :Avail: 12/6 days
+  :Index: '2.5'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Damage Compensator
+:Damage Compensator 9:
+  :Name: Damage Compensator 9
+  :Type: Cultured
+  :Body Index: '1.8'
+  :Price: '900000'
+  :Legality: 6P-N
+  :Avail: 12/6 days
+  :Index: '2.5'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Damage Compensator
+:Mnemonic Enhancer 1:
+  :Name: Mnemonic Enhancer 1
+  :Type: Cultured
+  :Body Index: '0.2'
+  :Price: '15000'
+  :Legality: Legal
+  :Avail: 6/7 days
+  :Index: '1.0'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Mnemonic Enhancer
+:Mnemonic Enhancer 2:
+  :Name: Mnemonic Enhancer 2
+  :Type: Cultured
+  :Body Index: '0.4'
+  :Price: '30000'
+  :Legality: Legal
+  :Avail: 6/7 days
+  :Index: '1.0'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Mnemonic Enhancer
+:Mnemonic Enhancer 3:
+  :Name: Mnemonic Enhancer 3
+  :Type: Cultured
+  :Body Index: '0.6'
+  :Price: '45000'
+  :Legality: Legal
+  :Avail: 6/7 days
+  :Index: '1.0'
+  :Page: mm.72
+  :Stats: {}
+  :Base: Mnemonic Enhancer
+:Pain Editor:
+  :Name: Pain Editor
+  :Type: Cultured
+  :Body Index: '0.6'
+  :Price: '60000'
+  :Legality: 6P-N
+  :Avail: 6/6 days
+  :Index: '1.2'
+  :Page: mm.73
+:Reflex Recorder Base Skill:
+  :Name: Reflex Recorder Base Skill
+  :Type: Cultured
+  :Body Index: '0.25'
+  :Price: '25000'
+  :Legality: Legal
+  :Avail: 8/6 days
+  :Index: '1.5'
+  :Page: mm.74
+  :Stats: {}
+  :Base: Reflex Recorder
+:Redlex Recorder Specialization:
+  :Name: Redlex Recorder Specialization
+  :Type: Cultured
+  :Body Index: '0.1'
+  :Price: '10000'
+  :Legality: Legal
+  :Avail: 5/6 days
+  :Index: '1.5'
+  :Page: mm.74
+  :Stats: {}
+  :Base: Reflex Recorder
+:Sleep Regulator:
+  :Name: Sleep Regulator
+  :Type: Cultured
+  :Body Index: '0.3'
+  :Price: '20000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.74
+:Synaptic Accelerator 1:
+  :Name: Synaptic Accelerator 1
+  :Type: Cultured
+  :Body Index: '0.4'
+  :Price: '75000'
+  :Legality: 5P-Q
+  :Avail: 6/12 days
+  :Index: '2.0'
+  :Page: mm.74
+  :Conflicts: Wired Reflexes,Move by Wire
+  :Stats:
+    :derived:
+      :Initiative:
+        :CBM: 1
+  :Base: Synaptic Acceleator
+:Synaptic Accelerator 2:
+  :Name: Synaptic Accelerator 2
+  :Type: Cultured
+  :Body Index: '1.0'
+  :Price: '200000'
+  :Legality: 5P-Q
+  :Avail: 6/12 days
+  :Index: '2.0'
+  :Page: mm.74
+  :Conflicts: Wired Reflexes,Move by Wire
+  :Stats:
+    :derived:
+      :Initiative:
+        :CBM: 2
+  :Base: Synaptic Acceleator
+:Thermosense Organs:
+  :Name: Thermosense Organs
+  :Type: Cultured
+  :Body Index: '0.5'
+  :Price: '25000'
+  :Legality: Legal
+  :Avail: 10/12 days
+  :Index: '2.0'
+  :Page: mm.75
+  :Stats:
+    :senses:
+      :Thermosense: :Natural
+:Trauma Damper:
+  :Name: Trauma Damper
+  :Type: Cultured
+  :Body Index: '0.4'
+  :Price: '40000'
+  :Legality: 6P-BA
+  :Avail: 6/8 days
+  :Index: '2.0'
+  :Page: mm.75
+:Chloroplast Skin:
+  :Name: Chloroplast Skin
+  :Type: Cosmetic
+  :Body Index: '0.2'
+  :Price: '10000'
+  :Legality: Legal
+  :Avail: 6/8 days
+  :Index: '2.0'
+  :Page: mm.76
+  :Conflicts: Dermal Plating,Dermal Sheathing,Orthoskin,Skin Pigmentation
+:Clean Metabolism:
+  :Name: Clean Metabolism
+  :Type: Cosmetic
+  :Body Index: '0.2'
+  :Price: '10000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.76
+  :Conflicts: Digestive Expansion
+:Dietware:
+  :Name: Dietware
+  :Type: Cosmetic
+  :Body Index: '0.2'
+  :Price: '10000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.76
+  :Conflicts: Digestive Expansion
+:Hair Growth:
+  :Name: Hair Growth
+  :Type: Cosmetic
+  :Body Index: '0.1'
+  :Price: '2000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.76
+:Scent Glands:
+  :Name: Scent Glands
+  :Type: Cosmetic
+  :Body Index: '0.1'
+  :Price: '5000'
+  :Legality: Legal
+  :Avail: 4/4 days
+  :Index: '1.0'
+  :Page: mm.76
+:Sensitive Skin:
+  :Name: Sensitive Skin
+  :Type: Cosmetic
+  :Body Index: '0.2'
+  :Price: '10000'
+  :Legality: Legal
+  :Avail: 6/6 days
+  :Index: '2.0'
+  :Page: mm.76
+  :Conflicts: Orthoskin,Dermal Plating,Dermal Sheathing
+:Skin Pigmentation:
+  :Name: Skin Pigmentation
+  :Type: Cosmetic
+  :Body Index: '0.1'
+  :Price: '5000'
+  :Legality: Legal
+  :Avail: 6/6 days
+  :Index: '1.0'
+  :Page: mm.76
+  :Conflicts: Chloroplast Skin

@@ -1,0 +1,569 @@
+---
+:Allergy Uncommon Mild:
+  :Name: Allergy Uncommon Mild
+  :Value: '2'
+  :Description: Substance is rare(e.g. silver/gold),+1 TN while in contact
+  :Page: SRC.19
+  :Base: Allergy
+  :Multi: 'true'
+:Allergy Common Mild:
+  :Name: Allergy Common Mild
+  :Value: '3'
+  :Description: Substance is common(e.g. plastic/sunlight),+1 TN while in contact
+  :Page: SRC.19
+  :Base: Allergy
+  :Multi: 'true'
+:Allergy Uncommon Moderate:
+  :Name: Allergy Uncommon Moderate
+  :Value: '3'
+  :Description: Substance is rare(e.g. silver/gold),+2 to power of weapons made from
+    substance
+  :Page: SRC.19
+  :Base: Allergy
+  :Multi: 'true'
+:Allergy Common Moderate:
+  :Name: Allergy Common Moderate
+  :Value: '4'
+  :Description: Substance is common(e.g. plastic/sunlight),+2 to power of weapons
+    made from substance
+  :Page: SRC.19
+  :Base: Allergy
+  :Multi: 'true'
+:Allergy Uncommon Severe:
+  :Name: Allergy Uncommon Severe
+  :Value: '4'
+  :Description: Substance is rare(e.g. silver/gold),Light wound every minute, +2 to
+    the power of weapons
+  :Page: SRC.19
+  :Base: Allergy
+  :Multi: 'true'
+:Allergy Common Severe:
+  :Name: Allergy Common Severe
+  :Value: '5'
+  :Description: Substance is common(e.g. plastic/sunlight),Light wound every minute,
+    +2 to the power of weapons
+  :Page: SRC.19
+  :Base: Allergy
+  :Multi: 'true'
+:Amnesia 1:
+  :Name: Amnesia 1
+  :Value: '2'
+  :Description: Does not recall who he is, retains skills, abilities
+  :Page: SRC.22
+  :Base: Amnesia
+:Amnesia 2:
+  :Name: Amnesia 2
+  :Value: '5'
+  :Description: Does not recall anything including skills/abilities, gamemaster creates
+    char
+  :Page: SRC.22
+  :Base: Amnesia
+:Astral Impressions:
+  :Name: Astral Impressions
+  :Value: '2'
+  :Description: "-2 to TNs to assense character's astral signature."
+  :Page: SRC.28
+:Bad Karma:
+  :Name: Bad Karma
+  :Value: '5'
+  :Description: Double karma needed to gain a karma pool point.
+  :Page: SRC.29
+:Bad Reputation 1:
+  :Name: Bad Reputation 1
+  :Value: '1'
+  :Description: "+1 to social TNs when reputation is known."
+  :Page: SRC.25
+  :Base: Bad Reputation
+  :Conflicts: Good Reputation
+:Bad Reputation 2:
+  :Name: Bad Reputation 2
+  :Value: '2'
+  :Description: "+2 to social TNs when reputation is known."
+  :Page: SRC.25
+  :Base: Bad Reputation
+  :Conflicts: Good Reputation
+:Bad Reputation 3:
+  :Name: Bad Reputation 3
+  :Value: '3'
+  :Description: "+3 to social TNs when reputation is known."
+  :Page: SRC.25
+  :Base: Bad Reputation
+  :Conflicts: Good Reputation
+:Bad Reputation 4:
+  :Name: Bad Reputation 4
+  :Value: '4'
+  :Description: "+4 to social TNs when reputation is known."
+  :Page: SRC.25
+  :Base: Bad Reputation
+  :Conflicts: Good Reputation
+:Biorejection:
+  :Name: Biorejection
+  :Value: 5/2(M)
+  :Description: Can't have any cyberware. Awakened characters buy this for 2.
+  :Page: SRC.19
+  :Conflicts: Sensitive System
+:Blind:
+  :Name: Blind
+  :Value: 6/2(M)
+  :Description: No physical vision; astral sight still works. Awakened characters
+    buy this for 2.
+  :Page: SRC.19
+  :Conflicts: Night Blindness,Night Vision
+:Borrowed Time:
+  :Name: Borrowed Time
+  :Value: '6'
+  :Description: Character dies in 3d6 months.
+  :Page: SRC.19
+:Braggart:
+  :Name: Braggart
+  :Value: '1'
+  :Description: Can't resist talking about jobs, even if secrecy is needed.
+  :Page: SRC.25
+:Choker:
+  :Name: Choker
+  :Value: '2'
+  :Description: "-1 die for one specific type of Matrix system test."
+  :Page: SRC.28
+:Codeblock:
+  :Name: Codeblock
+  :Value: '1'
+  :Description: "-1 die for one specific Matrix system operation."
+  :Page: SRC.28
+:Color Blind:
+  :Name: Color Blind
+  :Value: '1'
+  :Description: No color vision.
+  :Page: SRC.19
+  :Conflicts: Blind
+:Combat Monster:
+  :Name: Combat Monster
+  :Value: '1'
+  :Description: Go berserk at the beginning of combat, try to fight for three turns.
+  :Page: SRC.22
+  :Conflicts: Combat Paralysis
+:Combat Paralysis:
+  :Name: Combat Paralysis
+  :Value: '4'
+  :Description: Always roll lowest possible initiative.
+  :Page: SRC.22
+  :Conflicts: Combat Monster
+:Compulsion 1:
+  :Name: Compulsion 1
+  :Value: '1'
+  :Description: Have a habit with little control over it. Mildly annoying
+  :Page: SRC.22
+  :Base: Compulsion
+  :Multi: 'true'
+:Compulsion 2:
+  :Name: Compulsion 2
+  :Value: '2'
+  :Description: Have a habit with little control over it. Very annoying
+  :Page: SRC.22
+  :Base: Compulsion
+  :Multi: 'true'
+:Compulsion 3:
+  :Name: Compulsion 3
+  :Value: '3'
+  :Description: Have a habit with little control over it. Puts charcter/team at risk
+  :Page: SRC.22
+  :Base: Compulsion
+  :Multi: 'true'
+:Compulsion 4:
+  :Name: Compulsion 4
+  :Value: '4'
+  :Description: Have a habit with little control over it. Frequently puts character/team
+    at high risk
+  :Page: SRC.22
+  :Base: Compulsion
+  :Multi: 'true'
+:Compulsion 5:
+  :Name: Compulsion 5
+  :Value: '5'
+  :Description: Have a habit with little control over it. you're going to die
+  :Page: SRC.22
+  :Base: Compulsion
+  :Multi: 'true'
+:Computer Illiterate:
+  :Name: Computer Illiterate
+  :Value: '3'
+  :Description: "+1 TNs to all tests relying on technology."
+  :Page: SRC.18
+:Cranial Bomb:
+  :Name: Cranial Bomb
+  :Value: '6'
+  :Description: Implanted with a cranial bomb.
+  :Page: SRC.29
+:Cursed Karma:
+  :Name: Cursed Karma
+  :Value: '6'
+  :Description: 1 in 6 chance that karma spent will have opposite effect.
+  :Page: SRC.29
+:Dark Secret:
+  :Name: Dark Secret
+  :Value: '1'
+  :Description: Have a secret that will cause great trouble if exposed.
+  :Page: SRC.26
+:Day Job 1:
+  :Name: Day Job 1
+  :Value: '1'
+  :Description: 1000 monthly salary, 10 hours per week
+  :Page: SRC.26
+  :Base: Day Job
+:Day Job 2:
+  :Name: Day Job 2
+  :Value: '2'
+  :Description: 2500 monthly salary, 20 hours per week
+  :Page: SRC.26
+  :Base: Day Job
+:Day Job 3:
+  :Name: Day Job 3
+  :Value: '3'
+  :Description: 5000 monthly salary, 40 hours per week
+  :Page: SRC.26
+  :Base: Day Job
+:Deaf:
+  :Name: Deaf
+  :Value: 3/1(D)
+  :Description: No physical hearing; deckers buy this at 1 if it doesn't affect decking.
+  :Page: SRC.19
+:Dependent 1:
+  :Name: Dependent 1
+  :Value: '1'
+  :Description: Responsible for someone else's well-being. Value depends on difficulty
+    this causes.
+  :Page: SRC.26
+  :Base: Dependent
+:Dependent 2:
+  :Name: Dependent 2
+  :Value: '2'
+  :Description: Responsible for someone else's well-being. Value depends on difficulty
+    this causes.
+  :Page: SRC.26
+  :Base: Dependent
+:Dependent 3:
+  :Name: Dependent 3
+  :Value: '3'
+  :Description: Responsible for someone else's well-being. Value depends on difficulty
+    this causes.
+  :Page: SRC.26
+  :Base: Dependent
+:Dependent 4:
+  :Name: Dependent 4
+  :Value: '4'
+  :Description: Responsible for someone else's well-being. Value depends on difficulty
+    this causes.
+  :Page: SRC.26
+  :Base: Dependent
+:Dependent 5:
+  :Name: Dependent 5
+  :Value: '5'
+  :Description: Responsible for someone else's well-being. Value depends on difficulty
+    this causes.
+  :Page: SRC.26
+  :Base: Dependent
+:Distinctive Style:
+  :Name: Distinctive Style
+  :Value: '1'
+  :Description: "-1 TNs to track character."
+  :Page: SRC.26
+  :Conflicts: Blandness
+:Elf Poser:
+  :Name: Elf Poser
+  :Value: '1'
+  :Description: Human pretends to be an elf. Social penalties if found out.
+  :Page: SRC.26
+:Extra Enemy:
+  :Name: Extra Enemy
+  :Value: '1'
+  :Description: One extra enemy.
+  :Page: SRC.26
+  :Base: 'true'
+:Flashbacks:
+  :Name: Flashbacks
+  :Value: '4'
+  :Description: Trigger condition leaves character incapacitated for 1 minute.
+  :Page: SRC.22
+:Gremlins 1:
+  :Name: Gremlins 1
+  :Value: '1'
+  :Description: Electronic and mechanical devices prone to failure(2 on 2d6), +1 TN
+    or -1 Rating, simple action to restore
+  :Page: SRC.29
+  :Base: Gremlins
+:Gremlins 2:
+  :Name: Gremlins 2
+  :Value: '2'
+  :Description: Electronic and mechanical devices prone to failure(2 on 2d6), does
+    not work, simple action to restore
+  :Page: SRC.29
+  :Base: Gremlins
+:Gremlins 3:
+  :Name: Gremlins 3
+  :Value: '3'
+  :Description: Electronic and mechanical devices prone to failure(2 on 2d6), +2 TN
+    or -2 Rating, must be repaired
+  :Page: SRC.29
+  :Base: Gremlins
+:Gremlins 4:
+  :Name: Gremlins 4
+  :Value: '4'
+  :Description: Electronic and mechanical devices prone to failure(2 on 2d6), does
+    not work, must be repaired
+  :Page: SRC.29
+  :Base: Gremlins
+:Hung Out to Dry:
+  :Name: Hung Out to Dry
+  :Value: '4'
+  :Description: Character's contacts will no longer speak to them.
+  :Page: SRC.27
+:Hunted 1:
+  :Name: Hunted 1
+  :Value: '2'
+  :Description: Rank 3 Enemy or add 1 point to an existing enemy
+  :Page: SRC.30
+  :Base: Hunted
+:Hunted 2:
+  :Name: Hunted 2
+  :Value: '4'
+  :Description: Rank 4 Enemy or add 2 points to an existing enemy
+  :Page: SRC.30
+  :Base: Hunted
+:Hunted 3:
+  :Name: Hunted 3
+  :Value: '6'
+  :Description: Rank 5 Enemy or add 3 points to an existing enemy
+  :Page: SRC.30
+  :Base: Hunted
+:Illiterate:
+  :Name: Illiterate
+  :Value: '3'
+  :Description: Can't read. Rudimentary knowledge skills, no read/write.
+  :Page: SRC.23
+  :Conflicts: College Education,Technical School Education,Uneducated
+:Impulsive:
+  :Name: Impulsive
+  :Value: '2'
+  :Description: Prone to jumping into the action without thinking.
+  :Page: SRC.23
+:Incompetence:
+  :Name: Incompetence
+  :Value: '2'
+  :Description: "+1 TNs for selected skill."
+  :Page: SRC.18
+  :Multi: 'true'
+:Infirm 1:
+  :Name: Infirm 1
+  :Value: '1'
+  :Description: Attribute maximums reduced by 1
+  :Page: SRC.23
+  :Base: Infirm
+:Infirm 2:
+  :Name: Infirm 2
+  :Value: '2'
+  :Description: Attribute maximums reduced by 2
+  :Page: SRC.23
+  :Base: Infirm
+:Infirm 3:
+  :Name: Infirm 3
+  :Value: '3'
+  :Description: Attribute maximums reduced by 3
+  :Page: SRC.23
+  :Base: Infirm
+:Infirm 4:
+  :Name: Infirm 4
+  :Value: '4'
+  :Description: Attribute maximums reduced by 4
+  :Page: SRC.23
+  :Base: Infirm
+:Infirm 5:
+  :Name: Infirm 5
+  :Value: '5'
+  :Description: Attribute maximums reduced by 5
+  :Page: SRC.23
+  :Base: Infirm
+:Jack Itch:
+  :Name: Jack Itch
+  :Value: '1'
+  :Description: Difficulty staying connected to the Matrix for long periods of time.
+  :Page: SRC.28
+:Liar:
+  :Name: Liar
+  :Value: '2'
+  :Description: Cumulative chance people think you're lying regardless of social tests.
+    Can lose contacts this way.
+  :Page: SRC.27
+:Low Pain Tolerance:
+  :Name: Low Pain Tolerance
+  :Value: '4'
+  :Description: Wound penalties are calculated as though wounds were one level higher.
+  :Page: SRC.20
+  :Conflicts: High Pain Tolerance
+:Mysterious Cyberware:
+  :Name: Mysterious Cyberware
+  :Value: '3'
+  :Description: Unifentified and usually harmful cyberware installed by outside party.
+  :Page: SRC.30
+:Night Blindness:
+  :Name: Night Blindness
+  :Value: 2/1(R,D)
+  :Description: Vision penalties due to darkness increased by 2. Riggers and deckers
+    purchase this for 1 point.
+  :Page: SRC.20
+:Oblivious:
+  :Name: Oblivious
+  :Value: '2'
+  :Description: "+1 TNs for perception tests."
+  :Page: SRC.23
+:Pacifist:
+  :Name: Pacifist
+  :Value: '2'
+  :Description: Cannot kill except in self-defense.
+  :Page: SRC.23
+  :Conflicts: Total Pacifist
+:Paraplegic:
+  :Name: Paraplegic
+  :Value: '3'
+  :Description: Paralyzed from waist down, no cyberware cure. Half combat pool.
+  :Page: SRC.20
+  :Conflicts: Quadriplegic
+:Phobia Uncommon Mild:
+  :Name: Phobia Uncommon Mild
+  :Value: '2'
+  :Description: Condition is rare(e.g. specific sounds/smells), +1 TN to all tests
+  :Page: SRC.23
+  :Base: Phobia
+  :Multi: 'true'
+:Phobia Common Mild:
+  :Name: Phobia Common Mild
+  :Value: '3'
+  :Description: Conditon is common(e.g. sunlight/magic), +1 TN to all tests
+  :Page: SRC.23
+  :Base: Phobia
+  :Multi: 'true'
+:Phobia Uncommon Moderate:
+  :Name: Phobia Uncommon Moderate
+  :Value: '3'
+  :Description: Condition is rare(e.g. specific sounds/smells), +2 TN to all tests,
+    Willpower(4) test
+  :Page: SRC.23
+  :Base: Phobia
+  :Multi: 'true'
+:Phobia Common Moderate:
+  :Name: Phobia Common Moderate
+  :Value: '4'
+  :Description: Conditon is common(e.g. sunlight/magic), +2 TN to all tests, Willpower(4)
+    test
+  :Page: SRC.23
+  :Base: Phobia
+  :Multi: 'true'
+:Phobia Uncommon Severe:
+  :Name: Phobia Uncommon Severe
+  :Value: '4'
+  :Description: Condition is rare(e.g. specific sounds/smells), +2 TN to all tests,
+    Willpower(6) test
+  :Page: SRC.23
+  :Base: Phobia
+  :Multi: 'true'
+:Phobia Common Severe:
+  :Name: Phobia Common Severe
+  :Value: '5'
+  :Description: Conditon is common(e.g. sunlight/magic), +2 TN to all tests, Willpower(6)
+    test
+  :Page: SRC.23
+  :Base: Phobia
+  :Multi: 'true'
+:Police Record:
+  :Name: Police Record
+  :Value: '6'
+  :Description: Police and most security know all about character. Criminal SIN and
+    parole officer.
+  :Page: SRC.30
+:Quadriplegic:
+  :Name: Quadriplegic
+  :Value: '6'
+  :Description: Paralyzed from neck down, no cyberware cure. Must be hospitalized,
+    no physical actions.
+  :Page: SRC.21
+  :Conflicts: Paraplegic
+:Scorched:
+  :Name: Scorched
+  :Value: '1'
+  :Description: Permanent psychological conditioning from psychotropic Black ICE.
+  :Page: SRC.29
+:Sea Legs:
+  :Name: Sea Legs
+  :Value: '2'
+  :Description: Take penalties if off of a boat more than 24 hours.
+  :Page: SRC.24
+  :Conflicts: Sea Madness
+:Sea Madness:
+  :Name: Sea Madness
+  :Value: '4'
+  :Description: Become frantic when at sea beyond sight of land more than 24 hours.
+  :Page: SRC.24
+  :Conflicts: Sea Legs
+:Sensitive Neural Structure 1:
+  :Name: Sensitive Neural Structure 1
+  :Value: '2'
+  :Description: "-1 Willpower to resist Black ICE or Dumpshock."
+  :Page: SRC.24
+  :Base: Sensitive Neural Structure
+:Sensitive Neural Structure 2:
+  :Name: Sensitive Neural Structure 2
+  :Value: '4'
+  :Description: "-2 Willpower to resist Black ICE or Dumpshock."
+  :Page: SRC.24
+  :Base: Sensitive neural Structure
+:Sensitive System:
+  :Name: Sensitive System
+  :Value: 3/2(M)
+  :Description: Essence loss from cyberware doubled. Awakened characters buy this
+    for 2.
+  :Page: SRC.21
+  :Conflicts: Biorejection
+:Simsense Vertigo:
+  :Name: Simsense Vertigo
+  :Value: 2/4(R,D)
+  :Description: When using a simsense device, +1 TNs and -1 Initiative. Deckers and
+    riggers buy this for 4.
+  :Page: SRC.25
+:Spirit Bane:
+  :Name: Spirit Bane
+  :Value: '2'
+  :Description: One type of nature spirit dislikes character, and will do go out of
+    their way to harass and hurt them.
+  :Page: SRC.28
+:Total Pacifist:
+  :Name: Total Pacifist
+  :Value: '5'
+  :Description: Character never kills. If they do, they experience depression for
+    2d6 weeks.
+  :Page: SRC.25
+  :Conflicts: Pacifist
+:Ugly and Doesn't Care:
+  :Name: Ugly and Doesn't Care
+  :Value: '1'
+  :Description: "+1 social TNs with same sex, +2 social TNs with opposite sex."
+  :Page: SRC.17
+  :Conflicts: Good Looking and Knows It
+:Uncouth:
+  :Name: Uncouth
+  :Value: '2'
+  :Description: "+2 social TNs."
+  :Page: SRC.27
+:Uneducated:
+  :Name: Uneducated
+  :Value: '2'
+  :Description: Only rudimentary knowledge of reading, writing, and arithmetic.
+  :Page: SRC.25
+  :Conflicts: College Education,Technical School Education,Illiterate
+:Vindictive:
+  :Name: Vindictive
+  :Value: '2'
+  :Description: Seek vengeance for every real or imagined offense, no matter how minor.
+  :Page: SRC.25
+:Weak Immune System:
+  :Name: Weak Immune System
+  :Value: '1'
+  :Description: "-1 Body against diseases."
+  :Page: SRC.22

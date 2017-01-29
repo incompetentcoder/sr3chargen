@@ -1,0 +1,445 @@
+---
+:Adrenaline Surge:
+  :Name: Adrenaline Surge
+  :Value: '2'
+  :Description: Reroll 6s on Initiative in phsyical combat. +1 TNs in combat. Can't
+    be combined with any improved reflexes.
+  :Page: SRC.18
+:Ambidexterity 1:
+  :Name: Ambidexterity 1
+  :Value: '2'
+  :Description: Reduce penalties for firing two guns; give bonuses for using two handheld
+    weapons.
+  :Page: CC.96
+  :Base: Ambidexterity
+:Ambidexterity 2:
+  :Name: Ambidexterity 2
+  :Value: '4'
+  :Description: Reduce penalties for firing two guns; give bonuses for using two handheld
+    weapons.
+  :Page: CC.96
+  :Base: Ambidexterity
+:Ambidexterity 3:
+  :Name: Ambidexterity 3
+  :Value: '6'
+  :Description: Reduce penalties for firing two guns; give bonuses for using two handheld
+    weapons.
+  :Page: CC.96
+  :Base: Ambidexterity
+:Ambidexterity 4:
+  :Name: Ambidexterity 4
+  :Value: '8'
+  :Description: Reduce penalties for firing two guns; give bonuses for using two handheld
+    weapons.
+  :Page: CC.96
+  :Base: Ambidexterity
+:Animal Empathy:
+  :Name: Animal Empathy
+  :Value: '2'
+  :Description: "-1 TNs to influence or control an animal."
+  :Page: SRC.25
+:Aptitude:
+  :Name: Aptitude
+  :Value: '4'
+  :Description: "-1 TNs for selected skill."
+  :Page: SRC.18
+  :Multi: 'true'
+:Astral Chameleon:
+  :Name: Astral Chameleon
+  :Value: '2'
+  :Description: "+2 to TNs to assense character's astral signature."
+  :Page: SRC.28
+:Attentive:
+  :Name: Attentive
+  :Value: '1'
+  :Description: Character never makes silly mistakes and rarely overlooks something
+    small. No combat benefits.
+  :Page: TSS.6
+:Blandness:
+  :Name: Blandness
+  :Value: '2'
+  :Description: "+1 TNs to track character."
+  :Page: SRC.25
+  :Conflicts: Distinctive Style
+:Bonus Attribute Point:
+  :Name: Bonus Attribute Point
+  :Value: '2'
+  :Description: Extra point in one attribute. Can allow 7 points in an attribute at
+    start. Limit one per character.
+  :Page: SRC.17
+:Bravery:
+  :Name: Bravery
+  :Value: '1'
+  :Description: "-1 TNs to resist fear and intimidation."
+  :Page: SRC.22
+:Codeslinger:
+  :Name: Codeslinger
+  :Value: '2'
+  :Description: "+1 die for one specific Matrix system operation."
+  :Page: SRC.28
+:College Education:
+  :Name: College Education
+  :Value: '1'
+  :Description: TN penalty for defaulting reduced by 1 for Academic knowledge skills.
+  :Page: SRC.22
+  :Conflicts: Technical School Education,Illiterate,Uneducated
+:Common Sense:
+  :Name: Common Sense
+  :Value: '2'
+  :Description: GM must warn you if you're about to win a Darwin Award.
+  :Page: SRC.22
+:Connected 1:
+  :Name: Connected 1
+  :Value: '3'
+  :Description: One contact will either buy or sell one type of merchandise either
+    with or without Street Index, whichever benefits the character more.
+  :Page: SRC.26
+  :Base: Connected
+:Connected 2:
+  :Name: Connected 2
+  :Value: '5'
+  :Description: One contact will either buy and sell one type of merchandise either
+    with or without Street Index, whichever benefits the character more.
+  :Page: SRC.26
+  :Base: Connected
+:Cracker:
+  :Name: Cracker
+  :Value: '4'
+  :Description: "+1 die for one specific type of Matrix system test."
+  :Page: SRC.28
+:Daredevil:
+  :Name: Daredevil
+  :Value: '3'
+  :Description: 1 extra Karma Pool per session for use in risky actions; point may
+    not be burned.
+  :Page: SRC.29
+:Diplomatic Immunity:
+  :Name: Diplomatic Immunity
+  :Value: '2'
+  :Description: Character cannot be arrested for, charged with, or convicted of a
+    felony or misdemeanor while abroad.
+  :Page: SotA64.32
+:Double Jointed:
+  :Name: Double Jointed
+  :Value: '1'
+  :Description: "-1 Escape Artist TNs."
+  :Page: SRC.20
+:Dragon Patron:
+  :Name: Dragon Patron
+  :Value: '6'
+  :Description: Offsets the 6-point Hunted flaw that all bred drakes automatically
+    get.
+  :Page: DoSW.185
+:Exceptional Attribute:
+  :Name: Exceptional Attribute
+  :Value: '2'
+  :Description: Increase racial limit of one attribute by 1. Can allow 7 points in
+    an attribute at start. Limit one per character.
+  :Page: SRC.17
+:Extra Contact:
+  :Name: Extra Contact
+  :Value: '1'
+  :Description: One extra level 1 contact.
+  :Page: SRC.26
+  :Multi: 'true'
+:Focused Concentration:
+  :Name: Focused Concentration
+  :Value: '2'
+  :Description: Sustained spells only cause +1 to TNs instead of +2.
+  :Page: SRC.28
+:Friendly Face:
+  :Name: Friendly Face
+  :Value: '1'
+  :Description: "-1 social TNs with new people."
+  :Page: SRC.26
+:Friends Abroad:
+  :Name: Friends Abroad
+  :Value: '3'
+  :Description: One extra level 2 contact in another city or country.
+  :Page: SRC.27
+:Friends in High Places:
+  :Name: Friends in High Places
+  :Value: '2'
+  :Description: One extra level 2 contact in a position of power.
+  :Page: SRC.27
+  :Multi: 'true'
+:Good Looking and Knows It:
+  :Name: Good Looking and Knows It
+  :Value: '1'
+  :Description: "-1 social TNs with same sex, -2 social TNs with opposite sex."
+  :Page: SRC.17
+  :Conflicts: Ugly and Doesn't Care
+:Good Reputation 1:
+  :Name: Good Reputation 1
+  :Value: '1'
+  :Description: "-1 to social TNs when reputation is known."
+  :Page: SRC.27
+  :Base: Good Reputation
+  :Conflicts: Bad Reputation
+:Good Reputation 2:
+  :Name: Good Reputation 2
+  :Value: '2'
+  :Description: "-2 to social TNs when reputation is known."
+  :Page: SRC.27
+  :Base: Good Reputation
+  :Conflicts: Bad Reputation
+:High Pain Tolerance 1:
+  :Name: High Pain Tolerance 1
+  :Value: '2'
+  :Description: Ignore 1 box of Mental OR Physical damage per level.
+  :Page: SRC.20
+  :Base: High Pain Tolerance
+  :Conflicts: Low Pain Tolerance
+:High Pain Tolerance 2:
+  :Name: High Pain Tolerance 2
+  :Value: '4'
+  :Description: Ignore 1 box of Mental OR Physical damage per level.
+  :Page: SRC.20
+  :Base: High Pain Tolerance
+  :Conflicts: Low Pain Tolerance
+:High Pain Tolerance 3:
+  :Name: High Pain Tolerance 3
+  :Value: '6'
+  :Description: Ignore 1 box of Mental OR Physical damage per level.
+  :Page: SRC.20
+  :Base: High Pain Tolerance
+  :Conflicts: Low Pain Tolerance
+:High Pain Tolerance 4:
+  :Name: High Pain Tolerance 4
+  :Value: '8'
+  :Description: Ignore 1 box of Mental OR Physical damage per level.
+  :Page: SRC.20
+  :Base: High Pain Tolerance
+  :Conflicts: Low Pain Tolerance
+:High Pain Tolerance 5:
+  :Name: High Pain Tolerance 5
+  :Value: '10'
+  :Description: Ignore 1 box of Mental OR Physical damage per level.
+  :Page: SRC.20
+  :Base: High Pain Tolerance
+  :Conflicts: Low Pain Tolerance
+:High Pain Tolerance 6:
+  :Name: High Pain Tolerance 6
+  :Value: '12'
+  :Description: Ignore 1 box of Mental OR Physical damage per level.
+  :Page: SRC.20
+  :Base: High Pain Tolerance
+  :Conflicts: Low Pain Tolerance
+:Home Ground:
+  :Name: Home Ground
+  :Value: '2'
+  :Description: "-1 TN Active Skills and -2 TN Knowledge skills in chosen territory."
+  :Page: SRC.18
+:Human-Looking:
+  :Name: Human-Looking
+  :Value: '1'
+  :Description: Ork, Dwarf, or Elf can pass for a human most of the time. No metavariants.
+  :Page: SRC.27
+:Lightning Reflexes 1:
+  :Name: Lightning Reflexes 1
+  :Value: '2'
+  :Description: "+1 Reaction die for surprise tests"
+  :Page: SRC.20
+  :Base: Lightning Reflexes
+:Lightning Reflexes 2:
+  :Name: Lightning Reflexes 2
+  :Value: '4'
+  :Description: "+2 Reaction die for surprise tests"
+  :Page: SRC.20
+  :Base: Lightning Reflexes
+:Lightning Reflexes 3:
+  :Name: Lightning Reflexes 3
+  :Value: '6'
+  :Description: "+3 Reaction die for surprise tests"
+  :Page: SRC.20
+  :Base: Lightning Reflexes
+:Magic Resistance 1:
+  :Name: Magic Resistance 1
+  :Value: '1'
+  :Description: "+1 die to spell resistance,never considered a voluntary target for
+    spells."
+  :Page: SRC.28
+  :Base: Magic Resistance
+:Magic Resistance 2:
+  :Name: Magic Resistance 2
+  :Value: '2'
+  :Description: "+2 die to spell resistance,never considered a voluntary target for
+    spells."
+  :Page: SRC.28
+  :Base: Magic Resistance
+:Magic Resistance 3:
+  :Name: Magic Resistance 3
+  :Value: '3'
+  :Description: "+3 die to spell resistance,never considered a voluntary target for
+    spells."
+  :Page: SRC.28
+  :Base: Magic Resistance
+:Magic Resistance 4:
+  :Name: Magic Resistance 4
+  :Value: '4'
+  :Description: "+4 die to spell resistance,never considered a voluntary target for
+    spells."
+  :Page: SRC.28
+  :Base: Magic Resistance
+:Natural Hardening:
+  :Name: Natural Hardening
+  :Value: '4'
+  :Description: Gain 1 point of innate Hardening, cumulative with deck hardening.
+  :Page: SRC.29
+:Natural Immunity Natural:
+  :Name: Natural Immunity Natural
+  :Value: '1'
+  :Description: Immunity to one natural (1 point) drug or toxin.
+  :Page: SRC.20
+  :Base: Natural Immunity
+  :Multi: 'true'
+:Natural Immunity Madmade:
+  :Name: Natural Immunity Madmade
+  :Value: '3'
+  :Description: Immunity to one man-made (3 point) drug or toxin.
+  :Page: SRC.20
+  :Base: Natural Immunity
+  :Multi: 'true'
+:Night Vision:
+  :Name: Night Vision
+  :Value: 2/1(R,D)
+  :Description: Gain natural Low-Light Vision. Riggers and deckers purchase this for
+    1 point.
+  :Page: SRC.20
+  :Conflicts: Night Blindness,Blind
+:Perceptive:
+  :Name: Perceptive
+  :Value: '3'
+  :Description: "-1 TNs for perception tests."
+  :Page: SRC.23
+:Perfect Time:
+  :Name: Perfect Time
+  :Value: '1'
+  :Description: Perfect timing, and always know the current time, to the minute.
+  :Page: SRC.23
+:Photographic Memory:
+  :Name: Photographic Memory
+  :Value: '3'
+  :Description: Never forget details; GM must remind you if you do.
+  :Page: SRC.24
+:Pirate Family 1:
+  :Name: Pirate Family 1
+  :Value: '1'
+  :Description: Have many Friends of Friends in ports around the world. Contacts hurt
+    as often as help.
+  :Page: SRC.30
+  :Base: Pirate Family
+:Pirate Family 2:
+  :Name: Pirate Family 2
+  :Value: '3'
+  :Description: Have many Friends of Friends in ports around the world. Contacts generally
+    helpful.
+  :Page: SRC.30
+  :Base: Pirate Family
+:Poor Link:
+  :Name: Poor Link
+  :Value: '2'
+  :Description: "+2 TN to establish ritual link on character."
+  :Page: SRC.28
+:Quick Healer:
+  :Name: Quick Healer
+  :Value: '2'
+  :Description: "-2 healing TNs."
+  :Page: SRC.21
+:Resistance to Pathogens:
+  :Name: Resistance to Pathogens
+  :Value: '1'
+  :Description: "+1 Body against diseases."
+  :Page: SRC.21
+:Resistance to Toxins:
+  :Name: Resistance to Toxins
+  :Value: '1'
+  :Description: "+1 Body against poisons."
+  :Page: SRC.21
+:Sense of Direction:
+  :Name: Sense of Direction
+  :Value: '1'
+  :Description: Never get lost, and always able to find North.
+  :Page: SRC.24
+:Spike Resistance 1:
+  :Name: Spike Resistance 1
+  :Value: '2'
+  :Description: "+1 Willpower to resist Black ICE or Dumpshock."
+  :Page: SRC.25
+  :Base: Spike Resistance
+:Spike Resistance 2:
+  :Name: Spike Resistance 2
+  :Value: '4'
+  :Description: "+2 Willpower to resist Black ICE or Dumpshock."
+  :Page: SRC.25
+  :Base: Spike Resistance
+:Spirit Affinity:
+  :Name: Spirit Affinity
+  :Value: '2'
+  :Description: One type of nature spirit is fond of character, and will do favors
+    for and avoid hurting them.
+  :Page: SRC.28
+:Technical School Education:
+  :Name: Technical School Education
+  :Value: '1'
+  :Description: TN penalty for defaulting reduced by 1 for Background knowledge skills.
+  :Page: SRC.25
+  :Conflicts: College Education,Illiterate,Uneducated
+:Toughness:
+  :Name: Toughness
+  :Value: '3'
+  :Description: "+1 Body for damage resistance."
+  :Page: SRC.21
+:Vehicle Empathy:
+  :Name: Vehicle Empathy
+  :Value: '2'
+  :Description: Handling TNs reduced by 1.
+  :Page: SRC.32
+:Water Sprite 1:
+  :Name: Water Sprite 1
+  :Value: '1'
+  :Description: 'Various improvements to swimming: choose 1'
+  :Page: SRC.21
+  :Base: Water Sprite
+:Water Sprite 2:
+  :Name: Water Sprite 2
+  :Value: '2'
+  :Description: 'Various improvements to swimming: choose 2'
+  :Page: SRC.21
+  :Base: Water Sprite
+:Water Sprite 3:
+  :Name: Water Sprite 3
+  :Value: '3'
+  :Description: 'Various improvements to swimming: choose 3'
+  :Page: SRC.21
+  :Base: Water Sprite
+:Water Sprite 4:
+  :Name: Water Sprite 4
+  :Value: '4'
+  :Description: 'Various improvements to swimming: choose 4'
+  :Page: SRC.21
+  :Base: Water Sprite
+:Water Sprite 5:
+  :Name: Water Sprite 5
+  :Value: '5'
+  :Description: 'Various improvements to swimming: choose 5'
+  :Page: SRC.21
+  :Base: Water Sprite
+:Will to Live 1:
+  :Name: Will to Live 1
+  :Value: '1'
+  :Description: One additional damage overflow box
+  :Page: SRC.22
+  :Base: Will to Live
+:Will to Live 2:
+  :Name: Will to Live 2
+  :Value: '2'
+  :Description: Two additional damage overflow boxes
+  :Page: SRC.22
+  :Base: Will to Live
+:Will to Live 3:
+  :Name: Will to Live 3
+  :Value: '3'
+  :Description: Three additional damage overflow boxes
+  :Page: SRC.22
+  :Base: Will to Live

@@ -4,13 +4,24 @@ require 'pry'
 skills = YAML.load_file('skills.yaml')
 spells = YAML.load_file('spells.yaml')
 CONSTANTS = {
+  Allergy: { Common: %i(Sunlight Plastic Pollutants Soy Pollen Dust Preservatives Cosmetics Sweetener),
+             Uncommon: %i(Gold Silver Grass Antibiotics Bronze Berries Nuts Orichalcum Leather Milk
+                          Meat Fish Latex Insects Pets Mould Sugar)},
+  Phobia: { Common: [:Sunlight, :Darkness, :Heights, :'Open Places', :People, :'Small Spaces',
+                     :'Crossing the Street', :Water, :Weapons, :Germs, :'Social Situations'],
+            Uncommon: [:Flying, :'Shart Objects', :Men, :Spiders, :Chemicals, :Bats, :Feces, :Clowns,
+                       :Dogs, :Women, :Bridges, :Balloons, :Touch, :Trees, :Fish, :Rodents, :Ants,
+                       :Trains, :Mirrors, :Holes, :'Wild Animals', :Cats, :Amphibians]},
   attributes: %i(Body Quickness Strength Charisma Intelligence Willpower),
   attrinfo: [:BA, :RM, :CM, :BM, :MM, :ACT, :Points],
   gender: [:Male, :Female],
   metatypes: YAML.load_file('metas.yaml'),
   cyberware: YAML.load_file('cyberyaml'),
+  bioware: YAML.load_file('bioyaml'),
   weapons: YAML.load_file('gearyaml'),
   armors: YAML.load_file('armoryaml'),
+  edges: YAML.load_file('edgesyaml'),
+  flaws: YAML.load_file('flawsyaml'),
   magetypes: {
     None: { Points: 0, Spellpoints: 0 },
     'Full Magician': { Points: 30, Spellpoints: 25 },
@@ -143,7 +154,7 @@ CONSTANTS = {
       eagle: {
         environment: 'Mountains', spells: [[:Detection, 2]],
         spirits: [[:Sky, 2]], desc: 'Double Essence loss for Cyberware',
-        properties: 'Noble, Proud, Solitary, Naturalist'
+        properties: 'Noble, Proud, Solitary, Naturalist', special: {flaw: :'Sensitive System'}
       },
       elk: {
         environment: 'Plains, Forest, Tundra',
@@ -538,7 +549,7 @@ CONSTANTS = {
         environment: 'Forest', spells: [[:Health, 2], [:Illusion, 2]],
         spirits: [[:Land, 2]], desc: 'Receive Aura reading for free at
         1/2 starting intelligence, Double all essence losses from cyber',
-        properties: 'Sky, Natualist, Strict moral code'
+        properties: 'Sky, Natualist, Strict moral code', special: {flaw: :'Sensitive System'}
       },
       wyrm: {
         environment: 'Mountains', spells: [[:Health, 2], [:Manipulation, 2]],

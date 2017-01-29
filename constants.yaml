@@ -1,4 +1,70 @@
 ---
+:Allergy:
+  :Common:
+  - :Sunlight
+  - :Plastic
+  - :Pollutants
+  - :Soy
+  - :Pollen
+  - :Dust
+  - :Preservatives
+  - :Cosmetics
+  - :Sweetener
+  :Uncommon:
+  - :Gold
+  - :Silver
+  - :Grass
+  - :Antibiotics
+  - :Bronze
+  - :Berries
+  - :Nuts
+  - :Orichalcum
+  - :Leather
+  - :Milk
+  - :Meat
+  - :Fish
+  - :Latex
+  - :Insects
+  - :Pets
+  - :Mould
+  - :Sugar
+:Phobia:
+  :Common:
+  - :Sunlight
+  - :Darkness
+  - :Heights
+  - :Open Places
+  - :People
+  - :Small Spaces
+  - :Crossing the Street
+  - :Water
+  - :Weapons
+  - :Germs
+  - :Social Situations
+  :Uncommon:
+  - :Flying
+  - :Shart Objects
+  - :Men
+  - :Spiders
+  - :Chemicals
+  - :Bats
+  - :Feces
+  - :Clowns
+  - :Dogs
+  - :Women
+  - :Bridges
+  - :Balloons
+  - :Touch
+  - :Trees
+  - :Fish
+  - :Rodents
+  - :Ants
+  - :Trains
+  - :Mirrors
+  - :Holes
+  - :Wild Animals
+  - :Cats
+  - :Amphibians
 :attributes:
 - :Body
 - :Quickness
@@ -4632,6 +4698,962 @@
           :CBM: 6
         :Initiative:
           :CBM: 3
+:bioware:
+  :Adrenal Pump 1:
+    :Name: Adrenal Pump 1
+    :Type: Basic
+    :Body Index: '1.25'
+    :Price: '60000'
+    :Legality: 5P-R
+    :Avail: 10/16 days
+    :Index: '3.0'
+    :Page: mm.64
+    :Stats: {}
+    :Base: Adrenal Pump
+  :Adrenal Pump 2:
+    :Name: Adrenal Pump 2
+    :Type: Basic
+    :Body Index: '2.5'
+    :Price: '100000'
+    :Legality: 5P-R
+    :Avail: 10/16 days
+    :Index: '3.0'
+    :Page: mm.64
+    :Stats: {}
+    :Base: Adrenal Pump
+  :Cat’s Eyes:
+    :Name: Cat’s Eyes
+    :Type: Basic
+    :Body Index: '0.2'
+    :Price: '15000'
+    :Legality: Legal
+    :Avail: 4/6 days
+    :Index: '1.0'
+    :Page: mm.64
+    :Conflicts: Cybereyes,Retinal Modification
+    :Stats:
+      :senses:
+        :Low-Light Vision: :Natural
+  :Chemical Gland:
+    :Name: Chemical Gland
+    :Type: Basic
+    :Body Index: '0.6'
+    :Price: "(100*compound)+30000"
+    :Legality: 5-Q
+    :Avail: 10/4 days
+    :Index: '3.0'
+    :Page: mm.64
+  :Digestive Expansion:
+    :Name: Digestive Expansion
+    :Type: Basic
+    :Body Index: '1.0'
+    :Price: '80000'
+    :Legality: Legal
+    :Avail: 6/10 days
+    :Index: '2.0'
+    :Page: mm.65
+    :Conflicts: Clean Metabolism,Dietware
+  :Enhanced Articulation:
+    :Name: Enhanced Articulation
+    :Type: Basic
+    :Body Index: '0.6'
+    :Price: '40000'
+    :Legality: Legal
+    :Avail: 5/6 days
+    :Index: '1.5'
+    :Page: mm.66
+  :Extended Volume 1:
+    :Name: Extended Volume 1
+    :Type: Basic
+    :Body Index: '0.2'
+    :Price: '8000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.66
+    :Stats: {}
+    :Base: Extended Volume
+  :Extended Volume 2:
+    :Name: Extended Volume 2
+    :Type: Basic
+    :Body Index: '0.3'
+    :Price: '15000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.66
+    :Stats: {}
+    :Base: Extended Volume
+  :Extended Volume 3:
+    :Name: Extended Volume 3
+    :Type: Basic
+    :Body Index: '0.4'
+    :Price: '25000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.66
+    :Stats: {}
+    :Base: Extended Volume
+  :Metabolic Arrester:
+    :Name: Metabolic Arrester
+    :Type: Basic
+    :Body Index: '0.6'
+    :Price: '20000'
+    :Legality: Legal
+    :Avail: 6/8 days
+    :Index: '1.5'
+    :Page: mm.66
+    :Conflicts: Adrenal Pump,Suprathyroid Gland
+  :Muscle Augmentation 1:
+    :Name: Muscle Augmentation 1
+    :Type: Basic
+    :Body Index: '0.4'
+    :Price: '20000'
+    :Legality: 4P-BC/D
+    :Avail: 6/6 days
+    :Index: '0.9'
+    :Page: mm.67
+    :Conflicts: Muscle Replacement
+    :Stats:
+      :attributes:
+        :Strength:
+          :BM: 1
+    :Base: Muscle Augmentation
+  :Muscle Augmentation 2:
+    :Name: Muscle Augmentation 2
+    :Type: Basic
+    :Body Index: '0.8'
+    :Price: '40000'
+    :Legality: 4P-BC/D
+    :Avail: 6/6 days
+    :Index: '0.9'
+    :Page: mm.67
+    :Conflicts: Muscle Replacement
+    :Stats:
+      :attributes:
+        :Strength:
+          :BM: 2
+    :Base: Muscle Augmentation
+  :Muscle Augmentation 3:
+    :Name: Muscle Augmentation 3
+    :Type: Basic
+    :Body Index: '1.2'
+    :Price: '60000'
+    :Legality: 4P-BC/D
+    :Avail: 6/6 days
+    :Index: '0.9'
+    :Page: mm.67
+    :Conflicts: Muscle Replacement
+    :Stats:
+      :attributes:
+        :Strength:
+          :BM: 3
+    :Base: Muscle Augmentation
+  :Muscle Augmentation 4:
+    :Name: Muscle Augmentation 4
+    :Type: Basic
+    :Body Index: '1.6'
+    :Price: '80000'
+    :Legality: 4P-BC/D
+    :Avail: 6/6 days
+    :Index: '0.9'
+    :Page: mm.67
+    :Conflicts: Muscle Replacement
+    :Stats:
+      :attributes:
+        :Strength:
+          :BM: 4
+    :Base: Muscle Augmentation
+  :Muscle Toning 1:
+    :Name: Muscle Toning 1
+    :Type: Basic
+    :Body Index: '0.4'
+    :Price: '25000'
+    :Legality: 4P-BC/D
+    :Avail: 6/6 days
+    :Index: '0.9'
+    :Page: mm.67
+    :Conflicts: Muscle Replacement
+    :Stats:
+      :attributes:
+        :Quickness:
+          :BM: 1
+    :Base: Muscle Toning
+  :Muscle Toning 2:
+    :Name: Muscle Toning 2
+    :Type: Basic
+    :Body Index: '0.8'
+    :Price: '50000'
+    :Legality: 4P-BC/D
+    :Avail: 6/6 days
+    :Index: '0.9'
+    :Page: mm.67
+    :Conflicts: Muscle Replacement
+    :Stats:
+      :attributes:
+        :Quickness:
+          :BM: 2
+    :Base: Muscle Toning
+  :Muscle Toning 3:
+    :Name: Muscle Toning 3
+    :Type: Basic
+    :Body Index: '1.2'
+    :Price: '75000'
+    :Legality: 4P-BC/D
+    :Avail: 6/6 days
+    :Index: '0.9'
+    :Page: mm.67
+    :Conflicts: Muscle Replacement
+    :Stats:
+      :attributes:
+        :Quickness:
+          :BM: 3
+    :Base: Muscle Toning
+  :Muscle Toning 4:
+    :Name: Muscle Toning 4
+    :Type: Basic
+    :Body Index: '1.6'
+    :Price: '100000'
+    :Legality: 4P-BC/D
+    :Avail: 6/6 days
+    :Index: '0.9'
+    :Page: mm.67
+    :Conflicts: Muscle Replacement
+    :Stats:
+      :attributes:
+        :Quickness:
+          :BM: 4
+    :Base: Muscle Toning
+  :Nephritic Screen:
+    :Name: Nephritic Screen
+    :Type: Basic
+    :Body Index: '0.4'
+    :Price: '20000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.67
+  :Nictitating Membranes:
+    :Name: Nictitating Membranes
+    :Type: Basic
+    :Body Index: '0.1'
+    :Price: '8000'
+    :Legality: Legal
+    :Avail: 4/6 days
+    :Index: '1.0'
+    :Page: mm.68
+    :Conflicts: Cybereyes,Retinal Modification
+  :Orthoskin 1:
+    :Name: Orthoskin 1
+    :Type: Basic
+    :Body Index: '0.5'
+    :Price: '25000'
+    :Legality: 5P-N
+    :Avail: 8/8 days
+    :Index: '0.8'
+    :Page: mm.68
+    :Conflicts: Dermal Plating,Dermal Sheathing,Cholorplast Skin,Sensitive Skin
+    :Stats:
+      :armor:
+        :Impact: 1
+    :Base: Orthoskin
+  :Orthoskin 2:
+    :Name: Orthoskin 2
+    :Type: Basic
+    :Body Index: '1.0'
+    :Price: '60000'
+    :Legality: 5P-N
+    :Avail: 8/8 days
+    :Index: '0.8'
+    :Page: mm.68
+    :Conflicts: Dermal Plating,Dermal Sheathing,Chloroplast Skin,Sensitive Skin
+    :Stats:
+      :armor:
+        :Impact: 1
+        :Ballistic: 1
+    :Base: Orthoskin
+  :Orthoskin 3:
+    :Name: Orthoskin 3
+    :Type: Basic
+    :Body Index: '1.5'
+    :Price: '100000'
+    :Legality: 5P-N
+    :Avail: 8/8 days
+    :Index: '0.8'
+    :Page: mm.68
+    :Conflicts: Dermal Plating,Dermal Sheathing,Chloroplast Skin,Sensitive Skin
+    :Stats:
+      :armor:
+        :Impact: 1
+        :Ballistic: 1
+    :Base: Orthoskin
+  :Pathogenic Defense 1:
+    :Name: Pathogenic Defense 1
+    :Type: Basic
+    :Body Index: '0.2'
+    :Price: '24000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.5'
+    :Page: mm.68
+    :Stats: {}
+    :Base: Pathogenic Defense
+  :Pathogenic Defense 2:
+    :Name: Pathogenic Defense 2
+    :Type: Basic
+    :Body Index: '0.4'
+    :Price: '48000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.5'
+    :Page: mm.68
+    :Stats: {}
+    :Base: Pathogenic Defense
+  :Pathogenic Defense 3:
+    :Name: Pathogenic Defense 3
+    :Type: Basic
+    :Body Index: '0.6'
+    :Price: '72000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.5'
+    :Page: mm.68
+    :Stats: {}
+    :Base: Pathogenic Defense
+  :Pathogenic Defense 4:
+    :Name: Pathogenic Defense 4
+    :Type: Basic
+    :Body Index: '0.8'
+    :Price: '96000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.5'
+    :Page: mm.68
+    :Stats: {}
+    :Base: Pathogenic Defense
+  :Pathogenic Defense 5:
+    :Name: Pathogenic Defense 5
+    :Type: Basic
+    :Body Index: '1.0'
+    :Price: '120000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.5'
+    :Page: mm.68
+    :Stats: {}
+    :Base: Pathogenic Defense
+  :Pathogenic Defense 6:
+    :Name: Pathogenic Defense 6
+    :Type: Basic
+    :Body Index: '1.2'
+    :Price: '144000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.5'
+    :Page: mm.68
+    :Stats: {}
+    :Base: Pathogenic Defense
+  :Pathogenic Defense 7:
+    :Name: Pathogenic Defense 7
+    :Type: Basic
+    :Body Index: '1.4'
+    :Price: '168000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.5'
+    :Page: mm.68
+    :Stats: {}
+    :Base: Pathogenic Defense
+  :Pathogenic Defense 8:
+    :Name: Pathogenic Defense 8
+    :Type: Basic
+    :Body Index: '1.6'
+    :Price: '192000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.5'
+    :Page: mm.68
+    :Stats: {}
+    :Base: Pathogenic Defense
+  :Pathogenic Defense 9:
+    :Name: Pathogenic Defense 9
+    :Type: Basic
+    :Body Index: '1.8'
+    :Price: '216000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.5'
+    :Page: mm.68
+    :Stats: {}
+    :Base: Pathogenic Defense
+  :Platelet Factory:
+    :Name: Platelet Factory
+    :Type: Basic
+    :Body Index: '0.4'
+    :Price: '30000'
+    :Legality: Legal
+    :Avail: 5/8 days
+    :Index: l.5
+    :Page: mm.68
+  :Suprathyroid Gland:
+    :Name: Suprathyroid Gland
+    :Type: Basic
+    :Body Index: '1.4'
+    :Price: '50000'
+    :Legality: 6P-Q
+    :Avail: 8/12 days
+    :Index: '2.5'
+    :Page: mm.69
+    :Conflicts: Metabolic Arrester
+    :Stats:
+      :attributes:
+        :Body:
+          :BM: 1
+        :Quickness:
+          :BM: 1
+        :Strenght:
+          :BM: 1
+      :derived:
+        :Reaction:
+          :CBM: 1
+  :Symbiotes 1:
+    :Name: Symbiotes 1
+    :Type: Basic
+    :Body Index: '0.4'
+    :Price: '15000'
+    :Legality: Legal
+    :Avail: 5/10 days
+    :Index: '1.0'
+    :Page: mm.69
+    :Stats: {}
+    :Base: Symbiotes
+  :Symbiotes 2:
+    :Name: Symbiotes 2
+    :Type: Basic
+    :Body Index: '0.7'
+    :Price: '35000'
+    :Legality: Legal
+    :Avail: 5/10 days
+    :Index: '1.0'
+    :Page: mm.69
+    :Stats: {}
+    :Base: Symbiotes
+  :Symbiotes 3:
+    :Name: Symbiotes 3
+    :Type: Basic
+    :Body Index: '1.0'
+    :Price: '60000'
+    :Legality: Legal
+    :Avail: 5/10 days
+    :Index: '1.0'
+    :Page: mm.69
+    :Stats: {}
+    :Base: Symbiotes
+  :Synthacardium 1:
+    :Name: Synthacardium 1
+    :Type: Basic
+    :Body Index: '0.2'
+    :Price: '6000'
+    :Legality: Legal
+    :Avail: 4/10 days
+    :Index: '1.5'
+    :Page: mm.70
+    :Stats: {}
+    :Base: Synthacardium
+  :Synthacardium 2:
+    :Name: Synthacardium 2
+    :Type: Basic
+    :Body Index: '0.3'
+    :Price: '15000'
+    :Legality: Legal
+    :Avail: 4/10 days
+    :Index: '1.5'
+    :Page: mm.70
+    :Stats: {}
+    :Base: Synthacardium
+  :Tailored Pheromones 1:
+    :Name: Tailored Pheromones 1
+    :Type: Basic
+    :Body Index: '0.4'
+    :Price: '20000'
+    :Legality: Legal
+    :Avail: 12/14 days
+    :Index: '2.0'
+    :Page: mm.70
+    :Stats:
+      :attributes:
+        :Charisma:
+          :BM: 1
+    :Base: Tailored Pheromones
+  :Tailored Pheromones 2:
+    :Name: Tailored Pheromones 2
+    :Type: Basic
+    :Body Index: '0.6'
+    :Price: '45000'
+    :Legality: Legal
+    :Avail: 12/14 days
+    :Index: '2.0'
+    :Page: mm.70
+    :Stats:
+      :attributes:
+        :Charisma:
+          :BM: 2
+    :Base: Tailored Pheromones
+  :Toxin Extractor 1:
+    :Name: Toxin Extractor 1
+    :Type: Basic
+    :Body Index: '0.4'
+    :Price: '45000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Toxin Extractor
+  :Toxin Extractor 2:
+    :Name: Toxin Extractor 2
+    :Type: Basic
+    :Body Index: '0.8'
+    :Price: '90000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Toxin Extractor
+  :Toxin Extractor 3:
+    :Name: Toxin Extractor 3
+    :Type: Basic
+    :Body Index: '1.2'
+    :Price: '125000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Toxin Extractor
+  :Toxin Extractor 4:
+    :Name: Toxin Extractor 4
+    :Type: Basic
+    :Body Index: '1.6'
+    :Price: '170000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Toxin Extractor
+  :Toxin Extractor 5:
+    :Name: Toxin Extractor 5
+    :Type: Basic
+    :Body Index: '2.0'
+    :Price: '215000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Toxin Extractor
+  :Toxin Extractor 6:
+    :Name: Toxin Extractor 6
+    :Type: Basic
+    :Body Index: '2.4'
+    :Price: '260000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Toxin Extractor
+  :Tracheal Filter 1:
+    :Name: Tracheal Filter 1
+    :Type: Basic
+    :Body Index: '0.4'
+    :Price: '60000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Tracheal Filter
+  :Tracheal Filter 2:
+    :Name: Tracheal Filter 2
+    :Type: Basic
+    :Body Index: '0.8'
+    :Price: '120000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Tracheal Filter
+  :Tracheal Filter 3:
+    :Name: Tracheal Filter 3
+    :Type: Basic
+    :Body Index: '1.2'
+    :Price: '180000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Tracheal Filter
+  :Tracheal Filter 4:
+    :Name: Tracheal Filter 4
+    :Type: Basic
+    :Body Index: '1.6'
+    :Price: '240000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Tracheal Filter
+  :Tracheal Filter 5:
+    :Name: Tracheal Filter 5
+    :Type: Basic
+    :Body Index: '2.0'
+    :Price: '300000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Tracheal Filter
+  :Tracheal Filter 6:
+    :Name: Tracheal Filter 6
+    :Type: Basic
+    :Body Index: '2.4'
+    :Price: '360000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.71
+    :Stats: {}
+    :Base: Tracheal Filter
+  :Cerebral Booster 1:
+    :Name: Cerebral Booster 1
+    :Type: Cultured
+    :Body Index: '0.4'
+    :Price: '50000'
+    :Legality: Legal
+    :Avail: 6/14 days
+    :Index: '2.0'
+    :Page: mm.72
+    :Stats:
+      :attributes:
+        :Intelligence:
+          :BM: 1
+      :special:
+        :Taskpool: 1
+    :Base: Cerebral Booster
+  :Cerebral Booster 2:
+    :Name: Cerebral Booster 2
+    :Type: Cultured
+    :Body Index: '0.8'
+    :Price: '110000'
+    :Legality: Legal
+    :Avail: 6/14 days
+    :Index: '2.0'
+    :Page: mm.72
+    :Stats:
+      :attributes:
+        :Intelligence:
+          :BM: 1
+      :special: :Taskpool+2
+    :Base: Cerebral Booster
+  :Damage Compensator 1:
+    :Name: Damage Compensator 1
+    :Type: Cultured
+    :Body Index: '0.2'
+    :Price: '25000'
+    :Legality: 6P-N
+    :Avail: 6/6 days
+    :Index: '2.5'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Damage Compensator
+  :Damage Compensator 2:
+    :Name: Damage Compensator 2
+    :Type: Cultured
+    :Body Index: '0.4'
+    :Price: '50000'
+    :Legality: 6P-N
+    :Avail: 6/6 days
+    :Index: '2.5'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Damage Compensator
+  :Damage Compensator 3:
+    :Name: Damage Compensator 3
+    :Type: Cultured
+    :Body Index: '0.6'
+    :Price: '150000'
+    :Legality: 6P-N
+    :Avail: 10/6 days
+    :Index: '2.5'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Damage Compensator
+  :Damage Compensator 4:
+    :Name: Damage Compensator 4
+    :Type: Cultured
+    :Body Index: '0.8'
+    :Price: '200000'
+    :Legality: 6P-N
+    :Avail: 10/6 days
+    :Index: '2.5'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Damage Compensator
+  :Damage Compensator 5:
+    :Name: Damage Compensator 5
+    :Type: Cultured
+    :Body Index: '1.0'
+    :Price: '250000'
+    :Legality: 6P-N
+    :Avail: 10/6 days
+    :Index: '2.5'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Damage Compensator
+  :Damage Compensator 6:
+    :Name: Damage Compensator 6
+    :Type: Cultured
+    :Body Index: '1.2'
+    :Price: '600000'
+    :Legality: 6P-N
+    :Avail: 12/6 days
+    :Index: '2.5'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Damage Compensator
+  :Damage Compensator 7:
+    :Name: Damage Compensator 7
+    :Type: Cultured
+    :Body Index: '1.4'
+    :Price: '700000'
+    :Legality: 6P-N
+    :Avail: 12/6 days
+    :Index: '2.5'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Damage Compensator
+  :Damage Compensator 8:
+    :Name: Damage Compensator 8
+    :Type: Cultured
+    :Body Index: '1.6'
+    :Price: '800000'
+    :Legality: 6P-N
+    :Avail: 12/6 days
+    :Index: '2.5'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Damage Compensator
+  :Damage Compensator 9:
+    :Name: Damage Compensator 9
+    :Type: Cultured
+    :Body Index: '1.8'
+    :Price: '900000'
+    :Legality: 6P-N
+    :Avail: 12/6 days
+    :Index: '2.5'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Damage Compensator
+  :Mnemonic Enhancer 1:
+    :Name: Mnemonic Enhancer 1
+    :Type: Cultured
+    :Body Index: '0.2'
+    :Price: '15000'
+    :Legality: Legal
+    :Avail: 6/7 days
+    :Index: '1.0'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Mnemonic Enhancer
+  :Mnemonic Enhancer 2:
+    :Name: Mnemonic Enhancer 2
+    :Type: Cultured
+    :Body Index: '0.4'
+    :Price: '30000'
+    :Legality: Legal
+    :Avail: 6/7 days
+    :Index: '1.0'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Mnemonic Enhancer
+  :Mnemonic Enhancer 3:
+    :Name: Mnemonic Enhancer 3
+    :Type: Cultured
+    :Body Index: '0.6'
+    :Price: '45000'
+    :Legality: Legal
+    :Avail: 6/7 days
+    :Index: '1.0'
+    :Page: mm.72
+    :Stats: {}
+    :Base: Mnemonic Enhancer
+  :Pain Editor:
+    :Name: Pain Editor
+    :Type: Cultured
+    :Body Index: '0.6'
+    :Price: '60000'
+    :Legality: 6P-N
+    :Avail: 6/6 days
+    :Index: '1.2'
+    :Page: mm.73
+  :Reflex Recorder Base Skill:
+    :Name: Reflex Recorder Base Skill
+    :Type: Cultured
+    :Body Index: '0.25'
+    :Price: '25000'
+    :Legality: Legal
+    :Avail: 8/6 days
+    :Index: '1.5'
+    :Page: mm.74
+    :Stats: {}
+    :Base: Reflex Recorder
+  :Redlex Recorder Specialization:
+    :Name: Redlex Recorder Specialization
+    :Type: Cultured
+    :Body Index: '0.1'
+    :Price: '10000'
+    :Legality: Legal
+    :Avail: 5/6 days
+    :Index: '1.5'
+    :Page: mm.74
+    :Stats: {}
+    :Base: Reflex Recorder
+  :Sleep Regulator:
+    :Name: Sleep Regulator
+    :Type: Cultured
+    :Body Index: '0.3'
+    :Price: '20000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.74
+  :Synaptic Accelerator 1:
+    :Name: Synaptic Accelerator 1
+    :Type: Cultured
+    :Body Index: '0.4'
+    :Price: '75000'
+    :Legality: 5P-Q
+    :Avail: 6/12 days
+    :Index: '2.0'
+    :Page: mm.74
+    :Conflicts: Wired Reflexes,Move by Wire
+    :Stats:
+      :derived:
+        :Initiative:
+          :CBM: 1
+    :Base: Synaptic Acceleator
+  :Synaptic Accelerator 2:
+    :Name: Synaptic Accelerator 2
+    :Type: Cultured
+    :Body Index: '1.0'
+    :Price: '200000'
+    :Legality: 5P-Q
+    :Avail: 6/12 days
+    :Index: '2.0'
+    :Page: mm.74
+    :Conflicts: Wired Reflexes,Move by Wire
+    :Stats:
+      :derived:
+        :Initiative:
+          :CBM: 2
+    :Base: Synaptic Acceleator
+  :Thermosense Organs:
+    :Name: Thermosense Organs
+    :Type: Cultured
+    :Body Index: '0.5'
+    :Price: '25000'
+    :Legality: Legal
+    :Avail: 10/12 days
+    :Index: '2.0'
+    :Page: mm.75
+    :Stats:
+      :senses:
+        :Thermosense: :Natural
+  :Trauma Damper:
+    :Name: Trauma Damper
+    :Type: Cultured
+    :Body Index: '0.4'
+    :Price: '40000'
+    :Legality: 6P-BA
+    :Avail: 6/8 days
+    :Index: '2.0'
+    :Page: mm.75
+  :Chloroplast Skin:
+    :Name: Chloroplast Skin
+    :Type: Cosmetic
+    :Body Index: '0.2'
+    :Price: '10000'
+    :Legality: Legal
+    :Avail: 6/8 days
+    :Index: '2.0'
+    :Page: mm.76
+    :Conflicts: Dermal Plating,Dermal Sheathing,Orthoskin,Skin Pigmentation
+  :Clean Metabolism:
+    :Name: Clean Metabolism
+    :Type: Cosmetic
+    :Body Index: '0.2'
+    :Price: '10000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.76
+    :Conflicts: Digestive Expansion
+  :Dietware:
+    :Name: Dietware
+    :Type: Cosmetic
+    :Body Index: '0.2'
+    :Price: '10000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.76
+    :Conflicts: Digestive Expansion
+  :Hair Growth:
+    :Name: Hair Growth
+    :Type: Cosmetic
+    :Body Index: '0.1'
+    :Price: '2000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.76
+  :Scent Glands:
+    :Name: Scent Glands
+    :Type: Cosmetic
+    :Body Index: '0.1'
+    :Price: '5000'
+    :Legality: Legal
+    :Avail: 4/4 days
+    :Index: '1.0'
+    :Page: mm.76
+  :Sensitive Skin:
+    :Name: Sensitive Skin
+    :Type: Cosmetic
+    :Body Index: '0.2'
+    :Price: '10000'
+    :Legality: Legal
+    :Avail: 6/6 days
+    :Index: '2.0'
+    :Page: mm.76
+    :Conflicts: Orthoskin,Dermal Plating,Dermal Sheathing
+  :Skin Pigmentation:
+    :Name: Skin Pigmentation
+    :Type: Cosmetic
+    :Body Index: '0.1'
+    :Price: '5000'
+    :Legality: Legal
+    :Avail: 6/6 days
+    :Index: '1.0'
+    :Page: mm.76
+    :Conflicts: Chloroplast Skin
 :weapons:
   :Barton Arms Bracer:
     :Type:
@@ -9987,6 +11009,1025 @@
       :Avail: 10/1 mth
       :Index: '0.75'
       :Page: cc.4
+:edges:
+  :Adrenaline Surge:
+    :Name: Adrenaline Surge
+    :Value: '2'
+    :Description: Reroll 6s on Initiative in phsyical combat. +1 TNs in combat. Can't
+      be combined with any improved reflexes.
+    :Page: SRC.18
+  :Ambidexterity 1:
+    :Name: Ambidexterity 1
+    :Value: '2'
+    :Description: Reduce penalties for firing two guns; give bonuses for using two
+      handheld weapons.
+    :Page: CC.96
+    :Base: Ambidexterity
+  :Ambidexterity 2:
+    :Name: Ambidexterity 2
+    :Value: '4'
+    :Description: Reduce penalties for firing two guns; give bonuses for using two
+      handheld weapons.
+    :Page: CC.96
+    :Base: Ambidexterity
+  :Ambidexterity 3:
+    :Name: Ambidexterity 3
+    :Value: '6'
+    :Description: Reduce penalties for firing two guns; give bonuses for using two
+      handheld weapons.
+    :Page: CC.96
+    :Base: Ambidexterity
+  :Ambidexterity 4:
+    :Name: Ambidexterity 4
+    :Value: '8'
+    :Description: Reduce penalties for firing two guns; give bonuses for using two
+      handheld weapons.
+    :Page: CC.96
+    :Base: Ambidexterity
+  :Animal Empathy:
+    :Name: Animal Empathy
+    :Value: '2'
+    :Description: "-1 TNs to influence or control an animal."
+    :Page: SRC.25
+  :Aptitude:
+    :Name: Aptitude
+    :Value: '4'
+    :Description: "-1 TNs for selected skill."
+    :Page: SRC.18
+    :Multi: 'true'
+  :Astral Chameleon:
+    :Name: Astral Chameleon
+    :Value: '2'
+    :Description: "+2 to TNs to assense character's astral signature."
+    :Page: SRC.28
+  :Attentive:
+    :Name: Attentive
+    :Value: '1'
+    :Description: Character never makes silly mistakes and rarely overlooks something
+      small. No combat benefits.
+    :Page: TSS.6
+  :Blandness:
+    :Name: Blandness
+    :Value: '2'
+    :Description: "+1 TNs to track character."
+    :Page: SRC.25
+    :Conflicts: Distinctive Style
+  :Bonus Attribute Point:
+    :Name: Bonus Attribute Point
+    :Value: '2'
+    :Description: Extra point in one attribute. Can allow 7 points in an attribute
+      at start. Limit one per character.
+    :Page: SRC.17
+  :Bravery:
+    :Name: Bravery
+    :Value: '1'
+    :Description: "-1 TNs to resist fear and intimidation."
+    :Page: SRC.22
+  :Codeslinger:
+    :Name: Codeslinger
+    :Value: '2'
+    :Description: "+1 die for one specific Matrix system operation."
+    :Page: SRC.28
+  :College Education:
+    :Name: College Education
+    :Value: '1'
+    :Description: TN penalty for defaulting reduced by 1 for Academic knowledge skills.
+    :Page: SRC.22
+    :Conflicts: Technical School Education,Illiterate,Uneducated
+  :Common Sense:
+    :Name: Common Sense
+    :Value: '2'
+    :Description: GM must warn you if you're about to win a Darwin Award.
+    :Page: SRC.22
+  :Connected 1:
+    :Name: Connected 1
+    :Value: '3'
+    :Description: One contact will either buy or sell one type of merchandise either
+      with or without Street Index, whichever benefits the character more.
+    :Page: SRC.26
+    :Base: Connected
+  :Connected 2:
+    :Name: Connected 2
+    :Value: '5'
+    :Description: One contact will either buy and sell one type of merchandise either
+      with or without Street Index, whichever benefits the character more.
+    :Page: SRC.26
+    :Base: Connected
+  :Cracker:
+    :Name: Cracker
+    :Value: '4'
+    :Description: "+1 die for one specific type of Matrix system test."
+    :Page: SRC.28
+  :Daredevil:
+    :Name: Daredevil
+    :Value: '3'
+    :Description: 1 extra Karma Pool per session for use in risky actions; point may
+      not be burned.
+    :Page: SRC.29
+  :Diplomatic Immunity:
+    :Name: Diplomatic Immunity
+    :Value: '2'
+    :Description: Character cannot be arrested for, charged with, or convicted of
+      a felony or misdemeanor while abroad.
+    :Page: SotA64.32
+  :Double Jointed:
+    :Name: Double Jointed
+    :Value: '1'
+    :Description: "-1 Escape Artist TNs."
+    :Page: SRC.20
+  :Dragon Patron:
+    :Name: Dragon Patron
+    :Value: '6'
+    :Description: Offsets the 6-point Hunted flaw that all bred drakes automatically
+      get.
+    :Page: DoSW.185
+  :Exceptional Attribute:
+    :Name: Exceptional Attribute
+    :Value: '2'
+    :Description: Increase racial limit of one attribute by 1. Can allow 7 points
+      in an attribute at start. Limit one per character.
+    :Page: SRC.17
+  :Extra Contact:
+    :Name: Extra Contact
+    :Value: '1'
+    :Description: One extra level 1 contact.
+    :Page: SRC.26
+    :Multi: 'true'
+  :Focused Concentration:
+    :Name: Focused Concentration
+    :Value: '2'
+    :Description: Sustained spells only cause +1 to TNs instead of +2.
+    :Page: SRC.28
+  :Friendly Face:
+    :Name: Friendly Face
+    :Value: '1'
+    :Description: "-1 social TNs with new people."
+    :Page: SRC.26
+  :Friends Abroad:
+    :Name: Friends Abroad
+    :Value: '3'
+    :Description: One extra level 2 contact in another city or country.
+    :Page: SRC.27
+  :Friends in High Places:
+    :Name: Friends in High Places
+    :Value: '2'
+    :Description: One extra level 2 contact in a position of power.
+    :Page: SRC.27
+    :Multi: 'true'
+  :Good Looking and Knows It:
+    :Name: Good Looking and Knows It
+    :Value: '1'
+    :Description: "-1 social TNs with same sex, -2 social TNs with opposite sex."
+    :Page: SRC.17
+    :Conflicts: Ugly and Doesn't Care
+  :Good Reputation 1:
+    :Name: Good Reputation 1
+    :Value: '1'
+    :Description: "-1 to social TNs when reputation is known."
+    :Page: SRC.27
+    :Base: Good Reputation
+    :Conflicts: Bad Reputation
+  :Good Reputation 2:
+    :Name: Good Reputation 2
+    :Value: '2'
+    :Description: "-2 to social TNs when reputation is known."
+    :Page: SRC.27
+    :Base: Good Reputation
+    :Conflicts: Bad Reputation
+  :High Pain Tolerance 1:
+    :Name: High Pain Tolerance 1
+    :Value: '2'
+    :Description: Ignore 1 box of Mental OR Physical damage per level.
+    :Page: SRC.20
+    :Base: High Pain Tolerance
+    :Conflicts: Low Pain Tolerance
+  :High Pain Tolerance 2:
+    :Name: High Pain Tolerance 2
+    :Value: '4'
+    :Description: Ignore 1 box of Mental OR Physical damage per level.
+    :Page: SRC.20
+    :Base: High Pain Tolerance
+    :Conflicts: Low Pain Tolerance
+  :High Pain Tolerance 3:
+    :Name: High Pain Tolerance 3
+    :Value: '6'
+    :Description: Ignore 1 box of Mental OR Physical damage per level.
+    :Page: SRC.20
+    :Base: High Pain Tolerance
+    :Conflicts: Low Pain Tolerance
+  :High Pain Tolerance 4:
+    :Name: High Pain Tolerance 4
+    :Value: '8'
+    :Description: Ignore 1 box of Mental OR Physical damage per level.
+    :Page: SRC.20
+    :Base: High Pain Tolerance
+    :Conflicts: Low Pain Tolerance
+  :High Pain Tolerance 5:
+    :Name: High Pain Tolerance 5
+    :Value: '10'
+    :Description: Ignore 1 box of Mental OR Physical damage per level.
+    :Page: SRC.20
+    :Base: High Pain Tolerance
+    :Conflicts: Low Pain Tolerance
+  :High Pain Tolerance 6:
+    :Name: High Pain Tolerance 6
+    :Value: '12'
+    :Description: Ignore 1 box of Mental OR Physical damage per level.
+    :Page: SRC.20
+    :Base: High Pain Tolerance
+    :Conflicts: Low Pain Tolerance
+  :Home Ground:
+    :Name: Home Ground
+    :Value: '2'
+    :Description: "-1 TN Active Skills and -2 TN Knowledge skills in chosen territory."
+    :Page: SRC.18
+  :Human-Looking:
+    :Name: Human-Looking
+    :Value: '1'
+    :Description: Ork, Dwarf, or Elf can pass for a human most of the time. No metavariants.
+    :Page: SRC.27
+  :Lightning Reflexes 1:
+    :Name: Lightning Reflexes 1
+    :Value: '2'
+    :Description: "+1 Reaction die for surprise tests"
+    :Page: SRC.20
+    :Base: Lightning Reflexes
+  :Lightning Reflexes 2:
+    :Name: Lightning Reflexes 2
+    :Value: '4'
+    :Description: "+2 Reaction die for surprise tests"
+    :Page: SRC.20
+    :Base: Lightning Reflexes
+  :Lightning Reflexes 3:
+    :Name: Lightning Reflexes 3
+    :Value: '6'
+    :Description: "+3 Reaction die for surprise tests"
+    :Page: SRC.20
+    :Base: Lightning Reflexes
+  :Magic Resistance 1:
+    :Name: Magic Resistance 1
+    :Value: '1'
+    :Description: "+1 die to spell resistance,never considered a voluntary target
+      for spells."
+    :Page: SRC.28
+    :Base: Magic Resistance
+  :Magic Resistance 2:
+    :Name: Magic Resistance 2
+    :Value: '2'
+    :Description: "+2 die to spell resistance,never considered a voluntary target
+      for spells."
+    :Page: SRC.28
+    :Base: Magic Resistance
+  :Magic Resistance 3:
+    :Name: Magic Resistance 3
+    :Value: '3'
+    :Description: "+3 die to spell resistance,never considered a voluntary target
+      for spells."
+    :Page: SRC.28
+    :Base: Magic Resistance
+  :Magic Resistance 4:
+    :Name: Magic Resistance 4
+    :Value: '4'
+    :Description: "+4 die to spell resistance,never considered a voluntary target
+      for spells."
+    :Page: SRC.28
+    :Base: Magic Resistance
+  :Natural Hardening:
+    :Name: Natural Hardening
+    :Value: '4'
+    :Description: Gain 1 point of innate Hardening, cumulative with deck hardening.
+    :Page: SRC.29
+  :Natural Immunity Natural:
+    :Name: Natural Immunity Natural
+    :Value: '1'
+    :Description: Immunity to one natural (1 point) drug or toxin.
+    :Page: SRC.20
+    :Base: Natural Immunity
+    :Multi: 'true'
+  :Natural Immunity Madmade:
+    :Name: Natural Immunity Madmade
+    :Value: '3'
+    :Description: Immunity to one man-made (3 point) drug or toxin.
+    :Page: SRC.20
+    :Base: Natural Immunity
+    :Multi: 'true'
+  :Night Vision:
+    :Name: Night Vision
+    :Value: 2/1(R,D)
+    :Description: Gain natural Low-Light Vision. Riggers and deckers purchase this
+      for 1 point.
+    :Page: SRC.20
+    :Conflicts: Night Blindness,Blind
+  :Perceptive:
+    :Name: Perceptive
+    :Value: '3'
+    :Description: "-1 TNs for perception tests."
+    :Page: SRC.23
+  :Perfect Time:
+    :Name: Perfect Time
+    :Value: '1'
+    :Description: Perfect timing, and always know the current time, to the minute.
+    :Page: SRC.23
+  :Photographic Memory:
+    :Name: Photographic Memory
+    :Value: '3'
+    :Description: Never forget details; GM must remind you if you do.
+    :Page: SRC.24
+  :Pirate Family 1:
+    :Name: Pirate Family 1
+    :Value: '1'
+    :Description: Have many Friends of Friends in ports around the world. Contacts
+      hurt as often as help.
+    :Page: SRC.30
+    :Base: Pirate Family
+  :Pirate Family 2:
+    :Name: Pirate Family 2
+    :Value: '3'
+    :Description: Have many Friends of Friends in ports around the world. Contacts
+      generally helpful.
+    :Page: SRC.30
+    :Base: Pirate Family
+  :Poor Link:
+    :Name: Poor Link
+    :Value: '2'
+    :Description: "+2 TN to establish ritual link on character."
+    :Page: SRC.28
+  :Quick Healer:
+    :Name: Quick Healer
+    :Value: '2'
+    :Description: "-2 healing TNs."
+    :Page: SRC.21
+  :Resistance to Pathogens:
+    :Name: Resistance to Pathogens
+    :Value: '1'
+    :Description: "+1 Body against diseases."
+    :Page: SRC.21
+  :Resistance to Toxins:
+    :Name: Resistance to Toxins
+    :Value: '1'
+    :Description: "+1 Body against poisons."
+    :Page: SRC.21
+  :Sense of Direction:
+    :Name: Sense of Direction
+    :Value: '1'
+    :Description: Never get lost, and always able to find North.
+    :Page: SRC.24
+  :Spike Resistance 1:
+    :Name: Spike Resistance 1
+    :Value: '2'
+    :Description: "+1 Willpower to resist Black ICE or Dumpshock."
+    :Page: SRC.25
+    :Base: Spike Resistance
+  :Spike Resistance 2:
+    :Name: Spike Resistance 2
+    :Value: '4'
+    :Description: "+2 Willpower to resist Black ICE or Dumpshock."
+    :Page: SRC.25
+    :Base: Spike Resistance
+  :Spirit Affinity:
+    :Name: Spirit Affinity
+    :Value: '2'
+    :Description: One type of nature spirit is fond of character, and will do favors
+      for and avoid hurting them.
+    :Page: SRC.28
+  :Technical School Education:
+    :Name: Technical School Education
+    :Value: '1'
+    :Description: TN penalty for defaulting reduced by 1 for Background knowledge
+      skills.
+    :Page: SRC.25
+    :Conflicts: College Education,Illiterate,Uneducated
+  :Toughness:
+    :Name: Toughness
+    :Value: '3'
+    :Description: "+1 Body for damage resistance."
+    :Page: SRC.21
+  :Vehicle Empathy:
+    :Name: Vehicle Empathy
+    :Value: '2'
+    :Description: Handling TNs reduced by 1.
+    :Page: SRC.32
+  :Water Sprite 1:
+    :Name: Water Sprite 1
+    :Value: '1'
+    :Description: 'Various improvements to swimming: choose 1'
+    :Page: SRC.21
+    :Base: Water Sprite
+  :Water Sprite 2:
+    :Name: Water Sprite 2
+    :Value: '2'
+    :Description: 'Various improvements to swimming: choose 2'
+    :Page: SRC.21
+    :Base: Water Sprite
+  :Water Sprite 3:
+    :Name: Water Sprite 3
+    :Value: '3'
+    :Description: 'Various improvements to swimming: choose 3'
+    :Page: SRC.21
+    :Base: Water Sprite
+  :Water Sprite 4:
+    :Name: Water Sprite 4
+    :Value: '4'
+    :Description: 'Various improvements to swimming: choose 4'
+    :Page: SRC.21
+    :Base: Water Sprite
+  :Water Sprite 5:
+    :Name: Water Sprite 5
+    :Value: '5'
+    :Description: 'Various improvements to swimming: choose 5'
+    :Page: SRC.21
+    :Base: Water Sprite
+  :Will to Live 1:
+    :Name: Will to Live 1
+    :Value: '1'
+    :Description: One additional damage overflow box
+    :Page: SRC.22
+    :Base: Will to Live
+  :Will to Live 2:
+    :Name: Will to Live 2
+    :Value: '2'
+    :Description: Two additional damage overflow boxes
+    :Page: SRC.22
+    :Base: Will to Live
+  :Will to Live 3:
+    :Name: Will to Live 3
+    :Value: '3'
+    :Description: Three additional damage overflow boxes
+    :Page: SRC.22
+    :Base: Will to Live
+:flaws:
+  :Allergy Uncommon Mild:
+    :Name: Allergy Uncommon Mild
+    :Value: '2'
+    :Description: Substance is rare(e.g. silver/gold),+1 TN while in contact
+    :Page: SRC.19
+    :Base: Allergy
+    :Multi: 'true'
+  :Allergy Common Mild:
+    :Name: Allergy Common Mild
+    :Value: '3'
+    :Description: Substance is common(e.g. plastic/sunlight),+1 TN while in contact
+    :Page: SRC.19
+    :Base: Allergy
+    :Multi: 'true'
+  :Allergy Uncommon Moderate:
+    :Name: Allergy Uncommon Moderate
+    :Value: '3'
+    :Description: Substance is rare(e.g. silver/gold),+2 to power of weapons made
+      from substance
+    :Page: SRC.19
+    :Base: Allergy
+    :Multi: 'true'
+  :Allergy Common Moderate:
+    :Name: Allergy Common Moderate
+    :Value: '4'
+    :Description: Substance is common(e.g. plastic/sunlight),+2 to power of weapons
+      made from substance
+    :Page: SRC.19
+    :Base: Allergy
+    :Multi: 'true'
+  :Allergy Uncommon Severe:
+    :Name: Allergy Uncommon Severe
+    :Value: '4'
+    :Description: Substance is rare(e.g. silver/gold),Light wound every minute, +2
+      to the power of weapons
+    :Page: SRC.19
+    :Base: Allergy
+    :Multi: 'true'
+  :Allergy Common Severe:
+    :Name: Allergy Common Severe
+    :Value: '5'
+    :Description: Substance is common(e.g. plastic/sunlight),Light wound every minute,
+      +2 to the power of weapons
+    :Page: SRC.19
+    :Base: Allergy
+    :Multi: 'true'
+  :Amnesia 1:
+    :Name: Amnesia 1
+    :Value: '2'
+    :Description: Does not recall who he is, retains skills, abilities
+    :Page: SRC.22
+    :Base: Amnesia
+  :Amnesia 2:
+    :Name: Amnesia 2
+    :Value: '5'
+    :Description: Does not recall anything including skills/abilities, gamemaster
+      creates char
+    :Page: SRC.22
+    :Base: Amnesia
+  :Astral Impressions:
+    :Name: Astral Impressions
+    :Value: '2'
+    :Description: "-2 to TNs to assense character's astral signature."
+    :Page: SRC.28
+  :Bad Karma:
+    :Name: Bad Karma
+    :Value: '5'
+    :Description: Double karma needed to gain a karma pool point.
+    :Page: SRC.29
+  :Bad Reputation 1:
+    :Name: Bad Reputation 1
+    :Value: '1'
+    :Description: "+1 to social TNs when reputation is known."
+    :Page: SRC.25
+    :Base: Bad Reputation
+    :Conflicts: Good Reputation
+  :Bad Reputation 2:
+    :Name: Bad Reputation 2
+    :Value: '2'
+    :Description: "+2 to social TNs when reputation is known."
+    :Page: SRC.25
+    :Base: Bad Reputation
+    :Conflicts: Good Reputation
+  :Bad Reputation 3:
+    :Name: Bad Reputation 3
+    :Value: '3'
+    :Description: "+3 to social TNs when reputation is known."
+    :Page: SRC.25
+    :Base: Bad Reputation
+    :Conflicts: Good Reputation
+  :Bad Reputation 4:
+    :Name: Bad Reputation 4
+    :Value: '4'
+    :Description: "+4 to social TNs when reputation is known."
+    :Page: SRC.25
+    :Base: Bad Reputation
+    :Conflicts: Good Reputation
+  :Biorejection:
+    :Name: Biorejection
+    :Value: 5/2(M)
+    :Description: Can't have any cyberware. Awakened characters buy this for 2.
+    :Page: SRC.19
+    :Conflicts: Sensitive System
+  :Blind:
+    :Name: Blind
+    :Value: 6/2(M)
+    :Description: No physical vision; astral sight still works. Awakened characters
+      buy this for 2.
+    :Page: SRC.19
+    :Conflicts: Night Blindness,Night Vision
+  :Borrowed Time:
+    :Name: Borrowed Time
+    :Value: '6'
+    :Description: Character dies in 3d6 months.
+    :Page: SRC.19
+  :Braggart:
+    :Name: Braggart
+    :Value: '1'
+    :Description: Can't resist talking about jobs, even if secrecy is needed.
+    :Page: SRC.25
+  :Choker:
+    :Name: Choker
+    :Value: '2'
+    :Description: "-1 die for one specific type of Matrix system test."
+    :Page: SRC.28
+  :Codeblock:
+    :Name: Codeblock
+    :Value: '1'
+    :Description: "-1 die for one specific Matrix system operation."
+    :Page: SRC.28
+  :Color Blind:
+    :Name: Color Blind
+    :Value: '1'
+    :Description: No color vision.
+    :Page: SRC.19
+    :Conflicts: Blind
+  :Combat Monster:
+    :Name: Combat Monster
+    :Value: '1'
+    :Description: Go berserk at the beginning of combat, try to fight for three turns.
+    :Page: SRC.22
+    :Conflicts: Combat Paralysis
+  :Combat Paralysis:
+    :Name: Combat Paralysis
+    :Value: '4'
+    :Description: Always roll lowest possible initiative.
+    :Page: SRC.22
+    :Conflicts: Combat Monster
+  :Compulsion 1:
+    :Name: Compulsion 1
+    :Value: '1'
+    :Description: Have a habit with little control over it. Mildly annoying
+    :Page: SRC.22
+    :Base: Compulsion
+    :Multi: 'true'
+  :Compulsion 2:
+    :Name: Compulsion 2
+    :Value: '2'
+    :Description: Have a habit with little control over it. Very annoying
+    :Page: SRC.22
+    :Base: Compulsion
+    :Multi: 'true'
+  :Compulsion 3:
+    :Name: Compulsion 3
+    :Value: '3'
+    :Description: Have a habit with little control over it. Puts charcter/team at
+      risk
+    :Page: SRC.22
+    :Base: Compulsion
+    :Multi: 'true'
+  :Compulsion 4:
+    :Name: Compulsion 4
+    :Value: '4'
+    :Description: Have a habit with little control over it. Frequently puts character/team
+      at high risk
+    :Page: SRC.22
+    :Base: Compulsion
+    :Multi: 'true'
+  :Compulsion 5:
+    :Name: Compulsion 5
+    :Value: '5'
+    :Description: Have a habit with little control over it. you're going to die
+    :Page: SRC.22
+    :Base: Compulsion
+    :Multi: 'true'
+  :Computer Illiterate:
+    :Name: Computer Illiterate
+    :Value: '3'
+    :Description: "+1 TNs to all tests relying on technology."
+    :Page: SRC.18
+  :Cranial Bomb:
+    :Name: Cranial Bomb
+    :Value: '6'
+    :Description: Implanted with a cranial bomb.
+    :Page: SRC.29
+  :Cursed Karma:
+    :Name: Cursed Karma
+    :Value: '6'
+    :Description: 1 in 6 chance that karma spent will have opposite effect.
+    :Page: SRC.29
+  :Dark Secret:
+    :Name: Dark Secret
+    :Value: '1'
+    :Description: Have a secret that will cause great trouble if exposed.
+    :Page: SRC.26
+  :Day Job 1:
+    :Name: Day Job 1
+    :Value: '1'
+    :Description: 1000 monthly salary, 10 hours per week
+    :Page: SRC.26
+    :Base: Day Job
+  :Day Job 2:
+    :Name: Day Job 2
+    :Value: '2'
+    :Description: 2500 monthly salary, 20 hours per week
+    :Page: SRC.26
+    :Base: Day Job
+  :Day Job 3:
+    :Name: Day Job 3
+    :Value: '3'
+    :Description: 5000 monthly salary, 40 hours per week
+    :Page: SRC.26
+    :Base: Day Job
+  :Deaf:
+    :Name: Deaf
+    :Value: 3/1(D)
+    :Description: No physical hearing; deckers buy this at 1 if it doesn't affect
+      decking.
+    :Page: SRC.19
+  :Dependent 1:
+    :Name: Dependent 1
+    :Value: '1'
+    :Description: Responsible for someone else's well-being. Value depends on difficulty
+      this causes.
+    :Page: SRC.26
+    :Base: Dependent
+  :Dependent 2:
+    :Name: Dependent 2
+    :Value: '2'
+    :Description: Responsible for someone else's well-being. Value depends on difficulty
+      this causes.
+    :Page: SRC.26
+    :Base: Dependent
+  :Dependent 3:
+    :Name: Dependent 3
+    :Value: '3'
+    :Description: Responsible for someone else's well-being. Value depends on difficulty
+      this causes.
+    :Page: SRC.26
+    :Base: Dependent
+  :Dependent 4:
+    :Name: Dependent 4
+    :Value: '4'
+    :Description: Responsible for someone else's well-being. Value depends on difficulty
+      this causes.
+    :Page: SRC.26
+    :Base: Dependent
+  :Dependent 5:
+    :Name: Dependent 5
+    :Value: '5'
+    :Description: Responsible for someone else's well-being. Value depends on difficulty
+      this causes.
+    :Page: SRC.26
+    :Base: Dependent
+  :Distinctive Style:
+    :Name: Distinctive Style
+    :Value: '1'
+    :Description: "-1 TNs to track character."
+    :Page: SRC.26
+    :Conflicts: Blandness
+  :Elf Poser:
+    :Name: Elf Poser
+    :Value: '1'
+    :Description: Human pretends to be an elf. Social penalties if found out.
+    :Page: SRC.26
+  :Extra Enemy:
+    :Name: Extra Enemy
+    :Value: '1'
+    :Description: One extra enemy.
+    :Page: SRC.26
+    :Base: 'true'
+  :Flashbacks:
+    :Name: Flashbacks
+    :Value: '4'
+    :Description: Trigger condition leaves character incapacitated for 1 minute.
+    :Page: SRC.22
+  :Gremlins 1:
+    :Name: Gremlins 1
+    :Value: '1'
+    :Description: Electronic and mechanical devices prone to failure(2 on 2d6), +1
+      TN or -1 Rating, simple action to restore
+    :Page: SRC.29
+    :Base: Gremlins
+  :Gremlins 2:
+    :Name: Gremlins 2
+    :Value: '2'
+    :Description: Electronic and mechanical devices prone to failure(2 on 2d6), does
+      not work, simple action to restore
+    :Page: SRC.29
+    :Base: Gremlins
+  :Gremlins 3:
+    :Name: Gremlins 3
+    :Value: '3'
+    :Description: Electronic and mechanical devices prone to failure(2 on 2d6), +2
+      TN or -2 Rating, must be repaired
+    :Page: SRC.29
+    :Base: Gremlins
+  :Gremlins 4:
+    :Name: Gremlins 4
+    :Value: '4'
+    :Description: Electronic and mechanical devices prone to failure(2 on 2d6), does
+      not work, must be repaired
+    :Page: SRC.29
+    :Base: Gremlins
+  :Hung Out to Dry:
+    :Name: Hung Out to Dry
+    :Value: '4'
+    :Description: Character's contacts will no longer speak to them.
+    :Page: SRC.27
+  :Hunted 1:
+    :Name: Hunted 1
+    :Value: '2'
+    :Description: Rank 3 Enemy or add 1 point to an existing enemy
+    :Page: SRC.30
+    :Base: Hunted
+  :Hunted 2:
+    :Name: Hunted 2
+    :Value: '4'
+    :Description: Rank 4 Enemy or add 2 points to an existing enemy
+    :Page: SRC.30
+    :Base: Hunted
+  :Hunted 3:
+    :Name: Hunted 3
+    :Value: '6'
+    :Description: Rank 5 Enemy or add 3 points to an existing enemy
+    :Page: SRC.30
+    :Base: Hunted
+  :Illiterate:
+    :Name: Illiterate
+    :Value: '3'
+    :Description: Can't read. Rudimentary knowledge skills, no read/write.
+    :Page: SRC.23
+    :Conflicts: College Education,Technical School Education,Uneducated
+  :Impulsive:
+    :Name: Impulsive
+    :Value: '2'
+    :Description: Prone to jumping into the action without thinking.
+    :Page: SRC.23
+  :Incompetence:
+    :Name: Incompetence
+    :Value: '2'
+    :Description: "+1 TNs for selected skill."
+    :Page: SRC.18
+    :Multi: 'true'
+  :Infirm 1:
+    :Name: Infirm 1
+    :Value: '1'
+    :Description: Attribute maximums reduced by 1
+    :Page: SRC.23
+    :Base: Infirm
+  :Infirm 2:
+    :Name: Infirm 2
+    :Value: '2'
+    :Description: Attribute maximums reduced by 2
+    :Page: SRC.23
+    :Base: Infirm
+  :Infirm 3:
+    :Name: Infirm 3
+    :Value: '3'
+    :Description: Attribute maximums reduced by 3
+    :Page: SRC.23
+    :Base: Infirm
+  :Infirm 4:
+    :Name: Infirm 4
+    :Value: '4'
+    :Description: Attribute maximums reduced by 4
+    :Page: SRC.23
+    :Base: Infirm
+  :Infirm 5:
+    :Name: Infirm 5
+    :Value: '5'
+    :Description: Attribute maximums reduced by 5
+    :Page: SRC.23
+    :Base: Infirm
+  :Jack Itch:
+    :Name: Jack Itch
+    :Value: '1'
+    :Description: Difficulty staying connected to the Matrix for long periods of time.
+    :Page: SRC.28
+  :Liar:
+    :Name: Liar
+    :Value: '2'
+    :Description: Cumulative chance people think you're lying regardless of social
+      tests. Can lose contacts this way.
+    :Page: SRC.27
+  :Low Pain Tolerance:
+    :Name: Low Pain Tolerance
+    :Value: '4'
+    :Description: Wound penalties are calculated as though wounds were one level higher.
+    :Page: SRC.20
+    :Conflicts: High Pain Tolerance
+  :Mysterious Cyberware:
+    :Name: Mysterious Cyberware
+    :Value: '3'
+    :Description: Unifentified and usually harmful cyberware installed by outside
+      party.
+    :Page: SRC.30
+  :Night Blindness:
+    :Name: Night Blindness
+    :Value: 2/1(R,D)
+    :Description: Vision penalties due to darkness increased by 2. Riggers and deckers
+      purchase this for 1 point.
+    :Page: SRC.20
+  :Oblivious:
+    :Name: Oblivious
+    :Value: '2'
+    :Description: "+1 TNs for perception tests."
+    :Page: SRC.23
+  :Pacifist:
+    :Name: Pacifist
+    :Value: '2'
+    :Description: Cannot kill except in self-defense.
+    :Page: SRC.23
+    :Conflicts: Total Pacifist
+  :Paraplegic:
+    :Name: Paraplegic
+    :Value: '3'
+    :Description: Paralyzed from waist down, no cyberware cure. Half combat pool.
+    :Page: SRC.20
+    :Conflicts: Quadriplegic
+  :Phobia Uncommon Mild:
+    :Name: Phobia Uncommon Mild
+    :Value: '2'
+    :Description: Condition is rare(e.g. specific sounds/smells), +1 TN to all tests
+    :Page: SRC.23
+    :Base: Phobia
+    :Multi: 'true'
+  :Phobia Common Mild:
+    :Name: Phobia Common Mild
+    :Value: '3'
+    :Description: Conditon is common(e.g. sunlight/magic), +1 TN to all tests
+    :Page: SRC.23
+    :Base: Phobia
+    :Multi: 'true'
+  :Phobia Uncommon Moderate:
+    :Name: Phobia Uncommon Moderate
+    :Value: '3'
+    :Description: Condition is rare(e.g. specific sounds/smells), +2 TN to all tests,
+      Willpower(4) test
+    :Page: SRC.23
+    :Base: Phobia
+    :Multi: 'true'
+  :Phobia Common Moderate:
+    :Name: Phobia Common Moderate
+    :Value: '4'
+    :Description: Conditon is common(e.g. sunlight/magic), +2 TN to all tests, Willpower(4)
+      test
+    :Page: SRC.23
+    :Base: Phobia
+    :Multi: 'true'
+  :Phobia Uncommon Severe:
+    :Name: Phobia Uncommon Severe
+    :Value: '4'
+    :Description: Condition is rare(e.g. specific sounds/smells), +2 TN to all tests,
+      Willpower(6) test
+    :Page: SRC.23
+    :Base: Phobia
+    :Multi: 'true'
+  :Phobia Common Severe:
+    :Name: Phobia Common Severe
+    :Value: '5'
+    :Description: Conditon is common(e.g. sunlight/magic), +2 TN to all tests, Willpower(6)
+      test
+    :Page: SRC.23
+    :Base: Phobia
+    :Multi: 'true'
+  :Police Record:
+    :Name: Police Record
+    :Value: '6'
+    :Description: Police and most security know all about character. Criminal SIN
+      and parole officer.
+    :Page: SRC.30
+  :Quadriplegic:
+    :Name: Quadriplegic
+    :Value: '6'
+    :Description: Paralyzed from neck down, no cyberware cure. Must be hospitalized,
+      no physical actions.
+    :Page: SRC.21
+    :Conflicts: Paraplegic
+  :Scorched:
+    :Name: Scorched
+    :Value: '1'
+    :Description: Permanent psychological conditioning from psychotropic Black ICE.
+    :Page: SRC.29
+  :Sea Legs:
+    :Name: Sea Legs
+    :Value: '2'
+    :Description: Take penalties if off of a boat more than 24 hours.
+    :Page: SRC.24
+    :Conflicts: Sea Madness
+  :Sea Madness:
+    :Name: Sea Madness
+    :Value: '4'
+    :Description: Become frantic when at sea beyond sight of land more than 24 hours.
+    :Page: SRC.24
+    :Conflicts: Sea Legs
+  :Sensitive Neural Structure 1:
+    :Name: Sensitive Neural Structure 1
+    :Value: '2'
+    :Description: "-1 Willpower to resist Black ICE or Dumpshock."
+    :Page: SRC.24
+    :Base: Sensitive Neural Structure
+  :Sensitive Neural Structure 2:
+    :Name: Sensitive Neural Structure 2
+    :Value: '4'
+    :Description: "-2 Willpower to resist Black ICE or Dumpshock."
+    :Page: SRC.24
+    :Base: Sensitive neural Structure
+  :Sensitive System:
+    :Name: Sensitive System
+    :Value: 3/2(M)
+    :Description: Essence loss from cyberware doubled. Awakened characters buy this
+      for 2.
+    :Page: SRC.21
+    :Conflicts: Biorejection
+  :Simsense Vertigo:
+    :Name: Simsense Vertigo
+    :Value: 2/4(R,D)
+    :Description: When using a simsense device, +1 TNs and -1 Initiative. Deckers
+      and riggers buy this for 4.
+    :Page: SRC.25
+  :Spirit Bane:
+    :Name: Spirit Bane
+    :Value: '2'
+    :Description: One type of nature spirit dislikes character, and will do go out
+      of their way to harass and hurt them.
+    :Page: SRC.28
+  :Total Pacifist:
+    :Name: Total Pacifist
+    :Value: '5'
+    :Description: Character never kills. If they do, they experience depression for
+      2d6 weeks.
+    :Page: SRC.25
+    :Conflicts: Pacifist
+  :Ugly and Doesn't Care:
+    :Name: Ugly and Doesn't Care
+    :Value: '1'
+    :Description: "+1 social TNs with same sex, +2 social TNs with opposite sex."
+    :Page: SRC.17
+    :Conflicts: Good Looking and Knows It
+  :Uncouth:
+    :Name: Uncouth
+    :Value: '2'
+    :Description: "+2 social TNs."
+    :Page: SRC.27
+  :Uneducated:
+    :Name: Uneducated
+    :Value: '2'
+    :Description: Only rudimentary knowledge of reading, writing, and arithmetic.
+    :Page: SRC.25
+    :Conflicts: College Education,Technical School Education,Illiterate
+  :Vindictive:
+    :Name: Vindictive
+    :Value: '2'
+    :Description: Seek vengeance for every real or imagined offense, no matter how
+      minor.
+    :Page: SRC.25
+  :Weak Immune System:
+    :Name: Weak Immune System
+    :Value: '1'
+    :Description: "-1 Body against diseases."
+    :Page: SRC.22
 :magetypes:
   :None:
     :Points: 0
@@ -13471,6 +15512,8 @@
         - 2
       :desc: Double Essence loss for Cyberware
       :properties: Noble, Proud, Solitary, Naturalist
+      :special:
+        :flaw: :Sensitive System
     :elk:
       :environment: Plains, Forest, Tundra
       :spells:
@@ -14289,6 +16332,8 @@
       :desc: Receive Aura reading for free at 1/2 starting intelligence, Double all
         essence losses from cyber
       :properties: Sky, Natualist, Strict moral code
+      :special:
+        :flaw: :Sensitive System
     :wyrm:
       :environment: Mountains
       :spells:
