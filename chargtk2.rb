@@ -1264,6 +1264,7 @@ class Application
     @windows.show_all
     @windows.signal_connect('destroy') {Gtk.main_quit}
     @windows.resize([Gdk.screen_width,@table.size_request[0]*1.1].min,[Gdk::screen_height,@table.size_request[1]*1.1].min)
+    GLib::Timeout.add_seconds(10) { a=File.open("char.tmp",'w+');b=@a.dup; b.remove_instance_variable(:@app); a << YAML.dump(b); a.close}
     Gtk.init
     Gtk.main
   end
@@ -1573,7 +1574,8 @@ class Character
     if checktotem(totem,group)
       if @totem
         olt,olg = @totem[0,1]
-        if spec = CONSTANT[:totems][olg][olt][:special]
+        if CONSTANT[:totems][olg] && CONSTANT[:totems][olg][olt] && CONSTANT[:totems][olg][olt][:special]
+          spec = CONSTANT[:totems][olg][olt][:special]
           spec.each_pair do |a,b|
             case a
             when :flaw
