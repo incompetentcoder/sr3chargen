@@ -4,6 +4,9 @@ require 'pry'
 require 'yaml'
 require 'set'
 require 'dentaku'
+require 'rbconfig'
+
+OS = RbConfig::CONFIG['host_os']
 
 PATH = File.expand_path(File.dirname(__FILE__))
 
@@ -122,6 +125,22 @@ class Application
     @a.setapp(self)
   end
 
+  def help
+    actual = case OS
+             when /linux/
+               "xdg-open"
+             when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
+               "system"
+             when /darwin|mac os/
+               "open"
+             end
+    system("#{actual} #{PATH}/index.html")
+  end
+  
+  def getspells
+    @a.spells
+  end
+
   def getweapons
     @a.weapons
   end
@@ -131,7 +150,8 @@ class Application
     type == :edges ? addedge(name) : addflaw(name)
   end
 
-  def remef(name)
+  def remef(name,type)
+    type == :edges ? deledge(name) : delflaw(name)
   end
 
   def getarmors
@@ -266,12 +286,13 @@ class Application
 
   def selectallpho(flaw)
     a=b=nil
-    type,rare=flaw.split(' ').map{|x| x.to_sym}[0,1]
+    type,rare=flaw.to_s.split(' ').map{|x| x.to_sym}[0..1]
     dialog = Gtk::Dialog.new("Choose #{type}",@windows,Gtk::Dialog::MODAL)
     dialog.action_area.layout_style=Gtk::ButtonBox::SPREAD
     dialog.vbox.add(Gtk::Label.new("Choose #{type}"))
     cb = Gtk::ComboBox.new
-    CONSTANT[types][rare].each {|x| cb.append_text(x.to_s)}
+ #   binding.pry
+    CONSTANT[type][rare].each {|x| cb.append_text(x.to_s)}
     dialog.vbox.add(cb)
     dialog.add_button("Ok",1)
     dialog.add_button("Cancel",-1)
@@ -286,12 +307,47 @@ class Application
   end
  
   def selectskill
-    getskills
+    a=b=nil
+    dialog = Gtk::Dialog.new("Choose skill",@windows,Gtk::Dialog::MODAL)
+    dialog.action_area.layout_style=Gtk::ButtonBox::SPREAD
+    dialog.vbox.add(Gtk::Label.new("Choose skill"))
+    cb = Gtk::ComboBox.new
+#    binding.pry
+    getskills.each {|x| x[1].keys.each {|y| cb.append_text(y.to_s)}}
+    dialog.vbox.add(cb)
+    dialog.add_button("Ok",1)
+    dialog.add_button("Cancel",-1)
+    dialog.show_all
+    dialog.run do |response|
+      a = cb.active_text
+      b = response
+    end
+
+    dialog.destroy
+    b < 1 ? false : a
   end
 
   def selectattribute
-    CONSTANT[:attributes]
+    a=b=nil
+    dialog = Gtk::Dialog.new("Choose attribute",@windows,Gtk::Dialog::MODAL)
+    dialog.action_area.layout_style=Gtk::ButtonBox::SPREAD
+    dialog.vbox.add(Gtk::Label.new("Choose attribute"))
+    cb = Gtk::ComboBox.new
+#    binding.pry
+    getattributes.each_key {|x| cb.append_text(x.to_s)}
+    dialog.vbox.add(cb)
+    dialog.add_button("Ok",1)
+    dialog.add_button("Cancel",-1)
+    dialog.show_all
+    dialog.run do |response|
+      a = cb.active_text
+      b = response
+    end
+
+    dialog.destroy
+    b < 1 ? false : a
   end
+
 
   def selectsprite
     "meh"
@@ -310,26 +366,28 @@ class Application
   end
 
   def checkmultief(any,type)
-    which = type == :flaws ? getflaws : getedges
-    other = which.find{|x| x[1][:Name] == any}
-#    binding.pry
+    unless CONSTANT[type][any][:Multi]
+      which = type == :flaws ? getflaws : getedges
+      other = which.find{|x| x[1][:Name] == any.to_s || x[1][:Base] == any.to_s}
+      other
+    end
   end
 
   def checkconflictef(any,type)
-    b = CONSTANT[type][any].has_key?(:Base) ? [CONSTANT[type][any][:Base].to_s] : []
-    all = []
-    all += getedges.collect{|x| x[1][:Conflicts]}.compact
-    all += getflaws.collect{|x| x[1][:Conflicts]}.compact
-    all.map! {|x| x.split(',')}.flatten!
-#    binding.pry
-    return (all & ([any.to_s] + b))
+    if CONSTANT[type][any][:Conflicts]
+      all = []
+      all += getedges.collect{|x| [x[1][:Name],x[1][:Base]]}.compact.flatten
+      all += getflaws.collect{|x| [x[1][:Name],x[1][:Base]]}.compact.flatten
+      return (all & CONSTANT[type][any][:Conflicts].split(','))
+    end
+    []
   end
 
   def addedge(edge)
     err = name = a = ''
     err+='not enough points left, buy some flaws!' if CONSTANT[:edges][edge][:Value].to_i > getpointsrem
     err+='already have that edge' if checkmultief(edge,:edges)
-    err+=a[0] unless (a=checkconflictef(edge,:edges)).empty?
+    err+=a.join(',') unless (a=checkconflictef(edge,:edges)).empty?
     unless err.empty?
       errordialog(err,nil)
       return false
@@ -349,7 +407,9 @@ class Application
       errordialog(err,nil)
       return false
     end
-    @a.addedge(edge,name)
+#    binding.pry
+    name = "#{edge.to_s} #{name}" unless name.empty?
+    @notebook.ef.addedge(*@a.addedge(edge,name))
     setpointsrem
     [edge,name]
   end
@@ -360,9 +420,9 @@ class Application
   end
 
   def addflaw(flaw,points=nil)
-    err = name = ''
+    err = name = a = ''
     err+='already have that flaw' if checkmultief(flaw,:flaws)
-    err+=checkconflictef(flaw,:flaws)
+    err+=a.join(',') unless (a=checkconflictef(flaw,:flaws)).empty?
     unless err.empty?
       errordialog(err,nil)
       return false
@@ -374,26 +434,26 @@ class Application
     when /(Allergy|Phobia)/
       err+="Nothin selected" unless name = selectallpho(flaw)
     when /Infirm/
-      pp infirm
+#      pp infirm
     when :Incompetence
       err+="No skill selected" unless name = selectskill
     when :Biorejection
-      err+="Cyberware installed" unless getcyberware.empty?
+      err+="Cyberware installed" unless @a.getcyberware.empty?
     end
 
     unless err.empty?
       errordialog(err,nil)
       return false
     end
-    @a.addflaw(flaw,name,points)
-    @notebook.ef.addflaw(flaw,name) unless points
+    name = "#{flaw.to_s} #{name}" unless name.empty?
+    @notebook.ef.addflaw(*@a.addflaw(flaw,name,points))
     setpointsrem
     [flaw,name]
   end
 
   def delflaw(flaw,points=nil)
     @a.delflaw(flaw)
-    @notebook.ef.delflaw(flaw) unless points
+    @notebook.ef.delflaw(flaw)
   end
 
   def checkupdatecyberlvl(shorter,lvl,level,text,button,grade,option)
@@ -765,7 +825,7 @@ class Application
       (limb.values[0][:Children] ? limb.values[0][:Children].map {|a| @a.getcyberware.collect {|x| 
       x[1].find {|y| y[0] == a}}.compact[0][1].values_at(:Base,:Name)}.flatten : [])
   #  binding.pry
-    pp all
+#    pp all
     !((all & shorter[:Required].split(',')).empty?)
   end
 
@@ -1072,6 +1132,10 @@ class Application
   def delskill(skill)
     @a.delskill(skill[1])
     @notebook.skill.delskill(skill[1])
+    getedges.each_key {|x| remef(x,:edges) if x.start_with?("Aptitude") && x.split(' ')[1..-1].join(' ') == skill[1].to_s}
+    getflaws.each_key {|x| remef(x,:flaws) if x.start_with?("Incompetence") && x.split(' ')[1..-1].join(' ') == skill[1].to_s}
+    getspells.each_key {|x| removespell(x.to_s) if x.to_s =~ /\(#{skill[1]}\)/}
+#    binding.pry
     setpointsrem
   end
 
@@ -1339,8 +1403,10 @@ class Character
   end
 
   def addedge(edge,name)
-    @edges[name.empty? ? edge : name]= CONSTANT[:edges][edge]
+    actname = name.empty? ? edge : name
+    @edges[actname]= Marshal.load(Marshal.dump(CONSTANT[:edges][edge]))
     @pointsrem -= CONSTANT[:edges][edge][:Value].to_i
+    return actname,@edges[actname]
   end
 
   def addflaw(flaw,name,points)
@@ -1348,6 +1414,7 @@ class Character
     @flaws[actname]= Marshal.load(Marshal.dump(CONSTANT[:flaws][flaw]))
     @flaws[actname][:Value]=0 if points
     @pointsrem += @flaws[actname][:Value].to_i
+    return actname,@flaws[actname]
   end
 
   def delflaw(flaw)
@@ -2177,6 +2244,7 @@ class Mainblock < Gtk::Frame
   def initialize(app)
     super()
     @app = app
+    @tooltips = Gtk::Tooltips.new
     @table = Gtk::Table.new(7, 4)
     @elements = {
       Name: [Gtk::Label.new('Name'), Gtk::Entry.new],
@@ -2239,8 +2307,10 @@ class Mainblock < Gtk::Frame
     @elements[:Save] = Gtk::Button.new(Gtk::Stock::SAVE)
     @elements[:Load].signal_connect('clicked') { @app.load }
     @elements[:Save].signal_connect('clicked') { @app.save }
-
-    @table.attach Gtk::Image.new('srlogo.png'), 0, 2, 0, 3, *ATCH
+    @elements[:Help] = Gtk::EventBox.new.add(Gtk::Image.new("#{PATH}/srlogo.png"))
+    @elements[:Help].signal_connect('button_press_event') { @app.help }
+    @tooltips.set_tip(@elements[:Help],"Help",nil)
+    @table.attach @elements[:Help], 0, 2, 0, 3, *ATCH
     @table.attach @elements[:Load], 0, 1, 3, 4, *ATCH
     @table.attach @elements[:Save], 1, 2, 3, 4, *ATCH
     
@@ -2856,7 +2926,7 @@ class Cyberblock < Gtk::Frame
   def installcyber(actual,cyber,level,lvl,side,parent)
     child = nil
     if parent && parent[1]
-      pp parent[1]
+#      pp parent[1]
       @model2.each {|x,y,z| child = @model2.append(z) if z[0] == parent[1]}
     else
       child = @model2.append(nil)
@@ -3389,6 +3459,26 @@ end
 class EdgesFlaws < Gtk::Frame
   def clearef
   end
+
+
+  def deledge(edge)
+    rems=[]
+    @model2.each do |a,b,c|
+      if c[0] == edge.to_s
+        @model2.remove(c)
+        break
+      end
+    end
+  end
+
+  def delflaw(flaw)
+    @model2.each do |a,b,c|
+      if c[0] == flaw.to_s
+        @model2.remove(c)
+        break
+      end
+    end
+  end
   
   def addedgesflaws(parent,rows,bases)
     children = Hash.new
@@ -3408,7 +3498,21 @@ class EdgesFlaws < Gtk::Frame
     end
   end
 
-    
+  def addflaw(name,flaw)
+    child = @model2.append(@flaws)
+    flaw.each_pair do |b,c|
+      child[@order[b]] = c.to_s if @order[b]
+      child[0] = name
+    end
+  end
+
+  def addedge(name,edge)
+    child = @model2.append(@edges)
+    edge.each_pair do |b,c|
+      child[@order[b]] = c.to_s if @order[b]
+      child[0] = name
+    end
+  end
 
   def initialize(app)
     @app = app
@@ -3464,7 +3568,7 @@ class EdgesFlaws < Gtk::Frame
         b.up!
         b.up! if b.depth == 2
         type = @model.get_iter(b)[0].to_sym
-        pp name,type
+#        pp name,type
         @app.addef(name,type)
       else
         a.row_expanded?(b) ? a.collapse_row(b) : a.expand_row(b,false)
@@ -3472,12 +3576,19 @@ class EdgesFlaws < Gtk::Frame
     end
 
     @view2.signal_connect('row-activated') do |a,b,c|
-      if @app.remef(@model2.get_iter(b)[0].to_sym)
-        @model2.remove(@model2.get_iter(b))
+      if b.depth == 2 && @model2.get_iter(b)[1].to_i > 0 
+        d=@model2.get_iter(b)[0].to_sym
+        b.up!
+        if @app.remef(d,@model2.get_iter(b)[0].to_sym)
+          @model2.remove(@model2.get_iter(b))
+        end
       end
     end
 
-    
+    @edges = @model2.append(nil)
+    @edges[0] = "edges"
+    @flaws = @model2.append(nil)
+    @flaws[0] = "flaws"
 
     @win2.add(@view2)
     @win.add(@view)
@@ -3529,7 +3640,7 @@ class Background < Gtk::ScrolledWindow
 end
 
 class Notebook < Gtk::Notebook
-  attr_accessor :skill, :spell, :totem, :cyber, :weapon, :gear, :armor, :ammo, :bio
+  attr_accessor :skill, :spell, :totem, :cyber, :weapon, :gear, :armor, :ammo, :bio, :ef
 
   def clear
     @skill.clearskills
